@@ -1,0 +1,159 @@
+add_namespace = 1944
+
+country_event = {
+	id = 1944.1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		ENG = { 
+			add_to_faction = USA
+			add_to_faction = HOL
+ 		}
+    }
+}
+
+
+# Himmler's Betrayal - April 28 1945
+country_event = {
+	id = 1944.2
+	title = 1944.2.t
+	desc = 1944.2.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.1.a
+		retire_character = GER_heinrich_himmler
+	}
+}
+
+# Fegeleins's Execution April 28 1945
+country_event = {
+	id = 1944.3
+	title = 1944.3.t
+	desc = 1944.3.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.2.a
+	}
+}
+
+# Birth of the Flensburg Government 2 May 1945
+country_event = {
+	id = 1944.4
+	title = 1944.4.t
+	desc = 1944.4.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.3.a
+	}
+}
+
+# Adolf Hitler Commits Suicide April 30 1945
+country_event = {
+	id = 1944.5
+	title = 1944.5.t
+	desc = 1944.5.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.4.a
+		retire_character = GER_adolf_hitler
+		create_country_leader = {
+			name = "Karl Dönitz"
+			desc = "POLITICS_KARL_DONITZ_DESC"
+			picture = GFX_portrait_GER_karl_donitz
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				dictator
+			}
+		} 
+	}
+}
+
+# Battle of Castle Itter May 5 1945
+country_event = {
+	id = 1944.6
+	title = 1944.6.t
+	desc = 1944.6.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.5.a
+	}
+
+}
+
+# Prague Uprising May 5 1945
+country_event = {
+	id = 1944.7
+	title = 1944.7.t
+	desc = 1944.7.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.6.a
+		load_oob = "prague_uprising"
+	}
+
+}
+
+# Mussolini Captured and Executed April 28 1945
+country_event = {
+	id = 1944.8
+	title = 1944.8.t
+	desc = 1944.8.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = 1944.6.a
+		retire_character = ITA_benito_mussolini
+	}
+
+}
