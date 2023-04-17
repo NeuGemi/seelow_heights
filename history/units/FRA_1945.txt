@@ -1,0 +1,116 @@
+division_template = {
+	name = "Infantry Division"  
+	division_names_group = USA_INF_01
+
+	regiments = {
+	    infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+        anti_tank_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		anti_tank = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Airborne Division"
+	division_names_group = USA_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Motorised Division" 	# Represents both frontline and reserve motorized divisions (excluding London Divs)
+	division_names_group = USA_MOT_01 
+
+	regiments = {
+        motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+   		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+  	    motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 3 }
+        artillery_brigade = { x = 3 y = 0 }     
+        anti_tank_brigade = { x = 4 y = 0 }
+	}
+	support = {
+	 	artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Armored Division"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
+		medium_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 2 y = 4 }
+	}
+	support = {
+	   		mot_recon = { x = 0 y = 0 }
+		 	engineer = { x = 0 y = 1 }
+	    	artillery = { x = 0 y = 2 }
+			anti_tank = { x = 0 y = 3 }
+			field_hospital = { x = 0 y = 4 }
+			signal_company = { x = 0 y = 3 }
+
+	}
+}
+
+units = {
+	
+		division= {
+		name = "52nd 'Lowland' Division"
+		location = 6496
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "7th Armoured Division"
+		location = 6496
+		division_template = "Armoured Division"
+		start_experience_factor = 0.3
+	}
+
+
+
+
+}
