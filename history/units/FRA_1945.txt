@@ -96,21 +96,569 @@ division_template = {
 }
 
 units = {
-	
-		division= {
-		name = "52nd 'Lowland' Division"
-		location = 6496
+
+	### 21st Army Group ###
+
+	### First Canadian Army ###
+
+	division= {
+		name = "2. Canadian Infantry Division"
+		location = 9431
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "7th Armoured Division"
+		name = "3. Canadian Infantry Division"
+		location = 3262
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4. Canadian Armored Division"
 		location = 6496
-		division_template = "Armoured Division"
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. Polish Armored Division"
+		location = 6496
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. Canadian Infantry Division"
+		location = 11456
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. Canadian Armored Division"
+		location = 9363
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "49. British 'West Riding' Infantry Division"
+		location = 9363
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+
+	### Second British Army ###
+
+	division= {
+		name = "British Guards Armored Division"
+		location = 9403
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3. British Infantry Division"
+		location = 9281
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. British Infantry Division"
+		location = 11233
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "15. Scottish Infantry Division"
+		location = 11388
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "11. British Armored Division"
+		location = 405
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "53. Welsh Infantry Division"
+		location = 3395
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "7. British Armored Division"
+		location = 3395
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "43. Wessex Infantry Division"
+		location = 9281
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "51. British 'Highland' Infantry Division"
+		location = 11388
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "52. British 'Lowland' Division"
+		location = 9403
+		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 
 
+	### 12. Army Group ###
 
+	### First Army ###
 
+	division= {
+		name = "78. US Infantry Division"
+		location = 11493
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "9. US Infantry Division"
+		location = 11493
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "9. US Armored Division"
+		location = 11493
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "69. US Infantry Division"
+		location = 6513
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "104. US Infantry Division"
+		location = 6513
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+
+	### Third Army ###
+
+	division= {
+		name = "1. US Infantry Division"
+		location = 3561
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2. US Infantry Division"
+		location = 3561
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "70. US Infantry Division"
+		location = 3561
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "97. US Infantry Division"
+		location = 3561
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4. US Infantry Division"
+		location = 3500
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "14. US Armored Division"
+		location = 3500
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "99. US Infantry Division"
+		location = 3500
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "16. US Armored Division"
+		location = 3500
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4. US Armored Division"
+		location = 13116
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. US Infantry Division"
+		location = 13116
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "11. US Armored Division"
+		location = 13116
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "26. US Infantry Division"
+		location = 13116
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "90. US Infantry Division"
+		location = 11417
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "13. US Armored Division"
+		location = 11417
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "65. US Infantry Division"
+		location = 11417
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "71. US Infantry Division"
+		location = 11417
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "80. US Infantry Division"
+		location = 11417
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+
+	### Ninth Army - Ruhr Pocket ###
+
+	division= {
+		name = "2. US Armored Division"
+		location = 6570
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "6. US Armored Division"
+		location = 6570
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "76. US Infantry Division"
+		location = 6570
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "87. US Infantry Division"
+		location = 529
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "89. US Infantry Division"
+		location = 529
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "30. US Infantry Division"
+		location = 529
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "35. US Infantry Division"
+		location = 9547
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "83. US Infantry Division"
+		location = 9547
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "84. US Infantry Division"
+		location = 9547
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "102. US Infantry Division"
+		location = 9443
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "29. US Infantry Division"
+		location = 9443
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "75. US Infantry Division"
+		location = 9443
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "79. US Infantry Division"
+		location = 6535
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "95. US Infantry Division"
+		location = 6535
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3. US Armored Division"
+		location = 6535
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "8. US Armored Division"
+		location = 6622
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	### Fifteenth Army - Ruhr Pocket ###
+
+	division= {
+		name = "66. US Infantry Division"
+		location = 3512
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "106. US Infantry Division"
+		location = 3512
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. US Armored Division"
+		location = 3512
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "7. US Armored Division"
+		location = 3444
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "8. US Infantry Division"
+		location = 3444
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "82. US Infantry Division"
+		location = 3444
+		division_template = "Airborne Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "101. US Infantry Division"
+		location = 587
+		division_template = "Airborne Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "17. US Infantry Division"
+		location = 587
+		division_template = "Airborne Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "94. US Infantry Division"
+		location = 587
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "28. US Infantry Division"
+		location = 587
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+
+	### 6. Army Group ###
+
+	### Seventh Army ###
+
+	division= {
+		name = "12. US Armored Division"
+		location = 6594
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "45. US Infantry Division"
+		location = 6594
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "63. US Infantry Division"
+		location = 6594
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "100. US Infantry Division"
+		location = 6581
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "10. US Armored Division"
+		location = 6581
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "44. US Infantry Division"
+		location = 6581
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "103. US Infantry Division"
+		location = 6568
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3. US Infantry Division"
+		location = 6568
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "20. US Armored Division"
+		location = 6568
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "42. US Infantry Division"
+		location = 3558
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "86. US Infantry Division"
+		location = 3558
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2. French Armored Division"
+		location = 3558
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "36. US Infantry Division"
+		location = 3558
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+
+	### First Army ###
+
+	division= {
+		name = "2. Moroccan Infantry Division"
+		location = 549
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4. Moroccan Infantry Division"
+		location = 549
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}	
+	division= {
+		name = "9. French Colonial Infantry Division"
+		location = 9503
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "10. French Infantry Division"
+		location = 9503
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. French Armored Division"
+		location = 9503
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. French Motorised Division"
+		location = 6529
+		division_template = "Motorised Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. French Infantry Division"
+		location = 6529
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3. Algerian Infantry Division"
+		location = 6529
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "14. French Infantry Division"
+		location = 678
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. French Armored Division"
+		location = 678
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "27. French Infantry Division"
+		location = 678
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
 }
