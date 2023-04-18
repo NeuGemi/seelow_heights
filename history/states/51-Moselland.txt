@@ -47,8 +47,8 @@ state={
 			set_demilitarized_zone = no
 		}
         1945.1.1 = {
-		owner = FRA
-		controller = FRA
+		owner = USA
+		controller = USA
      	GER = {
      		set_province_controller = 6469
      		set_province_controller = 9482

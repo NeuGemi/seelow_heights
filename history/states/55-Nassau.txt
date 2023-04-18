@@ -28,8 +28,8 @@ state={
 			}
 		}
 		1945.1.1 = {
-			owner = FRA
-			controller = FRA
+			owner = USA
+			controller = USA
 		}
 	}
 

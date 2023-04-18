@@ -30,8 +30,8 @@ state={
 			}
 		}
         1945.1.1 = {
-		owner = FRA
-		controller = FRA
+		owner = USA
+		controller = USA
      	GER = {
      		set_province_controller = 495
      		set_province_controller = 3398

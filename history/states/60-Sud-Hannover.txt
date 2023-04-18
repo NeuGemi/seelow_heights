@@ -27,7 +27,7 @@ state={
 			}
 		}
 		1945.1.1 = {
-			FRA = {
+			USA = {
 				set_province_controller = 3561
 				set_province_controller = 3500
 			}

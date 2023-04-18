@@ -36,7 +36,7 @@ state={
 			}
 		}
 		1945.1.1 = {
-			FRA = {
+			ENG = {
 				set_province_controller = 11388
 				set_province_controller = 11233
 				set_province_controller = 9281

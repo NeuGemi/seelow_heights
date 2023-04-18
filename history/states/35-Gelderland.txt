@@ -20,8 +20,8 @@ state={
 			11562 1 
 		}
         1945.1.1 = {
-		owner = FRA
-		controller = FRA
+		owner = ENG
+		controller = ENG
      	} 
 	}
 

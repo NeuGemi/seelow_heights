@@ -523,10 +523,272 @@ if = {
 }
 
 
-1944.12.30 = {
+1945.1.1 = {
 	set_oob = "GER_1945_nsb"
 
 	remove_ideas = GER_mefo_bills_1
+
+create_intelligence_agency = {
+  name = "Abwehr"
+  icon = "GFX_intelligence_agency_logo_ger"
+}
+
+remove_ideas = rudolf_hess
+
+set_global_flag = fall_of_france
+set_global_flag = end_of_norway
+set_global_flag = end_of_poland
+set_global_flag = end_of_yugoslavia
+set_global_flag = end_of_greece
+set_global_flag = end_of_denmark
+set_global_flag = end_of_belgium
+set_global_flag = fall_of_warsaw_ger
+
+set_stability = 0.75
+set_war_support = 0.55
+
+add_political_power = 1998
+
+    unlock_national_focus = GER_danzig_or_war
+    complete_national_focus = GER_grosraumwirtschaft
+    complete_national_focus = GER_align_romania
+    complete_national_focus = GER_align_hungary
+    complete_national_focus = GER_integrate_war_economies
+    complete_national_focus = GER_air_innovation
+    complete_national_focus = GER_second_vienna_award
+    unlock_national_focus = GER_around_maginot
+    unlock_national_focus = GER_weserubung
+    unlock_national_focus = GER_war_with_france
+    complete_national_focus = GER_naval_rearmament
+    complete_national_focus = GER_naval_effort
+    complete_national_focus = GER_anti_comitern_pact
+    unlock_national_focus = GER_ussr_war_goal
+    complete_national_focus = GER_atlantikwall
+    complete_national_focus = GER_ostwall
+    complete_national_focus = GER_form_the_reichskommissariats
+    complete_national_focus = GER_u_boat_effort
+
+    if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = ITA
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.2
+	}
+
+	set_technology = {
+		naval_bomber2 = 1
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		basic_medium_art = 1
+		CAS2 = 1
+		heavy_fighter1 = 1
+		heavy_fighter2 = 1
+		strategic_bomber2 = 1
+		tactical_bomber2 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_medium_tank = 1
+		improved_heavy_tank = 1
+		basic_medium_td = 1
+		basic_medium_spaa = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		mechanised_infantry2 = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		paratroopers2 = 1
+		tech_field_hospital = 1
+		tech_field_hospital2 = 1		
+        tech_signal_company = 1
+        tech_signal_company2 = 1
+        tech_logistics_company = 1
+        tech_logistics_company2 = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		artillery4 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		fighter1 = 1
+		fighter2 = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1 #MOBILE WARFARE
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		wolfpacks = 1
+		capital_ship_raiders = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		formation_fighting = 1
+		hunt_and_destroy = 1
+		combat_unit_destruction = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		excavation1 = 1
+		excavation2 = 1
+		excavation3 = 1
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		rubber_processing = 1
+		improved_rubber_processing = 1
+		advanced_rubber_processing = 1
+		fuel_refining3 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+
+		#1944
+		experimental_rockets = 1
+		rocket_engines = 1
+		jet_engines = 1
+		atomic_research = 1
+		nuclear_reactor = 1
+		advanced_infantry_weapons = 1
+		advanced_infantry_weapons2 = 1
+		infantry_at = 1
+		infantry_at2 = 1
+		tech_engineers3 = 1
+		tech_recon3 = 1
+		tech_military_police = 1
+		tech_military_police2 = 1
+		tech_military_police3 = 1
+		tech_maintenance_company = 1
+		tech_maintenance_company2 = 1
+		tech_maintenance_company3 = 1
+		tech_field_hospital3 = 1
+		tech_logistics_company3 = 1
+		tech_signal_company3 = 1
+		advanced_medium_tank = 1
+		advanced_heavy_tank = 1
+		rocket_artillery = 1
+		rocket_artillery2 = 1
+		rocket_artillery3 = 1
+		rocket_artillery4 = 1
+		antiair3 = 1
+		antiair4 = 1
+		antiair5 = 1 
+
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+		armored_car2 = 1
+		scout_plane1 = 1
+		scout_plane2 = 1
+	}
+}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+		improved_depth_charges = 1
+		smoke_generator = 1
+		magnetic_detonator = 1
+		improved_airplane_launcher = 1
+        mtg_landing_craft = 1
+        degaussing = 1
+        fire_control_methods_1 = 1
+        damage_control_2 = 1
+        damage_control_1 = 1
+        dp_secondary_battery = 1
+        basic_heavy_shell = 1
+        improved_heavy_battery = 1
+        improved_medium_shell = 1
+        improved_medium_battery = 1
+        improved_light_battery = 1
+        basic_submarine_snorkel = 1
+        improved_ship_hull_submarine = 1
+        advanced_ship_torpedo_launcher = 1
+		electric_torpedo = 1
+		homing_torpedo = 1
+        improved_cruiser_armor_scheme = 1
+        improved_heavy_armor_scheme = 1
+        improved_ship_hull_heavy = 1
+		}
+		set_naval_oob = "GER_1945_naval_mtg"
+	}
+
+create_faction = Axis
+add_to_faction = GER
+add_to_faction = ITA
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = BUL
+add_to_faction = CRO
+
+add_ideas = {
+	sour_loser
+	general_staff
+	closed_economy
+	all_adults_serve
+	tot_economic_mobilisation
+
+}
 
     declare_war_on = {
 		target = SOV
