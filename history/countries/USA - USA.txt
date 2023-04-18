@@ -293,7 +293,8 @@ give_guarantee = URG
 			improved_sonar = 1
 			improved_ship_torpedo_launcher = 1
 			improved_heavy_battery = 1
-			advanced_dp_light_battery = 3
+			improved_dp_light_battery = 1
+			advanced_dp_light_battery = 1
 		}
 		remove_ideas = MTG_naval_treaty_adherent
 		add_ideas = MTG_naval_treaty_adherent_reduced
@@ -410,6 +411,272 @@ recruit_character = USA_harry_white
 
 1945.1.1 = {
 	set_oob = "USA_1945" 
+
+		retire_character = USA_franklin_delano_roosevelt
+		create_country_leader = {
+			name = "Harry S. Truman"
+			desc = "POLITICS_HARRY_TRUMAN_DESC"
+			picture = GFX_portrait_Harry_S_Truman
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+
+		remove_ideas = MTG_naval_treaty_adherent
+
+		add_ideas = {
+			war_economy
+			service_by_requirement
+			free_trade
+			home_of_the_free
+		}
+
+		create_intelligence_agency = {
+  			name = "Office of Strategic Services"
+  			icon = "GFX_intelligence_agency_logo_usa"
+		}
+
+		add_political_power = 2000
+		add_command_power = 100
+		remove_ideas = great_depression
+		set_stability = 0.75
+		set_war_support = 0.8
+
+		complete_national_focus = USA_the_giant_wakes #1
+		complete_national_focus = USA_war_plan_black #2
+		complete_national_focus = USA_war_plan_orange #3
+		complete_national_focus = USA_carrier_primacy #4
+		complete_national_focus = USA_USACE_projects #8
+		complete_national_focus = USA_strategic_bombing #10
+		complete_national_focus = USA_scientist_haven
+		complete_national_focus = USA_military_construction
+		complete_national_focus = USA_manhattan_project
+		complete_national_focus = USA_federal_housing_act
+		complete_national_focus = USA_two_ocean_navy_act
+		complete_national_focus = USA_selective_training_act
+		unlock_national_focus = USA_destroyers_for_bases
+		complete_national_focus = USA_bureau_of_ships
+		complete_national_focus = USA_fund_the_navy
+		complete_national_focus = USA_maritime_commission
+		complete_national_focus = USA_louisiana_maneuvers
+		complete_national_focus = USA_arsenal_of_democracy
+		complete_national_focus = USA_wartime_industry		
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			improved_light_tank_chassis = 1
+			advanced_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1 
+			improved_medium_tank_chassis = 1
+			advanced_medium_tank_chassis = 1
+			basic_heavy_tank_chassis = 1
+			improved_heavy_tank_chassis = 1
+			advanced_heavy_tank_chassis = 1
+			engine_tech_1 = 1
+			engine_tech_2 = 1
+			engine_tech_3 = 1
+			armor_tech_1 = 1
+			armor_tech_2 = 1
+			armor_tech_3 = 1
+		}
+		set_oob = "USA_1945"
+	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "USA_1945_air_bba"
+			set_technology = {
+			improved_small_airframe = 1
+			advanced_small_airframe = 1
+			modern_small_airframe = 1
+			improved_medium_airframe = 1
+			advanced_medium_airframe = 1
+			basic_large_airframe = 1
+			improved_large_airframe = 1
+			survivability_studies = 1
+			aa_hmg = 1
+			aa_cannon_1 = 1
+			aa_cannon_2 = 1
+			engines_3 = 1
+			engines_4 = 1
+			range_improvements = 1
+		}
+	}
+
+	set_technology = { 
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		mechanised_infantry2 = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		paratroopers2 = 1
+		tech_field_hospital = 1
+		tech_field_hospital2 = 1		
+    tech_signal_company = 1
+    tech_signal_company2 = 1
+    tech_logistics_company = 1
+    tech_logistics_company2 = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		artillery4 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+
+		#doctrines 
+		sup_delay = 1
+		mobile_defence = 1
+		intergrated_support = 1
+		regimental_combat_teams = 1
+		convoy_escorts = 1
+        submarine_operations_bs = 1
+		carrier_primacy = 1
+		undersea_blockade = 1
+		carrier_task_forces = 1
+		multialtitude_flying = 1
+		floating_airfield = 1
+		convoy_escorts = 1
+		escort_patrols = 1
+		massed_strikes = 1
+		sup_mechanized_offensive = 1
+		centralized_fire_control = 1
+		forward_observers  = 1
+	
+		#air
+		air_superiority = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+		fighter_sweeps = 1
+		logistical_bombing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		centimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		excavation1 = 1
+		excavation2 = 1
+		excavation3 = 1
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		rubber_processing = 1
+		improved_rubber_processing = 1
+		advanced_rubber_processing = 1
+		fuel_refining3 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+
+		#1944
+		experimental_rockets = 1
+		rocket_engines = 1
+		jet_engines = 1
+		atomic_research = 1
+		nuclear_reactor = 1
+		advanced_infantry_weapons = 1
+		advanced_infantry_weapons2 = 1
+		infantry_at = 1
+		infantry_at2 = 1
+		tech_engineers3 = 1
+		tech_recon3 = 1
+		tech_military_police = 1
+		tech_military_police2 = 1
+		tech_military_police3 = 1
+		tech_maintenance_company = 1
+		tech_maintenance_company2 = 1
+		tech_maintenance_company3 = 1
+		tech_field_hospital3 = 1
+		tech_logistics_company3 = 1
+		tech_signal_company3 = 1
+		rocket_artillery = 1
+		rocket_artillery2 = 1
+		rocket_artillery3 = 1
+		rocket_artillery4 = 1
+		antiair3 = 1
+		antiair4 = 1
+		antiair5 = 1 
+}
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		set_technology = {
+			armored_car1 = 1
+			armored_car2 = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+		improved_naval_mines = 1
+		basic_light_shell = 1
+		basic_medium_shell = 1
+		improved_depth_charges = 1
+		smoke_generator = 1
+		magnetic_detonator = 1
+		improved_airplane_launcher = 1
+        mtg_landing_craft = 1
+        degaussing = 1
+        fire_control_methods_1 = 1
+        damage_control_2 = 1
+        damage_control_1 = 1
+        basic_heavy_shell = 1
+        improved_heavy_battery = 1
+        improved_medium_battery = 1
+        improved_light_battery = 1
+        basic_submarine_snorkel = 1
+        improved_ship_hull_submarine = 1
+        advanced_ship_torpedo_launcher = 1
+		improved_ship_torpedo_launcher = 1
+		electric_torpedo = 1
+		homing_torpedo = 1
+        improved_heavy_armor_scheme = 1
+        improved_ship_hull_heavy = 1
+
+		}
+		set_naval_oob = "USA_1939_naval_mtg"
+	}
 }
 
 if = {
@@ -438,88 +705,6 @@ if = {
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Barracuda Class"
-		type = submarine_1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-		obsolete = yes
-	}
-
-	create_equipment_variant = {
-		name = "Farragut Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Portland Class"
-		type = heavy_cruiser_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Pennsylvania Class"
-		type = battleship_1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			ship_engine_upgrade = 1
-			ship_armor_upgrade = 1
-			ship_gun_upgrade = 1
-		}
-		obsolete = yes
-	}
-
-	create_equipment_variant = {
-		name = "New Mexico Class"
-		type = battleship_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Colorado Class"
-		type = battleship_1
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 3
-			ship_armor_upgrade = 3
-			ship_gun_upgrade = 4
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Yorktown Class"
-		type = carrier_2
-		upgrades = {
-			ship_deckspace_upgrade = 1
-			carrier_armor_upgrade = 1
-			ship_engine_upgrade = 1
-			ship_reliability_upgrade = 1
-		}
-	}
-}
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -696,6 +881,78 @@ if = {
 		}
 		icon = "GFX_USA_cv_fighter1_medium"
 	}
+		create_equipment_variant = {
+			name = "F2A Buffalo" #
+			type = cv_small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "Vindicator" #
+			type = cv_small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = dive_brakes_small
+			}
+		}
+		create_equipment_variant = {
+			name = "Devastator" #
+			type = cv_small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "B-23" #
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_USA_tactical_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "YA-19" #
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "A-20" #
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = hmg_defense_turret
+			}
+			icon = "GFX_USA_CAS2_medium"
+		}
+		create_equipment_variant = {
+			name = "B-17" #
+			type = large_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+				engine_type_slot = engine_3_4x
+				special_type_slot_1 = hmg_defense_turret_2x
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = bomb_sights_1
+			}
+		}
 }
 if = {
 	limit = {
@@ -1052,135 +1309,6 @@ if = {
 			front_1_custom_slot = ship_deck_space
 		}
 	}
-}
-
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-		create_equipment_variant = {
-			name = "Salmon Class"
-			type = submarine_2
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
-		}
-		create_equipment_variant = {
-			name = "Benson & Gleaves Class"
-			type = destroyer_2
-			upgrades = {
-				ship_torpedo_upgrade = 3
-				destroyer_engine_upgrade = 3
-				ship_ASW_upgrade = 3
-				ship_anti_air_upgrade = 3
-			}
-		}
-		create_equipment_variant = {
-			name = "Wasp Class"
-			type = carrier_2
-			upgrades = {
-				ship_deckspace_upgrade = 2
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 2
-			}
-		}
-		# 1941
-		#create_equipment_variant = {
-		#	name = "South Dakota Class"
-		#	type = battleship_2
-		#	upgrades = {
-		#		ship_reliability_upgrade = 3
-		#		ship_engine_upgrade = 3
-		#		ship_armor_upgrade = 3
-		#		ship_gun_upgrade = 3
-		#	}
-		#}
-	}
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "F2A Buffalo" #
-			type = cv_small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-		}
-		create_equipment_variant = {
-			name = "Vindicator" #
-			type = cv_small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = dive_brakes_small
-			}
-		}
-		create_equipment_variant = {
-			name = "Devastator" #
-			type = cv_small_plane_naval_bomber_airframe_1
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-		}
-		create_equipment_variant = {
-			name = "B-23" #
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret
-			}
-			icon = "GFX_USA_tactical_bomber1_medium"
-		}
-		create_equipment_variant = {
-			name = "YA-19" #
-			type = small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "A-20" #
-			type = small_plane_cas_airframe_2
-			modules = {
-				fixed_main_weapon_slot = small_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = hmg_defense_turret
-			}
-			icon = "GFX_USA_CAS2_medium"
-		}
-		create_equipment_variant = {
-			name = "B-17" #
-			type = large_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				engine_type_slot = engine_3_4x
-				special_type_slot_1 = hmg_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				special_type_slot_3 = bomb_sights_1
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
 			name = "Salmon Class"				# represents Salmon and Sargo classes
@@ -1264,32 +1392,4 @@ if = {
 				front_1_custom_slot = ship_deck_space
 			}
 		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "By Blood Alone"
-			}
-		}
-		create_equipment_variant = {
-			name = "F2A Buffalo"
-			type = cv_fighter_equipment_1
-			upgrades = {
-				cv_plane_gun_upgrade = 5
-				cv_plane_range_upgrade = 0
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 5
-			}
-		}
-		create_equipment_variant = {
-			name = "Martin M166"
-			type = tac_bomber_equipment_0
-			upgrades = {
-				plane_tac_bomb_upgrade = 2
-				plane_range_upgrade = 1
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 3
-			}
-		}
-	}
 }

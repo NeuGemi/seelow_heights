@@ -30,11 +30,14 @@ state={
 			controller = SLO
 			add_core_of = SLO
 		}
-		1945.1.1 = {
-			owner = SOV
-			controller = SOV
-			GER = {
-				set_province_controller = 3484
+		1945.1.1 = {	
+			SOV = {
+				set_province_controller = 11539
+				set_province_controller = 3537
+				set_province_controller = 11522
+				set_province_controller = 541
+				set_province_controller = 9692
+				set_province_controller = 9539
 			}
 		}
 	}

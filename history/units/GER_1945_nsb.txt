@@ -16,7 +16,6 @@ division_template = {
 		infantry = { x = 1 y = 3 }
         artillery_brigade = { x = 3 y = 0 }
         anti_tank_brigade = { x = 4 y = 0 }
-        anti_tank_brigade = { x = 4 y = 1 }
 
 	}
 	support = {
@@ -37,9 +36,6 @@ division_template = {
    		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-  		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 3 }
         artillery_brigade = { x = 3 y = 0 }
@@ -70,8 +66,6 @@ division_template = {
 		mountaineers = { x = 1 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
         anti_tank_brigade = { x = 4 y = 0 }
-        anti_tank_brigade = { x = 4 y = 1 }
-
 	}
 	support = {
 		    recon = { x = 0 y = 0 }
