@@ -167,4 +167,100 @@ units = {
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
+	division= {
+		name = "3. French Infantry Division"
+		location = 778
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4. French Infantry Division"
+		location = 778
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. French Infantry Division"
+		location = 6609
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "6. French Infantry Division"
+		location = 6609
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "7. French Infantry Division"
+		location = 764
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "8. French Infantry Division"
+		location = 764
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "9. French Infantry Division"
+		location = 3764
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "11. French Infantry Division"
+		location = 3764
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "12. French Infantry Division"
+		location = 6975
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "13. French Infantry Division"
+		location = 6975
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "15. French Infantry Division"
+		location = 3961
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "16. French Infantry Division"
+		location = 3961
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "17. French Infantry Division"
+		location = 956
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "18. French Infantry Division"
+		location = 956
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "19. French Infantry Division"
+		location = 3928
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "20. French Infantry Division"
+		location = 3928
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
 }

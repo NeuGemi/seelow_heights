@@ -18,8 +18,8 @@ state={
 		add_core_of = YUG
 		add_core_of = CRO
 		1945.1.1 = {
-			owner = GER
-			controller = GER
+			owner = CRO
+			controller = CRO
 			SOV = {
 				set_province_controller = 11580
 			}
