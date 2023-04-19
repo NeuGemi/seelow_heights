@@ -953,6 +953,36 @@ if = {
 				special_type_slot_3 = bomb_sights_1
 			}
 		}
+	create_equipment_variant = {
+		name = "B-24 Liberator"
+		type = medium_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_4x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = armor_plate_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_USA_tactical_bomber2_medium"
+		}
+		create_equipment_variant = {
+			name = "P-51 'Mustang'"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+			}
+			icon = "GFX_USA_fighter3_medium"
+		}
 }
 if = {
 	limit = {

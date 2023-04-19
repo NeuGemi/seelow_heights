@@ -1621,6 +1621,52 @@ if = {
 		}
 		icon = "GFX_SOV_tactical_bomber1_medium"
 	}
+
+		# 1945 #
+		create_equipment_variant = {
+			name = "Yak-3"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+			}
+			icon = "GFX_SOV_light_plane_2_medium"
+		}
+	create_equipment_variant = {
+		name = "Ilyushin Il-2M3"
+		type = small_plane_cas_airframe_2
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_2 = rocket_rails
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_SOV_CAS2_medium"
+	}
+	create_equipment_variant = {
+		name = "Petlyakov Pe-2"
+		type = medium_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = armor_plate_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_SOV_tactical_bomber2_medium"
+	}
 }
 
 if = {

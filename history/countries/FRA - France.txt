@@ -460,8 +460,20 @@ if = {
 1945.1.1 = {
 
 retire_character = FRA_leon_blum
+retire_character = FRA_pierre_laval
+retire_character = FRA_edouard_daladier
 recruit_character = FRA_charles_de_gaulle
 promote_character = FRA_charles_de_gaulle
+
+create_country_leader = {
+	name = "Charles De Gaulle"
+	desc = "POLITICS_CHARLES_DEGAULLE_DESC"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
 
 set_country_flag = france_de_gaulle
 

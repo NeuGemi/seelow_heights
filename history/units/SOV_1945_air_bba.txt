@@ -1,0 +1,113 @@
+
+
+air_wings = {
+	
+	195 = {
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 		
+	}
+	219 = {
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 	
+	}
+	808 = {
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+	}
+	10 = {
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 		
+	}
+	63 = {
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+	}
+	86 = {
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+	}
+	87 = {
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }		
+	}
+	88 = {
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+	}
+	43 = {
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  } 
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+	}
+	155 = {
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+	}
+	107 = {
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_cas_airframe_2 = { owner = "SOV"  version_name = "Ilyushin Il-2M3" amount = 100 }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		medium_plane_airframe_2 = { owner = "SOV" version_name = "Petlyakov Pe-2" amount = 100  }	
+		small_plane_airframe_2 = { owner = "SOV"  version_name = "Yak-3" amount = 100 }		
+	}
+}

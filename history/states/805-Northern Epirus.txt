@@ -30,8 +30,8 @@ state={
 			remove_claim_by = ITA
 		}
 		1945.1.1 = {
-			owner = FRA
-			controller = FRA
+			owner = ENG
+			controller = ENG
 		}
 	}
 

@@ -1896,4 +1896,34 @@ if = {
 				special_type_slot_1 = lmg_defense_turret_2x
 			}
 		}
+	create_equipment_variant = {
+		name = "Avro Lancaster"
+		type = medium_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_4x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = armor_plate_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_ENG_tactical_bomber2_medium"
+		}
+		create_equipment_variant = {
+			name = "Spitfire"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+			}
+			icon = "GFX_ENG_fighter2_medium"
+		}
 	}
