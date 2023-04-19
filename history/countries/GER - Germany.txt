@@ -1366,10 +1366,82 @@ if = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = empty
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				engine_type_slot = engine_3_2x
+				special_type_slot_1 = air_air_radar_1
 			}
 			icon = "GFX_GER_heavy_fighter1_medium"
 		}
+
+		## 1945 ##
+		create_equipment_variant = {
+			name = "Bf 109 G-6"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+			}
+			icon = "GFX_GER_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Fw 190 A-8"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+			}
+			icon = "GFX_GER_fighter2_medium"
+		}
+		create_equipment_variant = {
+			name = "Me 262 'Schwalbe'"
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				fixed_auxiliary_weapon_slot_3 = bomb_locks
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+			}
+			icon = "GFX_GER_jet_plane_1_medium"
+		}
+	create_equipment_variant = {
+		name = "Ju 87 G 'Kanonenvogel'"
+		type = small_plane_cas_airframe_2
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = tank_buster_2
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = dive_brakes_small
+			special_type_slot_3 = armor_plate_small
+		}
+		icon = "GFX_GER_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ju 88"
+		type = medium_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = armor_plate_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_GER_tactical_bomber2_medium"
+	}
 }

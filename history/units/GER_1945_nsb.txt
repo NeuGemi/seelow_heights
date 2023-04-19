@@ -417,6 +417,56 @@ units = {
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
     }
 
+    ### German Divisions in Denmark ###
+
+    division= {
+	    name = "223. Reserve Panzer Division"
+	    location = 399
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.1
+    }
+    division= {
+	    name = "160. Reserve Panzer Division"
+	    location = 399
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.1
+    }
+    division= {
+	    name = "166. Reserve Panzer Division"
+	    location = 399
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.1
+    }
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 264		
+		}
+		location = 394
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 325	
+		}
+		location = 6287
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 328	
+		}
+		location = 6364
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+	}
 
 	### Heeresgruppe Kurland ###
 		### 18. Armee ###
@@ -2683,4 +2733,34 @@ units = {
 		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
     }
+
+    	# Festung Divisions #
+    division= {	
+	    name = "Festung Dunkirchen"
+		location = 575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    }
+    division= {	
+	    name = "Festung Lorient"
+		location = 6536
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    }    
+    division= {	
+	    name = "Festung Saint Nazaire"
+		location = 11465
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    }
+    division= {	
+	    name = "Festung La Rochelle"
+		location = 6657
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    } 
 }
