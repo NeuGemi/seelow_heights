@@ -169,22 +169,22 @@ division_template = {
 	name = "Tankovaya Diviziya"				# Note: Represents regular tank corps (formerly mechanized corps; 1941)			
 	division_names_group = SOV_ARM_04
 	regiments = {
-		heavy_armor = { x = 0 y = 0 }		# T-35/KV-1 heavy tanks
+		medium_armor = { x = 0 y = 0 }		# T-35/KV-1 heavy tanks
 		medium_armor = { x = 0 y = 1 }		# T-34 tanks
 		medium_armor = { x = 0 y = 2 }		# T-34 tanks
-		heavy_armor = { x = 1 y = 0 }		# T-35/KV-1 heavy tanks
+		medium_armor = { x = 1 y = 0 }		# T-35/KV-1 heavy tanks
 		medium_armor = { x = 1 y = 1 }		# T-34 tanks
 		medium_armor = { x = 1 y = 2 }		# T-34 tanks
 		motorized = { x = 2 y = 0 }	
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-		mot_artillery_brigade = { x = 3 y = 0 }
+		motorized = { x = 3 y = 0 }
 		mot_artillery_brigade = { x = 3 y = 1 }
 	    mot_anti_tank_brigade = { x = 3 y = 2 }
 	    mot_anti_air_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		light_tank_recon = { x = 0 y = 0 }		# BT-7 tanks
+		mot_recon = { x = 0 y = 0 }		# BT-7 tanks
 		engineer = { x = 0 y = 1 }
 		field_hospital = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }

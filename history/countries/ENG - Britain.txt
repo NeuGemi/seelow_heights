@@ -890,6 +890,27 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
+		create_equipment_variant = {
+			name = "Cromwell/Comet"
+			type = medium_tank_chassis_3
+			parent_version = 1
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = additional_machine_guns
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 6
+			}
+			icon = "GFX_ENG_improved_medium_tank_medium"
+		}
 	create_equipment_variant = {
 		name = "Light Tank Mk. IV"
 		type = light_tank_chassis_1
