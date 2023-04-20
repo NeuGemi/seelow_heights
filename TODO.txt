@@ -1,9 +1,4 @@
--Add Festungs
 -Remove dead, or retired generals etc
--Create plane and tank designs
 -Add province modifiers
 -Add events and loc
--Italy
--Air OOB
--Add factories (eng, usa, sov)
--Luftwaffe size
+-Croat oob

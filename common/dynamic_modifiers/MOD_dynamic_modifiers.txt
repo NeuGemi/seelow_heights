@@ -1,0 +1,6 @@
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	army_attack_factor = -0.9
+}

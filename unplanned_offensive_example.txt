@@ -1,0 +1,111 @@
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 41
+						state = 165
+						state = 166
+						state = 167
+						state = 168
+						state = 169
+						state = 170
+						state = 171
+						state = 172
+						state = 173
+						state = 174
+						state = 175
+						state = 176
+						state = 788
+						state = 789
+						state = 790
+						state = 791
+						state = 792
+						state = 793
+						state = 794
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+
+
+			790 = {
+				clr_state_flag = SPR_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+
+
+
+
+unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
+}
+
+			
+
+
+
+		complete_effect = {
+			activate_mission = SPR_preparing_offensive
+			set_country_flag = SPR_preparing_offensive_in_progress_flag
+			every_other_country = {
+				limit = {
+					original_tag = SPR
+				}
+				activate_mission = SPA_galicia_offensive_mission
+			}
+		}
+
+		remove_effect = {
+			171 = {
+				clr_state_flag = SPR_unplanned_offensive_flag
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPA_tackle_the_vulnerable_fronts
+					171 = { is_controlled_by = SPD }
+				}
+				add_timed_idea = { idea = SPA_anti_republican_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = SPA_tackle_the_vulnerable_fronts
+						has_completed_focus = SPR_take_the_initiative
+					}
+					171 = { is_controlled_by = SPC }
+				}
+				add_timed_idea = { idea = SPA_anti_anarchist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = SPA_tackle_the_vulnerable_fronts
+						has_completed_focus = SPR_take_the_initiative
+					}
+					171 = { is_controlled_by = SPB }
+				}
+				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					171 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
+		}
