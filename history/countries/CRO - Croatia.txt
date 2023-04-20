@@ -98,6 +98,7 @@ set_popularities = {
 1945.1.1 = {
 
 		add_ideas = surrender_limit
+		set_oob "CRO_1945"
 }
 
 create_country_leader = {

@@ -581,6 +581,7 @@ set_global_flag = end_of_greece
 set_global_flag = end_of_denmark
 set_global_flag = end_of_belgium
 set_global_flag = fall_of_warsaw_ger
+set_global_flag = FRA_already_surrendered
 
 set_stability = 0.30
 set_war_support = 0.50
