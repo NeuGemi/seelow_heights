@@ -9,7 +9,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	hidden = yes
+	hidden = no
 
 
     option = {
@@ -26,12 +26,8 @@ country_event = {
 						state = 190 # Kurland
 						state = 58 # Mecklenburg
 						state = 61 # Schleswig-Holstein
-
-						#Czechia - remove may 1
 						state = 9
 						state = 69
-
-						#Austria
 						state = 848
 						state = 153
 						state = 39

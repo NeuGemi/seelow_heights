@@ -107,7 +107,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 982
+		location = 9611
 		division_template = "Alpine Odred"
 		start_experience_factor = 0.1
 	}
@@ -143,7 +143,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 6957
+		location = 6983
 		division_template = "Alpine Odred"
 		start_experience_factor = 0.1
 	}
@@ -152,7 +152,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 3974
+		location = 3985
 		division_template = "Alpine Odred"
 		start_experience_factor = 0.1
 	}
@@ -161,7 +161,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 3943
+		location = 11901
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 	}
@@ -170,7 +170,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 3943
+		location = 11901
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 	}
@@ -215,7 +215,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 982
+		location = 9611
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 	}

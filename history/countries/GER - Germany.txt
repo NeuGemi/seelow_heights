@@ -573,6 +573,9 @@ create_intelligence_agency = {
 remove_ideas = rudolf_hess
 remove_ideas = erwin_rommel
 
+add_ideas = GER_paralyzed_armed_forces
+add_ideas = GER_endsieg
+
 set_global_flag = fall_of_france
 set_global_flag = end_of_norway
 set_global_flag = end_of_poland

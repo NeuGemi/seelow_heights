@@ -77,7 +77,7 @@ units = {
 		}
 		task_force = {
 			name = "III. U-Boots-Flot."
-			location = 6176	
+			location = 53	
 			ship = { ordered_name = 37 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }
 			ship = { ordered_name = 38 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }
 			ship = { ordered_name = 39 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }
