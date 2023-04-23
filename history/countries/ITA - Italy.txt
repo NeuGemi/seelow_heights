@@ -897,7 +897,7 @@ if = {
 1945.1.1 = {
 
 		add_ideas = surrender_limit
-		set_cosmetic_tag = "ITA_PUPPET"
+		set_cosmetic_tag = ITA_rsi
 }
 
 

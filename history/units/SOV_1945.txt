@@ -1781,7 +1781,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1790,7 +1790,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1799,7 +1799,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1808,7 +1808,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1817,7 +1817,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1826,7 +1826,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1835,7 +1835,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1844,16 +1844,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9661
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1925,70 +1916,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 9648
+		location = 9661
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2213,7 +2141,43 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3510
+		location = 3545
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3545
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3545
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3545
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3545
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2249,7 +2213,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3510
+		location = 3485
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2258,7 +2222,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3510
+		location = 3485
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2267,7 +2231,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3510
+		location = 3485
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2276,7 +2240,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3510
+		location = 3485
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2285,43 +2249,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 3283
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 3283
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 3283
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 3283
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 3283
+		location = 3485
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -3281,7 +3209,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11666
+		location = 3700
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -3352,12 +3280,6 @@ units = {
       division= {			
 		name = "9ya Tankovaya Diviziya"		
 		location = 11467
-		division_template = "Tankovaya Diviziya"			
-		start_experience_factor = 0.3
-	}
-      division= {			
-		name = "23ya Tankovaya Diviziya"		
-		location = 9648
 		division_template = "Tankovaya Diviziya"			
 		start_experience_factor = 0.3
 	}

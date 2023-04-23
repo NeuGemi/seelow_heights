@@ -97,7 +97,7 @@ set_popularities = {
 
 1945.1.1 = {
 
-		add_ideas = surrender_limit
+	add_ideas = surrender_limit
 }
 
 create_country_leader = {

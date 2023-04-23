@@ -573,6 +573,8 @@ create_intelligence_agency = {
 remove_ideas = rudolf_hess
 remove_ideas = erwin_rommel
 
+set_cosmetic_tag = GER_greater_german_reich
+#set_cosmetic_tag = GER_GREATER_GERMANY
 add_ideas = GER_paralyzed_armed_forces
 add_ideas = GER_endsieg
 
@@ -622,6 +624,21 @@ add_political_power = 1998
 	set_autonomy = {
 		target = CRO
 		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = HOL
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BLR
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NOR
+		autonomous_state = autonomy_reichskommissariat
 	    freedom_level = 0.2
 	}
 	set_autonomy = {
@@ -837,6 +854,30 @@ add_ideas = {
 				enemy = SOV
 			}
 		}
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		BLR = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		HOL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		NOR = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
 		HUN = {
 			add_to_war = {
 				targeted_alliance = GER
@@ -861,31 +902,30 @@ add_ideas = {
 				enemy = SOV
 			}
 		}
-		SER = {
-			add_to_war = {
-				targeted_alliance = GER
-				enemy = SOV
-			}
-		}
-
-		MON = {
-			add_to_war = {
-				targeted_alliance = SOV
-				enemy = GER
-			}
-		}
-		TAN = {
-			add_to_war = {
-				targeted_alliance = SOV
-				enemy = GER
-			}
-		}
 
 	declare_war_on = {
 			target = ENG
 			type = annex_everything
 		}
 
+		HOL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		NOR = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		BLR = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
 		BUL = {
 			add_to_war = {
 				targeted_alliance = GER
@@ -985,12 +1025,6 @@ add_ideas = {
 			}
 		}
 		FRA = {
-			add_to_war = {
-				targeted_alliance = ENG
-				enemy = GER
-			}
-		}
-		HOL = {
 			add_to_war = {
 				targeted_alliance = ENG
 				enemy = GER

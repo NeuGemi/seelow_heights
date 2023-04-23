@@ -18,13 +18,20 @@ state={
 			air_base = 4
 			9262 = {
 				naval_base = 1
+				bunker = 10
 			}
 			dockyard = 1
+			3194 = {
+				bunker = 10
+			}
+			11246 = {
+				bunker = 10
+			}
 		}
 		add_core_of = LAT
 		1945.1.1 = {
-			owner = GER
-			controller = GER
+			owner = BLR
+			controller = BLR
 		}
 	}
 

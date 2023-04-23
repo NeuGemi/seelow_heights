@@ -25,6 +25,9 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 6
+			9570 = {
+				bunker = 10
+			}
 		}
 		add_core_of = GER
 		add_core_of = SIL
@@ -42,8 +45,7 @@ state={
 			GER = {
 				set_province_controller = 11517
 				set_province_controller = 6534
-				set_province_controller = 3545
-				set_province_controller = 3485
+				set_province_controller = 9570
 				set_province_controller = 9570
 			}
 		}

@@ -15,12 +15,15 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
+			3525 = {
+				bunker = 10
+			}
 		}
 		add_core_of = LAT
 		1945.1.1 = {
 			owner = SOV
 			controller = SOV
-			GER = {
+			BLR = {
 				set_province_controller = 3525
 			}
 		}

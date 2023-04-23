@@ -24,6 +24,7 @@ country_event = {
 						state = 7 # Holland
 						state = 763 # Königsberg
 						state = 190 # Kurland
+						state = 809
 						state = 58 # Mecklenburg
 						state = 61 # Schleswig-Holstein
 						state = 9
@@ -31,6 +32,10 @@ country_event = {
 						state = 848
 						state = 153
 						state = 39
+						state = 23
+						state = 30
+						state = 14
+						state = 29
 					}
 				}
 				set_state_flag = ALLIES_unplanned_offensive_flag

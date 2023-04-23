@@ -33,13 +33,13 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
    		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 3 }
-        artillery_brigade = { x = 3 y = 0 }
-        anti_tank_brigade = { x = 4 y = 0 }
+        artillery_brigade = { x = 2 y = 0 }
+        anti_tank_brigade = { x = 2 y = 1 }
 	}
 	support = {
 			recon = { x = 0 y = 0 }
@@ -65,14 +65,14 @@ division_template = {
 		mountaineers = { x = 0 y = 3 }
 		mountaineers = { x = 1 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
-        anti_tank_brigade = { x = 4 y = 0 }
+        anti_tank_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		    recon = { x = 0 y = 0 }
 			engineer = { x = 0 y = 1 }
 			artillery = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
-			signal_company = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -138,15 +138,15 @@ division_template = {
 		motorized = { x = 2 y = 2 }
 		motorized = { x = 0 y = 3 }
 		motorized = { x = 1 y = 3 }
-        mot_anti_tank_brigade = { x = 4 y = 0 }
-        mot_anti_tank_brigade = { x = 4 y = 1 }
+        mot_anti_tank_brigade = { x = 3 y = 0 }
+        mot_anti_tank_brigade = { x = 3 y = 1 }
 	}
 	support = {
        		recon = { x = 0 y = 0 }
 			engineer = { x = 0 y = 1 }
 			artillery = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
-			signal_company = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -172,10 +172,9 @@ division_template = {
 	support = {
 	   		mot_recon = { x = 0 y = 0 }
 		 	engineer = { x = 0 y = 1 }
-	    	artillery = { x = 0 y = 2 }
-			anti_tank = { x = 0 y = 3 }
-			field_hospital = { x = 0 y = 4 }
-			signal_company = { x = 0 y = 3 }
+			anti_tank = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 		}
 		priority = 2
 }
@@ -198,7 +197,7 @@ division_template = {
 			engineer = { x = 0 y = 1 }
 			logistics_company = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
-			signal_company = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -222,7 +221,7 @@ division_template = {
 			engineer = { x = 0 y = 1 }
 			artillery = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
-			signal_company = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -244,10 +243,9 @@ division_template = {
 	support = {
 	   		mot_recon = { x = 0 y = 0 }
 		 	engineer = { x = 0 y = 1 }
-	    	artillery = { x = 0 y = 2 }
-			anti_tank = { x = 0 y = 3 }
-			field_hospital = { x = 0 y = 4 }
-			signal_company = { x = 0 y = 3 }
+			anti_tank = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 		}
 		priority = 2
 }
@@ -268,17 +266,16 @@ division_template = {
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 3 }
         artillery_brigade = { x = 3 y = 0 }
-        anti_tank_brigade = { x = 4 y = 0 }
-        anti_tank_brigade = { x = 4 y = 1 }
+        anti_tank_brigade = { x = 3 y = 1 }
+        anti_tank_brigade = { x = 3 y = 2 }
 
 	}
 	support = {
 	   		recon = { x = 0 y = 0 }
 		 	engineer = { x = 0 y = 1 }
-	    	artillery = { x = 0 y = 2 }
-			anti_tank = { x = 0 y = 3 }
-			field_hospital = { x = 0 y = 4 }
-			signal_company = { x = 0 y = 3 }
+			anti_tank = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
 		}
 		priority = 2
 }
@@ -295,8 +292,8 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 	}
 	support = {
-			engineer = { x = 0 y = 1 }
-			field_hospital = { x = 0 y = 3 }
+			engineer = { x = 0 y = 0 }
+			field_hospital = { x = 0 y = 1 }
 	}
 	priority = 0
 }
@@ -1318,7 +1315,7 @@ units = {
 	}
 	division= {
 		name = "4. Gebirgs-Division"
-		location = 3545
+		location = 11414
 		division_template = "Gebirgs-Division"
 		start_experience_factor = 0.3
 	}
@@ -1327,7 +1324,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 73
 		}
-		location = 9570
+		location = 445
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -1339,19 +1336,19 @@ units = {
 	}
 	division= {
 		name = "9. Romanian Divizia de Infanterie"
-		location = 3545
+		location = 11414
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 	}
 	division= {
 		name = "19. Romanian Divizia de Infanterie"
-		location = 3485
+		location = 445
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 	}
 	division= {
 		name = "97. Jäger-Division"
-		location = 3485
+		location = 494
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -1360,7 +1357,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 98
 		}
-		location = 6485
+		location = 494
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -1369,7 +1366,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 79
 		}
-		location = 6485
+		location = 421
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -1378,7 +1375,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 370
 		}
-		location = 6485
+		location = 421
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 	}
@@ -1428,6 +1425,12 @@ units = {
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
     }
+	division= {
+		name = "16. Hungarian Gyalogdandár"
+		location = 3583
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -1657,23 +1660,41 @@ units = {
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.30
     }
+	division= {
+		name = "2. Hungarian Gyalogdandár"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "1. Hungarian Gyalogdandár"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "23. Hungarian Gyalogdandár"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
 	division = {
 		name = "5. Waffen SS-Division 'Wiking'"
-		location = 9527
+		location = 11666
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
 	}
     division= {
 	    name = "3. Panzer-Division"
-	    location = 9527
+	    location = 11666
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	  	    start_equipment_factor = 0.50 
     }
     division= {
 	    name = "1. Panzer-Division"
-	    location = 704
+	    location = 11666
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	  	    start_equipment_factor = 0.50 
@@ -1724,41 +1745,41 @@ units = {
 	}
 	division = {
 		name = "12. Waffen SS-Division 'Hitlerjugend'"
-		location = 9679
+		location = 9648
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.70
 	}
     division= {
 	    name = "710. Infanterie-Division"
-	    location = 9679
+	    location = 9648
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
     }
     division= {
 	    name = "Kampfgruppe Oberst Staudinger"
-	    location = 9679
+	    location = 9648
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.50
     }
     division= {
 	    name = "Kampfgruppe Oberst Folkmann"
-	    location = 653
+	    location = 9648
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.50
     }
 	division = {
 		name = "2. Waffen SS-Division 'Das Reich'"
-		location = 653
+		location = 9648
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.70
 	}
 	division = {
 		name = "3. Waffen SS-Division 'Totenkopf'"
-		location = 653
+		location = 9648
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.70
@@ -1958,7 +1979,7 @@ units = {
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 362
+				name_order = 11265
 		}
 		location = 6973
 		division_template = "Infanterie-Division"
