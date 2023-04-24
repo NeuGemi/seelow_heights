@@ -1,5 +1,26 @@
 ﻿l_english:  
+### Cosmetic Tags ###
 ITA_PUPPET:0 "Italian Social Republic"
 SLO_PUPPET:0 "Slovak Republic"
 GER_GREATER_GERMANY:0 "Greater German Reich"
+FRA_PROVISIONAL:0 "French Provisional Government"
+
+### Ideas ###
 surrender_limit:0 "Endsieg"
+GER_totalen_krieg_doctrine:0 "Totalen Krieg Doctrine"
+GER_shattered_wehrmacht:0 "A Shattered Wehrmacht"
+GER_endsiegmod:0 "Endsieg"
+GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war would continue for much longer§!"
+
+### Events ###
+
+
+### Bookmarks ###
+GER_SEELOW_DESC:0 "Germany is on its last legs, what was once the fiercest, most feared and the most brutal country on earth has been reduced to nothing but a former shell of itself. Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
+ITA_SEELOW_DESC:0 ""
+CRO_SEELOW_DESC:0 ""
+SLO_SEELOW_DESC:0 ""
+JAP_SEELOW_DESC:0 ""
+MAN_SEELOW_DESC:0 ""
+MEN_SEELOW_DESC:0 ""
+SIA_SEELOW_DESC:0 ""
