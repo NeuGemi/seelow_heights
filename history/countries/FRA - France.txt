@@ -459,6 +459,8 @@ if = {
 
 1945.1.1 = {
 
+
+set_cosmetic_tag = FRA_PROVISIONAL
 retire_character = FRA_leon_blum
 retire_character = FRA_pierre_laval
 retire_character = FRA_edouard_daladier

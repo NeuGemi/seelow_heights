@@ -572,11 +572,26 @@ create_intelligence_agency = {
 
 remove_ideas = rudolf_hess
 remove_ideas = erwin_rommel
+remove_ideas = GER_autarky_idea
+remove_ideas = GER_grosraumwirtschaft 
+remove_ideas = GER_atlantikwall_idea  
+remove_ideas = GER_ostwall_idea 
+
+# Part of 20 July plot or KIA or relieved of command
+retire_character = GER_erwin_rommel
+retire_character = GER_friedrich_paulus
+retire_character = GER_rudolf_hess
+retire_character = GER_gunther_von_kluge
+retire_character = GER_franz_halder
+retire_character = GER_wilhelm_canaris
+retire_character = GER_ludwig_beck
+retire_character = GER_erwin_von_witzleben
+retire_character = GER_wilhelm_ritter_von_leeb
 
 set_cosmetic_tag = GER_greater_german_reich
-#set_cosmetic_tag = GER_GREATER_GERMANY
-add_ideas = GER_paralyzed_armed_forces
-add_ideas = GER_endsieg
+add_ideas = GER_shattered_wehrmacht
+add_ideas = GER_endsiegmod
+add_ideas = GER_totalen_krieg_doctrine
 
 set_global_flag = fall_of_france
 set_global_flag = end_of_norway
@@ -588,13 +603,13 @@ set_global_flag = end_of_belgium
 set_global_flag = fall_of_warsaw_ger
 set_global_flag = FRA_already_surrendered
 
-set_stability = 0.30
-set_war_support = 0.50
+set_stability = 0.58
+set_war_support = 0.10
 add_command_power = 100
 add_political_power = 1998
 
     unlock_national_focus = GER_danzig_or_war
-    complete_national_focus = GER_grosraumwirtschaft
+    unlock_national_focus = GER_grosraumwirtschaft
     complete_national_focus = GER_align_romania
     complete_national_focus = GER_align_hungary
     complete_national_focus = GER_integrate_war_economies
@@ -607,8 +622,8 @@ add_political_power = 1998
     complete_national_focus = GER_naval_effort
     complete_national_focus = GER_anti_comitern_pact
     unlock_national_focus = GER_ussr_war_goal
-    complete_national_focus = GER_atlantikwall
-    complete_national_focus = GER_ostwall
+    unlock_national_focus = GER_atlantikwall
+    unlock_national_focus = GER_ostwall
     complete_national_focus = GER_form_the_reichskommissariats
     complete_national_focus = GER_u_boat_effort
 
