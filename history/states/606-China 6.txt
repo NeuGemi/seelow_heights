@@ -1,0 +1,49 @@
+state={
+	id=606
+	name="STATE_606"
+	resources={
+		steel=11.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7222 1 
+		}
+		1945.1.1 = {
+			controller = JAP
+			buildings = {
+				industrial_complex = 3
+				infrastructure = 3 #was: 6
+				air_base = 1
+				arms_factory = 1
+			}		
+			CHI = {
+				set_province_controller = 10079
+				set_province_controller = 9937
+				set_province_controller = 4079
+				set_province_controller = 10064
+				set_province_controller = 4158
+				set_province_controller = 4203
+				set_province_controller = 7540
+			}
+		}
+
+	}
+
+	provinces={
+		1083 1146 4079 4158 4203 7035 7094 7222 9937 10008 10017 10040 10064 10079 11916 11994 12036 12061 
+	}
+	manpower=18265400
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=2.0 
+}
