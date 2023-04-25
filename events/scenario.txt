@@ -1,4 +1,4 @@
-add_namespace = 1945
+add_namespace = scenario
 add_namespace = offensives
 
 # Add Unplanned Offensives
@@ -125,9 +125,9 @@ country_event = {
 
 # Himmler's Betrayal - April 28 1945
 country_event = {
-	id = 1945.2
-	title = 1945.2.t
-	desc = 1945.2.d	
+	id = scenario.2
+	title = scenario.2.t
+	desc = scenario.2.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -136,16 +136,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.1.a
+		name = scenario.2.a
 		retire_character = GER_heinrich_himmler
 	}
 }
 
 # Fegeleins's Execution April 28 1945
 country_event = {
-	id = 1945.3
-	title = 1945.3.t
-	desc = 1945.3.d	
+	id = scenario.3
+	title = scenario.3.t
+	desc = scenario.3.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -154,15 +154,15 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.2.a
+		name = scenario.3.a
 	}
 }
 
 # Birth of the Flensburg Government 2 May 1945
 country_event = {
-	id = 1945.4
-	title = 1945.4.t
-	desc = 1945.4.d	
+	id = scenario.4
+	title = scenario.4.t
+	desc = scenario.4.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -171,15 +171,15 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.3.a
+		name = scenario.4.a
 	}
 }
 
 # Adolf Hitler Commits Suicide April 30 1945
 country_event = {
-	id = 1945.5
-	title = 1945.5.t
-	desc = 1945.5.d	
+	id = scenario.5
+	title = scenario.5.t
+	desc = scenario.5.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -188,7 +188,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.4.a
+		name = scenario.5.a
 		retire_character = GER_adolf_hitler
 		create_country_leader = {
 			name = "Karl Dönitz"
@@ -205,9 +205,9 @@ country_event = {
 
 # Battle of Castle Itter May 5 1945
 country_event = {
-	id = 1945.6
-	title = 1945.6.t
-	desc = 1945.6.d	
+	id = scenario.6
+	title = scenario.6.t
+	desc = scenario.6.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -216,16 +216,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.5.a
+		name = scenario.6.a
 	}
 
 }
 
 # Prague Uprising May 5 1945
 country_event = {
-	id = 1945.7
-	title = 1945.7.t
-	desc = 1945.7.d	
+	id = scenario.7
+	title = scenario.7.t
+	desc = scenario.7.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -234,7 +234,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.6.a
+		name = scenario.7.a
 		load_oob = "prague_uprising"
 	}
 
@@ -242,9 +242,9 @@ country_event = {
 
 # Mussolini Captured and Executed April 28 1945
 country_event = {
-	id = 1945.8
-	title = 1945.8.t
-	desc = 1945.8.d	
+	id = scenario.8
+	title = scenario.8.t
+	desc = scenario.8.d	
 	picture = GFX_report_event_soviet_tanks
 
 
@@ -253,7 +253,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = 1945.6.a
+		name = scenario.8.a
 		retire_character = ITA_benito_mussolini
 	}
 
@@ -261,7 +261,7 @@ country_event = {
 
 
 country_event = {
-	id = 1945.10
+	id = scenario.10
 
 	fire_only_once = yes
 

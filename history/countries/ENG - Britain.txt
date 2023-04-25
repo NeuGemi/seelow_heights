@@ -634,6 +634,7 @@ if = {
 		add_to_faction = USA
 		add_to_faction = PHI
 		add_to_faction = MEX
+		add_to_faction = GRE
 
     complete_national_focus = ENG_motorized_focus
     complete_national_focus = uk_industrial_focus

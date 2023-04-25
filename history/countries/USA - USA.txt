@@ -424,6 +424,7 @@ recruit_character = USA_harry_white
 		}
 
 		remove_ideas = MTG_naval_treaty_adherent
+		remove_ideas = USA_neutrality_act
 
 		add_ideas = {
 			war_economy
