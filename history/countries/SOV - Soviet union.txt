@@ -1277,6 +1277,24 @@ if = {
 
 1945.1.1 = {
 
+
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+
+		add_to_faction = ALB
+		add_to_faction = ROM
+		add_to_faction = BUL
+		add_to_faction = YUG
+
+
 		complete_national_focus = SOV_secure_the_administration
 		complete_national_focus = SOV_the_collectivization_process
 		complete_national_focus = SOV_organization_centralization_discipline

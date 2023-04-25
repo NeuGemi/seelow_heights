@@ -136,7 +136,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.1.a
+		name = scenario.2.a
 		retire_character = GER_heinrich_himmler
 	}
 }
@@ -154,7 +154,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.2.a
+		name = scenario.3.a
 	}
 }
 
@@ -171,7 +171,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.3.a
+		name = scenario.4.a
 	}
 }
 
@@ -188,7 +188,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.4.a
+		name = scenario.5.a
 		retire_character = GER_adolf_hitler
 		create_country_leader = {
 			name = "Karl Dönitz"
@@ -216,7 +216,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.5.a
+		name = scenario.6.a
 	}
 
 }
@@ -234,7 +234,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.6.a
+		name = scenario.7.a
 		load_oob = "prague_uprising"
 	}
 
@@ -253,7 +253,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = scenario.6.a
+		name = scenario.8.a
 		retire_character = ITA_benito_mussolini
 	}
 

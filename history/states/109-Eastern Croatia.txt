@@ -20,7 +20,7 @@ state={
 		1945.1.1 = {
 			owner = CRO
 			controller = CRO
-			SOV = {
+			YUG = {
 				set_province_controller = 11580
 			}
 		}
