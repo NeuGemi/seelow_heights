@@ -1,0 +1,15 @@
+GER_oberkommando = {                             			 
+	picture = GFX_decision_cat_picture_generic_border_conflicts
+	icon = GFX_decision_category_border_conflicts
+	
+	priority = {
+		base = 10
+	}
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		has_war = yes
+	}
+}

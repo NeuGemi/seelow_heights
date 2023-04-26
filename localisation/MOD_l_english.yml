@@ -17,6 +17,15 @@ GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war woul
 ### Events ###
 
 
+
+### Decisions ###
+GER_oberkommando:0 "Oberkommando Des Heeres"
+GER_hold_holland:0 "Festung Holland"
+GER_hold_holland_desc:0 "Around 150 000 German soldiers of the Oberbefehlshaber Niederlande are destined to hold the Netherlands, cutting off vital supplies from the enemy aswell as diverting reinforcements from the allied 12th and 21st Army Group."
+GER_steiner_attack:0 "Steiner's Counterattack"
+GER_steiner_attack_desc:0 "Army Detachment Steiner is a corps-sized army ordered by Hitler to counterattack the northern pincer of the Red Army's assault on Berlin. "
+GER_hold_vienna:0 "Hold Vienna"
+
 ### Bookmarks ###
 GER_SEELOW_DESC:0 "Germany is on its last legs, what was once the fiercest, most feared and the most brutal country on earth has been reduced to nothing but a former shell of itself. Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
 ITA_SEELOW_DESC:0 ""
