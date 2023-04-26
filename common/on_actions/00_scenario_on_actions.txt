@@ -1,0 +1,10 @@
+on_actions = { 
+	on_startup = {
+		effect = {
+			GER = {
+				country_event = { id = intro.1 }
+				country_event = { id = offensives.1 }
+			}
+		}
+	}
+}

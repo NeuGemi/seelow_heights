@@ -3,12 +3,9 @@ GER_oberkommando = {
 		icon = generic_civil_support 
 
 		available = {
-			NOT = {
-				HOL = {
-					controls_state = 7			
-				}		
+			HOL = {
+				controls_state = 7			
 			}
-
 		}
 
 		fire_only_once = yes
@@ -37,10 +34,8 @@ GER_oberkommando = {
 		icon = generic_civil_support 
 
 		available = {
-			NOT = {
-				GER = {
-					controls_state = 4		
-				}		
+			GER = {
+				controls_state = 4			
 			}
 
 		}
@@ -71,10 +66,8 @@ GER_oberkommando = {
 		icon = generic_civil_support 
 
 		available = {
-			NOT = {
-				GER = {
-				controls_state = 64			
-				}	
+			GER = {
+			controls_state = 64			
 			}
 		}
 
@@ -85,7 +78,7 @@ GER_oberkommando = {
 			tag = GER
 		}
 		activation = {
-			date > 
+			date > 1945.4.16
 			GER = {
 				controls_state = 64			
 			}				

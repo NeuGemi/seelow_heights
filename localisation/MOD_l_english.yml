@@ -15,7 +15,9 @@ GER_endsiegmod:0 "Endsieg"
 GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war would continue for much longer§!"
 
 ### Events ###
-
+intro.1.t:0 "Final Days of the Reich"
+intro.1.d:0 "The end of the war is near.\n\nThe Red Army's stunning success of the Vistula-Oder Offensive has laid the groundworks for an inevitable assault on Berlin. The defense of Berlin is now in the hands of a motley force of Hitlerjugend, Volkssturm units and the depleted 9th Army.\n\nMeanwhile, in the west, Allied forces continue to advance deeper into German territory and have managed to encircle Walter Model's Army Group B in the heart of Germany's industrial region. The Western Front now consists of Kampfgruppe's and depleted divisions, some existing only on paper."
+intro.1.a:0 "So it begins..."
 
 
 ### Decisions ###
