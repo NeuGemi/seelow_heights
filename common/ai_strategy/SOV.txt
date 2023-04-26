@@ -10,6 +10,70 @@
 # protect
 # influence
 
+SOV_blitzkrieg  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		date > 1943.1.1 
+		has_war_with = GER
+	}
+
+	abort = {
+		SOV = {
+			controls_province = 6521			
+		}
+
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		state = 4
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+}
+
+SOV_blitzkrieg_2  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		date > 1943.1.1 
+		has_war_with = GER
+	}
+
+	abort = {
+		SOV = {
+			controls_province = 11666
+		}
+
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		state = 64
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+}
+
 SOV_unit_production = {
 	allowed = {
 		original_tag = SOV

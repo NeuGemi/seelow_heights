@@ -82,5 +82,26 @@ ideas = {
             war_support_factor 0.1
             }       
         }
+     GER_economic_collapse = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = german_advisors
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            repair_speed_factor = -0.78
+            production_factory_efficiency_gain_factor = -0.56
+            production_speed_buildings_factor = -0.89
+            consumer_goods_factor = 0.43
+            industrial_capacity_factory = -0.45
+            }       
+        }       
     }
 }

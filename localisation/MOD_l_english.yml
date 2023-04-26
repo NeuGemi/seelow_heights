@@ -10,6 +10,7 @@ YUG_PROVISIONAL:0 "Provisional Government of Democratic Yugoslavia"
 surrender_limit:0 "Endsieg"
 GER_totalen_krieg_doctrine:0 "Totalen Krieg Doctrine"
 GER_shattered_wehrmacht:0 "A Shattered Wehrmacht"
+GER_economic_collapse:0 "Economic Collapse"
 GER_endsiegmod:0 "Endsieg"
 GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war would continue for much longer§!"
 

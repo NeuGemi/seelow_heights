@@ -160,12 +160,6 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
-}
 
 1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
@@ -577,6 +571,7 @@ remove_ideas = GER_grosraumwirtschaft
 remove_ideas = GER_atlantikwall_idea  
 remove_ideas = GER_ostwall_idea 
 
+
 # Part of 20 July plot or KIA or relieved of command
 retire_character = GER_erwin_rommel
 retire_character = GER_friedrich_paulus
@@ -592,6 +587,7 @@ set_cosmetic_tag = GER_greater_german_reich
 add_ideas = GER_shattered_wehrmacht
 add_ideas = GER_endsiegmod
 add_ideas = GER_totalen_krieg_doctrine
+add_ideas = GER_economic_collapse
 
 set_global_flag = fall_of_france
 set_global_flag = end_of_norway
@@ -845,10 +841,14 @@ add_ideas = {
 	closed_economy
 	scraping_the_barrel
 	tot_economic_mobilisation
-	franz_halder
+	wilhelm_keitel
 	ferdinand_schorner
+	werner_von_fritsch
+	speer
+	donitz
 	heinz_guderian
 	joseph_goebbels
+	goering
 }
 
     declare_war_on = {
