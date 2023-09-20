@@ -168,7 +168,7 @@ country_event = {
 	id = scenario.2
 	title = scenario.2.t
 	desc = scenario.2.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_german_reichstag_bombed
 
 
 	fire_only_once = yes
@@ -215,6 +215,7 @@ country_event = {
 	}
 }
 
+### TOOD - integrate this into the fall of berlin event?
 # Adolf Hitler Commits Suicide April 30 1945
 country_event = {
 	id = scenario.5
@@ -229,6 +230,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.5.a
+
 		retire_character = GER_adolf_hitler
 		create_country_leader = {
 			name = "Karl Dönitz"
@@ -275,9 +277,10 @@ country_event = {
 
 	option = {	# 
 		name = scenario.7.a
-		load_oob = "prague_uprising"
+		SOV = {
+			load_oob = "prague_uprising"
+		}
 	}
-
 }
 
 # Mussolini Captured and Executed April 28 1945

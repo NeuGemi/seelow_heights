@@ -18,6 +18,22 @@ GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war woul
 intro.1.t:0 "Final Days of the Reich"
 intro.1.d:0 "The end of the war is near.\n\nThe Red Army's stunning success of the Vistula-Oder Offensive has laid the groundworks for an inevitable assault on Berlin. The defense of Berlin is now in the hands of a motley force of Hitlerjugend, Volkssturm units and the depleted 9th Army.\n\nMeanwhile, in the west, Allied forces continue to advance deeper into German territory and have managed to encircle Walter Model's Army Group B in the heart of Germany's industrial region. The Western Front now consists of Kampfgruppe's and depleted divisions, some existing only on paper."
 intro.1.a:0 "So it begins..."
+scenario.1.t:0 ""
+scenario.1.d:0 ""
+scenario.1.a:0 ""
+scenario.1.b:0 ""
+scenario.2.t:0 "Himmler's Betrayal"
+scenario.2.d:0 "The treacherous Heinrich Himmler have secretly attempted to sue for a separate peace with the Allied forces! \n\nHimmler has in the midst of chaos arranged negotiations with Count Folke Bernadotte, using his masseur, Felix Kersten as an intermediary. With an arrest of Himmler ordered by Hitler and the negotiations failed, he has since gone into hiding "
+scenario.2.a:0 "Betrayal, unveiled!"
+scenario.3.t:0 "Fegelein's Execution"
+scenario.3.d:0 "The deserting Hermann Fegelein, has been found by Reichssicherheitsdienst Peter Högl in his Berlin apartment preparing to flee to Sweden after refusing to participate in what he deems a 'suicide pact.' Fegelein has since his capture been tied as an accomplice to the betrayal of Himmler, and been promptly brought back to the Reichsbunker where he was sentenced to death."
+scenario.3.a:0 "Fegelein! Fegelein! Fegelein!"
+scenario.4.t:0 "Birth of the Flensburg Government"
+scenario.4.d:0 "As the allied forces advance on all fronts, Admiral Karl Dönitz assumes the role as Führer following Hitler's suicide. Situated in Flensburg, the new government is tasked with insurmountable task of adminstrating the unoccupied territories of the Reich."
+scenario.4.a:0 "A three week Reich."
+scenario.5.t:0 "Adolf Hitler Commits Suicide!"
+scenario.5.d:0 "Adolf Hitler has committed suicide in the Führerbunker following the Red Army's advances into the city."
+scenario.5.a:0 "The war is lost."
 
 
 ### Decisions ###
