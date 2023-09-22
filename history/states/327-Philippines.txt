@@ -1,0 +1,42 @@
+state=
+{
+	id=327
+	name="STATE_327" # Luzon
+	manpower = 3548684
+	
+	state_category = town
+	history=
+	{
+		owner = PHI
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 6
+			10265 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10265 15 
+		}
+		victory_points = {
+			1221 1 
+		}
+		add_core_of = PHI
+		1945.1.1 = {
+			JAP = {
+			set_province_controller = 10165
+			set_province_controller = 1288
+			set_province_controller = 10236
+			set_province_controller = 12236
+			}
+		}
+	}
+
+	provinces={
+		1221 1288 7275 7323 7351 10165 10236 10265 12236 
+	}
+
+	local_supplies=0.0 
+}

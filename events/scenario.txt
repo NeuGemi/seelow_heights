@@ -1,6 +1,78 @@
 add_namespace = scenario
 add_namespace = offensives
 add_namespace = intro
+add_namespace = scenarionukes
+
+# Hiroshima
+country_event = {
+	id = scenarionukes.1
+
+	fire_only_once = yes
+
+	trigger = {
+		JAP = {
+			has_capitulated = no 
+		}
+		USA = {
+			is_ai = yes
+		}
+		date > 1945.8.6
+	}
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+		USA = {
+			launch_nuke = {
+   	 			province = 1092
+    			controller = JAP
+    			use_nuke = no
+				}		
+		    }
+		}
+    }
+}
+
+# Nagasaki
+country_event = {
+	id = scenarionukes.2
+
+	fire_only_once = yes
+
+	trigger = {
+		JAP = {
+			has_capitulated = no 
+		}
+		USA = {
+			is_ai = yes
+		}
+		date > 1945.8.9
+	}
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+		USA = {
+			launch_nuke = {
+   	 			province = 9950
+    			controller = JAP
+    			use_nuke = no
+				}		
+		    }
+		}
+    }
+}
+
 
 # Add Unplanned Offensives
 country_event = {
@@ -130,8 +202,6 @@ country_event = {
 	desc = intro.1.d	
 	picture = GFX_report_event_german_reichstag_bombed
 
-
-	major = yes
 
 	fire_only_once = no
 

@@ -1,0 +1,329 @@
+﻿
+
+units = {
+	
+	
+
+	##### IJN Naval Forces (CO: Nagano) #####
+	### Rengo Kantai (Combined Fleet) (CO: Yamamoto) ###
+	fleet = {
+		name = "Rengo Kantai"			
+		naval_base = 1092  # Hiroshima
+		task_force = {				
+			name = "Honbu Kantai"
+			location = 1092  # Hiroshima
+			ship = { name = "Nagato" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
+			ship = { name = "Mutsu" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
+			ship = { name = "Tone" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Tone Class"} } }
+			ship = { name = "Chikuma" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Tone Class"} } }
+			ship = { name = "Kitakami" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
+			ship = { name = "Oi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
+		}
+		task_force = {
+			name = "1 Kantai"				# CO: Nagumo
+			location = 1092  # Hiroshima
+			ship = { name = "Fuso" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Yamashiro" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class"} } }
+			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class" } } }	
+			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class" } } }
+			ship = { name = "Haruna" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
+			ship = { name = "Aoba" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
+			ship = { name = "Kinugasa" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
+			ship = { name = "Furutaka" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
+			ship = { name = "Kako" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
+			ship = { name = "Abukuma" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
+			ship = { name = "Mikazuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class" } } }
+			ship = { name = "Yukaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class" } } }
+
+			# 20 Kuchiku Sentai
+			ship = { name = "Amagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+			ship = { name = "Asagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+			ship = { name = "Sagiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+			ship = { name = "Yugiri" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
+		}
+	}
+	
+	# Naval District Forces #
+	fleet = {
+		name = "Kaigun Yobikantai"			
+		naval_base = 1092  # Hiroshima
+		task_force = {
+			name = "Kure Kantai"
+			location = 1092  # Hiroshima
+			ship = { name = "Hosho" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hosho Class"} } 				
+				
+			}
+			ship = { name = "Sawakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Yakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			# 13 Kuchiku Sentai
+			ship = { name = "Wakatake" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Kuretake" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Sanae" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			# Minelayers
+			ship = { name = "Okinoshima" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Okinoshima Class" } } }
+			ship = { name = "Katsuriki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
+			# Submarine detachment
+			ship = { name = "Ro-26" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
+			ship = { name = "Ro-27" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
+			ship = { name = "Ro-28" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
+			ship = { name = "Ro-51" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
+			ship = { name = "Ro-56" definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Ro-26 Class" } } }
+		}
+		task_force = {
+			name = "Chinkai Kantai"
+			location = 4056  # Pusan
+			ship = { name = "Minekaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			# 14 Kuchiku Sentai
+			ship = { name = "Asagao" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Fuyo" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Karukaya" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+		}
+		task_force = {
+			name = "Ominato Kantai"
+			location = 9859  #Ominato
+			ship = { name = "Okikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			# 1 Kuchiku Sentai
+			ship = { name = "Kamikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Nokaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Namikaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+			ship = { name = "Numakaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class"} } }
+		}
+	}
+}
+
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	
+#####################
+### Ongoing Naval Production Sep 1 1939 ###
+		# CL (x2): "Katori" "Kashima"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "JAP" 
+				version_name = "Katori Class"
+			}
+			name = "Katori" 
+			requested_factories = 1
+			progress = 0.6
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "JAP" 
+				version_name = "Katori Class"
+			}
+			name = "Kashima" 
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		# DD Kagero class (x9): "Kagero" "Kuroshio" "Oyashio" "Hatsukaze" "Natsushio" "Yukikaze" "Hayashio" "Isokaze" "Shiranui"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Kagero" 
+			requested_factories = 1
+			progress = 0.85
+			amount = 1
+		}		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Kuroshio" 
+			requested_factories = 1
+			progress = 0.75
+			amount = 1
+		}		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Oyashio" 
+			requested_factories = 1
+			progress = 0.2
+			amount = 1
+		}		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Hatsukaze" 
+			requested_factories = 1
+			progress = 0.65
+			amount = 1
+		}		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Natsushio" 
+			requested_factories = 1
+			progress = 0.2
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Yukikaze" 
+			requested_factories = 1
+			progress = 0.75
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Hayashio" 
+			requested_factories = 1
+			progress = 0.20
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Isokaze" 
+			requested_factories = 1
+			progress = 0.10
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Kagero Class"
+			}
+			name = "Shiranui" 
+			requested_factories = 1
+			progress = 0.60
+			amount = 1
+		}		
+		# DD(CM) (x2): "Hatsutaka" "Aotaka"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Hatsutaka Class"
+			}
+			name = "Hatsutaka" 
+			requested_factories = 1
+			progress = 0.75
+			amount = 1
+		}		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "JAP" 
+				version_name = "Hatsutaka Class"
+			}
+			name = "Aotaka" 
+			requested_factories = 1
+			progress = 0.25
+			amount = 1
+		}		
+		# SS (x7): "I-9" "I-15" "I-16" "I-17" "I-18" "I-20" "I-22"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 9
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 15
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 16
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 17
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 18
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 20
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "JAP" 
+				version_name = "A1/B1 Class"
+			}
+			#ordered_name = 22
+			requested_factories = 1
+			progress = 0.1
+			amount = 1
+		}
+}

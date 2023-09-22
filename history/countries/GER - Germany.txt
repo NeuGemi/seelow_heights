@@ -930,6 +930,18 @@ add_ideas = {
 				enemy = GER
 			}
 		}
+    TAN = {
+			add_to_war = {
+				targeted_alliance = SOV
+				enemy = GER
+			}
+		}
+		MON = {
+			add_to_war = {
+				targeted_alliance = SOV
+				enemy = GER
+			}
+		}
 
 	declare_war_on = {
 			target = ENG

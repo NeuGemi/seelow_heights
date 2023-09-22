@@ -5,6 +5,9 @@ on_actions = {
 				country_event = { id = intro.1 }
 				country_event = { id = offensives.1 }
 			}
+			JAP = {
+				remove_ideas = JAP_tora_tora_tora_idea
+			}
 		}
 	}
 }
