@@ -195,7 +195,7 @@ country_event = {
 }
 
 
-# Scenario Intro
+# Scenario Intro for Germany
 country_event = {
 	id = intro.1
 	title = intro.1.t
@@ -212,6 +212,22 @@ country_event = {
 	}
 }
 
+# Scenario Intro for Japan
+country_event = {
+	id = intro.2
+	title = intro.2.t
+	desc = intro.2.d	
+	picture = GFX_report_event_german_reichstag_bombed
+
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = intro.1.a
+	}
+}
 
 # Goebbels' denunciation of Walter Model & Army Group B
 country_event = {
@@ -367,7 +383,9 @@ country_event = {
 
 	option = {	# 
 		name = scenario.8.a
-		retire_character = ITA_benito_mussolini
+		ITA = {
+			retire_character = ITA_benito_mussolini
+		}
 	}
 
 }

@@ -30,6 +30,7 @@ state={
 			USA = {
 				set_province_controller = 3561
 				set_province_controller = 3500
+				set_province_controller = 425
 			}
 		}
 	}

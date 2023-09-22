@@ -172,13 +172,13 @@ units = {
 	}
 	division= {
 		name = "70. US Infantry Division"
-		location = 3561
+		location = 425
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "97. US Infantry Division"
-		location = 3561
+		location = 425
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}

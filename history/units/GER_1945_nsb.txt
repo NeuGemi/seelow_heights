@@ -2503,21 +2503,21 @@ units = {
     }
     division= {
 	    name = "326. Volksgrenadier-Division"
-	    location = 11468
+	    location = 6487
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.30
     }
     division= {
 	    name = "277. Volksgrenadier-Division"
-	    location = 425
+	    location = 538
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.30
     }
    division= {
 	    name = "SS-Brigade 'Westfalen'"
-	    location = 425
+	    location = 6582
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.30
