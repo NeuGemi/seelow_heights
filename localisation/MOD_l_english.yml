@@ -25,7 +25,7 @@ scenario.1.d:0 ""
 scenario.1.a:0 ""
 scenario.1.b:0 ""
 scenario.2.t:0 "Himmler's Betrayal"
-scenario.2.d:0 "The treacherous Heinrich Himmler have secretly attempted to sue for a separate peace with the Allied forces! \n\nHimmler has in the midst of chaos arranged negotiations with Count Folke Bernadotte, using his masseur, Felix Kersten as an intermediary. With an arrest of Himmler ordered by Hitler and the negotiations failed, he has since gone into hiding "
+scenario.2.d:0 "The treacherous Heinrich Himmler have secretly attempted to sue for a separate peace with the Allied forces! \n\nHimmler has in the midst of chaos arranged negotiations with Count Folke Bernadotte, using his masseur, Felix Kersten as an intermediary. With an arrest of Himmler ordered by Hitler and the negotiations failed, he has since gone into hiding."
 scenario.2.a:0 "Betrayal, unveiled!"
 scenario.3.t:0 "Fegelein's Execution"
 scenario.3.d:0 "The deserting Hermann Fegelein, has been found by Reichssicherheitsdienst Peter Högl in his Berlin apartment preparing to flee to Sweden after refusing to participate in what he deems a 'suicide pact.' Fegelein has since his capture been tied as an accomplice to the betrayal of Himmler, and been promptly brought back to the Reichsbunker where he was sentenced to death."
@@ -34,7 +34,7 @@ scenario.4.t:0 "Birth of the Flensburg Government"
 scenario.4.d:0 "As the allied forces advance on all fronts, Admiral Karl Dönitz assumes the role as Führer following Hitler's suicide. Situated in Flensburg, the new government is tasked with insurmountable task of adminstrating the unoccupied territories of the Reich."
 scenario.4.a:0 "A three week Reich."
 scenario.5.t:0 "Adolf Hitler Commits Suicide!"
-scenario.5.d:0 "HITLER DEAD/ In the early hours of dawn, Adolf Hitler, Fuhrer and architect of the German Reich, was announced dead. The news of his death has shaken the German people to their core, and the world awaits Germany's next move in the dying embers of this war."
+scenario.5.d:0 "HITLER DEAD\n\n In the early hours of dawn, Adolf Hitler, Fuhrer and architect of the German Reich, was announced dead. The news of his death has shaken the German people to their core, and the world awaits Germany's next move in the dying embers of this war."
 scenario.5.a:0 "The war is lost."
 
 
@@ -47,7 +47,7 @@ GER_steiner_attack_desc:0 "Army Detachment Steiner is a corps-sized army ordered
 GER_hold_vienna:0 "Hold Vienna"
 
 ### Bookmarks ###
-GER_SEELOW_DESC:0 "Germany is on its last legs, what was once the fiercest, most feared and the most brutal country on earth has been reduced to nothing but a former shell of itself. Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
+GER_SEELOW_DESC:0 "Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
 ITA_SEELOW_DESC:0 ""
 CRO_SEELOW_DESC:0 ""
 SLO_SEELOW_DESC:0 ""

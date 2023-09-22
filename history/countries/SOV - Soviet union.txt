@@ -1243,6 +1243,7 @@ create_faction = Comintern
 add_to_faction = SOV
 add_to_faction = MON
 add_to_faction = TAN
+add_to_faction = FIN #AI Reasons
 
 if = {
 	limit = {
