@@ -1278,6 +1278,8 @@ if = {
 
 1945.1.1 = {
 
+		oob = "SOV_1945_nsb"
+
 
 	set_autonomy = {
 		target = ROM
@@ -1389,8 +1391,8 @@ if = {
 			armor_tech_2 = 1
 			armor_tech_3 = 1
 		}
-		set_oob = "SOV_1945"
 	}
+
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "SOV_1945_air_bba"
@@ -1409,6 +1411,9 @@ if = {
 			engines_3 = 1
 			engines_4 = 1
 			range_improvements = 1
+		}
+		else = {
+			set_oob = "SOV_1945_air_legacy"
 		}
 	}
 

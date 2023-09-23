@@ -1,0 +1,65 @@
+
+
+air_wings = {
+	126 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+	}
+	15 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 	
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }				
+	}
+	127 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 	
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }		
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }				
+	}
+	129 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 100  } 		
+	}
+	6 = {
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+	}
+	34 = {
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+	}
+	162 = {
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+		fighter_equipment_2 = { owner = "ENG" amount = 100 }			
+	}
+}

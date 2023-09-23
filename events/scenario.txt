@@ -217,7 +217,7 @@ country_event = {
 	id = intro.2
 	title = intro.2.t
 	desc = intro.2.d	
-	picture = GFX_report_event_german_reichstag_bombed
+	picture = GFX_report_event_japanese_reply
 
 
 	fire_only_once = no
@@ -225,7 +225,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {	# 
-		name = intro.1.a
+		name = intro.2.a
 	}
 }
 
@@ -289,7 +289,7 @@ country_event = {
 	id = scenario.4
 	title = scenario.4.t
 	desc = scenario.4.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_german_reichstag_gathering
 
 
 	fire_only_once = yes
@@ -336,7 +336,7 @@ country_event = {
 	id = scenario.6
 	title = scenario.6.t
 	desc = scenario.6.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_generic_battle
 
 
 	fire_only_once = yes

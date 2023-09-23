@@ -1,0 +1,201 @@
+air_wings = {
+	190 = {
+		fighter_equipment_1 = { owner = "GER" amount = 29 }		
+		fighter_equipment_1 = { owner = "GER" amount = 36 }		
+		fighter_equipment_2 = { owner = "GER" amount = 50 }		
+		fighter_equipment_2 = { owner = "GER" amount = 39 }		
+		transport_plane_equipment_1 = { owner = "GER" amount = 45 }			
+	}
+
+	#### Luftflotte 2: Italy ####
+	161 = {
+		fighter_equipment_1 = { owner = "GER" amount = 31 }		
+		CAS_equipment_2 =  { owner = "GER" amount = 23 }			
+
+	}
+	159 = {
+		tac_bomber_equipment_1 = { owner = "GER" amount = 16 } 		
+	}
+
+	#### Luftflotte 3: Western Germany and Holland ####	
+	7 = {
+		fighter_equipment_1 = { owner = "GER" amount = 15 }		
+		fighter_equipment_1 = { owner = "GER" amount = 51 }		
+		fighter_equipment_2 = { owner = "GER" amount = 5 } 	
+		fighter_equipment_2 = { owner = "GER" amount = 50 }	
+		tac_bomber_equipment_1 = { owner = "GER" amount = 100 } 	
+		transport_plane_equipment_1 = { owner = "GER" amount = 50 }		
+	}
+	56 = {
+		fighter_equipment_2 = { owner = "GER" amount = 47 }		
+		fighter_equipment_1 = { owner = "GER" amount = 39 }		
+		fighter_equipment_2 = { owner = "GER" amount = 59 }		
+		fighter_equipment_2 = { owner = "GER" amount = 35 }	
+		CAS_equipment_2 =  { owner = "GER" amount = 44 }	
+		tac_bomber_equipment_1 = { owner = "GER" amount = 80 } 		
+	}
+	59 = {
+		fighter_equipment_2 = { owner = "GER" amount = 43 }		
+		fighter_equipment_2 = { owner = "GER" amount = 54 }		
+		fighter_equipment_1 = { owner = "GER" amount = 63 }	
+		tac_bomber_equipment_1 = { owner = "GER" amount = 44 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 64 } 		
+	}
+	54= {
+		fighter_equipment_2 = { owner = "GER" amount = 67 }		
+		fighter_equipment_1 = { owner = "GER" amount = 27 }		
+		fighter_equipment_2 = { owner = "GER" amount = 50 }		
+		fighter_equipment_2 = { owner = "GER" amount = 48 }	
+		CAS_equipment_2 =  { owner = "GER" amount = 39 }	
+		tac_bomber_equipment_1 = { owner = "GER" amount = 29 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 12 } 		
+
+	}
+	50 = {
+		fighter_equipment_2 = { owner = "GER" amount = 50 }	
+		tac_bomber_equipment_1 = { owner = "GER" amount = 100  } 					
+		fighter_equipment_2 = { owner = "GER" amount = 52 } 	
+		transport_plane_equipment_1 = { owner = "GER" amount = 51 }		
+	}
+
+	#### Luftflotte 4: Hungary and Yugoslavia ####
+	75 = {
+		fighter_equipment_1 = { owner = "GER" amount = 23 }		
+		fighter_equipment_1 = { owner = "GER" amount = 36 }		
+		fighter_equipment_1 = { owner = "GER" amount = 24 }		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 25 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 13 } 
+		CAS_equipment_2 =  { owner = "GER" amount = 100 }			
+
+	}
+	4 = {
+		tac_bomber_equipment_1 = { owner = "GER" amount = 8 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 7 } 		
+		fighter_equipment_1 = { owner = "GER" amount = 26 }		
+		fighter_equipment_1 = { owner = "GER" amount = 24 }		
+		fighter_equipment_1 = { owner = "GER" amount = 19 }		
+		fighter_equipment_1 = { owner = "GER" amount = 4 }	
+		CAS_equipment_2 =  { owner = "GER" amount = 54 }				
+	}
+	
+	109 = {
+		fighter_equipment_2 = { owner = "GER"  amount = 46 }		
+		fighter_equipment_2 = { owner = "GER"  amount = 38 }		
+		tac_bomber_equipment_1 = { owner = "GER"  } 					
+		transport_plane_equipment_1 = { owner = "GER" amount = 39 }	
+		transport_plane_equipment_1 = { owner = "GER" amount = 31 }		
+	}
+
+
+	#### Luftflotte 5: Norway ####
+	110 = {
+		tac_bomber_equipment_1 = { owner = "GER" amount = 19 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 19 } 		
+		fighter_equipment_1 = { owner = "GER"  amount = 50 }
+		CAS_equipment_2 =  { owner = "GER" amount = 33 }		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 100 } 		
+		transport_plane_equipment_1 = { owner = "GER" amount = 57 }				
+	}
+	142 = {
+		fighter_equipment_2 = { owner = "GER" amount = 9 }		
+		fighter_equipment_1  = { owner = "GER"  amount = 10 }
+		fighter_equipment_1  = { owner = "GER"  amount = 10 }
+	}
+				
+	#### Luftflotte 6: East Prussia and Poland ####
+	62 = {
+		fighter_equipment_1 = { owner = "GER" amount = 35 }
+		fighter_equipment_1 = { owner = "GER" amount = 27 }		
+		fighter_equipment_1 = { owner = "GER" amount = 23 }		
+		fighter_equipment_1 = { owner = "GER" amount = 24 }		
+		fighter_equipment_1 = { owner = "GER" amount = 20 }		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 25 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 22 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 13 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 36 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 28 } 
+		fighter_equipment_1 = { owner = "GER" amount = 13 }			
+	}
+	61 = {
+		fighter_equipment_1 = { owner = "GER" amount = 30 }		
+		fighter_equipment_1 = { owner = "GER" amount = 46 }		
+		fighter_equipment_1 = { owner = "GER" amount = 51 }		
+		fighter_equipment_2 = { owner = "GER" amount = 82 }		
+		fighter_equipment_2 = { owner = "GER" amount = 90 }		
+		fighter_equipment_2 = { owner = "GER" amount = 100 }		
+		CAS_equipment_2 =  { owner = "GER" amount = 19 }			
+		CAS_equipment_2 =  { owner = "GER" amount = 60 }			
+		tac_bomber_equipment_1 = { owner = "GER" amount = 14} 					
+		transport_plane_equipment_1 = { owner = "GER" amount = 36 }		
+	}
+
+
+	#### Luftflotte Reich: Central Germany ####
+	64 = {
+		tac_bomber_equipment_1 = { owner = "GER" amount = 9 } 		
+		fighter_equipment_2 = { owner = "GER" amount = 50 }		
+		fighter_equipment_2 = { owner = "GER" amount = 50 }		
+		fighter_equipment_2 = { owner = "GER" amount = 50 }		
+		fighter_equipment_2 = { owner = "GER" amount = 19 } 		
+		fighter_equipment_1  = { owner = "GER"  amount = 24 }
+		fighter_equipment_1  = { owner = "GER"  amount = 20 }
+		tac_bomber_equipment_1 = { owner = "GER" amount = 100 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 14 } 		
+		fighter_equipment_1  = { owner = "GER"  amount = 48 }
+		tac_bomber_equipment_1 = { owner = "GER" amount = 86 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 10 } 			
+	}
+	9 = {
+		fighter_equipment_1  = { owner = "GER"  amount = 20 }
+		fighter_equipment_1  = { owner = "GER"  amount = 21 }
+		fighter_equipment_1  = { owner = "GER"  amount = 25 }
+		tac_bomber_equipment_1 = { owner = "GER" amount = 26 } 		
+		fighter_equipment_1  = { owner = "GER"  amount = 60 }
+		tac_bomber_equipment_1 = { owner = "GER" amount = 17 } 		
+		fighter_equipment_1 = { owner = "GER" amount = 74 }		
+		fighter_equipment_2 = { owner = "GER" amount = 10 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 25 } 		
+		tac_bomber_equipment_1 = { owner = "GER" amount = 44 } 	
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 4
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_2
+			creator = "GER" 
+		}
+		requested_factories = 4
+		progress = 0.2
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 100
+	}
+
+	
+}

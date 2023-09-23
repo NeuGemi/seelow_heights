@@ -507,6 +507,8 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+		oob = "JAP_1945_nsb" #Also applies to non NSB users
+
 complete_national_focus = JAP_spiritual_mobilization
 complete_national_focus = JAP_torpedo_cruisers 
 complete_national_focus = JAP_strike_south_doctrine
@@ -644,11 +646,10 @@ add_to_faction = SIA
 			armor_tech_2 = 1
 			armor_tech_3 = 1
 		}
-		set_oob = "JAP_1945_nsb"
 	}
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "ENG_1939_air_bba"
+			#set_air_oob = "ENG_1939_air_bba"
 			set_technology = {
 			improved_small_airframe = 1
 			advanced_small_airframe = 1

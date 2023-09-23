@@ -458,6 +458,8 @@ if = {
 
 1945.1.1 = {
 
+		oob = "FRA_1945"
+
 
 set_cosmetic_tag = FRA_PROVISIONAL
 retire_character = FRA_leon_blum
@@ -524,8 +526,8 @@ set_war_support = 0.100
 			armor_tech_2 = 1
 			armor_tech_3 = 1
 		}
-		set_oob = "FRA_1945"
 	}
+
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "FRA_1945_air_bba"
