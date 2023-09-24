@@ -35,6 +35,9 @@ state=
 				coastal_bunker = 1
 				bunker = 1
 			}
+			4099 = {
+				naval_base = 10
+			}
 		}
 
 		1945.1.1 = {		

@@ -1041,6 +1041,7 @@ units = {
 		location = 9999
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1050,6 +1051,7 @@ units = {
 		location = 7097
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1059,6 +1061,7 @@ units = {
 		location = 12483
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1068,6 +1071,7 @@ units = {
 		location = 7502
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1077,6 +1081,7 @@ units = {
 		location = 10377
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1086,6 +1091,7 @@ units = {
 		location = 12053
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1095,6 +1101,7 @@ units = {
 		location = 4125
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1104,6 +1111,7 @@ units = {
 		location = 12407
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1113,6 +1121,7 @@ units = {
 		location = 10404
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1122,6 +1131,7 @@ units = {
 		location = 10039
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1131,6 +1141,7 @@ units = {
 		location = 10431
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1140,6 +1151,7 @@ units = {
 		location = 12436
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1149,6 +1161,7 @@ units = {
 		location = 4085
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1158,6 +1171,7 @@ units = {
 		location = 1625
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1167,6 +1181,7 @@ units = {
 		location = 10459
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1176,6 +1191,7 @@ units = {
 		location = 4656
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1185,6 +1201,7 @@ units = {
 		location = 1023
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1194,6 +1211,7 @@ units = {
 		location = 7128
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1203,6 +1221,7 @@ units = {
 		location = 10121
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1212,6 +1231,7 @@ units = {
 		location = 7137
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1221,6 +1241,7 @@ units = {
 		location = 11941
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1230,6 +1251,7 @@ units = {
 		location = 12095
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1239,6 +1261,7 @@ units = {
 		location = 1120
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1248,6 +1271,7 @@ units = {
 		location = 11495
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1257,6 +1281,7 @@ units = {
 		location = 1053
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1266,6 +1291,7 @@ units = {
 		location = 9970
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1275,6 +1301,7 @@ units = {
 		location = 7004
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1284,6 +1311,7 @@ units = {
 		location = 9982
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1293,6 +1321,7 @@ units = {
 		location = 12350
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1302,6 +1331,7 @@ units = {
 		location = 1448
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1311,6 +1341,7 @@ units = {
 		location = 13143
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1320,6 +1351,7 @@ units = {
 		location = 1640
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1329,6 +1361,7 @@ units = {
 		location = 4050
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1338,6 +1371,7 @@ units = {
 		location = 7067
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1347,6 +1381,7 @@ units = {
 		location = 9843
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1356,6 +1391,7 @@ units = {
 		location = 7518
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1365,6 +1401,7 @@ units = {
 		location = 12008
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1374,6 +1411,7 @@ units = {
 		location = 12319
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1383,6 +1421,7 @@ units = {
 		location = 12392
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1392,42 +1431,47 @@ units = {
 		location = 4568
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 7909
+		location = 7974
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 7400
+		location = 4175
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 2061
+		location = 7603
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1566
+		location = 1607
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1437,6 +1481,7 @@ units = {
 		location = 4585
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1446,6 +1491,7 @@ units = {
 		location = 12449
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1455,6 +1501,7 @@ units = {
 		location = 4202
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1464,6 +1511,7 @@ units = {
 		location = 4019
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1473,6 +1521,7 @@ units = {
 		location = 1014
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1482,6 +1531,7 @@ units = {
 		location = 10344
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1491,15 +1541,17 @@ units = {
 		location = 4202
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1566
+		location = 1607
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1509,6 +1561,7 @@ units = {
 		location = 4585
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1518,6 +1571,7 @@ units = {
 		location = 1330
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1527,6 +1581,7 @@ units = {
 		location = 12299
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1536,6 +1591,7 @@ units = {
 		location = 10297
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1545,6 +1601,7 @@ units = {
 		location = 4652
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1554,6 +1611,7 @@ units = {
 		location = 10225
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1563,6 +1621,7 @@ units = {
 		location = 12268
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1572,6 +1631,7 @@ units = {
 		location = 7381
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1581,6 +1641,7 @@ units = {
 		location = 4608
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1590,6 +1651,7 @@ units = {
 		location = 10175
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1599,6 +1661,7 @@ units = {
 		location = 1208
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1608,6 +1671,7 @@ units = {
 		location = 10145
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1617,6 +1681,7 @@ units = {
 		location = 10153
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1626,6 +1691,7 @@ units = {
 		location = 7413
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1635,6 +1701,7 @@ units = {
 		location = 8235
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1644,6 +1711,7 @@ units = {
 		location = 10396
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1653,6 +1721,7 @@ units = {
 		location = 11004
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1662,6 +1731,7 @@ units = {
 		location = 10954
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1671,6 +1741,7 @@ units = {
 		location = 4393
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1680,6 +1751,7 @@ units = {
 		location = 7352
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1689,6 +1761,7 @@ units = {
 		location = 12222
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1698,6 +1771,7 @@ units = {
 		location = 7251
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1707,6 +1781,7 @@ units = {
 		location = 10234
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1716,6 +1791,7 @@ units = {
 		location = 4266
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1725,6 +1801,7 @@ units = {
 		location = 12265
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1734,6 +1811,7 @@ units = {
 		location = 4252
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 
 
@@ -1745,6 +1823,7 @@ units = {
 		location = 4368
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1754,6 +1833,7 @@ units = {
 		location = 12213
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1763,6 +1843,7 @@ units = {
 		location = 4423
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1772,6 +1853,7 @@ units = {
 		location = 10165
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1781,6 +1863,7 @@ units = {
 		location = 1288
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1790,6 +1873,7 @@ units = {
 		location = 12236
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1799,6 +1883,7 @@ units = {
 		location = 12236
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1808,6 +1893,7 @@ units = {
 		location = 1340
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1817,6 +1903,7 @@ units = {
 		location = 12112
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1826,6 +1913,7 @@ units = {
 		location = 1293
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1835,6 +1923,7 @@ units = {
 		location = 1293
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
@@ -1844,6 +1933,7 @@ units = {
 		location = 10300
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
 	}
 }
 
@@ -1854,7 +1944,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_2
 			creator = "JAP"
 		}
 		requested_factories = 8
@@ -1879,15 +1969,4 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_1
-			creator = "JAP" 
-			version_name = "Type 95 Ha-Go"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-
 }

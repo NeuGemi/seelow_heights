@@ -543,6 +543,8 @@ if = {
 
 1945.1.1 = {
 
+		set_fuel_ratio = 0.3
+
 		oob = "GER_1945_nsb"
 
 
@@ -587,6 +589,15 @@ if = {
 			set_oob = "GER_1945_air_legacy"
 		}
 	}
+
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "GER_1945_nsb"
+}
 
 	remove_ideas = GER_mefo_bills_1
 

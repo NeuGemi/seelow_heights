@@ -514,6 +514,15 @@ recruit_character = USA_harry_white
 		}
 	}
 
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "USA_1945_nsb"
+}
+
 	set_technology = { 
 		interwar_artillery = 1
 		interwar_antitank = 1

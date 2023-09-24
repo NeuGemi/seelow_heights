@@ -15,6 +15,7 @@ JAP_economic_collapse:0 "Decimated Arms Industry"
 GER_economic_collapse:0 "Economic Collapse"
 GER_endsiegmod:0 "Endsieg"
 GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war would continue for much longer§!"
+SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
 
 ### Events ###
 intro.1.t:0 "Final Days of the Reich"

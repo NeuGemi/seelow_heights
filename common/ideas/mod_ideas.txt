@@ -148,6 +148,23 @@ ideas = {
             consumer_goods_factor = 0.43
             industrial_capacity_factory = -0.45
             }       
-        }     
+        }    
+     SOV_berlin_strategic_offensive_operation = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = generic_morale_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            river_crossing_factor = -1.0
+            }       
+        }   
     }
 }

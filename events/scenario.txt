@@ -390,6 +390,27 @@ country_event = {
 
 }
 
+# Berlin Strategic Offensive Operation
+country_event = {
+	id = scenario.9
+	title = scenario.9.t
+	desc = scenario.9.d	
+	picture = GFX_report_event_soviet_tanks
+
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = scenario.9.a
+		SOV = {
+			add_timed_idea = { idea = SOV_berlin_strategic_offensive_operation  days = 16 }
+		}
+	}
+}
 
 country_event = {
 	id = scenario.10

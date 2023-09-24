@@ -507,7 +507,18 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+		set_fuel = 0.01
+
 		oob = "JAP_1945_nsb" #Also applies to non NSB users
+
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "JAP_1945_nsb"
+}
 
 complete_national_focus = JAP_spiritual_mobilization
 complete_national_focus = JAP_torpedo_cruisers 
