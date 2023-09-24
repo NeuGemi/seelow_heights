@@ -2569,7 +2569,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 256
 		}
-		location = 6421
+		location = 3474
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.30
@@ -2579,14 +2579,14 @@ units = {
 				is_name_ordered = yes
 				name_order = 416
 		}
-		location = 6421
+		location = 3474
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.30
 	}
 	division= {
 		name = "6. Waffen SS-Division 'Nord'"
-		location = 6421
+		location = 9416
 		division_template = "SS-Infanterie-Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.80

@@ -220,13 +220,13 @@ units = {
 	}
 	division= {
 		name = "11. US Armored Division"
-		location = 13116
+		location = 6421
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "26. US Infantry Division"
-		location = 13116
+		location = 6421
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}

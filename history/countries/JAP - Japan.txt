@@ -660,7 +660,7 @@ add_to_faction = SIA
 	}
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			#set_air_oob = "ENG_1939_air_bba"
+			set_air_oob = "JAP_1939_air_bba"
 			set_technology = {
 			improved_small_airframe = 1
 			advanced_small_airframe = 1

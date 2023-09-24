@@ -10,6 +10,124 @@
 # protect
 # influence
 
+# AST ast Australia australia
+AST_pacific = {
+	allowed = {
+		original_tag = AST
+	}
+	enable = {
+		has_war_with = JAP
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 150
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = pacific
+		value = 150
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		ratio = 0.05
+		area = pacific
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+
+}
+
+# USA usa
+USA_prioritize_home_islands = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_war_with = JAP
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = home_islands
+		value = 150
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = home_islands
+		value = 150
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		ratio = 0.05
+		area = home_islands
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+
+}
+
+# British Raj british raj RAJ
+RAJ_burma_campaign  = {
+	allowed = {
+		original_tag = RAJ
+	}
+
+	enable = {
+		has_war_with = JAP
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = burma
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = burma
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		area = burma
+
+		ratio = 1.0
+
+		priority = 1000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
 ENG_unit_production = {
 
 	allowed = {	original_tag = ENG }

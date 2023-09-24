@@ -126,10 +126,14 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
 
 	hidden = yes
-
 
     option = {
     ai_chance = {
@@ -160,7 +164,12 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
 
 	hidden = yes
 
@@ -316,6 +325,8 @@ country_event = {
 
 	option = {	# 
 		name = scenario.5.a
+
+		set_global_flag = scenario_hitler_suicide
 
 		retire_character = GER_adolf_hitler
 		create_country_leader = {

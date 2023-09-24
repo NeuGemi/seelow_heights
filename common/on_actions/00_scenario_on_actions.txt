@@ -20,6 +20,9 @@ on_actions = {
 			SOV = {
 				country_event = { id = scenario.9 days = 4 }
 			}
+			RAJ = {
+				add_timed_idea = { idea = RAJ_burmese_campaign days = 117 }
+			}
 		}
 	}
 }
