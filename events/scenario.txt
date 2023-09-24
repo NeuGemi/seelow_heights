@@ -120,6 +120,75 @@ country_event = {
     }
 }
 
+# Battle of Berlin
+country_event = {
+	id = offensives.4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_battleofberlin
+			every_state = {
+				limit = {
+					OR = {
+						state = 64 # Berlin
+						state = 68
+					}
+				}
+				set_state_flag = SOV_battleofberlin
+				add_dynamic_modifier = {
+					modifier = berlin_strategic_offensive
+				}
+			}
+		}
+    }
+}
+
+country_event = {
+	id = offensives.5
+
+	fire_only_once = yes
+
+	trigger = {
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
+
+	hidden = yes
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_battleofberlin
+			every_state = {
+				limit = {
+					OR = {
+						state = 64
+						state = 68
+					}
+				}
+				set_state_flag = SOV_battleofberlin_end
+				remove_dynamic_modifier = {
+					modifier = berlin_strategic_offensive
+				}
+			}
+		}
+    }
+}
+
 # Remove Unplanned Offensives - Czechia
 country_event = {
 	id = offensives.2
