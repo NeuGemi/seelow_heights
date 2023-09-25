@@ -5,6 +5,9 @@ SLO_PUPPET:0 "Slovak Republic"
 GER_GREATER_GERMANY:0 "Greater German Reich"
 FRA_PROVISIONAL:0 "French Provisional Government"
 YUG_PROVISIONAL:0 "Provisional Government of Democratic Yugoslavia"
+LAO_PUPPET:0 "Kingdom of Luang Prabang"
+VIN_PUPPET:0 "Empire of Vietnam"
+CAM_PUPPET:0 "Kingdom of Kampuchea"
 
 ### Province Modifiers ###
 berlin_strategic_offensive:0 "Berlin Strategic Offensive Operation"

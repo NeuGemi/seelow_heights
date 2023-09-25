@@ -395,6 +395,18 @@ if = {
 		target = MAN
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = LAO
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = CAM
+		autonomous_state = autonomy_integrated_puppet
+	}
 }
 if = {
 	limit = { 
@@ -411,6 +423,18 @@ if = {
 		target = MAN
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = LAO
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = CAM
+		autonomous_state = autonomy_puppet
+	}
 }
 if = {
 	limit = { 
@@ -422,6 +446,18 @@ if = {
 	}
 	set_autonomy = {
 		target = MAN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+	set_autonomy = {
+		target = LAO
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+	set_autonomy = {
+		target = CAM
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 }
@@ -539,6 +575,10 @@ complete_national_focus = JAP_strengthen_the_divine_wind
 remove_ideas = JAP_tora_tora_tora_idea
 
 add_to_faction = SIA
+add_to_faction = VIN
+add_to_faction = CAM
+add_to_faction = LAO
+
 
 	add_ideas = {
 		scraping_the_barrel
@@ -567,6 +607,48 @@ add_to_faction = SIA
 			add_to_war = {
 				targeted_alliance = JAP
 				enemy = USA
+			}
+		}
+		VIN = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		CAM = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		LAO = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		SIA = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}
+		VIN = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}
+		CAM = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}
+		LAO = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
 			}
 		}
 		#

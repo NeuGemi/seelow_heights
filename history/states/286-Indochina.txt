@@ -22,8 +22,8 @@ state={
 
 		}
 		1945.1.1 = {
-			owner = JAP
-			controller = JAP
+			owner = VIN
+			controller = VIN
 		}
 	}
 

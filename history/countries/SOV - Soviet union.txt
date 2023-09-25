@@ -1346,6 +1346,8 @@ if = {
 		complete_national_focus = SOV_the_modern_war_in_the_skies
 		complete_national_focus = SOV_improve_railway_network
 		complete_national_focus = SOV_policy_of_collective_security
+		complete_national_focus = SOV_prepare_a_war_with_japan
+		complete_national_focus = SOV_recover_the_kuril_islands
 
 
 
