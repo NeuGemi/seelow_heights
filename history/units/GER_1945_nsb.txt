@@ -2439,7 +2439,7 @@ units = {
 		location = 3271
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
 	}
     division= {		
 		division_name = {
@@ -2471,49 +2471,49 @@ units = {
 	    location = 526
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "Kampfgruppe Ettner"
 	    location = 526
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "Kampfgruppe Heidenreich"
 	    location = 11402
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "Kampfgruppe Großkreuz"
 	    location = 11402
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "26. Volksgrenadier-Division"
 	    location = 11468
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "326. Volksgrenadier-Division"
 	    location = 6487
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "277. Volksgrenadier-Division"
 	    location = 538
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
    division= {
 	    name = "SS-Brigade 'Westfalen'"
@@ -2545,14 +2545,14 @@ units = {
 	    location = 482
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "Kampfgruppe Schröder"
 	    location = 482
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
 	division= {		
 		division_name = {
@@ -2562,7 +2562,7 @@ units = {
 		location = 482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
 	}
 	division= {		
 		division_name = {
@@ -2572,7 +2572,7 @@ units = {
 		location = 3474
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
 	}
 	division= {		
 		division_name = {
@@ -2582,7 +2582,7 @@ units = {
 		location = 3474
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
 	}
 	division= {
 		name = "6. Waffen SS-Division 'Nord'"
@@ -2604,14 +2604,14 @@ units = {
 	    location = 9572
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "36. Volksgrenadier-Division"
 	    location = 9572
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
 
     ### 1. Armee ###

@@ -99,7 +99,7 @@ country_event = {
 						state = 190 # Kurland
 						state = 809
 						state = 58 # Mecklenburg
-						state = 61 # Schleswig-Holstein
+						#state = 61 # Schleswig-Holstein
 						state = 9
 						state = 69
 						state = 848
@@ -196,6 +196,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		date > 1945.5.8
 		GER = {
 			NOT = { controls_province = 6521 }
 		}
@@ -234,6 +235,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		date > 1945.5.5
 		GER = {
 			NOT = { controls_province = 6521 }
 		}
@@ -256,7 +258,7 @@ country_event = {
 						state = 763 # Königsberg
 						state = 190 # Kurland
 						state = 58 # Mecklenburg
-						state = 61 # Schleswig-Holstein
+						#state = 61 # Schleswig-Holstein
 						#Austria
 						state = 848
 						state = 153
@@ -417,7 +419,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.5.a
-
+		remove_ideas = GER_endsiegmod
 		set_global_flag = scenario_hitler_suicide
 
 		retire_character = GER_adolf_hitler
