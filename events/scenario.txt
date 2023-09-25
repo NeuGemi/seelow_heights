@@ -419,7 +419,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.5.a
-		remove_ideas = GER_endsiegmod
+		#remove_ideas = GER_endsiegmod
 		set_global_flag = scenario_hitler_suicide
 
 		retire_character = GER_adolf_hitler
