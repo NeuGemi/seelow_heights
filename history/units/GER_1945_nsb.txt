@@ -973,14 +973,14 @@ units = {
 		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
 	}
     division= {	
 	    name = "309. Berlin Division"
 		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
     }
 	division= {		
 		division_name = {
@@ -990,7 +990,7 @@ units = {
 		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
 	}
 	division= {		
 		division_name = {
@@ -1000,21 +1000,21 @@ units = {
 		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
 	}
     division= {
 	    name = "25. Panzergrenadier Division"
 	    location = 3207
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+	     start_equipment_factor = 0.30
     }  
     division= {
 	    name = "Kampfgruppe 1001 Nacht"
 	    location = 9496
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+	     start_equipment_factor = 0.30
     }  
     division= {		
 		division_name = {
@@ -1024,35 +1024,35 @@ units = {
 		location = 9496
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
 	}
     division= {
 	    name = "18. Panzergrenadier Division"
 	    location = 9496
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+	     start_equipment_factor = 0.30
     }  
     division= {
 	    name = "20. Panzergrenadier Division"
 	    location = 9496
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+	     start_equipment_factor = 0.30
     }  
    division= {
 	    name = "Panzer-Division 'Müncheberg'"
 	    location = 9496
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+	     start_equipment_factor = 0.30
     }
     division= {	
 	    name = "303. 'Döberitz' Infanterie-Division"
 		location = 9496
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.30
     }
 	division= {		
 		division_name = {

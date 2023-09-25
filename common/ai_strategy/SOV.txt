@@ -10,6 +10,50 @@
 # protect
 # influence
 
+SOV_battle_of_berlin  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		#date > 1945.4.15
+		has_war_with = GER
+	}
+
+	abort = {
+		SOV = {
+			controls_province = 6521			
+		}
+
+	}
+
+	ai_strategy = {
+    	type = front_armor_score
+    	id = GER
+    	value = 1000
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	state = 64
+    	value = 250
+		}
+
+	ai_strategy = {
+		type = front_control
+
+		state = 64
+
+		ratio = 0.01
+
+		priority = 1000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+}
+
 SOV_blitzkrieg  = {
 	allowed = {
 		original_tag = SOV

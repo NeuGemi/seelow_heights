@@ -165,7 +165,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            river_crossing_factor = -0.3
+            #river_crossing_factor = -0.75
             }       
         }  
 
