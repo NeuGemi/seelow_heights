@@ -2,6 +2,7 @@ add_namespace = scenario
 add_namespace = offensives
 add_namespace = intro
 add_namespace = scenarionukes
+add_namespace = scenarionews
 
 # Hiroshima
 country_event = {
@@ -290,6 +291,10 @@ country_event = {
 	option = {	# 
 		name = intro.1.a
 		hidden_effect = {
+		add_manpower = -2000000
+		add_manpower = -2000000
+		add_manpower = -2000000
+		add_manpower = -1300000
 			68 = {
 			add_building_construction = {
 				type = supply_node
@@ -329,6 +334,18 @@ country_event = {
 
 	option = {	# 
 		name = intro.2.a
+		hidden_effect = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+		}
 	}
 }
 
@@ -550,4 +567,70 @@ country_event = {
 			}
 		}
     }
+}
+
+# Fall of Vienna
+news_event = {
+	id = scenarionews.1
+	title = scenarionews.1.t
+	desc = scenarionews.1.d
+	picture = GFX_news_event_ITA_civil_war
+
+	immediate = {
+		set_global_flag = scenario_vienna
+	}
+	
+	major = yes
+	
+	trigger = {
+		4 = { is_controlled_by = SOV }
+		4 = { is_owned_by = GER }
+		GER = { has_war_with = SOV }
+		NOT = { has_global_flag = scenario_vienna }
+	}
+	
+	option = {
+		name = scenarionews.1.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.1.b
+		trigger = { TAG = GER }
+	}
+}
+
+# Battle of Berlin
+news_event = {
+	id = scenarionews.2
+	title = scenarionews.2.t
+	desc = scenarionews.2.d
+	picture = GFX_news_event_german_reichstag_ruins_02
+
+	immediate = {
+		set_global_flag = scenario_berlin
+	}
+	
+	major = yes
+	
+	trigger = {
+		date > 1945.4.15
+		NOT = { has_global_flag = scenario_berlin }
+	}
+	
+	option = {
+		name = scenarionews.2.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.2.b
+		trigger = { TAG = GER }
+	}
 }

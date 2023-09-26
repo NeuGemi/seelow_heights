@@ -299,7 +299,7 @@ give_guarantee = URG
 			advanced_dp_light_battery = 1
 		}
 		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
+		#add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 }
 

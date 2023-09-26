@@ -10,6 +10,50 @@
 # protect
 # influence
 
+
+#
+ENG_operation_grapeshot = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		has_war_with = ITA
+		#date > 1945.4.17
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = ITA
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = italy
+		value = 150
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = italy
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		area = italy
+
+		ratio = 0.5
+
+		priority = 1000
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+	}
+
+}
+
 # AST ast Australia australia
 AST_pacific = {
 	allowed = {

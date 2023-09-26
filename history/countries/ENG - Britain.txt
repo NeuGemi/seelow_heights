@@ -425,7 +425,7 @@ if = {
 			improved_sonar = 1
 		}
 		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
+		#add_ideas = MTG_naval_treaty_adherent_reduced
 		clr_global_flag = MTG_second_london_conference
 		modify_global_flag = { flag = MTG_naval_treaty_signatories value = -2 }
 	}
@@ -634,6 +634,9 @@ if = {
 		add_to_faction = PHI
 		add_to_faction = MEX
 		add_to_faction = GRE
+		add_to_faction = TUR
+		add_to_faction = DEN
+		add_to_faction = BRA
 
     complete_national_focus = ENG_motorized_focus
     complete_national_focus = uk_industrial_focus

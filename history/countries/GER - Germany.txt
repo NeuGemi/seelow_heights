@@ -1137,6 +1137,24 @@ add_ideas = {
 				enemy = GER
 			}
 		}
+		TUR = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		DEN = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		BRA = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
 }
 
 if = {

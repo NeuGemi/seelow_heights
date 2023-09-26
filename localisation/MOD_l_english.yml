@@ -47,6 +47,14 @@ scenario.4.a:0 "A three week Reich."
 scenario.5.t:0 "Adolf Hitler Commits Suicide!"
 scenario.5.d:0 "HITLER DEAD\n\n In the early hours of dawn, Adolf Hitler, Fuhrer and architect of the German Reich, was announced dead. The news of his death has shaken the German people to their core, and the world awaits Germany's next move in the dying embers of this war."
 scenario.5.a:0 "The war is lost."
+scenarionews.1.t:0 "Fall of Vienna"
+scenarionews.1.d:0 "The City of Vienna, under the Nazi control for the past decade has been liberated by Soviet forces, this comes after a period of extensive urban siege due to the ad-hoc formations to stove off capture by the Red Army. This is a major blow to the Nazi war effort and will surely thin their morale even harder, Europe waits teetered for whatever good may come next..."
+scenarionews.1.a:0 "This is a major victory in the anti-Nazi war effort and will surely symbolise the end of Germany's rampage."
+scenarionews.1.b:0 "For Endsieg is still to come, we must not fret over isolated defeats!"
+scenarionews.2.t:0 "Battle of Berlin"
+scenarionews.2.d:0 "Heavy fighting has been declared across the entire stretch of the Oder-Neisse River as the Soviets are mounting a final offensive to crush Germany and capture the nation's heartland- Berlin. \n\nThe Soviets have started off massive artillery raids across the river line while the Germans themselves have formed ad-hoc defenses and gathered everything possible to hold off the Red Army. \n\Due to fog of war, not much is known, but combined attacks are being declared alongside major fighting at the Seelow Heights region where Soviet troops have bridgeheads across the Oder river just west of Küstrin."
+scenarionews.2.a:0 "Peace in Europe is near, we pray that the Soviets succeed in their quest."
+scenarionews.2.b:0 "Let them come."
 
 
 ### Decisions ###

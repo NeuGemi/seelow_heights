@@ -19,6 +19,7 @@ state={
 		}
 		
 		1945.1.1 = {
+			owner = JAP
 			controller = JAP
 			CHI = {
 				set_province_controller = 1125

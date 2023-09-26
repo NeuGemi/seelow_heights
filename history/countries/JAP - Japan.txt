@@ -270,18 +270,18 @@ create_import = {
 		target = SHX
 		type = puppet_wargoal_focus
 	}
-	#declare_war_on = {
-	#	target = GXC
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = YUN
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = PRC
-	#	type = annex_everything
-	#}
+	declare_war_on = {
+		target = GXC
+		type = puppet_wargoal_focus
+	}
+	declare_war_on = {
+		target = YUN
+		type = puppet_wargoal_focus
+	}
+	declare_war_on = {
+		target = PRC
+		type = annex_everything
+	}
 	set_technology = {
 
 		#PLACEHOLDERS for vehicles

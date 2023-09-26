@@ -16,7 +16,7 @@ SOV_battle_of_berlin  = {
 	}
 
 	enable = {
-		#date > 1945.4.15
+		date > 1945.4.13
 		has_war_with = GER
 	}
 

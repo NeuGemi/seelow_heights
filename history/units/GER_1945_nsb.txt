@@ -1757,42 +1757,42 @@ units = {
 		location = 11666
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.55
+		start_equipment_factor = 0.25
 	}
 	division= {
 		name = "1. Hungarian Gyalogdandár"
 		location = 11666
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.55
+		start_equipment_factor = 0.25
 	}
 	division= {
 		name = "23. Hungarian Gyalogdandár"
 		location = 11666
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.55
+		start_equipment_factor = 0.25
 	}
 	division = {
 		name = "5. Waffen SS-Division 'Wiking'"
 		location = 11666
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.50
+	    start_equipment_factor = 0.25
 	}
     division= {
 	    name = "3. Panzer-Division"
 	    location = 11666
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	  	start_equipment_factor = 0.50 
+	  	start_equipment_factor = 0.25 
     }
     division= {
 	    name = "1. Panzer-Division"
 	    location = 11666
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	  	start_equipment_factor = 0.50 
+	  	start_equipment_factor = 0.25 
     }
 	division= {
 		name = "1. Volks-Gebirgs-Division"
@@ -1961,7 +1961,7 @@ units = {
 	}
 	division = {
 		name = "Kampfgruppe Reichsgrenadier-Division"
-		location = 11899
+		location = 6799
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.1
 	  	start_equipment_factor = 0.30
