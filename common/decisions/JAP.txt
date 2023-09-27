@@ -920,7 +920,7 @@ JAP_southern_expansion = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_south_doctrine
+			always = no
 		}
 
 		fire_only_once = yes

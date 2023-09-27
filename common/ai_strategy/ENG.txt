@@ -46,7 +46,7 @@ ENG_operation_grapeshot = {
 
 		ratio = 0.5
 
-		priority = 1000
+		priority = 2000
 		ordertype = front
 		execution_type = careful
 		execute_order = yes

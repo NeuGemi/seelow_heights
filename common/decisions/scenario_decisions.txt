@@ -4,12 +4,12 @@ GER_oberkommando = {
 
 		available = {
 			HOL = {
-				controls_state = 7			
+				NOT = { controls_state = 7 }	
 			}
 		}
 
 		fire_only_once = yes
-		is_good = no
+		is_good = yes
 		days_mission_timeout = 60
 		allowed = {
 			tag = GER
@@ -21,81 +21,297 @@ GER_oberkommando = {
 		}
 
 		visible = {
+			tag = GER
 			has_war = yes
 		}
 
 		complete_effect = {
-			add_war_support = 0.05
-			army_experience = 25
-			air_experience = 50
 		}		
 	}
 	GER_hold_vienna = {
-		icon = generic_civil_support 
 
-		available = {
-			GER = {
-				controls_state = 4			
-			}
+		icon = generic_civil_support
 
+		allowed = {
+			original_tag = GER
 		}
 
-		fire_only_once = yes
-		is_good = no
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 4 }
+		}
+
 		days_mission_timeout = 20
-		allowed = {
-			tag = GER
-		}
+
+		fire_only_once = yes
+
+		is_good = yes
+
 		activation = {
-			GER = {
-				controls_state = 4			
-			}		
-		}
-
-		visible = {
 			has_war = yes
-		}
-
-		complete_effect = {
-			add_war_support = 0.05
-			army_experience = 25
-			air_experience = 50
-		}		
-	}
-	GER_steiner_attack = {
-		icon = generic_civil_support 
-
-		available = {
-			GER = {
-			controls_state = 64			
+			has_civil_war = no
+			4 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
 			}
 		}
 
-		fire_only_once = yes
-		is_good = no
-		days_mission_timeout = 10
-		allowed = {
-			tag = GER
-		}
-		activation = {
-			date > 1945.4.16
-			GER = {
-				controls_state = 64			
-			}				
-		}
-
-		visible = {
-			has_war = yes
-		}
-
+		#Success
 		timeout_effect = {
-			# add event
+			add_stability = 0.05
+			add_war_support = 0.05
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
+	}
+	GER_hold_berlin = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = GER
 		}
 
-		complete_effect = {
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 64 }
+		}
+
+		days_mission_timeout = 45
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			64 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
 			add_war_support = 0.05
-			army_experience = 25
-			air_experience = 50
-		}		
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
+	}
+	GER_hold_stuttgart = { #Heilbronn
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_province = 3530 }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			50 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
+	}
+}
+
+JAP_hold_territory = {
+		JAP_hold_burma = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 288 }
+		}
+
+		days_mission_timeout = 95
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			288 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.03
+			add_war_support = 0.03
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
+	}
+		JAP_hold_phi = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 627 controls_state = 623 }
+		}
+
+		days_mission_timeout = 90
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			627 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+			623 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
+	}
+		JAP_hold_okinawa = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			custom_modifier_tooltip = okinawascenario_tt
+			NOT = { controls_province = 11932 controls_province = 10124 controls_province = 7115 }
+		}
+
+		days_mission_timeout = 35
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			#country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			#country_event = wtt_soviet_hold_city.2
+		}
 	}
 }

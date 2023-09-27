@@ -31,6 +31,7 @@ SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation
 RAJ_burmese_campaign:0 "Burma campaign (1944–1945)"
 SOV_allied_control_commission:0 "Allied Control Commission"
 acc_tt:0 "This nation is under supervision of the Allied Control Commission"
+okinawascenario_tt:0 "Does not control Okinawa"
 
 ### Events ###
 intro.1.t:0 "Final Days of the Reich"
@@ -69,9 +70,15 @@ scenarionews.2.b:0 "Let them come."
 GER_oberkommando:0 "Oberkommando Des Heeres"
 GER_hold_holland:0 "Festung Holland"
 GER_hold_holland_desc:0 "Around 150 000 German soldiers of the Oberbefehlshaber Niederlande are destined to hold the Netherlands, cutting off vital supplies from the enemy aswell as diverting reinforcements from the allied 12th and 21st Army Group."
-GER_steiner_attack:0 "Steiner's Counterattack"
-GER_steiner_attack_desc:0 "Army Detachment Steiner is a corps-sized army ordered by Hitler to counterattack the northern pincer of the Red Army's assault on Berlin. "
-GER_hold_vienna:0 "Hold Vienna"
+GER_hold_berlin:0 "Hold Berlin!"
+GER_hold_vienna:0 "Hold Vienna!"
+GER_hold_stuttgart:0 "Battle of Heilbronn"
+GER_hold_stuttgart_desc:0 "Heilbronn, just west to Stuttgart, is set to fall within hours! Hindering Heilbronn from Allied control will slow their advance into Stuttgart and Munich, and must therefore be held at all costs."
+
+JAP_hold_territory:0 "Imperial Supreme War Command"
+JAP_hold_burma:0 "Hold Burma"
+JAP_hold_phi:0 "Hold the Philippines"
+JAP_hold_okinawa:0 "Hold Okinawa"
 
 ### Bookmarks ###
 GER_SEELOW_DESC:0 "Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
