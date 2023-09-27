@@ -1,6 +1,30 @@
 ﻿capital = 48
 
 1945.1.1 = {
+	
+	add_ideas = SOV_allied_control_commission	
+	remove_ideas = BUL_tsar_boris_positive_02
+	remove_ideas = BUL_imro_01
+	remove_ideas = BUL_national_industry_02
+	remove_ideas = BUL_bulgarian_irredentism
+
+	set_cosmetic_tag = BUL_scenario
+
+if = {
+	limit = { has_dlc = "Battle for the Bosporus" }
+	create_country_leader = {
+		name = "Kimon Georgiev" 
+		desc = ""
+		picture = GFX_portrait_bul_kimon_georgiev
+		expire = "1953.3.1"
+		ideology = stalinism
+		traits = {
+			
+		}
+	}
+}
+
+
 	set_politics = { #VANILLA & DLC
 		ruling_party = communism
 		last_election = "1945.1.1"

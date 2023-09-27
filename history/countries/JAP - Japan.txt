@@ -545,6 +545,8 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+	set_cosmetic_tag = JAP_scenario
+
 		set_fuel = 0.01
 
 		oob = "JAP_1945_nsb" #Also applies to non NSB users
@@ -654,6 +656,42 @@ add_to_faction = LAO
 			}
 		}
 		#
+		TUR = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		INS = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		ETH = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		BRA = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		DEN = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		GRE = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
 		CAN = {
 			add_to_war = {
 				targeted_alliance = USA
@@ -801,9 +839,6 @@ add_to_faction = LAO
 		#doctrines 
 		prepared_defense = 1
 		grand_assault = 1
-		grand_mechanized_offensive = 1
-		assault_concentration = 1
-		branch_interoperation = 1
 		infantry_offensive = 1
 		armored_operations = 1
 		infiltration_assault = 1
@@ -814,11 +849,12 @@ add_to_faction = LAO
 		carrier_primacy = 1
 		undersea_blockade = 1
 		carrier_task_forces = 1
-		multialtitude_flying = 1
 		floating_airfield = 1
 		convoy_escorts = 1
 		escort_patrols = 1
 		massed_strikes = 1
+		floating_airfield = 1
+		convoy_escorts_bs  = 1
 		#air
 
 		#electronics

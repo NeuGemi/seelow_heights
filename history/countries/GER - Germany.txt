@@ -941,7 +941,7 @@ add_ideas = {
 			}
 		}
 
-		#
+		# Allies/Comintern #
 
     BUL = {
 			add_to_war = {
@@ -1059,6 +1059,18 @@ add_ideas = {
 		}
 	#
 
+#    CZE = {
+#			add_to_war = {
+#				targeted_alliance = ENG
+#				enemy = GER
+#			}
+#		}
+		ETH = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
 		CAN = {
 			add_to_war = {
 				targeted_alliance = ENG

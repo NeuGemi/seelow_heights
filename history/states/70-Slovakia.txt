@@ -26,11 +26,16 @@ state={
 		add_core_of = CZE
 
 		1939.3.14 = {
-			owner = SLO
-			controller = SLO
+			owner = CZE
+			controller = CZE
 			add_core_of = SLO
 		}
-		1945.1.1 = {	
+		1945.1.1 = {
+			owner = SLO
+			controller = SLO	
+			#SLO = {
+			#	set_province_controller = 3484
+			#}
 			SOV = {
 				set_province_controller = 11539
 				set_province_controller = 3537

@@ -17,9 +17,9 @@ state={
 		}
 		add_core_of = ROM
 		add_core_of = TRA
-		1945.1.1 = {
-			owner = SOV
-			controller = SOV
+		1945.1.1 = { # Northern Transylvania was under Soviet military administration from November 1944 to March 1945
+			owner = ROM
+			controller = ROM
 		}
 	}
 

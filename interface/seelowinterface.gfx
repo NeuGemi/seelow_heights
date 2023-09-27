@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_news_event_battleofberlin"
+		texturefile = "gfx/event_pictures/news_event_battleofberlin.png"
+	}
+	SpriteType = {
+		name = "GFX_news_event_fallofvienna"
+		texturefile = "gfx/event_pictures/news_event_fallofvienna.png"
+	}
+}
+

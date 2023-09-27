@@ -65,6 +65,7 @@ set_technology = {
 	infantry_weapons = 1
 	support_weapons = 1
 	infantry_weapons2 = 1
+	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	mass_assault = 1
@@ -338,6 +339,8 @@ set_popularities = {
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 1945.1.1 = {
+
+	set_cosmetic_tag = CHI_scenario
 	add_to_faction = SHX
 
 	remove_ideas = CHI_army_corruption_2

@@ -148,17 +148,17 @@ if = {
 add_ideas = neutrality_idea
 
 #Kick off kings crazy life
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	ROM = {
-		#Pick from list of the sane events first
-		random_list = {
-			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
-		}
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "Death or Dishonor"
+#	}
+#	ROM = {
+#		#Pick from list of the sane events first
+#		random_list = {
+#			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
+#		}
+#	}
+#}
 
 if = {
 	limit = {
@@ -286,18 +286,6 @@ set_convoys = 10
 		#King stuff
 		unlock_national_focus = ROM_institute_royal_dictatorship
 		unlock_national_focus = ROM_revise_the_constitution
-		create_country_leader = {
-			name = "Carol II"
-			desc = "POLITICS_CAROL_II_DESC"
-			picture = GFX_Portrait_romania_Carol_II			
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-				hedonist
-				camarilla_leader
-			}
-			id = 550
-		}
 		#ROM = {
 		#	#Pick from list of the sane events first
 		#	random_list = {
@@ -371,17 +359,37 @@ set_popularities = {
 	}
 }
 1945.1.1 = {
+
+	add_ideas = SOV_allied_control_commission	
+	remove_ideas = ROM_king_carol_ii_hedonist
+	remove_ideas = GER_align_romania
+	remove_ideas = ROM_preserve_greater_romania
+	remove_ideas = ROM_iron_guard
+
+	create_country_leader = {
+		name = "King Michael I" 
+		desc = ""
+		picture = GFX_Portrait_romania_michael_i
+		expire = "1947.1.1"
+		ideology = despotism
+		traits = {
+			
+		}
+	}
+	
+	set_cosmetic_tag = ROM_scenario
+
 	set_politics = { #VANILLA & DLC
-		ruling_party = communism
+		ruling_party = neutrality
 		last_election = "1945.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 		set_popularities = { 
 		democratic = 20
-		fascism = 10
-		neutrality = 10
-		communism = 60
+		fascism = 20
+		communism = 17
+		neutrality = 43
 	}
 }
 ### VARIANTS ###

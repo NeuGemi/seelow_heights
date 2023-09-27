@@ -9447,6 +9447,9 @@ news_event = {
 	option = {
 		name = news.236.b
 		trigger = {
+			NOT = {
+				tag = GER
+			}
 			OR = {
 				event_target:yalta_origin = {
 					tag = ROOT
@@ -9456,11 +9459,15 @@ news_event = {
 				}
 			}
 		}
+
 	}
 
 	option = {
 		name = news.236.c
 		trigger = {
+			NOT = {
+				tag = GER
+			}
 			NOT = {
 				OR = {
 					event_target:yalta_origin = {
@@ -9473,6 +9480,7 @@ news_event = {
 			}
 			has_war_with = GER				
 		}
+
 	}
 
 	option = {

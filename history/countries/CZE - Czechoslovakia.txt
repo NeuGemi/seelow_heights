@@ -1,5 +1,18 @@
 ﻿capital = 9
 
+#1945.4.4 = {
+#
+#	set_cosmetic_tag = CZE_scenario
+#	give_military_access = SOV
+#	SOV = {
+#		give_military_access = CZE
+#	}
+#
+#	ENG = {
+#		add_to_faction = CZE
+#	}
+#}
+
 if = {
 	limit = {
 		NOT = {
@@ -117,11 +130,11 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
+	#	CZE_skoda_works
+	#	CZE_divided_nation
 }
-	give_guarantee = YUG
-	give_guarantee = ROM
+#	give_guarantee = YUG
+#	give_guarantee = ROM
 }
 
 if = {
