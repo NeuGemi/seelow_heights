@@ -2,23 +2,6 @@ ideas = {
 
   country = {
 
-    SOV_allied_control_commission = {
-
-            allowed = { 
-                always = no 
-            }
-            picture = neutrality_idea
-
-            allowed_civil_war = {
-                always = yes 
-            }
-
-            removal_cost = -1
-
-            modifier = {
-                custom_modifier_tooltip = acc_tt
-            }       
-        }
     surrender_limit = {
 
             allowed = { 
@@ -186,6 +169,23 @@ ideas = {
             #river_crossing_factor = -0.75
             }       
         }  
+    SOV_allied_control_commission = {
+
+            allowed = { 
+                always = no 
+            }
+            picture = neutrality_idea
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                custom_modifier_tooltip = acc_tt
+            }       
+        }
 
         RAJ_burmese_campaign = {
             allowed = { 

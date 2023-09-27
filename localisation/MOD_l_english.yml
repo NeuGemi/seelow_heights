@@ -30,7 +30,7 @@ GER_endsiegmod_tt:0 "\n§YShould the Führer suicide, it's unlikely the war woul
 SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
 RAJ_burmese_campaign:0 "Burma campaign (1944–1945)"
 SOV_allied_control_commission:0 "Allied Control Commission"
-acc_tt:0 "This nation is under supervision of the Allied Control Commission"
+acc_tt:0 "§YThis nation is under supervision of the Allied Control Commission§!"
 okinawascenario_tt:0 "Does not control Okinawa"
 
 ### Events ###
