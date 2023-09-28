@@ -6,5 +6,6 @@ tags={
 	"Historical"
 	"Fixes"
 }
-name="Seelowe Heights"
-supported_version="1.12.12"
+name="Battle of the Seelow Heights"
+supported_version="1.12.*"
+picture="thumbnail.png"
