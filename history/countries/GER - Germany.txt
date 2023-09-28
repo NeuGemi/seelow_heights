@@ -1059,12 +1059,24 @@ add_ideas = {
 		}
 	#
 
-#    CZE = {
-#			add_to_war = {
-#				targeted_alliance = ENG
-#				enemy = GER
-#			}
-#		}
+    CZE = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		POL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		LUX = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
 		ETH = {
 			add_to_war = {
 				targeted_alliance = ENG

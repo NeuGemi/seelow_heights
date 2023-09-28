@@ -100,7 +100,7 @@ ideas = {
             repair_speed_factor = -0.78
             production_factory_efficiency_gain_factor = -0.56
             production_speed_buildings_factor = -0.89
-            consumer_goods_factor = 0.43
+            consumer_goods_factor = 0.17 #was 43
             industrial_capacity_factory = -0.45
             }       
         }  
@@ -146,7 +146,7 @@ ideas = {
             repair_speed_factor = -0.78
             production_factory_efficiency_gain_factor = -0.56
             production_speed_buildings_factor = -0.89
-            consumer_goods_factor = 0.43
+            consumer_goods_factor = 0.17
             industrial_capacity_factory = -0.45
             }       
         }    

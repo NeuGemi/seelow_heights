@@ -10,8 +10,29 @@
 # protect
 # influence
 
+#CRO
+CRO_defend_croatia = {
+	allowed = {
+		original_tag = CRO
+	}
+	enable = {
+		has_war_with = YUG
+	}
 
-#
+	abort = {
+		NOT = {
+			has_war_with = YUG
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = YUG
+		value = 1000
+	}
+}
+
+# Operation Grapeshot
 ENG_operation_grapeshot = {
 	allowed = {
 		original_tag = ENG

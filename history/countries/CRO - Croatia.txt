@@ -98,6 +98,7 @@ set_popularities = {
 1945.1.1 = {
 
 	add_ideas = surrender_limit
+	add_ideas = scraping_the_barrel
 }
 
 create_country_leader = {

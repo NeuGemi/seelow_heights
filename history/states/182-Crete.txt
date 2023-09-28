@@ -24,7 +24,7 @@ state = {
 		}
 		add_core_of = GRE
 		1945.1.1 = {
-			owner = GER
+			owner = GRE
 			controller = GER
 		} 
 	}

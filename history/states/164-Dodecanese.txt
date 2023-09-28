@@ -23,8 +23,8 @@ state=
 		}
 		add_core_of = GRE
 		1945.1.1 = {
-			owner = FRA
-			controller = FRA
+			owner = GRE
+			controller = GRE
 			GER = {
 				set_province_controller = 10007
 			}

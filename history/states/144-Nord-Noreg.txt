@@ -37,7 +37,7 @@ state={
 		}
 		add_core_of = NOR
 		1945.1.1 = {
-			owner = SOV
+			owner = NOR
 			controller = SOV
 			NOR = {
 				set_province_controller = 3058

@@ -42,7 +42,7 @@ state = {
 			}
 		}
 		1943.1.1 = {
-			owner = USA
+			owner = ITA
 			controller = USA
 			ENG = {
 				set_province_controller = 11889

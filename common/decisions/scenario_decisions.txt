@@ -135,7 +135,7 @@ GER_oberkommando = {
 			NOT = { controls_province = 3530 }
 		}
 
-		days_mission_timeout = 30
+		days_mission_timeout = 10
 
 		fire_only_once = yes
 
@@ -288,7 +288,6 @@ JAP_hold_territory = {
 
 		#Fail trigger
 		available = {
-			custom_modifier_tooltip = okinawascenario_tt
 			NOT = { controls_province = 11932 controls_province = 10124 controls_province = 7115 }
 		}
 

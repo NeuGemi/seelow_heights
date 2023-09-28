@@ -28,7 +28,7 @@ state={
 			}
 		}
 		1945.1.1 = {
-			owner = USA
+			owner = GER
 			controller = USA
 		}
 	}

@@ -12,8 +12,6 @@ JAP_scenario:0 "Empire of Japan"
 CHI_scenario:0 "Republic of China"
 ROM_scenario:0 "Kingdom of Romania"
 BUL_scenario:0 "People's Republic of Bulgaria"
-HUN_scenario:0 "Hungarian Provisional Government"
-CZE_scenario:0 "Third Czechloslovak Republic"
 
 ### Province Modifiers ###
 berlin_strategic_offensive:0 "Berlin Strategic Offensive Operation"
@@ -31,7 +29,6 @@ SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation
 RAJ_burmese_campaign:0 "Burma campaign (1944–1945)"
 SOV_allied_control_commission:0 "Allied Control Commission"
 acc_tt:0 "§YThis nation is under supervision of the Allied Control Commission§!"
-okinawascenario_tt:0 "Does not control Okinawa"
 
 ### Events ###
 intro.1.t:0 "Final Days of the Reich"
