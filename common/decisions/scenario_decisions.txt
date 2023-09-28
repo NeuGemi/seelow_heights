@@ -135,7 +135,7 @@ GER_oberkommando = {
 			NOT = { controls_province = 3530 }
 		}
 
-		days_mission_timeout = 10
+		days_mission_timeout = 20
 
 		fire_only_once = yes
 

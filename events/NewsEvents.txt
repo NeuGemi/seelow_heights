@@ -4,7 +4,7 @@
 
 add_namespace = news
 
-# Seelowe mod: News removed: .409
+# Seelowe mod: News removed: .409 .156 .236(yalta)
 
 # Marco Polo Bridge I
 news_event = {
@@ -4921,35 +4921,6 @@ news_event = {
 	}
 }
 
-# Komet Sighted
-news_event = {
-	id = news.156
-	title = news.156.t
-	desc = news.156.d
-	picture = GFX_news_event_komet
-	
-	#major = yes
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		has_tech = rocket_engines
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = news.156.a
-		add_stability = -0.01
-		custom_effect_tooltip = news.156.a.tt
-		add_stability = 0.01
-		custom_effect_tooltip = news.156.a.2.tt
-	}
-}
-
 # USA intervenes in war between ppl in America
 news_event = {
 	id = news.157
@@ -9351,86 +9322,6 @@ news_event = {
 
 	option = {
 		name = news.235.a
-	}
-}
-
-#Yalta Conference
-news_event = {
-	id = news.236
-	title = news.236.t
-	desc = news.236.d
-	picture = GFX_news_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-
-	major = yes
-
-	option = {
-		name = news.236.a
-		trigger = {
-			tag = GER
-		}
-	}
-
-	option = {
-		name = news.236.b
-		trigger = {
-			NOT = {
-				tag = GER
-			}
-			OR = {
-				event_target:yalta_origin = {
-					tag = ROOT
-				}
-				event_target:yalta_partner = {
-					tag = ROOT
-				}
-			}
-		}
-
-	}
-
-	option = {
-		name = news.236.c
-		trigger = {
-			NOT = {
-				tag = GER
-			}
-			NOT = {
-				OR = {
-					event_target:yalta_origin = {
-						tag = ROOT
-					}
-					event_target:yalta_partner = {
-						tag = ROOT
-					}
-				}
-			}
-			has_war_with = GER				
-		}
-
-	}
-
-	option = {
-		name = news.236.e
-		trigger = {
-			NOT = {
-				OR = {
-					event_target:yalta_origin = {
-						tag = ROOT
-					}
-					event_target:yalta_partner = {
-						tag = ROOT
-					}
-				}
-			}
-			NOT = {
-				has_war_with = GER
-			}
-			NOT = {
-				tag = GER
-			}
-		}
 	}
 }
 
