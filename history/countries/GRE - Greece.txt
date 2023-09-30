@@ -415,16 +415,16 @@ if = {
 }
 
 1945.1.1 = {
-			create_country_leader = {
-			name = "Themistoklis Sofoulis"
-			desc = "POLITICS_THEMISTOKLIS_SOFOULIS_DESC"
-			picture = GFX_portrait_gre_themistoklis_sofoulis
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
-				professional_crisis_solver
-			}
-		}
+#			create_country_leader = {
+#			name = "Themistoklis Sofoulis"
+#			desc = "POLITICS_THEMISTOKLIS_SOFOULIS_DESC"
+#			picture = GFX_portrait_gre_themistoklis_sofoulis
+#			expire = "1965.1.1"
+#			ideology = liberalism
+#			traits = {
+#				professional_crisis_solver
+#			}
+#		}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1945.1.1"

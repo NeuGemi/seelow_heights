@@ -56,7 +56,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            surrender_limit = 0.15
+            surrender_limit = 0.25
             army_core_defence_factor = 0.05
             custom_modifier_tooltip = GER_endsiegmod_tt
             }       
@@ -97,7 +97,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            repair_speed_factor = -0.78
+            industry_repair_factor = -0.78
             production_factory_efficiency_gain_factor = -0.56
             production_speed_buildings_factor = -0.89
             consumer_goods_factor = 0.17 #was 43
@@ -112,7 +112,7 @@ ideas = {
             always = no
         }
 
-        picture = german_advisors
+        picture = warrior_traditions_idea
 
         allowed_civil_war = {
             always = yes
@@ -123,9 +123,9 @@ ideas = {
         modifier = {
             land_reinforce_rate = -0.01
             army_morale_factor -0.25
-            army_org_regain = -0.35
+            army_org_regain = -0.28
            #army_attack_factor = -0.25
-            army_org_factor = -0.1
+            army_org_factor = -0.12
             attrition = 0.25
             }
         } 
@@ -134,7 +134,7 @@ ideas = {
         allowed = { 
             always = no 
         }
-        picture = german_advisors
+        picture = warrior_traditions_idea
 
         allowed_civil_war = {
             always = yes 
@@ -143,10 +143,10 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            repair_speed_factor = -0.78
+            industry_repair_factor = -0.64
             production_factory_efficiency_gain_factor = -0.56
-            production_speed_buildings_factor = -0.89
-            consumer_goods_factor = 0.17
+            production_speed_buildings_factor = -0.47
+            consumer_goods_factor = 0.15
             industrial_capacity_factory = -0.45
             }       
         }    
@@ -186,7 +186,7 @@ ideas = {
                 custom_modifier_tooltip = acc_tt
             }       
         }
-
+        #Allies
         RAJ_burmese_campaign = {
             allowed = { 
                 always = no 
@@ -210,5 +210,22 @@ ideas = {
                 attack_bonus_against = 0.30    
             }         
         } 
+        the_united_nations = {
+
+            allowed = { 
+                always = no 
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                planning_speed = 0.25
+            }       
+        }
     }
 }

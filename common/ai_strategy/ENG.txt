@@ -65,9 +65,9 @@ ENG_operation_grapeshot = {
 
 		area = italy
 
-		ratio = 0.5
+		ratio = 0.1
 
-		priority = 2000
+		priority = 4000
 		ordertype = front
 		execution_type = careful
 		execute_order = yes

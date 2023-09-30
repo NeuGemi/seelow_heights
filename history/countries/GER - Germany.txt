@@ -635,6 +635,9 @@ retire_character = GER_wilhelm_canaris
 retire_character = GER_ludwig_beck
 retire_character = GER_erwin_von_witzleben
 retire_character = GER_wilhelm_ritter_von_leeb
+retire_character = GER_erich_von_manstein #dismissed
+retire_character = GER_wilhelm_list #dismissed
+retire_character = GER_ewald_von_kleist #dismissed
 
 set_cosmetic_tag = GER_greater_german_reich
 add_ideas = GER_shattered_wehrmacht
@@ -1172,6 +1175,180 @@ add_ideas = {
 				enemy = GER
 			}
 		}
+
+
+
+
+
+
+
+
+
+
+create_field_marshal = {
+	name = "Schörner Ferdinand"
+	picture = "portrait_ger_ferdinand_schorner.dds"
+	traits = { armor_officer brilliant_strategist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erich Brandenberger"
+	picture = "portrait_ger_erich_brandenberger.dds"
+	traits = { trait_cautious }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Traugott Herr"
+	picture = "portrait_ger_traugott_herr.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Carl Hilpert"
+	picture = "mod_portrait_ger_carl_hilpert.png"
+	traits = { infantry_officer winter_specialist ranger }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+} 
+create_corps_commander = {
+	name = "Dietrich von Saucken"
+	picture = "mod_portrait_ger_dietrich_von_saucken.png"
+	traits = { cavalry_officer panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Erich Straube"
+	picture = "mod_portrait_ger_erich_straube.png"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Franz Böhme"
+	picture = "mod_portrait_ger_franz_bohme.png"
+	traits = { winter_specialist commando }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Heinrich von Vietinghoff"
+	picture = "mod_portrait_ger_heinrich_von_vietingoff.png"
+	traits = { armor_officer inflexible_strategist panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Georg Otto Hermann Balck"
+	picture = "mod_portrait_ger_hermann_balck.png"
+	traits = { armor_officer brilliant_strategist career_officer panzer_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Joachim Lemelsen"
+	picture = "mod_portrait_ger_joachim_lemelsen.png"
+	traits = { armor_officer panzer_leader trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+#create_corps_commander = {
+#	name = "Josef Harpe"
+#	picture = "mod_portrait_ger_josef_harpe.png"
+#	traits = { armor_officer panzer_leader }
+#	skill = 3
+#	attack_skill = 3
+#	defense_skill = 2
+#	planning_skill = 2
+#	logistics_skill = 1
+#}
+create_corps_commander = {
+	name = "Kurt von Tippelskirch"
+	picture = "mod_portrait_ger_kurt_von_tippelskirch.png"
+	traits = { infantry_officer trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Lothar Rendulic"
+	picture = "mod_portrait_ger_lothar_rendulic.png"
+	traits = { winter_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Walther Nehring"
+	picture = "mod_portrait_ger_walter_nehring.png"
+	traits = { armor_officer desert_fox }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Walther Wenck"
+	picture = "mod_portrait_ger_walther_wenck.png"
+	traits = { armor_officer brilliant_strategist trickster panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 if = {

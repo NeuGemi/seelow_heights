@@ -545,6 +545,9 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
+	set_war_support = 0.2
+
 	set_cosmetic_tag = JAP_scenario
 
 		set_fuel = 0.01

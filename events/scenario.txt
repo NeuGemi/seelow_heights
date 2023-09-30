@@ -4,278 +4,6 @@ add_namespace = intro
 add_namespace = scenarionukes
 add_namespace = scenarionews
 
-# Hiroshima
-country_event = {
-	id = scenarionukes.1
-
-	fire_only_once = yes
-
-	trigger = {
-		JAP = {
-			has_capitulated = no 
-		}
-		USA = {
-			is_ai = yes
-		}
-		date > 1945.8.6
-	}
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-		USA = {
-			launch_nuke = {
-   	 			province = 1092
-    			controller = JAP
-    			use_nuke = no
-				}		
-		    }
-		}
-    }
-}
-
-# Nagasaki
-country_event = {
-	id = scenarionukes.2
-
-	fire_only_once = yes
-
-	trigger = {
-		JAP = {
-			has_capitulated = no 
-		}
-		USA = {
-			is_ai = yes
-		}
-		date > 1945.8.9
-	}
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-		USA = {
-			launch_nuke = {
-   	 			province = 9950
-    			controller = JAP
-    			use_nuke = no
-				}		
-		    }
-		}
-    }
-}
-
-
-# Add Unplanned Offensives
-country_event = {
-	id = offensives.1
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 7 # Holland
-						state = 763 # Königsberg
-						state = 190 # Kurland
-						state = 809
-						state = 58 # Mecklenburg
-						#state = 61 # Schleswig-Holstein
-						state = 9
-						state = 69
-						state = 848
-						state = 153
-						state = 39
-						state = 23
-						state = 30
-						state = 14
-						state = 29
-					}
-				}
-				set_state_flag = ALLIES_unplanned_offensive_flag
-				add_dynamic_modifier = {
-					modifier = unplanned_offensive
-				}
-			}
-		}
-    }
-}
-
-# Battle of Berlin
-country_event = {
-	id = offensives.4
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			set_global_flag = SOV_battleofberlin
-			every_state = {
-				limit = {
-					OR = {
-						#state = 64 # Berlin
-						state = 68
-					}
-				}
-				set_state_flag = SOV_battleofberlin
-				add_dynamic_modifier = {
-					modifier = berlin_strategic_offensive
-				}
-			}
-		}
-    }
-}
-
-country_event = {
-	id = offensives.5
-
-	fire_only_once = yes
-
-	trigger = {
-		GER = {
-			NOT = { controls_province = 6521 }
-		}
-		has_global_flag = scenario_hitler_suicide
-	}
-
-	hidden = yes
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			set_global_flag = SOV_battleofberlin
-			every_state = {
-				limit = {
-					OR = {
-						#state = 64
-						state = 68
-					}
-				}
-				set_state_flag = SOV_battleofberlin_end
-				remove_dynamic_modifier = {
-					modifier = berlin_strategic_offensive
-				}
-			}
-		}
-    }
-}
-
-# Remove Unplanned Offensives - Czechia
-country_event = {
-	id = offensives.2
-
-	fire_only_once = yes
-
-	trigger = {
-		date > 1945.5.8
-		GER = {
-			NOT = { controls_province = 6521 }
-		}
-		has_global_flag = scenario_hitler_suicide
-	}
-
-	hidden = yes
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						#Czechia - remove may 1
-						state = 9
-						state = 69
-					}
-				}
-				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
-				}
-			}
-		}
-    }
-}
-
-# Remove Unplanned Offensives - Rest
-country_event = {
-	id = offensives.3
-
-	fire_only_once = yes
-
-	trigger = {
-		date > 1945.5.5
-		GER = {
-			NOT = { controls_province = 6521 }
-		}
-		has_global_flag = scenario_hitler_suicide
-	}
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 7 # Holland
-						state = 763 # Königsberg
-						state = 190 # Kurland
-						state = 58 # Mecklenburg
-						#state = 61 # Schleswig-Holstein
-						#Austria
-						state = 848
-						state = 153
-						state = 39
-					}
-				}
-				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
-				}
-			}
-		}
-    }
-}
-
-
 # Scenario Intro for Germany
 country_event = {
 	id = intro.1
@@ -356,7 +84,7 @@ country_event = {
 	}
 }
 
-# Goebbels' denunciation of Walter Model & Army Group B
+# Surrender of Walter Model's & Army Group B
 country_event = {
 	id = scenario.1
 	title = scenario.1.t
@@ -366,13 +94,20 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
-
-	option = {	# Okay
-		name = scenario.1.a
+	trigger = {
+		NOT = {
+			GER = {
+				controls_province = 6469
+				controls_province = 9482
+				controls_province = 495
+				controls_province = 3398			
+			}
+		}
 	}
-	option = {	# Tell me more
-		name = scenario.1.b
+
+	option = {	
+		name = scenario.1.a
+		retire_character = GER_walter_model
 	}
 }
 
@@ -428,7 +163,6 @@ country_event = {
 	}
 }
 
-### TOOD - integrate this into the fall of berlin event?
 # Adolf Hitler Commits Suicide April 30 1945
 country_event = {
 	id = scenario.5
@@ -460,6 +194,7 @@ country_event = {
 	}
 }
 
+#TODO - newsevent?
 # Battle of Castle Itter May 5 1945
 country_event = {
 	id = scenario.6
@@ -475,7 +210,6 @@ country_event = {
 	option = {	# 
 		name = scenario.6.a
 	}
-
 }
 
 # Prague Uprising May 5 1945
@@ -638,6 +372,358 @@ news_event = {
 	}
 	option = {
 		name = scenarionews.2.b
-		trigger = { TAG = GER }
+		trigger = { 
+			TAG = GER 
+		}
 	}
+}
+
+# Surrender of the National Republican Army (italy)
+#news_event = {
+#	id = scenarionews.3
+#	title = scenarionews.3.t
+#	desc = scenarionews.3.d
+#	picture = GFX_news_event_ITA_civil_war
+#
+#	immediate = {
+#		set_global_flag = scenario_italy
+#		hidden_effect = {
+#			ITA = {
+#				remove_ideas = surrender_limit
+#			}		
+#		}
+#	}
+#	
+#	major = yes
+#	
+#	trigger = {
+#		GER = {
+#			has_war = yes
+#		}
+#		OR = {
+#			USA = {
+#				controls_state = 159
+#			}
+#			ENG = {
+#				controls_state = 159
+#			}
+#			FRA = {
+#				controls_state = 159
+#			}
+#		}
+#		NOT = { 
+#			has_global_flag = scenario_italy 
+#			ITA = {
+#				has_war = no
+#			}			
+#		}
+#	}
+#	
+#	option = {
+#		name = scenarionews.3.a
+#		trigger = {
+#			NOT = {
+#				TAG = GER
+#
+#			}
+#		}
+#	}
+#	option = {
+#		name = scenarionews.3.b
+#		trigger = { 
+#				TAG = GER 
+#		}
+#	}
+#}
+
+ 
+
+##########	########	 ######		#		#
+	#		#			 ##			#		#
+	#		#			##			#		#		
+	#		#####		#			#########
+	#		#			##			#		#
+	#		#			 ##			#		#
+	#		########	  ######	#		#
+
+
+# Add Unplanned Offensives
+country_event = {
+	id = offensives.1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = ALLIES_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						state = 7 # Holland
+						state = 763 # Königsberg
+						state = 190 # Kurland
+						state = 809
+						state = 58 # Mecklenburg
+						#state = 61 # Schleswig-Holstein
+						state = 9
+						state = 69
+						state = 848
+						state = 153
+						state = 39
+						state = 23
+						state = 30
+						state = 14
+						state = 29
+					}
+				}
+				set_state_flag = ALLIES_unplanned_offensive_flag
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+    }
+}
+
+# Remove Unplanned Offensives - Czechia
+country_event = {
+	id = offensives.2
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.5.8
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
+
+	hidden = yes
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = ALLIES_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						#Czechia - remove may 1
+						state = 9
+						state = 69
+					}
+				}
+				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+    }
+}
+
+# Remove Unplanned Offensives - Rest
+country_event = {
+	id = offensives.3
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.5.5
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = ALLIES_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						state = 7 # Holland
+						state = 763 # Königsberg
+						state = 190 # Kurland
+						state = 58 # Mecklenburg
+						#state = 61 # Schleswig-Holstein
+						#Austria
+						state = 848
+						state = 153
+						state = 39
+					}
+				}
+				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+    }
+}
+
+# Battle of Berlin enable modifiers
+country_event = {
+	id = offensives.4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_battleofberlin
+			every_state = {
+				limit = {
+					OR = {
+						#state = 64 # Berlin
+						state = 68
+					}
+				}
+				set_state_flag = SOV_battleofberlin
+				add_dynamic_modifier = {
+					modifier = berlin_strategic_offensive
+				}
+			}
+		}
+    }
+}
+
+# Battle of Berlin remove modifiers
+country_event = {
+	id = offensives.5
+
+	fire_only_once = yes
+
+	trigger = {
+		GER = {
+			NOT = { controls_province = 6521 }
+		}
+		has_global_flag = scenario_hitler_suicide
+	}
+
+	hidden = yes
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_battleofberlin
+			every_state = {
+				limit = {
+					OR = {
+						#state = 64
+						state = 68
+					}
+				}
+				set_state_flag = SOV_battleofberlin_end
+				remove_dynamic_modifier = {
+					modifier = berlin_strategic_offensive
+				}
+			}
+		}
+    }
+}
+
+
+
+##   #	#	  #	 #   #   #####
+# #	 #	#     #	 #  #	 #
+#  # #	#	  #  # #	 ###
+#   ##	#	  #  ##		 #
+#	 #	#	  #  # #	 #
+#	 #	 #####   #  #	 #####
+
+
+# Hiroshima
+country_event = {
+	id = scenarionukes.1
+
+	fire_only_once = yes
+
+	trigger = {
+		JAP = {
+			has_capitulated = no 
+		}
+		USA = {
+			is_ai = yes
+		}
+		date > 1945.8.6
+	}
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+		USA = {
+			launch_nuke = {
+   	 			province = 1092
+    			controller = JAP
+    			use_nuke = no
+				}		
+		    }
+		}
+    }
+}
+
+# Nagasaki
+country_event = {
+	id = scenarionukes.2
+
+	fire_only_once = yes
+
+	trigger = {
+		JAP = {
+			has_capitulated = no 
+		}
+		USA = {
+			is_ai = yes
+		}
+		date > 1945.8.9
+	}
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+		USA = {
+			launch_nuke = {
+   	 			province = 9950
+    			controller = JAP
+    			use_nuke = no
+				}		
+		    }
+		}
+    }
 }

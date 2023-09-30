@@ -604,6 +604,27 @@ if = {
 
 1945.1.1 = {
 
+		add_timed_idea = {
+			idea = the_united_nations
+			days = 5
+		}
+		FRA = {
+			add_timed_idea = {
+				idea = the_united_nations
+				days = 5
+			}
+		}
+		USA = {
+			add_timed_idea = {
+				idea = the_united_nations
+				days = 5
+			}
+		}
+		PHI = {
+			add_ideas = surrender_limit
+		}
+
+
 		oob = "ENG_1945_nsb"
 
 		set_politics = {

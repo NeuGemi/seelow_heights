@@ -10,7 +10,7 @@ on_actions = {
 				country_event = { id = scenario.5 days = 18 }
 				country_event = { id = scenario.6 days = 23 }
 				country_event = { id = scenario.7 days = 23 }
-				country_event = { id = scenario.8 days = 16 }
+				country_event = { id = scenario.8 days = 17 }
 
 			}
 			JAP = {

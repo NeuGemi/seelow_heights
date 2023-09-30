@@ -169,6 +169,43 @@ GER_oberkommando = {
 			#country_event = wtt_soviet_hold_city.2
 		}
 	}
+	GER_hold_italy = { #Operation Grapeshot
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		#Fail trigger
+		available = {
+			ITA = {
+				NOT = { controls_state = 159 }
+			}
+		}
+
+		days_mission_timeout = 60
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			159 = {
+				is_controlled_by = ITA
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		#Fail
+		complete_effect = {
+		}
+	}
 }
 
 JAP_hold_territory = {
