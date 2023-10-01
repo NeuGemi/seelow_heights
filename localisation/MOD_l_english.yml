@@ -61,7 +61,7 @@ scenario.7.d:0 ""
 scenario.7.a:0 ""
 scenario.7.b:0 ""
 scenario.8.t:0 "Mussolini Captured and Executed"
-scenario.8.d:0 "MUSSOLINI DEAD \n\nIn the late hours of April 27th, Mussolini and his wife were captured by partisans while attempting to cross the Swiss border. Mussolini has reportedly been killed and his body is triumphantly being displayed in a public square in Milan. Does this spell the end of fascism in Italy?"
+scenario.8.d:0 "In the late hours of April 27th, Mussolini and his wife were captured by partisans while attempting to cross the Swiss border. Mussolini has reportedly been killed and his body is triumphantly being displayed in a public square in Milan. \n\nDoes this spell the end of fascism in Italy?"
 scenario.8.a:0 "That's the end of his war."
 
 scenarionews.1.t:0 "Fall of Vienna"

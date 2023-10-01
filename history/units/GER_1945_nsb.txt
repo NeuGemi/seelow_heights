@@ -479,15 +479,15 @@ units = {
 	    name = "14. Panzer Division"
 	    location = 9262
 	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.1
-	  		 start_equipment_factor = 0.60
+	    start_experience_factor = 0.3
+	  	start_equipment_factor = 0.60
     }
 	division= {
 		name = "Kampfgruppe Oberst von Gise"
 		location = 9262
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		 start_equipment_factor = 0.60
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.60
 	}
 	division= {
 		name = "121. Infanterie-Division"
@@ -507,7 +507,7 @@ units = {
 		name = "132. Infanterie-Division"
 		location = 9262
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		 start_equipment_factor = 0.60
 	}
 	division= {
@@ -549,7 +549,7 @@ units = {
 		name = "11. Infanterie-Division"
 		location = 11246
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		 start_equipment_factor = 0.60
 	}
     division= {	
@@ -593,7 +593,7 @@ units = {
 		name =  "19. Lettische SS-Freiwillige Division"
 		location = 3194
 		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 		 start_equipment_factor = 0.60
 	}
 	division= {		
@@ -610,7 +610,7 @@ units = {
 	    name = "12. Panzer Division"
 	    location = 3525
 	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.1
+	    start_experience_factor = 0.3
 	   	 start_equipment_factor = 0.60
     }
 	division= {		
@@ -647,7 +647,7 @@ units = {
 	    name = "Festungskommandant Windau"
 		location = 3525
 		division_template = "Sicherungs-Division"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.2
 		 start_equipment_factor = 0.60
     }
 
@@ -1387,15 +1387,14 @@ units = {
 		name = "Festung Breslau"
 		location = 9570
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
+		start_experience_factor = 0.4
 	}
 	division= {
 		name = "9. Romanian Divizia de Infanterie"
 		location = 11414
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
+		start_equipment_factor = 0.65
 	}
 	division= {
 		name = "19. Romanian Divizia de Infanterie"
@@ -2781,56 +2780,56 @@ units = {
 	    location = 6469
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
 	division = {
 		name = "3. Panzergrenadier-Division"
 		location = 6469
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
 	}
     division= {
 	    name = "Gruppe Meißner"
 	    location = 6469
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.1
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
    division= {
 	    name = "Panzer-Lehr Division"
 	    location = 6469
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "338. Infanterie-Division"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
     division= {
 	    name = "176. Infanterie-Division"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
     division= {
 	    name = "Gruppe Würtz"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.1
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
     division= {
 	    name = "Kampfgruppe Scherzer"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.45
     }
 
     ### 5. Panzerarmee ###
@@ -2843,7 +2842,7 @@ units = {
 		location = 9482
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.1
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
 
 	}
 	division= {		
@@ -2854,7 +2853,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
 
 	}
 	division= {		
@@ -2865,7 +2864,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
 
 	}
 	division= {		
@@ -2876,7 +2875,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
 
 	}
     division= {
@@ -2884,7 +2883,7 @@ units = {
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	  	start_equipment_factor = 0.30
+	  	start_equipment_factor = 0.45
 
     }
     division= {
@@ -2892,21 +2891,21 @@ units = {
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
     division= {
 	    name = "62. Volksgrenadier-Division"
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
    division= {
 	    name = "9. Panzer-Division"
 	    location = 3398
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.45
     }
 
 	### Kreta ###

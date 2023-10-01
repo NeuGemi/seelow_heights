@@ -91,19 +91,9 @@ country_event = {
 	desc = scenario.1.d	
 	picture = GFX_report_event_soviet_tanks
 
-
 	fire_only_once = yes
 
-	trigger = {
-		NOT = {
-			GER = {
-				controls_province = 6469
-				controls_province = 9482
-				controls_province = 495
-				controls_province = 3398			
-			}
-		}
-	}
+	is_triggered_only = yes
 
 	option = {	
 		name = scenario.1.a
