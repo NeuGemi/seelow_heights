@@ -12,5 +12,9 @@ spriteTypes = {
 		name = "GFX_news_event_mod_italy_surrender"
 		texturefile = "gfx/event_pictures/news_event_mod_italy_surrender.png"
 	}
+	SpriteType = {
+		name = "GFX_scenariodecision_cat"
+		texturefile = "gfx/decisions/scenariodecision_cat.png"
+	}
 }
 

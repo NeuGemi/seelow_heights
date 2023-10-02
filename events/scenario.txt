@@ -222,27 +222,6 @@ country_event = {
 	}
 }
 
-# Mussolini Captured and Executed April 28 1945
-country_event = {
-	id = scenario.8
-	title = scenario.8.t
-	desc = scenario.8.d	
-	picture = GFX_report_event_soviet_tanks
-
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {	# 
-		name = scenario.8.a
-		ITA = {
-			retire_character = ITA_benito_mussolini
-		}
-	}
-
-}
-
 # Berlin Strategic Offensive Operation
 country_event = {
 	id = scenario.9
@@ -367,6 +346,36 @@ news_event = {
 		}
 	}
 }
+
+# Mussolini Captured and Executed April 28 1945
+news_event = {
+	id = scenarionews.3
+	title = scenarionews.3.t
+	desc = scenarionews.3.d	
+	picture = GFX_news_event_ITA_mussolini_execution
+
+	immediate = {
+		set_global_flag = scenario_mussolini
+		hidden_effect = {
+		ITA = {
+			retire_character = ITA_benito_mussolini
+			}		
+		}
+	}
+	
+	major = yes
+	
+	trigger = {
+		date > 1945.4.28
+		NOT = { has_global_flag = scenario_mussolini }
+	}
+
+	option = {	# 
+		name = scenarionews.3.a
+
+	}
+}
+
 
 # Surrender of the National Republican Army (italy)
 #news_event = {
@@ -666,6 +675,9 @@ country_event = {
 
 	hidden = yes
 
+	immediate = {
+		news_event = { id = nuke_dropped.2 }
+	}
 
     option = {
     ai_chance = {
@@ -701,6 +713,9 @@ country_event = {
 
 	hidden = yes
 
+	immediate = {
+		news_event = { id = nuke_dropped.3 }
+	}
 
     option = {
     ai_chance = {

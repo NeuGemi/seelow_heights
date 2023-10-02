@@ -351,3 +351,58 @@ JAP_hold_territory = {
 		}
 	}
 }
+
+scenario_settings = {
+	GER_scenario_settings = {
+		icon = decision_generic_human_torpedo 
+
+		available = {
+			tag = GER
+			NOT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = GER_shattered_wehrmacht
+			remove_ideas = GER_endsiegmod
+			remove_ideas = GER_totalen_krieg_doctrine
+			remove_ideas = GER_economic_collapse
+		}		
+	}	
+	JAP_scenario_settings = {
+		icon = decision_generic_human_torpedo 
+
+		available = {
+			tag = JAP
+			NOT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			tag = JAP
+		}
+
+		visible = {
+			tag = JAP
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = JAP_shattered_army
+			remove_ideas = JAP_economic_collapse
+		}		
+	}	
+}

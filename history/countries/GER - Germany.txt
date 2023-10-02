@@ -656,7 +656,7 @@ set_global_flag = fall_of_warsaw_ger
 set_global_flag = FRA_already_surrendered
 
 set_stability = 0.58
-set_war_support = 0.10
+set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
 add_political_power = 1998
 
