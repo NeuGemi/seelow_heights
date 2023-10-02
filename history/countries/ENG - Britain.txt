@@ -300,7 +300,7 @@ if = {
 			range_improvements = 1
 		}
 		else = {
-			set_air_oob = "ENG_1939_air_legacy"
+			set_air_oob = "ENG_1945_air_legacy"
 			set_technology = {
 				fighter1 = 1
 				fighter2 = 1
@@ -376,6 +376,8 @@ if = {
 			improved_light_tank = 1
 			basic_medium_tank = 1
 			basic_heavy_tank = 1
+			improved_medium_tank = 1
+			advanced_medium_tank = 1
 		}
 	}
 	if = {

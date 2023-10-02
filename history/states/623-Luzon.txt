@@ -14,6 +14,7 @@ state= {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			air_base = 3
 			12213 = {
 				naval_base = 1
 			}
@@ -37,6 +38,8 @@ state= {
 				set_province_controller = 1415
 				set_province_controller = 12253
 				set_province_controller = 4350
+				set_province_controller = 1388
+				set_province_controller = 4423
 			}
 		}
 	}

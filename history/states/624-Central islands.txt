@@ -23,6 +23,7 @@ state=
 			PHI = {
 				set_province_controller = 4288
 				set_province_controller = 10272
+				set_province_controller = 7307
 			}
 		}
 	}

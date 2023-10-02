@@ -79,6 +79,14 @@ if = {
 	}
 	set_technology = {
 		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+		basic_medium_tank = 1 
+		improved_medium_tank = 1
+		advanced_medium_tank = 1
+		improved_heavy_tank = 1
+		advanced_heavy_tank = 1
 
 	}
 }
@@ -220,7 +228,7 @@ give_guarantee = URG
 				aa_hmg = 1
 			}
 		else = {
-			set_air_oob = "USA_1939_air_legacy"
+			set_air_oob = "USA_1945_air_legacy"
 			set_technology = {
 				fighter1 = 1
 				fighter2 = 1
@@ -971,6 +979,7 @@ if = {
 				special_type_slot_3 = bomb_sights_1
 			}
 		}
+		#1945
 	create_equipment_variant = {
 		name = "B-24 Liberator"
 		type = medium_plane_airframe_2
@@ -1000,6 +1009,18 @@ if = {
 				special_type_slot_3 = empty
 			}
 			icon = "GFX_USA_fighter3_medium"
+		}
+		create_equipment_variant = {
+			name = "SB2C 'Helldiver'" 
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_USA_cv_CAS3_medium"
 		}
 }
 if = {

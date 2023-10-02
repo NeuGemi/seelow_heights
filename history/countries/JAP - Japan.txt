@@ -113,6 +113,13 @@ if = {
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+		basic_medium_tank = 1 
+		improved_medium_tank = 1
+		advanced_medium_tank = 1
+		improved_heavy_tank = 1
+		advanced_heavy_tank = 1
 	}
 	set_oob = "JAP_1936"
 }
@@ -372,7 +379,7 @@ create_import = {
 				range_improvements = 1
 			}
 		else = {
-			set_air_oob = "JAP_1939_air_legacy"
+			set_air_oob = "JAP_1945_air_legacy"
 			set_technology = {
 				cv_fighter1 = 1
 				fighter1 = 1
@@ -788,7 +795,7 @@ add_to_faction = LAO
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "GER_1945_air_bba"
+			set_air_oob = "JAP_1945_air_bba"
 			set_technology = {
 			improved_small_airframe = 1
 			advanced_small_airframe = 1
@@ -804,6 +811,9 @@ add_to_faction = LAO
 			engines_3 = 1
 			engines_4 = 1
 			range_improvements = 1
+		}
+		else = {
+			set_air_oob = "JAP_1945_air_legacy"
 		}
 	}
 
@@ -993,6 +1003,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Ki-2"
@@ -1003,6 +1014,7 @@ if = {
 			special_type_slot_1 = lmg_defense_turret
 		}
 		icon = "GFX_JAP_CAS1_medium"
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Ki-1"
@@ -1012,6 +1024,7 @@ if = {
 			engine_type_slot = engine_1_2x
 			special_type_slot_1 = lmg_defense_turret
 		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Ki-3"
@@ -1022,6 +1035,7 @@ if = {
 			special_type_slot_1 = lmg_defense_turret
 		}
 		icon = "GFX_JAP_CAS1_medium"
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Aichi D1A2"
@@ -1032,6 +1046,7 @@ if = {
 			special_type_slot_1 = dive_brakes_small
 		}
 		icon = "GFX_JAP_CAS1_medium"
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "A4N"
@@ -1041,6 +1056,7 @@ if = {
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "B2M"
@@ -1063,7 +1079,72 @@ if = {
 			special_type_slot_1 = empty
 		}
 		icon = "GFX_JAP_cv_naval_bomber1_medium"
+		obsolete = yes
 	}
+	#1945
+	create_equipment_variant = {
+		name = "Kawanishi H8K"
+		type = small_plane_naval_bomber_airframe_2
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_JAP_cv_naval_bomber2_medium"
+	}
+	create_equipment_variant = {
+		name = "Kawasaki Ki-48"
+		type = medium_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = armor_plate_medium
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_JAP_tactical_bomber2_medium"
+		}
+	create_equipment_variant = {
+		name = "A6M Zero-Sen"
+		type = small_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = drop_tanks
+			special_type_slot_2 = fuel_tanks_small
+		}
+		icon = "GFX_JAP_cv_fighter2_medium"
+	}
+	create_equipment_variant = {
+		name = "A6M Zero-Sen"
+		type = cv_small_plane_airframe_2
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = drop_tanks
+			special_type_slot_2 = fuel_tanks_small
+		}
+		icon = "GFX_JAP_cv_fighter2_medium"
+	}
+		create_equipment_variant = {
+			name = "Tachikawa Ki-74" 
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_JAP_CAS2_medium"
+		}
 }
 
 
@@ -1730,6 +1811,7 @@ if = {
 					engine_type_slot = engine_2_1x
 					special_type_slot_1 = empty
 				}
+				obsolete = yes
 			}
 			create_equipment_variant = {
 				name = "A5M"
@@ -1740,6 +1822,7 @@ if = {
 					special_type_slot_1 = empty
 				}
 				icon = "GFX_JAP_cv_fighter1_medium"
+				obsolete = yes
 			}
 			create_equipment_variant = {
 				name = "B5N"

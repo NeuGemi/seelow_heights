@@ -99,6 +99,9 @@ division_template = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -1892,127 +1895,119 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.45
 	}
-	#PHI
+	### Philippines ###
+		### 14th Area Army ###
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 
-		}
-		location = 4368
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 12213
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 4423
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 10165
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 1288
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 12236
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 12236
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
+			name_order = 1
 		}
 		location = 1340
 		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 4228
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 12336
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.50
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 
+			name_order = 23
+		}
+		location = 10236
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 4368
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 10167
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 7325
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4233
+		division_template = "Senshadan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}
+	### 35th Army ###
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 10300 #Mindanao
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.25
+	}	
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 1293 #Mindanao
+		division_template = "Chugata Hohei Shidan" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.50
+	}	
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
 		}
 		location = 12112
 		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 1293
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 1293
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 10300
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.40
+	}	
 }
 
 

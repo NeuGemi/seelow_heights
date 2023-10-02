@@ -10,6 +10,7 @@ state={
 		owner = PHI
 		buildings = {
 			infrastructure = 2
+			air_base = 3
 			4241 = {
 				naval_base = 1
 			}
@@ -19,7 +20,7 @@ state={
 		}
 		add_core_of = PHI
 		1945.1.1 = {
-			owner = JAP
+			owner = PHI
 			controller = JAP
 			PHI = {
 			set_province_controller = 7360

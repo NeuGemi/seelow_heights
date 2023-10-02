@@ -383,7 +383,7 @@ set_war_support = 0.3
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "GER_1939_air_bba"
 		else = {
-			set_air_oob = "GER_1939_air_legacy"
+			set_air_oob = "GER_1945_air_legacy"
 			set_technology = {
 				CAS2 = 1
 				fighter2 = 1
@@ -597,7 +597,7 @@ if = {
 			range_improvements = 1
 		}
 		else = {
-			set_oob = "GER_1945_air_legacy"
+			set_air_oob = "GER_1945_air_legacy"
 		}
 	}
 

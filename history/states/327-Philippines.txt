@@ -26,8 +26,6 @@ state=
 		add_core_of = PHI
 		1945.1.1 = {
 			JAP = {
-			set_province_controller = 10165
-			set_province_controller = 1288
 			set_province_controller = 10236
 			set_province_controller = 12236
 			}

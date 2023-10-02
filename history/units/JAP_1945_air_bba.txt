@@ -1,0 +1,110 @@
+﻿air_wings = {
+	623 = { #Luzon
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 50 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 72 version_name = "A6M Zero-Sen" }
+		medium_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "Kawasaki Ki-48"}	
+		medium_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "Kawasaki Ki-48"}	
+	}
+	627 = { #Mindanao
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 50 version_name = "A6M Zero-Sen" }	
+	}
+	592 = { #Guangzhou
+		small_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "A6M Zero-Sen" }
+		medium_plane_airframe_2 = { owner = "JAP" amount = 32 version_name = "Kawasaki Ki-48"}	
+		medium_plane_airframe_2 = { owner = "JAP" amount = 60 version_name = "Kawasaki Ki-48"}	
+	} 
+	328 = { #Manchuria
+		small_plane_airframe_2 = { owner = "JAP" amount = 100 version_name = "A6M Zero-Sen" }
+		small_plane_cas_airframe_2 = { owner = "JAP" amount = 96 version_name = "Tachikawa Ki-74" }	
+	}
+	640 = { #Burma
+		small_plane_airframe_2 = { owner = "JAP" amount = 72 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 66 version_name = "A6M Zero-Sen" }	
+	}
+	673 = { #Sulawesi
+		small_plane_airframe_2 = { owner = "JAP" amount = 70 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 62 version_name = "A6M Zero-Sen" }	 
+	}
+	528 = { #Nagasaki
+		small_plane_airframe_2 = { owner = "JAP" amount = 78 version_name = "A6M Zero-Sen" }
+	}
+	530 = { #Osaka
+		small_plane_airframe_2 = { owner = "JAP" amount = 66 version_name = "A6M Zero-Sen" }	
+	}
+	288 = { #Rangoon
+		small_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "A6M Zero-Sen" }
+		medium_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "Kawasaki Ki-48"}	
+		medium_plane_airframe_2 = { owner = "JAP" amount = 40 version_name = "Kawasaki Ki-48"}	
+	}
+	533 = { #Tohoku
+		small_plane_airframe_2 = { owner = "JAP" amount = 56 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 62 version_name = "A6M Zero-Sen" }	
+	}
+	524 = { #Taipei
+		small_plane_airframe_2 = { owner = "JAP" amount = 50 version_name = "A6M Zero-Sen" }
+		small_plane_cas_airframe_2 = { owner = "JAP" amount = 48 version_name = "Tachikawa Ki-74" }		
+	}
+	611 = { #Mengkukuo
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		medium_plane_airframe_2 = { owner = "JAP" amount = 32 version_name = "Kawasaki Ki-48"}	
+		medium_plane_airframe_2 = { owner = "JAP" amount = 60 version_name = "Kawasaki Ki-48"}
+		small_plane_cas_airframe_2 = { owner = "JAP" amount = 48 version_name = "Tachikawa Ki-74" }					
+	}
+	282 = { #Tokyo
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 62 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 70 version_name = "A6M Zero-Sen" }
+	}
+	684 = { #Caroline Islands
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		small_plane_airframe_2 = { owner = "JAP" amount = 48 version_name = "A6M Zero-Sen" }
+		small_plane_cas_airframe_2 = { owner = "JAP" amount = 48 version_name = "Tachikawa Ki-74" }					
+
+	}
+	"Hosho"  = { 
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 10 version_name = "A5M"} 
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 8 version_name = "A5M"} 
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_2
+			creator = "JAP" 
+			version_name = "A6M Zero-Sen"
+		}
+		requested_factories = 10
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_2
+			creator = "JAP" 
+			version_name = "Tachikawa Ki-74"
+		}
+		requested_factories = 7
+		progress = 0.2
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_2
+			creator = "JAP" 
+			version_name = "Kawasaki Ki-48"
+		}
+		requested_factories = 6
+		progress = 0.2
+		efficiency = 100
+	}
+
+}

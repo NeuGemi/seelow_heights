@@ -1062,7 +1062,7 @@ add_ideas = {
 				basic_large_airframe = 1
 			}
 		else = {
-			set_air_oob = "SOV_1939_air_legacy"
+			set_air_oob = "SOV_1945_air_legacy"
 			set_technology = {
 				CAS1 = 1
 				tactical_bomber1 = 1
@@ -1192,6 +1192,8 @@ add_ideas = {
 			improved_light_tank = 1 
 			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
 			basic_medium_tank = 1 # Should be available in 1936 (T-28)
+			improved_medium_tank = 1
+			advanced_medium_tank = 1
 		}
 		set_oob = "SOV_1939"
 	}

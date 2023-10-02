@@ -1,0 +1,103 @@
+﻿air_wings = {
+	623 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 48 }		
+		fighter_equipment_1 = { owner = "JAP" amount = 50 }
+		fighter_equipment_1 = { owner = "JAP" amount = 72 }
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 56 } 		
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 56 } 		
+	}
+	627 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 50 }
+		fighter_equipment_1 = { owner = "JAP" amount = 48 }	
+	}
+	592 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 56 }
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 32 } 		
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 60 } 	
+	}
+	328 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 100 }
+		CAS_equipment_1 =  { owner = "JAP" amount = 96 }	
+	}
+	640 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 60 }
+		fighter_equipment_1 = { owner = "JAP" amount = 72 }	
+	}
+	673 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 52 }
+		fighter_equipment_1 = { owner = "JAP" amount = 70 }		
+	}
+	528 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 58 }	
+	}
+	530 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 48 }	
+	}
+	288 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 56 }
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 56 } 		
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 40 } 	
+	}
+	533 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 56 }
+		fighter_equipment_1 = { owner = "JAP" amount = 62 }	
+	}
+	524 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 50 }
+		CAS_equipment_1 =  { owner = "JAP" amount = 48 }	
+	}
+	611 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 56 }
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 32 } 		
+		tac_bomber_equipment_1 = { owner = "JAP" amount = 60 } 
+		CAS_equipment_1 =  { owner = "JAP" amount = 48 }		
+	}
+	282 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 58 }	
+		fighter_equipment_1 = { owner = "JAP" amount = 46 }	
+		fighter_equipment_1 = { owner = "JAP" amount = 62 }	
+	}
+	684 = {
+		fighter_equipment_1 = { owner = "JAP" amount = 40 }	
+		fighter_equipment_1 = { owner = "JAP" amount = 62 }	
+		CAS_equipment_1 =  { owner = "JAP" amount = 30 }	
+
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "JAP" 
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+
+}

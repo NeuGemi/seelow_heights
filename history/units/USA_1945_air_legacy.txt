@@ -87,4 +87,33 @@ air_wings = {
 		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
 
 	}
+	### Pacific Theater ###
+	523 = {
+		fighter_equipment_2 = { owner = "USA" amount = 100 }	
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 			
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+	}
+	638 = {
+		fighter_equipment_2 = { owner = "USA" amount = 100 }	
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		fighter_equipment_2 = { owner = "USA" amount = 100 }		
+	}
+	430 = {
+		fighter_equipment_2 = { owner = "USA" amount = 100 }	
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 		
+		tac_bomber_equipment_2 = { owner = "USA"  amount = 100  } 	
+	}
+	647 = {
+		fighter_equipment_2 = { owner = "USA" amount = 100 }	
+		fighter_equipment_2 = { owner = "USA" amount = 100 }				
+		fighter_equipment_2 = { owner = "USA" amount = 100 }	
+	}
 }
