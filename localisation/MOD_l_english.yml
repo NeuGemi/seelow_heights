@@ -14,6 +14,9 @@ ROM_scenario:0 "Kingdom of Romania"
 BUL_scenario:0 "People's Republic of Bulgaria"
 HOL_mod_free:0 "The Netherlands"
 NOR_mod_free:0 "Kingdom of Norway"
+FRA_mod_free:0 "France"
+YUG_mod_free:0 "Yugoslavia"
+ITA_mod_free:0 "Italy"
 
 ### Province Modifiers ###
 berlin_strategic_offensive:0 "Berlin Strategic Offensive Operation"

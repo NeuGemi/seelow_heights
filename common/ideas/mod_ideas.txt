@@ -59,7 +59,7 @@ ideas = {
 
         modifier = {
             surrender_limit = 0.25
-            army_core_defence_factor = 0.1
+            army_core_defence_factor = 0.07
             custom_modifier_tooltip = GER_endsiegmod_tt
             }       
         }
