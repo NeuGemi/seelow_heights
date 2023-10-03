@@ -12,6 +12,8 @@ JAP_scenario:0 "Empire of Japan"
 CHI_scenario:0 "Republic of China"
 ROM_scenario:0 "Kingdom of Romania"
 BUL_scenario:0 "People's Republic of Bulgaria"
+HOL_mod_free:0 "The Netherlands"
+NOR_mod_free:0 "Kingdom of Norway"
 
 ### Province Modifiers ###
 berlin_strategic_offensive:0 "Berlin Strategic Offensive Operation"
@@ -101,7 +103,8 @@ scenario_settings:0 "Scenario Settings"
 GER_scenario_settings:0 "Remove all modifiers"
 GER_scenario_settings_desc:0 "For those who want a fairer, but unhistorical fight"
 JAP_scenario_settings:0 "Remove all modifiers"
-GER_scripted_peace:0 "Historical post-war Europe"
+GER_scripted_peace:0 "Historical Cold-War European Borders"
+GER_scripted_peace_desc:0 "§RPlease note: due to a bug, cosmetic tags cannot be removed!§!"
 
 
 JAP_hold_territory:0 "Imperial Supreme War Command"

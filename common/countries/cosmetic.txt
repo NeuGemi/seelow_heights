@@ -23,6 +23,16 @@ UKR_reichskommissariat = {
 	color_ui = rgb { 122 145 93 }
 }
 
+HOL_mod_free = {
+	color = rgb { 203  138  74 }
+	color_ui = rgb { 203  138  74 }
+	
+}
+NOR_mod_free = {
+	color = rgb { 111  71  71 }
+	color_ui = rgb { 111  71  71 }
+	
+}
 
 
 MAL_UK = {

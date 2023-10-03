@@ -498,7 +498,7 @@ scenario_settings = {
 				transfer_state = 34
 			}
 			HOL = {
-				#drop_cosmetic_tag = HOL_reichskommissariat
+				 set_cosmetic_tag = HOL_mod_free
 				transfer_state = 35
 				transfer_state = 7
 				transfer_state = 36
@@ -506,39 +506,50 @@ scenario_settings = {
 			LUX = {
 				transfer_state = 8
 			}
-			FRA = {
-			transfer_state = 50
-			transfer_state = 42
-			transfer_state = 848 #austria
-			transfer_state = 153
-			transfer_state = 735 #savoy
-			}
-			ENG = {
+			WGR = {
+				transfer_state = 50
+				transfer_state = 42		
 				transfer_state = 58
 				transfer_state = 59
 				transfer_state = 56
 				transfer_state = 57
-				transfer_state = 51
-				transfer_state = 152 #austria
-				set_puppet = ITA 
-				add_to_faction = HOL
-				add_to_faction = BEL
-				add_to_faction = LUX
-				add_to_faction = ITA
-			}
-			USA = {
+				transfer_state = 51	
 				transfer_state = 55
 				transfer_state = 54
 				transfer_state = 53
 				transfer_state = 52
 			}
-			SOV = {
+			DDR = {
 				transfer_state = 62
 				transfer_state = 61
 				transfer_state = 64
 				transfer_state = 65
 				transfer_state = 60
+			}
+			AUS = {
 				transfer_state = 4 #austria
+				transfer_state = 848 #austria
+				transfer_state = 153
+				transfer_state = 152 #austria
+				set_politics = {
+					ruling_party = neutrality
+    				elections_allowed = yes
+    				last_election = "1945.4.11"
+    				election_frequency = 48
+				}
+			}
+			FRA = {
+			transfer_state = 735 #savoy
+			}
+			ENG = {
+				add_to_faction = HOL
+				add_to_faction = BEL
+				add_to_faction = LUX
+				add_to_faction = ITA
+				add_to_faction = WGR
+			}
+			SOV = {
+				add_to_faction = DDR
 				transfer_state = 73 #ruthenia
 				transfer_state = 80 #bucovina
 				transfer_state = 78 #moldovia
@@ -549,6 +560,7 @@ scenario_settings = {
 				puppet = HUN
 				puppet = ROM
 				puppet = POL
+				puppet = DDR
 			}
 			CZE = {
 				transfer_state = 69
@@ -563,9 +575,9 @@ scenario_settings = {
 			#DEN = {
 			# After AAT
 			#}
-			#NOR = {
-			# Aftet AAT
-			#}
+			NOR = {
+			 set_cosmetic_tag = NOR_mod_free
+			}
 			ITA = {
 				#drop_cosmetic_tag = ITA_socialist_republic
 				transfer_state = 39
