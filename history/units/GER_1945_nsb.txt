@@ -2445,7 +2445,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 6377
+		location = 6263
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.90
@@ -2455,7 +2455,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 6377
+		location = 6218
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.90
@@ -2780,56 +2780,56 @@ units = {
 	    location = 6469
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
 	division = {
 		name = "3. Panzergrenadier-Division"
 		location = 6469
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
 	}
     division= {
 	    name = "Gruppe Meißner"
 	    location = 6469
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.1
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
    division= {
 	    name = "Panzer-Lehr Division"
 	    location = 6469
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
     }
     division= {
 	    name = "338. Infanterie-Division"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
     division= {
 	    name = "176. Infanterie-Division"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.3
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
     division= {
 	    name = "Gruppe Würtz"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.1
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
     division= {
 	    name = "Kampfgruppe Scherzer"
 	    location = 495
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-		start_equipment_factor = 0.45
+		start_equipment_factor = 0.60
     }
 
     ### 5. Panzerarmee ###
@@ -2842,7 +2842,7 @@ units = {
 		location = 9482
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.1
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
 
 	}
 	division= {		
@@ -2853,7 +2853,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
 
 	}
 	division= {		
@@ -2864,7 +2864,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
 
 	}
 	division= {		
@@ -2875,7 +2875,7 @@ units = {
 		location = 9482
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
 
 	}
     division= {
@@ -2883,7 +2883,7 @@ units = {
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	  	start_equipment_factor = 0.45
+	  	start_equipment_factor = 0.60
 
     }
     division= {
@@ -2891,21 +2891,21 @@ units = {
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
     }
     division= {
 	    name = "62. Volksgrenadier-Division"
 	    location = 3398
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
     }
    division= {
 	    name = "9. Panzer-Division"
 	    location = 3398
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.45
+	    start_equipment_factor = 0.60
     }
 
 	### Kreta ###

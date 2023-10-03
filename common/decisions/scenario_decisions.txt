@@ -1,6 +1,6 @@
 GER_oberkommando = {
 	GER_hold_holland = {
-		icon = generic_civil_support 
+		icon = GFX_decision_generic_mountain_fortification
 
 		available = {
 			HOL = {
@@ -30,7 +30,7 @@ GER_oberkommando = {
 	}
 	GER_hold_vienna = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_generic_disband_irregulars
 
 		allowed = {
 			original_tag = GER
@@ -77,7 +77,7 @@ GER_oberkommando = {
 	}
 	GER_hold_berlin = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_generic_nationalism
 
 		allowed = {
 			original_tag = GER
@@ -124,7 +124,7 @@ GER_oberkommando = {
 	}
 	GER_hold_stuttgart = { #Heilbronn
 
-		icon = generic_civil_support
+		icon = GFX_decision_generic_ignite_civil_war
 
 		allowed = {
 			original_tag = GER
@@ -171,7 +171,7 @@ GER_oberkommando = {
 	}
 	GER_hold_italy = { #Operation Grapeshot
 
-		icon = generic_civil_support
+		icon = GFX_decision_border_war
 
 		allowed = {
 			original_tag = GER
@@ -206,6 +206,52 @@ GER_oberkommando = {
 		complete_effect = {
 		}
 	}
+	GER_evacute_ag_courland = {
+		icon = GFX_decision_generic_human_torpedo 
+
+		available = {
+			tag = GER
+			BLR = {
+				controls_state = 190
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+
+		days_remove = 3
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 190
+    		}
+    		highlight_color_before_active = 3
+		}
+
+		remove_effect = {
+			GER = {
+				country_event = { id = scenario.8 }			
+			}
+		}
+
+		modifier = {
+			convoy_escort_efficiency = 0.25
+			convoy_retreat_speed = 0.20
+			navy_visibility = 0.10
+		}		
+	}	
 }
 
 JAP_hold_territory = {
@@ -354,7 +400,7 @@ JAP_hold_territory = {
 
 scenario_settings = {
 	GER_scenario_settings = {
-		icon = decision_generic_human_torpedo 
+		icon = GFX_decision_generic_army_support 
 
 		available = {
 			tag = GER

@@ -13,6 +13,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_mod_italy_surrender.png"
 	}
 	SpriteType = {
+		name = "GFX_news_event_mod_walter_model_surrender"
+		texturefile = "gfx/event_pictures/news_event_mod_walter_model_surrender.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_gerintro"
+		texturefile = "gfx/event_pictures/report_event_mod_gerintro.png"
+	}
+	SpriteType = {
 		name = "GFX_scenariodecision_cat"
 		texturefile = "gfx/decisions/scenariodecision_cat.png"
 	}

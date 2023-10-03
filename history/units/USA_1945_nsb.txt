@@ -139,7 +139,7 @@ units = {
 	}
 	division= {
 		name = "9. US Armored Division"
-		location = 11493
+		location = 6377
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
