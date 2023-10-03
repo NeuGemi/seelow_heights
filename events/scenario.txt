@@ -51,6 +51,22 @@ country_event = {
 				province = 3700
 				}			
 			}
+			190 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 3296
+				}			
+			}
+			763 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 11265
+				}			
+			}
 		}
 	}
 }
@@ -225,23 +241,6 @@ country_event = {
 	}
 }
 
-# Evacuation of AG Courland (ahistorical)
-country_event = {
-	id = scenario.8
-	title = scenario.8.t
-	desc = scenario.8.d	
-	picture = GFX_report_event_soviet_tanks
-
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {	# 
-		name = scenario.8.a
-	}
-}
-
 # Berlin Strategic Offensive Operation
 country_event = {
 	id = scenario.9
@@ -411,6 +410,7 @@ news_event = {
 		name = scenario.1.a
 	}
 }
+
 
 
 # Surrender of the National Republican Army (italy)

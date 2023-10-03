@@ -1,56 +1,51 @@
 units = {
-    #### NAVAL UNITS -- Atlantische Flotte (CO: Raeder ####
+    #### NAVAL UNITS -- Atlantische Flotte (CO: Dönitz ####
     fleet = {
         name = "Kriegsmarine"
-        naval_base = 241 #Wilhemshaven - fix to France later
+        naval_base = 6115 # Oslo   
         task_force = {
-			name = "Minenleger"
-			location = 6389 	# Kiel
-			ship = { name = "Brummer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }			
-			ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }
-	}    
-		task_force = {
-			name = "Zerstörerflotte" 	# CO: Lütjens
-			location = 241 	# Kiel 
-			# 4. Zerstörer Flottille
-            ship = { name = "Admiral Hipper" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }	
-            ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
-			ship = { ordered_name = 10 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class"} } }
-			ship = { ordered_name = 12 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class"} } }
-			ship = { ordered_name = 13 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class"} } }
-            ship = { ordered_name = 5 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Zerstörer 1934A Class"} } }
-			ship = { ordered_name = 6 definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = GER version_name = "Zerstörer 1940 Class"} } }
-		   	ship = { ordered_name = 7 definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = GER version_name = "Zerstörer 1940 Class"} } }
-			ship = { ordered_name = 201 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Mowe
-			ship = { ordered_name = 202 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Albatros
-			ship = { ordered_name = 203 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Seeadler
-		}
-       task_force = {
-                name = "Kriegsmarine Reserven"
-                location = 6389 # Kiel
-                ship = { name = "Prinz Eugen" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }	
+			name = "Minenunternehmen Skagerrak"
+			location = 6115 # Oslo
                 ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 	
-			    ship = { name = "Schlesien" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
-                ship = { name = "Emden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class"} } } 
-                ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
-                ship = { ordered_name = 3 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1934 Class"} } }  
-            }
+            	ship = { ordered_name = 4 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+				ship = { ordered_name = 6 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+				ship = { ordered_name = 10 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+				ship = { ordered_name = 14 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+				ship = { ordered_name = 20 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }			
+			}  
         }  
     fleet = {
     	name = "Baltische Flotte"
-    	naval_base = 9262
+    	naval_base = 9262 # Rostock
         task_force = {
-                name = "Lützow Geschwader"
-                location = 9262
-                ship = { name = "Lützow" definition = heavy_cruiser  start_experience_factor = 0.25 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-                ship = { ordered_name = 18 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
-		    	ship = { ordered_name = 19 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
-				ship = { ordered_name = 209 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Jaguar
-				ship = { ordered_name = 210 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Leopard
-				ship = { ordered_name = 211 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }		# Luchs
+            name = "Marinebombardierungsgruppe"
+            location = 321
+		    ship = { ordered_name = 5 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+            ship = { ordered_name = 34 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }  
     	} 
-    }
+    	task_force = {
+    		name = "Unternehmen Hannibal"
+    		location = 6282 #Stettin
+ 			ship = { name = "Schlesien" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
+            ship = { name = "Prinz Eugen" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }	
+            ship = { name = "Lützow" definition = heavy_cruiser  start_experience_factor = 0.25 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+            ship = { name = "Emden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class"} } } 
+            ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
+            ship = { ordered_name = 25 definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class"} } }
+			ship = { ordered_name = 31 definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class"} } }
+		   	ship = { ordered_name = 33 definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class"} } }
+			ship = { ordered_name = 38 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }
+			ship = { ordered_name = 39 definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936 Class" } } }	
+			ship = { ordered_name = 709 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 967 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 607 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 890 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 1003 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 548 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
+			ship = { ordered_name = 456 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type VII Class" } } }	
 
+    	}
+    }
 
 	fleet = {
 		name = "Unterseeboots Flotte Nord"			

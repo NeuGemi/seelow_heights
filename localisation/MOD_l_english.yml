@@ -29,6 +29,7 @@ SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation
 RAJ_burmese_campaign:0 "Burma campaign (1944–1945)"
 SOV_allied_control_commission:0 "Allied Control Commission"
 acc_tt:0 "§YThis nation is under supervision of the Allied Control Commission§!"
+operation_hannibal_tt:0 "§YOperation Hannibal, an evacuation by sea of German troops and civilians from Prussia and the Courland Pocket is currently underway§!"
 the_united_nations:0 "The United Nations"
 
 ### Events ###
@@ -56,10 +57,13 @@ scenario.5.a:0 "The war is lost."
 scenario.6.t:0 "Battle of Castle Itter"
 scenario.6.d:0 "On the fifth of May, American armored tank battalions launched an attack on Castle Itter. French tennis star Borotra assisted the Allied attack by vaulting up the castle walls to deliver vital information of the enemies positions. This day marks one of the strangest battles of the entire war, and will surely be a story to tell for decades to come."
 scenario.6.a:0 "Cowards!"
-
-scenario.8.t:0 "Army Group Courland Evacuates!"
-scenario.8.d:0 "Army Group Courland, being isolated in the Courland Peninsula since the Red Army's Baltic Offensive in 1944, has been ordered to evacuate by sea. A successful evacuation can only mean a stabilisation of fronts in mainland Europe."
-scenario.8.a:0 "Order the Kriegsmarine to assist."
+scenario.7.t:0 ""
+scenario.7.d:0 ""
+scenario.7.a:0 ""
+scenario.7.b:0 ""
+scenario.8.t:0 "Mussolini Captured and Executed"
+scenario.8.d:0 "In the late hours of April 27th, Mussolini and his wife were captured by partisans while attempting to cross the Swiss border. Mussolini has reportedly been killed and his body is triumphantly being displayed in a public square in Milan. \n\nDoes this spell the end of fascism in Italy?"
+scenario.8.a:0 "That's the end of his war."
 
 scenarionews.1.t:0 "Fall of Vienna"
 scenarionews.1.d:0 "The City of Vienna, under the Nazi control for the past decade has been liberated by Soviet forces, this comes after a period of extensive urban siege due to the ad-hoc formations to stove off capture by the Red Army. This is a major blow to the Nazi war effort and will surely thin their morale even harder, Europe waits teetered for whatever good may come next..."
@@ -90,13 +94,14 @@ GER_hold_stuttgart:0 "Battle of Heilbronn"
 GER_hold_stuttgart_desc:0 "Heilbronn, just west to Stuttgart, is set to fall within hours! Hindering Heilbronn from Allied control will slow their advance into Stuttgart and Munich, and must therefore be held at all costs."
 GER_hold_italy:0 "Operation Grapeshot"
 GER_hold_italy_desc:0 "The Allies have launched a final attack in Italy codenamed 'Operation Grapeshot'. Halting this offensive is of outmost importance to stop eventual Allied advancements into Austria and Italy."
-GER_evacute_ag_courland:0 "Evacuate Army Group Courland"
-GER_evacute_ag_courland_desc:0 "Army Group Courland, consisting of the 16. and 18. Army has been designated to defend the Courland Peninsula after being cut of by the Red Army's Baltic Offensive. \n\nHeinz Guderian has repeatedly asked Hitler to allow a withdrawal to use it in the defense of the Reich. There is no more urgent time than now."
+GER_operation_hannibal:0 "Operation Hannibal"
+GER_operation_hannibal_desc:0 "Operation Hannibal, an evacuation by sea of German troops and civilians from Prussia and the Courland Pocket is currently underway."
 
 scenario_settings:0 "Scenario Settings"
 GER_scenario_settings:0 "Remove all modifiers"
 GER_scenario_settings_desc:0 "For those who want a fairer, but unhistorical fight"
 JAP_scenario_settings:0 "Remove all modifiers"
+GER_scripted_peace:0 "Historical post-war Europe"
 
 
 JAP_hold_territory:0 "Imperial Supreme War Command"
