@@ -57,7 +57,7 @@ ENG_operation_grapeshot = {
 	ai_strategy = {
 		type = front_unit_request
 		area = italy
-		value = 1000
+		value = 3000
 	}
 
 	ai_strategy = {
