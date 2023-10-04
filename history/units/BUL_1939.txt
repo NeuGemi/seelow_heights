@@ -107,4 +107,34 @@ units = {
 		start_experience_factor = 0.2
 
 	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 6739
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3700
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 3700
+		division_template = "Konna Divizija" 
+		start_experience_factor = 0.2
+
+	}
 }
