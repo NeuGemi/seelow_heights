@@ -21,7 +21,7 @@ GER_oberkommando = {
 
 		fire_only_once = yes
 		is_good = yes
-		days_mission_timeout = 60
+		days_mission_timeout = 30
 		allowed = {
 			tag = GER
 		}
@@ -574,7 +574,7 @@ scenario_settings = {
 				transfer_state = 664
 			}
 			#DEN = {
-			# After AAT
+			# After AAT ICELAND
 			#}
 			NOR = {
 			 set_cosmetic_tag = NOR_mod_free

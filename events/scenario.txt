@@ -105,7 +105,7 @@ country_event = {
 	id = scenario.1
 	title = scenario.1.t
 	desc = scenario.1.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_gre_city_siege
 
 	fire_only_once = yes
 
@@ -125,7 +125,7 @@ country_event = {
 	id = scenario.2
 	title = scenario.2.t
 	desc = scenario.2.d	
-	#picture = GFX_report_event_german_reichstag_bombed
+	picture = GFX_report_event_generic_destroyed_vehicles
 
 
 	fire_only_once = yes
@@ -143,7 +143,7 @@ country_event = {
 	id = scenario.3
 	title = scenario.3.t
 	desc = scenario.3.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_soviet_purge_trial
 
 
 	fire_only_once = yes
@@ -177,8 +177,7 @@ country_event = {
 	id = scenario.5
 	title = scenario.5.t
 	desc = scenario.5.d	
-	picture = GFX_report_event_soviet_tanks
-
+	picture = GFX_report_event_generic_soldiers_surrendering
 
 	fire_only_once = yes
 
@@ -208,12 +207,16 @@ country_event = {
 	id = scenario.6
 	title = scenario.6.t
 	desc = scenario.6.d	
-	picture = GFX_report_event_generic_battle
+	picture = GFX_report_event_chinese_soldiers_city_ruin
 
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		tag = GER
+		date > 1945.5.4
+		has_war = yes
+	}
 
 	option = {	# 
 		name = scenario.6.a
@@ -225,7 +228,7 @@ country_event = {
 	id = scenario.7
 	title = scenario.7.t
 	desc = scenario.7.d	
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_yugoslavia_partisans
 
 
 	fire_only_once = yes

@@ -88,7 +88,7 @@ scenarionews.4.b:0 ""
 
 ### Decisions ###
 GER_oberkommando:0 "Oberkommando Des Heeres"
-GER_oberkommando_desc:0 "TODO"
+GER_oberkommando_desc:0 "After 6 years of war, the Wehrmacht is defeated, retreating. Losing on every front, Goebbels calls for a total war, with Volkssturm militias, wunderwaffen and victory through force of will. However as the Allies gain ground each day, and the Red Army prepares for a final offensive, the grasp of victory is far away. It only remains to be seen whether or not Goebbels speeches of a final victory is to be seen."
 GER_hold_holland:0 "Festung Holland"
 GER_hold_holland_desc:0 "Around 150 000 German soldiers of the Oberbefehlshaber Niederlande are destined to hold the Netherlands, cutting off vital supplies from the enemy aswell as diverting reinforcements from the allied 12th and 21st Army Group."
 GER_hold_berlin:0 "Hold Berlin!"
@@ -107,7 +107,7 @@ GER_scenario_settings:0 "Remove all modifiers"
 GER_scenario_settings_desc:0 "For those who want a fairer, but unhistorical fight"
 JAP_scenario_settings:0 "Remove all modifiers"
 GER_scripted_peace:0 "Historical Cold-War European Borders"
-GER_scripted_peace_desc:0 "§RPlease note: due to a bug, cosmetic tags cannot be removed!§!"
+#GER_scripted_peace_desc:0 "§RPlease note: due to a bug, cosmetic tags cannot be removed!§!"
 
 
 JAP_hold_territory:0 "Imperial Supreme War Command"
