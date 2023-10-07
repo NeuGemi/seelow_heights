@@ -272,13 +272,9 @@ country_event = {
 
 country_event = {
 	id = scenario.10
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	hidden = yes
-
 
     option = {
     ai_chance = {

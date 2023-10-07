@@ -1191,7 +1191,7 @@ create_field_marshal = {
 	traits = { armor_officer brilliant_strategist }
 	skill = 4
 	attack_skill = 3
-	defense_skill = 4
+	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 3
 }
@@ -1287,16 +1287,26 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-#create_corps_commander = {
-#	name = "Josef Harpe"
-#	picture = "mod_portrait_ger_josef_harpe.png"
-#	traits = { armor_officer panzer_leader }
-#	skill = 3
-#	attack_skill = 3
-#	defense_skill = 2
-#	planning_skill = 2
-#	logistics_skill = 1
-#}
+create_corps_commander = { # Army Group B
+	name = "Josef Harpe"
+	picture = "mod_portrait_ger_josef_harpe.png"
+	traits = { armor_officer panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = { # Army Group B
+	name = "Gustav-Adolf von Zangen"
+	picture = "mod_portrait_gustav_von_zangen.png"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
 create_corps_commander = {
 	name = "Kurt von Tippelskirch"
 	picture = "mod_portrait_ger_kurt_von_tippelskirch.png"
@@ -1337,17 +1347,37 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
+create_corps_commander = {
+	name = "Ehrenfried-Oskar Boege"
+	picture = "Portrait_Germany_Hans-Karl_Freiherr_von_Esebeck.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Friedrich von Kirchensittenbach"
+	picture = "portrait_ger_hans_von_luck.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
 
-
-
-
-
-
-
-
-
-
-
+create_corps_commander = {
+	name = "Helmuth Weidling"
+	picture = "mod_portrait_ger_helmuth_weidling.png"
+	traits = { urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
 
 }
 

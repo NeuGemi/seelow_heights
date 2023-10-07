@@ -300,21 +300,6 @@ division_template = {
 
 units = {
 
-	### RESERVES / Unknown exact Location ###
-
-	division = { 
-		name = "Panzergrenadier-Division 'Brandenburg'" 	# Austria, Eastern Germany
-		location = 9665
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.1
-	}
-    division= {
-		name =  "20. Estnische SS-Freiwillige Division"		#Mitte
-		location = 514
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.2
-	}
-
     ### 20. Gebirgsarmee (Nordnorwegen) ###
 
 	division= {
@@ -1101,7 +1086,7 @@ units = {
 		start_experience_factor = 0.2
 	}
     division= {
-	    name = "32. SS Grenadier-Division"
+	    name = "32. SS Grenadier-Division '30 Januar'"
 	    location = 11415
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
@@ -1227,8 +1212,14 @@ units = {
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.30
     } 
+	division = { 
+		name = "Panzergrenadier-Division 'Brandenburg'" 	# Austria, Eastern Germany
+		location = 9535
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.1
+	}
     division= {
-	    name = "36. SS Grenadier-Division"
+	    name = "36. SS Grenadier-Division 'Dirlewanger'"
 	    location = 9535
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
@@ -1239,7 +1230,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 275
 		}
-		location = 9535
+		location = 11517
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.30
@@ -1262,7 +1253,7 @@ units = {
 	    start_equipment_factor = 0.30
     }
 
-    ### 12. ARMEE (enroute to Berlin) ###
+    ### 12. ARMEE (enroute to Berlin) CO: Walter Wenck ###
 
    division= {
 	    name = "'Theodor Körner RAD' Infanterie-Division"
@@ -1372,6 +1363,12 @@ units = {
 		division_template = "Gebirgs-Division"
 		start_experience_factor = 0.3
 		 start_equipment_factor = 0.65
+	}
+    division= {
+		name =  "20. Estnische SS-Freiwillige Division"		
+		location = 11414
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.2
 	}
 	division= {		
 		division_name = {
@@ -2022,25 +2019,25 @@ units = {
 
     ### RESERVES  (allocated to 9. armee) ###
     division= {
-	    name = "11. SS Panzergrenadier-Division"
+	    name = "11. SS Panzergrenadier-Division 'Nordland'"
 	    location = 11505
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     } 
     division= {
-	    name = "23. SS Panzergrenadier-Division"
+	    name = "23. SS Panzergrenadier-Division 'Nederland'"
 	    location = 9428
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     } 
     division= {
-	    name = "27. SS Grenadier-Division"
-	    location = 11444
+	    name = "27. SS Grenadier-Division 'Langemark'"
+	    location = 3340
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
     } 
     division= {
-	    name = "28. SS Grenadier-Division"
+	    name = "28. SS Grenadier-Division 'Wallonien'"
 	    location = 11444
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
@@ -2055,7 +2052,7 @@ units = {
 	}
     division= {
 		name =  "25. Waffen SS 'Hunyadi'"
-		location = 3569
+		location = 6418
 		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.1
 	}
@@ -2155,7 +2152,7 @@ units = {
 	# RESERVES #
     division= {
 	    name = "29. Panzergrenadier-Division"
-	    location = 773
+	    location = 11584
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.2
     } 
@@ -2249,7 +2246,7 @@ units = {
 	# RESERVES #
     division= {
 	    name = "90. Panzergrenadier-Division"
-	    location = 11584
+	    location = 603
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.2
     } 

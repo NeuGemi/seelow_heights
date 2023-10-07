@@ -102,18 +102,16 @@ GER_hold_italy_desc:0 "The Allies have launched a final attack in Italy codename
 GER_operation_hannibal:0 "Operation Hannibal"
 GER_operation_hannibal_desc:0 "Operation Hannibal, an evacuation by sea of German troops and civilians from Prussia and the Courland Pocket is currently underway."
 
+JAP_hold_territory:0 "Imperial Supreme War Command"
+JAP_hold_burma:0 "Hold Burma"
+JAP_hold_phi:0 "Hold the Philippines"
+JAP_hold_okinawa:0 "Hold Okinawa"
+
 scenario_settings:0 "Scenario Settings"
 GER_scenario_settings:0 "Remove all modifiers"
 GER_scenario_settings_desc:0 "For those who want a fairer, but unhistorical fight"
 JAP_scenario_settings:0 "Remove all modifiers"
 GER_scripted_peace:0 "Historical Cold-War European Borders"
-#GER_scripted_peace_desc:0 "§RPlease note: due to a bug, cosmetic tags cannot be removed!§!"
-
-
-JAP_hold_territory:0 "Imperial Supreme War Command"
-JAP_hold_burma:0 "Hold Burma"
-JAP_hold_phi:0 "Hold the Philippines"
-JAP_hold_okinawa:0 "Hold Okinawa"
 
 ### Bookmarks ###
 GER_SEELOW_DESC:0 "Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."

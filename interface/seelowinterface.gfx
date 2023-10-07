@@ -24,5 +24,9 @@ spriteTypes = {
 		name = "GFX_scenariodecision_cat"
 		texturefile = "gfx/decisions/scenariodecision_cat.png"
 	}
+	SpriteType = {
+		name = "GFX_portrait_mod_erich_koch"
+		texturefile = "gfx/leaders/BLR/portrait_mod_erich_koch.png"
+	}
 }
 
