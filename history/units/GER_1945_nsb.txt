@@ -225,6 +225,19 @@ division_template = {
 	}
 }
 division_template = {
+	name = "StuG Brigade"			
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		medium_tank_destroyer_brigade = { x = 0 y = 0 }		
+		medium_tank_destroyer_brigade = { x = 0 y = 1 }
+	}
+	support = {
+			mot_recon = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+	}
+}
+division_template = {
 	name = "SS-Panzerdivision"				
 	division_names_group = GER_SS_01
 
@@ -300,8 +313,14 @@ division_template = {
 
 units = {
 
-    ### 20. Gebirgsarmee (Nordnorwegen) ###
+    ### 20. Gebirgsarmee (CO: Franz Böhme)(Nordnorwegen) ###
 
+	division= {
+		name = "Panzerbrigade 'Norwegen'"
+		location = 3058
+		division_template = "StuG Brigade"
+		start_experience_factor = 0.1
+	}
 	division= {
 		name = "7. Gebirgsjäger-Division"
 		location = 3058
@@ -348,27 +367,24 @@ units = {
 		start_experience_factor = 0.3
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
-
-	### 21. Armee (Norwegen) ###
-
    division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 274		
+				name_order = 270		
 		}
 		location = 192
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
    division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 280		
+				name_order = 140		
 		}
 		location = 3022
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
    division= {		
@@ -378,7 +394,7 @@ units = {
 		}
 		location = 122
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
    division= {		
@@ -388,7 +404,7 @@ units = {
 		}
 		location = 53
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
     division= {
@@ -406,18 +422,21 @@ units = {
 	    location = 399
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.30
     }
     division= {
 	    name = "160. Reserve Panzer Division"
 	    location = 399
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.30
     }
     division= {
 	    name = "166. Reserve Panzer Division"
 	    location = 399
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.30
     }
    division= {		
 		division_name = {
@@ -450,8 +469,9 @@ units = {
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
 
-	### Heeresgruppe Kurland ###
-		### 18. Armee ###
+	### Heeresgruppe Kurland (CO: Carl Hilpert) ###
+
+		### 18. Armee (CO: Ehrenfried-Oskar Boege) ###
 
     division= {	
 	    name = "Festungskommandant Libau"
@@ -545,7 +565,7 @@ units = {
 	    start_equipment_factor = 0.30
     }
 
-    ### 16. Armee ###
+    ### 16. Armee (CO: Friedrich von Kirchensittenbach) ###
 
     division= {	
 	    name = "Brigade Kurland"
@@ -636,7 +656,7 @@ units = {
 		 start_equipment_factor = 0.60
     }
 
-	### Armee Ostpreussen ###
+	### Armee Ostpreussen (CO: Dietrich von Saucken) ###
 		### Gdansk ###
 
 	division= {		
@@ -876,10 +896,11 @@ units = {
 	    start_equipment_factor = 0.75
     }
 
-    ### Heeresgruppe Vistula ###
-	   ## East Germany ###
-	  ### 3. PANZER ARMY ###
+    ### Heeresgruppe Weichsel (CO: Gotthard Heinrici) ###
 
+	  ### 3. Panzerarmee (CO: Hasso von Manteuffel) ###
+
+	  # Swinemunde Korps #
     division= {	
 	    name = "2. Marine Division"
 		location = 6282
@@ -894,6 +915,7 @@ units = {
 		start_experience_factor = 0.2
 		 start_equipment_factor = 0.50
     }
+    	# XXXII Korps #
     division= {	
 	    name = "Festung Stettin"
 		location = 6282
@@ -929,6 +951,7 @@ units = {
 		 start_equipment_factor = 0.50
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
 	}
+		# Oder Korps/Division #
     division= {	
 	    name = "Infanteriegruppe Klossek"
 		location = 6282
@@ -947,9 +970,9 @@ units = {
 		 start_equipment_factor = 0.50
 	}
 
-	### HEERESGRUPPE VISTULA ###
-	### 9. ARMEE ###
+	### 9. Armee (CO:  Theodor Busse) ###
 
+	# CI (101) korps#
 	division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -970,37 +993,14 @@ units = {
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 
+				name_order = 606
 		}
 		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 		 start_equipment_factor = 0.30
 	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 
-		}
-		location = 3207
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.30
-	}
-    division= {
-	    name = "25. Panzergrenadier Division"
-	    location = 3207
-	    division_template = "Panzergrenadier-Division"
-	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.30
-    }  
-    division= {
-	    name = "Kampfgruppe 1001 Nacht"
-	    location = 9496
-	    division_template = "Panzergrenadier-Division"
-	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.30
-    }  
+		# XI (11) SS Korps #
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -1012,12 +1012,12 @@ units = {
 		 start_equipment_factor = 0.30
 	}
     division= {
-	    name = "18. Panzergrenadier Division"
-	    location = 9496
+	    name = "Panzergrenadier-Division 'Kurmark'"
+	    location = 11415
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.30
-    }  
+	     start_equipment_factor = 0.60
+    }
     division= {
 	    name = "20. Panzergrenadier Division"
 	    location = 9496
@@ -1025,13 +1025,6 @@ units = {
 	    start_experience_factor = 0.3
 	     start_equipment_factor = 0.30
     }  
-   division= {
-	    name = "Panzer-Division 'Müncheberg'"
-	    location = 9496
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.30
-    }
     division= {	
 	    name = "303. 'Döberitz' Infanterie-Division"
 		location = 9496
@@ -1059,12 +1052,43 @@ units = {
 		start_experience_factor = 0.2
 		 start_equipment_factor = 0.60
 	}
+		# V (5) SS Korps #
     division= {
-	    name = "Panzergrenadier-Division 'Kurmark'"
+	    name = "32. SS Grenadier-Division '30 Januar'"
 	    location = 11415
-	    division_template = "Panzergrenadier-Division"
+	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
 	     start_equipment_factor = 0.60
+    } 
+    division= {
+	    name = "25. Panzergrenadier Division"
+	    location = 3207
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+	     start_equipment_factor = 0.30
+    }  
+    division= {
+	    name = "Kampfgruppe 1001 Nacht"
+	    location = 9496
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+	     start_equipment_factor = 0.30
+    }  
+
+    division= {
+	    name = "18. Panzergrenadier Division"
+	    location = 9496
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+	     start_equipment_factor = 0.30
+    }  
+
+   division= {
+	    name = "Panzer-Division 'Müncheberg'"
+	    location = 9496
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+	     start_equipment_factor = 0.30
     }
 	division= {		
 		division_name = {
@@ -1085,15 +1109,62 @@ units = {
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 	}
+
+
+    ### RESERVES (III SS Panzerkorps) (allocated to 3. Panzerarmee) ###
+
     division= {
-	    name = "32. SS Grenadier-Division '30 Januar'"
-	    location = 11415
+	    name = "11. SS Panzergrenadier-Division 'Nordland'"
+	    location = 11505
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+    } 
+    division= {
+	    name = "23. SS Panzergrenadier-Division 'Nederland'"
+	    location = 9428
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+    } 
+    division= {
+	    name = "27. SS Grenadier-Division 'Langemark'"
+	    location = 3340
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
-	     start_equipment_factor = 0.60
+    } 
+    division= {
+	    name = "28. SS Grenadier-Division 'Wallonien'"
+	    location = 11444
+	    division_template = "SS-Infanterie-Division"	
+	    start_experience_factor = 0.3
     } 
 
-    ### BERLIN GARNISON ###
+    ### Armeegruppe Steiner (III SS Korps in 22 April) ###
+
+    division= {
+	    name = "4. SS-Polizei-Panzergrenadier-Division"
+	    location = 3258
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
+    } 
+    division= {
+	    name = "5. Jäger-Division"
+	    location = 3258
+	    division_template = "Infanterie-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
+    } 
+
+    # Reserves, later formed 21. Armee #
+	division = {
+		name = "2. Fallschirm-Panzer Division 'Hermann Göring'"
+		location = 514
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.25
+	}
+
+    ### BERLIN GARNISON (CO: Helmuth Weidling) ###
     ### 9. A-Z 
     division= {	
 	    name = "Sektor Anton"
@@ -1202,22 +1273,38 @@ units = {
 	    start_equipment_factor = 0.9
     }
 
-    ### HEERESGRUPPE MITTE ###
-     ### 4. PANZER ARMEE ###
+    ### HEERESGRUPPE MITTE (CO: Ferdinand Schörner) ###
 
-    division= {
+     ### 4. Panzerarmee (CO: Fritz Hubert Gräser) ###
+
+     	# V (5) Korps #
+     division= {
 	    name = "35. SS Polizei Grenadier-Division"
 	    location = 9535
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.30
-    } 
-	division = { 
-		name = "Panzergrenadier-Division 'Brandenburg'" 	# Austria, Eastern Germany
+    }     	
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 275
+		}
 		location = 9535
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.1
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.30
 	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 214
+		}
+		location = 9535
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.30
+	}	
     division= {
 	    name = "36. SS Grenadier-Division 'Dirlewanger'"
 	    location = 9535
@@ -1228,32 +1315,93 @@ units = {
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 275
+				name_order = 342
+		}
+		location = 9535
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	    start_equipment_factor = 0.30
+	}
+		# Moser Korps #
+    division= {
+	    name = "463. Ersatz-Division"
+	    location = 11401
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
+    } 
+    division= {
+	    name = "404. Infanterie-Division"
+	    location = 11401
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
+    } 
+    division= {
+	    name = "193. Grenadier-Ersatz- und Ausbildungs-Division"
+	    location = 11401
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.10
+    } 
+     	# Panzerkorps Großdeutschland #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 546
 		}
 		location = 11517
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.30
+	    start_equipment_factor = 0.20
 	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 342
+				name_order = 615
 		}
 		location = 11517
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	    start_equipment_factor = 0.20
+	}
+	division = { 
+		name = "Panzergrenadier-Division 'Brandenburg'"
+		location = 11517
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.1
+	}
+     	# LVII (57) Korps #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 6534
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	    start_equipment_factor = 0.30
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 72
+		}
+		location = 6534
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 	    start_equipment_factor = 0.30
 	}
    division= {
 	    name = "21. Panzer-Division"
-	    location = 11517
+	    location = 6534
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.30
     }
 
-    ### 12. ARMEE (enroute to Berlin) CO: Walter Wenck ###
+
+    ### 12. ARMEE (enroute to Berlin) CO: Walter Wenck ### At correct location
 
    division= {
 	    name = "'Theodor Körner RAD' Infanterie-Division"
@@ -1331,169 +1479,239 @@ units = {
 	    start_experience_factor = 0.2
     }
 
-    	### 17. Armee ###
+    	### 17. Armee (CO: Wilhelm Hasse) ###
 
-	division= {
-		name = "4. Romanian Diviziune de Munte"
-		location = 6534
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 6534
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
-	division= {
-		name = "10. Romanian Divizia de Infanterie"
-		location = 6534
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
-	}
-	division= {
-		name = "4. Gebirgs-Division"
-		location = 11414
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
-    division= {
-		name =  "20. Estnische SS-Freiwillige Division"		
-		location = 11414
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.2
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 73
-		}
-		location = 445
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
+	# Breslau Festung Korps #
 	division= {
 		name = "Festung Breslau"
 		location = 9570
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.6
 	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 609
+		}
+		location = 9570
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.85
+	}
+
+	# XVII (17) Korps #
 	division= {
-		name = "9. Romanian Divizia de Infanterie"
+		name = "31. SS-Freiwilligen-Grenadier-Division"
+		location = 11414
+		division_template = "SS-Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.20
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 359
+		}
+		location = 11414
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		 start_equipment_factor = 0.65
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 269
+		}
 		location = 11414
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
+		 start_equipment_factor = 0.65
+	}
+    	# VIII (8) Korps #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 494
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		 start_equipment_factor = 0.65
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 100
+		}
+		location = 494
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.65
 	}
-	division= {
-		name = "19. Romanian Divizia de Infanterie"
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 208
+		}
+		location = 494
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		 start_equipment_factor = 0.65
+	}
+
+    	# XXXX (40) Korps #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 45
+		}
 		location = 445
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
-	}
-	division= {
-		name = "97. Jäger-Division"
-		location = 494
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 98
-		}
-		location = 494
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 79
-		}
-		location = 421
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		 start_equipment_factor = 0.65
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 370
-		}
-		location = 421
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		 start_equipment_factor = 0.65
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 50
-		}
-		location = 6485
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.1
 		 start_equipment_factor = 0.65
 	}
-    ### 1. Panzerarmee ### /Near slovakia/ East of Brno / Upper Hungary
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 154
+				name_order = 168
+		}
+		location = 445
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		 start_equipment_factor = 0.65
+	}
+	division= {
+		name = "20. Panzer-Division"
+		location = 445
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.20
+	}
+		# At 17. Armee's disposal (Possibly Fallschirm-Panzer Korps?#
+    division= {
+		name =  "20. Estnische SS-Freiwillige Division"		
+		location = 421
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "18. SS Panzergrenadier-Division 'Horst Wessel'"
+		location = 421
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.25
+	}
+	division = {
+		name = "1. Fallschirm-Panzer Division 'Hermann Göring'"
+		location = 421
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.35
+	}
+
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 603
+		}
+		location = 583
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		 start_equipment_factor = 0.65
+	}
+
+    ### 1. Panzerarmee (CO: Walther Nehring) ### /Near slovakia/ East of Brno / Upper Hungary
+
+    # XI (11) Korps #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 158
+		}
+		location = 6485
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+	}
+	division= {
+		name = "1. Skijäger-Division"
+		location = 6485
+		division_template = "Gebirgs-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+	}
+	division= {
+		name = "97. Jäger-Division"
+		location = 6485
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		 start_equipment_factor = 0.65
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 371
+		}
+		location = 6485
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 68
+		}
+		location = 6485
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+	}
+		# LIX (59) Korps #
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 715
 		}
 		location = 9457
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3 
+		start_experience_factor = 0.3
 	    start_equipment_factor = 0.75
 	}
     division= {
-	    name = "8. Panzer Division"
+	    name = "19. Panzer Division"
+	    location = 9457
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3 
+	    start_equipment_factor = 0.75
+    }
+    division= {
+	    name = "16. Panzer Division"
 	    location = 9457
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3 
 	       start_equipment_factor = 0.75
     }
     division= {
-	    name = "17. Panzer Division"
-	    location = 9457
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3 
-	    start_equipment_factor = 0.75
-    }
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 75
-		}
-		location = 9457
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
-	}
-    division= {
-	    name = "320. Volksgrenadier-Division"
+	    name = "544. Volksgrenadier-Division"
 	    location = 9457
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.75
     }
 	division= {
-		name = "16. Hungarian Gyalogdandár"
+		name = "4. Gebirgs-Division"
+		location = 9457
+		division_template = "Gebirgs-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.65
+	}
+		# XXXXIX (49) Gebirgskorps #
+	division= {
+		name = "3. Gebirgs-Division"
 		location = 3583
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
+		division_template = "Gebirgs-Division"
+		start_experience_factor = 0.3
 	    start_equipment_factor = 0.75
 	}
 	division= {		
@@ -1517,112 +1735,129 @@ units = {
 	    start_equipment_factor = 0.75
 	}
 	division= {
-		name = "3. Gebirgs-Division"
-		location = 3583
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 715
-		}
+		name = "16. Hungarian Gyalogdandár"
 		location = 3583
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	    start_equipment_factor = 0.75
 	}
+	division= {
+		name = "Kampfgruppe 'Bader'"
+		location = 3583
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
+	}
     division= {
-	    name = "19. Panzer Division"
+	    name = "320. Volksgrenadier-Division"
 	    location = 3583
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3 
-	    start_equipment_factor = 0.75
-    }
-    division= {
-	    name = "16. Panzer Division"
-	    location = 6590
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3 
-	       start_equipment_factor = 0.75
-    }
-    division= {
-	    name = "544. Volksgrenadier-Division"
-	    location = 6590
 	    division_template = "Volksgrenadier-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.75
     }
+    # XXIX (29) Korps #
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 68
+				name_order = 76
 		}
 		location = 6590
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
+	    start_equipment_factor = 0.45
 	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 371
+				name_order = 8
 		}
 		location = 6590
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
+	    start_equipment_factor = 0.45
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 6590
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.45
 	}
 	division= {
-		name = "1. Skijäger-Division"
+		name = "153. Grenadier-Division"
 		location = 6590
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 158
-		}
-		location = 3484
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
+		start_experience_factor = 0.1
+	    start_equipment_factor = 0.20
 	}
-	division = {
-		name = "10. Panzergrenadier-Division"
-		location = 3484
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.60
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 78
-		}
-		location = 3484
-		division_template = "Volkssturm-Division"
-		start_experience_factor = 0.2
-	    start_equipment_factor = 0.75
-		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+		# XIV (24) Korps #
+	division= {
+		name = "Kampfgruppe 344. Infanterie-Division"
+		location = 6576
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	    start_equipment_factor = 0.25
 	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 254
 		}
-		location = 3484
+		location = 6576
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	    start_equipment_factor = 0.75
 	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 78
+		}
+		location = 6576
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.2
+	    start_equipment_factor = 0.75
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+	}
+	division = {
+		name = "10. Panzergrenadier-Division"
+		location = 6576
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.60
+	}
+		# At Army's Disposal #
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 344
+				name_order = 154
+		}
+		location = 3484
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3 
+	    start_equipment_factor = 0.75
+	}
+    division= {
+	    name = "8. Panzer Division"
+	    location = 6562 #Olomouc
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3 
+	       start_equipment_factor = 0.75
+    }
+    division= {
+	    name = "17. Panzer Division"
+	    location = 3484
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3 
+	    start_equipment_factor = 0.75
+    }
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 75
 		}
 		location = 3484
 		division_template = "Infanterie-Division"
@@ -1630,55 +1865,75 @@ units = {
 	    start_equipment_factor = 0.75
 	}
 
+    ### Heeresgruppe Ostmark/Süd (CO: Lothar Rendulic) ###
 
-    ### HEERESGRUPPE OSTMARK/Süd ###
+    	### 8. Armee (CO: Hans Kreysing) /Hungary, Eztergom ###
 
-    	### 8. Armee /Hungary, Eztergom ###
-
+    # At Army's Disposal #
 	division= {
 		name = "SS-Kampfgruppe 'Trabandt'"
-		location = 6576
+		location = 3569
 		division_template = "SS-Infanterie-Division"
 		start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
 	}
-	division= {
-		name = "37. SS-Freiwilligen-Kavallerie-Division 'Lützow'"
-		location = 6576
-		division_template = "SS-Infanterie-Division"
+
+    # LXXII (72) Korps ###
+    division= {
+	    name = "46. Volksgrenadier-Division"
+	    location = 11511
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.55
+    }
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 182
+		}
+		location = 11511
+		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	 start_equipment_factor = 0.55
 	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 96
+				name_order = 711
 		}
-		location = 6576
+		location = 11511
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	 	start_equipment_factor = 0.55
+	    start_equipment_factor = 0.30
 	}
     division= {
-	    name = "25. Panzer-Division"
+	    name = "271. Volksgrenadier-Division"
 	    location = 11511
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.55 
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.30
     }
+    # FH (VI) Korps #
 	division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 357
 		}
-		location = 11511
+		location = 557
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	 	start_equipment_factor = 0.55
 	}
     division= {
+	    name = "211. Volksgrenadier-Division"
+	    location = 557
+	    division_template = "Volksgrenadier-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.30
+    }
+    division= {
 	    name = "Panzer-Division 'Feldherrnhalle 1'"
-	    location = 11511
+	    location = 557
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.55 
@@ -1690,130 +1945,120 @@ units = {
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.55 
     }
+    # XXXXIII (43) Korps #
+	division= {
+		name = "37. SS-Freiwilligen-Kavallerie-Division 'Lützow'"
+		location = 3718
+		division_template = "SS-Infanterie-Division"
+		start_experience_factor = 0.3
+	 	start_equipment_factor = 0.55
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 96
+		}
+		location = 3718
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	 	start_equipment_factor = 0.55
+	}
     division= {
-	    name = "211. Volksgrenadier-Division"
-	    location = 557
-	    division_template = "Volksgrenadier-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
-    }
-    division= {
-	    name = "271. Volksgrenadier-Division"
-	    location = 557
-	    division_template = "Volksgrenadier-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
-    }
-    division= {
-	    name = "46. Volksgrenadier-Division"
+	    name = "25. Panzer-Division"
 	    location = 3718
-	    division_template = "Volksgrenadier-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.55
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+	    start_equipment_factor = 0.55 
     }
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 182
-		}
+	division= {
+		name = "101. Jäger Division"
 		location = 3718
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
-	 start_equipment_factor = 0.55
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 711
-		}
-		location = 3718
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
-	}
+	 	start_equipment_factor = 0.30
+	}   
 
-    	### 6. Armee ###
+    	### 6. Panzerarmee (CO: Sepp Dietrich) ###
 
+	# Schultz Korps #
     division= {
-	    name = "117. Jäger-Division"
+	    name = "710. Infanterie-Division"
 	    location = 9527
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.55
+	    start_equipment_factor = 0.80
     }
     division= {
-	    name = "Kampfgruppe Wolf"
+	    name = "Kampfgruppe Oberst Staudinger"
 	    location = 9527
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.50
     }
-	division= {
-		name = "2. Hungarian Gyalogdandár"
-		location = 11666
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-	}
-	division= {
-		name = "1. Hungarian Gyalogdandár"
-		location = 11666
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-	}
-	division= {
-		name = "23. Hungarian Gyalogdandár"
-		location = 11666
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-	}
+    # II Korps - Vienna #
 	division = {
-		name = "5. Waffen SS-Division 'Wiking'"
+		name = "2. Waffen SS-Division 'Das Reich'"
 		location = 11666
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.15
+		start_equipment_factor = 0.20
+	}
+	division = {
+		name = "3. Waffen SS-Division 'Totenkopf'"
+		location = 704
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.20
 	}
     division= {
-	    name = "3. Panzer-Division"
-	    location = 11666
+	    name = "6. Panzer-Division"
+	    location = 704
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	  	start_equipment_factor = 0.15 
+	  	start_equipment_factor = 0.20
+    }
+	division = {
+		name = "Führer-Grenadier-Division"
+		location = 704
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 020
+	}	
+    division= {
+	    name = "Kampfgruppe Bünau"
+	    location = 11666
+	    division_template = "Infanterie-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.10
     }
     division= {
-	    name = "1. Panzer-Division"
-	    location = 11666
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	  	start_equipment_factor = 0.15 
+	    name = "Kampfgruppe Oberst Folkmann"
+	    location = 9527
+	    division_template = "Infanterie-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.50
     }
 	division= {
-		name = "1. Volks-Gebirgs-Division"
-		location = 704
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.55
+		name = "1. Hungarian Gyalogdandár"
+		location = 6690
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
 	}
-    division= {
-	    name = "Sperrverband Motschmann"
-	    location = 704
-	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
-    }
-    division= {
-	    name = "Kampfgruppe Oberst Raithel"
-	    location = 704
-	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.30
-    }
-
-    	### 6. Panzerarmee ###
-
+    # 1 SS Korps ##
+	division = {
+		name = "1. Waffen SS 'Liebstandarte Adolf Hitler'"
+		location = 6690
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.70
+	}
+	division = {
+		name = "12. Waffen SS-Division 'Hitlerjugend'"
+		location = 6690
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.70
+	}
     division= {
 	    name = "Kampfgruppe Keitel"
 	    location = 6690
@@ -1828,71 +2073,99 @@ units = {
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.50
     }
-	division = {
-		name = "1. Waffen SS 'Liebstandarte Adolf Hitler'"
-		location = 6690
-		division_template = "SS-Panzerdivision"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.70
+
+    	### 6. Armee (CO: Hermann Balck) ###
+
+    division= {
+	    name = "117. Jäger-Division" # Enroute
+	    location = 9650
+	    division_template = "Infanterie-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.55
+    }
+    division= {
+	    name = "10. Fallschirmjäger-Division" # Reserve
+	    location = 3673
+	    division_template = "Fallschirmjäger-Division"
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.25
+    }
+    # XVIII Korps #
+    division= {
+	    name = "Kampfgruppe Wolf"
+	    location = 9646
+	    division_template = "Infanterie-Division"	
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.85
+    }
+	division= {
+		name = "2. Hungarian Gyalogdandár"
+		location = 9679
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
 	}
-	division = {
-		name = "12. Waffen SS-Division 'Hitlerjugend'"
+	division= {
+		name = "23. Hungarian Gyalogdandár"
+		location = 9679
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+	}
+    # III Korps #
+	division= {
+		name = "1. Volks-Gebirgs-Division"
 		location = 9648
-		division_template = "SS-Panzerdivision"
+		division_template = "Gebirgs-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.70
+		start_equipment_factor = 0.55
 	}
     division= {
-	    name = "710. Infanterie-Division"
+	    name = "Sperrverband Motschmann"
 	    location = 9648
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.80
+	    start_equipment_factor = 0.30
     }
     division= {
-	    name = "Kampfgruppe Oberst Staudinger"
+	    name = "Kampfgruppe Oberst Raithel"
 	    location = 9648
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.50
+	    start_equipment_factor = 0.30
     }
-    division= {
-	    name = "Kampfgruppe Oberst Folkmann"
-	    location = 9648
-	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.50
-    }
+	# IV SS Korps #
 	division = {
-		name = "2. Waffen SS-Division 'Das Reich'"
-		location = 9648
+		name = "5. Waffen SS-Division 'Wiking'"
+		location = 9646
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.70
-	}
-	division = {
-		name = "3. Waffen SS-Division 'Totenkopf'"
-		location = 9648
-		division_template = "SS-Panzerdivision"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.70
+	    start_equipment_factor = 0.30
 	}
     division= {
-	    name = "6. Panzer-Division"
+	    name = "3. Panzer-Division"
 	    location = 9646
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	  	start_equipment_factor = 0.50 
+	  	start_equipment_factor = 0.30 
     }
-	division = {
-		name = "Führer-Grenadier-Division"
-		location = 9646
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
-	}	
+    division= {
+	    name = "1. Panzer-Division"
+	    location = 9646
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+	  	start_equipment_factor = 0.30 
+    }
 
-    	### 2. Panzerarmee /Croatia/South of Hungary###
+    	### 2. Panzerarmee (CO: Maximilian de Angelis) /Croatia/South of Hungary###
 
+	division= {
+		name = " Reichsgrenadier-Division 'Hoch- und Deutschmeister'"
+		location = 6672
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+	}
 	division= {
 		name = "13. Waffen SS-Division 'Handschar' (Kroatische Nr. 1"
 		location = 6672
@@ -1970,7 +2243,7 @@ units = {
 		start_equipment_factor = 0.70
 	}
 	division = {
-		name = "16. Waffen SS-Division 'Reichsführer"
+		name = "16. Waffen SS-Division 'Reichsführer'"
 		location = 9922
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.3
@@ -2017,33 +2290,21 @@ units = {
 		start_equipment_factor = 0.75
 	}
 
-    ### RESERVES  (allocated to 9. armee) ###
-    division= {
-	    name = "11. SS Panzergrenadier-Division 'Nordland'"
-	    location = 11505
-	    division_template = "Panzergrenadier-Division"
-	    start_experience_factor = 0.3
-    } 
-    division= {
-	    name = "23. SS Panzergrenadier-Division 'Nederland'"
-	    location = 9428
-	    division_template = "Panzergrenadier-Division"
-	    start_experience_factor = 0.3
-    } 
-    division= {
-	    name = "27. SS Grenadier-Division 'Langemark'"
-	    location = 3340
-	    division_template = "SS-Infanterie-Division"	
-	    start_experience_factor = 0.3
-    } 
-    division= {
-	    name = "28. SS Grenadier-Division 'Wallonien'"
-	    location = 11444
-	    division_template = "SS-Infanterie-Division"	
-	    start_experience_factor = 0.3
-    } 
-
     ### Süd Reserves ###
+	division = {
+		name = "Festung Linz"
+		location = 732
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.30
+	}
+	division = {
+		name = "11. Fallschirmjäger-Division"
+		location = 732
+		division_template = "Fallschirmjäger-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.15
+	}
 	division = {
 		name = "26. Waffen SS '2nd Hunyadi'"
 		location = 3569
@@ -2462,6 +2723,9 @@ units = {
 	### OB WEST ###
 
 	### 11. SS Panzerarmee // 11. Armee ###
+    #11th Army, the official German Army name for the army. The 11th Army also existed before this last reincarnation as an army that fought on the Eastern Front earlier in the war.
+	#Army Detachment Steiner fought in the Battle of Berlin, and because Steiner commanded that paper army it can easily be confused with the 11th SS Panzer Army.
+    #
 
     division= {
 	    name = "Kampfgruppe Fellner"

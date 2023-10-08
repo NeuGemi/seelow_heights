@@ -1195,6 +1195,16 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 3
 }
+create_field_marshal = {
+	name = "Lothar Rendulic"
+	picture = "mod_portrait_ger_lothar_rendulic.png"
+	traits = { winter_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
 
 create_corps_commander = {
 	name = "Erich Brandenberger"
@@ -1318,16 +1328,6 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 create_corps_commander = {
-	name = "Lothar Rendulic"
-	picture = "mod_portrait_ger_lothar_rendulic.png"
-	traits = { winter_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
 	name = "Walther Nehring"
 	picture = "mod_portrait_ger_walter_nehring.png"
 	traits = { armor_officer desert_fox }
@@ -1385,6 +1385,27 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
+		create_equipment_variant = {
+			name = "Sturmgeschütz IV"
+			type = medium_tank_destroyer_chassis_2
+			parent_version = 1
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_2
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 6
+			}
+			icon = "GFX_GER_medium_BCC_camo"
+		}
 		create_equipment_variant = {
 			name = "Panzer IV Ausf. G-J"
 			type = medium_tank_chassis_2
