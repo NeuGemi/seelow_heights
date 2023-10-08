@@ -2325,7 +2325,8 @@ units = {
 #######################################
 
 	# ITALY
-	# 10. ARMEE #
+		# Heeresgruppe C (CO: Heinrich von Vietinghoff) #
+	# 10. ARMEE (CO: Traugott Herr) #
 
 
     division= {
@@ -2427,7 +2428,7 @@ units = {
 		start_experience_factor = 0.2
 	} 
 
-	# 14. ARMEE #
+	# 14. ARMEE (CO: Joachim Lemelsen) #
 
 	division= {		
 		division_name = {
@@ -2512,7 +2513,7 @@ units = {
 	    start_experience_factor = 0.2
     } 
 
-    # Armee Liguria #
+    # Armee Liguria (CO: Italian commander) #
 
    # division= { IN ITalian OOB
 	#    name = "'San Marco' Division"
@@ -2558,9 +2559,9 @@ units = {
 
     #### WESTERN FRONT ### 
 
-    ### Oberbefehlshaber Nordwest ###
+    ### Heeresgruppe H (CO: Ernst Busch) ###
 
-    # Oberbefehlshaber Niederlande//25 Armee #
+    # Oberbefehlshaber Niederlande//25 Armee (CO: Johannes Blaskowitz) #
 	division= {
 		name = "34. SS-Freiwilligen-Grenadier-Division 'Landstorm Nederland'"
 		location = 9498
@@ -2643,7 +2644,7 @@ units = {
 	    start_experience_factor = 0.1
     }
 
-    ### 1. Fallschirm-Armee ###
+    ### 1. Fallschirm-Armee (CO: Kurt Student) ###
 
 	division= {		
 		division_name = {
@@ -2720,9 +2721,11 @@ units = {
 		start_equipment_factor = 0.90
 	}
 
-	### OB WEST ###
-
-	### 11. SS Panzerarmee // 11. Armee ###
+	##########################################################
+	### OB WEST (CO: Albert Kesselring) Also Heeresgruppe D ###
+	### On 15 April 1941, the status of Army Group D was upgraded. From that date on, the commander of Army Group D was also to be considered Oberbefehlshaber West (or OB WEST – the Commander in Chief for the Western Theatre). As a result of this, Army Group D is sometimes incorrectly referred to as Army Group West.
+	###########################################################
+	### 11. SS Panzerarmee // 11. Armee (CO: Walther Lucht) ###
     #11th Army, the official German Army name for the army. The 11th Army also existed before this last reincarnation as an army that fought on the Eastern Front earlier in the war.
 	#Army Detachment Steiner fought in the Battle of Berlin, and because Steiner commanded that paper army it can easily be confused with the 11th SS Panzer Army.
     #
@@ -2798,7 +2801,9 @@ units = {
 	    start_equipment_factor = 0.50
     }
 
-    ### 7. Armee ###
+   
+
+    ### 7. Armee (CO: Hans von Obstfelder) ###
     # Verbleib unbekannt #
 
    division= {
@@ -2875,7 +2880,9 @@ units = {
 	    start_equipment_factor = 0.45
     }
 
-    ### 1. Armee ###
+     # Heeresgruppe G (CO: Friedrich Schulz) #
+
+    ### 1. Armee (CO: Hans von Obstfelder) ###
 
    division= {
 	    name = "Panzerbrigade von Hobe"
@@ -2942,7 +2949,7 @@ units = {
 		start_equipment_factor = 0.75
 	}
 
-	### 19. Armee ###
+	### 19. Armee (CO: Erich Brandenberger) ###
 
 	division= {		
 		division_name = {
@@ -3033,9 +3040,9 @@ units = {
 		start_equipment_factor = 0.35
 	}
 
-	### Ruhr Pocket ###
+	### Ruhr Pocket Heeresgruppe B (CO: Walter Model) ###
 
-	### 15. Armee ###
+	### 15. Armee (CO: Gustav-Adolf von Zangen) ###
 
     division= {
 	    name = "272. Volksgrenadier-Division"
@@ -3094,7 +3101,7 @@ units = {
 		start_equipment_factor = 0.60
     }
 
-    ### 5. Panzerarmee ###
+    ### 5. Panzerarmee (CO: Josef Harpe) ###
 
     division= {		
 		division_name = {
@@ -3169,6 +3176,8 @@ units = {
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.60
     }
+
+
 
 	### Kreta ###
 
