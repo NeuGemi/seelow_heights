@@ -628,6 +628,7 @@ SOV_template_design_2 = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -772,6 +773,7 @@ SOV_naval_role_ratios_historical = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -856,19 +858,14 @@ SOV_home_land_is_safe = {
 	allowed = {
 		original_tag = SOV
 	}
-
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = garrison
-		value = -2000
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = GER
-		value = 500
+		value = -25
 	}
 }
 
@@ -974,6 +971,7 @@ SOV_dont_send_volunteers_that_early_to_china = {
 	}
 }
 
+
 SOV_dont_send_lend_lease_that_early_to_china = {
 	allowed = {
 		original_tag = SOV
@@ -985,6 +983,8 @@ SOV_dont_send_lend_lease_that_early_to_china = {
 			surrender_progress < 0.4
 		}
 	}
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = CHI
@@ -1482,10 +1482,16 @@ SOV_dont_do_so_many_naval_invasions_please = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = invasion_unit_request
 		tag = GER
+		value = -50
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = FIN
 		value = -50
 	}
 }
