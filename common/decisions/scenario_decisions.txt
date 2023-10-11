@@ -518,6 +518,7 @@ scenario_settings = {
 				transfer_state = 54
 				transfer_state = 53
 				transfer_state = 52
+				transfer_state = 909
 			}
 			DDR = {
 				transfer_state = 62
@@ -573,11 +574,28 @@ scenario_settings = {
 				transfer_state = 70
 				transfer_state = 664
 			}
-			#DEN = {
-			# After AAT ICELAND
-			#}
+			DEN = {
+				transfer_state = 912
+				transfer_state = 99
+				transfer_state = 911
+				transfer_state = 910
+				transfer_state = 37
+			}
+			ICE = {
+				transfer_state = 100
+			}
 			NOR = {
 			 set_cosmetic_tag = NOR_mod_free
+			 transfer_state = 922
+			 transfer_state = 142
+			 transfer_state = 921
+			 transfer_state = 110 
+			 transfer_state = 920
+			 transfer_state = 143
+			 transfer_state = 923
+			 transfer_state = 144
+			 transfer_state = 924
+			 transfer_state = 925
 			}
 			ITA = {
 				set_cosmetic_tag = ITA_mod_free

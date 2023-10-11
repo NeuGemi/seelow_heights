@@ -235,6 +235,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		tag = GER
 		GER = {
 			controls_state = 9
 		}
@@ -246,6 +247,23 @@ country_event = {
 		SOV = {
 			load_oob = "prague_uprising"
 		}
+	}
+}
+
+# Goebbels' Suicide May 1
+country_event = {
+	id = scenario.8
+	title = scenario.8.t
+	desc = scenario.8.d	
+	picture = GFX_report_event_generic_soldiers_surrendering
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = scenario.8.a
 	}
 }
 
@@ -410,8 +428,19 @@ news_event = {
 
 	is_triggered_only = yes
 
-	option = {	
-		name = scenario.1.a
+	option = {
+		name = scenarionews.4.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.4.b
+		trigger = { 
+			TAG = GER 
+		}
 	}
 }
 
