@@ -165,7 +165,7 @@ set_war_support = 0.3
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 	set_war_support = 0.7
 
-	add_political_power = 1197
+	add_political_power = 100
 	add_command_power = 100
 	
 	#adding ministers
@@ -502,12 +502,12 @@ recruit_character = GER_august_von_mackensen
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	recruit_character = GER_carl_friedrich_goerdeler
-}
+#if = {
+#	limit = {
+#		has_dlc = "Waking the Tiger"
+#	}
+#	recruit_character = GER_carl_friedrich_goerdeler
+#}
 
 if = {
 	limit = {
@@ -573,8 +573,8 @@ recruit_character = GER_gustavadolf_von_zangen
 recruit_character = GER_kurt_von_tippelskirch
 recruit_character = GER_walther_nehring
 recruit_character = GER_walther_wenck
-recruit_character = GER_ehrenfriedoskar_boege
-recruit_character = GER_friedrich_von_kirchensittenbach
+#recruit_character = GER_ehrenfriedoskar_boege
+#recruit_character = GER_friedrich_von_kirchensittenbach
 recruit_character = GER_helmuth_weidling
 
 	if = {
@@ -656,11 +656,17 @@ retire_character = GER_wilhelm_ritter_von_leeb
 retire_character = GER_erich_von_manstein #dismissed
 retire_character = GER_wilhelm_list #dismissed
 retire_character = GER_ewald_von_kleist #dismissed
+retire_character = GER_werner_von_fritsch
+retire_character = GER_walther_von_brauchitsch
+retire_character = GER_fritz_todt
+retire_character = GER_hjalmar_schacht
+retire_character = GER_ernst_thalmann
 
 set_cosmetic_tag = GER_greater_german_reich
 add_ideas = GER_shattered_wehrmacht
 add_ideas = GER_endsiegmod
 add_ideas = GER_totalen_krieg_doctrine
+add_ideas = GER_scenario_volkssturm
 add_ideas = GER_economic_collapse
 
 set_global_flag = fall_of_france
@@ -676,7 +682,7 @@ set_global_flag = FRA_already_surrendered
 set_stability = 0.58
 set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
-add_political_power = 1998
+add_political_power = 400
 
     unlock_national_focus = GER_danzig_or_war
     unlock_national_focus = GER_grosraumwirtschaft

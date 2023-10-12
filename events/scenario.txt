@@ -444,6 +444,44 @@ news_event = {
 	}
 }
 
+# Capture of Magdeburg
+news_event = {
+	id = scenarionews.5
+	title = scenarionews.5.t
+	desc = scenarionews.5.d	
+	picture = GFX_news_event_magdeburgliberated
+
+	immediate = {
+		set_global_flag = scenario_magdeburg
+	}
+	
+	major = yes
+	
+	trigger = {
+		GER = {
+			NOT = {
+				controls_province = 3522
+			}
+		}
+		NOT = { has_global_flag = scenario_magdeburg }
+	}
+
+	option = {
+		name = scenarionews.5.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.5.b
+		trigger = { 
+			TAG = GER 
+		}
+	}
+}
+
 
 
 # Surrender of the National Republican Army (italy)
@@ -555,6 +593,20 @@ country_event = {
 				set_state_flag = ALLIES_unplanned_offensive_flag
 				add_dynamic_modifier = {
 					modifier = unplanned_offensive
+				}
+			}
+			every_state = { #CROATIA
+				limit = { 
+					OR = {
+						state = 103
+						state = 104
+						state = 109
+
+					}
+				}
+				set_state_flag = CRO_partisans
+				add_dynamic_modifier = {
+					modifier = scenario_heavy_resistance_CRO
 				}
 			}
 		}

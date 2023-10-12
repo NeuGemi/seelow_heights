@@ -1281,7 +1281,7 @@ if = {
 1945.1.1 = {
 
 		oob = "SOV_1945_nsb"
-
+		set_cosmetic_tag = SOV_scenario
 
 	set_autonomy = {
 		target = ROM

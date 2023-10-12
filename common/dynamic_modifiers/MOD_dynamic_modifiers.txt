@@ -10,19 +10,15 @@ berlin_strategic_offensive = {
 	icon = GFX_unplanned_offensive
 	attacker_modifier = yes
 
-#	army_attack_factor = 1.0
-#	army_attack_speed_factor = 1.0
-	#army_defence_factor = -0.5
 	terrain_penalty_reduction = 0.75
-	#local_supplies_for_controller = 1.0
-#	initiative_factor = 0.75
-#	coordination_bonus = 0.75 	
-#	breakthrough_factor = 0.75
-#	army_org_regain = 0.75
-#	army_morale_factor = 0.75
-#	army_armor_speed_factor = 0.75
-	#out_of_supply_factor = -1.0
 	river_crossing_factor = -1.0
-	#supply_consumption_factor = -1.0
-	#attrition = -1.0
+}
+
+scenario_heavy_resistance_CRO = {
+	icon = GFX_modifiers_generic_resistance
+	attacker_modifier = no
+
+	army_speed_factor = -0.15
+	army_core_defence_factor = -0.1
+	army_morale_factor = -0.05
 }

@@ -1,0 +1,48 @@
+# Reduce Effects of the Great Depression
+GER_scenario_wehrmacht_level_down = {
+		if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_4
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_4
+			add_idea = GER_renewed_wehrmacht
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht
+			add_idea = GER_shattered_wehrmacht_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_2
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_2
+			add_idea = GER_shattered_wehrmacht_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_3
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_3
+			add_idea = GER_shattered_wehrmacht_4
+		}
+	}
+#	else_if = {
+#		limit = {
+#			has_idea = GER_shattered_wehrmacht_4
+#		}
+#		swap_ideas = {
+#			remove_idea = GER_shattered_wehrmacht_4
+#			add_idea = GER_renewed_wehrmacht
+#		}
+#	}
+}
