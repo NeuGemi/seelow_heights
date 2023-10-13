@@ -320,6 +320,23 @@ country_event = {
     }
 }
 
+# Wili Herold 1945
+country_event = {
+	id = scenario.11
+	title = scenario.11.t
+	desc = scenario.11.d	
+	picture = GFX_report_event_yugoslavia_partisans
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = scenario.11.a
+	}
+}
+
 # Fall of Vienna
 news_event = {
 	id = scenarionews.1
