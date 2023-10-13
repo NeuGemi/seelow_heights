@@ -20,6 +20,7 @@ country_event = {
 
 	option = {	# 
 		name = intro.1.a
+		custom_effect_tooltip = GER_scenariointro_tt
 		hidden_effect = {
 		add_manpower = -2000000
 		add_manpower = -2000000
