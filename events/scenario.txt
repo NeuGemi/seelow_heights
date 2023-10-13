@@ -4,6 +4,8 @@ add_namespace = intro
 add_namespace = scenarionukes
 add_namespace = scenarionews
 
+#GFX_report_event_generic_destroyed_vehicles
+
 # Scenario Intro for Germany
 country_event = {
 	id = intro.1
@@ -126,7 +128,7 @@ country_event = {
 	id = scenario.2
 	title = scenario.2.t
 	desc = scenario.2.d	
-	picture = GFX_report_event_generic_destroyed_vehicles
+	picture = GFX_report_event_mod_himmler_betrayal
 
 
 	fire_only_once = yes
@@ -161,7 +163,7 @@ country_event = {
 	id = scenario.4
 	title = scenario.4.t
 	desc = scenario.4.d	
-	picture = GFX_report_event_german_reichstag_gathering
+	picture = GFX_report_event_mod_flensburg_government
 
 
 	fire_only_once = yes
@@ -208,7 +210,7 @@ country_event = {
 	id = scenario.6
 	title = scenario.6.t
 	desc = scenario.6.d	
-	picture = GFX_report_event_chinese_soldiers_city_ruin
+	picture = GFX_report_event_mod_castle_itter
 
 
 	fire_only_once = yes
@@ -229,7 +231,7 @@ country_event = {
 	id = scenario.7
 	title = scenario.7.t
 	desc = scenario.7.d	
-	picture = GFX_report_event_yugoslavia_partisans
+	picture = GFX_report_event_mod_prague_uprising
 
 
 	fire_only_once = yes
@@ -264,6 +266,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.8.a
+		retire_character = GER_joseph_goebbels		
 	}
 }
 

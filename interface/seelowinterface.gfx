@@ -25,6 +25,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_mod_gerintro.png"
 	}
 	SpriteType = {
+		name = "GFX_report_event_mod_castle_itter"
+		texturefile = "gfx/event_pictures/report_event_mod_castle_itter.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_flensburg_government"
+		texturefile = "gfx/event_pictures/report_event_mod_flensburg_government.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_prague_uprising"
+		texturefile = "gfx/event_pictures/report_event_mod_prague_uprising.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_himmler_betrayal"
+		texturefile = "gfx/event_pictures/report_event_mod_himmler_betrayal.png"
+	}
+	SpriteType = {
 		name = "GFX_scenariodecision_cat"
 		texturefile = "gfx/decisions/scenariodecision_cat.png"
 	}
