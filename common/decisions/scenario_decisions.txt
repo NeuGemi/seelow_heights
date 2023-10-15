@@ -72,6 +72,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}	
 	}
 	GER_hold_vienna = {
@@ -115,6 +116,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 		#Fail
 		complete_effect = {
@@ -162,6 +164,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 		#Fail
 		complete_effect = {
@@ -209,6 +212,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 		#Fail
 		complete_effect = {
@@ -248,6 +252,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 		#Fail
 		complete_effect = {
@@ -286,6 +291,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 		#Fail
 		complete_effect = {
@@ -464,6 +470,7 @@ scenario_settings = {
 			remove_ideas = GER_totalen_krieg_doctrine
 			remove_ideas = GER_economic_collapse
 			remove_ideas = GER_scenario_volkssturm
+			remove_ideas = GER_disloyalty_4
 		}		
 	}	
 	JAP_scenario_settings = {

@@ -668,6 +668,7 @@ add_ideas = GER_endsiegmod
 add_ideas = GER_totalen_krieg_doctrine
 add_ideas = GER_scenario_volkssturm
 add_ideas = GER_economic_collapse
+add_ideas = GER_disloyalty_4
 
 set_global_flag = fall_of_france
 set_global_flag = end_of_norway

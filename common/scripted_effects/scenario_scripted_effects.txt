@@ -46,3 +46,41 @@ GER_scenario_wehrmacht_level_down = {
 #		}
 #	}
 }
+
+# Reduce Effects of the Great Depression
+GER_scenario_disloyalty_level_down = {
+		if = {
+		limit = {
+			has_idea = GER_disloyalty
+		}
+		remove_ideas = GER_disloyalty
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_disloyalty_4
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty_4
+			add_idea = GER_disloyalty_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_disloyalty_3
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty_3
+			add_idea = GER_disloyalty_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_disloyalty_2
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty_2
+			add_idea = GER_disloyalty
+		}
+	}
+}
+

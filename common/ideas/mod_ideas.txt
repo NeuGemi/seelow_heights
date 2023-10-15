@@ -4,9 +4,10 @@ ideas = {
 
     surrender_limit = {
 
-            allowed = { 
-                always = no 
+            allowed = {
+                always = no
             }
+
             available = {
                 has_war = yes
             }
@@ -21,6 +22,110 @@ ideas = {
             modifier = {
                 surrender_limit = 1
             }       
+        }
+    GER_disloyalty = {
+
+        allowed = { 
+            surrender_progress < 0.01
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        name = GER_disloyalty
+
+        picture = german_advisors
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+            modifier = {
+                political_power_gain = -0.05
+                weekly_casualties_war_support = -0.01
+                weekly_manpower = -50
+            } 
+        }
+    GER_disloyalty_2 = {
+
+        allowed = { 
+            surrender_progress < 0.01
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        name = GER_disloyalty
+
+        picture = german_advisors
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+            modifier = {
+                political_power_gain = -0.07
+                weekly_casualties_war_support = -0.03
+                weekly_manpower = -100
+            } 
+        }
+    GER_disloyalty_3 = {
+
+        allowed = { 
+            surrender_progress < 0.01
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        picture = german_advisors
+
+        name = GER_disloyalty
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+            modifier = {
+                political_power_gain = -0.10
+                weekly_casualties_war_support = -0.06
+                weekly_manpower = -150
+            } 
+        }
+    GER_disloyalty_4 = {
+
+        allowed = { 
+            surrender_progress < 0.01
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        picture = german_advisors
+
+        name = GER_disloyalty
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+            modifier = {
+                political_power_gain = -0.15
+                weekly_casualties_war_support = -0.1
+                weekly_manpower = -200
+            } 
         }
     GER_shattered_wehrmacht = {
 
