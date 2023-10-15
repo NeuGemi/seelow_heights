@@ -25,8 +25,8 @@ ideas = {
         }
     GER_disloyalty = {
 
-        allowed = { 
-            surrender_progress < 0.01
+        allowed = {
+            always = no
         }
 
         available = {
@@ -51,8 +51,8 @@ ideas = {
         }
     GER_disloyalty_2 = {
 
-        allowed = { 
-            surrender_progress < 0.01
+        allowed = {
+            always = no
         }
 
         available = {
@@ -77,8 +77,8 @@ ideas = {
         }
     GER_disloyalty_3 = {
 
-        allowed = { 
-            surrender_progress < 0.01
+        allowed = {
+            always = no
         }
 
         available = {
@@ -310,7 +310,7 @@ ideas = {
      GER_economic_collapse = {
 
         allowed = { 
-            always = no 
+            surrender_progress < 0.01
         }
         picture = generic_license_production
 
@@ -330,6 +330,7 @@ ideas = {
             production_speed_buildings_factor = -0.39
             consumer_goods_factor = 0.17 #was 43
             industrial_capacity_factory = -0.30
+            custom_modifier_tooltip = GER_economic_collapse_tt
             }       
         } 
      GER_scenario_volkssturm = {

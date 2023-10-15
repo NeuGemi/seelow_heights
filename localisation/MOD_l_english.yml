@@ -36,6 +36,7 @@ GER_scenariointro_tt:0 "§YOption to remove debuffs can be found in the Decision
 GER_scenario_volkssturm:0 "Volkssturm"
 GER_renewed_wehrmacht:0 "The Wehrmacht"
 GER_disloyalty:0 "Mass Disloyalty"
+GER_economic_collapse_tt:0 "§Y\nWill be removed when Surrender Progress is below 1%§!"
 SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
 RAJ_burmese_campaign:0 "Burma campaign (1944–1945)"
 SOV_allied_control_commission:0 "Allied Control Commission"
