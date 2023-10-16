@@ -7,5 +7,5 @@ tags={
 	"Fixes"
 }
 name="Battle of the Seelow Heights"
-supported_version="1.12.*"
+supported_version="1.13.*"
 picture="thumbnail.png"

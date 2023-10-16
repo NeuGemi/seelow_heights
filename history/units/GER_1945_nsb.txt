@@ -2270,14 +2270,21 @@ units = {
 	    start_equipment_factor = 0.85
     }
 	division= {
-		name = "2. Hungarian Gyalogdandár"
+		name = "2. Hungarian Hadosztály"
 		location = 9679
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
 	}
 	division= {
-		name = "23. Hungarian Gyalogdandár"
+		name = "Szent Lászlo Hadosztály"
+		location = 9679
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.45
+	}
+	division= {
+		name = "23. Hungarian Hadosztály"
 		location = 9679
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
