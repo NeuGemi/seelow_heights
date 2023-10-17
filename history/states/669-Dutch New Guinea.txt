@@ -18,7 +18,7 @@ state={
 			}
 		}
 		1945.1.1 = {
-			owner = JAP
+			owner = INS
 			controller = JAP
 			INS = {
 				set_province_controller = 12457

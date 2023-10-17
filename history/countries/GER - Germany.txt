@@ -661,6 +661,11 @@ retire_character = GER_walther_von_brauchitsch
 retire_character = GER_fritz_todt
 retire_character = GER_hjalmar_schacht
 retire_character = GER_ernst_thalmann
+retire_character = GER_gunther_lutjens
+retire_character = GER_hugo_sperrle
+retire_character = GER_erich_bey
+retire_character = GER_erhard_milch
+retire_character = GER_erich_raeder
 
 set_cosmetic_tag = GER_greater_german_reich
 add_ideas = GER_shattered_wehrmacht
