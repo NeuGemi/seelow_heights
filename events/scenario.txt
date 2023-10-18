@@ -506,62 +506,105 @@ news_event = {
 
 
 # Surrender of the National Republican Army (italy)
-#news_event = {
-#	id = scenarionews.3
-#	title = scenarionews.3.t
-#	desc = scenarionews.3.d
-#	picture = GFX_news_event_ITA_civil_war
-#
-#	immediate = {
-#		set_global_flag = scenario_italy
-#		hidden_effect = {
-#			ITA = {
-#				remove_ideas = surrender_limit
-#			}		
-#		}
-#	}
-#	
-#	major = yes
-#	
-#	trigger = {
-#		GER = {
-#			has_war = yes
-#		}
-#		OR = {
-#			USA = {
-#				controls_state = 159
-#			}
-#			ENG = {
-#				controls_state = 159
-#			}
-#			FRA = {
-#				controls_state = 159
-#			}
-#		}
-#		NOT = { 
-#			has_global_flag = scenario_italy 
-#			ITA = {
-#				has_war = no
-#			}			
-#		}
-#	}
-#	
-#	option = {
-#		name = scenarionews.3.a
-#		trigger = {
-#			NOT = {
-#				TAG = GER
-#
-#			}
-#		}
-#	}
-#	option = {
-#		name = scenarionews.3.b
-#		trigger = { 
-#				TAG = GER 
-#		}
-#	}
-#}
+news_event = {
+	id = scenarionews.6
+	title = scenarionews.6.t
+	desc = scenarionews.6.d
+	picture = GFX_news_event_ITA_civil_war
+
+	immediate = {
+		set_global_flag = scenario_italy
+		hidden_effect = {
+			ITA = {
+				remove_ideas = surrender_limit
+				delete_unit = {
+			    	state = 159
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 160
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 161
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 158
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 735
+			    	disband = no
+				}
+			}
+			GER = {
+				delete_unit = {
+			    	state = 159
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 160
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 161
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 158
+			    	disband = no
+				}	
+				delete_unit = {
+			    	state = 735
+			    	disband = no
+				}				
+			}			
+		}
+	}
+	
+	major = yes
+	
+	trigger = {
+		GER = {
+			has_war = yes
+		}
+		OR = {
+			USA = {
+				controls_state = 159
+			}
+			ENG = {
+				controls_state = 159
+			}
+			FRA = {
+				controls_state = 159
+			}
+		}
+		NOT = { 
+			has_global_flag = scenario_italy 
+			ITA = {
+				has_war = no
+			}			
+		}
+	}
+	
+	option = {
+		name = scenarionews.6.a
+		trigger = {
+			NOT = {
+				TAG = GER
+
+			}
+		}
+	}
+	option = {
+		name = scenarionews.6.b
+		trigger = { 
+				TAG = GER 
+		}
+		custom_effect_tooltip = GER_ag_c_surrender_tt
+	}
+}
 
  
 

@@ -44,6 +44,7 @@ acc_tt:0 "§YThis nation is under supervision of the Allied Control Commission§
 operation_hannibal_tt:0 "§YOperation Hannibal, an evacuation by sea of German troops and civilians from Prussia and the Courland Pocket is currently underway§!"
 the_united_nations:0 "The United Nations"
 CHI_endsiegmod:0 "The War of Resistance"
+GER_ag_c_surrender_tt:0 "§RAll German forces in Italian controlled territories have surrendered§!"
 
 ### Events ###
 intro.1.t:0 "Final Days of the Reich"
@@ -99,6 +100,10 @@ scenarionews.5.t:0 "Magdeburg Liberated; Industrial Slave Camps Freed!"
 scenarionews.5.d:0 "Today, U.S troops have liberated the city of Magdeburg on the right bank of the Elbe River just after a series of major fighting in the suburbs followed by heavy clashes in the center of the city where the measly German forces after a month of nonstop combat were pushed away. \n\nWhat remains to be seen is images of horror, the American troops have discovered industrial-level slave camps with many of them being actively freed as of yet. Another record of Nazi atrocity, the liberated are mourning the lost and local officials are preparing military administration."
 scenarionews.5.a:0 "Europe comes one step closer to morning."
 scenarionews.5.b:0 "The end is not near! Fight on!"
+scenarionews.6.t:0 "Fall of The Italian Social Republic"
+scenarionews.6.d:0 "The Italian Social Republic has fallen following the advancements of the Allied armies in Northern Italy. \n\nThe surrender of all German and Italian forces in Italy is under effect and will be a serious blow to the German war effort. The question now remains if the Allies will keep up their momentum. \n\nNow the Allied forces look to the north."
+scenarionews.6.a:0 "Interesting."
+scenarionews.6.b:0 "Traitors, defeatists!"  
 
 ### Decisions ###
 GER_oberkommando:0 "Oberkommando Des Heeres"
