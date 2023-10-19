@@ -118,6 +118,8 @@ country_event = {
 	option = {	
 		name = scenario.1.a
 		retire_character = GER_walter_model
+		retire_character = GER_josef_harpe
+		retire_character = GER_gustavadolf_von_zangen
 		hidden_effect = {
 			news_event = { id = scenarionews.4 days = 1 }
 		}
@@ -186,6 +188,12 @@ country_event = {
 	fire_only_once = yes
 
 	is_triggered_only = yes
+
+	immediate = {
+		GER = {
+			country_event = { id = scenario.8 days = 1 }		
+		}
+	}
 
 	option = {	# 
 		name = scenario.5.a
@@ -505,7 +513,7 @@ news_event = {
 
 
 
-# Surrender of the National Republican Army (italy)
+# Surrender of the National Republican Army (Italy)
 news_event = {
 	id = scenarionews.6
 	title = scenarionews.6.t

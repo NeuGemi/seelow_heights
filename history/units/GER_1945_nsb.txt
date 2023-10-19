@@ -426,22 +426,6 @@ units = {
 	    start_equipment_factor = 0.30
 	    start_manpower_factor = 0.30
     }
-    division= {
-	    name = "160. Reserve Panzer Division"
-	    location = 399
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.30
-	    start_manpower_factor = 0.30
-    }
-    division= {
-	    name = "166. Reserve Panzer Division"
-	    location = 399
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.30
-	    start_manpower_factor = 0.30
-    }
    division= {		
 		division_name = {
 				is_name_ordered = yes

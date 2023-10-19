@@ -4284,6 +4284,9 @@ news_event = {
 	}
 	
 	immediate = {
+		GER = {
+			country_event = { id = scenario.5 }
+		}
 		set_global_flag = fall_of_berlin_sov
 		play_victory_parade_effect = yes
 	}
