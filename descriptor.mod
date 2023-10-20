@@ -7,5 +7,6 @@ tags={
 	"Fixes"
 }
 name="Battle of the Seelow Heights"
-supported_version="1.13.*"
 picture="thumbnail.png"
+supported_version="1.13.*"
+remote_file_id="3055442569"
