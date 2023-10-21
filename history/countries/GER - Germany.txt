@@ -572,6 +572,11 @@ recruit_character = GER_walther_wenck
 #recruit_character = GER_ehrenfriedoskar_boege
 #recruit_character = GER_friedrich_von_kirchensittenbach
 recruit_character = GER_helmuth_weidling
+recruit_character = GER_theodor_busse
+recruit_character = GER_walther_luch
+recruit_character = GER_ernst_busch
+recruit_character = GER_hermann_fegelein
+recruit_character = GER_hans_obstfelder
 
 	if = {
 		limit = {

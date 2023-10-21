@@ -222,6 +222,91 @@ characters={
 			legacy_id=-1
 		}
 	}
+	GER_hans_krebs={
+		name="Hans Krebs"
+		portraits={
+			army={
+				large="gfx/leaders/GER/mod_portrait_ger_hans_krebs.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	GER_hans_obstfelder={
+		name="Hans von Obstfelder"
+		portraits={
+			army={
+				large="gfx/leaders/GER/mod_portrait_ger_hans_von_obstfelder.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	GER_hermann_fegelein={
+		name="Hermann Fegelein"
+		portraits={
+			army={
+				large="gfx/leaders/GER/mod_portrait_ger_hermann_fegelein.png"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	GER_ernst_busch={
+		name="Ernst Busch"
+		portraits={
+			army={
+				large="gfx/leaders/GER/portrait_mod_ger_ernst_busch_refined.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	GER_walther_luch={
+		name="Walther Lucht"
+		portraits={
+			army={
+				large="gfx/leaders/GER/mod_portrait_ger_walther_lucht.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 	GER_walther_nehring={
 		name="Walther Nehring"
 		portraits={
@@ -236,6 +321,23 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	GER_theodor_busse={
+		name="Theodor Busse"
+		portraits={
+			army={
+				large="gfx/leaders/GER/portrait_mod_ger_theodor_busse.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer urban_assault_specialist }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

@@ -18,15 +18,20 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -1800000			
+		}
+	}
+
 	option = {	# 
 		name = intro.1.a
 		custom_effect_tooltip = GER_scenariointro_tt
 		hidden_effect = {
-		add_manpower = -2000000
-		add_manpower = -2000000
-		add_manpower = -2000000
-		add_manpower = -2000000
-		add_manpower = -1800000
 			68 = {
 			add_building_construction = {
 				type = supply_node
@@ -87,8 +92,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {	# 
-		name = intro.2.a
+	immediate = {
 		hidden_effect = {
 			add_manpower = -2000000
 			add_manpower = -2000000
@@ -101,6 +105,10 @@ country_event = {
 			add_manpower = -2000000
 			add_manpower = -2000000
 		}
+	}
+
+	option = {	# 
+		name = intro.2.a
 	}
 }
 
@@ -158,6 +166,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.3.a
+		retire_character = GER_hermann_fegelein
 	}
 }
 

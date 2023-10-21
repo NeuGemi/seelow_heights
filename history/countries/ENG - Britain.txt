@@ -611,17 +611,20 @@ if = {
 			idea = the_united_nations
 			days = 5
 		}
+		add_ideas = ENG_europe_first_strat
 		FRA = {
 			add_timed_idea = {
 				idea = the_united_nations
 				days = 5
 			}
+			add_ideas = ENG_europe_first_strat
 		}
 		USA = {
 			add_timed_idea = {
 				idea = the_united_nations
 				days = 5
 			}
+			add_ideas = ENG_europe_first_strat
 		}
 		PHI = {
 			add_ideas = surrender_limit

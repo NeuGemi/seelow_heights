@@ -301,7 +301,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            surrender_limit = 0.15
+            surrender_limit = 0.18
             army_core_defence_factor = 0.1
             }       
         }
@@ -513,6 +513,38 @@ ideas = {
             modifier = {
                 planning_speed = 0.75
             }       
+        }
+    ENG_europe_first_strat = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = generic_manpower_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            has_war_with = GER
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            attrition = -0.1
+            supply_consumption_factor = -0.1
+            river_crossing_factor = -0.15
+            army_morale_factor = 0.05
+            } 
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = 0.05
+            }  
+            targeted_modifier = {
+                tag = GER
+                defense_bonus_against = 0.1
+            }        
         }
 
         # CHI
