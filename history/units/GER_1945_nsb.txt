@@ -3103,7 +3103,7 @@ units = {
 
      # Heeresgruppe G (CO: Friedrich Schulz) #
 
-    ### 1. Armee (CO: Hans von Obstfelder) ###
+    ### 1. Armee (CO: Hermann Foertsch) ###
 
    division= {
 	    name = "Panzerbrigade von Hobe"
