@@ -1,6 +1,6 @@
 division_template = {
 	name = "Infantry Division"  
-	division_names_group = USA_INF_01
+	division_names_group = FRA_INF_01
 
 	regiments = {
 	    infantry = { x = 0 y = 0 }
@@ -24,7 +24,7 @@ division_template = {
 }
 division_template = {
 	name = "Airborne Division"
-	division_names_group = USA_PAR_01
+	division_names_group = FRA_PAR_01
 
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -46,7 +46,7 @@ division_template = {
 }
 division_template = {
 	name = "Motorised Division" 	# Represents both frontline and reserve motorized divisions (excluding London Divs)
-	division_names_group = USA_MOT_01 
+	division_names_group = FRA_MOT_01 
 
 	regiments = {
         motorized = { x = 0 y = 0 }
@@ -71,18 +71,18 @@ division_template = {
 }
 division_template = {
 	name = "Armored Division"
-	division_names_group = USA_ARM_01
+	division_names_group = FRA_ARM_01
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
 		medium_armor = { x = 0 y = 1 }		
 		medium_armor = { x = 0 y = 2 }
 		medium_armor = { x = 0 y = 3 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 2 y = 2 }
-		mechanized = { x = 2 y = 3 }
-		mechanized = { x = 2 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
 	}
 	support = {
 	   		mot_recon = { x = 0 y = 0 }
@@ -90,8 +90,6 @@ division_template = {
 	    	artillery = { x = 0 y = 2 }
 			anti_tank = { x = 0 y = 3 }
 			field_hospital = { x = 0 y = 4 }
-			signal_company = { x = 0 y = 3 }
-
 	}
 }
 

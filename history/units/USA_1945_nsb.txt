@@ -102,11 +102,11 @@ division_template = {
 		medium_armor = { x = 0 y = 1 }		
 		medium_armor = { x = 0 y = 2 }
 		medium_armor = { x = 0 y = 3 }
-		mechanized = { x = 2 y = 0 }
-		mechanized = { x = 2 y = 1 }
-		mechanized = { x = 2 y = 2 }
-		mechanized = { x = 2 y = 3 }
-		mechanized = { x = 2 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
 	}
 	support = {
 	   		mot_recon = { x = 0 y = 0 }
@@ -114,8 +114,6 @@ division_template = {
 	    	artillery = { x = 0 y = 2 }
 			anti_tank = { x = 0 y = 3 }
 			field_hospital = { x = 0 y = 4 }
-			signal_company = { x = 0 y = 3 }
-
 	}
 }
 

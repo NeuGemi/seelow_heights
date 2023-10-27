@@ -184,7 +184,7 @@ GER_oberkommando = {
 			NOT = { controls_province = 3530 }
 		}
 
-		days_mission_timeout = 20
+		days_mission_timeout = 25
 
 		fire_only_once = yes
 
@@ -470,6 +470,32 @@ scenario_settings = {
 			remove_ideas = GER_totalen_krieg_doctrine
 			remove_ideas = GER_economic_collapse
 			remove_ideas = GER_scenario_volkssturm
+			remove_ideas = GER_disloyalty_4
+		}		
+	}	
+	GER_scenario_settings_negative = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			tag = GER
+			NOT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = GER_shattered_wehrmacht
+			remove_ideas = GER_economic_collapse
 			remove_ideas = GER_disloyalty_4
 		}		
 	}	

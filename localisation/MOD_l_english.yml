@@ -134,6 +134,7 @@ JAP_hold_okinawa:0 "Hold Okinawa"
 
 scenario_settings:0 "Scenario Settings"
 GER_scenario_settings:0 "Remove all modifiers"
+GER_scenario_settings_negative:0 "Remove all negative modifiers"
 GER_scenario_settings_desc:0 "For those who want a fairer, but unhistorical fight"
 JAP_scenario_settings:0 "Remove all modifiers"
 GER_scripted_peace:0 "Historical Cold-War European Borders"
