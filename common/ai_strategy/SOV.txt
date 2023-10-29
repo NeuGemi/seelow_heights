@@ -10,6 +10,42 @@
 # protect
 # influence
 
+SOV_garrison_MOD = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		has_war_with = GER
+	}
+
+	abort = {
+		OR = {
+			SOV = {
+				controls_province = 6521			
+			}
+			USA = {
+				controls_province = 6521			
+			}		
+		}
+	}
+
+	ai_strategy = {
+    	type = garrison
+    	value = -50000
+	}
+	ai_strategy = {
+    	type = garrison_reinforcement_priority
+    	value = -50000
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = GER
+    	value = 500
+		}
+}
+
 SOV_battle_of_berlin  = {
 	allowed = {
 		original_tag = SOV
@@ -21,10 +57,14 @@ SOV_battle_of_berlin  = {
 	}
 
 	abort = {
-		SOV = {
-			controls_province = 6521			
+		OR = {
+			SOV = {
+				controls_province = 6521			
+			}
+			USA = {
+				controls_province = 6521			
+			}		
 		}
-
 	}
 
 	ai_strategy = {
@@ -36,7 +76,7 @@ SOV_battle_of_berlin  = {
 	ai_strategy = {
     	type = front_unit_request
     	state = 64
-    	value = 250
+    	value = 500
 		}
 
 	ai_strategy = {
@@ -50,6 +90,11 @@ SOV_battle_of_berlin  = {
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
+	}
+
+	ai_strategy = {
+    	type = ignore_army_incompetence
+    	value = 1000
 	}
 
 }

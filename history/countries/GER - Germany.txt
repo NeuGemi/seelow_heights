@@ -554,6 +554,11 @@ if = {
 
 		oob = "GER_1945_nsb"
 
+		army_experience = 500
+		air_experience = 500
+		navy_experience = 500
+ 
+
 recruit_character = GER_lothar_rendulic
 recruit_character = GER_erich_brandenberger
 recruit_character = GER_traugott_herr

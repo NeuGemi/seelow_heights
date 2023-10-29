@@ -12,6 +12,8 @@ berlin_strategic_offensive = {
 
 	terrain_penalty_reduction = 0.75
 	river_crossing_factor = -1.0
+	army_speed_factor = 0.25
+	army_org_regain = 0.15
 }
 
 scenario_heavy_resistance_CRO = {

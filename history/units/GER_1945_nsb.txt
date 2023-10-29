@@ -170,7 +170,7 @@ division_template = {
 	    mot_anti_air_brigade = { x = 4 y = 2 }
 	}
 	support = {
-	   		mot_recon = { x = 0 y = 0 }
+	   	mot_recon = { x = 0 y = 0 }
 		 	engineer = { x = 0 y = 1 }
 			anti_tank = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
@@ -190,12 +190,13 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 1 y = 3 }
-		mot_artillery_brigade = { x = 2 y = 0 }
+		medium_tank_destroyer_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 0 }
 	}
 	support = {
 			mot_recon = { x = 0 y = 0 }
 			engineer = { x = 0 y = 1 }
-			logistics_company = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
 			signal_company = { x = 0 y = 4 }
 	}
@@ -251,12 +252,13 @@ division_template = {
 		mechanized = { x = 2 y = 1 }
 		mechanized = { x = 2 y = 2 }
 		mechanized = { x = 2 y = 3 }
-		mot_artillery_brigade = { x = 3 y = 0 }
+		medium_tank_destroyer_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 0 }
 	}
 	support = {
-	   		mot_recon = { x = 0 y = 0 }
+	   	mot_recon = { x = 0 y = 0 }
 		 	engineer = { x = 0 y = 1 }
-			anti_tank = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 2 }
 			field_hospital = { x = 0 y = 3 }
 			signal_company = { x = 0 y = 4 }
 		}
@@ -2507,7 +2509,7 @@ units = {
 	    name = "42. Leichte-Division"
 	    location = 6973
 	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.80
     }
 	division= {		
@@ -2534,14 +2536,14 @@ units = {
 	    name = "162. 'Turkestan' Division"
 	    location = 6973
 	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.80
     }
    division= {
 	    name = "26. Panzer-Division"
 	    location = 3976
 	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.80
     }
     division= {		
@@ -2551,7 +2553,7 @@ units = {
 		}
 		location = 3976
 		division_template = "Fallschirmjäger-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}
     division= {		
@@ -2561,7 +2563,7 @@ units = {
 		}
 		location = 3976
 		division_template = "Fallschirmjäger-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}
 	division= {		
@@ -2611,7 +2613,7 @@ units = {
 		}
 		location = 6985
 		division_template = "Gebirgs-Division"	
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}
 	division= {		
@@ -2621,7 +2623,7 @@ units = {
 		}
 		location = 6985
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	} 
 	division= {		
@@ -2631,14 +2633,14 @@ units = {
 		}
 		location = 6985
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	} 
     division= {
 	    name = "114. Leichte-Division"
 	    location = 6985
 	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.80
     }
 	division= {		
@@ -2648,7 +2650,7 @@ units = {
 		}
 		location = 6606
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}  	
 	division= {		
@@ -2658,7 +2660,7 @@ units = {
 		}
 		location = 6606
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}
 	division= {		
@@ -2668,7 +2670,7 @@ units = {
 		}
 		location = 6793
 		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.80
 	}  
 #    division= { IN Italian OOB
@@ -2699,7 +2701,7 @@ units = {
 	    name = "Kampfgruppe Meinhold"
 	    location = 9745
 	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
     }
 	division= {		
 		division_name = {
@@ -2708,13 +2710,13 @@ units = {
 		}
 		location = 9738
 		division_template = "Gebirgs-Division"	
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
     division= {
 	    name = "34. Infanterie Division"
 	    location = 11721
 	    division_template = "Infanterie-Division"	
-	    start_experience_factor = 0.3
+	    start_experience_factor = 0.2
     }
     # IN Italian OOB
 #    division= {
