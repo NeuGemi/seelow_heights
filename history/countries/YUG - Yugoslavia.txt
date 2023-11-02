@@ -351,6 +351,9 @@ set_cosmetic_tag = YUG_PROVISIONAL
 	}
 }
 
+1945.4.26 = {
+	set_oob = "YUG_1945_27"
+}
 
 
 set_stability = 0.6

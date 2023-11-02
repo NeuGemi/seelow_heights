@@ -21,6 +21,15 @@ state=
 			owner = GER
 			controller = GER
 		}
+		#1945.4.26 = {
+		#	owner = GER
+		#	controller = GER
+		#	YUG = {
+		#		set_province_controller = 6672
+		#		set_province_controller = 596
+		#		set_province_controller = 3631
+		#	}
+		#}
 	}
 	provinces={
 		596 665 3631 3654 6672 9596

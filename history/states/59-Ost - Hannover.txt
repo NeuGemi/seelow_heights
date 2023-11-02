@@ -45,6 +45,19 @@ state={
 				set_province_controller = 6377
 			}
 		}
+		1945.4.26 = {
+			USA = {
+				set_province_controller = 3271
+				set_province_controller = 6263
+				set_province_controller = 9264
+				set_province_controller = 9238
+				set_province_controller = 6218		
+				set_province_controller = 9375
+				set_province_controller = 526
+				set_province_controller = 11402
+				set_province_controller = 11468
+			}
+		}
 	}
 
 	provinces={

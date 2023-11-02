@@ -706,6 +706,10 @@ recruit_character = USA_harry_white
 	}
 }
 
+1945.4.26 = {
+	oob = "USA_1945_27_nsb"
+}
+
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {
@@ -793,7 +797,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = small_bomb_bay
 			fixed_auxiliary_weapon_slot_1 = light_mg_4x
-			engine_type_slot = engine_1_1x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
 		obsolete = yes
@@ -963,7 +967,7 @@ if = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
-				engine_type_slot = engine_2_2x
+				engine_type_slot = engine_3_2x
 				special_type_slot_1 = hmg_defense_turret
 			}
 			icon = "GFX_USA_CAS2_medium"

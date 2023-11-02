@@ -42,6 +42,14 @@ state={
 				set_province_controller = 9281
 			}
 		}
+		1945.4.26 = {
+			ENG = {
+				set_province_controller = 11264
+				set_province_controller = 247
+				set_province_controller = 3234
+				set_province_controller = 309			
+			}
+		}
 	}
 
 	provinces={

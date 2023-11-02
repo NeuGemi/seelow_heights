@@ -21,6 +21,10 @@ state=
 			owner = GER
 			controller = GER
 		}
+	#	1945.4.26 = {
+	#		owner = YUG
+	#		controller = YUG
+	#	}
 	}
 	provinces={
 		6650 9627

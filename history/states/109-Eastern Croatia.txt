@@ -24,6 +24,19 @@ state={
 				set_province_controller = 11580
 			}
 		}
+		1945.4.26 = {
+			owner = CRO
+			controller = YUG
+			GER = {
+				set_province_controller = 9611
+			}
+			CRO = {
+				set_province_controller = 11581
+				set_province_controller = 3592
+				set_province_controller = 624
+				set_province_controller = 3596
+			}
+		}
 	}
 
 	provinces={

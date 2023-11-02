@@ -37,6 +37,14 @@ state = {
 				set_province_controller = 782
 			}
 		} 
+		1945.4.26 = {
+			owner = ITA
+			controller = ENG
+			ITA = {
+				set_province_controller = 3773
+				set_province_controller = 6793
+			}
+		}
 	}
 
 	provinces = {

@@ -1211,7 +1211,34 @@ add_ideas = {
 				enemy = GER
 			}
 		}
+}
 
+1945.4.26 = {
+	oob = "GER_1945_27_nsb"
+
+		if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "GER_1945_27_air_bba"
+			set_technology = {
+			improved_small_airframe = 1
+			advanced_small_airframe = 1
+			modern_small_airframe = 1
+			improved_medium_airframe = 1
+			advanced_medium_airframe = 1
+			basic_large_airframe = 1
+			improved_large_airframe = 1
+			survivability_studies = 1
+			aa_hmg = 1
+			aa_cannon_1 = 1
+			aa_cannon_2 = 1
+			engines_3 = 1
+			engines_4 = 1
+			range_improvements = 1
+		}
+		else = {
+			set_air_oob = "GER_1945_27_air_legacy"
+		}
+	}
 }
 
 if = {
@@ -1627,7 +1654,7 @@ if = {
 		type = small_plane_naval_bomber_airframe_1
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = floats
 		}
@@ -1649,7 +1676,7 @@ if = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_3_2x
 				special_type_slot_1 = air_air_radar_1
 			}
@@ -1662,7 +1689,7 @@ if = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = drop_tanks
@@ -1674,9 +1701,9 @@ if = {
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
-				engine_type_slot = engine_3_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+				engine_type_slot = engine_4_1x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = drop_tanks
 				special_type_slot_3 = empty
@@ -1687,8 +1714,8 @@ if = {
 			name = "Me 262 'Schwalbe'"
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				fixed_auxiliary_weapon_slot_2 = rocket_rails
 				fixed_auxiliary_weapon_slot_3 = bomb_locks
 				engine_type_slot = jet_engine_2x
@@ -1704,7 +1731,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = bomb_locks
 			fixed_auxiliary_weapon_slot_1 = tank_buster_2
-			engine_type_slot = engine_3_1x
+			engine_type_slot = engine_4_1x
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = dive_brakes_small
 			special_type_slot_3 = armor_plate_small

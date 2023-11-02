@@ -25,7 +25,7 @@ units = {
     	} 
     	task_force = {
     		name = "Unternehmen Hannibal"
-    		location = 6282 #Stettin
+    		location = 321 #Rostock
  			ship = { name = "Schlesien" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
             ship = { name = "Prinz Eugen" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Admiral Hipper Class" } } }	
             ship = { name = "Lützow" definition = heavy_cruiser  start_experience_factor = 0.25 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }

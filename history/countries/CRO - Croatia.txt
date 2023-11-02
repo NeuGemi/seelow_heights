@@ -101,6 +101,11 @@ set_popularities = {
 	add_ideas = scraping_the_barrel
 }
 
+1945.4.26 = {
+	set_oob = "CRO_1945_27"
+}
+
+
 create_country_leader = {
 	name = "Ante Pavelic"
 	desc = "ANTE_PAVELIC_DESC"

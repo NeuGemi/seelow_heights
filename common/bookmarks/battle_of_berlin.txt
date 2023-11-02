@@ -1,9 +1,9 @@
 bookmarks = {
 	bookmark = {
-		name = "SEELOW_NAME"
-		desc = "SEELOW_DESC"
-		date = 1945.4.12.2
-		picture = "GFX_select_date_1936"
+		name = "BERLIN_NAME"
+		desc = "BERLIN_DESC"
+		date = 1945.4.27.1
+		picture = "GFX_select_date_1939"
 		default_country = "GER"
 		default = yes
 		

@@ -44,6 +44,13 @@ state={
 				set_province_controller = 6739
 			}
 		}
+		1945.4.26 = {
+			SOV = {
+				set_province_controller = 11666
+				set_province_controller = 704
+				set_province_controller = 3718
+			}
+		}
 	}
 
 	provinces={

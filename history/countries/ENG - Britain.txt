@@ -930,6 +930,10 @@ if = {
 	}
 }
 
+1945.4.26 = {
+	oob = "ENG_1945_27_nsb"
+}
+
 ### Ship Variants ###
 
 if = {
@@ -1840,7 +1844,7 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_2_1x
+				engine_type_slot = engine_3_1x
 				special_type_slot_1 = dive_brakes_small
 				special_type_slot_2 = fuel_tanks_small
 			}

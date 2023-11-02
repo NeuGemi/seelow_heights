@@ -17,10 +17,12 @@ SOV_garrison_MOD = {
 
 	enable = {
 		has_war_with = GER
+		NOT = { has_global_flag = scenario_debuffs_off }
 	}
 
 	abort = {
 		OR = {
+			has_global_flag = scenario_debuffs_off
 			SOV = {
 				controls_province = 6521			
 			}
@@ -64,6 +66,11 @@ SOV_battle_of_berlin  = {
 			USA = {
 				controls_province = 6521			
 			}		
+		}
+		OR = {
+			has_global_flag = scenario_debuffs_off
+			date > 1945.5.25
+
 		}
 	}
 

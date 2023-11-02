@@ -3,7 +3,7 @@ unplanned_offensive = {
 	attacker_modifier = yes
 
 	army_attack_factor = -0.9
-	army_defence_factor = 0.5
+	#army_defence_factor = 0.5
 }
 
 berlin_strategic_offensive = {

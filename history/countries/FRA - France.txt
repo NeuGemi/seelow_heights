@@ -718,9 +718,11 @@ set_war_support = 0.100
 		}
 		set_naval_oob = "FRA_1945_Naval"
 	}
-
 }
 
+1945.4.26 = {
+	oob = "FRA_1945_27_nsb"
+}
 
 ### VARIANTS ###
 # 1936 Start #

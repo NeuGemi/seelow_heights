@@ -894,6 +894,10 @@ if = {
 		set_cosmetic_tag = ITA_rsi
 }
 
+1945.4.26 = {
+	set_oob = "ITA_1945_27"
+}
+
 
 ### STOCKPILE ###
 add_equipment_to_stockpile = {

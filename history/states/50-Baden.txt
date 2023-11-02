@@ -45,6 +45,13 @@ state={
 				set_province_controller = 6568
 			}
 		}
+		1945.4.26 = {
+			owner = GER
+			controller = USA
+			GER = {
+				set_province_controller = 9655
+			}
+		}		
 	}
 
 	provinces={
