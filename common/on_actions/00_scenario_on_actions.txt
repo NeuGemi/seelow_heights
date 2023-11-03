@@ -27,4 +27,17 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			GER = {
+				country_event = { id = scenario.13 }
+			}		
+		}
+	}
 }
+
+               # if = {
+               #     limit = {
+               #         date > 1945.3.28
+                #        date < 1946.4.14
+                    #}

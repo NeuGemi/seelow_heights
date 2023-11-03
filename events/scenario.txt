@@ -32,9 +32,9 @@ country_event = {
 			if = {
 				limit = { NOT = { has_start_date > 1945.4.26 } }
 					country_event = { id = scenario.12 days = 8 }	
+				}		
 			}	
 		}
-	}
 
 	option = {	# 
 		name = intro.1.a
@@ -397,10 +397,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		TAG = GER
-		date > 1945.4.16
-	}
+	is_triggered_only = yes
 
 	option = {	# 
 		name = scenario.11.a
@@ -412,7 +409,7 @@ country_event = {
 	id = scenario.12
 	title = scenario.12.t
 	desc = scenario.12.d	
-	picture = GFX_report_event_mod_himmler_betrayal
+	picture = GFX_report_event_hitler_handshake
 
 
 	fire_only_once = yes
@@ -429,6 +426,9 @@ country_event = {
 		name = scenario.12.a
 	}
 }
+
+#
+# Scenario.13 is used
 
 # Fall of Vienna
 news_event = {
@@ -742,7 +742,7 @@ country_event = {
 				limit = {
 					OR = {
 						state = 7 # Holland
-						state = 763 # Königsberg
+					#	state = 763 # Königsberg
 						state = 190 # Kurland
 						state = 809
 						state = 58 # Mecklenburg
@@ -752,10 +752,10 @@ country_event = {
 						state = 848
 						state = 153
 						state = 39
-						state = 23
-						state = 30
-						state = 14
-						state = 29
+					#	state = 23
+					#	state = 30
+					#	state = 14
+					#	state = 29
 					}
 				}
 				set_state_flag = ALLIES_unplanned_offensive_flag
@@ -777,6 +777,59 @@ country_event = {
 					modifier = scenario_heavy_resistance_CRO
 				}
 			}
+			29 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 575
+				}
+			}
+			14 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6536
+				}
+			}
+		 	30 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11465
+				}
+			}
+			23 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6657
+				}
+			}
+			763 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11265
+				}
+			}
+			66 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 9570
+				}
+			}
+			if = {
+				limit = { has_start_date > 1945.4.26 }
+					64 = {
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 6521
+						}
+					add_province_modifier = {
+						static_modifiers = { 9th_army_pocket }
+						province = 478
+						}
+					add_province_modifier = {
+						static_modifiers = { 12th_army_breakout }
+						province = 9560
+						}
+					}
+				}
 		}
     }
 }
@@ -789,10 +842,14 @@ country_event = {
 
 	trigger = {
 		date > 1945.5.8
-		GER = {
-			NOT = { controls_province = 6521 }
+		OR = {
+			GER = {
+				NOT = { controls_province = 6521 }
+			}	
+			GER = {
+				surrender_progress < 0.15
+			}	
 		}
-		has_global_flag = scenario_hitler_suicide
 	}
 
 	hidden = yes
@@ -828,10 +885,15 @@ country_event = {
 
 	trigger = {
 		date > 1945.5.5
-		GER = {
-			NOT = { controls_province = 6521 }
+		OR = {
+			GER = {
+				NOT = { controls_province = 6521 }
+			}	
+			GER = {
+				surrender_progress < 0.15
+			}	
 		}
-		has_global_flag = scenario_hitler_suicide
+
 	}
 
 	hidden = yes
@@ -847,7 +909,7 @@ country_event = {
 				limit = {
 					OR = {
 						state = 7 # Holland
-						state = 763 # Königsberg
+					#	state = 763 # Königsberg
 						state = 190 # Kurland
 						state = 58 # Mecklenburg
 						#state = 61 # Schleswig-Holstein
@@ -860,6 +922,42 @@ country_event = {
 				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
 				remove_dynamic_modifier = {
 					modifier = unplanned_offensive
+				}
+			}
+			29 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 575
+				}
+			}
+			14 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6536
+				}
+			}
+		 	30 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11465
+				}
+			}
+			23 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6657
+				}
+			}
+			763 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11265
+				}
+			}
+			66 = {
+			remove_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 9570
 				}
 			}
 		}
@@ -1059,5 +1157,203 @@ country_event = {
 				}		
 		    }
 		}
+    }
+}
+
+# ON_surrender_immediate
+country_event = {
+	id = scenario.13
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+    immediate = {
+ 		hidden_effect = {
+						GER = {
+				release_puppet = ITA
+				release_puppet = HOL
+				release_puppet = BLR
+				release_puppet = NOR
+				set_autonomy = {
+   					target = ITA
+    				autonomy_state = autonomy_free
+					}
+				set_autonomy = {
+   					target = HOL
+    				autonomy_state = autonomy_free
+					}
+				set_autonomy = {
+   					target = BLR
+    				autonomy_state = autonomy_free
+					}
+			}
+			BEL = {
+				transfer_state = 6
+				transfer_state = 34
+			}
+			HOL = {
+				 set_cosmetic_tag = HOL_mod_free
+				transfer_state = 35
+				transfer_state = 7
+				transfer_state = 36
+			}
+			LUX = {
+				transfer_state = 8
+			}
+			WGR = {
+				transfer_state = 50
+				transfer_state = 42		
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 56
+				transfer_state = 57
+				transfer_state = 51	
+				transfer_state = 55
+				transfer_state = 54
+				transfer_state = 53
+				transfer_state = 52
+				transfer_state = 909
+			}
+			DDR = {
+				transfer_state = 62
+				transfer_state = 61
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 60
+			}
+			AUS = {
+				transfer_state = 4 #austria
+				transfer_state = 848 #austria
+				transfer_state = 153
+				transfer_state = 152 #austria
+				set_politics = {
+					ruling_party = neutrality
+    				elections_allowed = yes
+    				last_election = "1945.4.11"
+    				election_frequency = 48
+				}
+			}
+			FRA = {
+			transfer_state = 735 #savoy
+			set_cosmetic_tag = FRA_mod_free
+			}
+			ENG = {
+				add_to_faction = HOL
+				add_to_faction = BEL
+				add_to_faction = LUX
+				add_to_faction = ITA
+				add_to_faction = WGR
+			}
+			SOV = {
+				add_to_faction = DDR
+				transfer_state = 73 #ruthenia
+				transfer_state = 80 #bucovina
+				transfer_state = 78 #moldovia
+				transfer_state = 766
+				transfer_state = 763
+				transfer_state = 190
+				transfer_state = 809
+				puppet = HUN
+				puppet = ROM
+				puppet = POL
+				puppet = DDR
+			}
+			CZE = {
+				transfer_state = 69
+				transfer_state = 9
+				transfer_state = 74
+				transfer_state = 75
+				transfer_state = 72
+				transfer_state = 71
+				transfer_state = 70
+				transfer_state = 664
+			}
+			DEN = {
+				transfer_state = 912
+				transfer_state = 99
+				transfer_state = 911
+				transfer_state = 910
+				transfer_state = 37
+			}
+			ICE = {
+				transfer_state = 100
+			}
+			NOR = {
+			 set_cosmetic_tag = NOR_mod_free
+			 transfer_state = 922
+			 transfer_state = 142
+			 transfer_state = 921
+			 transfer_state = 110 
+			 transfer_state = 920
+			 transfer_state = 143
+			 transfer_state = 923
+			 transfer_state = 144
+			 transfer_state = 924
+			 transfer_state = 925
+			}
+			ITA = {
+				set_cosmetic_tag = ITA_mod_free
+				transfer_state = 39
+				transfer_state = 850
+				transfer_state = 160
+				transfer_state = 159
+				transfer_state = 158
+				transfer_state = 161
+				transfer_state = 162
+				transfer_state = 157
+				transfer_state = 2
+				transfer_state = 117
+				transfer_state = 849
+				transfer_state = 156
+				transfer_state = 115
+				transfer_state = 114
+			}
+			HUN = {
+				transfer_state = 155
+				transfer_state = 154
+				transfer_state = 43
+			}
+			ROM = {
+				#drop_cosmetic_tag = ROM_scenario
+			}
+			YUG = {
+				set_cosmetic_tag = YUG_mod_free
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 109
+				transfer_state = 102
+				transfer_state = 853
+				transfer_state = 736
+				transfer_state = 852
+			}
+			GRE = {
+			transfer_state = 182
+			transfer_state = 164
+			}
+			POL = {
+				transfer_state = 63
+				transfer_state = 68
+				transfer_state = 66
+				transfer_state = 85
+				transfer_state = 807
+				transfer_state = 86
+				transfer_state = 67
+				transfer_state = 762
+				transfer_state = 87
+				transfer_state = 98
+				transfer_state = 10
+				transfer_state = 90
+				transfer_state = 88
+				transfer_state = 5
+				transfer_state = 97
+				transfer_state = 92
+			}
+		}   
+    }
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
     }
 }
