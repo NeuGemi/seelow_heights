@@ -1,9 +1,9 @@
 unplanned_offensive = {
 	icon = GFX_unplanned_offensive
-	attacker_modifier = no
+	attacker_modifier = yes
 
-	#army_attack_factor = -0.9
-	army_defence_factor = 1.0
+	army_attack_factor = -0.9
+	#army_defence_factor = 1.0
 }
 
 berlin_strategic_offensive = {

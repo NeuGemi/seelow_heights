@@ -10,7 +10,7 @@ festung_positions = {
 
 9th_army_pocket = {
 	local_supplies = 1.0
-	army_org_regain = 0.75
+	army_org_regain = 1.0
 }
 
 12th_army_breakout = {
@@ -24,8 +24,8 @@ festung_positions = {
 }
 
 battle_of_berlin = {
-	local_supplies = 0.35
-	army_org_regain = 0.25
+	local_supplies = 1.0
+	army_org_regain = 0.35
 }
 
 _test_power_balance_mod = {

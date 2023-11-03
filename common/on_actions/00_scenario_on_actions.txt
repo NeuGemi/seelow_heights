@@ -1,8 +1,20 @@
 on_actions = { 
 	on_startup = {
 		effect = {
+				if = { 
+					limit = { 
+						date > 1945.3.28 
+						date < 1945.4.14 
+					}
+					GER = { country_event = { id = intro.1 } }
+				}
+				if = { 
+					limit = { 
+						date > 1945.4.26 
+					}
+					GER = { country_event = { id = intro.3 } }
+				}
 			GER = {
-				country_event = { id = intro.1 }
 				country_event = { id = offensives.1 }
 		#		country_event = { id = scenario.1 days = 9 }
 			#	country_event = { id = scenario.2 days = 16 } TODO CHECK IF WORKS WITH BOTH DATES
