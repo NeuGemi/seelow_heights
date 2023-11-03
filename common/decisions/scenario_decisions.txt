@@ -49,6 +49,11 @@ GER_oberkommando = {
 		complete_effect = {
 			#custom_effect_tooltip = operation_hannibal_tt
 		}		
+		
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05		
+		}
 	}
 	GER_hold_holland = {
 		icon = GFX_decision_generic_mountain_fortification

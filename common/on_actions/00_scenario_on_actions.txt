@@ -6,13 +6,21 @@ on_actions = {
 						date > 1945.3.28 
 						date < 1945.4.14 
 					}
-					GER = { country_event = { id = intro.1 } }
+					GER = { 
+						country_event = { id = intro.1 } 
+						country_event = { id = scenario.7 days = 24 }
+						country_event = { id = scenario.6 days = 23 }
+					}
 				}
 				if = { 
 					limit = { 
 						date > 1945.4.26 
 					}
-					GER = { country_event = { id = intro.3 } }
+					GER = {
+						country_event = { id = intro.3 } 
+						country_event = { id = scenario.7 days = 8 }
+						country_event = { id = scenario.6 days = 8 }
+					}
 				}
 			GER = {
 				country_event = { id = offensives.1 }
@@ -21,8 +29,8 @@ on_actions = {
 			#	country_event = { id = scenario.3 days = 16 } TODO CHECK IF WORKS WITH BOTH DATES
 			#	country_event = { id = scenario.4 days = 20 }
 			#	country_event = { id = scenario.5 days = 18 }
-			#	country_event = { id = scenario.6 days = 23 } TODO CHECK IF WORKS WITH BOTH DATES
-			#	country_event = { id = scenario.7 days = 24 }
+			#	
+			#	
 			#	country_event = { id = scenario.8 days = 19 }
 				country_event = { id = scenario.11 days = 6 } 
 			}
@@ -37,13 +45,6 @@ on_actions = {
 			RAJ = {
 				add_timed_idea = { idea = RAJ_burmese_campaign days = 117 }
 			}
-		}
-	}
-	on_capitulation = {
-		effect = {
-			GER = {
-				country_event = { id = scenario.13 }
-			}		
 		}
 	}
 }
