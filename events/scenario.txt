@@ -246,6 +246,7 @@ country_event = {
 
 	option = {	# 
 		name = scenario.4.a
+	#	custom_effect_tooltip = flensburg_tt
 	}
 }
 
@@ -436,7 +437,7 @@ country_event = {
 	}
 }
 
-# Hitler's Bithday
+# Hitler's Birthday
 country_event = {
 	id = scenario.12
 	title = scenario.12.t
@@ -458,8 +459,6 @@ country_event = {
 		name = scenario.12.a
 	}
 }
-
-#
 # Scenario.13 is used
 
 # Fall of Vienna
@@ -777,7 +776,7 @@ country_event = {
 					#	state = 763 # Königsberg
 						state = 190 # Kurland
 						state = 809
-						state = 58 # Mecklenburg
+					#	state = 58 # Mecklenburg
 						#state = 61 # Schleswig-Holstein
 						state = 9
 						state = 69
@@ -943,7 +942,7 @@ country_event = {
 						state = 7 # Holland
 					#	state = 763 # Königsberg
 						state = 190 # Kurland
-						state = 58 # Mecklenburg
+					#	state = 58 # Mecklenburg
 						#state = 61 # Schleswig-Holstein
 						#Austria
 						state = 848

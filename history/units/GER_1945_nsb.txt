@@ -2788,15 +2788,6 @@ units = {
 	division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 249
-		}
-		location = 6241
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
 				name_order = 20
 		}
 		location = 6286
@@ -2804,24 +2795,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 		# At Army's disposal
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 703
-		}
-		location = 6286
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}	
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 219
-		}
-		location = 9309
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
     division= {
 	    name = "331. Stab Infanterie-Division"
 	    location = 9309
@@ -3036,17 +3009,6 @@ units = {
 	    start_equipment_factor = 0.45
 	    start_manpower_factor = 0.67
     }
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 36
-		}
-		location = 482
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.45
-		start_manpower_factor = 0.67
-	}
 	division= {		
 		division_name = {
 				is_name_ordered = yes

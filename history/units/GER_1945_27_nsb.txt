@@ -1090,7 +1090,7 @@ units = {
 		location = 6521 # BERLIN
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.50
 		start_manpower_factor = 0.67
 	}
     division= {
@@ -1098,7 +1098,7 @@ units = {
 	    location = 478
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.60
+	    start_equipment_factor = 0.75
 	    start_manpower_factor = 0.83
     }
     division= {
@@ -1106,7 +1106,7 @@ units = {
 	    location = 6521 #BERLIN
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.50
 	    start_manpower_factor = 0.67
     }  
     division= {	
@@ -1114,7 +1114,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.30
+		start_equipment_factor = 0.75
 		start_manpower_factor = 0.67
     }
 	division= {		
@@ -1125,7 +1125,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.60
+		start_equipment_factor = 0.85
 		start_manpower_factor = 0.83
 	}
 	division= {		
@@ -1136,7 +1136,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		 start_equipment_factor = 0.60
+		 start_equipment_factor = 0.85
 		 start_manpower_factor = 0.83
 	}
 		# V (5) SS Korps #
@@ -1153,7 +1153,7 @@ units = {
 	    location = 478
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.90
 	    start_manpower_factor = 0.57
     }  
     division= {
@@ -1161,7 +1161,7 @@ units = {
 	    location = 478
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.90
 	    start_manpower_factor = 0.57
     }  
 
@@ -1170,7 +1170,7 @@ units = {
 	    location = 6521
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.50
 	    start_manpower_factor = 0.57
     }  
 
@@ -1179,7 +1179,7 @@ units = {
 	    location = 6521 # BERLIN
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.30
+	    start_equipment_factor = 0.50
 	    start_manpower_factor = 0.57
     }
 	division= {		
@@ -1190,7 +1190,7 @@ units = {
 		location = 478
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.60
+		start_equipment_factor = 0.90
 		start_manpower_factor = 0.83
 	}
 	division= {		
@@ -1267,7 +1267,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.5
 		start_manpower_factor = 0.50
     }
     division= {	
@@ -1275,7 +1275,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.50
     }
     division= {	
@@ -1283,7 +1283,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.50
     }
     division= {
@@ -1291,7 +1291,7 @@ units = {
 	    location = 6521
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.2
+	    start_equipment_factor = 0.6
 	    start_manpower_factor = 0.50
     } 
     division= {
@@ -1299,7 +1299,7 @@ units = {
 	    location = 6521
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.2
+	    start_equipment_factor = 0.6
 	    start_manpower_factor = 0.2
     } 
     division= {
@@ -1307,7 +1307,7 @@ units = {
 	    location = 6521
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.2
+	    start_equipment_factor = 0.6
 	    start_manpower_factor = 0.47
     } 
     division= {
@@ -1315,7 +1315,7 @@ units = {
 	    location = 6521
 	    division_template = "Volkssturm-Division"	
 	    start_experience_factor = 0.1
-	    start_equipment_factor = 0.2
+	    start_equipment_factor = 0.6
 	    start_manpower_factor = 0.74
     } 
 	division= {		
@@ -1326,7 +1326,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.47
 	}
 	division= {		
@@ -1337,7 +1337,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.67
 	}
 	division= {		
@@ -1348,7 +1348,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.67
 	}
 	division= {		
@@ -1359,7 +1359,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.67
 	}
 	division= {		
@@ -1370,7 +1370,7 @@ units = {
 		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.6
 		start_manpower_factor = 0.67
 	}
    division= {
@@ -1378,7 +1378,7 @@ units = {
 	    location = 6521
 	    division_template = "Schwere Panzer Abteilung"
 	    start_experience_factor = 0.2
-	    start_equipment_factor = 0.3
+	    start_equipment_factor = 0.6
 	    start_manpower_factor = 0.95
     }
 
@@ -2229,8 +2229,8 @@ units = {
 		location = 6521
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.70
-	    start_manpower_factor = 0.92
+	   start_equipment_factor = 0.85
+	   start_manpower_factor = 0.92
 	}
 	division = {
 		name = "12. Waffen SS-Division 'Hitlerjugend'"

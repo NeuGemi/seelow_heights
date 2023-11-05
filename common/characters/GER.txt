@@ -60,7 +60,7 @@ characters={
 				large="gfx/leaders/GER/mod_portrait_ger_carl_hilpert.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ infantry_officer winter_specialist ranger }
 			skill=3
 			attack_skill=2
@@ -128,7 +128,7 @@ characters={
 				large="gfx/leaders/GER/mod_portrait_ger_heinrich_von_vietingoff.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ inflexible_strategist armor_officer panzer_leader }
 			skill=3
 			attack_skill=3
@@ -280,7 +280,7 @@ characters={
 				large="gfx/leaders/GER/portrait_mod_ger_ernst_busch_refined.png"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ infantry_officer }
 			skill=3
 			attack_skill=3
@@ -936,7 +936,7 @@ characters={
 				small=GFX_portrait_GER_friedrich_schulz_small
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ infantry_officer }
 			skill=3
 			attack_skill=3
@@ -995,7 +995,7 @@ characters={
 		corps_commander={
 			traits={ brilliant_strategist trait_reckless armor_officer politically_connected }
 			skill=4
-			attack_skill=2
+			attack_skill=4
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=4
@@ -1066,13 +1066,13 @@ characters={
 				small=GFX_portrait_GER_gotthard_heinrici_small
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ trait_cautious infantry_officer trait_engineer }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=33
 		}
 	}
@@ -1663,7 +1663,7 @@ characters={
 			}
 		}
 		field_marshal={	# HERE
-			traits={ brilliant_strategist armor_officer }
+			traits={ brilliant_strategist armor_officer infantry_officer winter_specialist }
 			skill=5
 			attack_skill=3
 			defense_skill=5
