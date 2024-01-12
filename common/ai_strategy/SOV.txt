@@ -97,18 +97,18 @@ SOV_pommerania_offensive  = {
 
 	ai_strategy = {
     	type = front_unit_request
-    	state = 64
+    	state = 63
     	value = 500
 		}
 
 	ai_strategy = {
 		type = front_control
 
-		state = 64
+		state = 63
 
 		ratio = 0.01
 
-		priority = 1000
+		priority = 10000
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
