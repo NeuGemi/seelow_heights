@@ -625,15 +625,7 @@ recruit_character = GER_hans_obstfelder
 		}
 	}
 
-	if = {
-		limit = { 
-				NOT = {
-					 has_dlc = "By Blood Alone"
-			 }
-	 } 
-	 set_oob = "GER_1945_nsb"
-}
-
+	remove_ideas = GER_not_all_is_yet_lost
 	remove_ideas = GER_mefo_bills_1
 
 create_intelligence_agency = {
@@ -696,6 +688,33 @@ set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
 add_political_power = 400
 
+		### MOD ###
+		complete_national_focus = GER_increase_disparate_volkssturm_deployments
+		complete_national_focus = GER_nerobefehl
+		complete_national_focus = GER_scrape_the_barrel
+		complete_national_focus = GER_ob_ost
+		complete_national_focus = GER_operation_hannibal
+		complete_national_focus = GER_relieve_budapest
+		complete_national_focus = GER_secure_the_hungarian_oil_reserves
+		complete_national_focus = GER_fighting_retreat
+		complete_national_focus = GER_stemming_the_tide
+		complete_national_focus = GER_heeresgruppe_weichsel
+		complete_national_focus = GER_oder_neisse_line
+		complete_national_focus = GER_festung_breslau
+		complete_national_focus = GER_employ_aggressive_defensive_orders
+		complete_national_focus = GER_armee_ostpreussen
+		complete_national_focus = GER_operation_solstice
+		complete_national_focus = GER_ob_west
+		complete_national_focus = GER_appoint_ernst_busch
+		complete_national_focus = GER_fuhrer_directive_72
+		complete_national_focus = GER_operation_bodenplatte
+		complete_national_focus = GER_battle_of_the_hurtgen_forest
+		complete_national_focus = GER_festung_ruhr
+		complete_national_focus = GER_battle_of_remagen
+		complete_national_focus = GER_sonderkommando_elbe
+		complete_national_focus = GER_defeat_cannot_come_so_soon
+
+		### VANILLA ####
     unlock_national_focus = GER_danzig_or_war
     unlock_national_focus = GER_grosraumwirtschaft
     complete_national_focus = GER_align_romania
@@ -1211,6 +1230,28 @@ add_ideas = {
 				enemy = GER
 			}
 		}
+}
+
+1945.2.28 = {
+
+	oob = "GER_1945_3_6_nsb"
+
+	add_timed_idea = {
+		days = 42 
+		idea = GER_not_all_is_yet_lost
+	}
+	
+}
+
+1945.4.1 = {
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "GER_1945_nsb"
+}
 }
 
 1945.4.26 = {

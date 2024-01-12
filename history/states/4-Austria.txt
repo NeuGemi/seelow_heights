@@ -35,7 +35,7 @@ state={
 				anti_air_building = 5
 			}
 		}
-		1945.1.1 = {
+		1945.4.1 = {
 			SOV = {
 				set_province_controller = 3700
 				set_province_controller = 9661

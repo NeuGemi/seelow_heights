@@ -1,28 +1,48 @@
 ﻿capital = 43
 
 
-#1945.1.1 = {
-#
-#	set_cosmetic_tag = HUN_scenario
-#	add_ideas = SOV_allied_control_commission
-#	remove_ideas = GER_align_hungary
-#	remove_ideas = HUN_interventionism_2
-#	remove_ideas = HUN_invite_foreign_investors
-#	remove_ideas = HUN_license_foreign
-#
-#	set_politics = {
-#		ruling_party = communism
-#		last_election = "1945.1.1"
-#		election_frequency = 48
-#		elections_allowed = no
-#	}
-#	set_popularities = {
-#		democratic = 20
-#		fascism = 40
-#		neutrality = 15
-#		communism = 25
-#	}	
-#}
+1945.1.1 = {
+
+		retire_character = HUN_miklos_horthy
+		create_country_leader = {
+		name = "Ferenc Szalasi"
+		desc = "POLITICS_ferenc_szalasi_DESC"
+		picture = GFX_portrait_ferenc_szalasi
+		expire = "1965.1.1"
+		ideology = nazism
+		traits = {
+		}
+	}
+	add_ideas = surrender_limit
+	add_ideas = {
+		closed_economy
+		scraping_the_barrel
+		tot_economic_mobilisation
+	}	
+	remove_ideas = GER_align_hungary
+	remove_ideas = HUN_interventionism_2
+	remove_ideas = HUN_invite_foreign_investors
+	remove_ideas = HUN_license_foreign
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1945.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		fascism = 100
+		neutrality = 0
+		communism = 0
+	}	
+
+	oob = "HUN_1945_3_6"
+}
+
+1945.4.1 = {
+	oob = "HUN_1945"
+}
 
 oob = "HUN_1936"
 if = {

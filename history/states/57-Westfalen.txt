@@ -29,7 +29,7 @@ state={
 				industrial_complex = 3
 			}
 		}
-        1945.1.1 = {
+        1945.4.1 = {
 		owner = GER
 		controller = USA
      	GER = {

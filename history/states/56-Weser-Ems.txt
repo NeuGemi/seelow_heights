@@ -35,7 +35,7 @@ state={
 				dockyard = 3
 			}
 		}
-		1945.1.1 = {
+		1945.4.1 = {
 			ENG = {
 				set_province_controller = 11388
 				set_province_controller = 11233

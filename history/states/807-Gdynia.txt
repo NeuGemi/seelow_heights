@@ -30,7 +30,15 @@ state={
 		1938.3.12 = {
 			add_claim_by = GER
 		}
-		1945.1.1 = {
+		1945.2.28 = {
+			owner = SOV
+			controller = SOV 
+			GER = {
+				set_province_controller = 9263
+				set_province_controller = 389
+				}
+			}
+		1945.4.11 = {
 			owner = SOV
 			controller = SOV
 		}

@@ -22,7 +22,7 @@ state={
 				air_base = 3
 			}
 		}
-		1945.1.1 = {
+		1945.4.1 = {
 			USA = {
 				set_province_controller = 13116
 				set_province_controller = 11417

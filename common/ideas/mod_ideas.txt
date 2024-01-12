@@ -126,6 +126,31 @@ ideas = {
                 weekly_manpower = -200
             } 
         }
+    GER_not_all_is_yet_lost = {
+
+        allowed = {
+            always = no
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        picture = generic_fascism_rising
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            army_core_defence_factor = 0.15
+            army_org_regain = 0.10
+            army_org_factor = 0.02
+            attrition = -0.12
+            }
+        }
     GER_shattered_wehrmacht = {
 
         allowed = {

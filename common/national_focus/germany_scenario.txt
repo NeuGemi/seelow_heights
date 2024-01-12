@@ -1,0 +1,559 @@
+focus_tree = {
+		id = german_focus_scenario
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = GER
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 1700 }
+	default = no
+
+	focus = {
+		id = GER_increase_disparate_volkssturm_deployments
+		icon = GFX_focus_generic_fascist_troops
+		x = 8
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_nerobefehl
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_increase_disparate_volkssturm_deployments }
+		x = 6
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_scrape_the_barrel
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = GER_increase_disparate_volkssturm_deployments }
+		x = 10
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_hitler_ist_tot
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = GER_increase_disparate_volkssturm_deployments }
+		x = 8
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_the_flensburg_government
+		icon = GFX_focus_generic_national_security
+		prerequisite = { focus = GER_hitler_ist_tot }
+		mutually_exclusive = { focus = GER_continue_the_war_in_the_alps }
+		x = 7
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_organize_anti_capture_flights
+		icon = GFX_focus_generic_limited_social_mobilization
+		prerequisite = { focus = GER_the_flensburg_government }
+		x = 7
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_continue_the_war_in_the_alps
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = GER_hitler_ist_tot }
+		mutually_exclusive = { focus = GER_the_flensburg_government }
+		x = 9
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_realise_the_alpen_festung
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = GER_continue_the_war_in_the_alps }
+		x = 9
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_request_all_wehrmacht_troops_to_stand_down
+		icon = GFX_focus_POL_beck_ribbentrop
+		prerequisite = { focus = GER_realise_the_alpen_festung focus = GER_organize_anti_capture_flights}
+		x = 8
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	# EASTERN FRONT eastern front Eastern Front
+	focus = {
+		id = GER_ob_ost
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = GER_increase_disparate_volkssturm_deployments }
+		x = 12
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_operation_hannibal
+		icon = GFX_focus_generic_merchant_fleet
+		prerequisite = { focus = GER_ob_ost }
+		x = 12
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_relieve_budapest
+		icon = GFX_focus_POL_prussia_line
+		prerequisite = { focus = GER_ob_ost }
+		x = 14
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_secure_the_hungarian_oil_reserves
+		icon = GFX_goal_generic_occupy_states_ongoing_war 
+		prerequisite = { focus = GER_relieve_budapest }
+		x = 14
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_fighting_retreat
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = GER_secure_the_hungarian_oil_reserves }
+		x = 14
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_battle_of_vienna
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = GER_fighting_retreat }
+		x = 13
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_stemming_the_tide
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = GER_ob_ost }
+		x = 18
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_heeresgruppe_weichsel
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = GER_stemming_the_tide }
+		x = 16
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_oder_neisse_line
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = GER_stemming_the_tide }
+		x = 18
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_employ_aggressive_defensive_orders
+		icon = GFX_focus_generic_supply_line
+		prerequisite = { focus = GER_stemming_the_tide }
+		x = 20
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_festung_breslau
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_employ_aggressive_defensive_orders }
+		x = 20
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_armee_ostpreussen
+		icon = GFX_focus_generic_full_social_mobilization
+		prerequisite = { focus = GER_employ_aggressive_defensive_orders }
+		x = 22
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_operation_solstice
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = GER_employ_aggressive_defensive_orders focus = GER_oder_neisse_line focus = GER_heeresgruppe_weichsel }
+		x = 18
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_fuhrer_directive_74
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_operation_solstice focus = GER_fighting_retreat }
+		x = 16
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+
+	### SHARED PATH shared path Shared Path #
+	focus = {
+		id = GER_der_endsieg_beginnt
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = GER_fuhrer_directive_74 focus = GER_defeat_cannot_come_so_soon }
+		x = 10
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_battle_of_halbe
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = GER_battle_of_the_seelow_heights focus = GER_operation_clausewitz }
+		x = 11
+		y = 10
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_battle_of_the_seelow_heights
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = GER_der_endsieg_beginnt }
+		x = 12
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_operation_clausewitz
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = GER_der_endsieg_beginnt }
+		x = 10
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_ritter_von_greims_flight
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GER_der_endsieg_beginnt }
+		x = 8
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_fuhrer_directive_73
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_ritter_von_greims_flight focus = GER_operation_clausewitz }
+		x = 9
+		y = 10
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	### WESTERN FRONT western front Western front OB WEST ob west Ob West 
+	focus = {
+		id = GER_ob_west
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = GER_increase_disparate_volkssturm_deployments }
+		x = 4
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_appoint_ernst_busch
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = GER_ob_west }
+		x = 0
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_fuhrer_directive_72
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_appoint_ernst_busch }
+		x = 0
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_operation_bodenplatte
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = GER_ob_west }
+		x = 2
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_battle_of_the_hurtgen_forest
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_operation_bodenplatte focus = GER_battle_of_remagen }
+		available = {
+
+		}
+		x = 2
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_festung_ruhr
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_battle_of_the_hurtgen_forest }
+		x = 2
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_battle_of_remagen
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = GER_ob_west }
+		x = 4
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_sonderkommando_elbe
+		icon = GFX_focus_SOV_flying_clubs
+		prerequisite = { focus = GER_battle_of_remagen }
+		x = 4
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_defeat_cannot_come_so_soon
+		icon = GFX_focus_generic_full_social_mobilization
+		prerequisite = { focus = GER_sonderkommando_elbe focus = GER_festung_ruhr }
+		x = 4
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+}

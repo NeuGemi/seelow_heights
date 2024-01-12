@@ -607,31 +607,9 @@ if = {
 
 1945.1.1 = {
 
-		add_timed_idea = {
-			idea = the_united_nations
-			days = 5
-		}
-		add_ideas = ENG_europe_first_strat
-		FRA = {
-			add_timed_idea = {
-				idea = the_united_nations
-				days = 5
-			}
-			add_ideas = ENG_europe_first_strat
-		}
-		USA = {
-			add_timed_idea = {
-				idea = the_united_nations
-				days = 5
-			}
-			add_ideas = ENG_europe_first_strat
-		}
 		PHI = {
 			add_ideas = surrender_limit
 		}
-
-
-		oob = "ENG_1945_nsb"
 
 		set_politics = {
 			ruling_party = democratic
@@ -747,16 +725,6 @@ if = {
 			set_oob = "ENG_1945_air_legacy"
 		}
 	}
-
-	if = {
-		limit = { 
-				NOT = {
-					 has_dlc = "By Blood Alone"
-			 }
-	 } 
-	 set_oob = "ENG_1945_nsb"
-}
-
 
 	set_technology = { 
 		interwar_artillery = 1
@@ -928,6 +896,42 @@ if = {
 		}
 		set_naval_oob = "ENG_1939_Naval"
 	}
+}
+
+1945.2.28 = {
+	oob = "ENG_1945_3_6"
+}
+
+1945.4.1 = {
+	oob = "ENG_1945_nsb"
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "ENG_1945_nsb"
+	}
+
+		add_timed_idea = {
+			idea = the_united_nations
+			days = 5
+		}
+		add_ideas = ENG_europe_first_strat
+		FRA = {
+			add_timed_idea = {
+				idea = the_united_nations
+				days = 5
+			}
+			add_ideas = ENG_europe_first_strat
+		}
+		USA = {
+			add_timed_idea = {
+				idea = the_united_nations
+				days = 5
+			}
+			add_ideas = ENG_europe_first_strat
+		}
 }
 
 1945.4.26 = {

@@ -48,5 +48,9 @@ spriteTypes = {
 		name = "GFX_portrait_mod_erich_koch"
 		texturefile = "gfx/leaders/BLR/portrait_mod_erich_koch.png"
 	}
+	SpriteType = {
+		name = "GFX_select_date_1945_3_5"
+		texturefile = "gfx/interface/select_date_1945_3_5.png"
+	}
 }
 

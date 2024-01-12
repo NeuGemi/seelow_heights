@@ -306,15 +306,6 @@ set_convoys = 10
 			complete_national_focus = production_effort
 		}
 	}
-	
-	if = {
-		limit = { NOT = { has_dlc = "No Step Back" } }
-		set_oob = "ROM_1939"
-	}
-	if = {
-		limit = { has_dlc = "No Step Back" } 
-		set_oob = "ROM_1939_nsb"
-	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "ROM_1939_naval_mtg"
@@ -391,6 +382,21 @@ set_popularities = {
 		communism = 17
 		neutrality = 43
 	}
+}
+
+1945.2.28 = {
+	set_oob = "ROM_1945_3_6"
+}
+
+1945.4.1 = {
+	if = {
+		limit = { NOT = { has_dlc = "No Step Back" } }
+		set_oob = "ROM_1939"
+	}
+	if = {
+		limit = { has_dlc = "No Step Back" } 
+		set_oob = "ROM_1939_nsb"
+	}	
 }
 ### VARIANTS ###
 # 1936 Start #
