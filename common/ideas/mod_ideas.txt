@@ -601,4 +601,26 @@ ideas = {
             }    
         }
     }
+
+    hidden_ideas = {
+        ENG_slow_europe = {
+
+            allowed = { 
+                always = no 
+            }
+
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_speed_factor = -0.5
+                army_attack_factor = -0.5
+            }       
+        }    
+    }
 }

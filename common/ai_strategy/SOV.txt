@@ -179,6 +179,60 @@ SOV_battle_of_berlin  = {
 
 }
 
+SOV_battle_of_berlin_2  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		has_start_date < 1945.1.1
+		date > 1945.4.13
+		has_war_with = GER
+	}
+
+	abort = {
+		OR = {
+			SOV = {
+				controls_province = 6521			
+			}
+			USA = {
+				controls_province = 6521			
+			}		
+		}
+	}
+
+	ai_strategy = {
+    	type = front_armor_score
+    	id = GER
+    	value = 10000
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	state = 64
+    	value = 5000
+		}
+
+	ai_strategy = {
+		type = front_control
+
+		state = 64
+
+		ratio = 0.01
+
+		priority = 10000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+    	type = ignore_army_incompetence
+    	value = 10000
+	}
+
+}
+
 SOV_blitzkrieg  = {
 	allowed = {
 		original_tag = SOV

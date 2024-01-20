@@ -193,6 +193,24 @@ country_event = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
 			}	
+			ENG = {
+				add_timed_idea = {
+					days = 15
+					idea = ENG_slow_europe
+				}
+			}
+			USA = {
+				add_timed_idea = {
+					days = 15
+					idea = ENG_slow_europe
+				}
+			}
+			FRA = {
+				add_timed_idea = {
+					days = 15
+					idea = ENG_slow_europe
+				}
+			}
 		}
 	}
 
@@ -1162,7 +1180,11 @@ country_event = {
 						state = 50 # Wurttemberg
 						state = 74
 						state = 75
+						state = 9
+						state = 69
 						state = 152
+						state = 7
+						state = 58
 					}
 				}
 				set_state_flag = SOV_2_unplanned_offensive_flag
@@ -1273,7 +1295,11 @@ country_event = {
 						state = 50 # Wurttemberg
 						state = 74
 						state = 75
+						state = 9
+						state = 69
 						state = 152
+						state = 7
+						state = 58
 					}
 				}
 				set_state_flag = SOV_1_unplanned_offensive_flag_remove_1
