@@ -513,6 +513,23 @@ country_event = {
 }
 # Scenario.13 is used
 
+# Hitler's Final Visit
+country_event = {
+	id = scenario.14
+	title = scenario.14.t
+	desc = scenario.14.d	
+	picture = GFX_report_event_hitler_handshake
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = scenario.14.a
+	}
+}
+
 # Fall of Vienna
 news_event = {
 	id = scenarionews.1
