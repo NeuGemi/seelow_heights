@@ -3,6 +3,7 @@ add_namespace = offensives
 add_namespace = intro
 add_namespace = scenarionukes
 add_namespace = scenarionews
+add_namespace = maintenance
 
 #GFX_report_event_generic_destroyed_vehicles
 
@@ -407,11 +408,11 @@ country_event = {
 	is_triggered_only = yes
 
 
-	immediate = {
-		GER = {
-			country_event = { id = scenario.4 days = 1 }		
-		}
-	}
+#	immediate = {
+#		GER = {
+#			country_event = { id = scenario.4 days = 1 }		
+#		}
+#	}
 
 	option = {	# 
 		name = scenario.8.a
@@ -527,6 +528,27 @@ country_event = {
 
 	option = {	# 
 		name = scenario.14.a
+	}
+}
+
+# Directive No. 72
+country_event = {
+	id = scenario.15
+	title = scenario.15.t
+	desc = scenario.15.d	
+	picture = GFX_report_event_hitler_handshake
+
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {	# 
+		name = scenario.15.a
+		add_timed_idea = {
+			idea = GER_directive_72
+			days = 15
+		}
 	}
 }
 
@@ -1328,10 +1350,243 @@ country_event = {
     }
 }
 
+# Fighting Retreat enable modifiers
+country_event = {
+	id = offensives.9
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
 
 
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 155
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_fighting_retreat_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.1 days = 15 }		
+			}			
+		}
+    }
+}
+
+# Battle of Vienna enable modifiers
+country_event = {
+	id = offensives.10
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
 
 
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 4
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_battle_of_vienna_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.2 days = 15 }		
+			}			
+		}
+    }
+}
+
+
+# Armee Ostpreussen enable modifiers
+country_event = {
+	id = offensives.11
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 763
+						state = 85
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_armee_ostpreussen_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.3 days = 50 }		
+			}			
+		}
+    }
+}
+
+# Festung Ruhr enable modifiers
+country_event = {
+	id = offensives.12
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 42
+						state = 51
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_festung_ruhr_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.4 days = 50 }		
+			}			
+		}
+    }
+}
+
+#Maintenance
+country_event = {
+	id = maintenance.1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_fighting_retreat_dyn
+		}    	
+    }
+}
+
+country_event = {
+	id = maintenance.2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_battle_of_vienna_dyn
+		}    	
+    }
+}
+
+country_event = {
+	id = maintenance.3
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_armee_ostpreussen_dyn
+		}    	
+    }
+}
+
+country_event = {
+	id = maintenance.4
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_festung_ruhr_dyn
+		}    	
+    }
+}
+
+#Remove allied bombing raids
+country_event = {
+	id = maintenance.5
+
+	fire_only_once = yes
+
+	trigger = {
+		GER = {
+			surrender_progress < 0.01
+		}
+	}
+
+	hidden = yes
+
+
+    option = {
+    	GER = {
+    		remove_ideas = GER_economic_collapse
+    	}
+    }
+}
 
 
 
@@ -1452,6 +1707,7 @@ country_event = {
 # ON_surrender_immediate
 country_event = {
 	id = scenario.13
+	title = scenario.13.t
 	fire_only_once = yes
 	is_triggered_only = yes
 	hidden = yes
@@ -1532,8 +1788,6 @@ country_event = {
 				add_to_faction = LUX
 				add_to_faction = ITA
 				add_to_faction = WGR
-				puppet = ITA
-				puppet = HOL
 			}
 			SOV = {
 				add_to_faction = DDR

@@ -24,3 +24,42 @@ scenario_heavy_resistance_CRO = {
 	army_core_defence_factor = -0.1
 	army_morale_factor = -0.05
 }
+
+
+
+
+
+
+
+# GER FOCUS #
+GER_fighting_retreat_dyn = {
+	icon = GFX_unplanned_offensive
+
+    army_core_defence_factor = 0.15
+    army_speed_factor_for_controller = 0.05
+	attrition_for_controller = -0.1	
+}
+
+GER_battle_of_vienna_dyn = {
+	icon = GFX_unplanned_offensive
+
+	enemy_army_speed_factor = -0.15
+	enemy_local_supplies = -0.1
+	enemy_attrition = 0.1
+}
+
+GER_armee_ostpreussen_dyn = {
+	icon = GFX_unplanned_offensive
+
+    army_core_defence_factor = 0.15
+	enemy_local_supplies = -0.05
+	enemy_attrition = 0.05
+}
+
+GER_festung_ruhr_dyn = {
+	icon = GFX_unplanned_offensive
+
+	enemy_army_speed_factor = -0.15
+	enemy_local_supplies = -0.1
+	enemy_attrition = 0.1
+}

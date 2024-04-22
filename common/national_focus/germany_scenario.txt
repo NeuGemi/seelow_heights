@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 0
+			add = 11
 			tag = GER
 		}
 	}
@@ -37,7 +37,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_nerobefehl
+				days = 30
+			}
 		}
 	}
 	focus = {
@@ -64,6 +67,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			has_global_flag = scenario_hitler_suicide
+		}
+		available = {
+			has_global_flag = scenario_hitler_suicide
+		}
 		completion_reward = {
 
 		}
@@ -75,12 +84,12 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_continue_the_war_in_the_alps }
 		x = 7
 		y = 3
-		cost = 1
+		cost = 0.5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-
+			GER = { country_event = { id = scenario.4 } }
 		}
 	}
 	focus = {
@@ -94,7 +103,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = GER_anti_capture_flights_idea
 		}
 	}
 	focus = {
@@ -104,12 +113,12 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_the_flensburg_government }
 		x = 9
 		y = 3
-		cost = 1
+		cost = 0.5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = GER_continue_in_alps
 		}
 	}
 	focus = {
@@ -122,8 +131,38 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_province = 3675
+			controls_province = 688
+			controls_province = 3684
+		}
 		completion_reward = {
+			custom_effect_tooltip = werwolf_tt
+			hidden_effect = {
+			152 = {
+			add_building_construction = {
+				type = bunker
+				level = 8
+				province = 688
+				instant_build = yes
+				}
+			add_building_construction = {
+				type = bunker
+				level = 8
+				province = 3684
+				instant_build = yes
+				}			
+			}
+			153 = {
+				add_building_construction = {
+				type = bunker
+				level = 8
+				province = 3675
+				instant_build = yes
+				}		
+			}
 
+			}
 		}
 	}
 	focus = {
@@ -137,7 +176,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = GER_request_surrender_tt
+			hidden_effect = {
+				GER = { country_event = { id = scenario.13 } } 		
+			}
 		}
 	}
 
@@ -209,7 +251,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_fighting_retreat_decision
 		}
 	}
 	focus = {
@@ -223,7 +265,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_battle_of_vienna_decision 
 		}
 	}
 	focus = {
@@ -307,7 +349,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_armee_ostpreussen_decision
 		}
 	}
 	focus = {
@@ -335,7 +377,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_directive_74
+				days = 25
+			}
 		}
 	}
 
@@ -347,6 +392,13 @@ focus_tree = {
 		prerequisite = { focus = GER_fuhrer_directive_74 focus = GER_defeat_cannot_come_so_soon }
 		x = 10
 		y = 8
+		bypass = {
+			date > 1945.4.15
+			has_global_flag = scenario_berlin
+		}
+		available = {
+			has_global_flag = scenario_berlin
+		}
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -365,7 +417,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_province = 478
+		}
 		completion_reward = {
+			64 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = 478
+				instant_build = yes
+			}			
+			}
 
 		}
 	}
@@ -373,48 +436,62 @@ focus_tree = {
 		id = GER_battle_of_the_seelow_heights
 		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = GER_der_endsieg_beginnt }
-		x = 12
+		x = 11
 		y = 9
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_province = 9496
+		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_seelow_heights_idea
+				days = 3
+			}
+			64 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 9496
+				instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = GER_operation_clausewitz
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = GER_der_endsieg_beginnt }
-		x = 10
+		x = 9
 		y = 9
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = GER_ritter_von_greims_flight
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GER_der_endsieg_beginnt }
-		x = 8
-		y = 9
-		cost = 1
-		ai_will_do = {
-			factor = 1
+		available = {
+			controls_province = 6521
 		}
 		completion_reward = {
-
+			64 = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6521
+				instant_build = yes
+				}		
+			}
+			add_timed_idea = {
+				idea = GER_operation_clausewitz_idea
+				days = 60
+			}
 		}
 	}
 	focus = {
 		id = GER_fuhrer_directive_73
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_ritter_von_greims_flight focus = GER_operation_clausewitz }
+		prerequisite = { focus = GER_operation_clausewitz }
 		x = 9
 		y = 10
 		cost = 1
@@ -422,7 +499,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_directive_73
+				days = 15
+			}
 		}
 	}
 
@@ -452,7 +532,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			recruit_character = GER_ernst_busch
 		}
 	}
 	focus = {
@@ -466,7 +546,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			GER = { country_event = { id = scenario.15 } }
 		}
 	}
 	focus = {
@@ -511,7 +591,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_festung_ruhr_decision
 		}
 	}
 	focus = {
@@ -553,7 +633,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			swap_ideas = { 
+  				remove_idea = GER_endsiegmod 
+  				add_idea = GER_endsiegmod_2 
+			}
 		}
 	}
 }

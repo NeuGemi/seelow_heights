@@ -1,4 +1,146 @@
 GER_oberkommando = {
+	GER_fighting_retreat_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			has_completed_focus = GER_fighting_retreat
+		}
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+
+		days_remove = 15
+
+		visible = {
+			has_completed_focus = GER_fighting_retreat
+			controls_state = 155
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 155
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		complete_effect = {
+			GER = {
+				country_event = { id = offensives.9 }		
+			}		
+		}
+	}
+
+	GER_battle_of_vienna_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			has_completed_focus = GER_battle_of_vienna
+		}
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+
+		days_remove = 15
+
+		visible = {
+			has_completed_focus = GER_battle_of_vienna
+			controls_state = 4
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 4
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		complete_effect = {
+			GER = {
+				country_event = { id = offensives.10 }		
+			}		
+		}
+	}
+
+	GER_armee_ostpreussen_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			has_completed_focus = GER_armee_ostpreussen
+		}
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+
+		days_remove = 50
+
+		visible = {
+			has_completed_focus = GER_armee_ostpreussen
+			controls_state = 763
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 763
+        		state = 85
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		complete_effect = {
+			GER = {
+				country_event = { id = offensives.11 }		
+			}		
+		}
+	}
+
+	GER_festung_ruhr_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			has_completed_focus = GER_festung_ruhr
+		}
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+
+		days_remove = 25
+
+		visible = {
+			has_completed_focus = GER_festung_ruhr
+			OR = {
+				controls_state = 42
+				controls_state = 51				
+			}
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 42
+        		state = 51
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		complete_effect = {
+			GER = {
+				country_event = { id = offensives.12 }		
+			}		
+		}
+	}
+
+
 	GER_operation_hannibal = {
 		icon = GFX_decision_generic_human_torpedo
 

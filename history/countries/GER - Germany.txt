@@ -584,7 +584,6 @@ recruit_character = GER_walther_wenck
 recruit_character = GER_helmuth_weidling
 recruit_character = GER_theodor_busse
 recruit_character = GER_walther_luch
-recruit_character = GER_ernst_busch
 recruit_character = GER_hermann_fegelein
 recruit_character = GER_hans_obstfelder
 
@@ -880,29 +879,23 @@ add_political_power = 400
 
 		### MOD ###
 		complete_national_focus = GER_increase_disparate_volkssturm_deployments
-		complete_national_focus = GER_nerobefehl
 		complete_national_focus = GER_scrape_the_barrel
 		complete_national_focus = GER_ob_ost
 		complete_national_focus = GER_operation_hannibal
 		complete_national_focus = GER_relieve_budapest
 		complete_national_focus = GER_secure_the_hungarian_oil_reserves
-		complete_national_focus = GER_fighting_retreat
 		complete_national_focus = GER_stemming_the_tide
 		complete_national_focus = GER_heeresgruppe_weichsel
 		complete_national_focus = GER_oder_neisse_line
 		complete_national_focus = GER_festung_breslau
 		complete_national_focus = GER_employ_aggressive_defensive_orders
-		complete_national_focus = GER_armee_ostpreussen
 		complete_national_focus = GER_operation_solstice
 		complete_national_focus = GER_ob_west
-		complete_national_focus = GER_appoint_ernst_busch
-		complete_national_focus = GER_fuhrer_directive_72
 		complete_national_focus = GER_operation_bodenplatte
 		complete_national_focus = GER_battle_of_the_hurtgen_forest
-		complete_national_focus = GER_festung_ruhr
 		complete_national_focus = GER_battle_of_remagen
 		complete_national_focus = GER_sonderkommando_elbe
-		complete_national_focus = GER_defeat_cannot_come_so_soon
+	#	complete_national_focus = GER_defeat_cannot_come_so_soon
 
 		### VANILLA ####
     unlock_national_focus = GER_danzig_or_war
@@ -1239,6 +1232,18 @@ create_intelligence_agency = {
 }
 
 1945.4.1 = {
+
+	recruit_character = GER_ernst_busch
+
+	complete_national_focus = GER_nerobefehl
+	complete_national_focus = GER_appoint_ernst_busch
+	complete_national_focus = GER_fuhrer_directive_72
+	complete_national_focus = GER_festung_ruhr
+	complete_national_focus = GER_fighting_retreat
+	complete_national_focus = GER_battle_of_vienna
+	complete_national_focus = GER_armee_ostpreussen
+
+
 	if = {
 		limit = { 
 				NOT = {
@@ -1252,6 +1257,13 @@ create_intelligence_agency = {
 }
 
 1945.4.26 = {
+
+	complete_national_focus = GER_fuhrer_directive_74
+	complete_national_focus = GER_der_endsieg_beginnt
+	complete_national_focus = GER_operation_clausewitz
+	complete_national_focus = GER_battle_of_the_seelow_heights
+	complete_national_focus = GER_battle_of_halbe
+	complete_national_focus = GER_fuhrer_directive_73
 
 	oob = "GER_1945_27_nsb"
 
