@@ -251,7 +251,7 @@ set_war_support = 0.3
 	unlock_national_focus = GER_demand_memel
 	unlock_national_focus = GER_four_year_plan
 	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
+	complete_national_focus = GER_synthetic_rubber
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
