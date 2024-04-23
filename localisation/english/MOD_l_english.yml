@@ -72,6 +72,8 @@ GER_continue_in_alps:0 "Werwolf"
 werwolf_tt:0 "§YAdds a string of fortifications around the Salzburg Area§!"
 GER_anti_capture_flights_idea:0 "Anti Capture Flights"
 GER_request_surrender_tt:0 "Gets Event §YGerman Instrument of Surrender§!"
+GER_visible_on_map_tt: "§YWill add a local Province Modifier on the highlighted State§!"
+GER_fighting_retreat_idea:0 "Fighting Retreat"
 
 ### Events ###
 intro.1.t:0 "Final Days of the Reich"
@@ -204,6 +206,7 @@ SPRINGAWAKENING_DESC:0 "Following the failed Ardennes offensive, Hitler has call
 ### National Focus ###
 GER_increase_disparate_volkssturm_deployments:0 "Increase Disparate Volkssturm Deployments"
 GER_nerobefehl:0 "Nerobefehl"
+GER_nerobefehl_desc:0 "In order to halt the allied invasion of Germany, it is imperative we destroy all the remaining infrastructure as we retreat further, slowing down their advance."
 GER_scrape_the_barrel:0 "Conscript Hitlerjugend"
 GER_hitler_ist_tot:0 "Hitler ist Tot!"
 GER_hitler_ist_tot_desc:0 ""

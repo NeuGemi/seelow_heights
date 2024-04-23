@@ -251,7 +251,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			unlock_decision_tooltip = GER_fighting_retreat_decision
+			add_timed_idea = {
+				idea = GER_fighting_retreat_idea 
+				days = 45
+			}
 		}
 	}
 	focus = {

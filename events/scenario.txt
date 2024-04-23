@@ -1350,39 +1350,6 @@ country_event = {
     }
 }
 
-# Fighting Retreat enable modifiers
-country_event = {
-	id = offensives.9
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 155
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = GER_fighting_retreat_dyn
-				}
-			}		
-			GER = {
-				country_event = { id = maintenance.1 days = 15 }		
-			}			
-		}
-    }
-}
-
 # Battle of Vienna enable modifiers
 country_event = {
 	id = offensives.10
@@ -1482,27 +1449,6 @@ country_event = {
 				country_event = { id = maintenance.4 days = 50 }		
 			}			
 		}
-    }
-}
-
-#Maintenance
-country_event = {
-	id = maintenance.1
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	hidden = yes
-
-
-    option = {
-    ai_chance = {
-    base = 100
-    	}
-		remove_dynamic_modifier = {
-			modifier = GER_fighting_retreat_dyn
-		}    	
     }
 }
 
