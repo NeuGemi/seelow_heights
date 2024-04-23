@@ -315,8 +315,8 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		GER = {
-			country_event = { id = scenario.8 days = 1 }		
+		hidden_effect = {
+			GER = { country_event = { id = scenario.8 days = 1 } }
 		}
 	}
 
@@ -1520,7 +1520,9 @@ country_event = {
 
 	trigger = {
 		GER = {
-			surrender_progress < 0.01
+			controls_state = 64
+			controls_state = 16
+			controls_state = 10
 		}
 	}
 

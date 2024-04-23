@@ -3791,6 +3791,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_usa
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }		
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3834,6 +3837,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_eng
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }		
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3877,6 +3883,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_fra
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }		
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4284,8 +4293,8 @@ news_event = {
 	}
 	
 	immediate = {
-		GER = {
-			country_event = { id = scenario.5 }
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }		
 		}
 		set_global_flag = fall_of_berlin_sov
 		play_victory_parade_effect = yes

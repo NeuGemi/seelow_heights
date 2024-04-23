@@ -384,7 +384,7 @@ ideas = {
      GER_economic_collapse = {
 
         allowed = { 
-            surrender_progress < 0.01
+            always = no
         }
         picture = generic_license_production
 
@@ -394,7 +394,6 @@ ideas = {
 
         available = {
             has_war = yes
-            surrender_progress < 0.01
         }
 
         removal_cost = -1
