@@ -36,6 +36,16 @@ state={
 				synthetic_refinery = 3
 			}
 		}
+		1940.1.1 = {
+			buildings = {
+				11435 = {
+					bunker = 5
+				}
+				11470 = {
+					bunker = 5
+				}
+			}
+		}
         1945.4.1 = {
 		owner = GER
 		controller = FRA

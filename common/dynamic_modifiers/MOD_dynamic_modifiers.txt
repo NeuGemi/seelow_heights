@@ -28,7 +28,7 @@ scenario_heavy_resistance_CRO = {
 BSL_vistula_oder_offensive = {
 	icon = GFX_unplanned_offensive
 
-	army_defence_factor = -1.0
+	army_defence_factor = -0.25
 }
 
 
@@ -74,4 +74,13 @@ GER_battle_of_remagen_dyn = {
 	enemy_army_speed_factor = -0.15
 	enemy_local_supplies = -0.1
 	enemy_attrition = 0.1
+}
+
+GER_operation_solstice_dyn = {
+	icon = GFX_unplanned_offensive
+
+    army_core_attack_factor = 0.15
+    breakthrough_factor = 0.2
+	enemy_local_supplies = -0.15
+	enemy_attrition = 0.15
 }

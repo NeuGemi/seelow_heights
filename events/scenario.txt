@@ -156,7 +156,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_manpower = -2000000
-			add_manpower = -´1000000
+			add_manpower = -1000000
 			SOV = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
@@ -723,8 +723,29 @@ country_event = {
 				add_timed_idea = {
 					idea = GER_operation_fruhl
 					days = 10
-				}
-			}	
+			}
+		}	
+	}
+}
+
+# Destruction of the Wolf's Lair
+country_event = {
+	id = scenario.17
+	title = scenario.17.t
+	desc = scenario.17.d	
+	picture = GFX_report_event_soviet_tanks
+
+	trigger = {
+		TAG = GER
+		SOV = { controls_province = 11245 }
+		GER = {	has_war_with = SOV }
+		has_start_date < 1945.1.15
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = scenario.17.a
 	}
 }
 
@@ -1775,7 +1796,6 @@ country_event = {
 			every_state = { #Vistula-Oder Offensive
 				limit = { 
 					OR = {
-						state = 763
 						state = 5
 						state = 98	
 						state = 10
@@ -1812,7 +1832,6 @@ country_event = {
 			every_state = {
 				limit = {
 					OR = {
-						state = 763
 						state = 5
 						state = 98	
 						state = 10
@@ -1874,6 +1893,40 @@ country_event = {
 		}
     }
 }
+
+# Operation Solstice enable modifiers
+country_event = {
+	id = offensives.17
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 63
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_operation_solstice_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.7 days = 9 }		
+			}			
+		}
+    }
+}
+
 
 country_event = {
 	id = maintenance.2
@@ -1975,6 +2028,26 @@ country_event = {
     	}
 		remove_dynamic_modifier = {
 			modifier = GER_battle_of_remagen_dyn
+		}    	
+    }
+}
+
+country_event = {
+	id = maintenance.7
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_operation_solstice_dyn
 		}    	
     }
 }

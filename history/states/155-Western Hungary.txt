@@ -6,7 +6,7 @@ state={
 	
 	state_category = city
 	resources={
-		oil = 1 # was: 1
+		oil = 24 # was: 1
 		aluminium=60 # moved from Northern Hungary
 	}
 	history={

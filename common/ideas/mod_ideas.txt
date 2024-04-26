@@ -705,6 +705,29 @@ ideas = {
             }       
         } 
 
+    GER_aggressive_defenses = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = generic_infantry_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            org_loss_at_low_org_factor = 0.05
+            mobilization_speed = 0.2
+            }       
+        } 
+
     ### JAP ###
     JAP_shattered_army = {
 

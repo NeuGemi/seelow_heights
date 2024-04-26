@@ -1,4 +1,5 @@
 GER_oberkommando = {
+
 	GER_battle_of_vienna_decision = {
 		icon = GFX_decision_generic_ignite_civil_war
 
@@ -153,6 +154,45 @@ GER_oberkommando = {
 			}
 		}
 	}
+	GER_operation_solstice_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			has_completed_focus = GER_operation_solstice
+		}
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+
+		days_remove = 9
+
+		visible = {
+			has_completed_focus = GER_operation_solstice
+			OR = {
+				controls_state = 63
+			}
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 63
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_visible_on_map_tt
+			hidden_effect = {
+				GER = {
+					country_event = { id = offensives.17 }		
+				}				
+			}
+		}
+	}
+
 
 	GER_operation_hannibal = {
 		icon = GFX_decision_generic_human_torpedo

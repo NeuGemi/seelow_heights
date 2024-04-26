@@ -46,6 +46,19 @@ state={
 		1936.3.7 = {
 			set_demilitarized_zone = no
 		}
+		1940.1.1 = {
+			buildings = {
+				3547 = {
+					bunker = 5
+				}
+				9522 = {
+					bunker = 5
+				}
+				3444 = {
+					bunker = 5
+				}
+			}
+		}
 		1945.2.28 = {
 			ENG = {
 				set_province_controller = 3444

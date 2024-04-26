@@ -311,8 +311,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+		bypass = {
+			NOT = {
+				has_idea = heinrich_himmler
+				has_war = yes
+			}
+		}
 		completion_reward = {
-
+			add_political_power = 50
+			GER_heinrich_himmler = {
+				add_field_marshal_role = {
+					traits = { politically_connected }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+				} 
+			}
 		}
 	}
 	focus = {
@@ -343,7 +363,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = GER_aggressive_defenses
+			add_war_support = -0.05
 		}
 	}
 	focus = {
@@ -356,8 +377,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			GER = {
+				controls_province = 9570
+			}
+		}
 		completion_reward = {
-
+			66 = {
+			add_building_construction = {
+				type = bunker
+				level = 10
+				province = 9570
+				instant_build = yes
+				}			
+			}
 		}
 	}
 	focus = {
@@ -385,7 +418,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_operation_solstice_decision 
 		}
 	}
 	focus = {
@@ -449,9 +482,8 @@ focus_tree = {
 				level = 5
 				province = 478
 				instant_build = yes
-			}			
+				}			
 			}
-
 		}
 	}
 	focus = {
