@@ -648,7 +648,7 @@ units = {
 	# VII Panzerkorps #
      division= {
 	    name = "4. SS Polizei Grenadier-Division"
-	    location = 11372
+	    location = 9361
 	    division_template = "Panzergrenadier-Division"	
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
@@ -656,7 +656,7 @@ units = {
     }  
    division= {
 	    name = "7. Panzer-Division"
-	    location = 11372
+	    location = 11316
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.70
@@ -668,7 +668,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 32
 		}
-		location = 11372
+		location = 11316
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -679,7 +679,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 215
 		}
-		location = 11372
+		location = 11316
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -1717,6 +1717,13 @@ units = {
 	    start_equipment_factor = 0.9
 	    start_manpower_factor = 0.9
     }
+	division = {
+		name = "14. Waffen-Grenadier-Division der SS (galizische Nr. 1)"
+		location = 11539
+		division_template = "Infanterie-Division (mot.)"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.90
+	}
     division= {	
 	    name = "46. Volksgrenadier-Division"
 		location = 11539

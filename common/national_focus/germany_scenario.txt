@@ -131,6 +131,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			NOT = {
+			controls_province = 3675
+			controls_province = 688
+			controls_province = 3684
+			}
+		}
 		available = {
 			controls_province = 3675
 			controls_province = 688
@@ -209,7 +216,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			activate_mission_tooltip = GER_operation_hannibal
 		}
 	}
 	focus = {
@@ -237,7 +244,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			hidden_effect = {
+				GER = { country_event = { id = scenario.16 } } 		
+			}
+			add_timed_idea = {
+				idea = GER_operation_fruhl
+				days = 10
+			}
 		}
 	}
 	focus = {
@@ -282,7 +295,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_stemming_the_tide_idea
+				days = 25
+			}
 		}
 	}
 	focus = {
@@ -310,7 +326,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = GER_defensive_positions
+				days = 25
+			}
 		}
 	}
 	focus = {
@@ -553,9 +572,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_operation_bodenplatte
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GER_ob_west }
+		id = GER_battle_of_the_hurtgen_forest
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_ob_west  }
+		available = {
+		}
 		x = 2
 		y = 2
 		cost = 1
@@ -567,12 +588,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_battle_of_the_hurtgen_forest
-		icon = GFX_goal_generic_political_pressure
+		id = GER_operation_bodenplatte
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = GER_operation_bodenplatte focus = GER_battle_of_remagen }
-		available = {
-
-		}
 		x = 2
 		y = 5
 		cost = 1
@@ -608,7 +626,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = GER_battle_of_remagen_decision 
 		}
 	}
 	focus = {
@@ -622,7 +640,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 	focus = {

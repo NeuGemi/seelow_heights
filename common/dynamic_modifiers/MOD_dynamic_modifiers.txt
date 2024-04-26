@@ -20,12 +20,16 @@ scenario_heavy_resistance_CRO = {
 	icon = GFX_modifiers_generic_resistance
 	attacker_modifier = no
 
-	army_speed_factor = -0.15
+	army_speed_factor = -0.5
 	army_core_defence_factor = -0.1
 	army_morale_factor = -0.05
 }
 
+BSL_vistula_oder_offensive = {
+	icon = GFX_unplanned_offensive
 
+	army_defence_factor = -1.0
+}
 
 
 
@@ -57,6 +61,14 @@ GER_armee_ostpreussen_dyn = {
 }
 
 GER_festung_ruhr_dyn = {
+	icon = GFX_unplanned_offensive
+
+	enemy_army_speed_factor = -0.15
+	enemy_local_supplies = -0.1
+	enemy_attrition = 0.1
+}
+
+GER_battle_of_remagen_dyn = {
 	icon = GFX_unplanned_offensive
 
 	enemy_army_speed_factor = -0.15

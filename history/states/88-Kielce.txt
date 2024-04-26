@@ -28,6 +28,21 @@ state={
 		1945.1.1 = {
 			owner = SOV
 			controller = SOV
+			GER = {
+				set_province_controller = 9412
+				set_province_controller = 13205
+				set_province_controller = 9427
+				set_province_controller = 11398
+			}
+			buildings = {
+				11398 = {
+					bunker = 10
+				}
+			}
+		}
+		1945.3.1 = {
+			owner = SOV
+			controller = SOV
 		}
 	}
 

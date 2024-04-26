@@ -31,7 +31,14 @@ state= {
 		}
 		add_core_of = PHI
 		1945.1.1 = {
-			owner = JAP
+			owner = PHI
+			controller = JAP
+			PHI = {
+				set_province_controller = 1415
+			}
+		}
+		1945.3.1 = {
+			owner = PHI
 			controller = JAP
 			PHI = {
 				set_province_controller = 10280

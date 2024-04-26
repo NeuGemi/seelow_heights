@@ -19,7 +19,7 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = GER
-		1945.1.1 = {
+		1945.3.1 = {
 			owner = SOV
 			controller = SOV
 		}

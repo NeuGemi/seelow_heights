@@ -553,23 +553,14 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+	oob = "JAP_1945_1_12"
+
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
 	set_war_support = 0.2
 
 	set_cosmetic_tag = JAP_scenario
 
 		set_fuel = 0.01
-
-		oob = "JAP_1945_nsb" #Also applies to non NSB users
-
-	if = {
-		limit = { 
-				NOT = {
-					 has_dlc = "By Blood Alone"
-			 }
-	 } 
-	 set_oob = "JAP_1945_nsb"
-}
 
 complete_national_focus = JAP_spiritual_mobilization
 complete_national_focus = JAP_torpedo_cruisers 
@@ -667,6 +658,12 @@ add_to_faction = LAO
 			}
 		}
 		#
+		POL = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
 		TUR = {
 			add_to_war = {
 				targeted_alliance = USA
@@ -990,6 +987,23 @@ add_to_faction = LAO
 		}
 		set_naval_oob = "JAP_1939_Naval"
 	}
+}
+
+1945.3.1 = {
+	oob = "JAP_1945_3_6"
+}
+
+1945.4.1 = {
+	oob = "JAP_1945_nsb" #Also applies to non NSB users
+
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "JAP_1945_nsb"
+	}	
 }
 
 if = {

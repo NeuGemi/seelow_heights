@@ -22,6 +22,10 @@ state={
 		1945.1.1 = {
 			owner = PHI
 			controller = JAP
+		}
+		1945.4.1 = {
+			owner = PHI
+			controller = JAP
 			PHI = {
 			set_province_controller = 7360
 			set_province_controller = 7417

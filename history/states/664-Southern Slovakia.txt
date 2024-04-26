@@ -28,6 +28,15 @@ state={
 			add_core_of = HUN
 			add_core_of = SLO
 		}
+		1945.1.1 = {
+			owner = HUN
+			controller = HUN
+			SOV = {
+				set_province_controller = 9537
+				set_province_controller = 6573
+				set_province_controller = 3565
+			}
+		}
 		1945.2.28 = {
 			owner = HUN
 			controller = HUN

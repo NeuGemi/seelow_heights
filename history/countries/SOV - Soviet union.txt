@@ -1281,6 +1281,8 @@ if = {
 
 1945.1.1 = {
 
+		oob = "SOV_1945_12_1"
+
 		set_cosmetic_tag = SOV_scenario
 
 	set_autonomy = {
@@ -1405,7 +1407,7 @@ if = {
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "SOV_1945_air_bba"
+			set_air_oob = "SOV_1945_1_12_air_bba"
 			set_technology = {
 			improved_small_airframe = 1
 			advanced_small_airframe = 1
@@ -1423,7 +1425,7 @@ if = {
 			range_improvements = 1
 		}
 		else = {
-			set_oob = "SOV_1945_air_legacy"
+			set_oob = "SOV_1945_1_12_air_legacy"
 		}
 	}
 
@@ -1598,6 +1600,30 @@ if = {
 
 1945.2.28 = {
 	oob = "SOV_1945_3_6"
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "SOV_1945_air_bba"
+			set_technology = {
+			improved_small_airframe = 1
+			advanced_small_airframe = 1
+			modern_small_airframe = 1
+			improved_medium_airframe = 1
+			advanced_medium_airframe = 1
+			basic_large_airframe = 1
+			improved_large_airframe = 1
+			survivability_studies = 1
+			aa_hmg = 1
+			aa_cannon_1 = 1
+			aa_cannon_2 = 1
+			engines_3 = 1
+			engines_4 = 1
+			range_improvements = 1
+		}
+		else = {
+			set_oob = "SOV_1945_air_legacy"
+		}
+	}
 }
 
 1945.4.1 = {

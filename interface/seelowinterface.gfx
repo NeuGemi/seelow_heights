@@ -1,6 +1,18 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_report_event_mod_vistulaoder"
+		texturefile = "gfx/event_pictures/report_event_mod_vistulaoder.png"
+	}
+	SpriteType = {
+		name = "GFX_news_event_fallofkonigsberg"
+		texturefile = "gfx/event_pictures/news_event_fallofkonigsberg.png"
+	}
+	SpriteType = {
+		name = "GFX_news_event_fallofbudapest"
+		texturefile = "gfx/event_pictures/news_event_fallofbudapest.png"
+	}
+	SpriteType = {
 		name = "GFX_news_event_battleofberlin"
 		texturefile = "gfx/event_pictures/news_event_battleofberlin.png"
 	}
@@ -51,6 +63,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_select_date_1945_3_5"
 		texturefile = "gfx/interface/select_date_1945_3_5.png"
+	}
+	SpriteType = {
+		name = "GFX_select_date_1945_1_12"
+		texturefile = "gfx/interface/select_date_1945_1_12.png"
 	}
 }
 

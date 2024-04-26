@@ -17,7 +17,7 @@ state={
 			infrastructure = 3 #was: 6
 			industrial_complex = 2
 			6332 = {
-				bunker = 1
+				bunker = 10
 
 			}
 			11265 = {
@@ -32,7 +32,7 @@ state={
 				anti_air_building = 5
 			}
 		}
-		1945.1.1 = {
+		1945.3.1 = {
 			owner = SOV
 			controller = SOV
 			GER = {
@@ -40,7 +40,7 @@ state={
 				set_province_controller = 6332
 			}
 		}
-		1945.1.1 = {
+		1945.4.1 = {
 			owner = SOV
 			controller = SOV
 			GER = {

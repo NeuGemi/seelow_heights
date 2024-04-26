@@ -22,6 +22,18 @@ state={
 			add_core_of = SLO
 		}
 		1945.1.1 = {
+			owner = SLO
+			controller = SOV
+			SLO = {
+				set_province_controller = 11554
+			}
+			buildings = {
+				11554 = {
+					bunker = 10
+				}
+			}
+		}
+		1945.3.1 = {
 			owner = SOV
 			controller = SOV
 		}

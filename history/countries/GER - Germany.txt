@@ -539,29 +539,24 @@ if = {
 
 1945.1.1 = {
 
-	oob = "GER_1945_3_6_nsb"
+	oob = "GER_1945_1_12"
 
-	add_timed_idea = {
-		days = 42 
-		idea = GER_not_all_is_yet_lost
+	GER_heinrich_himmler = {
+		add_field_marshal_role = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		} 
 	}
 
-			GER_heinrich_himmler = {
-				add_field_marshal_role = {
-					traits = { politically_connected }
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 1
-				} 
-			}
+	set_fuel_ratio = 0.6
 
-		set_fuel_ratio = 0.6
-
-		army_experience = 500
-		air_experience = 500
-		navy_experience = 500
+	army_experience = 500
+	air_experience = 500
+	navy_experience = 500
  
 
 recruit_character = GER_lothar_rendulic
@@ -586,6 +581,7 @@ recruit_character = GER_theodor_busse
 recruit_character = GER_walther_luch
 recruit_character = GER_hermann_fegelein
 recruit_character = GER_hans_obstfelder
+recruit_character = GER_otto_woehler
 
 	if = {
 		limit = {
@@ -607,7 +603,7 @@ recruit_character = GER_hans_obstfelder
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "GER_1945_air_bba"
+			set_air_oob = "GER_1945_1_12_air_bba"
 			set_technology = {
 			improved_small_airframe = 1
 			advanced_small_airframe = 1
@@ -625,7 +621,7 @@ recruit_character = GER_hans_obstfelder
 			range_improvements = 1
 		}
 		else = {
-			set_air_oob = "GER_1945_air_legacy"
+			set_air_oob = "GER_1945_1_12_air_legacy"
 		}
 	}
 
@@ -877,26 +873,6 @@ set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
 add_political_power = 400
 
-		### MOD ###
-		complete_national_focus = GER_increase_disparate_volkssturm_deployments
-		complete_national_focus = GER_scrape_the_barrel
-		complete_national_focus = GER_ob_ost
-		complete_national_focus = GER_operation_hannibal
-		complete_national_focus = GER_relieve_budapest
-		complete_national_focus = GER_secure_the_hungarian_oil_reserves
-		complete_national_focus = GER_stemming_the_tide
-		complete_national_focus = GER_heeresgruppe_weichsel
-		complete_national_focus = GER_oder_neisse_line
-		complete_national_focus = GER_festung_breslau
-		complete_national_focus = GER_employ_aggressive_defensive_orders
-		complete_national_focus = GER_operation_solstice
-		complete_national_focus = GER_ob_west
-		complete_national_focus = GER_operation_bodenplatte
-		complete_national_focus = GER_battle_of_the_hurtgen_forest
-		complete_national_focus = GER_battle_of_remagen
-		complete_national_focus = GER_sonderkommando_elbe
-	#	complete_national_focus = GER_defeat_cannot_come_so_soon
-
 		### VANILLA ####
     unlock_national_focus = GER_danzig_or_war
     unlock_national_focus = GER_grosraumwirtschaft
@@ -917,6 +893,15 @@ add_political_power = 400
     complete_national_focus = GER_form_the_reichskommissariats
     complete_national_focus = GER_u_boat_effort
 
+    complete_national_focus = GER_increase_disparate_volkssturm_deployments
+    complete_national_focus = GER_ob_west
+    complete_national_focus = GER_ob_ost
+    complete_national_focus = GER_scrape_the_barrel
+    complete_national_focus = GER_operation_bodenplatte
+    complete_national_focus = GER_relieve_budapest
+    complete_national_focus = GER_battle_of_the_hurtgen_forest
+    complete_national_focus = GER_operation_hannibal
+
 	#remove_ideas = GER_not_all_is_yet_lost
 	remove_ideas = GER_mefo_bills_1
 
@@ -924,8 +909,6 @@ create_intelligence_agency = {
   name = "Abwehr"
   icon = "GFX_intelligence_agency_logo_ger"
 }
-
-
 
   if = {
 	limit = {
@@ -1127,6 +1110,19 @@ create_intelligence_agency = {
 		}
 	#
 
+		POL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		LUX = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+
 		ETH = {
 			add_to_war = {
 				targeted_alliance = ENG
@@ -1231,17 +1227,70 @@ create_intelligence_agency = {
 		}
 }
 
+1945.3.1 = {
+	oob = "GER_1945_3_6_nsb"
+
+	add_timed_idea = {
+		days = 42 
+		idea = GER_not_all_is_yet_lost
+	}
+
+		### MOD ###
+		complete_national_focus = GER_increase_disparate_volkssturm_deployments
+		complete_national_focus = GER_scrape_the_barrel
+		complete_national_focus = GER_ob_ost
+		complete_national_focus = GER_relieve_budapest
+		complete_national_focus = GER_secure_the_hungarian_oil_reserves
+		complete_national_focus = GER_stemming_the_tide
+		complete_national_focus = GER_heeresgruppe_weichsel
+		complete_national_focus = GER_oder_neisse_line
+		complete_national_focus = GER_festung_breslau
+		complete_national_focus = GER_employ_aggressive_defensive_orders
+		complete_national_focus = GER_operation_solstice
+		complete_national_focus = GER_ob_west
+		complete_national_focus = GER_operation_bodenplatte
+		complete_national_focus = GER_battle_of_the_hurtgen_forest
+	#	complete_national_focus = GER_battle_of_remagen
+	#	complete_national_focus = GER_sonderkommando_elbe
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "GER_1945_air_bba"
+			set_technology = {
+			improved_small_airframe = 1
+			advanced_small_airframe = 1
+			modern_small_airframe = 1
+			improved_medium_airframe = 1
+			advanced_medium_airframe = 1
+			basic_large_airframe = 1
+			improved_large_airframe = 1
+			survivability_studies = 1
+			aa_hmg = 1
+			aa_cannon_1 = 1
+			aa_cannon_2 = 1
+			engines_3 = 1
+			engines_4 = 1
+			range_improvements = 1
+		}
+		else = {
+			set_air_oob = "GER_1945_air_legacy"
+		}
+	}	
+}
+
 1945.4.1 = {
 
 	recruit_character = GER_ernst_busch
 
-	complete_national_focus = GER_nerobefehl
-	complete_national_focus = GER_appoint_ernst_busch
-	complete_national_focus = GER_fuhrer_directive_72
-	complete_national_focus = GER_festung_ruhr
-	complete_national_focus = GER_fighting_retreat
-	complete_national_focus = GER_battle_of_vienna
-	complete_national_focus = GER_armee_ostpreussen
+	unlock_national_focus = GER_nerobefehl
+	unlock_national_focus = GER_appoint_ernst_busch
+	unlock_national_focus = GER_fuhrer_directive_72
+	unlock_national_focus = GER_festung_ruhr
+	unlock_national_focus = GER_fighting_retreat
+	unlock_national_focus = GER_battle_of_vienna
+	unlock_national_focus = GER_armee_ostpreussen
+	unlock_national_focus = GER_battle_of_remagen
+	unlock_national_focus = GER_sonderkommando_elbe
 
 
 	if = {

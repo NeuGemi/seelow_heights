@@ -607,6 +607,8 @@ if = {
 
 1945.1.1 = {
 
+	oob = "ENG_1945_1_12"
+
 		PHI = {
 			add_ideas = surrender_limit
 		}
@@ -632,8 +634,8 @@ if = {
 		add_command_power = 100
 		add_political_power = 1900
 
-	#	add_to_faction = POL
-	#	add_to_faction = LUX
+		add_to_faction = POL
+		add_to_faction = LUX
 		add_to_faction = BEL
 		add_to_faction = INS
 		add_to_faction = ETH

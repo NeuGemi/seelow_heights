@@ -459,8 +459,7 @@ if = {
 
 1945.1.1 = {
 
-		oob = "FRA_1945"
-
+	oob = "FRA_1945_12_1"
 
 set_cosmetic_tag = FRA_PROVISIONAL
 retire_character = FRA_leon_blum
@@ -718,6 +717,11 @@ set_war_support = 0.100
 		}
 		set_naval_oob = "FRA_1945_Naval"
 	}
+}
+
+1945.3.1 = {
+
+		oob = "FRA_1945"
 }
 
 1945.4.26 = {

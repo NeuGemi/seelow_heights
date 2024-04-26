@@ -422,6 +422,8 @@ recruit_character = USA_harry_white
 
 1945.1.1 = {
 
+	oob = "USA_1945_12_1"
+
 		retire_character = USA_franklin_delano_roosevelt
 		create_country_leader = {
 			name = "Harry S. Truman"

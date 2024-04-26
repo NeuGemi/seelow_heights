@@ -1,0 +1,111 @@
+air_wings = {
+	
+	195 = {
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 		
+	}
+	219 = {
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 	
+	}
+	808 = {
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+	}
+	814 = {
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 		
+	}
+	97 = {
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+	}
+	11 = {
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+	}
+	92 = {
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }		
+	}
+	91 = {
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+	}
+	43 = {
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  } 
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+	}
+	155 = {
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+	}
+	107 = {
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		CAS_equipment_1 = { owner = "SOV"  amount = 100 }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		tac_bomber_equipment_1 = { owner = "SOV"  amount = 100  }	
+		fighter_equipment_1 = { owner = "SOV"  amount = 100 }		
+	}
+}

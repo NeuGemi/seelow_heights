@@ -3595,55 +3595,6 @@ news_event = {
 	}
 }
 
-# The Fall of Manila
-news_event = {
-	id = news.124
-	title = news.124.t
-	desc = news.124.d
-	picture = GFX_news_event_039
-	
-	major = yes
-	
-	trigger = {
-		327 = { is_controlled_by = JAP }
-		327 = { is_owned_by = PHI }
-		JAP = { has_war_with = PHI }
-		NOT = { has_global_flag = fall_of_manila }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_manila
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = news.145.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = PHI
-				TAG = USA
-			}
-		}
-	}
-	option = {
-		name = news.117.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news.100.c
-		trigger = { 
-			OR = {
-				TAG = PHI 
-				TAG = USA
-			}
-		}
-	}
-}
-
 # The Fall of Calcutta
 news_event = {
 	id = news.125

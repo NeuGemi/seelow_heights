@@ -1,0 +1,295 @@
+division_template = {
+	name = "Gyalogdandár"				# Infantry Brigade
+
+	division_names_group = HUN_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+        artillery_brigade = { x = 3 y = 0 }
+        anti_tank_brigade = { x = 4 y = 0 }
+        anti_tank_brigade = { x = 4 y = 1 }
+	}
+}
+division_template = {
+	name = "Hegyidandár"				# Infantry Brigade
+
+	division_names_group = HUN_MNT_01
+
+	regiments = {
+	    mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+   		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+  		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+        anti_tank_brigade = { x = 4 y = 0 }
+        anti_tank_brigade = { x = 4 y = 1 }
+	}
+}
+division_template = {
+	name = "Huszár Dandár" 			# Cavalry Brigade
+
+	division_names_group = HUN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Motorizált Dandár" 			# Motorized Brigade
+
+	division_names_group = HUN_MOT_01
+
+	regiments = {
+		  motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+   		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+  	    motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 3 }
+
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Gyorshadtest"  
+	division_names_group = HUN_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		
+		medium_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   			
+		engineer = { x = 0 y = 1 }   
+	}
+}
+
+units = {
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9427
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9427
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 3537
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 24
+		}
+		location = 3537
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+    division= {	
+	    name = "1. Hegyidandár"
+		location = 3537
+		division_template = "Hegyidandár"
+		start_experience_factor = 0.3
+    }
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 6561
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 27
+		}
+		location = 6561
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 11679
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 9676
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 23
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+
+    division= {	
+	    name = "'Szent Lászlo' Gyalogdandar"
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+    }
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9660
+		division_template = "Huszár Dandár"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9660
+		division_template = "Gyorshadtest" 
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9660
+		division_template = "Gyorshadtest" 
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 25
+		}
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	    start_equipment_factor = 0.3
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_2
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.82
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 7
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 4
+	}
+}
+

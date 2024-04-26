@@ -169,7 +169,7 @@ country_event = {
 	}
 }
 
-# Scenario Intro for Germany
+# Scenario Intro for Germany March 6 1945
 country_event = {
 	id = intro.4
 	title = intro.4.t
@@ -221,6 +221,160 @@ country_event = {
 	}
 }
 
+# Scenario Intro for Germany January 12 1945
+country_event = {
+	id = intro.5
+	title = intro.5.t
+	desc = intro.5.d	
+	picture = GFX_report_event_mod_vistulaoder
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			SOV = {
+				remove_ideas = SOV_desperate_measures_ns
+				remove_ideas = SOV_the_road_of_life_ns
+			}	
+			ENG = {
+				add_timed_idea = {
+					days = 30
+					idea = ENG_slow_europe
+				}
+			}
+			USA = {
+				add_timed_idea = {
+					days = 30
+					idea = ENG_slow_europe
+				}
+			}
+			FRA = {
+				add_timed_idea = {
+					days = 30
+					idea = ENG_slow_europe
+				}
+			}
+		}
+	}
+
+	option = {	# Okay
+		name = intro.5.a
+	}
+
+	option = { # Tell me more
+		name = intro.5.b
+		hidden_effect = {
+			country_event = intro.7
+		}
+	}
+}
+
+# Tell me more
+country_event = {
+	id = intro.7
+	title = intro.7.t
+	desc = intro.7.d	
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {	# Budapest Relief Attempts
+		name = intro.7.a
+			hidden_effect = {
+				country_event = intro.8
+			}		
+	}
+	option = {	# Vistula-Oder Offensive
+		name = intro.7.b
+			hidden_effect = {
+				country_event = intro.9
+			}	
+	}
+	option = {	# Operation Frühlingserwachen
+		name = intro.7.c
+			hidden_effect = {
+				country_event = intro.10
+			}	
+	}
+	option = {	# I'm Done
+		name = intro.8.b
+	}
+}
+
+# 'Konrad' Offensives
+country_event = {
+	id = intro.8
+	title = intro.8.t
+	desc = intro.8.d	
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {	# Go Back
+		name = intro.8.a
+			hidden_effect = {
+				country_event = intro.7
+			}		
+	}
+	option = {	# I'm Done
+		name = intro.8.b
+	}
+}
+
+# Vistula-Oder Offensive
+country_event = {
+	id = intro.9
+	title = intro.9.t
+	desc = intro.9.d	
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {	# Go Back
+		name = intro.8.a
+			hidden_effect = {
+				country_event = intro.7
+			}		
+	}
+	option = {	# I'm Done
+		name = intro.8.b
+	}
+}
+
+# Operation 'Frühlingserwachen'
+country_event = {
+	id = intro.10
+	title = intro.10.t
+	desc = intro.10.d	
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = {	# Go Back
+		name = intro.8.a
+			hidden_effect = {
+				country_event = intro.7
+			}		
+	}
+	option = {	# I'm Done
+		name = intro.8.b
+	}
+}
+
 # Surrender of Walter Model's & Army Group B
 country_event = {
 	id = scenario.1
@@ -249,7 +403,6 @@ country_event = {
 	title = scenario.2.t
 	desc = scenario.2.d	
 	picture = GFX_report_event_mod_himmler_betrayal
-
 
 	fire_only_once = yes
 
@@ -552,6 +705,29 @@ country_event = {
 	}
 }
 
+# Operation 'Frühlingserwachen' Commences
+# Handled through Focus Tree
+country_event = {
+	id = scenario.16
+	title = scenario.16.t
+	desc = scenario.16.d	
+	picture = GFX_report_event_hungary_southern_slovakia
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = scenario.16.a
+			GER = {
+				add_timed_idea = {
+					idea = GER_operation_fruhl
+					days = 10
+				}
+			}	
+	}
+}
+
 # Fall of Vienna
 news_event = {
 	id = scenarionews.1
@@ -832,7 +1008,70 @@ news_event = {
 	}
 }
 
- 
+ # The Fall of Budapest
+news_event = {
+	id = scenarionews.7
+	title = scenarionews.7.t
+	desc = scenarionews.7.d
+	picture = GFX_news_event_fallofbudapest
+	
+	major = yes
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		43 = { is_controlled_by = SOV }
+		43 = { is_owned_by = HUN }
+		SOV = { has_war_with = HUN }
+		HUN = {
+			is_in_faction_with = GER
+		}
+		NOT = { has_global_flag = fall_of_budapest }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_budapest
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = scenarionews.7.a
+	}
+}
+
+ # The Fall of Königsberg
+news_event = {
+	id = scenarionews.8
+	title = scenarionews.8.t
+	desc = scenarionews.8.d
+	picture = GFX_news_event_fallofkonigsberg
+	
+	major = yes
+
+	fire_only_once = yes
+	
+	trigger = {
+		763 = { is_controlled_by = SOV }
+		GER = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_konigsberg }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_konigsberg
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = scenarionews.7.a
+	}
+}
 
 ##########	########	 ######		#		#
 	#		#			 ##			#		#
@@ -1452,6 +1691,190 @@ country_event = {
     }
 }
 
+# Battle of Remagen enable modifiers
+country_event = {
+	id = offensives.13
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 42
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = GER_battle_of_remagen_dyn
+				}
+			}		
+			GER = {
+				country_event = { id = maintenance.6 days = 18 }		
+			}			
+		}
+    }
+}
+
+# Add Unplanned Offensives JANUARY 12
+country_event = {
+	id = offensives.14
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_3_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						state = 74
+						state = 75
+						state = 9
+						state = 69
+						state = 152
+						state = 7
+						state = 58
+					}
+				}
+				set_state_flag = SOV_3_unplanned_offensive_flag
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+			every_state = { #CROATIA
+				limit = { 
+					OR = {
+						state = 103
+						state = 104
+						state = 109
+
+					}
+				}
+				set_state_flag = CRO_partisans
+				add_dynamic_modifier = {
+					modifier = scenario_heavy_resistance_CRO
+				}
+			}
+			every_state = { #Vistula-Oder Offensive
+				limit = { 
+					OR = {
+						state = 763
+						state = 5
+						state = 98	
+						state = 10
+						state = 90
+					}
+				}
+				set_state_flag = SOV_vistula_oder_offensive
+				add_dynamic_modifier = {
+					modifier = BSL_vistula_oder_offensive
+				}
+			}
+		}
+    }
+}
+
+# Remove Vistula-Oder Offensive - JANUARY 12
+country_event = {
+	id = offensives.15
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.2.1
+	}
+
+	hidden = yes
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_3_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						state = 763
+						state = 5
+						state = 98	
+						state = 10
+						state = 90
+					}
+				}
+				set_state_flag = SOV_3_unplanned_offensive_flag_remove_3
+				remove_dynamic_modifier = {
+					modifier = vistula_oder_offensive
+				}
+			}
+		}
+    }
+}
+
+# Remove Unplanned Offensives - JANUARY 12
+country_event = {
+	id = offensives.16
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.4.15
+		OR = {
+			GER = {
+				NOT = { controls_province = 6521 }
+			}	
+			#GER = {
+			#	surrender_progress < 0.15
+			#}	
+		}
+	}
+
+	hidden = yes
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		hidden_effect = {
+			set_global_flag = SOV_1_unplanned_offensives
+			every_state = {
+				limit = {
+					OR = {
+						state = 74
+						state = 75
+						state = 9
+						state = 69
+						state = 152
+						state = 7
+						state = 58
+					}
+				}
+				set_state_flag = SOV_1_unplanned_offensive_flag_remove_1
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+    }
+}
+
 country_event = {
 	id = maintenance.2
 
@@ -1536,6 +1959,25 @@ country_event = {
     }
 }
 
+country_event = {
+	id = maintenance.6
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+
+    option = {
+    ai_chance = {
+    base = 100
+    	}
+		remove_dynamic_modifier = {
+			modifier = GER_battle_of_remagen_dyn
+		}    	
+    }
+}
 
 
 
