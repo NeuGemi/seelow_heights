@@ -183,13 +183,19 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_manpower = -2000000
-			add_manpower = -2000000
-			add_manpower = -2000000
-			add_manpower = -2000000
-			add_manpower = -2000000
-			add_manpower = -2000000
-			add_manpower = -2000000
+			GER = {
+				add_timed_idea = {
+					days = 42 
+					idea = GER_not_all_is_yet_lost
+				}
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -2000000
+			}
 			SOV = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
@@ -1091,6 +1097,149 @@ news_event = {
 	
 	option = {
 		name = scenarionews.7.a
+	}
+}
+
+# Death of FDR
+news_event = {
+	id = scenarionews.9
+	title = scenarionews.9.t
+	desc = scenarionews.9.d	
+	picture = GFX_news_event_fdrdeath
+
+	immediate = {
+		set_global_flag = scenario_fdr_dead
+		hidden_effect = {
+			USA = {
+				retire_character = USA_franklin_delano_roosevelt
+				create_country_leader = {
+					name = "Harry S. Truman"
+					desc = "POLITICS_HARRY_TRUMAN_DESC"
+					picture = GFX_portrait_Harry_S_Truman
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+					}
+				}		
+			}		
+		}
+	}
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = scenarionews.9.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.9.b
+		trigger = { 
+			TAG = GER 
+		}
+	}
+	option = {
+		name = scenarionews.9.c
+		trigger = { 
+			TAG = JAP 
+		}
+	}
+}
+
+# Allied troops connect with the Soviets at the Elbe!
+news_event = {
+	id = scenarionews.10
+	title = scenarionews.10.t
+	desc = scenarionews.10.d	
+	picture = GFX_news_event_elbeday
+
+	immediate = {
+		set_global_flag = scenario_elbe_meetup
+	}
+	
+	major = yes
+	
+	trigger = {
+		USA = {
+			controls_state = 59
+		}
+		SOV = {
+			controls_state = 64
+		}
+		NOT = { has_global_flag = scenario_elbe_meetup }
+	}
+
+	option = {
+		name = scenarionews.10.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = scenarionews.10.b
+		trigger = { 
+			TAG = GER 
+		}
+	}
+	option = {
+		name = scenarionews.10.c
+		trigger = { 
+			TAG = SOV 
+		}
+	}
+	option = {
+		name = scenarionews.10.e
+		trigger = { 
+			TAG = USA 
+		}
+	}
+}
+
+# War in the Pacific Extends to Northeast China!
+news_event = {
+	id = scenarionews.11
+	title = scenarionews.11.t
+	desc = scenarionews.11.d	
+	picture = GFX_news_event_sovietinvasion
+
+	immediate = {
+		set_global_flag = scenario_sov_man_war
+	}
+	
+	major = yes
+	
+	trigger = {
+		USA = {
+			has_war_with = JAP
+		}
+		SOV = {
+			has_war_with = MAN
+			has_war_with = JAP
+		}
+		NOT = { has_global_flag = scenario_sov_man_war }
+	}
+
+	option = {
+		name = scenarionews.11.a
+	}
+	option = {
+		name = scenarionews.11.b
+		trigger = { 
+			TAG = JAP 
+		}
+	}
+	option = {
+		name = scenarionews.11.c
+		trigger = { 
+			TAG = USA 
+		}
 	}
 }
 
@@ -2037,6 +2186,58 @@ country_event = {
 
 	fire_only_once = yes
 
+	trigger = {
+		has_start_date < 1945.1.15
+		date < 1945.4.15
+		OR = {
+			SOV = { controls_state = 63 }
+			SOV = { controls_state = 68 }
+			SOV = { controls_state = 66 }
+			SOV = { controls_state = 75 }
+		}
+	}
+
+	hidden = yes
+
+	immediate  = {
+		set_global_flag = SOV_vistula_oder_offensive_success
+		SOV = {
+			add_ideas = SOV_preparing_offensive
+			}
+		}		
+
+    option = {   	
+    }
+}
+
+country_event = {
+	id = maintenance.8
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = SOV_vistula_oder_offensive_success
+		has_start_date < 1945.1.15
+		date > 1945.4.15
+	}
+
+	hidden = yes
+
+	immediate = {
+		SOV = {
+			remove_ideas = SOV_preparing_offensive
+			}
+	}
+
+    option = { 	
+    }
+}
+
+country_event = {
+	id = maintenance.9
+
+	fire_only_once = yes
+
 	is_triggered_only = yes
 
 	hidden = yes
@@ -2051,7 +2252,6 @@ country_event = {
 		}    	
     }
 }
-
 
 
 

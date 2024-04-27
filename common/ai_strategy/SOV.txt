@@ -54,7 +54,7 @@ SOV_wait_for_ve_day = {
 	}
 
 	enable = {
-		has_war_with = GER
+		date < 1945.7.1
 	}
 
 	abort_when_not_enabled = yes

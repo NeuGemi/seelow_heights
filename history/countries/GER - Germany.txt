@@ -1219,26 +1219,21 @@ create_intelligence_agency = {
 1945.3.1 = {
 	oob = "GER_1945_3_6_nsb"
 
-	add_timed_idea = {
-		days = 42 
-		idea = GER_not_all_is_yet_lost
-	}
-
 		### MOD ###
-		complete_national_focus = GER_increase_disparate_volkssturm_deployments
-		complete_national_focus = GER_scrape_the_barrel
-		complete_national_focus = GER_ob_ost
-		complete_national_focus = GER_relieve_budapest
-		complete_national_focus = GER_secure_the_hungarian_oil_reserves
-		complete_national_focus = GER_stemming_the_tide
-		complete_national_focus = GER_heeresgruppe_weichsel
-		complete_national_focus = GER_oder_neisse_line
-		complete_national_focus = GER_festung_breslau
-		complete_national_focus = GER_employ_aggressive_defensive_orders
-		complete_national_focus = GER_operation_solstice
-		complete_national_focus = GER_ob_west
-		complete_national_focus = GER_operation_bodenplatte
-		complete_national_focus = GER_battle_of_the_hurtgen_forest
+		unlock_national_focus = GER_increase_disparate_volkssturm_deployments
+		unlock_national_focus = GER_scrape_the_barrel
+		unlock_national_focus = GER_ob_ost
+		unlock_national_focus = GER_relieve_budapest
+		unlock_national_focus = GER_secure_the_hungarian_oil_reserves
+		unlock_national_focus = GER_stemming_the_tide
+		unlock_national_focus = GER_heeresgruppe_weichsel
+		unlock_national_focus = GER_oder_neisse_line
+		unlock_national_focus = GER_festung_breslau
+		unlock_national_focus = GER_employ_aggressive_defensive_orders
+		unlock_national_focus = GER_operation_solstice
+		unlock_national_focus = GER_ob_west
+		unlock_national_focus = GER_operation_bodenplatte
+		unlock_national_focus = GER_battle_of_the_hurtgen_forest
 	#	complete_national_focus = GER_battle_of_remagen
 	#	complete_national_focus = GER_sonderkommando_elbe
 
