@@ -24,9 +24,10 @@ state = {
 		add_core_of = ITA
 		add_core_of = PAP
 		1943.1.1 = {
-			owner = ITA
-			controller = ENG
-		} 
+			add_core_of = RD2
+			owner = RD2
+			controller = RD2
+		}  
 	}
 
 	provinces = {

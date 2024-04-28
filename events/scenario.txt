@@ -1243,6 +1243,29 @@ news_event = {
 	}
 }
 
+# Fourth Inauguration of President Roosevelt
+news_event = {
+	id = scenarionews.12
+	title = scenarionews.12.t
+	desc = scenarionews.12.d	
+	picture = GFX_news_event_fdrinauguration
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = scenarionews.12.a
+	}
+	option = {
+		name = scenarionews.12.b
+		trigger = { 
+			TAG = JAP 
+			TAG = GER
+		}
+	}
+}
+
 ##########	########	 ######		#		#
 	#		#			 ##			#		#
 	#		#			##			#		#		
@@ -2378,16 +2401,11 @@ country_event = {
     immediate = {
  		hidden_effect = {
 			GER = {
-				release_puppet = ITA
-				release_puppet = HOL
+				dismantle_faction = yes
 				release_puppet = BLR
 				release_puppet = NOR
 				set_autonomy = {
-   					target = ITA
-    				autonomy_state = autonomy_free
-					}
-				set_autonomy = {
-   					target = HOL
+   					target = NOR
     				autonomy_state = autonomy_free
 					}
 				set_autonomy = {
@@ -2409,6 +2427,18 @@ country_event = {
 				transfer_state = 8
 			}
 			WGR = {
+				add_state_core = 50
+				add_state_core = 42
+				add_state_core = 58
+				add_state_core = 59
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 51
+				add_state_core = 55
+				add_state_core = 54
+				add_state_core = 53
+				add_state_core = 52
+				add_state_core = 909
 				transfer_state = 50
 				transfer_state = 42		
 				transfer_state = 58
@@ -2423,6 +2453,11 @@ country_event = {
 				transfer_state = 909
 			}
 			DDR = {
+				add_state_core = 62
+				add_state_core = 61
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 60
 				transfer_state = 62
 				transfer_state = 61
 				transfer_state = 64
@@ -2446,11 +2481,25 @@ country_event = {
 			set_cosmetic_tag = FRA_mod_free
 			}
 			ENG = {
+				set_autonomy = {
+   					target = ITA
+    				autonomy_state = autonomy_puppet
+					}
+				set_autonomy = {
+   					target = HOL
+    				autonomy_state = autonomy_puppet
+					}
+				set_autonomy = {
+   					target = NOR
+    				autonomy_state = autonomy_puppet
+					}
 				add_to_faction = HOL
 				add_to_faction = BEL
 				add_to_faction = LUX
 				add_to_faction = ITA
 				add_to_faction = WGR
+				add_to_faction = NOR
+
 			}
 			SOV = {
 				add_to_faction = DDR

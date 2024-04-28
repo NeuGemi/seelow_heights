@@ -658,6 +658,12 @@ add_to_faction = LAO
 			}
 		}
 		#
+		RD2 = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
 		POL = {
 			add_to_war = {
 				targeted_alliance = USA

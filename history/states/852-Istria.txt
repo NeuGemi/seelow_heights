@@ -27,6 +27,7 @@ state = {
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
 		set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
 		1945.1.1 = {
+			add_core_of = RD2
 			owner = GER
 			controller = GER
 		}

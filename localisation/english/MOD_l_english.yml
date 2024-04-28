@@ -203,7 +203,11 @@ scenarionews.11.d:0 "Harrowing news have arrived for the final standing Axis bel
 scenarionews.11.a:0 "This seems to be the final showdown..."
 scenarionews.11.b:0 "We will not let them enact revenge for 1905!"
 scenarionews.11.c:0 "Our boys will be home soon."
-
+scenarionews.12.t:0 "Fourth Inauguration of President Roosevelt"
+scenarionews.12.d:0 "On this very day, United States President Roosevelt will take his fourth oath for office ― administered by Chief Justice Stone. This day also marks the exit of the progressive Henry Wallace from the Vice Presidency and his replacement by the dark horse Great War veteran Harry Truman, decade long Senator from Missouri. Despite the administering of oath and the following address being cut short ― Franklin D. Roosevelt has led the Democratic Party for its 4th consecutive term in office."
+scenarionews.12.a:0 "We send our regards to Roosevelt!"
+scenarionews.12.b:0 "May his rule end!"
+ 
 ### Decisions ###
 GER_oberkommando:0 "Oberkommando Des Heeres"
 GER_oberkommando_desc:0 "After 6 years of war, the Wehrmacht is defeated, retreating. Losing on every front, Goebbels calls for a total war, with Volkssturm militias, wunderwaffen and victory through force of will. However as the Allies gain ground each day, and the Red Army prepares for a final offensive, the grasp of victory is far away. It only remains to be seen whether or not Goebbels speeches of a final victory is to be seen."
@@ -345,3 +349,6 @@ GER_battle_of_halbe_desc:0 "Halbe is an important obstacle in the path to Berlin
 GER_ritter_von_greims_flight:0 "Ritter von Greims Flight"
 GER_fuhrer_directive_73:0 "Führer Directive no. 73"
 GER_fuhrer_directive_73_desc:0 "It is important we have plans for reorganization in the case of Northern and Southern Germany is separated."
+
+# Country Tags #
+RD2:0 "Regno Del Sud"

@@ -15,6 +15,7 @@ on_actions = {
 						country_event = { id = offensives.14 } 
 						country_event = { id = scenario.14 days = 58 } 
 						news_event = { id = scenarionews.9 days = 90 }
+						news_event = { id = scenarionews.12 days = 8 }
 					}
 				}
 				if = { 
