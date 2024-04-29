@@ -4,6 +4,7 @@ add_namespace = intro
 add_namespace = scenarionukes
 add_namespace = scenarionews
 add_namespace = maintenance
+add_namespace = volkssturm
 
 #GFX_report_event_generic_destroyed_vehicles
 
@@ -414,7 +415,7 @@ country_event = {
 
 	trigger = {
 		TAG = GER
-		surrender_progress > 0.35
+		surrender_progress > 0.51
 	}
 
 	option = {	# 
@@ -1179,6 +1180,8 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
+				TAG = SOV
+				TAG = USA
 			}
 		}
 	}
@@ -1256,12 +1259,82 @@ news_event = {
 
 	option = {
 		name = scenarionews.12.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
 	}
 	option = {
 		name = scenarionews.12.b
 		trigger = { 
-			TAG = JAP 
 			TAG = GER
+		}
+	}
+	option = {
+		name = scenarionews.12.b
+		trigger = { 
+			TAG = JAP
+		}
+	}
+}
+
+# Battle of Iwo Jima
+news_event = {
+	id = scenarionews.13
+	title = scenarionews.13.t
+	desc = scenarionews.13.d	
+	picture = GFX_news_event_mod_iwojima
+
+	immediate = {
+		set_global_flag = scenario_iwo_jima
+	}
+	
+	major = yes
+	
+	trigger = {
+		date > 1945.2.15
+		date < 1945.3.1 #To not fire after the Jan 12 scenario
+		NOT = { 
+			USA = {
+				controls_state = 645
+				is_ai = no
+			}
+			JAP = {
+				is_ai = no
+			}
+		}
+		NOT = { has_global_flag = scenario_iwo_jima }
+	}
+
+	option = {
+		name = scenarionews.13.a
+	}
+}
+
+ # Battle of the Bulge Ends
+news_event = {
+	id = scenarionews.14
+	title = scenarionews.14.t
+	desc = scenarionews.14.d
+	picture = GFX_news_event_battleofbulge
+	
+	major = yes
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = scenarionews.14.a
+		trigger = {
+			NOT = { tag = GER }
+		}
+	}
+	option = {
+		name = scenarionews.14.b
+		trigger = {
+			tag = GER
 		}
 	}
 }
@@ -2276,36 +2349,6 @@ country_event = {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##   #	#	  #	 #   #   #####
 # #	 #	#     #	 #  #	 #
 #  # #	#	  #  # #	 ###
@@ -2613,4 +2656,272 @@ country_event = {
     base = 100
     	}
     }
+}
+
+# Volkssturm formed in Vienna
+country_event = {
+	id = volkssturm.1
+	title = volkssturm.1.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+		has_start_date < 1945.3.7
+			4 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			4 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
+}
+
+# Volkssturm formed in Munich
+country_event = {
+	id = volkssturm.2
+	title = volkssturm.2.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+		has_start_date < 1945.3.7
+			52 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			52 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
+}
+
+# Volkssturm formed in Frankfurt
+country_event = {
+	id = volkssturm.3
+	title = volkssturm.3.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+		has_start_date < 1945.3.7
+			55 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			55 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
+}
+
+# Volkssturm formed in Hamburg
+country_event = {
+	id = volkssturm.4
+	title = volkssturm.4.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+			58 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			58 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
+}
+
+# Volkssturm formed in Prague
+country_event = {
+	id = volkssturm.5
+	title = volkssturm.5.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+			9 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			9 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
+}
+
+# Volkssturm formed in Berlin
+country_event = {
+	id = volkssturm.6
+	title = volkssturm.6.t
+	desc = volkssturm.1.d	
+	picture = GFX_report_event_german_volunteers
+
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = GER
+		has_start_date < 1945.3.7
+			64 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+	}
+
+	immediate = {
+		hidden_effect = {
+			64 = {
+				create_unit = {
+					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	option = {	# 
+		name = volkssturm.1.a
+		custom_effect_tooltip = GER_volkssturm_raised_tt
+	}
 }

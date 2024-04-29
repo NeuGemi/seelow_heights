@@ -29,6 +29,10 @@ state = {
 			6788 = {
 				naval_base = 8
 			}
+			611 = { bunker = 2 }
+			9738 = { bunker = 3 }
+			11721 = { bunker = 2 }
+			11891 = { bunker = 2 }
 		}
 		add_core_of = ITA
 		add_core_of = SPM
@@ -43,10 +47,8 @@ state = {
 			add_core_of = RD2
 		}
 		1945.4.26 = {
-			USA = {
+			RD2 = {
 				set_province_controller = 6788
-				set_province_controller = 3772
-				set_province_controller = 11891
 			}
 		}
 	}

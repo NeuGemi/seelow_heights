@@ -2804,6 +2804,14 @@ units = {
 
 	### 10. ARMEE (CO: Traugott Herr) ###
 
+	division = {
+		name = "29. SS Grenadier-Division 'Italien'"
+		location = 11726
+		division_template = "SS-Infanterie-Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+		start_manpower_factor = 0.84
+	}
     division= {
 	    name = "42. Leichte-Division"
 	    location = 6973
@@ -3099,6 +3107,13 @@ units = {
 		location = 575
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    }
+    division= {	
+	    name = "226. Infanterie-Division"
+		location = 575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
     }
     division= {	

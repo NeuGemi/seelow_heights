@@ -379,7 +379,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 225
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -389,7 +389,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 32
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -399,7 +399,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 218
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -409,7 +409,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 11
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -419,7 +419,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 563
 		}
-		location = 3319
+		location = 9262
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -429,7 +429,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 121
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -439,7 +439,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 30
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -449,7 +449,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 87
 		}
-		location = 3319
+		location = 9262
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -459,20 +459,20 @@ units = {
 				is_name_ordered = yes
 				name_order = 132
 		}
-		location = 3319
+		location = 11246
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
     division= {
 	    name = "4. Waffen SS-Division 'Nederland'"
-	    location = 3319
+	    location = 11246
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     }
     division= {
 	    name = "11. Waffen SS-Division 'Nordland'"
-	    location = 3319
+	    location = 11246
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     }   
@@ -481,14 +481,14 @@ units = {
     ### 16. Armee (Courland Pocket) ###
     division= {	
 	    name = "201. Sicherungs-Division"
-		location = 3194
+		location = 11246
 		division_template = "Sicherungs-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
     }
     division= {	
 	    name = "207. Sicherungs-Division"
-		location = 3194
+		location = 11246
 		division_template = "Sicherungs-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -498,7 +498,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 205
 		}
-		location = 3194
+		location = 11246
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -508,7 +508,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 215 
 		}
-		location = 3194
+		location = 11246
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -1825,6 +1825,14 @@ units = {
 
 	### 10. ARMEE (CO: Traugott Herr) ###
 
+	division = {
+		name = "29. SS Grenadier-Division 'Italien'"
+		location = 11726
+		division_template = "SS-Infanterie-Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.35
+		start_manpower_factor = 0.35
+	}
     division= {
 	    name = "42. Leichte-Division"
 	    location = 6973
@@ -2306,7 +2314,7 @@ units = {
 
 	division = {
 		name = "12. Waffen SS-Division 'Hitlerjugend'"
-		location = 6583
+		location = 11407
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2358,7 +2366,7 @@ units = {
     }
 	division = {
 		name = "1. Waffen SS 'Leibstandarte Adolf Hitler'"
-		location = 6583
+		location = 11407
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2899,6 +2907,13 @@ units = {
 		location = 575
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
+    }
+    division= {	
+	    name = "226. Infanterie-Division"
+		location = 575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
 		force_equipment_variants = { infantry_equipment_2 = { owner = "GER" } }
     }
     division= {	

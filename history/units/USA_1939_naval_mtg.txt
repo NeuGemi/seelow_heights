@@ -7,10 +7,10 @@ units= {
 	### Split between San Pedro (Los Angeles) and San Diego ###
 	fleet = {
 		name = "Battle Force"			
-		naval_base = 13025 # San Diego
+		naval_base = 1415 # San Diego
 		task_force = {				
 			name = "Battleships, Battle Force"		# CO: Snyder
-			location = 13025 # Los Angeles
+			location = 1415 # Los Angeles
 			### Battleship Division 1 ###			
 			ship = { name = "USS Nevada" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
 			ship = { name = "USS Pennsylvania" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
@@ -30,7 +30,7 @@ units= {
 		}				
 		task_force = {					
 			name = "Carrier Division 1"			# CO: Halsey			
-			location = 13025 # Los Angeles
+			location = 1415 # Los Angeles
 			ship = { name = "USS Lexington" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Lexington Class" } } 
 				
 			}
@@ -40,7 +40,7 @@ units= {
 		}					
 		task_force = {					
 			name = "Carrier Division 2"			# CO: Blakely	
-			location = 13025 # San Diego
+			location = 1415 # San Diego
 			ship = { name = "USS Enterprise" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = USA version_name = "Yorktown Class" } }
 				
 			}
@@ -50,7 +50,7 @@ units= {
 		}					
 		task_force = {					
 			name = "Cruisers, Battle Force"		# CO: Kimmell		
-			location = 13025 # Los Angeles
+			location = 1415 # Los Angeles
 			### Cruiser Division 8 ###			
 			ship = { name = "USS Brooklyn" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
 			ship = { name = "USS Philadelphia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "Brooklyn Class" } } }				
@@ -64,7 +64,7 @@ units= {
 		}					
 		task_force = {					
 			name = "Cruiser Division 3"			# CO: Fletcher	
-			location = 13025 # San Diego
+			location = 1415 # San Diego
 			ship = { name = "USS Omaha" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			ship = { name = "USS Milwaukee" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			ship = { name = "USS Cincinnati" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
@@ -76,7 +76,7 @@ units= {
 		### Destroyer Flotilla  1 (CO: Holmes) ###				
 		task_force = {					
 			name = "Destroyer Flotilla 1"				
-			location = 13025 # San Diego
+			location = 1415 # San Diego
 			ship = { name = "USS Raleigh" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			### Destroyer Squadron 1 ###			
 			ship = { name = "USS Phelps" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
@@ -128,7 +128,7 @@ units= {
 		### Destroyer Flotilla  2 (CO: Pye) ###				
 		task_force = {					
 			name = "Destroyer Flotilla 2"				
-			location = 13025 # San Diego
+			location = 1415 # San Diego
 			ship = { name = "USS Detroit" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			### Destroyer Squadron 4 ###			
 			ship = { name = "USS Selfridge" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
@@ -183,7 +183,7 @@ units= {
 		# Separate DESRONS #
 		task_force = {					
 			name = "Destroyer Squadron  31"				
-			location = 13025 # San Francisco
+			location = 1415 # San Francisco
 			ship = { name = "USS MacLeish" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			# 62nd Destroyer Division				
 			ship = { name = "USS McCormick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		

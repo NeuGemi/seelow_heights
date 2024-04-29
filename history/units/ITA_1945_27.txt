@@ -1,168 +1,211 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Divisione di Fanteria"
+	name = "Divisione Granatieri"			#2nd Divisione Littorio
 	division_names_group = ITA_INF_01 	
-	# Represents regular all infantry divisions
-	# In later years, CCNN Brigade added to Inf Division (1x2 militia/inf regiment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 
-	}
-}
-division_template = {
-	name = "Divisione Alpina"				# Divisione Alpina (high experience, best equipment)
-	division_names_group = ITA_MNT_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }		# Elite Alpina Regiments
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Divisione Alpina"				#4a Divisione 'Monterosa' - officially disbanded on 28 April
+	division_names_group = ITA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }		
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }			#1st autonomous rifle battalion
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }			#2nd autonomous rifle battalion
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
 	}
 	priority = 2
 }
 division_template = {
-	name = "Divisione Autotrasportabile"		# Divisione Autotrasportabile (North Africa)
-	# Note: semi-motorized regular infantry in North Africa
+	name = "Divisione Bersaglieri"			#1a Divisione Bersaglieri 'Italia'
 	division_names_group = ITA_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Divisione Fanteria di Marina"	#3a Divisione 'San Marco', Xa MAS
+	division_names_group = ITA_MAR_01
+	regiments = {
+	    marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+   		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Reggimento Volontari Friulani"	#Reggimento 'Tagliamento'
+	division_names_group = ITA_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Reggimento Bersaglieri"			#3o Reggimento Bersaglieri
+	division_names_group = ITA_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Reggimento Paracadutisti"		#Reggimento Folgore
+	division_names_group = ITA_PAR_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Reggimento MDT"					#Reggimento Milizia Difesa Territoriale
+	division_names_group = ITA_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		light_armor = { x = 2 y = 0 }		# L3/35 tankettes
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 
-	}
-}
-division_template = {
-	name = "Divisione Motorizzata"			# Divisione Motorizzata, first raised in 1939
-	division_names_group = ITA_MOT_01
-
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }		# 3rd Rgt = (elite) Bersaglieri
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Divisione Celere" 			# Divisione Celere (Fast Division)
-	division_names_group = ITA_CAV_02
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }			# (elite) Bersaglieri Regiment
-		motorized = { x = 2 y = 1 }
-		light_armor = { x = 3 y = 0 }
-	}
-	priority = 2
-}
-division_template = {
-	name = "Divisione Corazzata" 			# Divisione Corazzata
-	division_names_group = ITA_ARM_01
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		light_armor = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }		# Bersaglieri (elite regiment, highest experience and best equipment)
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 
-	}
-	priority = 2
-}
-division_template = {
-	name = "Raggruppamento Celere" 				# Raggruppamento Celere (less equipped than frontline Celere)
-	division_names_group = ITA_CAV_02
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }			# (elite) Bersaglieri Regiment
-		motorized = { x = 1 y = 1 }
-		light_armor = { x = 2 y = 0 }
 	}
 }
 
 units = {
-	    division= {	
-	    name = "10a Flottiglia 'Mezzi d'Assalto'"
-		location = 9582 
-		division_template = "Divisione di Fanteria"
+	division = {	
+	    name = "1a Divisione Bersaglieri 'Italia'"
+		location = 771 
+		division_template = "Divisione Bersaglieri"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.50
+		start_equipment_factor = 0.74
     }
-	    division= {	
-	    name = "1a Divisione Italia"
-		location = 6793
-		division_template = "Divisione di Fanteria"
+	division = {	
+	    name = "2a Divisione Granatieri 'Littorio'"
+		location = 11891 
+		division_template = "Divisione Granatieri"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.50
+		start_equipment_factor = 0.81
     }
-	    division= {	
-	    name = "2a Divisione 'Littorio'"
-		location = 11723 #
-		division_template = "Divisione di Fanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.50
+	division = {	
+	    name = "3a Divisione Fanteria di Marina 'San Marco'"
+		location = 3772 
+		division_template = "Divisione Fanteria di Marina"
+		start_experience_factor = 1.0	#these guys were very experienced
+		start_equipment_factor = 0.95
     }
-	    division= {	
-	    name = "3a Divisione 'San Marco'"
-		location = 611 
-		division_template = "Divisione di Fanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.50
-    }
-	    division= {	
+	division = {	
 	    name = "4a Divisione Alpina 'Monterosa'"
-		location = 770 #
-		division_template =  "Divisione Alpina"	
+		location = 11721 
+		division_template = "Divisione Alpina"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
+		start_equipment_factor = 0.99
     }
-	    division= {	
-	    name = "Milizia Difesa Terriotriale"
-		location = 599 
-		division_template = "Raggruppamento Celere" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.50
+	division = {	
+	    name = "Decima MAS"
+		location = 6793 
+		division_template = "Divisione Fanteria di Marina"
+		start_experience_factor = 1.0	#elite formation
+		start_equipment_factor = 0.99
     }
-	    division= {	
-	    name = "Reggimento Alpini 'Tagliamento'"
-		location = 603 
-		division_template = "Divisione di Fanteria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
-    }
+	division = {
+		name = "Reggimento Paracadutisti 'Folgore'"
+		location = 9738
+		division_template = "Reggimento Paracadutisti"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.79
+	}
+	division = {
+		name = "3o Reggimento Bersaglieri"
+		location = 9745
+		division_template = "Reggimento Bersaglieri"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75	
+	}
+	division = {
+		name = "Reggimento Volontari Friulani 'Tagliamento'"
+		location = 9613
+		division_template = "Reggimento Volontari Friulani"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95			
+	}
+	division = {
+		name = "1o Reggimento MDT 'San Giusto'"
+		location = 6626
+		division_template = "Reggimento MDT"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2o Reggimento MDT 'Istria'"
+		location = 11735
+		division_template = "Reggimento MDT"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3o Reggimento MDT 'Gabriele d'Annunzio'"
+		location = 11564
+		division_template = "Reggimento MDT"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4o Reggimento MDT 'Isonzo'"
+		location = 628
+		division_template = "Reggimento MDT"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "5o Reggimento MDT 'Friuli'"
+		location = 628
+		division_template = "Reggimento MDT"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}	
 }

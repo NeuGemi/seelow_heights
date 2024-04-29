@@ -49,6 +49,10 @@ state = {
 				set_province_controller = 6973
 			}
 		}   
+		1945.4.26 = {
+			owner = RD2
+			controller = RD2
+		}
 	}
 
 	provinces = {

@@ -1,6 +1,18 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_news_event_battleofbulge"
+		texturefile = "gfx/event_pictures/news_event_battleofbulge.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_volkssturm"
+		texturefile = "gfx/event_pictures/report_event_mod_volkssturm.png"
+	}
+	SpriteType = {
+		name = "GFX_news_event_mod_iwojima"
+		texturefile = "gfx/event_pictures/news_event_mod_iwojima.png"
+	}
+	SpriteType = {
 		name = "GFX_news_event_fdrinauguration"
 		texturefile = "gfx/event_pictures/news_event_fdrinauguration.png"
 	}

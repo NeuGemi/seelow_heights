@@ -520,7 +520,7 @@ units = {
 	}
 	division= {
 		name = "Brazilian Expeditionary Force"
-		location = 11891
+		location = 6788
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
@@ -532,13 +532,13 @@ units = {
 	}
 	division= {
 		name = "1. US Armored Division"
-		location = 11891
+		location = 6788
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "34. US Infantry Division 'Red Bull'"
-		location = 3772
+		location = 6788
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}

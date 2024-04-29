@@ -32,7 +32,7 @@ state = {
 			add_core_of = RD2
 		}
 		1945.4.26 = {
-			ENG = {
+			RD2 = {
 				set_province_controller = 11734
 				set_province_controller = 3776
 			}
