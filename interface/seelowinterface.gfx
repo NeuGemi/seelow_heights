@@ -1,6 +1,10 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_Portrait_Hungary_Ferenc_Szalasi"
+		texturefile = "gfx/leaders/HUN/Portrait_Hungary_Ferenc_Szalasi.tga"
+	}
+	SpriteType = {
 		name = "GFX_news_event_battleofbulge"
 		texturefile = "gfx/event_pictures/news_event_battleofbulge.png"
 	}

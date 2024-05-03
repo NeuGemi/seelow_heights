@@ -23,6 +23,24 @@ state={
 				arms_factory = 2
 
 			}
+		}
+		1945.1.1 = {
+			JAP = {
+				set_province_controller = 1036
+				set_province_controller = 4619
+				set_province_controller = 4631
+				set_province_controller = 7167
+				set_province_controller = 7637
+				set_province_controller = 10462
+				set_province_controller = 7580
+				set_province_controller = 9934
+				set_province_controller = 7625
+				set_province_controller = 1612
+				set_province_controller = 4130
+				set_province_controller = 12467
+			}	
+		}
+		1945.3.1 = {
 			JAP = {
 				set_province_controller = 1036
 				set_province_controller = 4619
@@ -37,10 +55,8 @@ state={
 				set_province_controller = 1612
 				set_province_controller = 4130
 				set_province_controller = 12467
-			}
-
+			}			
 		}
-
 	}
 
 	provinces={

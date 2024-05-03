@@ -22,6 +22,22 @@ state={
 			4425 1 
 		}
 		1945.1.1 = {
+			owner = RAJ
+			controller = JAP
+			RAJ = {
+				set_province_controller = 4318
+				set_province_controller = 4996
+				set_province_controller = 1934
+				set_province_controller = 1197
+				set_province_controller = 4087
+				set_province_controller = 8063
+				set_province_controller = 1082
+				set_province_controller = 4425
+			}
+		}
+		1945.3.1 = {
+			owner = RAJ
+			controller = RAJ
 			JAP = {
 				set_province_controller = 4585
 				set_province_controller = 7974

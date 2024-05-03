@@ -8,8 +8,8 @@ bookmarks = {
 		default = yes
 		
 
-		"SLO"={
-			history = "SLO_SEELOW_DESC"
+		"HUN"={
+			history = "HUN_SEELOW_DESC"
 			ideology = fascism
 			ideas = {
 				surrender_limit

@@ -20,6 +20,15 @@ state={
 				set_province_controller = 1628
 				set_province_controller = 3992
 				set_province_controller = 13141
+			}
+
+		}
+		1945.3.1 = {
+			JAP = {
+				set_province_controller = 1153
+				set_province_controller = 1628
+				set_province_controller = 3992
+				set_province_controller = 13141
 				set_province_controller = 11945
 				set_province_controller = 1053
 				set_province_controller = 7004

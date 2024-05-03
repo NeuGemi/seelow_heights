@@ -15,6 +15,10 @@ state={
 
 		}
 		1945.1.1 = {
+			owner = FRA
+			controller = JAP
+		}
+		1945.3.1 = {
 			owner = CAM
 			controller = CAM
 		}

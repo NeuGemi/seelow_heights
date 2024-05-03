@@ -7,7 +7,7 @@
 		create_country_leader = {
 		name = "Ferenc Szalasi"
 		desc = "POLITICS_ferenc_szalasi_DESC"
-		picture = GFX_portrait_ferenc_szalasi
+		picture = GFX_Portrait_Hungary_Ferenc_Szalasi
 		expire = "1965.1.1"
 		ideology = nazism
 		traits = {
