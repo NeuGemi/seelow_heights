@@ -28,6 +28,17 @@ state={
 		1939.3.14 = {
 			owner = GER
 			controller = GER
+		buildings = {
+			6590 = {
+				bunker = 4
+			}
+			6576 = {
+				bunker = 4
+			}
+			11511 = {
+				bunker = 4
+				}
+			}
 		}
 		1945.4.26 = {
 			SOV = {

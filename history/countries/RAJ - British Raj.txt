@@ -260,8 +260,17 @@ set_cosmetic_tag = RAJ_UK # British Raj
 }
 
 1945.3.1 = {
+	oob = "RAJ_1945_3_6"
+}
+
+1945.4.1 = {
 	oob = "RAJ_1939"
 }
+
+1945.4.26 = {
+	oob = "RAJ_1945_4_27"
+}
+
 
 set_politics = {
 	ruling_party = neutrality

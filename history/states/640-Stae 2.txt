@@ -47,6 +47,34 @@ state={
 				set_province_controller = 4654
 				set_province_controller = 7647
 				set_province_controller = 12317
+				set_province_controller = 12404
+				set_province_controller = 1492
+				set_province_controller = 1566
+				set_province_controller = 2061
+			}
+		}
+		1945.4.1 = {
+			owner = RAJ
+			controller = RAJ
+			JAP = {
+				set_province_controller = 4585
+				set_province_controller = 7974
+				set_province_controller = 4175
+				set_province_controller = 7603
+				set_province_controller = 1607
+				set_province_controller = 4654
+				set_province_controller = 7647
+				set_province_controller = 12317
+			}
+		}
+		1945.4.26 = {
+			owner = RAJ
+			controller = RAJ
+			JAP = {
+				set_province_controller = 7974
+				set_province_controller = 4175
+				set_province_controller = 7603
+				set_province_controller = 7647
 			}
 		}
 	}

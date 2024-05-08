@@ -1826,7 +1826,7 @@ units = {
 	### 10. ARMEE (CO: Traugott Herr) ###
 
 	division = {
-		name = "29. SS Grenadier-Division 'Italien'"
+		name = "29. SS Grenadier-Division 'Italienische Nr. 1'"
 		location = 11726
 		division_template = "SS-Infanterie-Division"
 		start_experience_factor = 0.35
@@ -2020,6 +2020,7 @@ units = {
 
 	### 25. Armee ###
 
+	# XXX Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2030,16 +2031,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 711
-		}
-		location = 9498
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
+	# LXXXVIII Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2063,6 +2055,7 @@ units = {
 
 	### 1. Fallschirm-Armee
 
+	# At Army's Disposal
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2073,6 +2066,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
+	# II Fallschirmjäger Corps
     division= {	
 	    name = "606. Z.b.v. Division"
 		location = 391
@@ -2080,6 +2074,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
     }
+    # LXXXVI Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2115,17 +2110,21 @@ units = {
 
 	### 15. Armee ###
 
-	division = {
-		name = "10. Waffen SS-Division 'Frundsberg'"
-		location = 9363
-		division_template = "SS-Panzerdivision"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}	
+	# LXVII Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 353
+				name_order = 3
+		}
+		location = 9363
+		division_template = "Fallschirmjäger-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 89	
 		}
 		location = 9363
 		division_template = "Infanterie-Division"
@@ -2135,19 +2134,30 @@ units = {
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 47
+				name_order = 246	
+		}
+		location = 9363
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}	
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 277	
 		}
 		location = 9363
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
+	# LXXVI Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 363
+				name_order = 326	
 		}
-		location = 9363
+		location = 3444
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
@@ -2165,7 +2175,18 @@ units = {
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 326	
+				name_order = 85
+		}
+		location = 3444
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	# LXXXI Corps
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 47
 		}
 		location = 3444
 		division_template = "Volksgrenadier-Division"
@@ -2175,29 +2196,30 @@ units = {
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 85
+				name_order = 353
 		}
-		location = 3444
-		division_template = "Infanterie-Division"
+		location = 9522
+		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 363
+		}
+		location = 9522
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	# XII SS Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 59
 		}
-		location = 9363
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 176
-		}
-		location = 3444
+		location = 9522
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2207,7 +2229,17 @@ units = {
 				is_name_ordered = yes
 				name_order = 183
 		}
-		location = 3444
+		location = 9522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 176
+		}
+		location = 9522
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2215,56 +2247,32 @@ units = {
 
 	### 6. Panzerarmee ###
 
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 12
-		}
-		location = 9522
-		division_template = "Infanterie-Division"
+	# II SS Corps
+	division = {
+		name = "2. Waffen SS-Division 'Das Reich'"
+		location = 3547
+		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
-	}	
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 89	
-		}
-		location = 9522
-		division_template = "Infanterie-Division"
+	}
+	division = {
+		name = "9. Waffen SS-Division 'Hohenstaufen'"
+		location = 3547
+		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
-	}	
+	}
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 246	
+				name_order = 560	
 		}
-		location = 9522
+		location = 3547
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 277	
-		}
-		location = 9522
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 9522
-		division_template = "Fallschirmjäger-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
+	# LXVI Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2285,50 +2293,39 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
+	# At Army's Disposal
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 560	
+				name_order = 12
 		}
-		location = 3547
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division = {
-		name = "2. Waffen SS-Division 'Das Reich'"
-		location = 3547
-		division_template = "SS-Panzerdivision"
+		location = 11494
+		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
-	}
-	division = {
-		name = "9. Waffen SS-Division 'Hohenstaufen'"
-		location = 3547
-		division_template = "SS-Panzerdivision"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
+	}		
 
 	### 5. Panzerarmee ###
 
+	# XXXIX Corps
 	division = {
-		name = "12. Waffen SS-Division 'Hitlerjugend'"
-		location = 11407
-		division_template = "SS-Panzerdivision"
+		name = "3. Panzergrenadier-Division"
+		location = 11435
+		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 340	
+				name_order = 26	
 		}
-		location = 11470
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
+		location = 11435
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
+	# XXXXXVII Corps
     division= {
 	    name = "130. Panzer-Lehr-Division"
 	    location = 11470
@@ -2343,6 +2340,14 @@ units = {
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.75
     }
+	division = {
+		name = "15. Panzergrenadier-Division"
+		location = 6583
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	# LVIII Corps
     division= {
 	    name = "2. Panzer-Division"
 	    location = 11470
@@ -2364,6 +2369,39 @@ units = {
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.75	 
     }
+    # At Army's Disposal
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 340	
+		}
+		location = 3423
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	# I SS Corps
+	division = {
+		name = "12. Waffen SS-Division 'Hitlerjugend'"
+		location = 11407
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Kampfgruppe Peiper"
+		location = 11407
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.15
+	}
+	division = {
+		name = "501. SS Schwere Panzer Abteilung"
+		location = 11407
+		division_template = "Schwere Panzer Abteilung"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.50
+	}
 	division = {
 		name = "1. Waffen SS 'Leibstandarte Adolf Hitler'"
 		location = 11407
@@ -2371,60 +2409,10 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
-	division = {
-		name = "15. Panzergrenadier-Division"
-		location = 6583
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-	division = {
-		name = "3. Panzergrenadier-Division"
-		location = 11435
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 26	
-		}
-		location = 11435
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
 
 	### 7. Armee ###
 
-    division= {
-	    name = "11. Panzer-Division"
-	    location = 9575
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-		start_equipment_factor = 0.75 
-    }
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 79	
-		}
-		location = 11435
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 352	
-		}
-		location = 9575
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
+	# LXXX Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2445,6 +2433,28 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
+	# LXXXV Corps
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 79	
+		}
+		location = 11435
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 352	
+		}
+		location = 9575
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	# LIII Corps
     division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -2471,41 +2481,88 @@ units = {
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
-	}	
+	}
+	# At Army's Disposal
+    division= {
+	    name = "11. Panzer-Division"
+	    location = 11547
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+		start_equipment_factor = 0.75 
+    }	
 
 	### Heeresgruppe G (Alsace-Lorraine) ###
 
 	### 1. Armee ###
 
-    division= {
-	    name = "21. Panzer-Division"
-	    location = 11531
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.75
-    }
-	division = {
-		name = "17. Waffen SS 'Götz von Berlichingen'"
+	# LXXXIX Corps
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 256
+		}
 		location = 11531
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-	division = {
-		name = "25. Panzergrenadier-Division"
-		location = 11531
-		division_template = "Panzergrenadier-Division"
-		start_experience_factor = 0.3
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
     division= {		
 		division_name = {
 				is_name_ordered = yes
-				name_order = 526	
+				name_order = 361	
 		}
-		location = 563
+		location = 11531
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 245	
+		}
+		location = 11531
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	# LXXXX Corps
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 257	
+		}
+		location = 11531
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	# XIII SS Corps	
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 347
+		}
+		location = 563
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+    division= {
+	    name = "29. Panzergrenadier-Division"
+	    location = 563
+	    division_template = "Panzergrenadier-Division"
+	    start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+    } 
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 563
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
     division= {		
@@ -2518,66 +2575,57 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
+	division = {
+		name = "17. Waffen SS 'Götz von Berlichingen'"
+		location = 563
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+    # LXXXII Corps 
+	division= {
+		name = "416. Infanterie-Division 'Schlagsahne-Abteilung'"
+		location = 3558
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.80
+		start_manpower_factor = 0.87
+	}
+	# At Army's Disposal 
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 526	
+		}
+		location = 3558
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
     division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 559	
 		}
-		location = 563
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 257	
-		}
-		location = 563
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 19
-		}
 		location = 3558
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 347
-		}
-		location = 3558
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
+	division = {
+		name = "25. Panzergrenadier-Division"
+		location = 3530
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 256
-		}
-		location = 3558
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-    division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 361	
-		}
-		location = 6542
-		division_template = "Volksgrenadier-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
+    division= {
+	    name = "21. Panzer-Division"
+	    location = 3530
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+	    start_equipment_factor = 0.75
+    }
 	division= {
 		name = "6. Waffen SS-Division 'Nord'"
 		location = 3530
@@ -2586,65 +2634,16 @@ units = {
 		start_equipment_factor = 0.80
 		start_manpower_factor = 0.87
 	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 245	
-		}
-		location = 3530
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 159	
-		}
-		location = 3530
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 269	
-		}
-		location = 3530
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 338	
-		}
-		location = 6542
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 405
-		}
-		location = 6542
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-	}
 
+	# Heeresgruppe Oberrhein (CO: Heinrich Himmler)
 	### 19. Armee ###
-
+	# LXIV Corps
    division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 189	
 		}
-		location = 6712
+		location = 6542
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2654,7 +2653,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 198
 		}
-		location = 6712
+		location = 6542
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
@@ -2664,19 +2663,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 708	
 		}
-		location = 678
+		location = 6542
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-   division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 716	
-		}
-		location = 11640
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
 		start_equipment_factor = 0.75
 	}
    division= {		
@@ -2689,13 +2678,65 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
-
-    division= {
-	    name = "106. Panzer-Division"
-	    location = 11640
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.1
-    }
+	# LXIII Corps
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 159	
+		}
+		location = 6712
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 269	
+		}
+		location = 6712
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 338	
+		}
+		location = 11640
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+   division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 716	
+		}
+		location = 11640
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}	
+	# XIV SS Corps
+	division = {
+		name = "10. Waffen SS-Division 'Frundsberg'"
+		location = 11640
+		division_template = "SS-Panzerdivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+    division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 553
+		}
+		location = 678
+		division_template = "Volksgrenadier-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
 
     ### OB West Reserve ###
 
@@ -2940,420 +2981,50 @@ units = {
     
 }
 
-air_wings = {
-	
-	10 = {	# Warsaw
-		CAS_equipment_2 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Sturzkampfgeschwader 77"	
-
-		fighter_equipment_2 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Schlachtgeschwader 3"	
-	}
-	4 = {	# Vienna
-		transport_plane_equipment_1 = {
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Transportgeschwader 2"	
-	
-		fighter_equipment_2 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Schnellkampfsgeschwader 10"	
-	
-		fighter_equipment_1 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Schlachtgeschwader 2"	
-	
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "KG 4 'General Wever'"
-
-		fighter_equipment_1 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 76"
-	}
-	50 = { # Stuttgart
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "JG 3 'Udet'"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "JG 26 'Schlageter'"	
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "JG 2 'Richthofen'"	
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 27"
-	}
-	144 = { # Narvik
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "ZG 26 'Horst Wessel'"	
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "JG 5 'Eismeer'"
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "KG 26 'Löwen'"
-	}
-	159 = { # Milan
-		CAS_equipment_1 =  {			
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Sturzkampfgeschwader 3"	
-	}
-	763 = { #Königsberg
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Schlachtgeschwader 1"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 82
-		}
-		name = "JG 51 'Mölders'"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 82
-		}
-		name = "Jagdgeschwader 52"
-	}
-	190 = { # Courland Pocket
-		transport_plane_equipment_1 = {
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Transportgeschwader 1"	
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount =  80
-		}
-		name = "JG 54 'Grünherz'"
-	}
-	75 = { #Brno
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 45
-		}
-		name = "KG 2 'Holzhammer'"
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 40
-		}
-		name = "Kampfgeschwader 76"
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 66"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "JG 77 'Herz As'"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "JG 53 'Pik As'"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "JG 1 'Oesau'"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 4"
-	}
-	51 = { # Köln/Essen
-		transport_plane_equipment_1 = {
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Transportgeschwader 4"
-
-		CAS_equipment_2 = {
-			owner = "GER"
-			amount = 100
-		}
-		name = "Sturzkampfgeschwader 4"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 11	"
-	}
-
-	64 = { # Berlin
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 25
-		}
-		name = "Nachtjagdgeschwader 6"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Nachtjagdgeschwader 5"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Nachtjagdgeschwader 4"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Nachtjagdgeschwader 3"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Nachtjagdgeschwader 2"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 50
-		}
-		name = "Nachtjagdgeschwader 102"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 50
-		}
-		name = "Nachtjagdgeschwader 100"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Nachtjagdgeschwader 1"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "JG 26 'Schlageter'"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount =  50
-		}
-		name = "Jagdeschwader 11"
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Kampgeschwader 200"
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 80
-		}
-		name = "Kampgeschwader 100"
-
-		rocket_interceptor_equipment_1 = {
-			owner = "GER"
-			amount = 80
-		}
-		name = "Jagdgeschwader 400"
-
-		fighter_equipment_2 =  {		
-			owner = "GER" 
-			amount =  50
-		}
-		name = "Jagdeschwader 301"
-
-		fighter_equipment_1 =  {		
-			owner = "GER" 
-			amount =  50
-		}
-		name = "Jagdeschwader 300"
-	}
-	7 = { # Amsterdam
-		tac_bomber_equipment_1 = {		
-			owner = "GER" 
-			amount = 100
-		}
-		name = "Lehrgeschwader 1"	
-
-		tac_bomber_equipment_2 = {		
-			owner = "GER" 
-			amount = 65
-		}
-		name = "KG 53 'Legion Condor'"	
-
-		fighter_equipment_2 = {		
-			owner = "GER" 
-			amount = 40
-		}
-		name = "KG 27 'Edelweiss'"
-	}
-
-}
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_2
-			creator = "GER"
-		}
-		requested_factories = 12
-		progress = 0.8
-		efficiency = 100
-	}
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_3
 			creator = "GER"
 		}
-		requested_factories = 8
-		progress = 0.4
+		requested_factories = 20
+		progress = 0.9
 		efficiency = 100
 	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 13
-		progress = 0.6
-		efficiency = 100
-	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_3
 			creator = "GER" 
 		}
-		requested_factories = 14
-		progress = 0.2
+		requested_factories = 9
+		progress = 0.8
 		efficiency = 100
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = anti_tank_equipment_2
 			creator = "GER" 
 		}
-		requested_factories = 12
-		progress = 0.4
+		requested_factories = 7
+		progress = 0.8
 		efficiency = 100
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = anti_air_equipment_3
 			creator = "GER" 
 		}
-		requested_factories = 7
-		progress = 0.3
+		requested_factories = 2
+		progress = 0.8
 		efficiency = 100
 	}
-    
-    	add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
-			type = medium_tank_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 7
-		progress = 0.9
-		efficiency = 100
-	}
-    	add_equipment_production = {
-		equipment = {
-			type = medium_tank_equipment_3
+			type = support_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 8
-		progress = 0.9
-		efficiency = 100
-	}
-		add_equipment_production = {
-		equipment = {
-			type = heavy_tank_equipment_3
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.7
-		efficiency = 100
-	}
-
-		add_equipment_production = {
-		equipment = {
-			type = medium_tank_destroyer_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.1
-		efficiency = 100
-	}
-		add_equipment_production = {
-		equipment = {
-			type = medium_tank_artillery_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.1
+		progress = 0.3
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -3361,73 +3032,17 @@ instant_effect = {
 			type = motorized_equipment_1
 			creator = "GER" 
 		}
-		requested_factories = 10
+		requested_factories = 3
 		progress = 0.4
 		efficiency = 100
 	}
-    
-    add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
 			type = mechanized_equipment_2
 			creator = "GER" 
 		}
-		requested_factories = 9
-		progress = 0.4
+		requested_factories = 4
+		progress = 0.6
 		efficiency = 100
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 13
-		progress = 0.15
-		efficiency = 100
-	}  		
-											
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 12
-		progress = 0.2
-		efficiency = 100
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.1
-		efficiency = 100
-	}  
-
-	add_equipment_production = {
-		equipment = {
-			type = rocket_interceptor_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 70
-	} 
-
-	if = {
-		limit = {
-			has_dlc = "La Resistance"			
-		}
-	add_equipment_production = {
-		equipment = {
-			type = scout_plane_equipment_2
-			creator = "GER" 
-		}
-		requested_factories = 5
-		progress = 0.8
-		efficiency = 70
-		} 
 	}
 }

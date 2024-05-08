@@ -1008,7 +1008,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 2061
+		location = 7603
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1018,7 +1018,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 2061
+		location = 1417
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1028,7 +1028,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1566
+		location = 1650
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1038,7 +1038,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 12404
+		location = 12449
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1048,7 +1048,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 4202
+		location = 4293
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1078,7 +1078,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1492
+		location = 10344
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1098,7 +1098,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1566
+		location = 10283
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1973,7 +1973,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 10300 #Mindanao
+		location = 4241 #Mindanao
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.25
@@ -1993,7 +1993,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 102
 		}
-		location = 12112
+		location = 12153
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.40

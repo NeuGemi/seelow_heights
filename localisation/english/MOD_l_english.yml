@@ -259,6 +259,9 @@ GER_hold_budapest_desc:0 "Since December 1944, 100 000 soldiers have been encirc
 GER_operation_solstice_decision:0 "Operation Solstice"
 GER_wacht_am_rhein:0 "Wacht am Rhein"
 GER_wacht_am_rhein_desc:0 "Our offensive in the west has bogged down. Any outcome that isn't a complete success will lead to the eventual defeat of the German Reich. It is therefore of outmost importance that Wacht am Rein succeeds"
+GER_operation_nordwind:0 "Operation Nordwind"
+GER_operation_nordwind_desc:0 "Operation Wacht am Rhein has stalled. For it to succeed, we must divert Allied forces away from Belgium and destroy any forces in our way."
+
 
 JAP_hold_territory:0 "Imperial Supreme War Command"
 JAP_hold_burma:0 "Hold Burma"
@@ -291,7 +294,7 @@ WHENTITANSCLASHED_NAME:0 "Vistula-Oder Offensive"
 WHENTITANSCLASHED_DESC:0 "The Red Army are poised to launch a series of major offensive along German occupied Poland. German intelligence falsely estimates being outnumbered 3:1. They are instead outnumbered 5:1. \n\nA last major push from both West and the East only remains for an unconditional surrender of Germany. The end is near, and an ambitious last German 'Blitzkrieg' offensive codenamed 'Unternehmen Wacht Am Rhein', has failed."
 GER_SEELOW_DESC:0 "Germany is nothing but rubble, the once mighty German army replaced by the inexperienced young and elderly. The end of the war is being signalled as Germany sits on its knees while the Allies spear towards the Elbe from the west while the Soviets are preparing for the final showdown from the East, Vienna is already within their grasp. Hitler rants and rages while awaiting for the victory that he so much hopes to achieve."
 ITA_SEELOW_DESC:0 "When Operation Husky launched in 1943, the Kingdom of Italy fractured into a civil war, with Regno del Sud being under control by AMGOT and the Italian Social Republic under control by the German Reich.\n\nThe campaign in Italy have been long and brutal, barely moving for the past years. However a new Allied offensive - Operation Grapeshot, is being prepared. Will it bring an end to Nazi control in Northen Italy?"
-CRO_SEELOW_DESC:0 ""
+CRO_SEELOW_DESC:0 "Installed in 1941 as a puppet state of Germany after Operation 25, Croatia would find itself on the main line of the eastern front from 1944.\n\nFighting bitterly to the end, they surrendered its armed forces on May 15, seven days after the German Reich."
 HUN_SEELOW_DESC:0 "Since October 1944, Hungary has been under the dictatorship of Ferenc Szálasi, installed by Adolf Hitler following a coup. Since then, Budapest has found itself under siege, doomed and littered by panzers sent to relieve the city.\n\nWith Hungary now almost in the Soviets grasp and the imminent fall of Budapest, any sign of victory has been long since washed away."
 SLO_SEELOW_DESC:0 ""
 JAP_SEELOW_DESC:0 "After a near decade of war, the once mighty Empire of the Rising Sun faces mounting pressure as the war draws ever closer to the mainland. Their fleet has been reduced to rubble, its armies weakened and with US naval landings on Iwo Jima, Okinawa and the Philippines, they find themselves more and more cornered. \n\nHowever, with Operation Ichi-Go a success, will they end the war in China before the US reaches Tokyo? Will they push back the Tenth Army at Okinawa?"

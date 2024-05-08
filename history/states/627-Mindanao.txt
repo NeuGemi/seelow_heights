@@ -35,6 +35,24 @@ state={
 			set_province_controller = 10184
 			}
 		}
+		1945.4.26 = {
+			owner = PHI
+			controller = JAP
+			PHI = {
+			set_province_controller = 7360
+			set_province_controller = 7417
+			set_province_controller = 7389
+			set_province_controller = 4399
+			set_province_controller = 1421
+			set_province_controller = 10184
+			set_province_controller = 10300
+			set_province_controller = 4427
+			set_province_controller = 12273
+			set_province_controller = 10243
+			set_province_controller = 1234
+			set_province_controller = 7445
+			}
+		}
 	}
 
 	provinces={

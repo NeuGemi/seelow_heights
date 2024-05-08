@@ -16,6 +16,14 @@ state={
 		1939.3.14 = {
 			owner = POL
 			controller = POL
+			buildings = {
+				9567 = {
+					bunker = 7
+				}
+				9551 = {
+					bunker = 7
+				}
+			}	
 		}
 		1945.1.1 = {
 			owner = GER

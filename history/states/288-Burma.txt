@@ -62,6 +62,27 @@ state={
 				set_province_controller = 4541
 			}
 		}
+		1945.4.26 = {
+			owner = JAP
+			controller = JAP
+			RAJ = {
+				set_province_controller = 4454
+				set_province_controller = 3999
+				set_province_controller = 7534
+				set_province_controller = 11966
+				set_province_controller = 7163
+				set_province_controller = 10033
+				set_province_controller = 7122
+				set_province_controller = 1142
+				set_province_controller = 12090
+				set_province_controller = 4147
+				set_province_controller = 7190
+				set_province_controller = 4541
+				set_province_controller = 4626
+				set_province_controller = 12256
+				set_province_controller = 7441
+			}
+		}
 	}
 
 	provinces={

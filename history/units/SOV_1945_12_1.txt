@@ -3313,326 +3313,99 @@ units = {
 	}		
 }
 
-### Air Wings
-air_wings = {
-	11 = {		#Leningrad													# Leningrad 
-		### LVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" amount = 115 }				# 14ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 115  }				# 14ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" amount = 115 }				# 14ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 115  }
-		fighter_equipment_2 = { owner = "SOV" amount = 115 }				# 14ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 115  }
-
-						# 54ya Istrebitel'nye Avia. Polk -- I-16
-						# 59ya Istrebitel'nye Avia. Polk -- I-16
-						# 15ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 =  { owner = "SOV" amount = 108 }			# 29ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 =  { owner = "SOV" amount = 108 }
-					# 55ya Bombardirovochnye Avia. Polk -- DB-3A
-					# 68ya Bombardirovochnye Avia. Polk -- DB-3A
-					# 71ya Bombardirovochnye Avia. Polk -- DB-3A
-		### VVS - KBF Aviatsya Komandovaniya ###
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-		nav_bomber_equipment_2 = { owner = "SOV" amount = 80 }			# 8ya VMF Aviabrigada -- MBR-2
-					# 10ya VMF Aviabrigada -- MBR-2
-	}
-	92 = {																# Moscow 
-		### MVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 144 }				# 2ya Istrebitel'nye Avia. Polk -- I-15
-						# 54ya Istrebitel'nye Avia. Polk -- I-15
-		transport_plane_equipment_1 = { owner = "SOV" amount = 60 }		# 46ya Transporta Avia. Tupolev ANT-9
-		### 1ya Vozdushnaya Armiya ###
-		strat_bomber_equipment_2 =  { owner = "SOV" amount = 120 }		# 13ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-				# 27ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M														# Minsk 
-		### BOVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 96 }				# 56ya Istrebitel'nye Avia. Polk -- I-16
-						# 58ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-
-	}	
-	95 = {
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-	}
-	97 = {
-		### MVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 144 }				# 2ya Istrebitel'nye Avia. Polk -- I-15
-						# 54ya Istrebitel'nye Avia. Polk -- I-15
-		transport_plane_equipment_1 = { owner = "SOV" amount = 60 }		# 46ya Transporta Avia. Tupolev ANT-9
-		### 1ya Vozdushnaya Armiya ###
-		strat_bomber_equipment_2 =  { owner = "SOV" amount = 120 }		# 13ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-				# 27ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M														# Minsk 
-		### BOVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 96 }				# 56ya Istrebitel'nye Avia. Polk -- I-16
-						# 58ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-	}
-	91 = {
-		### MVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 144 }				# 2ya Istrebitel'nye Avia. Polk -- I-15
-						# 54ya Istrebitel'nye Avia. Polk -- I-15
-		transport_plane_equipment_1 = { owner = "SOV" amount = 60 }		# 46ya Transporta Avia. Tupolev ANT-9
-		### 1ya Vozdushnaya Armiya ###
-		strat_bomber_equipment_2 =  { owner = "SOV" amount = 120 }		# 13ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-				# 27ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M														# Minsk 
-		### BOVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 96 }				# 56ya Istrebitel'nye Avia. Polk -- I-16
-						# 58ya Istrebitel'nye Avia. Polk -- I-16
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-	}			# 70ya Bombardirovochnye Avia. Polk -- DB-3A
-	155 = {																# Smolensk 
-		### KalVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" amount = 144 }				# 17ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		CAS_equipment_2 = { owner = "SOV" amount = 90 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 = { owner = "SOV" amount = 124 }
-	}
-	154 = {																# Kiev 
-		### KOVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 22ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		fighter_equipment_2 = { owner = "SOV" amount = 172 }				# 51ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-						# 69ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 =  { owner = "SOV" amount = 144 }			# 1ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-					# 10ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		tac_bomber_equipment_2 =  { owner = "SOV" amount = 80 }			# 19ya Bombardirovochnye Avia. Polk -- DB-3A
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 60ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		fighter_equipment_2 = { owner = "SOV"  amount = 120 }				# 60ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		strat_bomber_equipment_2 =  { owner = "SOV" amount = 144 }		# 3ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-	
-					# 62ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-	}															# Kharkov 
-
-	12 = {																# Vladivostock 
-		### Dal'nevostochnyi Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 165 }				# 31ya Istrebitel'nye Avia. Polk -- I-15
-						# 53ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-						# 61ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
-		fighter_equipment_2 = { owner = "SOV" creator = "USA" amount = 135 }				# 20ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-						# 26ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-						# 28ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-		CAS_equipment_2 =  { owner = "SOV" amount = 90 }				# 72ya Shturmovye Avia. Polk -- SB-2M-100
-		tac_bomber_equipment_2 =  { owner = "SOV" amount = 144 }			# 12ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-					# 25ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
-		strat_bomber_equipment_2 =  { owner = "SOV" amount = 120 }		# 5ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-		### 2ya Vozdushnaya Armiya ###
-				# 30ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-				# 64ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
-	}
-	213 = {																# Chita 
-		### ZbkVO Aviatsya Komandovaniya ###
-		fighter_equipment_2 = { owner = "SOV" amount = 120 }				# 100ya Istrebitel'nye Avia. Polk -- I-15
-		fighter_equipment_2 = { owner = "SOV" amount = 90 }				# 67ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
-		CAS_equipment_2 =  { owner = "SOV" amount = 96 }				# 23ya Shturmovye Avia. Polk -- SB-2M-100
-		tac_bomber_equipment_1 =  { owner = "SOV" amount = 80 }	
-		CAS_equipment_2 =  { owner = "SOV" amount = 120 }		# 63ya Bombardirovochnye Avia. Polk -- DB-3A
-	}
-
-}
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
 instant_effect = {
-	
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_3
 			creator = "SOV"
 		}
-		requested_factories = 15
-		progress = 0.1
+		requested_factories = 20
+		progress = 0.9
 		efficiency = 100
 	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 13
-		progress = 0.3
-		efficiency = 100
-	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_3
 			creator = "SOV" 
 		}
-		requested_factories = 14
-		progress = 0.3
+		requested_factories = 9
+		progress = 0.8
 		efficiency = 100
 	}
-	
 	add_equipment_production = {
 		equipment = {
-			type = anti_tank_equipment_2 
+			type = anti_tank_equipment_2
 			creator = "SOV" 
 		}
 		requested_factories = 7
-		progress = 0.3
+		progress = 0.8
 		efficiency = 100
 	}
-	
 	add_equipment_production = {
 		equipment = {
-			type = anti_air_equipment_3
+			type = support_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 7
+		requested_factories = 8
 		progress = 0.3
 		efficiency = 100
 	}
-    
-    add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
-			type = medium_tank_equipment_2
-			creator = "SOV" 
-		}
-		requested_factories = 25
-		progress = 0.4
-		efficiency = 100
-	}
-
-    add_equipment_production = {
-		equipment = {
-			type = heavy_tank_equipment_3
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-
-    add_equipment_production = {
-		equipment = {
-			type = gw_armored_car_equipment
+			type = motorized_equipment_1
 			creator = "SOV" 
 		}
 		requested_factories = 3
 		progress = 0.4
 		efficiency = 100
 	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 10
-		progress = 0.4
-		efficiency = 100
-	}
-
 	add_equipment_production = {
 		equipment = {
 			type = mechanized_equipment_2
 			creator = "SOV" 
 		}
-		requested_factories = 10
-		progress = 0.4
-		efficiency = 100
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_2
-			creator = "SOV" 
-		}
-		requested_factories = 12
-		progress = 0.15
-		efficiency = 100
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_2
-			creator = "SOV" 
-		}
-		requested_factories = 8
-		progress = 0.2
+		requested_factories = 4
+		progress = 0.6
 		efficiency = 100
 	}
 
 	add_equipment_to_stockpile = {
     type = infantry_equipment_3
-    amount = 246700
+    amount = 50000
     producer = SOV
     } 
 
     add_equipment_to_stockpile = {
     type = support_equipment_1
-    amount = 11244
-    producer = SOV
-    }
-
-    add_equipment_to_stockpile = {
-    type = artillery_equipment_2
-    amount = 12000
-    producer = SOV
-    }
-    
-    add_equipment_to_stockpile = {
-    type = anti_tank_equipment_2
-    amount = 12000
-    producer = SOV
-    }
-    
-    add_equipment_to_stockpile = {    
-    type = anti_air_equipment_2
-    amount = 14000
-    producer = SOV
-    }
-
-    add_equipment_to_stockpile = {
-    type = light_tank_equipment_2
-    amount = 1723
-    producer = SOV
-    }
-
-    add_equipment_to_stockpile = {
-    type = medium_tank_equipment_2
     amount = 5000
     producer = SOV
     }
+
     add_equipment_to_stockpile = {
-    type = heavy_tank_equipment_3
+    type = artillery_equipment_3
     amount = 5000
-    producer = SOV
-    }
-    add_equipment_to_stockpile = {
-    type = gw_armored_car_equipment
-    amount = 367
     producer = SOV
     }
 
     add_equipment_to_stockpile = {
     type = motorized_equipment_1
-    amount = 20000
+    amount = 10000
     producer = SOV
     }
 
     add_equipment_to_stockpile = {
-    type = fighter_equipment_1
-    amount = 331
+    type = mechanized_equipment_1
+    amount = 3000
     producer = SOV
     }
-
     add_equipment_to_stockpile = {
-    type = CAS_equipment_2
-    amount = 272
+    type = anti_tank_equipment_2
+    amount = 3130
     producer = SOV
     }
-
+    add_equipment_to_stockpile = {
+    type = anti_air_equipment_2
+    amount = 1500
+    producer = SOV
+    }
 }
-	#####################
