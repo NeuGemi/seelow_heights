@@ -200,6 +200,14 @@ country_event = {
 			SOV = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					load_oob = "SOV_1945_3_6_nsb"
+				}
 			}	
 			ENG = {
 				add_timed_idea = {
@@ -251,17 +259,41 @@ country_event = {
 			SOV = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					load_oob = "SOV_1945_12_1"
+				}
 			}	
 			ENG = {
 				add_timed_idea = {
 					days = 30
 					idea = ENG_slow_europe
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					load_oob = "ENG_1945_1_12"
+				}
 			}
 			USA = {
 				add_timed_idea = {
 					days = 30
 					idea = ENG_slow_europe
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					load_oob = "USA_1945_12_1"
 				}
 			}
 			FRA = {
