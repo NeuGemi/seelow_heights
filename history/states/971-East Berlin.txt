@@ -1,0 +1,24 @@
+state={
+	id=971
+	name="STATE_971"
+	manpower = 1203702
+	buildings_max_level_factor = 1
+
+	state_category = large_city
+
+history={
+		owner = GER
+		victory_points = {
+			6521 25 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = GER
+}
+
+		provinces={
+	 	6521 
+	}
+	local_supplies=0.0 
+}
