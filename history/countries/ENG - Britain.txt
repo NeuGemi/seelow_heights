@@ -608,6 +608,14 @@ if = {
 1945.1.1 = {
 
 	oob = "ENG_1945_1_12"
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "ENG_1945_1_12"
+	}
 
 		PHI = {
 			add_ideas = surrender_limit

@@ -2123,7 +2123,7 @@ units = {
 	    start_manpower_factor = 0.87
     }
 	division= {
-		name = " Reichsgrenadier-Division 'Hoch- und Deutschmeister'"
+		name = "Reichsgrenadier-Division 'Hoch- und Deutschmeister'"
 		location = 9527
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.2

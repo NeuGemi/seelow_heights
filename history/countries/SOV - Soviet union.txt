@@ -1281,7 +1281,7 @@ if = {
 
 1945.1.1 = {
 
-		oob = "SOV_1945_12_1"
+	oob = "SOV_1945_12_1"
 
 		set_cosmetic_tag = SOV_scenario
 
@@ -1599,7 +1599,7 @@ if = {
 }
 
 1945.2.28 = {
-	oob = "SOV_1945_3_6"
+	oob = "SOV_1945_3_6_nsb"
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -1635,7 +1635,7 @@ if = {
 			 }
 	 } 
 	 set_oob = "SOV_1945_nsb"
-}
+	}
 }
 
 1945.4.26 = {
