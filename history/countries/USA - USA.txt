@@ -423,6 +423,14 @@ recruit_character = USA_harry_white
 1945.1.1 = {
 
 	oob = "USA_1945_12_1"
+	if = {
+		limit = { 
+				NOT = {
+					 has_dlc = "By Blood Alone"
+			 }
+	 } 
+	 set_oob = "USA_1945_12_1"
+	}
 
 		remove_ideas = MTG_naval_treaty_adherent
 		remove_ideas = USA_neutrality_act
