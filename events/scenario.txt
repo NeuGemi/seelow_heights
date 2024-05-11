@@ -1199,10 +1199,10 @@ news_event = {
 	
 	trigger = {
 		USA = {
-			controls_state = 59
+			controls_state = 64
 		}
 		SOV = {
-			controls_state = 64
+			controls_state = 970
 		}
 		NOT = { has_global_flag = scenario_elbe_meetup }
 	}
@@ -1474,6 +1474,18 @@ country_event = {
 			}
 			if = {
 				limit = { has_start_date > 1945.4.26 }
+					971 = {
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 6521
+						}
+					}
+					970 = {
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 13363
+						}
+					}
 					64 = {
 					add_province_modifier = {
 						static_modifiers = { battle_of_berlin }
@@ -1820,11 +1832,19 @@ country_event = {
 			}
 			if = {
 				limit = { has_start_date > 1945.4.26 }
-					64 = {
+					971 = {
 					add_province_modifier = {
 						static_modifiers = { battle_of_berlin }
 						province = 6521
 						}
+					}
+					970 = {
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 13363
+						}
+					}
+					64 = {
 					add_province_modifier = {
 						static_modifiers = { 9th_army_pocket }
 						province = 478
@@ -2273,7 +2293,7 @@ country_event = {
 
 	trigger = {
 		GER = {
-			controls_state = 64
+			controls_state = 970
 			controls_state = 16
 			controls_state = 10
 		}
@@ -2531,11 +2551,13 @@ country_event = {
 				add_state_core = 62
 				add_state_core = 61
 				add_state_core = 64
+				add_state_core = 971
 				add_state_core = 65
 				add_state_core = 60
 				transfer_state = 62
 				transfer_state = 61
 				transfer_state = 64
+				transfer_state = 971
 				transfer_state = 65
 				transfer_state = 60
 			}

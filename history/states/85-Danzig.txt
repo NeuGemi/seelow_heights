@@ -32,6 +32,9 @@ state={
 		1945.4.11 = {
 			owner = SOV
 			controller = SOV
+			GER = {
+				set_province_controller = 13364
+			}
 		}
 	}
 
