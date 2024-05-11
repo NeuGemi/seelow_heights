@@ -3780,8 +3780,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		64 = { is_controlled_by = ENG }
-		64 = { is_owned_by = GER }
+		970 = { is_controlled_by = ENG }
+		970 = { is_owned_by = GER }
 		ENG = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_berlin_eng }
 	}
@@ -3826,8 +3826,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		64 = { is_controlled_by = FRA }
-		64 = { is_owned_by = GER }
+		970 = { is_controlled_by = FRA }
+		970 = { is_owned_by = GER }
 		FRA = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_berlin_fra }
 	}
@@ -3872,8 +3872,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		64 = { is_controlled_by = POL }
-		64 = { is_owned_by = GER }
+		970 = { is_controlled_by = POL }
+		970 = { is_owned_by = GER }
 		POL = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_berlin_pol }
 	}
@@ -4237,8 +4237,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		64 = { is_controlled_by = SOV }
-		64 = { is_owned_by = GER }
+		970 = { is_controlled_by = SOV }
+		970 = { is_owned_by = GER }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_berlin_sov }
 	}
