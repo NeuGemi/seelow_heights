@@ -19,13 +19,13 @@ state={
 			air_base = 4
 		}
 		victory_points = {
-			9660 15 
+			13370 15 
 		}
 		add_core_of = HUN
 		1944.12.1 = {
 			buildings = {
-				9660 = {
-					bunker = 8
+				13370 = {
+					bunker = 4
 				}
 			}
 		}
@@ -33,9 +33,12 @@ state={
 			owner = HUN
 			controller = SOV
 			HUN = {
-				set_province_controller = 9660
+				set_province_controller = 13370
 			}
+			SOV = {
+				set_province_controller = 9660
 		}
+	}
 		1945.3.1 = {
 			owner = SOV
 			controller = SOV
@@ -43,7 +46,7 @@ state={
 	}
 
 	provinces={
-		684 716 3713 3731 6716 6751 9660 9690 11520 
+		684 716 3713 3731 6716 6751 9660 9690 11520 13370
 	}
 
 	local_supplies=0.0 
