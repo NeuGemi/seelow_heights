@@ -1,5 +1,16 @@
 spriteTypes = {
-
+	SpriteType = {
+		name = "GFX_mod_portrait_usa_fdr_april_1_onward"
+		texturefile = "gfx/leaders/USA/mod_portrait_usa_fdr_april_1_onward.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_usa_fdr_postreinauguration"
+		texturefile = "gfx/leaders/USA/mod_portrait_usa_fdr_postreinauguration.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_usa_fdr_prereinauguration"
+		texturefile = "gfx/leaders/USA/mod_portrait_usa_fdr_prereinauguration.png"
+	}
 	SpriteType = {
 		name = "GFX_Portrait_Hungary_Ferenc_Szalasi"
 		texturefile = "gfx/leaders/HUN/Portrait_Hungary_Ferenc_Szalasi.tga"
@@ -7,6 +18,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_news_event_battleofbulge"
 		texturefile = "gfx/event_pictures/news_event_battleofbulge.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_courland_pocket"
+		texturefile = "gfx/event_pictures/report_event_mod_courland_pocket.png"
 	}
 	SpriteType = {
 		name = "GFX_report_event_mod_volkssturm"

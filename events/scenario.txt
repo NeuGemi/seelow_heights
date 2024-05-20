@@ -256,6 +256,7 @@ country_event = {
 			add_manpower = -2000000
 			add_manpower = -2000000
 			add_manpower = -2000000
+			add_manpower = -2000000
 			SOV = {
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
@@ -468,7 +469,16 @@ country_event = {
 
 	trigger = {
 		TAG = GER
-		surrender_progress > 0.29
+		GER = {
+			controls_state = 971
+		}
+		SOV = {
+			OR = {
+				controls_province = 11505
+				controls_province = 11444
+				controls_province = 9428
+			}
+		}
 	}
 
 	option = {	# 
@@ -492,6 +502,7 @@ country_event = {
 	option = {	# 
 		name = scenario.4.a
 	#	custom_effect_tooltip = flensburg_tt
+		set_capital = { state = 909 }
 	}
 }
 
@@ -544,15 +555,22 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	#is_triggered_only = yes
 
-	#trigger = {
-	#	tag = GER
-	#	has_war = yes
-	#	USA = {
-	#		controls_state = 52
-	#	}
-	#}
+	trigger = {
+		tag = GER
+		has_start_date < 1945.4.26
+		has_war = yes
+		USA = {
+			OR = {
+				controls_province = 11620
+				controls_state = 52
+			}
+		}
+		GER = {
+			controls_state = 153
+		}
+	}
 
 	option = {	# 
 		name = scenario.6.a
@@ -569,15 +587,25 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+#	is_triggered_only = yes
 
-	#trigger = {
-	#	tag = GER
-	#	GER = {
-	#		controls_state = 9
-	#	}
-	#	date > 1945.4.30
-	#}
+	trigger = {
+		has_start_date < 1945.4.26
+		tag = GER
+			9 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		date > 1945.4.30
+	}
 
 	option = {	# 
 		name = scenario.7.a
@@ -785,6 +813,36 @@ country_event = {
 
 	option = {
 		name = scenario.17.a
+	}
+}
+
+# Courland is evacuated or lost!
+country_event = {
+	id = scenario.18
+	title = scenario.18.t
+	desc = scenario.18.d	
+	picture = GFX_report_event_mod_courland_pocket
+
+	trigger = {
+		TAG = GER
+		has_country_leader = {
+			character = GER_adolf_hitler
+			ruling_only = yes
+		}
+		num_divisions_in_states = {
+		    count < 24
+		    states = { 190 }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = scenario.18.a
+		custom_effect_tooltip = GER_ag_courland_surrender_tt
+		retire_character = GER_ehrenfriedoskar_boege
+		retire_character = GER_carl_hilpert
+
 	}
 }
 
@@ -1289,6 +1347,17 @@ news_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			USA = {
+				set_country_leader_portrait = {
+					ideology = democratic
+					portrait = GFX_mod_portrait_usa_fdr_postreinauguration
+				}			
+			}
+		}
+	}
+
 	option = {
 		name = scenarionews.12.a
 		trigger = {
@@ -1485,12 +1554,16 @@ country_event = {
 						static_modifiers = { battle_of_berlin }
 						province = 13363
 						}
-					}
-					64 = {
 					add_province_modifier = {
 						static_modifiers = { battle_of_berlin }
-						province = 6521
+						province = 13366
 						}
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 13365
+						}
+					}
+					64 = {
 					add_province_modifier = {
 						static_modifiers = { 9th_army_pocket }
 						province = 478
@@ -1842,6 +1915,14 @@ country_event = {
 					add_province_modifier = {
 						static_modifiers = { battle_of_berlin }
 						province = 13363
+						}
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 13366
+						}
+					add_province_modifier = {
+						static_modifiers = { battle_of_berlin }
+						province = 13365
 						}
 					}
 					64 = {
@@ -2401,6 +2482,31 @@ country_event = {
     }
 }
 
+# Change FDR Portrait April 1
+country_event = {
+	id = maintenance.10
+
+	fire_only_once = yes
+
+	trigger = {
+		date < 1945.4.10
+		date > 1945.3.30
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			USA = {
+				set_country_leader_portrait = {
+					ideology = democratic
+					portrait = GFX_mod_portrait_usa_fdr_april_1_onward
+				}			
+			}
+		}
+	}
+}
+
 ##   #	#	  #	 #   #   #####
 # #	 #	#     #	 #  #	 #
 #  # #	#	  #  # #	 ###
@@ -2534,6 +2640,7 @@ country_event = {
 				add_state_core = 53
 				add_state_core = 52
 				add_state_core = 909
+				add_state_core = 970
 				transfer_state = 50
 				transfer_state = 42		
 				transfer_state = 58
@@ -2546,6 +2653,7 @@ country_event = {
 				transfer_state = 53
 				transfer_state = 52
 				transfer_state = 909
+				transfer_state = 970
 			}
 			DDR = {
 				add_state_core = 62
@@ -2891,50 +2999,6 @@ country_event = {
 	}
 }
 
-# Volkssturm formed in Prague
-country_event = {
-	id = volkssturm.5
-	title = volkssturm.5.t
-	desc = volkssturm.1.d	
-	picture = GFX_report_event_german_volunteers
-
-
-	fire_only_once = yes
-
-	trigger = {
-		TAG = GER
-			9 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
-	}
-
-	immediate = {
-		hidden_effect = {
-			9 = {
-				create_unit = {
-					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-					owner = ROOT
-					count = 3
-				}
-			}
-		}
-	}
-
-	option = {	# 
-		name = volkssturm.1.a
-		custom_effect_tooltip = GER_volkssturm_raised_tt
-	}
-}
-
 # Volkssturm formed in Berlin
 country_event = {
 	id = volkssturm.6
@@ -2948,7 +3012,7 @@ country_event = {
 	trigger = {
 		TAG = GER
 		has_start_date < 1945.3.7
-			64 = {
+			971 = {
 				is_controlled_by = ROOT
 				OR = {
 					any_neighbor_state = {
@@ -2964,7 +3028,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			64 = {
+			970 = {
 				create_unit = {
 					division = "division_template = \"Volkssturm-Division\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 					owner = ROOT

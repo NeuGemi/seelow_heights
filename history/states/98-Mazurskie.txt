@@ -14,7 +14,7 @@ state={
 		}
 		add_core_of = POL
 		1945.1.1 = {
-			owner = POL
+			owner = GER
 			controller = GER
 			SOV = {
 				set_province_controller = 11385

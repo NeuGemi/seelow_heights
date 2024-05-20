@@ -536,7 +536,7 @@ focus_tree = {
 			controls_province = 6521
 		}
 		completion_reward = {
-			64 = {
+			971 = {
 				add_building_construction = {
 				type = bunker
 				level = 2

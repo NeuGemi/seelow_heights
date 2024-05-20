@@ -163,7 +163,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.3
 	}
-	   division= {		
+	  division= {		
 		division_name = {
 				is_name_ordered = yes
 				name_order = 10
@@ -184,6 +184,15 @@ units = {
 	   division= {		
 		division_name = {
 				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13369 # Buda
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+	}
+	   division= {		
+		division_name = {
+				is_name_ordered = yes
 				name_order = 23
 		}
 		location = 9660
@@ -191,6 +200,12 @@ units = {
 		start_experience_factor = 0.3
 	    start_equipment_factor = 0.3
 	}
+    division= {	
+	    name = "Billnitzer-Csoport"
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.3
+    }
 	   division= {		
 		division_name = {
 				is_name_ordered = yes

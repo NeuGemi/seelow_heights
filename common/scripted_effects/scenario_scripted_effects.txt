@@ -1,4 +1,4 @@
-# Reduce Effects of the Great Depression
+# Level down effects of shattered wehrmacht
 GER_scenario_wehrmacht_level_down = {
 		if = {
 		limit = {
@@ -36,18 +36,9 @@ GER_scenario_wehrmacht_level_down = {
 			add_idea = GER_shattered_wehrmacht_4
 		}
 	}
-#	else_if = {
-#		limit = {
-#			has_idea = GER_shattered_wehrmacht_4
-#		}
-#		swap_ideas = {
-#			remove_idea = GER_shattered_wehrmacht_4
-#			add_idea = GER_renewed_wehrmacht
-#		}
-#	}
 }
 
-# Reduce Effects of the Great Depression
+# Level down effects of mass disloyalty
 GER_scenario_disloyalty_level_down = {
 		if = {
 		limit = {
@@ -80,6 +71,78 @@ GER_scenario_disloyalty_level_down = {
 		swap_ideas = {
 			remove_idea = GER_disloyalty_2
 			add_idea = GER_disloyalty
+		}
+	}
+}
+
+
+# Level up effects of shattered wehrmacht
+GER_scenario_wehrmacht_level_up = {
+	if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_2
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_2
+			add_idea = GER_shattered_wehrmacht
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_3
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_3
+			add_idea = GER_shattered_wehrmacht_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_shattered_wehrmacht_4
+		}
+		swap_ideas = {
+			remove_idea = GER_shattered_wehrmacht_4
+			add_idea = GER_shattered_wehrmacht_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_renewed_wehrmacht
+		}
+		swap_ideas = {
+			remove_idea = GER_renewed_wehrmacht
+			add_idea = GER_shattered_wehrmacht_4
+		}
+	}
+}
+
+# Level up effects of mass disloyalty
+GER_scenario_disloyalty_level_up = {
+		if = {
+		limit = {
+			has_idea = GER_disloyalty_3
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty_3
+			add_idea = GER_disloyalty_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_disloyalty_2
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty_2
+			add_idea = GER_disloyalty_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = GER_disloyalty
+		}
+		swap_ideas = {
+			remove_idea = GER_disloyalty
+			add_idea = GER_disloyalty_2
 		}
 	}
 }

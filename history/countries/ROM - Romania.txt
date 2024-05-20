@@ -385,7 +385,7 @@ set_popularities = {
 }
 
 1945.1.1 = {
-	set_oob = ""
+	set_oob = "ROM_1945_1_12"
 }
 
 1945.2.28 = {

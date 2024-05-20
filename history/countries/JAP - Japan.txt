@@ -664,12 +664,6 @@ add_to_faction = LAO
 				enemy = JAP
 			}
 		}
-		POL = {
-			add_to_war = {
-				targeted_alliance = USA
-				enemy = JAP
-			}
-		}
 		TUR = {
 			add_to_war = {
 				targeted_alliance = USA

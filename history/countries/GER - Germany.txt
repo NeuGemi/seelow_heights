@@ -914,6 +914,11 @@ create_intelligence_agency = {
 	    freedom_level = 0.2
 	}
 	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_puppet
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
 		target = HOL
 		autonomous_state = autonomy_reichskommissariat
 	    freedom_level = 0.2
@@ -1100,12 +1105,6 @@ create_intelligence_agency = {
 	#
 
 		RD2 = {
-			add_to_war = {
-				targeted_alliance = ENG
-				enemy = GER
-			}
-		}
-		POL = {
 			add_to_war = {
 				targeted_alliance = ENG
 				enemy = GER

@@ -285,12 +285,20 @@ GER_oberkommando = {
     		highlight_color_while_active = 3
 		}
 
+		# Success
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}	
+
+		# Failure
+		complete_effect = {
+			add_war_support = -0.05
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
+		}
 	}
 	GER_ruhr_pocket = {
 
@@ -347,10 +355,15 @@ GER_oberkommando = {
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}
+
+		# Failure
 		complete_effect = {
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 			GER = {
 				country_event = { id = scenario.1 days = 1 }		
-			}		
+			}
 		}
 	}
 	GER_hold_vienna = {
@@ -402,10 +415,14 @@ GER_oberkommando = {
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
+			set_country_flag = GER_held_vienna
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_hold_berlin = {
@@ -418,7 +435,10 @@ GER_oberkommando = {
 
 		#Fail trigger
 		available = {
-			NOT = { controls_state = 64 }
+			NOT = { 
+				controls_state = 970 
+				controls_state = 971
+			}
 		}
 
 		days_mission_timeout = 45
@@ -429,7 +449,8 @@ GER_oberkommando = {
 
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 64
+        		state = 970
+        		state = 971
     		}
     		highlight_color_while_active = 3
 		}
@@ -437,7 +458,8 @@ GER_oberkommando = {
 		activation = {
 			has_war = yes
 			has_civil_war = no
-			64 = {
+			OR = {
+			970 = {
 				is_controlled_by = ROOT
 				OR = {
 					any_neighbor_state = {
@@ -448,6 +470,19 @@ GER_oberkommando = {
 					}
 					NOT = { is_fully_controlled_by = ROOT }
 				}
+			}	
+			971 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+					}
+				}		
 			}
 		}
 
@@ -458,9 +493,12 @@ GER_oberkommando = {
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_hold_stuttgart = { #Heilbronn
@@ -513,9 +551,12 @@ GER_oberkommando = {
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_hold_italy = { #Operation Grapeshot
@@ -561,8 +602,12 @@ GER_oberkommando = {
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}	
 	GER_hold_munich = { 
@@ -619,8 +664,12 @@ GER_oberkommando = {
 			GER_scenario_wehrmacht_level_down = yes
 			GER_scenario_disloyalty_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}	
 	GER_hold_warschau = {
@@ -673,9 +722,12 @@ GER_oberkommando = {
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_hold_budapest = {
@@ -721,9 +773,12 @@ GER_oberkommando = {
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
 		}
-		#Fail
+
+		# Failure
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			add_war_support = -0.02
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_wacht_am_rhein = {
@@ -1102,4 +1157,96 @@ scenario_settings = {
 			}
 		}		
 	}
+}
+
+USA_scenario_war_department = {
+	USA_elbe_mission = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			USA = {
+				controls_province = 3522
+			}
+			NOT = {
+				has_start_date > 1945.4.26
+			}
+		# Blocked out incase we want to use this instead
+		#	date > 1945.8.1
+		#	has_war = yes
+		#	OR = {
+		#		controls_state = 59
+		#		controls_state = 64
+		#	}
+		#	GER = {
+		#		OR = {
+		#			controls_state = 58
+		#			controls_state = 61
+		#			controls_state = 970
+		#		}
+		#	}
+		}
+
+		allowed = {
+			tag = USA
+		}
+
+		visible = {
+			tag = USA
+		}
+
+		ai_will_do = {
+    		base = 0
+    		modifier = {
+        		add = 10
+        		controls_province = 3522
+    		}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			USA = {
+				add_timed_idea = {
+					idea = USA_elbe_mission
+					days = 7
+				}	
+			}
+		}		
+	}	
+}
+
+SOV_stavka = {
+	SOV_invasion_of_manchuria = {
+	    activation = {
+	    	NOT = {
+	    		has_war_with = GER
+	    	}
+	    }
+	    available = {
+	    	has_war_with = JAP
+	    }
+	    icon = mission_icon     # For GFX_decision_mission_icon
+	    is_good = no
+	    war_with_on_timeout = JAP
+	    days_mission_timeout = 100
+	    selectable_mission = no
+	    timeout_effect = {
+	    	add_timed_idea = {
+	    		idea = SOV_manchurian_strategic_offensive_operations
+	    		days = 14
+	    	}
+	        declare_war_on = {
+	            target = JAP
+	            type = annex_everything
+	        }
+	        declare_war_on = {
+	            target = MEN
+	            type = annex_everything
+	        }
+	        declare_war_on = {
+	            target = MAN
+	            type = annex_everything
+	        }
+	    }
+	}	
 }

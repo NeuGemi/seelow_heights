@@ -31,7 +31,7 @@ state={
 			add_claim_by = GER
 		}
 		1945.1.1 = {
-			owner = POL
+			owner = GER
 			controller = GER
 		}
 		1945.2.28 = {

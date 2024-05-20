@@ -2145,7 +2145,7 @@ units = {
     # II Korps - Vienna #
 	division = {
 		name = "2. Waffen SS-Division 'Das Reich'"
-		location = 11666
+		location = 13368
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.20
@@ -2175,7 +2175,7 @@ units = {
 	}	
     division= {
 	    name = "Kampfgruppe Bünau"
-	    location = 11666
+	    location = 13368
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.10

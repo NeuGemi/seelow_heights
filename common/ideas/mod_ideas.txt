@@ -840,6 +840,38 @@ ideas = {
                 army_attack_factor = -0.95
             }       
         } 
+        SOV_manchurian_strategic_offensive_operations = {
+
+            allowed = { 
+                always = no 
+            }
+
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                army_attack_speed_factor = 0.5
+                army_org_regain = 0.3
+                out_of_supply_factor = 0.35
+            }       
+            targeted_modifier = {
+                tag = JAP
+                attack_bonus_against = 0.15    
+            } 
+            targeted_modifier = {
+                tag = MAN
+                attack_bonus_against = 0.15    
+            } 
+            targeted_modifier = {
+                tag = MEN
+                attack_bonus_against = 0.15    
+            } 
+        } 
         #Allies
         RAJ_burmese_campaign = {
             allowed = { 
@@ -898,20 +930,50 @@ ideas = {
 
         removal_cost = -1
 
+        targeted_modifier = {
+            tag = GER
+            attack_bonus_against = 0.05
+        }  
+        targeted_modifier = {
+            tag = GER
+            defense_bonus_against = 0.1
+        }   
+
         modifier = {
             attrition = -0.1
             supply_consumption_factor = -0.1
             river_crossing_factor = -0.15
             army_morale_factor = 0.05
-            } 
-            targeted_modifier = {
-                tag = GER
-                attack_bonus_against = 0.05
-            }  
-            targeted_modifier = {
-                tag = GER
-                defense_bonus_against = 0.1
-            }        
+            }      
+        }
+    USA_elbe_mission = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = generic_manpower_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            has_war_with = GER
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = GER
+            attack_bonus_against = 0.40
+        }  
+
+        modifier = {
+            river_crossing_factor = -0.85
+            army_org_regain = 0.6
+            army_morale_factor = 0.45
+            ai_focus_aggressive_factor = 1.0
+            }         
         }
 
         # CHI

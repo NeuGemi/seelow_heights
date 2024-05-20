@@ -22,7 +22,7 @@ state={
 		add_core_of = POL
 		add_core_of = SIL
 		1945.1.1 = {
-			owner = POL
+			owner = GER
 			controller = GER
 		}
 		1945.3.1 = {
