@@ -38,10 +38,10 @@ state={
 			controller = HOL
 		buildings = {
 			9498 = {
-				bunker = 10
+				bunker = 6
 				}
 			391 = {
-				bunker = 10
+				bunker = 6
 				}
 			}
 		}

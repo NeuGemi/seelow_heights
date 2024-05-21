@@ -834,7 +834,7 @@ country_event = {
 			ruling_only = yes
 		}
 		num_divisions_in_states = {
-		    count < 24
+		    count < 22
 		    states = { 190 }
 		}
 	}
@@ -1472,32 +1472,6 @@ country_event = {
     base = 100
     	}
 		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 7 # Holland
-					#	state = 763 # Königsberg
-						state = 190 # Kurland
-						state = 809
-					#	state = 58 # Mecklenburg
-						#state = 61 # Schleswig-Holstein
-						state = 9
-						state = 69
-						state = 848
-						state = 153
-						state = 39
-					#	state = 23
-					#	state = 30
-					#	state = 14
-					#	state = 29
-					}
-				}
-				set_state_flag = ALLIES_unplanned_offensive_flag
-				add_dynamic_modifier = {
-					modifier = unplanned_offensive
-				}
-			}
 			every_state = { #CROATIA
 				limit = { 
 					OR = {
@@ -1512,6 +1486,74 @@ country_event = {
 					modifier = scenario_heavy_resistance_CRO
 				}
 			}
+			##########################
+			## UNPLANNED OFFENSIVES ##
+			##########################
+			set_global_flag = ALLIES_unplanned_offensives
+			7 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
+					}
+				}
+			9 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
+					}
+				}
+			69 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+						}
+					}
+				}
+			###########################
+			#### FESTUNG POSITIONS ####
+			###########################
 			29 = {
 			add_province_modifier = {
 				static_modifiers = { festung_positions }
@@ -1610,18 +1652,56 @@ country_event = {
     base = 100
     	}
 		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						#Czechia - remove may 1
-						state = 9
-						state = 69
+			9 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
 					}
 				}
-				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
+			69 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+					}
 				}
 			}
 		}
@@ -1641,7 +1721,7 @@ country_event = {
 				NOT = { controls_province = 6521 }
 			}	
 			GER = {
-				surrender_progress < 0.15
+				surrender_progress < 0.01
 			}	
 		}
 
@@ -1655,26 +1735,15 @@ country_event = {
     base = 100
     	}
 		hidden_effect = {
-			set_global_flag = ALLIES_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 7 # Holland
-					#	state = 763 # Königsberg
-						state = 190 # Kurland
-					#	state = 58 # Mecklenburg
-						#state = 61 # Schleswig-Holstein
-						#Austria
-						state = 848
-						state = 153
-						state = 39
+			7 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
 					}
 				}
-				set_state_flag = ALLIES_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
-				}
-			}
 			29 = {
 			remove_province_modifier = {
 				static_modifiers = { festung_positions }
@@ -1734,18 +1803,21 @@ country_event = {
 			if = {
 				limit = { NOT = { has_global_flag = scenario_debuffs_off } }
 			set_global_flag = SOV_battleofberlin
-			every_state = {
-				limit = {
-					OR = {
-						#state = 64 # Berlin
-						state = 68
-					}
-				}
+			68 = {
 				set_state_flag = SOV_battleofberlin
-				add_dynamic_modifier = {
-					modifier = berlin_strategic_offensive
-				}
-			}			
+				add_province_modifier = {
+					static_modifiers = { MOD_berlin_strategic_offensive_operation }
+					province = {
+						id = 537
+						id = 6236
+						id = 9387
+						id = 3473
+						id = 11478
+						id = 444
+						id = 3572
+						}
+					}
+				}			
 			}
 		}
     }
@@ -1772,16 +1844,19 @@ country_event = {
     	}
 		hidden_effect = {
 			set_global_flag = SOV_battleofberlin
-			every_state = {
-				limit = {
-					OR = {
-						#state = 64
-						state = 68
-					}
-				}
+			68 = {
 				set_state_flag = SOV_battleofberlin_end
-				remove_dynamic_modifier = {
-					modifier = berlin_strategic_offensive
+				remove_province_modifier = {
+					static_modifiers = { MOD_berlin_strategic_offensive_operation }
+					province = {
+						id = 537
+						id = 6236
+						id = 9387
+						id = 3473
+						id = 11478
+						id = 444
+						id = 3572
+					}
 				}
 			}
 		}
@@ -1803,16 +1878,19 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = SOV_battleofberlin
-			every_state = {
-				limit = {
-					OR = {
-						#state = 64
-						state = 68
-					}
-				}
+			68 = {
 				set_state_flag = SOV_battleofberlin_end
-				remove_dynamic_modifier = {
-					modifier = berlin_strategic_offensive
+				remove_province_modifier = {
+					static_modifiers = { MOD_berlin_strategic_offensive_operation }
+					province = {
+						id = 537
+						id = 6236
+						id = 9387
+						id = 3473
+						id = 11478
+						id = 444
+						id = 3572
+					}
 				}
 			}
 		}	
@@ -1842,24 +1920,70 @@ country_event = {
     	}
 		hidden_effect = {
 			set_global_flag = SOV_2_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 50 # Wurttemberg
-						state = 74
-						state = 75
-						state = 9
-						state = 69
-						state = 152
-						state = 7
-						state = 58
+			##########################
+			## UNPLANNED OFFENSIVES ##
+			##########################
+			7 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
 					}
 				}
-				set_state_flag = SOV_2_unplanned_offensive_flag
-				add_dynamic_modifier = {
-					modifier = unplanned_offensive
+			9 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
+					}
 				}
-			}
+			69 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+						}
+					}
+				}
 			every_state = { #CROATIA
 				limit = { 
 					OR = {
@@ -1874,6 +1998,9 @@ country_event = {
 					modifier = scenario_heavy_resistance_CRO
 				}
 			}
+			###########################
+			#### FESTUNG POSITIONS ####
+			###########################
 			29 = {
 			add_province_modifier = {
 				static_modifiers = { festung_positions }
@@ -1973,22 +2100,68 @@ country_event = {
     	}
 		hidden_effect = {
 			set_global_flag = SOV_1_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 50 # Wurttemberg
-						state = 74
-						state = 75
-						state = 9
-						state = 69
-						state = 152
-						state = 7
-						state = 58
+			##########################
+			## UNPLANNED OFFENSIVES ##
+			##########################
+			7 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
 					}
 				}
-				set_state_flag = SOV_1_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
+			9 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
+					}
+				}
+			69 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+					}
 				}
 			}
 		}
@@ -2147,21 +2320,68 @@ country_event = {
     	}
 		hidden_effect = {
 			set_global_flag = SOV_3_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 74
-						state = 75
-						state = 9
-						state = 69
-						state = 152
-						state = 7
-						state = 58
+			##########################
+			## UNPLANNED OFFENSIVES ##
+			##########################
+			7 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
 					}
 				}
-				set_state_flag = SOV_3_unplanned_offensive_flag
-				add_dynamic_modifier = {
-					modifier = unplanned_offensive
+			9 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
+					}
+				}
+			69 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+					}
 				}
 			}
 			every_state = { #CROATIA
@@ -2178,18 +2398,82 @@ country_event = {
 					modifier = scenario_heavy_resistance_CRO
 				}
 			}
-			every_state = { #Vistula-Oder Offensive
-				limit = { 
-					OR = {
-						state = 5
-						state = 98	
-						state = 10
-						state = 90
+			##############################
+			### VISTULA ODER OFFENSIVE ###
+			##############################
+			5 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 9327
+						id = 11386
 					}
 				}
-				set_state_flag = SOV_vistula_oder_offensive
-				add_dynamic_modifier = {
-					modifier = BSL_vistula_oder_offensive
+			}
+			98 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 9316
+						id = 6567
+					}
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 3544
+						id = 6511
+					}
+				}
+			}
+			90 = {
+				add_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 3458
+						id = 562
+						id = 3497
+						id = 11430
+					}
+				}
+			}
+			# Festungs Positions or long-lasting pockets
+			29 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 575
+				}
+			}
+			14 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6536
+				}
+			}
+		 	30 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11465
+				}
+			}
+			23 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 6657
+				}
+			}
+			763 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 11265
+				}
+			}
+			66 = {
+			add_province_modifier = {
+				static_modifiers = { festung_positions }
+				province = 9570
 				}
 			}
 		}
@@ -2257,22 +2541,69 @@ country_event = {
     base = 100
     	}
 		hidden_effect = {
-			set_global_flag = SOV_1_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 74
-						state = 75
-						state = 9
-						state = 69
-						state = 152
-						state = 7
-						state = 58
+			set_global_flag = SOV_4_unplanned_offensives
+			##########################
+			## UNPLANNED OFFENSIVES ##
+			##########################
+			7 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 9498
+						id = 391
+						}
 					}
 				}
-				set_state_flag = SOV_1_unplanned_offensive_flag_remove_1
-				remove_dynamic_modifier = {
-					modifier = unplanned_offensive
+			9 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 494
+						id = 445
+						}
+					}
+				}
+			69 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 11414
+						id = 11401
+						id = 469
+						id = 11432
+						id = 3418
+						id = 3585
+						id = 6470
+						id = 424
+						id = 9555
+						id = 7857
+						id = 5283
+						id = 543
+						id = 11525
+						id = 557
+						}
+					}
+				}
+			74 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6485
+						id = 421
+						id = 3414
+						id = 3583
+						}
+					}
+				}
+
+			75 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_unplanned_offensive }
+					province = {
+						id = 6590
+						id = 6576
+						id = 11511
+					}
 				}
 			}
 		}

@@ -30,7 +30,11 @@ state=
 			controller = SOV
 			GER = {
 				set_province_controller = 13371
+			}
 		}
+		1945.2.1 = {
+			owner = SOV
+			controller = SOV
 		}
 	}
 	provinces={

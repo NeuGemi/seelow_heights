@@ -34,6 +34,9 @@ GER_festung_ruhr_dyn:0 "Festung Ruhr"
 GER_battle_of_remagen_dyn:0 "Battle of Remagen"
 BSL_vistula_oder_offensive:0 "Vistula-Oder Offensive"
 GER_operation_solstice_dyn:0 "Operation Solstice"
+MOD_vistula_oder_offensive:0 "Vistula-Oder Offensive"
+MOD_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
+MOD_unplanned_offensive:0 "Unplanned Offensive"
 
 ### Flags ###
 scenario_berlin:0 "The Battle of Berlin is underway"

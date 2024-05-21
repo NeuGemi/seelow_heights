@@ -128,33 +128,39 @@ ENG_operation_grapeshot = {
 
 		area = italy
 
-		ratio = 0.4
+		ratio = 0.1
 		priority = 4000
 		ordertype = front
-		execution_type = careful
+		execution_type = balanced
 		execute_order = yes
 	}
 
 }
 
-#ENG_let_holland_stay_safe_awhile = {
-#	allowed = {
-#		is_in_faction_with = ENG
-#	}
-#	enable = {
-#		date < 1945.2.1
-#	}
-#
-#	abort = {
-#		date > 1945.2.1
-#	}
-#
-#	ai_strategy = {
-#    	type = front_unit_request
-#    	tag = GER
-#    	value = -100
-#		}
-#}
+ENG_let_holland_stay_safe_awhile = {
+	allowed = {
+		is_in_faction_with = ENG
+	}
+	enable = {
+		date < 1945.4.11
+	}
+
+	abort = {
+		date > 1945.4.11
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = italy
+		value = 150
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = italy
+		value = 150
+	}
+}
 
 # AST ast Australia australia
 AST_pacific = {

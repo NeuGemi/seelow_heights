@@ -24,10 +24,10 @@ state={
 				naval_base = 3
 			}
 			6241 = {
-				bunker = 7
+				bunker = 2
 				}
 			9363 = {
-				bunker = 7
+				bunker = 3
 				}
 		}
 		1945.4.1 = {

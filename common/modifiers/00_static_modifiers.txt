@@ -5,7 +5,7 @@
 # SEELOW HEIGHTS #
 
 festung_positions = {
-	army_defence_factor = 0.75
+	army_defence_factor = 1.0
 }
 
 9th_army_pocket = {
@@ -27,6 +27,23 @@ battle_of_berlin = {
 	local_supplies = 1.0
 	army_org_regain = 0.35
 }
+
+MOD_vistula_oder_offensive = {
+	army_defence_factor = -3.0
+}
+
+MOD_berlin_strategic_offensive_operation = {
+	terrain_penalty_reduction = 0.75
+	river_crossing_factor = -1.0
+	army_speed_factor = 0.25
+	army_org_regain = 0.15
+}
+
+MOD_unplanned_offensive = {
+	army_defence_factor = 1.0
+}
+
+# Vanilla
 
 _test_power_balance_mod = {
 	power_balance_daily = 0.02

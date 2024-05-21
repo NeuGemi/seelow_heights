@@ -1,21 +1,3 @@
-unplanned_offensive = {
-	icon = GFX_unplanned_offensive
-	attacker_modifier = no
-
-	#army_attack_factor = -3.0
-	army_defence_factor = 3.0
-}
-
-berlin_strategic_offensive = {
-	icon = GFX_unplanned_offensive
-	attacker_modifier = yes
-
-	terrain_penalty_reduction = 0.75
-	river_crossing_factor = -1.0
-	army_speed_factor = 0.25
-	army_org_regain = 0.15
-}
-
 scenario_heavy_resistance_CRO = {
 	icon = GFX_modifiers_generic_resistance
 	attacker_modifier = no
@@ -24,14 +6,6 @@ scenario_heavy_resistance_CRO = {
 	army_core_defence_factor = -0.1
 	army_morale_factor = -0.05
 }
-
-BSL_vistula_oder_offensive = {
-	icon = GFX_unplanned_offensive
-
-	army_defence_factor = -0.25
-}
-
-
 
 
 
