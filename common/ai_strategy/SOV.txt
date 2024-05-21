@@ -10,7 +10,13 @@
 # protect
 # influence
 
-SOV_dont_naval-invade = {
+# ai_strategy = {
+#	type = strategic_air_importance
+#	id = 1 #Strategic Region ID - Southern England
+#	value = 10000 #value of stocked main front in active combat is usually around 35,000
+# }
+
+SOV_dont_naval_invade = {
 	allowed = {
 		OR = {
 			tag = SOV
@@ -21,13 +27,7 @@ SOV_dont_naval-invade = {
 		date > 1945.1.1
 	}
 
-	abort = {
-		FRA = {
-			NOT = {
-				controls_state = 16
-			}
-		}
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = invade
@@ -94,6 +94,61 @@ SOV_garrison_MOD = {
 		}
 }
 
+ROM_defend_budapest = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		is_in_faction_with = SOV
+	}
+
+	abort = {
+		NOT = {
+			HUN = {
+				controls_province = 13369
+				controls_province = 13370
+			}
+		}
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = HUN
+    	value = 10000
+	}
+	ai_strategy = {
+    	type = garrison
+    	value = -50000
+	}
+	ai_strategy = {
+    	type = garrison_reinforcement_priority
+    	value = -50000
+	}
+}
+
+SOV_leave_yugoslavia_alone = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		is_in_faction_with = YUG
+	}
+
+	abort = {
+		NOT = {
+			YUG = {
+				controls_state = 107
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUG"
+		value = 500
+	}
+}
+
 SOV_wait_for_ve_day = {
 	allowed = {
 		original_tag = SOV
@@ -140,15 +195,12 @@ SOV_pommerania_offensive  = {
 
 	enable = {
 		date > 1945.2.28
-		date < 1945.4.1
+		date < 1945.3.16
 		has_war_with = GER
 	}
 
 	abort = {
-		SOV = {
-			controls_province = 6334
-			controls_province = 11372
-		}
+		date > 1945.3.16
 	#	OR = {
 	#		has_global_flag = scenario_debuffs_off
 	#		date > 1945.5.25
@@ -167,14 +219,104 @@ SOV_pommerania_offensive  = {
     	state = 63
     	value = 500
 		}
+	ai_strategy = {
+    	type = front_unit_request
+    	state = 68
+    	value = 500
+		}
 
 	ai_strategy = {
 		type = front_control
-
 		state = 63
+		priority = 150
+		ratio = 0.2
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state = 68
+		priority = 150
+		ratio = 0.2
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
 
-		ratio = 0.01
+	ai_strategy = {
+    	type = ignore_army_incompetence
+    	value = 1000
+	}
+}
 
+SOV_wait_for_vienna  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		date < 1945.3.16
+		has_war_with = GER
+	}
+
+	abort = {
+		date > 1945.3.15
+	}
+
+	ai_strategy = {
+		type = front_control
+		id = 22
+		id = 21
+		priority = 1000
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 21
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 22
+		value = -100
+	}
+}
+
+
+SOV_prepare_for_berlin  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {
+		date > 1945.3.15
+		date < 1945.4.5
+		has_war_with = GER
+	}
+
+	abort = {
+		controls_state = 68
+	}
+
+	ai_strategy = {
+    	type = front_armor_score
+    	id = GER
+    	value = 1000
+	}
+
+	ai_strategy = {
+    	type = front_unit_request
+    	state = 68
+    	value = 500
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 68
+		ratio = 0.2
 		priority = 10000
 		ordertype = front
 		execution_type = rush
@@ -187,6 +329,7 @@ SOV_pommerania_offensive  = {
 	}
 
 }
+
 
 SOV_battle_of_berlin  = {
 	allowed = {
@@ -201,10 +344,20 @@ SOV_battle_of_berlin  = {
 	abort = {
 		OR = {
 			SOV = {
-				controls_province = 6521			
+				controls_province = 6521	
+				controls_state = 970		
 			}
+			ENG = {
+				controls_province = 6521	
+				controls_state = 970		
+			}	
 			USA = {
-				controls_province = 6521			
+				controls_province = 6521	
+				controls_state = 970		
+			}	
+			FRA = {
+				controls_province = 6521	
+				controls_state = 970		
 			}		
 		}
 		OR = {
@@ -228,11 +381,8 @@ SOV_battle_of_berlin  = {
 
 	ai_strategy = {
 		type = front_control
-
 		state = 971
-
 		ratio = 0.01
-
 		priority = 1000
 		ordertype = front
 		execution_type = rush
@@ -246,123 +396,70 @@ SOV_battle_of_berlin  = {
 
 }
 
-SOV_battle_of_berlin_2  = {
-	allowed = {
-		original_tag = SOV
-	}
 
-	enable = {
-		has_start_date < 1945.1.1
-		date > 1945.4.13
-		has_war_with = GER
-	}
+#SOV_blitzkrieg  = {
+#	allowed = {
+#		original_tag = SOV
+#	}
+#
+#	enable = {
+#		date > 1944.4.13 
+#		has_war_with = GER
+#	}
+#
+#	abort = {
+#		SOV = {
+#			controls_province = 6521			
+#		}
+#
+#	}
+#
+#	ai_strategy = {
+#		type = front_control
+#
+#		state = 4
+#
+#		ratio = 0.5
+#
+#		priority = 100
+#		ordertype = front
+#		execution_type = rush
+#		execute_order = yes
+#	}
+#
+#}
 
-	abort = {
-		OR = {
-			SOV = {
-				controls_province = 6521			
-			}
-			USA = {
-				controls_province = 6521			
-			}		
-		}
-	}
-
-	ai_strategy = {
-    	type = front_armor_score
-    	id = GER
-    	value = 10000
-	}
-
-	ai_strategy = {
-    	type = front_unit_request
-    	state = 971
-    	value = 5000
-		}
-
-	ai_strategy = {
-		type = front_control
-
-		state = 971
-
-		ratio = 0.01
-
-		priority = 10000
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-	ai_strategy = {
-    	type = ignore_army_incompetence
-    	value = 10000
-	}
-
-}
-
-SOV_blitzkrieg  = {
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		date > 1944.4.13 
-		has_war_with = GER
-	}
-
-	abort = {
-		SOV = {
-			controls_province = 6521			
-		}
-
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		state = 4
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-}
-
-SOV_blitzkrieg_2  = {
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		date > 1943.4.13 
-		has_war_with = GER
-	}
-
-	abort = {
-		SOV = {
-			controls_province = 11666
-		}
-
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		state = 64
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-
-}
+#SOV_blitzkrieg_2  = {
+#	allowed = {
+#		original_tag = SOV
+#	}
+#
+#	enable = {
+#		date > 1943.4.13 
+#		has_war_with = GER
+#	}
+#
+#	abort = {
+#		SOV = {
+#			controls_province = 11666
+#		}
+#
+#	}
+#
+#	ai_strategy = {
+#		type = front_control
+#
+#		state = 64
+#
+#		ratio = 0.5
+#
+#		priority = 100
+#		ordertype = front
+#		execution_type = rush
+#		execute_order = yes
+#	}
+#
+#}
 
 SOV_unit_production = {
 	allowed = {

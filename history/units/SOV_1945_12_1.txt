@@ -411,6 +411,60 @@ units = {
 		start_experience_factor = 0.2	
 	}
 	### COURLAND POCKET ###
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
+ 	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9499
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2	
+	}
  	division= {			
 		division_name = {
 			is_name_ordered = yes
@@ -3371,41 +3425,41 @@ instant_effect = {
 
 	add_equipment_to_stockpile = {
     type = infantry_equipment_3
-    amount = 50000
+    amount = 150000
     producer = SOV
     } 
 
     add_equipment_to_stockpile = {
     type = support_equipment_1
-    amount = 5000
+    amount = 8000
     producer = SOV
     }
 
     add_equipment_to_stockpile = {
     type = artillery_equipment_3
-    amount = 5000
+    amount = 8000
     producer = SOV
     }
 
     add_equipment_to_stockpile = {
     type = motorized_equipment_1
-    amount = 10000
+    amount = 15000
     producer = SOV
     }
 
     add_equipment_to_stockpile = {
     type = mechanized_equipment_1
-    amount = 3000
+    amount = 7000
     producer = SOV
     }
     add_equipment_to_stockpile = {
     type = anti_tank_equipment_2
-    amount = 3130
+    amount = 5130
     producer = SOV
     }
     add_equipment_to_stockpile = {
     type = anti_air_equipment_2
-    amount = 1500
+    amount = 4500
     producer = SOV
     }
 }

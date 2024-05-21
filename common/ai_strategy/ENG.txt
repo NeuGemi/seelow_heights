@@ -10,6 +10,9 @@
 # protect
 # influence
 
+# NOTE: 
+# This file encompasses ALL Allied nations
+
 dont_naval_invade_when_already_in_europe = {
 	allowed = {
 		is_in_faction_with = ENG
@@ -54,37 +57,23 @@ dont_naval_invade_when_already_in_europe = {
 }
 
 # March offensive
-ENG_invasion_of_germany = {
-	allowed = {
-		original_tag = ENG
-		original_tag = USA
-	}
-	enable = {
-		has_war_with = ITA
-		date > 1945.1.11
-		date < 1945.4.11
-	}
-
-	abort = {
-		NOT = {
-			has_war_with = GER
-		}
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		area = italy
-
-		ratio = 0.1
-
-		priority = -4000
-		ordertype = front
-		execution_type = careful
-		execute_order = yes
-	}
-
-}
+#ENG_invasion_of_germany = {
+#	allowed = {
+#		original_tag = ENG
+#		original_tag = USA
+#	}
+#	enable = {
+#		has_war_with = ITA
+#		date > 1945.1.11
+#		date < 1945.3.20
+#	}
+#
+#	abort = {
+#		NOT = {
+#			has_war_with = GER
+#		}
+#	}
+#}
 
 #CRO
 CRO_defend_croatia = {
@@ -115,13 +104,11 @@ ENG_operation_grapeshot = {
 	}
 	enable = {
 		has_war_with = ITA
-		#date > 1945.4.17
+		date > 1945.4.11
 	}
 
 	abort = {
-		NOT = {
-			has_war_with = ITA
-		}
+		has_global_flag = scenario_italy
 	}
 
 	ai_strategy = {
@@ -141,8 +128,7 @@ ENG_operation_grapeshot = {
 
 		area = italy
 
-		ratio = 0.1
-
+		ratio = 0.4
 		priority = 4000
 		ordertype = front
 		execution_type = careful
@@ -150,6 +136,25 @@ ENG_operation_grapeshot = {
 	}
 
 }
+
+#ENG_let_holland_stay_safe_awhile = {
+#	allowed = {
+#		is_in_faction_with = ENG
+#	}
+#	enable = {
+#		date < 1945.2.1
+#	}
+#
+#	abort = {
+#		date > 1945.2.1
+#	}
+#
+#	ai_strategy = {
+#    	type = front_unit_request
+#    	tag = GER
+#    	value = -100
+#		}
+#}
 
 # AST ast Australia australia
 AST_pacific = {
@@ -260,12 +265,45 @@ RAJ_burma_campaign  = {
 
 		area = burma
 
-		ratio = 1.0
+		ratio = 0.2
 
 		priority = 1000
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
+	}
+}
+
+#TUR
+TUR_keep_to_yourselves = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		is_in_faction_with = ENG
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RD2"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "USA"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ENG"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 10000
 	}
 }
 

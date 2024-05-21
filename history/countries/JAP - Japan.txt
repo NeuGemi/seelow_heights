@@ -572,8 +572,8 @@ unlock_national_focus = JAP_sign_tripartite_pact
 complete_national_focus = JAP_bomber_modernization 
 unlock_national_focus = JAP_non_aggression_pact_with_the_soviet_union
 complete_national_focus = JAP_national_defense_state
-complete_national_focus = JAP_secure_the_philippines
-complete_national_focus = JAP_strike_on_the_southern_resource_area
+unlock_national_focus = JAP_secure_the_philippines
+unlock_national_focus = JAP_strike_on_the_southern_resource_area
 complete_national_focus	= JAP_warrior_spirit
 complete_national_focus = JAP_strengthen_the_divine_wind
 

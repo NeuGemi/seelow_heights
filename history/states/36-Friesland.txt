@@ -22,8 +22,13 @@ state={
 			industrial_complex = 2
 			6336 = {
 				naval_base = 3
-
 			}
+			6241 = {
+				bunker = 7
+				}
+			9363 = {
+				bunker = 7
+				}
 		}
 		1945.4.1 = {
 			owner = HOL
@@ -31,7 +36,7 @@ state={
      	ENG = {
      		set_province_controller = 9363
      		set_province_controller = 9403
-     		}		
+     		}	
 		}
 		1945.4.26 = {
 			owner = ENG

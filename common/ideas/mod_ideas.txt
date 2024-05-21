@@ -836,10 +836,33 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                army_speed_factor = -0.95
-                army_attack_factor = -0.95
+                army_attack_speed_factor = -0.5
+            }
+
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = -0.95
             }       
         } 
+        SOV_vistula_oder_offensive = {
+
+            allowed = { 
+                always = no 
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                planning_speed = 0.75
+                ai_focus_aggressive_factor = 1.0
+                river_crossing_factor = -0.85
+            }       
+        }
         SOV_manchurian_strategic_offensive_operations = {
 
             allowed = { 
@@ -911,6 +934,23 @@ ideas = {
 
             modifier = {
                 planning_speed = 0.75
+            }       
+        }
+        ENG_wait_for_invasion_of_germany = {
+
+            allowed = { 
+                always = no 
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                ai_focus_defense_factor = 1.0
             }       
         }
     ENG_europe_first_strat = {

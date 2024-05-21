@@ -258,6 +258,10 @@ country_event = {
 			add_manpower = -2000000
 			add_manpower = -2000000
 			SOV = {
+				add_timed_idea = {
+					idea = SOV_vistula_oder_offensive
+					days = 15
+				}
 				remove_ideas = SOV_desperate_measures_ns
 				remove_ideas = SOV_the_road_of_life_ns
 				if = {
@@ -1141,7 +1145,10 @@ news_event = {
 		tag = GER
 		43 = { is_controlled_by = SOV }
 		43 = { is_owned_by = HUN }
-		SOV = { has_war_with = HUN }
+		SOV = { 
+			has_war_with = HUN 
+			controls_province = 13369
+		}
 		HUN = {
 			is_in_faction_with = GER
 		}
@@ -2421,8 +2428,6 @@ country_event = {
 		OR = {
 			SOV = { controls_state = 63 }
 			SOV = { controls_state = 68 }
-			SOV = { controls_state = 66 }
-			SOV = { controls_state = 75 }
 		}
 	}
 
@@ -2502,6 +2507,32 @@ country_event = {
 					ideology = democratic
 					portrait = GFX_mod_portrait_usa_fdr_april_1_onward
 				}			
+			}
+		}
+	}
+}
+
+# Give Transylvania to Romania
+country_event = {
+	id = maintenance.11
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.2.27
+		date < 1945.3.10
+		ROM = {
+			is_in_faction_with = SOV
+			has_war_with = GER
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			ROM = {
+				transfer_state = 76
 			}
 		}
 	}
@@ -2774,6 +2805,7 @@ country_event = {
 				transfer_state = 155
 				transfer_state = 154
 				transfer_state = 43
+				set_cosmetic_tag = HUN_soviet_puppet
 			}
 			ROM = {
 				#drop_cosmetic_tag = ROM_scenario

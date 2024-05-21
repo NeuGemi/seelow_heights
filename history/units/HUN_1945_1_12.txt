@@ -188,7 +188,9 @@ units = {
 		}
 		location = 13369 # Buda
 		division_template = "Gyalogdandár"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 	   division= {		
 		division_name = {
@@ -197,14 +199,17 @@ units = {
 		}
 		location = 9660
 		division_template = "Gyalogdandár"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+	    start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
     division= {	
 	    name = "Billnitzer-Csoport"
 		location = 9660
 		division_template = "Gyalogdandár"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
     }
 	   division= {		
 		division_name = {
@@ -213,8 +218,9 @@ units = {
 		}
 		location = 9660
 		division_template = "Gyalogdandár"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 
     division= {	
@@ -222,7 +228,8 @@ units = {
 		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
     }
 	   division= {		
 		division_name = {
@@ -231,8 +238,9 @@ units = {
 		}
 		location = 9660
 		division_template = "Huszár Dandár"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 	   division= {		
 		division_name = {
@@ -241,8 +249,9 @@ units = {
 		}
 		location = 9660
 		division_template = "Gyorshadtest" 
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 	   division= {		
 		division_name = {
@@ -251,8 +260,9 @@ units = {
 		}
 		location = 9660
 		division_template = "Gyorshadtest" 
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 	   division= {		
 		division_name = {
@@ -261,8 +271,9 @@ units = {
 		}
 		location = 9660
 		division_template = "Gyalogdandár"
-		start_experience_factor = 0.3
-	    start_equipment_factor = 0.3
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		start_manpower_factor = 0.5
 	}
 }
 

@@ -816,7 +816,8 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 30
-			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 	GER_operation_nordwind = {
@@ -854,6 +855,8 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 30
+			GER_scenario_wehrmacht_level_up = yes
+			GER_scenario_disloyalty_level_up = yes
 		}
 	}
 }
