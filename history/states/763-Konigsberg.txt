@@ -10,13 +10,13 @@ state={
 		controller = GER
 		
 		victory_points = {
-			6332 10 
+			13373 10 
 		}
 
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 2
-			6332 = {
+			13373 = {
 				bunker = 10
 
 			}
@@ -44,13 +44,16 @@ state={
 			owner = SOV
 			controller = SOV
 			GER = {
-				set_province_controller = 11265
+				set_province_controller = 13373
+			}
+			GER = {
+				set_province_controller = 13372
 			}
 		}
 	}
 
 	provinces={
-		281 348 395 3384 6332 11265
+		281 348 395 3384 6332 11265 13372 13373 13374
 	}
 
 	local_supplies=0.0 
