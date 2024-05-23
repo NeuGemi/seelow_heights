@@ -149,19 +149,19 @@ units = {
 	}
 	division= {
 		name = "14. French Infantry Division"
-		location = 678
+		location = 13375
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "5. French Armored Division"
-		location = 678
+		location = 13375
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "27. French Infantry Division"
-		location = 678
+		location = 13375
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}

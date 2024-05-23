@@ -233,6 +233,10 @@ scenarionews.14.t:0 "Battle of the Bulge Ends"
 scenarionews.14.d:0 "The battle of the bulge, a surprise offensive by the Germans has concluded. The conflict, which lasted for several weeks, saw forces on both sides engage in intense combat under severe winter conditions.\n\nDespite initial successes, the German forces were unable to sustain their advance due to Allied counterattacks and the harsh conditions of winter. The battle has resulted in severe losses for the German side, further weakening their already strained resources."
 scenarionews.14.a:0 "The allies are victorious."
 scenarionews.14.b:0 "How could this happen?"
+scenarionews.15.t:0 "Fall of Hamburg"
+scenarionews.15.d:0 ""
+scenarionews.16.t:0 "Eagle's Nest Captured!"
+scenarionews.16.d:0 ""
 
 # Volkssturm Events #
 volkssturm.1.t:0 "Volkssturm Militias Raised in Vienna"

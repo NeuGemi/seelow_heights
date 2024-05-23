@@ -197,6 +197,10 @@ GER_oberkommando = {
 	}
 
 
+	##########################
+	##### TIMED MISSIONS #####
+	##########################
+
 	GER_operation_hannibal = {
 		icon = GFX_decision_generic_human_torpedo
 
@@ -218,7 +222,7 @@ GER_oberkommando = {
 
 		fire_only_once = yes
 		is_good = yes
-		days_mission_timeout = 30
+		days_mission_timeout = 60
 		allowed = {
 			tag = GER
 		}
@@ -263,7 +267,7 @@ GER_oberkommando = {
 
 		fire_only_once = yes
 		is_good = yes
-		days_mission_timeout = 60
+		days_mission_timeout = 65
 		allowed = {
 			tag = GER
 		}
@@ -514,7 +518,7 @@ GER_oberkommando = {
 			NOT = { controls_province = 3530 }
 		}
 
-		days_mission_timeout = 10
+		days_mission_timeout = 15
 
 		fire_only_once = yes
 
@@ -625,7 +629,7 @@ GER_oberkommando = {
 			}
 		}
 
-		days_mission_timeout = 35
+		days_mission_timeout = 40
 
 		fire_only_once = yes
 

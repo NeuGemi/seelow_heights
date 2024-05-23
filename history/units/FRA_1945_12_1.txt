@@ -131,19 +131,19 @@ units = {
 	}
 	division= {
 		name = "1. French Motorised Division"
-		location = 6529
+		location = 678
 		division_template = "Motorised Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "1. French Infantry Division"
-		location = 6529
+		location = 678
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "3. Algerian Infantry Division"
-		location = 6529
+		location = 678
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
@@ -155,13 +155,13 @@ units = {
 	}
 	division= {
 		name = "5. French Armored Division"
-		location = 698
+		location = 6529
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "27. French Infantry Division"
-		location = 698
+		location = 6529
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
