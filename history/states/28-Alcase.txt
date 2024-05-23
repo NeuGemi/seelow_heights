@@ -23,10 +23,7 @@ state={
 				bunker = 10
 
 			}
-			678 = {
-				bunker = 10
 
-			}
 			3629 = {
 				bunker = 10
 
@@ -47,6 +44,10 @@ state={
 				bunker = 10
 
 			}
+			13375 = {
+				bunker = 10
+
+			}
 			anti_air_building = 5
 			air_base = 5
 
@@ -59,7 +60,7 @@ state={
 		}
 		1945.1.1 = {
 			GER = {
-				set_province_controller = 678
+				set_province_controller = 13375
 			}
 		}
 		1945.3.1 = {
@@ -69,7 +70,7 @@ state={
 	}
 
 	provinces={
-		549 678 1346 3629 6529 9503 9559 11502 
+		549 678 1346 3629 6529 9503 9559 11502 13375
 	}
 
 	local_supplies=14.0 
