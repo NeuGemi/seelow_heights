@@ -2421,7 +2421,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11625
+		location = 9660
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2430,7 +2430,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11625
+		location = 9660
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2439,7 +2439,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11625
+		location = 9660
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2448,7 +2448,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11625
+		location = 9660
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2457,7 +2457,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11625
+		location = 9660
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}

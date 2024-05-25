@@ -1342,11 +1342,11 @@ units = {
 
     division= {	
 	    name = "153. Feldausbildung-Division"
-		location = 9660
+		location = 13370
 		division_template = "Sicherungs-Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.4
-	    start_equipment_factor = 0.4
+		start_equipment_factor = 0.35
+	    start_equipment_factor = 0.35
     }
 
 	### 1. Panzerarmee (Poland-Slovakia) ###
@@ -1519,19 +1519,19 @@ units = {
     }
    division= {
 	    name = "13. Panzer Division"
-	    location = 9660
+	    location = 13370
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.60
-	    start_manpower_factor = 0.50
+	    start_equipment_factor = 0.40
+	    start_manpower_factor = 0.40
     }
    division= {
 	    name = "Panzer-Division Feldherrnhalle"
-	    location = 9660
+	    location = 13370
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.2 
-	    start_equipment_factor = 0.60
-	    start_manpower_factor = 0.50
+	    start_equipment_factor = 0.40
+	    start_manpower_factor = 0.40
     }
 	division = {
 		name = "4. Kavallerie-Division"
@@ -1544,16 +1544,16 @@ units = {
 		location = 13369 # Buda
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.2
-	    start_equipment_factor = 0.60
-	    start_manpower_factor = 0.50
+	    start_equipment_factor = 0.40
+	    start_manpower_factor = 0.40
 	}
 	division = {
 		name = "22. Waffen SS-Division 'Maria Theresia'"
-		location = 9660
+		location = 13370
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.2
-	    start_equipment_factor = 0.60
-	    start_manpower_factor = 0.50
+	    start_equipment_factor = 0.40
+	    start_manpower_factor = 0.40
 	}
     division= {		
 		division_name = {
@@ -1572,8 +1572,8 @@ units = {
 		location = 13369 # Buda
 		division_template = "Volksgrenadier-Division"
 		start_experience_factor = 0.2
-	    start_equipment_factor = 0.60
-	    start_manpower_factor = 0.50
+	    start_equipment_factor = 0.45
+	    start_manpower_factor = 0.45
 	}
 
 	### 8. Armee ###
@@ -1640,10 +1640,10 @@ units = {
 	}
 	division = {
 		name = "18. Waffen SS-Division 'Horst Wessel'"
-		location = 9660
+		location = 13370
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.3
-	    start_equipment_factor = 0.60
+	    start_equipment_factor = 0.3
 	}
     division= {
 	    name = "24. Panzer Division"

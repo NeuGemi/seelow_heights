@@ -1143,8 +1143,6 @@ news_event = {
 	
 	trigger = {
 		tag = GER
-		43 = { is_controlled_by = SOV }
-		43 = { is_owned_by = HUN }
 		SOV = { 
 			has_war_with = HUN 
 			controls_province = 13369

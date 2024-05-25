@@ -92,6 +92,11 @@ SOV_garrison_MOD = {
     	tag = GER
     	value = 500
 		}
+	ai_strategy = {
+    	type = front_unit_request
+    	tag = BLR
+    	value = 200
+		}
 }
 
 ROM_defend_budapest = {
