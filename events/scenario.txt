@@ -519,7 +519,11 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		TAG = GER
+		SOV = {
+			controls_state = 970
+		}
 
 	immediate = {
 		hidden_effect = {

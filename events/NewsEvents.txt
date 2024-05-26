@@ -3734,8 +3734,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		64 = { is_controlled_by = USA }
-		64 = { is_owned_by = GER }
+		970 = { is_controlled_by = USA }
+		970 = { is_owned_by = GER }
 		USA = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_berlin_usa }
 	}
