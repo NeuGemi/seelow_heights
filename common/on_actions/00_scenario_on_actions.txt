@@ -94,6 +94,8 @@ on_actions = {
 						has_start_date > 1945.1.1
 						has_start_date < 1945.1.13
 					}
+					add_timed_idea = { idea = SOV_slow_down days = 25 }
+					country_event = { id = maintenance.11 days = 56 }
 					country_event = { id = scenario.9 days = 94 }
 					country_event = { id = offensives.4 days = 94 }
 				}

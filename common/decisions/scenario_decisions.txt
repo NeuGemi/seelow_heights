@@ -745,7 +745,7 @@ GER_oberkommando = {
 		#Fail trigger
 		available = {
 			HUN = {
-				NOT = { controls_province = 9660 }
+				NOT = { controls_province = 13369 }
 			}
 		}
 
@@ -767,7 +767,7 @@ GER_oberkommando = {
 			has_start_date < 1945.1.15
 			has_civil_war = no
 			HUN = {
-				controls_province = 9660			
+				controls_province = 13369			
 			}
 		}
 
@@ -834,7 +834,7 @@ GER_oberkommando = {
 
 		#Fail trigger
 		available = {
-			controls_state = 28
+			controls_province = 9503
 		}
 
 		days_mission_timeout = 13
@@ -845,7 +845,7 @@ GER_oberkommando = {
 
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 42
+        		state = 28
     		}
     		highlight_color_while_active = 3
 		}

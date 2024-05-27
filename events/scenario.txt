@@ -519,11 +519,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		TAG = GER
-		SOV = {
-			controls_state = 970
-		}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -840,6 +836,11 @@ country_event = {
 		num_divisions_in_states = {
 		    count < 22
 		    states = { 190 }
+		}
+		NOT = {
+			GER = {
+				controls_state = 189		
+			}
 		}
 	}
 
@@ -2760,7 +2761,7 @@ country_event = {
 		date < 1945.4.15
 		OR = {
 			SOV = { controls_state = 63 }
-			SOV = { controls_state = 68 }
+			SOV = { controls_province = 11478 }
 		}
 	}
 
@@ -2851,12 +2852,34 @@ country_event = {
 
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+
+			ROM = {
+				transfer_state = 76
+			}
+		}
+	}
+}
+
+# Fix elbe cheese
+country_event = {
+	id = maintenance.12
+
+	fire_only_once = yes
+
 	trigger = {
-		date > 1945.2.27
-		date < 1945.3.10
-		ROM = {
-			is_in_faction_with = SOV
-			has_war_with = GER
+		date > 1946.1.1 
+		GER = {
+			has_war_with = SOV
+			NOT = {
+				controls_state = 970
+				controls_state = 971
+			}
 		}
 	}
 
@@ -2864,8 +2887,19 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			ROM = {
-				transfer_state = 76
+			SOV = {
+				give_military_access = ENG
+				give_military_access = FRA
+				give_military_access = USA
+			}
+			ENG = {
+				give_military_access = SOV
+			}
+			USA = {
+				give_military_access = SOV
+			}
+			FRA = {
+				give_military_access = SOV
 			}
 		}
 	}

@@ -280,7 +280,7 @@ set_convoys = 10
 		complete_national_focus = ROM_vanatori_de_munte
 		complete_national_focus = ROM_hunedoara_steel_works
 		complete_national_focus = ROM_appoint_german_friendly_government
-		complete_national_focus = ROM_invite_german_advisors
+		unlock_national_focus = ROM_invite_german_advisors
 		complete_national_focus = ROM_iron_guard
 
 		#King stuff

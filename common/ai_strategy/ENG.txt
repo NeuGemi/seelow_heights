@@ -57,23 +57,35 @@ dont_naval_invade_when_already_in_europe = {
 }
 
 # March offensive
-#ENG_invasion_of_germany = {
-#	allowed = {
-#		original_tag = ENG
-#		original_tag = USA
-#	}
-#	enable = {
-#		has_war_with = ITA
-#		date > 1945.1.11
-#		date < 1945.3.20
-#	}
-#
-#	abort = {
-#		NOT = {
-#			has_war_with = GER
-#		}
-#	}
-#}
+ENG_invasion_of_germany = {
+	allowed = {
+		original_tag = ENG
+		original_tag = USA
+	}
+	enable = {
+		has_war_with = ITA
+		date > 1945.1.11
+		date < 1945.4.1
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = ITA
+		}
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		area = italy
+
+		ratio = 0.1
+		priority = 50
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
 
 #CRO
 CRO_defend_croatia = {

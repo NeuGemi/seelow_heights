@@ -800,6 +800,23 @@ ideas = {
             #river_crossing_factor = -0.75
             }       
         }  
+     SOV_slow_down = {
+
+        allowed = { 
+            always = no 
+        }
+        picture = generic_morale_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+            modifier = {
+                army_speed_factor = -0.15
+            }      
+        } 
     SOV_allied_control_commission = {
 
             allowed = { 
@@ -836,7 +853,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                army_attack_speed_factor = -0.5
+                army_speed_factor = -0.75
             }
 
             targeted_modifier = {
@@ -951,6 +968,23 @@ ideas = {
 
             modifier = {
                 ai_focus_defense_factor = 1.0
+            }       
+        }
+        ENG_invasion_of_western_germany = {
+
+            allowed = { 
+                always = no 
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                ai_focus_aggressive_factor = 1.0
             }       
         }
     ENG_europe_first_strat = {

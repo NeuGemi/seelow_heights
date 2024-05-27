@@ -36,6 +36,13 @@ state={
 				industrial_complex = 3
 			}
 		}
+		1945.1.1 = {
+			buildings = {
+				9570 = {
+					bunker = 10
+				}
+			}
+		}
 		1945.3.1 = {
 			owner = SOV
 			controller = SOV
@@ -44,11 +51,6 @@ state={
 				set_province_controller = 6534
 				set_province_controller = 9570
 				set_province_controller = 9570
-			}
-			buildings = {
-				9570 = {
-					bunker = 10
-				}
 			}
 		}
 	}

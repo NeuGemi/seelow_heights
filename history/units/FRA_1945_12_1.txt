@@ -101,13 +101,13 @@ units = {
 
 	division= {
 		name = "2. Moroccan Infantry Division"
-		location = 549
+		location = 1346
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
 		name = "4. Moroccan Infantry Division"
-		location = 549
+		location = 1346
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}	
