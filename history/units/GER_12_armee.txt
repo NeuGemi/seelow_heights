@@ -1,0 +1,120 @@
+division_template = {
+	name = "Volksgrenadier-Division"					# Represents Infanterie Welles 1-4
+	division_names_group = GER_Inf_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+        artillery_brigade = { x = 2 y = 0 }
+        anti_tank_brigade = { x = 2 y = 1 }
+	}
+	support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			signal_company = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Panzer-Division"				# Represents Panzer Divisions 1-5
+	division_names_group = GER_Arm_01
+	is_locked = yes
+
+	regiments = {	
+		medium_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
+		medium_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		medium_tank_destroyer_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+			mot_recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			anti_air = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Volkssturm-Division"					# Represents Infanterie Welles 1-4
+	division_names_group = GER_ALTINF_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+			engineer = { x = 0 y = 0 }
+			field_hospital = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+units = {
+	    ### 12. ARMEE (enroute to Berlin) CO: Walter Wenck ### At correct location
+
+   division= {
+	    name = "'Theodor Körner RAD' Infanterie-Division"
+	    location = 3522
+	    division_template = "Volkssturm-Division"
+	    start_experience_factor = 0.2
+    }
+    division= {	
+	    name = "'Ulrich von Hutten' Volksgrenadier Division"
+		location = 3522
+		division_template = "Volksgrenadier-Division"	
+		start_experience_factor = 0.2
+    }
+    division= {	
+	    name = "'Ferdinand von Schill' Volksgrenadier Division"
+		location = 3522
+		division_template = "Volksgrenadier-Division"	
+		start_experience_factor = 0.3
+    }
+    division= {	
+	    name = "'Scharnhorst' Volksgrenadier Division"
+		location = 3522
+		division_template = "Volksgrenadier-Division"	
+		start_experience_factor = 0.3
+    }
+   division= {
+	    name = "'Schlageter RAD' Infanterie-Division"
+	    location = 3522
+	    division_template = "Volkssturm-Division"
+	    start_experience_factor = 0.2
+    }
+   division= {
+	    name = "'Clausewitz' Panzer-Division"
+	    location = 3522
+	    division_template = "Panzer-Division"
+	    start_experience_factor = 0.3
+    }
+   division= {
+	    name = "Kampfgruppe Leipzig. (I-VIII)"
+	    location = 3522
+	    division_template = "Volkssturm-Division"
+	    start_experience_factor = 0.2
+    }
+   division= {
+	    name = "Kampfgruppe Halle"
+	    location = 3522
+	    division_template = "Volkssturm-Division"
+	    start_experience_factor = 0.2
+    }
+}

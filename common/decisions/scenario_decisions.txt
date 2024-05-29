@@ -689,7 +689,7 @@ GER_oberkommando = {
 			NOT = { controls_state = 10 }
 		}
 
-		days_mission_timeout = 40
+		days_mission_timeout = 35
 
 		fire_only_once = yes
 
@@ -725,6 +725,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 
 		# Failure
@@ -776,6 +777,7 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 
 		# Failure
@@ -815,13 +817,14 @@ GER_oberkommando = {
 			has_war = yes
 			has_start_date < 1945.1.15
 		}
+
 		#Success
 		complete_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 30
-			GER_scenario_wehrmacht_level_up = yes
-			GER_scenario_disloyalty_level_up = yes
+			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 	}
 	GER_operation_nordwind = {
@@ -859,8 +862,8 @@ GER_oberkommando = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_command_power = 30
-			GER_scenario_wehrmacht_level_up = yes
-			GER_scenario_disloyalty_level_up = yes
+			GER_scenario_wehrmacht_level_down = yes
+			GER_scenario_disloyalty_level_down = yes
 		}
 	}
 }
@@ -1256,4 +1259,186 @@ SOV_stavka = {
 	        }
 	    }
 	}	
+}
+
+GER_defense_of_berlin_preparations = {
+	GER_form_12th_army = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			surrender_progress > 0.07
+			NOT = {
+				has_start_date > 1945.4.11
+			}
+			GER = {
+				controls_state = 64
+				controls_state = 970
+				controls_state = 971
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_50
+
+		days_remove = 10
+
+		ai_will_do = {
+    		base = 10
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -50
+			}
+		}
+
+		remove_effect = {	
+			custom_effect_tooltip = GER_12th_army_tt
+			hidden_effect = {
+				GER = {
+				load_oob = "GER_12_armee"	
+				}		
+			}
+		}		
+	}
+	GER_mass_defense_improvisation = {
+		icon = GFX_decision_generic_mountain_fortification 
+
+		available = {
+			NOT = {
+				has_start_date > 1945.4.11
+			}
+			GER = {
+				controls_state = 970
+				controls_state = 971
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		cost = 50
+
+		days_remove = 25
+
+		ai_will_do = {
+    		base = 10
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			971 = {
+				add_building_construction = {
+				type = bunker
+				level = 1
+				province = 6521
+				instant_build = yes
+				}		
+			}
+			970 = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 13363
+				instant_build = yes
+				}	
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 13366
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 13365
+				instant_build = yes
+				}	
+			}
+		}		
+	}
+	GER_conscript_volkssturm_in_berlin = {
+		icon = GFX_decision_generic_disband_irregulars 
+
+		available = {
+			SOV = {
+				controls_state = 86
+			}
+			NOT = {
+				has_start_date > 1945.4.11
+			}
+			GER = {
+				controls_state = 64
+				controls_state = 970
+				controls_state = 971
+			}
+		}
+
+		allowed = {
+			tag = GER
+		}
+
+		visible = {
+			tag = GER
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 49
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_50
+
+		days_remove = 12
+
+		ai_will_do = {
+    		base = 10
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -50
+				army_experience = -50
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = GER_defense_of_berlin_tt
+			GER = {
+				hidden_effect = {
+					load_oob = "GER_defense_of_berlin"	
+				}
+				recruit_character = GER_helmuth_weidling
+			}
+		}		
+	}
 }

@@ -2047,36 +2047,6 @@ units = {
 	    start_equipment_factor = 0.90
 	    start_manpower_factor = 0.90
     }
-   division= {
-	    name = "'Theodor Körner RAD' Infanterie-Division"
-	    location = 3522
-	    division_template = "Volkssturm-Division"
-	    start_experience_factor = 0.2
-    }
-    division= {	
-	    name = "'Ulrich von Hutten' Volksgrenadier Division"
-		location = 3522
-		division_template = "Volksgrenadier-Division"	
-		start_experience_factor = 0.2
-    }
-    division= {	
-	    name = "'Ferdinand von Schill' Volksgrenadier Division"
-		location = 3522
-		division_template = "Volksgrenadier-Division"	
-		start_experience_factor = 0.3
-    }
-    division= {	
-	    name = "'Scharnhorst' Volksgrenadier Division"
-		location = 3522
-		division_template = "Volksgrenadier-Division"	
-		start_experience_factor = 0.3
-    }
-   division= {
-	    name = "'Schlageter RAD' Infanterie-Division"
-	    location = 3522
-	    division_template = "Volkssturm-Division"
-	    start_experience_factor = 0.2
-    }
 	division= {		
 		division_name = {
 				is_name_ordered = yes

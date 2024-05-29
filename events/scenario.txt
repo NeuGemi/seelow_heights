@@ -2426,7 +2426,6 @@ country_event = {
 				add_province_modifier = {
 					static_modifiers = { MOD_vistula_oder_offensive }
 					province = {
-						id = 3544
 						id = 6511
 					}
 				}

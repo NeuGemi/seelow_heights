@@ -100,6 +100,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_mod_himmler_betrayal.png"
 	}
 	SpriteType = {
+		name = "GFX_scenariodecision_cat_berlin"
+		texturefile = "gfx/decisions/scenariodecision_cat_berlin.png"
+	}
+	SpriteType = {
 		name = "GFX_scenariodecision_cat"
 		texturefile = "gfx/decisions/scenariodecision_cat.png"
 	}

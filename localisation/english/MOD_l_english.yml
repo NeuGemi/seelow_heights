@@ -279,7 +279,13 @@ GER_wacht_am_rhein_desc:0 "Our offensive in the west has bogged down. Any outcom
 GER_operation_nordwind:0 "Operation Nordwind"
 GER_operation_nordwind_desc:0 "Operation Wacht am Rhein has stalled. For it to succeed, we must divert Allied forces away from Belgium and destroy any forces in our way."
 GER_hold_vienna_keep_buffs:0 "Hold Vienna to keep buffs!"
-
+GER_defense_of_berlin_preparations:0 "Defensive Preparations for the Battle of Berlin"
+GER_defense_of_berlin_preparations_desc:0 "The Battle of Berlin is an inevitable fact...defensive preparations of all kind must be undertaken to ensure it will not fall into the hands of Churchill or Stalin. Men from the Reichsarbeitsdienst, Hitlerjugend and Volkssturm will be employed in the action of the defense, leading to nothing else but complete victory."
+GER_form_12th_army:0 "Form Reichsarbeitsdienst Divisions"
+GER_conscript_volkssturm_in_berlin:0 "Formation of the Berlin Garnison"
+GER_mass_defense_improvisation:0 "Mass-Improvised Defensive Preparations"
+GER_12th_army_tt:0 "§YRAD-Divisions I-IV will be formed§!"
+GER_defense_of_berlin_tt:0 "§YBerlin Garnison, comprising of Volkssturm and Hitlerjugend will be formed§!"
 
 JAP_hold_territory:0 "Imperial Supreme War Command"
 JAP_hold_burma:0 "Hold Burma"

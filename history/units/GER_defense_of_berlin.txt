@@ -1,0 +1,200 @@
+division_template = {
+	name = "Volkssturm-Division"					# Represents Infanterie Welles 1-4
+	division_names_group = GER_ALTINF_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+			engineer = { x = 0 y = 0 }
+			field_hospital = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "SS-Infanterie-Division"					
+	division_names_group = GER_SS_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+        artillery_brigade = { x = 3 y = 0 }
+        anti_tank_brigade = { x = 3 y = 1 }
+        anti_tank_brigade = { x = 3 y = 2 }
+
+	}
+	support = {
+	   		recon = { x = 0 y = 0 }
+		 	engineer = { x = 0 y = 1 }
+			anti_tank = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
+		}
+		priority = 2
+}
+
+division_template = {
+	name = "Schwere Panzer Abteilung"			
+	division_names_group = GER_Arm_01
+	is_locked = yes
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }		
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_anti_tank_brigade = { x = 2 y = 1 }
+		mot_anti_air_brigade = { x = 2 y = 2 }
+		mot_anti_air_brigade = { x = 2 y = 3 }
+	}
+	support = {
+			mot_recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+			artillery = { x = 0 y = 2 }
+			field_hospital = { x = 0 y = 3 }
+			signal_company = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	    ### BERLIN GARNISON (CO: Helmuth Weidling) ###
+    ### 9. A-Z 
+    division= {	
+	    name = "Sektor Anton"
+		location = 6521
+		division_template = "Volkssturm-Division"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.83
+    }
+    division= {	
+	    name = "Sektor Caesar"
+		location = 6521
+		division_template = "Volkssturm-Division"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.83
+    }
+    division= {	
+	    name = "Sektor Dora"
+		location = 6521
+		division_template = "Volkssturm-Division"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.83
+    }
+    division= {
+	    name = "Wacht Regiment Berlin"
+	    location = 6521
+	    division_template = "SS-Infanterie-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.2
+	    start_manpower_factor = 0.83
+    } 
+    division= {
+	    name = "SS Wachbataillon Reichführer SS"
+	    location = 6521
+	    division_template = "SS-Infanterie-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.8
+	    start_manpower_factor = 0.95
+    } 
+    division= {
+	    name = "57. Französisch SS-Batalion 'Fenet'"
+	    location = 6521
+	    division_template = "SS-Infanterie-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.2
+	    start_manpower_factor = 0.47
+    } 
+    division= {
+	    name = "Kampfgruppe Moltke"
+	    location = 6521
+	    division_template = "Volkssturm-Division"	
+	    start_experience_factor = 0.1
+	    start_equipment_factor = 0.5
+	    start_manpower_factor = 0.74
+    } 
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 6521
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.47
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 6521
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.67
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 6521
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.67
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 6521
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.67
+	}
+	division= {		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 6521
+		division_template = "Volkssturm-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+		start_manpower_factor = 0.67
+	}
+   division= {
+	    name = "502. SS Schwere Panzer-Abteilung"
+	    location = 6521
+	    division_template = "Schwere Panzer Abteilung"
+	    start_experience_factor = 0.2
+	    start_equipment_factor = 0.9
+	    start_manpower_factor = 0.95
+    }
+}
