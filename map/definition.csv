@@ -6330,7 +6330,7 @@
 6329;85;105;226;land;false;plains;1
 6330;85;108;41;land;false;forest;1
 6331;85;108;86;land;false;forest;1
-6332;85;108;191;land;false;urban;1
+6332;85;108;191;land;true;urban;1
 6333;85;111;156;land;false;forest;1
 6334;85;114;71;land;true;forest;1
 6335;85;114;221;land;true;forest;1
@@ -13375,3 +13375,6 @@
 13373;29;43;91;land;false;urban;1
 13374;214;3;175;land;true;plains;2
 13375;4;155;8;land;false;hills;6
+13376;92;96;173;land;false;plains;2
+13377;28;237;183;land;flase;plains;2
+13378;84;153;26;land;false;plains;2

@@ -38,6 +38,8 @@ state={
 			GER = {
 				set_province_controller = 11265
 				set_province_controller = 13374
+				set_province_controller = 13372
+				set_province_controller = 13373
 			}
 		}
 		1945.4.1 = {
@@ -45,6 +47,8 @@ state={
 			controller = SOV
 			GER = {
 				set_province_controller = 11265
+				set_province_controller = 13372
+				set_province_controller = 13373
 
 			}
 		}
