@@ -30,7 +30,7 @@ state={
 			owner = USA
 			controller = USA
 			GER = {
-				set_province_controller = 11407
+				set_province_controller = 13380
 			}		
 		}
 		1945.2.1 = {
@@ -44,7 +44,7 @@ state={
 	}
 
 	provinces={
-		3488 3516 6537 9418 9444 9536 11407 11519 13081 
+		3488 3516 6537 9418 9444 9536 11407 11519 13081 13380
 	}
 
 	local_supplies=14.0 
