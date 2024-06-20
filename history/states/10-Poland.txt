@@ -29,6 +29,7 @@ state={
 				set_province_controller = 12562
 				set_province_controller = 402
 				set_province_controller = 13376
+				set_province_controller = 13390
 			}
 		}
 		1945.3.1 = {
@@ -38,7 +39,7 @@ state={
 	}
 
 	provinces={
-		402 467 524 3482 3544 6511 9400 11492 12562 13376
+		402 467 524 3482 3544 6511 9400 11492 12562 13376 13390
 	}
 
 	local_supplies=7.0 
