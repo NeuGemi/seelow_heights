@@ -9,7 +9,7 @@ state = {
 			6389 10 
 		}
 		victory_points = {
-			13384 20
+			13382 20
 		}
 		owner = GER
 		buildings = {
@@ -33,7 +33,7 @@ state = {
 	}
 
 	provinces = {
-		 3368 6257 6389 9320 9347 11331 13384
+		 3368 6257 6389 9320 9347 11331 13382
  	}
 
 	local_supplies = 0.0 

@@ -38,6 +38,14 @@ MOD_vistula_oder_offensive:0 "Vistula-Oder Offensive"
 MOD_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
 MOD_unplanned_offensive:0 "Unplanned Offensive"
 
+### State Modifiers ###
+heavy_chinese_partisans:0 "Heavy Chinese Communist Partisans"
+heavy_chinese_partisans_desc:0 "Heavy amounts of Chinese Communists have taken over this state"
+chinese_partisans:0 "Chinese Communist Partisans"
+chinese_partisans_desc:0 "Average amounts of Chinese Communists have taken over this state"
+heavy_chinese_partisans:0 "Light Chinese Communist Partisans"
+heavy_chinese_partisans_desc:0 "Insignifigant amounts of Chinese Communists have taken over this state"
+
 ### Flags ###
 scenario_berlin:0 "The Battle of Berlin is underway"
 scenario_hitler_suicide:0 "Hitler has committed suicide"

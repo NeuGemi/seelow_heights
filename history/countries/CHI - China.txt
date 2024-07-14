@@ -156,6 +156,34 @@ add_ideas = {
 325 = { #Dali
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
+597 = { 
+	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
+scope = JAP
+}
+615 = { 
+	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
+scope = JAP
+}
+591 = { 
+	add_dynamic_modifier = { modifier = light_chinese_partisans }
+scope = JAP
+}
+614 = { 
+	add_dynamic_modifier = { modifier = chinese_partisans }
+scope = JAP
+}
+598 = { 
+	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
+scope = JAP
+}
+609 = { 
+	add_dynamic_modifier = { modifier = light_chinese_partisans }
+scope = JAP
+}
+621 = { 
+	add_dynamic_modifier = { modifier = light_chinese_partisans }
+scope = JAP
+}
 
 if = {
 	limit = {
