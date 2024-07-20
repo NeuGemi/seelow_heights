@@ -1,5 +1,25 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_mod_portrait_ITA_benito_mussolini"
+		texturefile = "gfx/leaders/MOD/mod_portrait_ITA_benito_mussolini.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_SOV_iosif_stalin"
+		texturefile = "gfx/leaders/MOD/mod_portrait_SOV_iosif_stalin.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_mao_zedong"
+		texturefile = "gfx/leaders/MOD/mod_portrait_mao_zedong.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_chiang_kai_shek"
+		texturefile = "gfx/leaders/MOD/mod_portrait_chiang_kai_shek.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_harry_s_truman"
+		texturefile = "gfx/leaders/USA/mod_portrait_harry_s_truman.png"
+	}
+	SpriteType = {
 		name = "GFX_mod_portrait_usa_fdr_april_1_onward"
 		texturefile = "gfx/leaders/USA/mod_portrait_usa_fdr_april_1_onward.png"
 	}
