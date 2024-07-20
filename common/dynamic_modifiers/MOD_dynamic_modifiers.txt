@@ -80,7 +80,6 @@ chinese_partisans = {
 	resistance_growth = 0.5
 	resistance_damage_to_garrison = 0.5
 	compliance_growth = -0.3
-		enable = { always = yes }
         remove_trigger = {
             NOT = {
                 owner = PRC
@@ -96,8 +95,9 @@ light_chinese_partisans = {
 	resistance_growth = 0.3
 	resistance_damage_to_garrison = 0.3
 	compliance_growth = -0.1
-		remove_trigger = {
-		  NOT_has_war_with =  JAP
+	remove_trigger = {
+		NOT = {
+       			owner = PRC
 			
 	}
 
