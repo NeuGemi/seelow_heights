@@ -60,14 +60,14 @@ GER_operation_solstice_dyn = {
 }
 
 heavy_chinese_partisans = {
-	icon = GFX_unplanned_offensive
+	icon = GFX_communist_partisans
 
 	resistance_growth = 0.8
 	resistance_damage_to_garrison = 0.8
 	compliance_growth = -0.5
         remove_trigger = {
             NOT = {
-                controller = PRC
+                owner = PRC
             }
 		
 	}
@@ -75,7 +75,7 @@ heavy_chinese_partisans = {
 }
 
 chinese_partisans = {
-	icon = GFX_unplanned_offensive
+	icon = GFX_communist_partisans
 
 	resistance_growth = 0.5
 	resistance_damage_to_garrison = 0.5
@@ -83,7 +83,7 @@ chinese_partisans = {
 		enable = { always = yes }
         remove_trigger = {
             NOT = {
-                controller = JAP
+                owner = PRC
             }
 	
 	}
@@ -91,7 +91,7 @@ chinese_partisans = {
 }
 
 light_chinese_partisans = {
-	icon = GFX_unplanned_offensive
+	icon = GFX_communist_partisans
 
 	resistance_growth = 0.3
 	resistance_damage_to_garrison = 0.3

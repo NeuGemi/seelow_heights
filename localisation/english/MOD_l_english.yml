@@ -43,8 +43,8 @@ heavy_chinese_partisans:0 "Heavy Chinese Communist Partisans"
 heavy_chinese_partisans_desc:0 "Heavy amounts of Chinese Communists have taken over this state"
 chinese_partisans:0 "Chinese Communist Partisans"
 chinese_partisans_desc:0 "Average amounts of Chinese Communists have taken over this state"
-heavy_chinese_partisans:0 "Light Chinese Communist Partisans"
-heavy_chinese_partisans_desc:0 "Insignifigant amounts of Chinese Communists have taken over this state"
+light_chinese_partisans:0 "Light Chinese Communist Partisans"
+light_chinese_partisans_desc:0 "Insignifigant amounts of Chinese Communists have taken over this state"
 
 ### Flags ###
 scenario_berlin:0 "The Battle of Berlin is underway"
