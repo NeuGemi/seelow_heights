@@ -139,9 +139,5 @@ spriteTypes = {
 		name = "GFX_select_date_1945_1_12"
 		texturefile = "gfx/interface/select_date_1945_1_12.png"
 	}
-	SpriteType = {
-		name = "GFX_communist_partisans"
-		texturefile = "gfx/interface/state_modifiers/partisans_china.dds"
-	}
 }
 

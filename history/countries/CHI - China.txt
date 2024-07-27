@@ -156,27 +156,7 @@ add_ideas = {
 325 = { #Dali
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
-597 = { 
-	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
-}
-615 = { 
-	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
-}
-591 = { 
-	add_dynamic_modifier = { modifier = light_chinese_partisans }
-}
-614 = { 
-	add_dynamic_modifier = { modifier = chinese_partisans }
-}
-598 = { 
-	add_dynamic_modifier = { modifier = heavy_chinese_partisans }
-}
-609 = { 
-	add_dynamic_modifier = { modifier = light_chinese_partisans }
-}
-621 = { 
-	add_dynamic_modifier = { modifier = light_chinese_partisans }
-}
+
 
 if = {
 	limit = {
