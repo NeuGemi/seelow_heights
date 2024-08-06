@@ -27,7 +27,7 @@ division_template = {
 }
 division_template = {
 	name = "Volksgrenadier-Division"					# Represents Infanterie Welles 1-4
-	division_names_group = GER_Inf_01
+	division_names_group = GER_ALTINF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

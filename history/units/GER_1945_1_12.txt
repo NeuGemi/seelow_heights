@@ -27,7 +27,7 @@ division_template = {
 }
 division_template = {
 	name = "Volksgrenadier-Division"					# Represents Infanterie Welles 1-4
-	division_names_group = GER_Inf_01
+	division_names_group = GER_ALTINF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -336,7 +336,7 @@ units = {
 		start_experience_factor = 0.2
 	}
     division= {
-		name =  "25. Waffen SS 'Hunyadi'"
+		name =  "25. Waffen SS-Division 'Hunyadi'"
 		location = 9570
 		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3

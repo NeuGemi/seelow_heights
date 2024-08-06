@@ -206,7 +206,7 @@ country_event = {
 							has_dlc = "By Blood Alone"
 						}
 					}
-					load_oob = "SOV_1945_3_6_nsb"
+					load_oob = "SOV_1945_3_6"
 				}
 			}	
 			ENG = {
