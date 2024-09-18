@@ -32,7 +32,7 @@ GER_defense_of_berlin_preparations = {
 
 
 JAP_hold_territory = {                             			 
-	picture = GFX_decision_cat_picture_reforming_our_armed_forces
+	picture = GFX_decision_cat_picture_chi_infiltration
 	icon = GFX_decision_category_border_conflicts
 	
 	priority = {
@@ -41,6 +41,25 @@ JAP_hold_territory = {
 
 	allowed = {
 		original_tag = JAP
+	}
+	visible = {
+		has_war = yes
+	}
+}
+
+JAP_allied_chinese_support = {                             			 
+	picture = GFX_decision_cat_picture_chi_infiltration
+	icon = GFX_decision_category_border_conflicts
+	
+	priority = {
+		base = 9
+	}
+
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = CHI
+		}
 	}
 	visible = {
 		has_war = yes

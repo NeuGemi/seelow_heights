@@ -58,3 +58,15 @@ GER_operation_solstice_dyn = {
 	enemy_local_supplies = -0.15
 	enemy_attrition = 0.15
 }
+
+
+# ASIA #
+
+CHI_chinese_military_offensive = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	breakthrough_factor = 0.1
+	army_attack_factor = 0.1
+}

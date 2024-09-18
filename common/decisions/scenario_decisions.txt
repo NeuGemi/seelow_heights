@@ -868,8 +868,9 @@ GER_oberkommando = {
 	}
 }
 
+#NOTE: Revisit timed mission logic
 JAP_hold_territory = {
-		JAP_hold_burma = {
+	JAP_hold_burma = {
 
 		icon = generic_civil_support
 
@@ -909,14 +910,12 @@ JAP_hold_territory = {
 		timeout_effect = {
 			add_stability = 0.03
 			add_war_support = 0.03
-			#country_event = wtt_soviet_hold_city.1
 		}
 		#Fail
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			}
 		}
-	}
-		JAP_hold_phi = {
+	JAP_hold_phi = {
 
 		icon = generic_civil_support
 
@@ -926,7 +925,10 @@ JAP_hold_territory = {
 
 		#Fail trigger
 		available = {
-			NOT = { controls_state = 627 controls_state = 623 }
+			NOT = { 
+				controls_state = 627 
+				controls_state = 623 
+			}
 		}
 
 		days_mission_timeout = 90
@@ -938,30 +940,6 @@ JAP_hold_territory = {
 		activation = {
 			has_war = yes
 			has_civil_war = no
-			627 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
-			623 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
 		}
 
 		#Success
@@ -1010,6 +988,848 @@ JAP_hold_territory = {
 			#country_event = wtt_soviet_hold_city.2
 		}
 	}
+}
+
+JAP_allied_chinese_support = {
+	JAP_burma_road_closed = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			CHI = { is_puppet = no }
+			JAP = {
+				controls_state = 640
+				controls_state = 288
+			}
+			hidden_trigger = { always = no tag = JAP } 
+			hidden_trigger = { always = no tag = CHI } 
+		}
+
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+			JAP = {
+				controls_state = 640
+				controls_state = 288
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { tag = JAP }
+				custom_effect_tooltip = JAP_burma_road_effects_tt
+
+			}
+			if = {
+				limit = { tag = CHI }
+				custom_effect_tooltip = CHI_burma_road_effects_tt
+
+			}
+			effect_tooltip = {
+				CHI = {
+					show_ideas_tooltip = CHI_burma_closed
+					}
+				}
+			}		
+		}
+	JAP_burma_road_opened = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			CHI = { is_puppet = no }
+			JAP = {
+				NOT = {
+					controls_state = 640
+				}
+			}
+			hidden_trigger = { always = no tag = JAP } 
+			hidden_trigger = { always = no tag = CHI } 
+		}
+
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+			JAP = {
+				NOT = {
+					controls_state = 640
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { tag = JAP }
+				custom_effect_tooltip = JAP_burma_road_open_effects_tt
+
+			}
+			if = {
+				limit = { tag = CHI }
+				custom_effect_tooltip = CHI_burma_road_open_effects_tt
+
+			}
+			effect_tooltip = {
+				CHI = {
+					show_ideas_tooltip = CHI_burma_open
+					}
+				}
+			}		
+		}	
+	JAP_stilwell_road_closed = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			CHI = { is_puppet = no }
+			JAP = {
+				OR = {
+					has_full_control_of_state = 640
+					has_full_control_of_state = 747
+				}
+			}
+			hidden_trigger = { always = no tag = JAP } 
+			hidden_trigger = { always = no tag = CHI } 
+		}
+
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+			JAP = {
+				OR = {
+					has_full_control_of_state = 640
+					has_full_control_of_state = 747
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { tag = JAP }
+				custom_effect_tooltip = JAP_stilwell_road_closed_effects_tt
+
+			}
+			if = {
+				limit = { tag = CHI }
+				custom_effect_tooltip = CHI_stilwell_road_closed_effects_tt
+
+			}
+			effect_tooltip = {
+				CHI = {
+					show_ideas_tooltip = CHI_stilwell_road_closed 
+					}
+				}
+			}		
+		}
+	JAP_stilwell_road_opened = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			JAP = {
+				OR = {
+					NOT = {
+						has_full_control_of_state = 640
+						has_full_control_of_state = 747					
+					}
+				}
+			}
+			hidden_trigger = {
+				always = no
+				CHI = { is_puppet = no }				
+			}
+		}
+
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+			}
+			JAP = {
+				OR = {
+					NOT = {
+						has_full_control_of_state = 640
+						has_full_control_of_state = 747					
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { tag = JAP }
+				custom_effect_tooltip = JAP_stilwell_road_effects_tt
+				} 
+			if = {
+				limit = { tag = CHI }
+				custom_effect_tooltip = CHI_stilwell_road_open_effects_tt
+
+			}
+			effect_tooltip = {
+				CHI = {
+					show_ideas_tooltip = CHI_stilwell_road
+					}
+				}				
+			}		
+		}	
+
+
+	# Chinese Offensive
+	CHI_west_henan_north_hubei_offensive = {
+		icon = GFX_decision_generic_operation
+
+		ai_will_do = {
+			base = 0.5
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		available = {
+			# CHECK
+			tag = CHI
+			command_power > 49 # FIX 
+			JAP = {
+				controls_province = 9958
+				controls_province = 4619
+			}
+		}
+
+		visible = {
+			original_tag = CHI
+			JAP = {
+				controls_province = 9958
+				controls_province = 4619
+			}
+		}
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_15
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -15
+			}
+			# CHECK 
+			CHI = {
+				set_country_flag = CHI_military_offensive_in_progress_flag # CHECK
+			}
+			custom_effect_tooltip = CHI_military_offensive_scope_tt # CHECK
+			hidden_effect = {
+				CHI_set_military_offensive_effect = yes
+				JAP = {
+					activate_mission = JAP_west_henan_north_hubei_offensive_ongoing
+				}
+			}
+			activate_mission = CHI_west_henan_north_hubei_offensive_ongoing
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+	CHI_west_henan_north_hubei_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+
+		available = { #Conditions to succeed in the offensive
+			JAP = {
+				NOT = {
+					controls_province = 9958
+					controls_province = 4619				
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 50
+
+		is_good = no
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = CHI
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 620
+        		state = 607
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#FAIL
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #SUCCESS
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+	}
+
+	JAP_west_henan_north_hubei_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+		name = CHI_west_henan_north_hubei_offensive_ongoing
+
+		available = { #Conditions to succeed in the offensive
+			custom_trigger_tooltip = { 
+				tooltip = JAP_henan_hubei_trigger_tt
+				NOT = {
+					controls_province = 9958
+					controls_province = 4619	
+				}		
+			}
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		days_mission_timeout = 50
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = JAP
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 620
+        		state = 607
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#Success
+			if = {
+				limit = {
+					JAP = {
+						controls_province = 9958
+						controls_province = 4619
+					}
+				}
+				custom_effect_tooltip = JAP_military_offensive_ongoing_holding_main_objective_tt
+			}
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #Fail
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+
+		}
+	}
+
+	# Chinese West Hunan Counteroffensive
+	CHI_west_hunan_offensive = {
+		icon = GFX_decision_generic_operation
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		available = {
+			# CHECK
+			tag = CHI
+			command_power > 49 # FIX 
+			custom_trigger_tooltip = {
+				tooltip = JAP_hunan_trigger_tt
+				JAP = {
+					controls_province = 7097
+					controls_province = 1640
+					controls_province = 9999
+				}
+			}
+		}
+
+		visible = {
+			original_tag = CHI
+			JAP = {
+				controls_province = 7097
+				controls_province = 1640
+				controls_province = 9999
+			}
+		}
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_15
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -15
+			}
+			# CHECK 
+			CHI = {
+				set_country_flag = CHI_military_offensive_in_progress_flag # CHECK
+			}
+			custom_effect_tooltip = CHI_military_offensive_scope_tt # CHECK
+			hidden_effect = {
+				CHI_set_military_offensive_effect_hunan = yes
+				JAP = {
+					activate_mission = JAP_west_hunan_offensive_ongoing
+				}
+			}
+			activate_mission = CHI_west_hunan_offensive_ongoing
+		}
+	}
+
+	CHI_west_hunan_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+
+		available = { #Conditions to succeed in the offensive
+			custom_trigger_tooltip = {
+				tooltip = JAP_hunan_trigger_tt
+				JAP = {
+					NOT = {
+						controls_province = 7097
+						controls_province = 1640
+						controls_province = 9999				
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 30
+
+		is_good = no
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = CHI
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 602
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#FAIL
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #SUCCESS
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+	}
+
+	JAP_west_hunan_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+		name = CHI_west_hunan_offensive_ongoing
+
+		available = { #Conditions to succeed in the offensive
+			custom_trigger_tooltip = { 
+				tooltip = JAP_hunan_trigger_tt
+				NOT = {
+					controls_province = 7097
+					controls_province = 1640
+					controls_province = 9999	
+				}		
+			}
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		days_mission_timeout = 50
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = JAP
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 602
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#Success
+			if = {
+				limit = {
+					JAP = {
+						controls_province = 7097
+						controls_province = 1640
+						controls_province = 9999
+					}
+				}
+				custom_effect_tooltip = JAP_military_offensive_ongoing_holding_main_objective_tt
+			}
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #Fail
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	# Chinese Second Guanxi Campaign
+	CHI_second_guanxi_offensive = {
+		icon = GFX_decision_generic_operation
+
+		ai_will_do = {
+			base = 100
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		available = {
+			# CHECK
+			tag = CHI
+			command_power > 49 # FIX 
+			custom_trigger_tooltip = {
+				tooltip = JAP_hunan_trigger_tt
+				JAP = {
+					controls_province = 7097
+					controls_province = 1640
+					controls_province = 9999
+				}
+			}
+		}
+
+		visible = {
+			original_tag = CHI
+			JAP = {
+				controls_province = 7097
+				controls_province = 1640
+				controls_province = 9999
+			}
+		}
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_15
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+				add_political_power = -15
+			}
+			# CHECK 
+			CHI = {
+				set_country_flag = CHI_military_offensive_in_progress_flag # CHECK
+			}
+			custom_effect_tooltip = CHI_military_offensive_scope_tt # CHECK
+			hidden_effect = {
+				CHI_set_military_offensive_effect_hunan = yes
+				JAP = {
+					activate_mission = JAP_second_guanxi_offensive_ongoing
+				}
+			}
+			activate_mission = CHI_second_guanxi_offensive_ongoing
+		}
+	}
+
+	CHI_second_guanxi_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+
+		available = { #Conditions to succeed in the offensive
+			custom_trigger_tooltip = {
+				tooltip = JAP_guanxi_trigger_tt
+				JAP = {
+					NOT = {
+						controls_province = 7097
+						controls_province = 1640
+						controls_province = 9999				
+					}
+				}
+			}
+		}
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 30
+
+		is_good = no
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = CHI
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 602
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#FAIL
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #SUCCESS
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+	}
+
+	JAP_second_guanxi_offensive_ongoing = {
+		icon = hol_draw_up_staff_plans
+		name = CHI_second_guanxi_offensive_ongoing
+
+		available = { #Conditions to succeed in the offensive
+			custom_trigger_tooltip = { 
+				tooltip = JAP_guanxi_trigger_tt
+				NOT = {
+					controls_province = 7097
+					controls_province = 1640
+					controls_province = 9999	
+				}		
+			}
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		days_mission_timeout = 50
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			TAG = JAP
+			CHI = {
+				has_country_flag = CHI_military_offensive_in_progress_flag
+			}	
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 602
+    		}
+    		highlight_color_while_active = 3
+		}
+
+		timeout_effect = { 	#Success
+			if = {
+				limit = {
+					JAP = {
+						controls_province = 7097
+						controls_province = 1640
+						controls_province = 9999
+					}
+				}
+				custom_effect_tooltip = JAP_military_offensive_ongoing_holding_main_objective_tt
+			}
+			add_war_support = 0.1
+			add_political_power = 50
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+		}
+
+		complete_effect = { #Fail
+			add_war_support = -0.1
+			add_political_power = -75
+			hidden_effect = {
+				CHI_clean_military_offensive_effect = yes
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 scenario_settings = {

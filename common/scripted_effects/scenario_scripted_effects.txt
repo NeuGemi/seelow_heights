@@ -146,3 +146,50 @@ GER_scenario_disloyalty_level_up = {
 		}
 	}
 }
+
+CHI_set_military_offensive_effect = {
+	set_country_flag = CHI_military_offensive_in_progress_flag
+			every_state = {
+				limit = {
+					OR = {
+						state = 620
+						state = 607
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_chinese_military_offensive
+					days = 50
+					scope = CHI
+				}
+			}	
+}
+
+CHI_set_military_offensive_effect_hunan = {
+	set_country_flag = CHI_military_offensive_in_progress_flag
+			every_state = {
+				limit = {
+					OR = {
+						state = 602
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_chinese_military_offensive
+					days = 30
+					scope = CHI
+				}
+			}	
+}
+
+CHI_clean_military_offensive_effect = {
+	clr_country_flag = CHI_military_offensive_in_progress_flag
+		every_state = {
+			limit = {
+				OR = {
+					state = 620
+					state = 607
+					state = 602
+				}
+			}
+		remove_dynamic_modifier = { modifier = CHI_chinese_military_offensive }
+	}
+}

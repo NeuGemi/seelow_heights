@@ -553,6 +553,8 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
+
+
 	oob = "JAP_1945_1_12"
 
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
@@ -587,6 +589,7 @@ add_to_faction = LAO
 
 
 	add_ideas = {
+		tot_economic_mobilisation
 		scraping_the_barrel
 		JAP_shattered_army
 		JAP_economic_collapse

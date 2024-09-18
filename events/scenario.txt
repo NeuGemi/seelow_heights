@@ -1235,6 +1235,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
+				TAG = JAP
 			}
 		}
 	}
@@ -1373,6 +1374,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
+				TAG = JAP
 			}
 		}
 	}
@@ -2899,6 +2901,141 @@ country_event = {
 			}
 			FRA = {
 				give_military_access = SOV
+			}
+		}
+	}
+}
+
+# Burma Road Opened
+country_event = {
+	id = maintenance.13
+
+	fire_only_once = no
+
+	trigger = {
+		JAP = {
+			NOT = {
+				controls_state = 640
+			}
+		}
+		CHI = {
+			NOT = {
+				has_idea = CHI_burma_open
+			}
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				swap_ideas = {
+					remove_idea = CHI_burma_closed
+					add_idea = CHI_burma_open
+				}
+			}
+		}
+	}
+}
+
+# Burma Road Closed
+country_event = {
+	id = maintenance.14
+
+	fire_only_once = no
+
+	trigger = {
+		JAP = {
+			controls_state = 640
+			controls_state = 288
+		}
+		CHI = {
+			NOT = {
+				has_idea = CHI_burma_closed
+			}
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				swap_ideas = {
+					remove_idea = CHI_burma_open
+					add_idea = CHI_burma_closed
+				}
+			}
+		}
+	}
+}
+
+# Stilwell Road Opened
+country_event = {
+	id = maintenance.15
+
+	fire_only_once = no
+
+	trigger = {
+		JAP = {
+			OR = {
+				NOT = {
+					has_full_control_of_state = 640
+					has_full_control_of_state = 747					
+				}
+			}
+		}
+		CHI = {
+			NOT = {
+				has_idea = CHI_stilwell_road
+			}
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				swap_ideas = {
+					remove_idea = CHI_stilwell_road_closed
+					add_idea = CHI_stilwell_road
+				}
+			}
+		}
+	}
+}
+
+# Stilwell Road Closed
+country_event = {
+	id = maintenance.16
+
+	fire_only_once = no
+
+	trigger = {
+		JAP = {
+			OR = {
+				has_full_control_of_state = 640
+				has_full_control_of_state = 747
+			}
+		}
+		CHI = {
+			NOT = {
+				has_idea = CHI_stilwell_road_closed
+			}
+		}
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				swap_ideas = {
+					remove_idea = CHI_stilwell_road
+					add_idea = CHI_stilwell_road_closed
+				}
 			}
 		}
 	}
