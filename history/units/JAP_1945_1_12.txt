@@ -293,32 +293,24 @@ units = {
 		location = 10124 #Naha
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
 	}
 
 	### Konkyochi Shiatagun ###
@@ -1256,36 +1248,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 12483
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 13143
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 7502
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
 		location = 7502
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
@@ -1297,16 +1259,6 @@ units = {
 			name_order = 
 		}
 		location = 13143
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 10377
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1476,16 +1428,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 1597
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.50
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
 		location = 11926
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
@@ -1547,16 +1489,6 @@ units = {
 			name_order = 
 		}
 		location = 10377
-		division_template = "Chugata Hohei Shidan" 
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.45
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 7152
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.45
@@ -1997,6 +1929,15 @@ units = {
 		division_template = "Chugata Hohei Shidan" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.40
+	}
+	division = { # "1 'Gyoku' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 13025
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
 	}	
 }
 

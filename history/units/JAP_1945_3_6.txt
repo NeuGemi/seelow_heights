@@ -293,32 +293,28 @@ units = {
 		location = 10124 #Naha
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
+		start_equipment_factor = 0.4
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
+		start_equipment_factor = 0.4
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
+		start_equipment_factor = 0.4
 	}
 	division = {
 		name = "Okinawa Kichi Shubitai"
 		location = 10124 #Naha
 		division_template = "Chugata Hohei Shidan"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.25
-
+		start_equipment_factor = 0.4
 	}
 
 	### Konkyochi Shiatagun ###

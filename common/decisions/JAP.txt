@@ -766,9 +766,9 @@ foreign_politics = {
 			}
 		}
 
-		modifier = {
-			forced_surrender_limit = -1.0
-		}
+#		modifier = {
+#			forced_surrender_limit = -1.0
+#		}
 
 		remove_effect = {
 
@@ -778,6 +778,9 @@ foreign_politics = {
 			has_war = no
 		}
 		complete_effect = {
+			JAP = {
+				country_event = { id = scenario.25 }		
+			}
 			hidden_effect = {
 				clr_global_flag = JAP_nuke_1
 				clr_global_flag = JAP_nuke_2

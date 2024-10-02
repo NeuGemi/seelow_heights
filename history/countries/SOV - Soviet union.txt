@@ -1285,6 +1285,12 @@ if = {
 
 		set_cosmetic_tag = SOV_scenario
 
+		set_rule = { 
+		 desc = desc_key # a description can be given to rule (you can get original tooltip using DESC key) 
+		 can_not_declare_war = yes 
+		}
+
+
 	set_autonomy = {
 		target = ROM
 		autonomous_state = autonomy_puppet

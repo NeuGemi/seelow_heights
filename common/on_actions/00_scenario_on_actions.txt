@@ -100,9 +100,6 @@ on_actions = {
 					country_event = { id = offensives.4 days = 94 }
 				}
 			}
-			RAJ = {
-				add_timed_idea = { idea = RAJ_burmese_campaign days = 117 }
-			}
 		}
 	}
 }

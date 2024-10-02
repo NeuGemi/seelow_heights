@@ -870,123 +870,238 @@ GER_oberkommando = {
 
 #NOTE: Revisit timed mission logic
 JAP_hold_territory = {
-	JAP_hold_burma = {
+	JAP_operation_ten_go = {
+		icon = GFX_decision_generic_army_support 
 
-		icon = generic_civil_support
+		available = {
+			JAP = {
+				has_war_with = USA
+			}
+			526 = {	
+				NOT = { is_fully_controlled_by = JAP }
+			}
+		}
 
 		allowed = {
 			original_tag = JAP
 		}
 
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 288 }
+		visible = {
+			original_tag = JAP
 		}
-
-		days_mission_timeout = 95
 
 		fire_only_once = yes
 
-		is_good = yes
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25
 
-		activation = {
-			has_war = yes
-			has_civil_war = no
-			288 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		complete_effect = {
+			random_list = {
+				60 = {
+					JAP = {
+						country_event = { id = scenario.20 days = 3 } 
+					}						
+				}
+				30 = {
+					random_other_country = {
+						limit = {
+							original_tag = USA
 						}
-						OWNER = { tag = ROOT }
+						hidden_effect = {
+							JAP = {
+								country_event = { id = scenario.21 days = 3 } 
+							}						
+						}
+						destroy_ships = {
+							type = ship_hull_carrier
+							count = 1
+						}
+						destroy_ships = {
+							type = ship_hull_heavy
+							count = 1
+						}
 					}
-					NOT = { is_fully_controlled_by = ROOT }
+				}
+				10 = {
+					random_other_country = {
+						limit = {
+							original_tag = USA
+						}
+						hidden_effect = {
+							JAP = {
+								country_event = { id = scenario.21 days = 3 } 
+							}						
+						}
+						destroy_ships = {
+							type = ship_hull_carrier
+							count = 2
+						}
+						destroy_ships = {
+							type = ship_hull_heavy
+							count = 1
+						}
+					}
+				}
+			}
+		}		
+	}
+	JAP_operation_sho_go = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			JAP = {
+				has_war_with = USA
+				526 = {
+					NOT = { is_fully_controlled_by = JAP }
 				}
 			}
 		}
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.03
-			add_war_support = 0.03
-		}
-		#Fail
-		complete_effect = {
-			}
-		}
-	JAP_hold_phi = {
-
-		icon = generic_civil_support
-
 		allowed = {
 			original_tag = JAP
 		}
 
-		#Fail trigger
-		available = {
-			NOT = { 
-				controls_state = 627 
-				controls_state = 623 
-			}
+		visible = {
+			original_tag = JAP
 		}
-
-		days_mission_timeout = 90
 
 		fire_only_once = yes
 
-		is_good = yes
-
-		activation = {
-			has_war = yes
-			has_civil_war = no
+		custom_cost_trigger = {
+			command_power > 24
 		}
+		custom_cost_text = decision_cost_CP_25
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			#country_event = wtt_soviet_hold_city.1
-		}
-		#Fail
+
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
-		}
+			hidden_effect = {
+				add_command_power = -25
+			}
+			if = {
+				limit = { has_idea = JAP_sho_go_1 }
+				swap_ideas = {
+    				remove_idea = JAP_sho_go_1
+    				add_idea = JAP_sho_go_2
+				}
+			}
+			else = {
+				add_ideas = JAP_sho_go_2
+			}
+		}		
 	}
-		JAP_hold_okinawa = {
+	JAP_operation_ketsu_go = {
+		icon = GFX_decision_generic_army_support 
 
-		icon = generic_civil_support
+		available = {
+			JAP = {
+				has_war_with = USA
+			}
+			has_global_flag = JAP_operation_downfall_underway
+		}
 
 		allowed = {
 			original_tag = JAP
 		}
 
-		#Fail trigger
-		available = {
-			NOT = { controls_province = 11932 controls_province = 10124 controls_province = 7115 }
+		visible = {
+			original_tag = JAP
 		}
-
-		days_mission_timeout = 35
 
 		fire_only_once = yes
 
-		is_good = yes
+		days_remove = 30
 
-		activation = {
-			has_war = yes
-			has_civil_war = no
+		custom_cost_trigger = {
+			command_power > 24
 		}
+		custom_cost_text = decision_cost_CP_25
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			#country_event = wtt_soviet_hold_city.1
-		}
-		#Fail
 		complete_effect = {
-			#country_event = wtt_soviet_hold_city.2
+			hidden_effect = {
+				add_command_power = -25
+			}
 		}
+
+		modifier = {
+			army_core_defence_factor = 0.1
+			army_morale_factor = 0.07
+		}	
+	}
+	JAP_the_glorious_death_of_one_million = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			JAP = {
+				has_war_with = USA
+			}
+			has_global_flag = JAP_operation_downfall_underway
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		modifier = {
+			army_breakthrough_against_major_factor = -0.2
+			org_loss_when_moving = 0.1			
+			dig_in_speed_factor = 0.15
+			pocket_penalty = -0.15
+			weekly_manpower = 12500
+		}	
+	}
+	JAP_evacuate_the_ighq_underground = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			JAP = {
+				has_war_with = USA
+			}
+			has_global_flag = JAP_operation_downfall_underway
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			original_tag = JAP
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_ideas = JAP_relocated_government
+			custom_effect_tooltip = JAP_ighq_underground_tt
+		}	
 	}
 }
 
@@ -1028,12 +1143,10 @@ JAP_allied_chinese_support = {
 			if = {
 				limit = { tag = JAP }
 				custom_effect_tooltip = JAP_burma_road_effects_tt
-
 			}
 			if = {
 				limit = { tag = CHI }
 				custom_effect_tooltip = CHI_burma_road_effects_tt
-
 			}
 			effect_tooltip = {
 				CHI = {
@@ -1081,12 +1194,10 @@ JAP_allied_chinese_support = {
 			if = {
 				limit = { tag = JAP }
 				custom_effect_tooltip = JAP_burma_road_open_effects_tt
-
 			}
 			if = {
 				limit = { tag = CHI }
 				custom_effect_tooltip = CHI_burma_road_open_effects_tt
-
 			}
 			effect_tooltip = {
 				CHI = {
@@ -1209,8 +1320,335 @@ JAP_allied_chinese_support = {
 				}				
 			}		
 		}	
+}
 
+JAP_asiatic_land_war = {
+	JAP_hold_burma = {
 
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_province = 1330 }
+		}
+
+		days_mission_timeout = 95
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			OR = {  
+				has_country_flag = JAP_hold_mandalay_flag
+				RAJ = {
+					OR = {
+						controls_province = 10182
+						controls_province = 12284
+						controls_province = 10344
+						controls_province = 12256
+						controls_province = 4654
+					}
+				}
+			}
+			has_war = yes
+			has_civil_war = no
+			288 = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+			}
+		}
+	}
+	JAP_hold_mandalay = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_province = 1492 }
+		}
+
+		days_mission_timeout = 105
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			640 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+				set_country_flag = JAP_hold_mandalay_flag
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+				set_country_flag = JAP_hold_mandalay_flag
+			}
+		}
+	}
+	JAP_hold_phi = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { 
+				controls_state = 627 
+				controls_state = 623 
+			}
+		}
+
+		days_mission_timeout = 90
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+			}
+		}
+	}
+	JAP_hold_okinawa = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { 
+				controls_province = 11932 
+				controls_province = 10124 
+				controls_province = 7115 
+			}
+		}
+
+		days_mission_timeout = 35
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			526 = {
+				NOT = { is_fully_controlled_by = JAP }
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+				JAP_clean_military_offensive_effect = yes
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+				JAP_clean_military_offensive_effect = yes
+			}
+		}
+	}
+	JAP_allied_invasion_of_borneo = {
+		icon = hol_draw_up_staff_plans
+
+		available = { #Conditions to succeed in the offensive
+			NOT = {
+				controls_state = 333
+				controls_state = 334
+			}
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		fire_only_once = yes
+
+		days_mission_timeout = 95
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			OR = {
+				333 = {
+					NOT = { is_fully_controlled_by = JAP }
+				}
+				334 = {
+					NOT = { is_fully_controlled_by = JAP }
+				}
+			}
+		}
+
+		visible = {
+			TAG = JAP
+			has_war = yes
+		}
+
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 333
+        		state = 334
+    		}
+    		highlight_color_while_active = 2
+		}
+
+		timeout_effect = { 	#Success
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt		
+			add_war_support = 0.05
+			add_stability = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+			}
+		}
+
+		complete_effect = { #Fail
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.1
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+			}
+		}
+	}
+	JAP_hold_tokyo = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 282 }
+		}
+
+		days_mission_timeout = 95
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			has_global_flag = JAP_operation_downfall_underway
+			282 = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+				set_country_flag = JAP_hold_mandalay_flag
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+				set_country_flag = JAP_hold_mandalay_flag
+			}
+		}
+	}
 	# Chinese Offensive
 	CHI_west_henan_north_hubei_offensive = {
 		icon = GFX_decision_generic_operation
@@ -1378,6 +1816,7 @@ JAP_allied_chinese_support = {
 		}
 
 		timeout_effect = { 	#Success
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
 			if = {
 				limit = {
 					JAP = {
@@ -1391,16 +1830,19 @@ JAP_allied_chinese_support = {
 			add_political_power = 50
 			hidden_effect = {
 				CHI_clean_military_offensive_effect = yes
+				JAP_scenario_setting_sun_level_down = yes
 			}
+					
 		}
 
 		complete_effect = { #Fail
-			add_war_support = -0.1
-			add_political_power = -75
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_political_power = -25
 			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
 				CHI_clean_military_offensive_effect = yes
 			}
-
 		}
 	}
 
@@ -1409,7 +1851,7 @@ JAP_allied_chinese_support = {
 		icon = GFX_decision_generic_operation
 
 		ai_will_do = {
-			base = 100
+			base = 1000
 		}
 
 		allowed = {
@@ -1575,6 +2017,7 @@ JAP_allied_chinese_support = {
 		}
 
 		timeout_effect = { 	#Success
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
 			if = {
 				limit = {
 					JAP = {
@@ -1589,31 +2032,20 @@ JAP_allied_chinese_support = {
 			add_political_power = 50
 			hidden_effect = {
 				CHI_clean_military_offensive_effect = yes
+				JAP_scenario_setting_sun_level_down = yes
 			}
 		}
 
 		complete_effect = { #Fail
-			add_war_support = -0.1
-			add_political_power = -75
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_political_power = -25
 			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
 				CHI_clean_military_offensive_effect = yes
 			}
-
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 	# Chinese Second Guanxi Campaign
 	CHI_second_guanxi_offensive = {
 		icon = GFX_decision_generic_operation
@@ -1633,11 +2065,9 @@ JAP_allied_chinese_support = {
 			tag = CHI
 			command_power > 49 # FIX 
 			custom_trigger_tooltip = {
-				tooltip = JAP_hunan_trigger_tt
+				tooltip = JAP_guanxi_trigger_tt
 				JAP = {
-					controls_province = 7097
-					controls_province = 1640
-					controls_province = 9999
+					controls_province = 10404
 				}
 			}
 		}
@@ -1645,9 +2075,7 @@ JAP_allied_chinese_support = {
 		visible = {
 			original_tag = CHI
 			JAP = {
-				controls_province = 7097
-				controls_province = 1640
-				controls_province = 9999
+				controls_province = 10404
 			}
 		}
 
@@ -1669,7 +2097,7 @@ JAP_allied_chinese_support = {
 			}
 			custom_effect_tooltip = CHI_military_offensive_scope_tt # CHECK
 			hidden_effect = {
-				CHI_set_military_offensive_effect_hunan = yes
+				CHI_set_military_offensive_effect_guanxi = yes
 				JAP = {
 					activate_mission = JAP_second_guanxi_offensive_ongoing
 				}
@@ -1686,9 +2114,7 @@ JAP_allied_chinese_support = {
 				tooltip = JAP_guanxi_trigger_tt
 				JAP = {
 					NOT = {
-						controls_province = 7097
-						controls_province = 1640
-						controls_province = 9999				
+						controls_province = 10404		
 					}
 				}
 			}
@@ -1718,7 +2144,7 @@ JAP_allied_chinese_support = {
 
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 602
+        		state = 599
     		}
     		highlight_color_while_active = 3
 		}
@@ -1748,9 +2174,7 @@ JAP_allied_chinese_support = {
 			custom_trigger_tooltip = { 
 				tooltip = JAP_guanxi_trigger_tt
 				NOT = {
-					controls_province = 7097
-					controls_province = 1640
-					controls_province = 9999	
+					controls_province = 10404
 				}		
 			}
 		}
@@ -1779,18 +2203,17 @@ JAP_allied_chinese_support = {
 
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 602
+        		state = 599
     		}
     		highlight_color_while_active = 3
 		}
 
 		timeout_effect = { 	#Success
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
 			if = {
 				limit = {
 					JAP = {
-						controls_province = 7097
-						controls_province = 1640
-						controls_province = 9999
+						controls_province = 10404
 					}
 				}
 				custom_effect_tooltip = JAP_military_offensive_ongoing_holding_main_objective_tt
@@ -1799,37 +2222,20 @@ JAP_allied_chinese_support = {
 			add_political_power = 50
 			hidden_effect = {
 				CHI_clean_military_offensive_effect = yes
+				JAP_scenario_setting_sun_level_down = yes
 			}
 		}
 
 		complete_effect = { #Fail
-			add_war_support = -0.1
-			add_political_power = -75
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_political_power = -25
 			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
 				CHI_clean_military_offensive_effect = yes
 			}
-
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 scenario_settings = {
@@ -1955,13 +2361,83 @@ scenario_settings = {
 			remove_ideas = JAP_economic_collapse
 		}		
 	}	
+	JAP_scenario_settings_scripted_invasions = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			tag = JAP
+			NOT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			tag = JAP
+		}
+
+		visible = {
+			tag = JAP
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = JAP_scripted_invasions_tt
+			set_global_flag = scenario_scripted_invasions_disabled
+		}		
+	}	
+	JAP_scenario_surrender_japan = {
+
+		available = {
+			tag = JAP
+			NOT = {
+				is_ai = yes
+			}
+		}
+
+		allowed = {
+			tag = JAP
+		}
+
+		visible = {
+			always = no
+		}
+
+		cost = 0
+
+		days_remove = -1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				NOT = {
+					controls_state = 525
+					controls_state = 527
+				}
+				factor = 10
+			}
+		}
+
+		modifier = {
+			forced_surrender_limit = -1.0
+		}
+
+		remove_effect = {
+
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+	}
 	GER_scripted_peace = {
 		icon = GFX_decision_generic_army_support 
 
 		available = {
 			NOT = {
 				is_ai = yes
-				has_war = yes
+				GER = {
+					has_war = yes
+				}		
 			}
 		}
 
@@ -2048,19 +2524,36 @@ USA_scenario_war_department = {
 SOV_stavka = {
 	SOV_invasion_of_manchuria = {
 	    activation = {
-	    	NOT = {
-	    		has_war_with = GER
+	    	SOV = {
+	    		NOT = {
+	    			has_global_flag = SOV_manchurian_war_flag
+	    			has_war_with = GER
+	    		}	    	
 	    	}
 	    }
 	    available = {
-	    	has_war_with = JAP
+	    	SOV = {
+	    		has_war_with = JAP
+	    	}
+	    }
+	    visible = {
+			OR = {
+				original_tag = JAP
+				original_tag = SOV
+			}	    
 	    }
 	    icon = mission_icon     # For GFX_decision_mission_icon
 	    is_good = no
 	    war_with_on_timeout = JAP
-	    days_mission_timeout = 100
+	    days_mission_timeout = 60
 	    selectable_mission = no
 	    timeout_effect = {
+	    SOV = {
+	    set_global_flag = SOV_manchurian_war_flag
+		set_rule = { 
+		 desc = desc_key
+		 can_not_declare_war = no 
+		}
 	    	add_timed_idea = {
 	    		idea = SOV_manchurian_strategic_offensive_operations
 	    		days = 14
@@ -2076,7 +2569,9 @@ SOV_stavka = {
 	        declare_war_on = {
 	            target = MAN
 	            type = annex_everything
-	        }
+	        }	    
+	    }
+
 	    }
 	}	
 }

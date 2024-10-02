@@ -48,6 +48,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_mod_volkssturm.png"
 	}
 	SpriteType = {
+		name = "GFX_report_event_mod_borneo_ast"
+		texturefile = "gfx/event_pictures/report_event_mod_borneo_ast.png"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mod_operation_tengo"
+		texturefile = "gfx/event_pictures/report_event_mod_operation_tengo.png"
+	}
+	SpriteType = {
+		name = "GFX_news_event_battleofokinawa"
+		texturefile = "gfx/event_pictures/news_event_battleofokinawa.png"
+	}
+	SpriteType = {
 		name = "GFX_news_event_mod_iwojima"
 		texturefile = "gfx/event_pictures/news_event_mod_iwojima.png"
 	}

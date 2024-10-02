@@ -855,6 +855,304 @@ country_event = {
 	}
 }
 
+
+### Some Japanese events ###
+
+# Victory or Death
+country_event = {
+	id = scenario.19
+	title = scenario.19.t
+	desc = scenario.19.d	
+	#picture = GFX_report_event_mod_courland_pocket
+
+	is_triggered_only = yes
+
+#	trigger = {
+#		TAG = JAP
+#		526 = {
+#			is_controlled_by = JAP
+#			NOT = { is_fully_controlled_by = JAP }
+#		}
+#	}
+#	mean_time_to_happen = { days = 5 }
+
+	fire_only_once = yes
+
+	option = { # The Americans cannot be allowed to win!
+		name = scenario.19.a
+		add_timed_idea = {
+			idea = JAP_okinawa_victory_or_death
+			days = 45
+		}
+	}
+	option = { #Unleash the Kamikaze
+		name = scenario.19.b
+		JAP = {
+			country_event = { id = scenario.22 days = 3 } 
+		}	
+	}
+}
+
+# Operation Ten-Go Unsuccessful
+country_event = {
+	id = scenario.20
+	title = scenario.20.t
+	desc = scenario.20.d	
+	picture = GFX_report_event_mod_operation_tengo
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			transfer_ship = {
+			    prefer_name = "Yamato"
+			    type = battleship
+			    target = PAN
+			    exclude_refitting = no
+			}		
+		}
+	}
+
+	option = {
+		name = scenario.20.a
+		custom_effect_tooltip = JAP_operation_ten_go_tt
+	}
+}
+
+# Operation Ten-Go Successful
+country_event = {
+	id = scenario.21
+	title = scenario.21.t
+	desc = scenario.21.d	
+	picture = GFX_report_event_mod_operation_tengo
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			transfer_ship = {
+			    prefer_name = "Yamato"
+			    type = battleship
+			    target = PAN
+			    exclude_refitting = no
+			}		
+		}
+	}
+
+
+	option = {
+		name = scenario.20.a
+		custom_effect_tooltip = JAP_operation_ten_go_tt
+	}
+}
+
+
+# Typhoon of Steel
+country_event = {
+	id = scenario.22
+	title = scenario.22.t
+	desc = scenario.22.d	
+	#picture = GFX_report_event_mod_courland_pocket
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = scenario.22.a
+		USA = {
+			add_war_support = -0.1
+			add_timed_idea = {
+				idea = USA_battle_of_okinawa_idea
+				days = 30
+			}
+		}
+	}
+}
+
+# Japanese coup d'état in French Indochina
+country_event = {
+	id = scenario.23
+	title = scenario.23.t
+	desc = scenario.23.d	
+	picture = GFX_report_event_mod_courland_pocket
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # Yes
+		name = scenario.23.a
+		CAM = {
+			transfer_state = 741
+		}
+		VIN = {
+			transfer_state = 671
+			transfer_state = 286
+		}
+		LAO = {
+			transfer_state = 670
+		}
+	}
+
+	option = { # No
+		name = scenario.23.a
+	}
+}
+
+# Allies land at Borneo
+country_event = {
+	id = scenario.24
+	title = scenario.24.t
+	desc = scenario.24.d	
+	picture = GFX_report_event_mod_borneo_ast
+
+	immediate = {
+		set_global_flag = scenario_borneo
+
+		hidden_effect = {
+			AST = {
+				if = {
+					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					load_oob = AST_borneo
+					add_timed_idea = {
+						days = 2
+						idea = USA_anti_cheese_measures
+					}
+				}	
+			}	
+		}
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = JAP
+		date > 1945.4.29
+		date < 1945.5.15 #To not fire after the Jan 12 scenario
+		NOT = { 
+			INS = {
+				controls_state = 334
+				is_ai = no
+			}
+		}
+		NOT = { has_global_flag = scenario_borneo }
+	}
+
+	option = {
+		name = scenario.24.a
+	}
+}
+
+# Nukes/Home Islands happened - Surrender?
+country_event = {
+	id = scenario.25
+	title = scenario.25.t
+	desc = scenario.25.d	
+	picture = GFX_report_event_japanese_reply
+
+	immediate = {
+
+	}
+	
+	fire_only_once = yes
+	#is_triggered_only = yes
+	
+	trigger = {
+		TAG = JAP
+		OR = {
+			has_global_flag = JAP_nuke_1
+			has_global_flag = JAP_nuke_2					
+			surrender_progress > 0.1
+		}
+	}
+
+	option = {
+		name = scenario.25.a
+		JAP = {
+			custom_effect_tooltip = JAP_scenario_surrender_japan_tt		
+			hidden_effect = {
+				activate_decision = JAP_scenario_surrender_japan
+			}
+		}
+	}
+	option = {
+		name = scenario.25.b
+		custom_effect_tooltip = JAP_kyujo_incident_coup_tt
+		hidden_effect = {
+			JAP = {
+				country_event = { id = scenario.26 }		
+			}			
+		}
+	}
+}
+
+# Kyujo Incident
+country_event = {
+	id = scenario.26
+	title = scenario.26.t
+	desc = scenario.26.d	
+	picture = GFX_report_event_japanese_soldiers_02
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = scenarionews.16 days = 3 }
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = scenario.26.a
+		custom_effect_tooltip = JAP_emperor_hirohito_kyujo_incident
+		add_stability = -0.05
+		add_war_support = 0.15
+		add_ideas = JAP_militarist_government
+	}
+}
+
+# Japanese event, Operation Downfall
+country_event = {
+	id = scenario.27
+	title = scenario.27.t
+	desc = scenario.27.d	
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = JAP_operation_downfall_underway
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = scenario.27.a
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment_3
+    		amount = 25000
+    		producer = JAP
+    	} 
+		hidden_effect = {
+			282 = {
+				create_unit = {
+					division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 10
+				}
+			}
+		}		
+	}
+}
+
 # Fall of Vienna
 news_event = {
 	id = scenarionews.1
@@ -1332,6 +1630,12 @@ news_event = {
 
 	option = {
 		name = scenarionews.11.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = USA
+			}
+		}
 	}
 	option = {
 		name = scenarionews.11.b
@@ -1401,6 +1705,18 @@ news_event = {
 
 	immediate = {
 		set_global_flag = scenario_iwo_jima
+		hidden_effect = {
+			USA = {
+				if = {
+					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					load_oob = USA_iwo_jima
+					add_timed_idea = {
+						days = 2
+						idea = USA_anti_cheese_measures
+					}
+				}	
+			}		
+		}
 	}
 	
 	major = yes
@@ -1411,9 +1727,6 @@ news_event = {
 		NOT = { 
 			USA = {
 				controls_state = 645
-				is_ai = no
-			}
-			JAP = {
 				is_ai = no
 			}
 		}
@@ -1448,6 +1761,136 @@ news_event = {
 		name = scenarionews.14.b
 		trigger = {
 			tag = GER
+		}
+	}
+}
+
+# Battle of Okinawa
+news_event = {
+	id = scenarionews.15
+	title = scenarionews.15.t
+	desc = scenarionews.15.d	
+	picture = GFX_news_event_battleofokinawa
+
+	immediate = {
+		set_global_flag = scenario_okinawa
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = scenario.19 days = 1 } 	
+				JAP_set_military_offensive_effect = yes
+			}	
+			USA = {
+				if = {
+					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					load_oob = USA_okinawa
+					add_timed_idea = {
+						days = 2
+						idea = USA_anti_cheese_measures
+					}
+				}	
+			}	
+		}
+	}
+	
+	major = yes
+	
+	trigger = {
+		date > 1945.3.30
+		date < 1945.4.5 #To not fire after the Jan 12 scenario
+		NOT = { 
+			USA = {
+				controls_state = 526
+				is_ai = no
+			}
+		}
+		NOT = { has_global_flag = scenario_okinawa }
+	}
+
+	option = {
+		name = scenarionews.15.a
+	}
+}
+
+# Kyujo Incident
+news_event = {
+	id = scenarionews.16
+	title = scenarionews.16.t
+	desc = scenarionews.16.d	
+	picture = GFX_news_event_japanese_army_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = scenarionews.16.a
+		trigger = { 
+			TAG = JAP 
+		}	
+	}
+	option = {
+		name = scenarionews.16.b
+		trigger = { 
+			NOT = {
+				TAG = JAP 
+			}
+		}		
+	}
+}
+
+# Operation Downfall: Massive Allied Invasion of Japan
+news_event = {
+	id = scenarionews.17
+	title = scenarionews.17.t
+	desc = scenarionews.17.d	
+	picture = GFX_news_event_usa_japan_at_war
+
+	immediate = {
+		hidden_effect = {
+		set_global_flag = scenario_operation_downfall
+			JAP = {
+				country_event = { id = scenario.27 days = 3 }
+			}
+			USA = {
+				if = {
+					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					load_oob = USA_operation_downfall
+					add_timed_idea = {
+						days = 7
+						idea = USA_anti_cheese_measures
+					}
+				}	
+			}		
+		}
+	}
+	
+	major = yes
+	
+	trigger = {
+		date > 1945.10.1
+		OR = {
+			has_global_flag = JAP_nuke_1
+			has_global_flag = JAP_nuke_2	
+		}
+		USA = {
+			has_war_with = JAP
+		}
+		NOT = { has_global_flag = scenario_operation_downfall }
+	}
+
+	option = {
+		name = scenarionews.17.a
+		trigger = { 
+			TAG = JAP 
+		}
+	}
+	option = {
+		name = scenarionews.17.b
+		trigger = { 
+			NOT = {
+				TAG = JAP 
+			}
 		}
 	}
 }
@@ -3041,6 +3484,33 @@ country_event = {
 	}
 }
 
+#Remove allied terrorbombing
+country_event = {
+	id = maintenance.17
+
+	fire_only_once = yes
+
+	trigger = {
+		JAP = {
+			controls_state = 526
+			controls_state = 645
+			controls_state = 524
+			controls_state = 623
+			controls_state = 648
+			controls_state = 605
+		}
+	}
+
+	hidden = yes
+
+
+    option = {
+    	GER = {
+    		remove_ideas = GER_economic_collapse
+    	}
+    }
+}
+
 ##   #	#	  #	 #   #   #####
 # #	 #	#     #	 #  #	 #
 #  # #	#	  #  # #	 ###
@@ -3069,6 +3539,7 @@ country_event = {
 
 	immediate = {
 		news_event = { id = nuke_dropped.2 }
+		set_global_flag = JAP_nuke_1	
 	}
 
     option = {
@@ -3106,6 +3577,7 @@ country_event = {
 	hidden = yes
 
 	immediate = {
+		set_global_flag = JAP_nuke_2
 		news_event = { id = nuke_dropped.3 }
 	}
 

@@ -729,6 +729,93 @@ ideas = {
         } 
 
     ### JAP ###
+    JAP_shattered_army_4 = {
+
+        allowed = {
+            always = no
+        }
+
+        picture = warrior_traditions_idea
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        removal_cost = -1
+
+        name = JAP_shattered_army
+
+        modifier = {
+            land_reinforce_rate = -0.01
+            army_morale_factor = -0.25
+            army_org_regain = -0.28
+           #army_attack_factor = -0.25
+            army_org_factor = -0.12
+            attrition = 0.25
+            }
+        } 
+    JAP_shattered_army_3 = {
+
+        allowed = {
+            always = no
+        }
+
+        picture = warrior_traditions_idea
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        removal_cost = -1
+
+        name = JAP_shattered_army
+
+        modifier = {
+            land_reinforce_rate = -0.01
+            army_morale_factor = -0.19
+            army_org_regain = -0.21
+           #army_attack_factor = -0.25
+            army_org_factor = -0.09
+            attrition = 0.19
+            }
+        } 
+    JAP_shattered_army_2 = {
+
+        allowed = {
+            always = no
+        }
+
+        picture = warrior_traditions_idea
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        available = {
+            has_war = yes
+        }
+
+        removal_cost = -1
+
+        name = JAP_shattered_army
+
+        modifier = {
+            land_reinforce_rate = -0.01
+            army_morale_factor = -0.13
+            army_org_regain = -0.14
+           #army_attack_factor = -0.25
+            army_org_factor = -0.06
+            attrition = 0.13
+            }
+        } 
     JAP_shattered_army = {
 
         allowed = {
@@ -748,14 +835,14 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            land_reinforce_rate = -0.01
-            army_morale_factor -0.25
-            army_org_regain = -0.28
+            army_morale_factor = -0.07
+            army_org_regain = -0.07
            #army_attack_factor = -0.25
-            army_org_factor = -0.12
-            attrition = 0.25
+            army_org_factor = -0.03
+            attrition = 0.07
             }
         } 
+
      JAP_economic_collapse = {
 
         allowed = { 
@@ -779,8 +866,140 @@ ideas = {
             production_speed_buildings_factor = -0.47
             consumer_goods_factor = 0.15
             industrial_capacity_factory = -0.45
+            custom_modifier_tooltip = JAP_economic_collapse_tt
             }       
         }    
+    JAP_sho_go_1 = {
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            OR = {
+                controls_state = 627 
+                controls_state = 623              
+            }
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = USA
+            defense_bonus_against = 0.05
+        }    
+    }
+    JAP_sho_go_2 = {
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            OR = {
+                controls_province = 11932
+                controls_province = 10124
+                controls_province = 1123
+                controls_province = 7115  
+            }
+        }
+
+        removal_cost = -1
+
+        modifier = {          
+            pocket_penalty = -0.2
+        }
+
+        targeted_modifier = {
+            tag = USA
+            defense_bonus_against = 0.05 #Not higher because of JAP_okinawa_victory_or_death
+        }    
+    }
+    JAP_okinawa_victory_or_death = {
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = USA
+            defense_bonus_against = 0.1
+        }    
+        targeted_modifier = {
+            tag = CHI
+            defense_bonus_against = -0.12
+        }  
+    }
+    JAP_relocated_government = {
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            JAP = {
+                controls_state = 535
+            }
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            surrender_limit = 0.15
+            stability_weekly = -0.001
+            political_power_gain = -0.25
+        }
+    }
+    JAP_militarist_government = {
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {    
+            surrender_limit = 0.15
+            weekly_casualties_war_support = 0.001
+            industrial_capacity_factory = 0.05
+            consumer_goods_factor = 0.05 
+        }
+    }
 
     # SOV
      SOV_berlin_strategic_offensive_operation = {
@@ -926,6 +1145,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
+                #custom_modifier_tooltip = RAJ_burma_campaign_tt
                 army_speed_factor = 0.25
                 army_org = 10
                 ai_focus_aggressive_factor = 0.75
@@ -934,6 +1154,32 @@ ideas = {
             targeted_modifier = {
                 tag = JAP
                 attack_bonus_against = 0.30    
+            }         
+        } 
+        RAJ_burmese_campaign_2 = {
+            allowed = { 
+                always = no 
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            name = RAJ_burmese_campaign
+
+            removal_cost = -1
+
+            modifier = {
+                attrition = -0.50
+                supply_consumption_factor = -0.75
+                army_org = 5
+                ai_focus_aggressive_factor = 1.0
+            }
+
+            targeted_modifier = {
+                tag = JAP
+                attack_bonus_against = 0.10    
             }         
         } 
         the_united_nations = {
@@ -1049,7 +1295,28 @@ ideas = {
             ai_focus_aggressive_factor = 1.0
             }         
         }
+    USA_battle_of_okinawa_idea = {
 
+        allowed = { 
+            always = no 
+            tag = USA
+        }
+        picture = generic_manpower_bonus
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+        }
+
+        removal_cost = -1
+        
+        modifier = {
+            army_morale_factor = -0.12
+            land_night_attack = -0.1
+        } 
+    }
         # CHI
     CHI_endsiegmod = {
 
@@ -1200,6 +1467,31 @@ ideas = {
                 army_speed_factor = -0.5
                 army_attack_factor = -0.5
             }       
-        }    
+        }   
+        USA_anti_cheese_measures = {
+
+            allowed = { 
+                always = no 
+                tag = USA
+            }
+            picture = generic_manpower_bonus
+    
+            allowed_civil_war = {
+             always = yes 
+            }
+    
+            removal_cost = -1
+
+            modifier = {
+                army_morale_factor = 0.45
+                army_breakthrough_against_major_factor = 1.0
+                army_strength_factor = 1.0
+            }
+            
+            #targeted_modifier = {
+            #    tag = JAP
+            #    attack_bonus_against = 5.0
+            #} 
+        } 
     }
 }

@@ -591,8 +591,9 @@ add_to_faction = LAO
 	add_ideas = {
 		tot_economic_mobilisation
 		scraping_the_barrel
-		JAP_shattered_army
+		JAP_shattered_army_4
 		JAP_economic_collapse
+		JAP_sho_go_1
 	}
 
 	declare_war_on = {
@@ -830,6 +831,7 @@ add_to_faction = LAO
 		support_weapons3 = 1
 		mechanised_infantry = 1
 		mechanised_infantry2 = 1
+		tech_mountaineers = 1
 		tech_mountaineers2 = 1
 		tech_engineers2 = 1
 		tech_recon2 = 1
@@ -921,7 +923,6 @@ add_to_faction = LAO
 		rocket_engines = 1
 		jet_engines = 1
 		atomic_research = 1
-		nuclear_reactor = 1
 		advanced_infantry_weapons = 1
 		advanced_infantry_weapons2 = 1
 		infantry_at = 1

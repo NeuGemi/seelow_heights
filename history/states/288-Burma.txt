@@ -26,7 +26,7 @@ state={
 			}
 		}
 		1945.1.1 = {
-			owner = JAP
+			owner = RAJ
 			controller = JAP
 			RAJ = {
 				set_province_controller = 4454
@@ -45,7 +45,7 @@ state={
 			}
 		}
 		1945.3.1 = {
-			owner = JAP
+			owner = RAJ
 			controller = JAP
 			RAJ = {
 				set_province_controller = 4454
@@ -63,7 +63,7 @@ state={
 			}
 		}
 		1945.4.26 = {
-			owner = JAP
+			owner = RAJ
 			controller = JAP
 			RAJ = {
 				set_province_controller = 4454

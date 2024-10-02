@@ -56,6 +56,23 @@ SOV_dont_naval_invade = {
 	}
 }
 
+SOV_dont_naval_invade_2 = {
+	allowed = {
+		tag = SOV
+	}
+	enable = {
+		date < 1947.6.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -9999
+	}
+}
+
 SOV_garrison_MOD = {
 	allowed = {
 		original_tag = SOV

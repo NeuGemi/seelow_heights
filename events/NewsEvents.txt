@@ -4,7 +4,7 @@
 
 add_namespace = news
 
-# Seelowe mod: News removed: .409 .156 .236(yalta)
+# Seelow mod: News removed: .409 .156 .236(yalta)
 
 # Marco Polo Bridge I
 news_event = {

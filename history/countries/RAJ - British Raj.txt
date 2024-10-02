@@ -257,6 +257,7 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 1945.1.1 = {
 	oob = "RAJ_1945"
+	add_timed_idea = { idea = RAJ_burmese_campaign_2 days = 150 }
 }
 
 1945.3.1 = {
@@ -265,6 +266,7 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 1945.4.1 = {
 	oob = "RAJ_1939"
+	add_timed_idea = { idea = RAJ_burmese_campaign_2 days = 117 }
 }
 
 1945.4.26 = {

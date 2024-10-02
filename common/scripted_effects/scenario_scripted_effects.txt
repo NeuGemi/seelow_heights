@@ -147,6 +147,76 @@ GER_scenario_disloyalty_level_up = {
 	}
 }
 
+# Level down effects of The Setting Sun
+JAP_scenario_setting_sun_level_down = {
+		if = {
+		limit = {
+			has_idea = JAP_shattered_army
+		}
+		remove_ideas = JAP_shattered_army
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_shattered_army_4
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army_4
+			add_idea = JAP_shattered_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_shattered_army_3
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army_3
+			add_idea = JAP_shattered_army_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_shattered_army_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army_2
+			add_idea = JAP_shattered_army
+		}
+	}
+}
+
+# Level up effects of The Setting Sun
+JAP_scenario_setting_sun_level_up = {
+		if = {
+		limit = {
+			has_idea = JAP_shattered_army_3
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army_3
+			add_idea = JAP_shattered_army_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_shattered_army_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army_2
+			add_idea = JAP_shattered_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_shattered_army
+		}
+		swap_ideas = {
+			remove_idea = JAP_shattered_army
+			add_idea = JAP_shattered_army_2
+		}
+	}
+}
+
+
+
 CHI_set_military_offensive_effect = {
 	set_country_flag = CHI_military_offensive_in_progress_flag
 			every_state = {
@@ -180,6 +250,22 @@ CHI_set_military_offensive_effect_hunan = {
 			}	
 }
 
+CHI_set_military_offensive_effect_guanxi = {
+	set_country_flag = CHI_military_offensive_in_progress_flag
+			every_state = {
+				limit = {
+					OR = {
+						state = 599
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_chinese_military_offensive
+					days = 30
+					scope = CHI
+				}
+			}	
+}
+
 CHI_clean_military_offensive_effect = {
 	clr_country_flag = CHI_military_offensive_in_progress_flag
 		every_state = {
@@ -191,5 +277,30 @@ CHI_clean_military_offensive_effect = {
 				}
 			}
 		remove_dynamic_modifier = { modifier = CHI_chinese_military_offensive }
+	}
+}
+
+JAP_set_military_offensive_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 526
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = JAP_okinawa_defense
+					days = 50
+					scope = JAP
+				}
+			}	
+}
+JAP_clean_military_offensive_effect = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 526
+				}
+			}
+		remove_dynamic_modifier = { modifier = JAP_okinawa_defense }
 	}
 }
