@@ -13,6 +13,33 @@
 # NOTE: 
 # This file encompasses ALL Allied nations
 
+CHI_leave_yunnan_alone = {
+	allowed = {
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = XSM
+			tag = GXC
+			tag = SHX
+		}
+	}
+	enable = {
+		date < 1946.1.1
+	}
+
+	abort = {
+		YUN = {
+			surrender_progress > 0.04
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUN"
+		value = 500
+	}	
+}
+
 ALLIES_pacific_vday = {
 	allowed = {
 		OR = {
@@ -22,7 +49,10 @@ ALLIES_pacific_vday = {
 	}
 	enable = {
 		has_war_with = JAP
-		date > 1947.1.1 #TODO: Remove?
+		OR = {
+			date > 1946.3.1 #TODO: Remove?
+			has_global_flag = scenario_scripted_invasions_disabled
+		}
 		NOT = {
 			has_war_with = GER
 		}
@@ -37,24 +67,24 @@ ALLIES_pacific_vday = {
 	ai_strategy = {
 		type = area_priority
 		id = pacific
-		value = 100
+		value = 50
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = pacific
-		value = 100
+		value = 50
 	}
 	ai_strategy = {
 		type = area_priority
 		id = asia
-		value = 100
+		value = 50
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = asia
-		value = 100
+		value = 50
 	}
 
 	ai_strategy = {
@@ -350,6 +380,26 @@ RAJ_burma_campaign  = {
 	}
 }
 
+#ENG
+ENG_dont_defend_china = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		CHI = {
+			surrender_progress < 0.90
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 10000
+	}
+}
+
 #TUR
 TUR_keep_to_yourselves = {
 	allowed = {
@@ -395,6 +445,26 @@ TUR_keep_to_yourselves = {
 		type = dont_defend_ally_borders
 		id = "RAJ"
 		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "PHI"
+		value = 10000
+	}
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "SIA"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "MEN"
+		value = -9999
 	}
 }
 

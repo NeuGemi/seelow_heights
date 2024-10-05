@@ -16,7 +16,6 @@ units = {
 			ship = { name = "Katsuragi" definition = carrier equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Unryu Class"} } }
 			ship = { name = "Hosho" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hosho Class"} } }
 			ship = { name = "Amagi" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hiyo Class" } } }	
-			ship = { name = "Yamato" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = JAP version_name = "Yamato Class" } } }
 			ship = { name = "Ise" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class" } } }	
 			ship = { name = "Nagato" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }			
 			ship = { name = "Hyuga" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Fuso/Ise Class" } } }
@@ -27,10 +26,6 @@ units = {
 			ship = { name = "Izumo" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = JAP version_name = "Izumo Class"} } }					
 			ship = { name = "Isuzu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }			
 			ship = { name = "Oyodo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class" } } }			
-			ship = { name = "Kiri" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Matsu Class"} } }
-			ship = { name = "Kuwa" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Matsu Class"} } }		
-			ship = { name = "Mikazuki" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class" } } }
-			ship = { name = "Yukaze" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Mutsuki Class" } } }
 		}
 	}
 	fleet = {
@@ -39,7 +34,6 @@ units = {
 		task_force = {
 			name = "Dai 1 Sentai"
 			location = 9998
-			ship = { name = "Yahagi" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Chikuma Class"} } }	
 			ship = { name = "Sakawa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Mogami Class" } } }
 			ship = { name = "Aoba" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Aoba Class"} } }
 			ship = { name = "Kitakami" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
@@ -184,31 +178,6 @@ instant_effect = {
 	
 #####################
 ### Ongoing Naval Production Sep 1 1939 ###
-		# CL (x2): "Katori" "Kashima"
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_carrier_1
-			creator = "JAP" 
-			version_name = "Unryu Class"
-		}
-		name = "Kasagi" 
-		requested_factories = 1
-		progress = 0.83
-		amount = 1
-		industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_carrier_1
-			creator = "JAP" 
-			version_name = "Unryu Class"
-		}
-		name = "Junyo" 
-		requested_factories = 1
-		progress = 0.46
-		amount = 1
-		industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
-	}
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_2
@@ -217,7 +186,7 @@ instant_effect = {
 		}
 		name = "Takao" 
 		requested_factories = 1
-		progress = 0.23
+		progress = 0.34
 		amount = 1
 		industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
 	}
@@ -229,7 +198,7 @@ instant_effect = {
 		}
 		name = "Myoko" 
 		requested_factories = 1
-		progress = 0.32
+		progress = 0.45
 		amount = 1
 		industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
 	}

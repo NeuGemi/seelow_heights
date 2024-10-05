@@ -328,9 +328,6 @@ create_import = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
 	}
 	if = {
 		limit = {
@@ -426,10 +423,6 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
 		target = MAN
 		autonomous_state = autonomy_puppet
 	}
@@ -449,10 +442,6 @@ if = {
 if = {
 	limit = { 
 		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 	set_autonomy = {
 		target = MAN
@@ -553,8 +542,6 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
-
-
 	oob = "JAP_1945_1_12"
 
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
@@ -562,7 +549,7 @@ recruit_character = JAP_kijuro_shidehara
 
 	set_cosmetic_tag = JAP_scenario
 
-		set_fuel = 0.01
+	set_fuel = 0.2
 
 complete_national_focus = JAP_spiritual_mobilization
 complete_national_focus = JAP_torpedo_cruisers 
@@ -594,6 +581,7 @@ add_to_faction = LAO
 		JAP_shattered_army_4
 		JAP_economic_collapse
 		JAP_sho_go_1
+		JAP_aftermath_of_ichi_go
 	}
 
 	declare_war_on = {
@@ -602,12 +590,6 @@ add_to_faction = LAO
 		}
 
 		MAN = {
-			add_to_war = {
-				targeted_alliance = JAP
-				enemy = USA
-			}
-		}
-		MEN = {
 			add_to_war = {
 				targeted_alliance = JAP
 				enemy = USA
@@ -911,6 +893,7 @@ add_to_faction = LAO
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 		dispersed_industry4 = 1
+		dispersed_industry5 = 1
 		improved_equipment_conversion = 1
 
 		#1944
@@ -1008,6 +991,12 @@ add_to_faction = LAO
 	 } 
 	 set_oob = "JAP_1945_nsb"
 	}	
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "JAP_1945_4_naval"
+	}
 }
 
 1945.4.26 = {
@@ -1922,6 +1911,35 @@ if = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
+		create_equipment_variant = {
+			name = "Unryu Class"
+			type = ship_hull_carrier_1
+			name_group = JAP_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+		create_equipment_variant = {
+			name = "Hiyo Class"
+			type = ship_hull_carrier_conversion_ca
+			name_group = JAP_CVL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+			}
+		}
 			create_equipment_variant = {
 				name = "Shokaku Class"
 				type = ship_hull_carrier_2
@@ -1958,6 +1976,38 @@ if = {
 					mid_3_custom_slot = dp_ship_secondaries_2
 					rear_1_custom_slot = ship_super_heavy_battery_1
 					rear_2_custom_slot = ship_airplane_launcher_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Matsu Class"
+				type = ship_hull_light_2
+				name_group = JAP_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_2
+					mid_1_custom_slot = ship_torpedo_2
+					rear_1_custom_slot = ship_depth_charge_2
+				}
+			}
+			create_equipment_variant = {
+				name = "Etorofu Class"
+				type = ship_hull_light_2
+				name_group = JAP_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_depth_charge_2
 				}
 			}
 			create_equipment_variant = {

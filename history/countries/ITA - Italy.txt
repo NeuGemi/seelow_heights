@@ -892,7 +892,15 @@ if = {
 
 		add_ideas = surrender_limit
 		set_cosmetic_tag = ITA_rsi
-}
+
+		retire_character = ITA_pietro_badoglio
+		retire_character = ITA_giovanni_messe
+		retire_character = ITA_italo_balbo
+		retire_character = ITA_ugo_cavallero
+		retire_character = ITA_ettore_baldassarre
+		retire_character = ITA_sebastiano_visconti_prasca
+
+}	
 
 1945.4.26 = {
 	set_oob = "ITA_1945_27"

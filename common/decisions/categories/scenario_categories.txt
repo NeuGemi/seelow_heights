@@ -64,12 +64,28 @@ JAP_hold_territory = {
 	}
 }
 
+JAP_operation_ketsugo_cat = {                    
+	picture = GFX_decision_cat_picture_generic_border_conflicts    			 
+	icon = GFX_decision_category_border_conflicts
+	
+	priority = {
+		base = 8
+	}
+
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_war = yes
+	}
+}
+
 JAP_allied_chinese_support = {                             			 
 	picture = GFX_decision_cat_picture_chi_infiltration
 	icon = GFX_decision_category_border_conflicts
 	
 	priority = {
-		base = 8
+		base = 7
 	}
 
 	allowed = {
@@ -120,7 +136,7 @@ scenario_settings = {
 	icon = military_operation
 
 	priority = {
-		base = 8
+		base = 6
 	}
 	allowed = {
 		OR = {

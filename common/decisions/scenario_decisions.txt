@@ -871,7 +871,7 @@ GER_oberkommando = {
 #NOTE: Revisit timed mission logic
 JAP_hold_territory = {
 	JAP_operation_ten_go = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_human_torpedo 
 
 		available = {
 			JAP = {
@@ -888,18 +888,21 @@ JAP_hold_territory = {
 
 		visible = {
 			original_tag = JAP
+			has_start_date < 1945.3.13
 		}
 
 		fire_only_once = yes
 
 		custom_cost_trigger = {
-			command_power > 24
+			has_political_power > 14
+			has_navy_experience > 9
 		}
-		custom_cost_text = decision_cost_CP_25
+		custom_cost_text = decision_cost_pp_15_NavXP_10
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -25
+				add_political_power = -15
+				navy_experience = -10
 			}
 		}
 
@@ -954,7 +957,7 @@ JAP_hold_territory = {
 		}		
 	}
 	JAP_operation_sho_go = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_operation 
 
 		available = {
 			JAP = {
@@ -971,6 +974,7 @@ JAP_hold_territory = {
 
 		visible = {
 			original_tag = JAP
+			has_start_date < 1945.3.13
 		}
 
 		fire_only_once = yes
@@ -997,6 +1001,49 @@ JAP_hold_territory = {
 			}
 		}		
 	}
+	JAP_operation_meigo_sakusen = {
+		icon = GFX_decision_generic_army_support 
+
+		available = {
+			JAP = {
+				has_war_with = FRA
+				has_full_control_of_state = 741
+				has_full_control_of_state = 671
+				has_full_control_of_state = 286
+				has_full_control_of_state = 670
+			}
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			original_tag = JAP
+			has_start_date < 1945.1.13
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			#custom_effect_tooltip = 
+			CAM = {
+				transfer_state = 741
+			}
+			VIN = {
+				transfer_state = 671
+				transfer_state = 286
+			}
+			LAO = {
+				transfer_state = 670
+			}			
+		}	
+	}
+}
+
+JAP_operation_ketsugo_cat = {
 	JAP_operation_ketsu_go = {
 		icon = GFX_decision_generic_army_support 
 
@@ -1036,7 +1083,7 @@ JAP_hold_territory = {
 		}	
 	}
 	JAP_the_glorious_death_of_one_million = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_military 
 
 		available = {
 			JAP = {
@@ -1058,13 +1105,15 @@ JAP_hold_territory = {
 		days_remove = 180
 
 		custom_cost_trigger = {
-			command_power > 24
+			has_political_power > 14
+			has_army_experience > 9
 		}
-		custom_cost_text = decision_cost_CP_25
+		custom_cost_text = decision_cost_pp_15_ArmXP_10
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -25
+				add_political_power = -15
+				army_experience = -10
 			}
 		}
 
@@ -1077,7 +1126,7 @@ JAP_hold_territory = {
 		}	
 	}
 	JAP_evacuate_the_ighq_underground = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_operation 
 
 		available = {
 			JAP = {
@@ -1103,11 +1152,92 @@ JAP_hold_territory = {
 			custom_effect_tooltip = JAP_ighq_underground_tt
 		}	
 	}
+	JAP_fortify_kyushu = {
+		icon = GFX_decision_generic_mountain_fortification
+
+		ai_will_do = {
+			base = 1
+		}
+
+		visible = {
+			528 = { #
+				any_province_building_level = {
+					province = {
+						id = 1020
+						id = 4102
+						id = 9950
+						id = 12032
+						id = 11949
+						id = 1183
+					}
+					building = coastal_bunker
+					level < 10
+				}
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 528 #
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		cancel_trigger = {
+			NOT = { has_full_control_of_state = 528 }
+		}
+
+		cancel_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -15
+			}
+		}
+
+		remove_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+
+			custom_effect_tooltip = JAP_fortify_kyushu_tt
+			hidden_effect = {
+				528 = { #
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							id = 1020
+							id = 4102
+							id = 9950
+							id = 12032
+							id = 11949
+							id = 1183
+						}
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 }
 
 JAP_allied_chinese_support = {
 	JAP_burma_road_closed = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_trucks
 
 		available = {
 			CHI = { is_puppet = no }
@@ -1156,7 +1286,7 @@ JAP_allied_chinese_support = {
 			}		
 		}
 	JAP_burma_road_opened = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_trucks 
 
 		available = {
 			CHI = { is_puppet = no }
@@ -1207,7 +1337,7 @@ JAP_allied_chinese_support = {
 			}		
 		}	
 	JAP_stilwell_road_closed = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_trucks 
 
 		available = {
 			CHI = { is_puppet = no }
@@ -1262,7 +1392,7 @@ JAP_allied_chinese_support = {
 			}		
 		}
 	JAP_stilwell_road_opened = {
-		icon = GFX_decision_generic_army_support 
+		icon = GFX_decision_generic_trucks 
 
 		available = {
 			JAP = {
@@ -1325,7 +1455,7 @@ JAP_allied_chinese_support = {
 JAP_asiatic_land_war = {
 	JAP_hold_burma = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_generic_disband_irregulars
 
 		allowed = {
 			original_tag = JAP
@@ -1383,7 +1513,7 @@ JAP_asiatic_land_war = {
 	}
 	JAP_hold_mandalay = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_generic_disband_irregulars
 
 		allowed = {
 			original_tag = JAP
@@ -1394,7 +1524,7 @@ JAP_asiatic_land_war = {
 			NOT = { controls_province = 1492 }
 		}
 
-		days_mission_timeout = 105
+		days_mission_timeout = 90
 
 		fire_only_once = yes
 
@@ -1440,7 +1570,7 @@ JAP_asiatic_land_war = {
 	}
 	JAP_hold_phi = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_hol_draw_up_staff_plans
 
 		allowed = {
 			original_tag = JAP
@@ -1454,7 +1584,7 @@ JAP_asiatic_land_war = {
 			}
 		}
 
-		days_mission_timeout = 90
+		days_mission_timeout = 105
 
 		fire_only_once = yes
 
@@ -1486,7 +1616,7 @@ JAP_asiatic_land_war = {
 	}
 	JAP_hold_okinawa = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_border_war
 
 		allowed = {
 			original_tag = JAP
@@ -1501,7 +1631,7 @@ JAP_asiatic_land_war = {
 			}
 		}
 
-		days_mission_timeout = 35
+		days_mission_timeout = 50
 
 		fire_only_once = yes
 
@@ -1542,7 +1672,7 @@ JAP_asiatic_land_war = {
 		available = { #Conditions to succeed in the offensive
 			NOT = {
 				controls_state = 333
-				controls_state = 334
+				controls_state = 334				
 			}
 		}
 
@@ -1552,7 +1682,7 @@ JAP_asiatic_land_war = {
 
 		fire_only_once = yes
 
-		days_mission_timeout = 95
+		days_mission_timeout = 120
 
 		is_good = yes
 
@@ -1602,7 +1732,7 @@ JAP_asiatic_land_war = {
 	}
 	JAP_hold_tokyo = {
 
-		icon = generic_civil_support
+		icon = GFX_decision_border_war
 
 		allowed = {
 			original_tag = JAP
@@ -1613,7 +1743,7 @@ JAP_asiatic_land_war = {
 			NOT = { controls_state = 282 }
 		}
 
-		days_mission_timeout = 95
+		days_mission_timeout = 180
 
 		fire_only_once = yes
 
@@ -1625,6 +1755,53 @@ JAP_asiatic_land_war = {
 			has_global_flag = JAP_operation_downfall_underway
 			282 = {
 				is_controlled_by = ROOT
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			custom_effect_tooltip = JAP_lessen_effects_of_setting_sun_tt
+			add_stability = 0.05
+			add_war_support = 0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_down = yes
+			}
+		}
+		#Fail
+		complete_effect = {
+			custom_effect_tooltip = JAP_worsen_effects_of_setting_sun_tt
+			add_war_support = -0.05
+			add_stability = -0.05
+			hidden_effect = {
+				JAP_scenario_setting_sun_level_up = yes
+			}
+		}
+	}
+	JAP_hold_manchuria = {
+		icon = GFX_decision_generic_cavalry
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			MAN = {
+				NOT = { controls_state = 328 }
+			}
+		}
+
+		days_mission_timeout = 45
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = SOV
+			has_civil_war = no
+			328 = {
+				is_controlled_by = MAN
 			}
 		}
 
@@ -1647,6 +1824,39 @@ JAP_asiatic_land_war = {
 				JAP_scenario_setting_sun_level_up = yes
 				set_country_flag = JAP_hold_mandalay_flag
 			}
+		}
+	}
+	#Flavour, doesn't affect spirits
+	JAP_south_china_sea_air_raid = {
+
+		icon = GFX_decision_generic_human_torpedo
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			original_tag = JAP
+		}
+
+		visible = {
+			has_start_date < 1945.1.13
+		}
+
+		days_remove = 8
+
+		fire_only_once = yes
+
+		is_good = no
+
+		modifier = {
+			air_defence_factor = -0.15
+			air_intercept_efficiency = -0.15
+			air_power_projection_factor = -0.1
+			air_untrained_pilots_penalty_factor = 0.25
+			air_escort_efficiency = -0.1	
+			screening_efficiency = -0.2
 		}
 	}
 	# Chinese Offensive
@@ -1932,7 +2142,7 @@ JAP_asiatic_land_war = {
 
 		fire_only_once = yes
 
-		days_mission_timeout = 30
+		days_mission_timeout = 50
 
 		is_good = no
 

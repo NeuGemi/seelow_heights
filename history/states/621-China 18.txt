@@ -20,7 +20,7 @@ state={
 			}
 			owner = SHX
 			controller = SHX
-			MEN = {
+			JAP = {
 			set_province_controller = 12331
 			set_province_controller = 7048
 			set_province_controller = 12403

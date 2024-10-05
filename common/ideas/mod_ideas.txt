@@ -1000,6 +1000,34 @@ ideas = {
             consumer_goods_factor = 0.05 
         }
     }
+    JAP_aftermath_of_ichi_go = {
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+            CHI = {
+                surrender_progress > 0.44
+            }
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = CHI
+            defense_bonus_against = 0.15
+        }  
+
+        modifier = {          
+            custom_modifier_tooltip = JAP_aftermath_of_ichi_go_tt
+        }  
+    }
 
     # SOV
      SOV_berlin_strategic_offensive_operation = {
@@ -1114,21 +1142,21 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                army_attack_speed_factor = 0.5
-                army_org_regain = 0.3
+                army_attack_speed_factor = 0.1
+                army_org_regain = 0.1
                 out_of_supply_factor = 0.35
             }       
             targeted_modifier = {
                 tag = JAP
-                attack_bonus_against = 0.15    
+                attack_bonus_against = 0.1    
             } 
             targeted_modifier = {
                 tag = MAN
-                attack_bonus_against = 0.15    
+                attack_bonus_against = 0.1    
             } 
             targeted_modifier = {
                 tag = MEN
-                attack_bonus_against = 0.15    
+                attack_bonus_against = 0.1    
             } 
         } 
         #Allies
@@ -1171,15 +1199,16 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                attrition = -0.50
+                attrition = -0.75
                 supply_consumption_factor = -0.75
+                out_of_supply_factor = -0.1
                 army_org = 5
                 ai_focus_aggressive_factor = 1.0
             }
 
             targeted_modifier = {
                 tag = JAP
-                attack_bonus_against = 0.10    
+                attack_bonus_against = 0.20    
             }         
         } 
         the_united_nations = {
@@ -1420,7 +1449,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            production_factory_max_efficiency_factor = 0.05
+            production_factory_max_efficiency_factor = 0.1
             production_lack_of_resource_penalty_factor = -0.15
         }     
     }
@@ -1442,7 +1471,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            production_factory_max_efficiency_factor = 0.02
+            production_factory_max_efficiency_factor = 0.5
             production_lack_of_resource_penalty_factor = -0.05
         }     
     }

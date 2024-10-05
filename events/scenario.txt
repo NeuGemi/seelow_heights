@@ -979,7 +979,7 @@ country_event = {
 	id = scenario.23
 	title = scenario.23.t
 	desc = scenario.23.d	
-	picture = GFX_report_event_mod_courland_pocket
+	#picture = GFX_report_event_mod_courland_pocket
 
 	is_triggered_only = yes
 
@@ -1020,7 +1020,7 @@ country_event = {
 					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
 					load_oob = AST_borneo
 					add_timed_idea = {
-						days = 2
+						days = 4
 						idea = USA_anti_cheese_measures
 					}
 				}	
@@ -3625,7 +3625,7 @@ country_event = {
 				transfer_state = 34
 			}
 			HOL = {
-				 set_cosmetic_tag = HOL_mod_free
+				set_cosmetic_tag = HOL_mod_free
 				transfer_state = 35
 				transfer_state = 7
 				transfer_state = 36

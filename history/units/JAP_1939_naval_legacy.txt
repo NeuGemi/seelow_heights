@@ -13,7 +13,6 @@ units = {
 			name = "Honbu Kantai"
 			location = 1092  # Hiroshima
 			ship = { name = "Nagato" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
-			ship = { name = "Mutsu" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
 			ship = { name = "Tone" definition = heavy_cruiser equipment = { heavy_cruiser_3 = {amount = 1 owner = JAP} } }
 			ship = { name = "Chikuma" definition = heavy_cruiser equipment = { heavy_cruiser_3 = {amount = 1 owner = JAP} } }
 			ship = { name = "Kitakami" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class" } } }

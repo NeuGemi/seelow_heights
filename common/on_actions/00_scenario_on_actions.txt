@@ -74,6 +74,10 @@ on_actions = {
 			JAP = {
 				country_event = { id = intro.2 }
 				remove_ideas = JAP_tora_tora_tora_idea
+				if = {
+					limit = { has_start_date < 1945.1.13 }
+					activate_decision = JAP_south_china_sea_air_raid
+				}
 			}
 			SOV = {
 				if = { limit = { 

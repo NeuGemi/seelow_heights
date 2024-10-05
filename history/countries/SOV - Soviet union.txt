@@ -1181,9 +1181,6 @@ add_ideas = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
 	}
 	if = {
 		limit = {
