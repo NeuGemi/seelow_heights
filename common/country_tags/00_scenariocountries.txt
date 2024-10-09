@@ -1,2 +1,1 @@
 RD2	= "countries/Regnodelsud.txt"
-ILI = "countries/East Turkestan Republic"

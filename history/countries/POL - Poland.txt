@@ -110,7 +110,9 @@ if = {
 }
 
 
-
+85 = {
+	add_dynamic_modifier = { modifier = international_city }
+}
 
 1939.1.1 = {
 	
