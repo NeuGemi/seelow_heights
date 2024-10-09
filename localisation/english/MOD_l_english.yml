@@ -89,7 +89,7 @@ JAP_kyujo_incident_coup_tt:0 "§YRefusing peace, fanatic soldiers mobilize in an
 JAP_emperor_hirohito_kyujo_incident:0 "§YWhile the Emperor Hirohito has been removed from power, he will remain as a symbolic figurehead§!"
 JAP_economic_collapse_tt:0 "§Y\nWill be removed when controlling Okinawa, Iwo Jima, Taiwan, Luzon, Marcus Island and Sichuan§!"
 JAP_scenario_surrender_japan_tt:0 "§RYou will surrender!§!"
-JAP_scripted_invasions_tt:0 "§YNOTE: this mechanic, enabled or not, wont stop the AI from launching their own invasions§!"
+JAP_scripted_invasions_tt:0 "§RNot recommended disabled§!"
 RAJ_burma_campaign_tt:0 "§YWill be removed when controlling Rangoon§!"
 JAP_aftermath_of_ichi_go_tt:0 "§YWill be removed if Japan fails to maintain their hold on China!§!"
 JAP_fortify_kyushu_tt:0 "Builds defensive fortifications along the southwestern shores of §YKyushu§!\n"

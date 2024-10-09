@@ -1400,7 +1400,7 @@ ideas = {
         }   
         targeted_modifier = {
             tag = JAP
-            defense_bonus_against = 0.15
+            defense_bonus_against = 0.1
         }    
     }
     CHI_burma_closed = {
@@ -1513,14 +1513,14 @@ ideas = {
 
             modifier = {
                 army_morale_factor = 0.45
-                army_breakthrough_against_major_factor = 1.0
-                army_strength_factor = 1.0
+                army_breakthrough_against_major_factor = 5.0
+                army_strength_factor = 5.0
             }
             
-            #targeted_modifier = {
-            #    tag = JAP
-            #    attack_bonus_against = 5.0
-            #} 
+            targeted_modifier = {
+                tag = JAP
+                attack_bonus_against = 5.0
+            } 
         } 
     }
 }

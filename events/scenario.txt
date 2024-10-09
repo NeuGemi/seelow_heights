@@ -1708,7 +1708,7 @@ news_event = {
 		hidden_effect = {
 			USA = {
 				if = {
-					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 					load_oob = USA_iwo_jima
 					add_timed_idea = {
 						days = 2
@@ -1782,7 +1782,7 @@ news_event = {
 			}	
 			USA = {
 				if = {
-					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 					load_oob = USA_okinawa
 					add_timed_idea = {
 						days = 2
@@ -1854,7 +1854,7 @@ news_event = {
 			}
 			USA = {
 				if = {
-					limit = { NOT = { has_global_flag = JAP_scenario_settings_scripted_invasions } }
+					limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 					load_oob = USA_operation_downfall
 					add_timed_idea = {
 						days = 7
@@ -3505,8 +3505,8 @@ country_event = {
 
 
     option = {
-    	GER = {
-    		remove_ideas = GER_economic_collapse
+    	JAP = {
+    		remove_ideas = JAP_economic_collapse
     	}
     }
 }
