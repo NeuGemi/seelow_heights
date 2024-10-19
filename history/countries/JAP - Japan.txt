@@ -546,10 +546,13 @@ recruit_character = JAP_kijuro_shidehara
 
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
 	set_war_support = 0.2
+	set_fuel_ratio = 0.6
 
 	set_cosmetic_tag = JAP_scenario
 
-	set_fuel = 0.2
+	army_experience = 500
+	air_experience = 500
+	navy_experience = 500
 
 complete_national_focus = JAP_spiritual_mobilization
 complete_national_focus = JAP_torpedo_cruisers 
