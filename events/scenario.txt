@@ -1720,18 +1720,24 @@ news_event = {
 	}
 	
 	major = yes
-	
+
 	trigger = {
-		date > 1945.2.15
-		date < 1945.3.1 #To not fire after the Jan 12 scenario
-		NOT = { 
+		JAP = {
+			has_war_with = USA
+		}
+		if = {
+			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
+			date > 1945.2.15
+			date < 1945.3.1 #To not fire after the Jan 12 scenario
+		else_if = {
 			USA = {
 				controls_state = 645
-				is_ai = no
 			}
 		}
+		}
+
 		NOT = { has_global_flag = scenario_iwo_jima }
-	}
+	}	
 
 	option = {
 		name = scenarionews.13.a
@@ -1796,14 +1802,25 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1945.3.30
-		date < 1945.4.5 #To not fire after the Jan 12 scenario
-		NOT = { 
+		JAP = {
+			has_war_with = USA
+		}
+		if = {
+			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
+			date > 1945.3.30
+			date < 1945.4.5 #To not fire after the Jan 12 scenario
+		else_if = {
 			USA = {
-				controls_state = 526
-				is_ai = no
+				OR = {
+					controls_province = 11932
+					controls_province = 10124
+					controls_province = 1123
+					controls_province = 7115
+				}
 			}
 		}
+		}
+
 		NOT = { has_global_flag = scenario_okinawa }
 	}
 
@@ -1868,14 +1885,47 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1945.10.1
-		OR = {
-			has_global_flag = JAP_nuke_1
-			has_global_flag = JAP_nuke_2	
+		JAP = {
+			has_war_with = USA
 		}
-		USA = {
-			has_war_with = JAP
+		if = {
+			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
+			date > 1945.10.1
+		else_if = {
+			JAP = {
+				OR = {
+					528 = {
+						is_controlled_by = USA
+					}
+					530 = {
+						is_controlled_by = USA
+					}
+					529 = {
+						is_controlled_by = USA
+					}
+					531 = {
+						is_controlled_by = USA
+					}
+					532 = {
+						is_controlled_by = USA
+					}
+					535 = {
+						is_controlled_by = USA
+					}
+					282 = {
+						is_controlled_by = USA
+					}
+					534 = {
+						is_controlled_by = USA
+					}
+					533 = {
+						is_controlled_by = USA
+					}
+				}
+			}
 		}
+		}
+
 		NOT = { has_global_flag = scenario_operation_downfall }
 	}
 

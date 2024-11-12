@@ -35,10 +35,10 @@ state={
 			controller = SLO
 			buildings = {
 				11539 = {
-					bunker = 10
+					bunker = 4
 				}
 				3537 = {
-					bunker = 10
+					bunker = 5
 				}
 			}
 		}

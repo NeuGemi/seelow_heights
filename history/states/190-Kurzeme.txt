@@ -17,14 +17,14 @@ state={
 			infrastructure = 3 #was: 5
 			air_base = 4
 			9262 = {
-				bunker = 10
+				bunker = 4
 			}
 			dockyard = 1
 			3194 = {
-				bunker = 10
+				bunker = 4
 			}
 			11246 = {
-				bunker = 10
+				bunker = 4
 			}
 		}
 		add_core_of = LAT

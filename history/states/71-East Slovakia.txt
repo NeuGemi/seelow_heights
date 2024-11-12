@@ -29,7 +29,7 @@ state={
 			}
 			buildings = {
 				11554 = {
-					bunker = 10
+					bunker = 4
 				}
 			}
 		}

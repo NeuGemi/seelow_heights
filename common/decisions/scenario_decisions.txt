@@ -1038,7 +1038,46 @@ JAP_hold_territory = {
 			}
 			LAO = {
 				transfer_state = 670
-			}			
+			}
+			hidden_effect = {
+		VIN = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		CAM = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		LAO = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = USA
+			}
+		}
+		VIN = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}
+		CAM = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}
+		LAO = {
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+		}			
+			}
+		
 		}	
 	}
 }
@@ -2759,11 +2798,11 @@ SOV_stavka = {
 	    selectable_mission = no
 	    timeout_effect = {
 	    SOV = {
-	    set_global_flag = SOV_manchurian_war_flag
-		set_rule = { 
-		 desc = desc_key
-		 can_not_declare_war = no 
-		}
+	    	set_global_flag = SOV_manchurian_war_flag
+			set_rule = { 
+				desc = desc_key
+				can_not_declare_war = no 
+			}
 	    	add_timed_idea = {
 	    		idea = SOV_manchurian_strategic_offensive_operations
 	    		days = 14

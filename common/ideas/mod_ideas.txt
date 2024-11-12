@@ -1522,5 +1522,23 @@ ideas = {
                 attack_bonus_against = 5.0
             } 
         } 
+        JAP_anti_cheese_sov = {
+
+            allowed = { 
+                always = no 
+            }
+
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                justify_war_goal_time = 9.0
+            }       
+        } 
     }
 }

@@ -49,7 +49,7 @@ state={
 		1940.1.1 = {
 			buildings = {
 				3547 = {
-					bunker = 5
+					bunker = 4
 				}
 				9522 = {
 					bunker = 5
