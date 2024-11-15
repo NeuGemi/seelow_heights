@@ -111,7 +111,11 @@ allow_release_nations = {
 		text = "RULE_OPTION_PEACE_ONLY"
 		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
 	}
-
+	option = {
+		name = "FREE"
+		text = RULE_OPTION_FREE
+		desc = "RULE_ALLOW_RELEASE_NATIONS_FREE_DESC"
+	}
 }
 
 allow_licensing = {

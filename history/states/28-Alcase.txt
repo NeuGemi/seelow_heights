@@ -44,7 +44,7 @@ state={
 				bunker = 5
 
 			}
-			13375 = {
+			13378 = {
 				bunker = 5
 
 			}
@@ -60,7 +60,7 @@ state={
 		}
 		1945.1.1 = {
 			GER = {
-				set_province_controller = 13375
+				set_province_controller = 13378
 				set_province_controller = 549
 			}
 		}
@@ -71,7 +71,7 @@ state={
 	}
 
 	provinces={
-		549 678 1346 3629 6529 9503 9559 11502 13375
+		549 678 1346 3629 6529 9503 9559 11502 13378
 	}
 
 	local_supplies=14.0 

@@ -1,7 +1,7 @@
 state={
-	id=971
-	name="STATE_971"
-	manpower = 1203702
+	id=982
+	name="STATE_982"
+	manpower = 1403702
 	buildings_max_level_factor = 1
 
 	state_category = large_city
@@ -9,18 +9,19 @@ state={
 history={
 		owner = GER
 		victory_points = {
-			6521 25 
+			13365 25 
 		}
+
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 3
 		}
 		add_core_of = GER
-}
+	}
 
 		provinces={
-	 	6521 
+			 13366 13368 13369
 	}
 	local_supplies=0.0 
 }

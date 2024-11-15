@@ -33,13 +33,13 @@ state={
 			owner = SOV
 			controller = SOV
 			GER = {
-				set_province_controller = 13364
+				set_province_controller = 13367
 			}
 		}
 	}
 
 	provinces={
-		362 13364
+		362 13367
 	}
 
 	local_supplies=0.0 

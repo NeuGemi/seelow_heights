@@ -573,7 +573,7 @@
 572;2;189;195;land;false;plains;1
 573;2;192;160;land;false;hills;1
 574;2;192;215;land;false;plains;1
-575;2;195;225;land;true;urban;1
+575;2;195;225;land;true;plains;1
 576;2;198;40;land;false;desert;6
 577;2;198;145;land;false;plains;1
 578;2;198;190;land;false;plains;1
@@ -1146,7 +1146,7 @@
 1145;5;144;80;land;true;urban;5
 1146;5;144;185;land;false;plains;6
 1147;5;147;0;land;false;desert;6
-1148;5;147;45;land;false;hills;6
+1148;5;147;45;land;true;hills;6
 1149;5;147;150;land;true;urban;5
 1150;5;150;10;land;true;urban;6
 1151;5;150;65;land;false;desert;5
@@ -6534,7 +6534,7 @@
 6533;86;114;131;land;false;plains;1
 6534;86;117;91;land;false;hills;1
 6535;86;117;141;land;false;plains;1
-6536;86;117;196;land;true;urban;1
+6536;86;117;196;land;true;plains;1
 6537;86;120;56;land;false;forest;1
 6538;86;120;161;land;false;marsh;6
 6539;86;123;21;land;false;plains;6
@@ -6655,7 +6655,7 @@
 6654;87;34;236;sea;false;ocean;0
 6655;87;35;244;sea;false;ocean;0
 6656;87;36;81;land;false;marsh;1
-6657;87;36;131;land;true;urban;1
+6657;87;36;131;land;true;plains;1
 6658;87;36;186;land;false;plains;1
 6659;87;36;232;sea;false;ocean;0
 6660;87;38;240;sea;false;ocean;0
@@ -9345,7 +9345,7 @@
 9344;127;129;159;land;false;plains;1
 9345;127;132;19;land;false;plains;1
 9346;127;132;74;land;false;forest;1
-9347;127;135;39;land;false;urban;1
+9347;127;135;39;land;true;urban;1
 9348;127;135;189;land;false;hills;1
 9349;127;138;4;land;false;plains;6
 9350;127;138;154;land;true;plains;1
@@ -9658,7 +9658,7 @@
 9657;129;90;224;land;false;plains;2
 9658;129;93;134;land;false;plains;1
 9659;129;93;189;land;false;forest;6
-9660;129;96;49;land;false;plains;1
+9660;129;96;49;land;false;urban;1
 9661;129;99;14;land;false;plains;1
 9662;129;99;69;land;false;forest;2
 9663;129;99;219;land;true;mountain;1
@@ -13232,8 +13232,8 @@
 13231;184;117;163;land;false;hills;1
 13232;122;77;196;land;false;plains;1
 13233;230;236;122;land;false;mountain;1
-13234;210;241;113;land;false;hills;2
-13235;233;179;9;land;false;mountain;2
+13234;210;241;113;land;false;hills;1
+13235;233;179;9;land;false;mountain;1
 13236;206;4;72;land;false;desert;5
 13237;137;41;92;land;false;hills;5
 13238;26;241;146;land;false;hills;5
@@ -13271,7 +13271,6 @@
 13270;11;143;125;land;true;plains;1
 13271;239;45;233;land;true;mountain;1
 13272;26;125;215;land;true;mountain;1
-
 13273;202;88;19;land;true;plains;3
 13274;112;25;92;land;true;jungle;3
 13275;137;244;86;land;false;jungle;3
@@ -13362,24 +13361,27 @@
 13360;210;76;169;land;false;jungle;3
 13361;64;193;149;land;false;jungle;3
 13362;17;198;201;land;false;jungle;3
-13363;63;75;78;land;false;urban;1
-13364;19;166;168;land;true;plains;2
-13365;91;222;147;land;false;urban;1
-13366;227;239;7;land;false;urban;1
-13367;10;148;20;land;false;urban;1
-13368;246;115;94;land;false;urban;1
-13369;141;216;216;land;false;urban;1
-13370;188;13;142;land;false;urban;1
-13371;75;60;149;land;true;plains;2
-13372;7;213;95;land;true;plains;2
-13373;29;43;91;land;false;urban;1
-13374;214;3;175;land;true;plains;2
-13375;4;155;8;land;false;hills;6
-13376;92;96;173;land;false;plains;2
-13377;28;237;183;land;flase;plains;2
-13378;84;153;26;land;false;plains;2
-13379;122;101;72;land;false;urban;4
-13380;11;43;1;land;false;urban;4
-13381;59;18;174;land;false;urban;4
-13382;53;214;34;land;true;urban;4
-13383;166;225;235;land;false;urban;4
+13363;103;115;222;land;false;forest;5 
+13364;201;199;211;land;false;forest;5 
+13365;41;86;71;land;false;forest;5 # SEELOW PROVINCES 13366 AND BEYOND 3 province added from GD
+13366;63;75;78;land;false;urban;1 # west berlin 1
+13367;19;166;168;land;true;plains;2 # danzig land bridge
+13368;91;222;147;land;false;urban;1 # west berlin 2
+13369;227;239;7;land;false;urban;1 # west berlin 3
+13370;10;148;20;land;false;urban;1 # vienna 1
+13371;246;115;94;land;false;urban;1 # vienna 2
+13372;141;216;216;land;false;urban;1 # buda
+13373;188;13;142;land;false;urban;1 # pest
+13374;75;60;149;land;true;plains;2 # memel pocket
+13375;7;213;95;land;true;plains;2 # koningsberg plains 1
+13376;29;43;91;land;false;urban;1 # koingsberg city
+13377;214;3;175;land;true;plains;2 # koningsberg plains 2
+13378;4;155;8;land;false;hills;6 # alsace pocket thingy
+13379;92;96;173;land;false;plains;2 # polish bridgehead 1
+13380;28;237;183;land;flase;plains;2 # polish bridgehead 2
+13381;84;153;26;land;false;plains;2 # polish bridgehead 3
+13382;122;101;72;land;false;urban;4 # paris 1
+13383;11;43;1;land;false;urban;4 # paris 2
+13384;59;18;174;land;false;urban;4 # paris 3
+13385;53;214;34;land;true;urban;4 # hamburg
+13386;166;225;235;land;false;urban;4 # london
