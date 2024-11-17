@@ -9,7 +9,7 @@ state=
 	
 	history = {
 		victory_points = {
-			3288 3
+			13374 3
 		}
 		owner = LIT
 		buildings = {
@@ -29,7 +29,7 @@ state=
 			owner = SOV
 			controller = SOV
 			GER = {
-				set_province_controller = 13371
+				set_province_controller = 13374
 			}
 		}
 		1945.2.1 = {
@@ -38,7 +38,7 @@ state=
 		}
 	}
 	provinces={
-		3288 13371	
+		3288 13374
 	}
 
 	local_supplies=0.0 

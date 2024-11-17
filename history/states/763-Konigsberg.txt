@@ -10,13 +10,13 @@ state={
 		controller = GER
 		
 		victory_points = {
-			13373 10 
+			13376 10 
 		}
 
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 2
-			13373 = {
+			13376 = {
 				bunker = 5
 
 			}
@@ -37,9 +37,9 @@ state={
 			controller = SOV
 			GER = {
 				set_province_controller = 11265
-				set_province_controller = 13374
-				set_province_controller = 13372
-				set_province_controller = 13373
+				set_province_controller = 13377
+				set_province_controller = 13375
+				set_province_controller = 13376
 			}
 		}
 		1945.4.1 = {
@@ -47,15 +47,15 @@ state={
 			controller = SOV
 			GER = {
 				set_province_controller = 11265
-				set_province_controller = 13372
-				set_province_controller = 13373
+				set_province_controller = 13375
+				set_province_controller = 13376
 
 			}
 		}
 	}
 
 	provinces={
-		281 348 395 3384 6332 11265 13372 13373 13374
+		281 348 395 3384 6332 11265 13375 13376 13377
 	}
 
 	local_supplies=0.0 

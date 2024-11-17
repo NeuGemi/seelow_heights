@@ -21,7 +21,7 @@ history={
 	}
 
 		provinces={
-			 13366 13368 13369
+			 13369 13371 13372
 	}
 	local_supplies=0.0 
 }

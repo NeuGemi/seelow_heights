@@ -1,0 +1,49 @@
+state = {
+	id = 980
+	name = "STATE_980"
+	manpower = 338130
+	resources={
+		steel=9 # was: 0
+	}
+	
+	state_category = rural
+
+	history = {
+
+		owner = BEL
+		add_core_of = BEL
+
+		victory_points = {
+			9418 1 # Arlons
+		}
+
+		buildings = {
+			infrastructure = 1
+
+			# Gileppe Dam
+			3488 = { dam = 1 }
+		}
+		1945.1.1 = {
+			owner = USA
+			controller = USA
+			GER = {
+				set_province_controller = 11407
+			}		
+		}
+		1945.2.1 = {
+			owner = USA
+			controller = USA
+		}
+        1945.4.1 = {
+			owner = FRA
+			controller = FRA
+     	} 
+		
+	}
+
+	provinces = {
+		3488 6537 9418 9444 11407
+	}
+
+	local_supplies = 14.0 
+}
