@@ -58,10 +58,10 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_trucks = 1
 	basic_train = 1
 	mobile_warfare = 1
 	trade_interdiction = 1
@@ -211,6 +211,9 @@ set_war_support = 0.3
 	
 	give_military_access = SLO
 
+	set_country_flag = GER_constructed_the_westwall
+	add_ideas = autarkic_economy
+
 #Trade
 	create_import = {
 			resource = oil
@@ -243,26 +246,48 @@ set_war_support = 0.3
 	}
 	#Soviet treaty end
 	
-	unlock_national_focus = GER_rhineland
+	complete_national_focus = GER_construct_the_reichsautobahn
+	complete_national_focus = GER_institute_price_controls
+	complete_national_focus = GER_fuhrerprinzip
+	complete_national_focus = GER_party_chancellor_bormann
+	complete_national_focus = GER_accelerate_the_rearmament_program
+	complete_national_focus = GER_kdf_wagen_factories
+	complete_national_focus = GER_develop_modern_maneuver_warfare
+	complete_national_focus = GER_adopt_new_panzer_doctrine
+	complete_national_focus = GER_coal_liquefaction
+	#complete_national_focus = GER_ascension_of_todt #He is getting kicked by Speer anyways
+	complete_national_focus = GER_ascension_of_speer #Since Speer kicks Todt out might as well complete his focus here
+	complete_national_focus = GER_establish_buna_werke
+	complete_national_focus = GER_expanding_the_luftwaffe
+	complete_national_focus = GER_aeronautical_research_institute
+	complete_national_focus = GER_concentrated_armament_program
+	complete_national_focus = GER_panzer_troops_school
+	complete_national_focus = GER_ascension_of_goebbels
+	complete_national_focus = GER_reorganize_the_wehrmacht
+	complete_national_focus = GER_advanced_panzer_research
+	complete_national_focus = GER_bribe_senior_officers
+	complete_national_focus = GER_befriend_japan
+
+	# ONES THAT HAVE TO BE HANDELED MANUALLY
+	unlock_national_focus = GER_remilitarize_the_rhineland
+	unlock_national_focus = GER_anti_comintern_pact
+	unlock_national_focus = GER_fortify_the_vaterland
 	unlock_national_focus = GER_anschluss
 	unlock_national_focus = GER_demand_sudetenland
 	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	complete_national_focus = GER_synthetic_rubber
+	unlock_national_focus = GER_fate_of_czechoslovakia
+	unlock_national_focus = GER_reassert_eastern_claims
+	unlock_national_focus = GER_danzig_or_war
+	unlock_national_focus = GER_the_four_year_plan
+	unlock_national_focus = GER_develop_heraeus_facilities
+	unlock_national_focus = GER_legion_condor
+
+	# Autarkic economy 
+	unlock_national_focus = GER_autarky_efforts
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
 	set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
 
 	#BUILDINGS
 	
@@ -316,6 +341,12 @@ set_war_support = 0.3
 		dispersed_industry3 = 1
 		dispersed_industry4 = 1
 
+	}
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+		scientist = GER_konrad_zuse
+		state = 62
 	}
 
 	if = {
@@ -495,7 +526,95 @@ recruit_character = GER_wilhelm_iii
 recruit_character = GER_victoria
 recruit_character = GER_august_von_mackensen
 
-recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
+
+#NEW PEOPLE WW
+recruit_character = GER_werner_von_blomberg
+recruit_character = GER_oswald_lutz
+recruit_character = GER_walther_nehring
+recruit_character = GER_hans_krebs
+recruit_character = GER_rolf_carls
+recruit_character = GER_helmuth_wilberg
+recruit_character = GER_josef_kammhuber
+recruit_character = GER_robert_knauss
+recruit_character = GER_alfred_becker
+recruit_character = GER_walter_dornberger
+recruit_character = GER_alfred_rosenberg
+recruit_character = GER_reinhard_heydrich
+recruit_character = GER_leni_riefenstahl
+recruit_character = GER_franz_seldte
+recruit_character = GER_hanns_kerrl
+recruit_character = GER_ludwig_erhard
+recruit_character = GER_paul_von_lettow_vorbeck # He is "new"
+recruit_character = GER_carl_friedrich_goerdeler
+recruit_character = GER_wilhelm_iv
+recruit_character = GER_eva_braun
+
+#SCIENTISTS
+recruit_character = GER_peter_adolf_thiessen
+recruit_character = GER_gustav_ludwig_hertz
+recruit_character = GER_eduard_grote
+recruit_character = GER_ferdinand_porsche 
+recruit_character = GER_erwin_aders
+recruit_character = GER_hermann_burkhardt
+recruit_character = GER_ulrich_gabler
+recruit_character = GER_hans_von_ohain
+recruit_character = GER_max_kramer
+recruit_character = GER_kurt_tank
+recruit_character = GER_helmuth_walter
+recruit_character = GER_manfred_von_ardenne
+recruit_character = GER_konrad_zuse
+
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	recruit_character = GER_jurgen_von_blumenthal
+	recruit_character = GER_hans_vogel
+	recruit_character = GER_adolf_friedrich_von_mecklenburg
+	recruit_character = GER_wilhelm_von_gayl
+	recruit_character = GER_andreas_hermes
+	recruit_character = GER_hans_luther
+	recruit_character = GER_hermann_erhardt
+	recruit_character = GER_dietrich_bonhoeffer
+	recruit_character = GER_oberste_heeresleitung_character
+	recruit_character = GER_franz_ritter_von_epp
+	recruit_character = GER_walter_ulbricht
+	recruit_character = GER_wilhelm_zaisser
+	recruit_character = GER_otto_ruhle
+	recruit_character = GER_hermann_duncker
+	recruit_character = GER_august_thalheimer
+	recruit_character = GER_heinrich_brandler
+	recruit_character = GER_bernhard_bastlein
+	recruit_character = GER_vincenz_muller
+	recruit_character = GER_hans_kahle
+	recruit_character = GER_hans_marchwitza
+	recruit_character = GER_arno_von_lenski
+	recruit_character = GER_otto_strasser
+	recruit_character = GER_otto_grotewohl
+
+	recruit_character = GER_henrich_focke #Heli Scientist
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Gotterdammerung"
+			has_dlc = "No Step Back"
+		}
+	}
+	recruit_character = GER_karl_heinrich_emil_becker #Artillery Scientist
+}
+
+# Recruiting Starting Operatives
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	# Recruit operatives
+	GER_create_operative_nikolaus_ritter = yes
+	GER_create_operative_erich_gimpel = yes
+	GER_create_operative_fritz_duquesne = yes
+}
 
 
 #if = {
@@ -504,37 +623,6 @@ recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled 
 #	}
 #	recruit_character = GER_carl_friedrich_goerdeler
 #}
-
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_operative_leader = {
-		name = "Otto Skorzeny"
-		GFX = GFX_portrait_otto_skorenzy
-		traits = { operative_commando }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { GER }
-	}
-
-	create_operative_leader = {
-		name = "Nikolaus Ritter"
-		GFX = GFX_portrait_nikolaus_ritter
-		traits = { operative_safe_cracker }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { GER }
-	}
-	create_operative_leader = {
-		name = "Eleysa Bazna"
-		GFX = GFX_portrait_eleysa_bazna
-		traits = { operative_infiltrator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { GER TUR }
-	}
-}
 
 
 1945.1.1 = {
@@ -769,7 +857,7 @@ add_to_faction = CRO
 add_ideas = {
 	sour_loser
 	general_staff
-	closed_economy
+	#closed_economy
 	scraping_the_barrel
 	tot_economic_mobilisation
 	wilhelm_keitel
