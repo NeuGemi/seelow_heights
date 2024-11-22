@@ -4,9 +4,7 @@ bookmarks = {
 		desc = "SEELOW_DESC"
 		date = 1945.4.12.2
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
-		default = yes
-		
+		default_country = "GER"		
 
 		"SLO"={
 			history = "SLO_SEELOW_DESC"
@@ -38,9 +36,7 @@ bookmarks = {
 				GER_endsiegmod
 			}
 			focuses = {
-				GER_weserubung
-				GER_plan_z
-				GER_ussr_war_goal
+
 			}
 		}
 		JAP = {
@@ -92,7 +88,7 @@ bookmarks = {
 		}
 
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}

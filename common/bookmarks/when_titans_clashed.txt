@@ -7,7 +7,6 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-
 		"HUN"={
 			history = "HUN_SEELOW_DESC"
 			ideology = fascism
@@ -38,9 +37,7 @@ bookmarks = {
 				GER_endsiegmod
 			}
 			focuses = {
-				GER_weserubung
-				GER_plan_z
-				GER_ussr_war_goal
+
 			}
 		}
 		JAP = {

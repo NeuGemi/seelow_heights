@@ -949,25 +949,6 @@ set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
 add_political_power = 400
 
-		### VANILLA ####
-    unlock_national_focus = GER_danzig_or_war
-    unlock_national_focus = GER_grosraumwirtschaft
-    complete_national_focus = GER_align_romania
-    complete_national_focus = GER_align_hungary
-    complete_national_focus = GER_integrate_war_economies
-    complete_national_focus = GER_air_innovation
-    complete_national_focus = GER_second_vienna_award
-    unlock_national_focus = GER_around_maginot
-    unlock_national_focus = GER_weserubung
-    unlock_national_focus = GER_war_with_france
-    complete_national_focus = GER_naval_rearmament
-    complete_national_focus = GER_naval_effort
-    complete_national_focus = GER_anti_comitern_pact
-    unlock_national_focus = GER_ussr_war_goal
-    unlock_national_focus = GER_atlantikwall
-    unlock_national_focus = GER_ostwall
-    complete_national_focus = GER_form_the_reichskommissariats
-    complete_national_focus = GER_u_boat_effort
 
     complete_national_focus = GER_increase_disparate_volkssturm_deployments
     complete_national_focus = GER_ob_west
