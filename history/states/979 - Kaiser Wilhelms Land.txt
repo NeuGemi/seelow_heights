@@ -25,7 +25,6 @@ state = {
 			12237 = {
 				naval_base = 2
 			}
-		1945.1.1 = {
 			JAP = {
 				set_province_controller = 5135
 				set_province_controller = 12428
@@ -33,8 +32,8 @@ state = {
 				set_province_controller = 7614
 				set_province_controller = 4393
 			}
+		
 		}
-	}
 
 		victory_points = {
 			12240 1 # Wewak
