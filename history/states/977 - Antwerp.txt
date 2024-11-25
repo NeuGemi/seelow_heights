@@ -31,12 +31,10 @@ state = {
 				naval_base = 8
 			}
 		}
-
-		1940.6.20 = {
+		1945.1.1 = {
 			owner = USA
 			controller = USA
-		}
-
+		}		
 	}
 
 	provinces = {

@@ -186,7 +186,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13369 # Buda
+		location = 9660 # Buda
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -197,7 +197,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 23
 		}
-		location = 13370
+		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.1
 	    start_equipment_factor = 0.35
@@ -205,7 +205,7 @@ units = {
 	}
     division= {	
 	    name = "Billnitzer-Csoport"
-		location = 13370
+		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -216,7 +216,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 9
 		}
-		location = 13370
+		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -225,7 +225,7 @@ units = {
 
     division= {	
 	    name = "'Szent Lászlo' Gyalogdandar"
-		location = 13370
+		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.35
@@ -236,7 +236,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13370
+		location = 9660
 		division_template = "Huszár Dandár"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -247,7 +247,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 13370
+		location = 9660
 		division_template = "Gyorshadtest" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -258,7 +258,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 13370
+		location = 9660
 		division_template = "Gyorshadtest" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35
@@ -269,7 +269,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 25
 		}
-		location = 13370
+		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.35

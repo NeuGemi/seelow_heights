@@ -1,32 +1,34 @@
-
-state={
-	id=763
-	name="STATE_763"
+state = {
+	id = 763
+	name = "STATE_763"
 	manpower = 2140234
 	state_category = city
 
-	history={
+	history = {
+
 		owner = GER
-		controller = GER
+		add_core_of = GER
+		add_core_of = PRE
 		
 		victory_points = {
-			13376 10 
+			6332 10 # Königsberg
 		}
 
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 2
-			13376 = {
-				bunker = 5
+			6332 = {
+				bunker = 1
 
 			}
-			11265 = {
-				bunker = 5
-			}
 			anti_air_building = 2
+			6332 = {
+				naval_base = 5
+
+			}
 			air_base = 6
 		}
-		add_core_of = GER
+		
 		1939.1.1 = {
 			buildings = {
 				anti_air_building = 5
@@ -37,9 +39,7 @@ state={
 			controller = SOV
 			GER = {
 				set_province_controller = 11265
-				set_province_controller = 13377
-				set_province_controller = 13375
-				set_province_controller = 13376
+				set_province_controller = 6332
 			}
 		}
 		1945.4.1 = {
@@ -47,16 +47,13 @@ state={
 			controller = SOV
 			GER = {
 				set_province_controller = 11265
-				set_province_controller = 13375
-				set_province_controller = 13376
-
 			}
 		}
 	}
 
-	provinces={
-		281 348 395 3384 6332 11265 13375 13376 13377
+	provinces = {
+		281 348 395 3384 6332 11265
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

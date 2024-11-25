@@ -1,17 +1,20 @@
-state=
-{
-	id=188
-	name="STATE_188"
+state = {
+	id = 188
+	name = "STATE_188"
 	manpower = 150000
-	
 	
 	state_category = rural
 	
 	history = {
-		victory_points = {
-			13374 3
-		}
+
 		owner = LIT
+		add_core_of = LIT
+		add_claim_by = PRE
+
+		victory_points = {
+			3288 3 # Klaipeda/Memel
+		}
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -19,27 +22,20 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = LIT
-
+		
 		1939.3.22 = {
 			owner = GER
 			controller = GER
-		}
-		1945.1.1 = {
-			owner = SOV
-			controller = SOV
-			GER = {
-				set_province_controller = 13374
-			}
+			add_core_of = GER
 		}
 		1945.2.1 = {
 			owner = SOV
 			controller = SOV
 		}
 	}
-	provinces={
-		3288 13374
-	}
 
-	local_supplies=0.0 
+	provinces = {
+		3288 	
+	}
+	local_supplies = 0.0 
 }

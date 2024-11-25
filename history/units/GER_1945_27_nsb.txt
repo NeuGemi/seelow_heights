@@ -678,7 +678,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 69
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	   start_equipment_factor = 0.75
@@ -689,7 +689,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 367
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	   start_equipment_factor = 0.75
@@ -700,7 +700,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 83
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -711,7 +711,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 252
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -722,7 +722,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 35
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -733,7 +733,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 23
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -744,7 +744,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 32
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -755,7 +755,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -766,7 +766,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 21
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -777,7 +777,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 21
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -1087,7 +1087,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 9
 		}
-		location = 13363 # BERLIN
+		location = 6521 # BERLIN
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.50
@@ -1103,7 +1103,7 @@ units = {
     }
     division= {
 	    name = "20. Panzergrenadier Division"
-	    location = 13363 #BERLIN
+	    location = 6521 #BERLIN
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
@@ -1167,16 +1167,16 @@ units = {
 
     division= {
 	    name = "18. Panzergrenadier Division"
-	    location = 13363
+	    location = 6521 #HERE
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
 	    start_manpower_factor = 0.57
-    }  
+   }  
 
    division= {
 	    name = "Panzer-Division 'Müncheberg'"
-	    location = 13363 # BERLIN
+	    location = 6521 # BERLIN
 	    division_template = "Panzer-Division"
 	    start_experience_factor = 0.3
 	    start_equipment_factor = 0.50
@@ -1208,13 +1208,13 @@ units = {
 
     division= {
 	    name = "11. SS Panzergrenadier-Division 'Nordland'"
-	    location = 13366 # BERLIN
+	    location = 6521 # BERLIN
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     } 
     division= {
 	    name = "23. SS Panzergrenadier-Division 'Nederland'"
-	    location = 11359
+	    location = 6521
 	    division_template = "Panzergrenadier-Division"
 	    start_experience_factor = 0.3
     } 
@@ -1264,7 +1264,7 @@ units = {
     ### 9. A-Z 
     division= {	
 	    name = "Sektor Anton"
-		location = 13366
+		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -1272,7 +1272,7 @@ units = {
     }
     division= {	
 	    name = "Sektor Caesar"
-		location = 13366
+		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -1280,7 +1280,7 @@ units = {
     }
     division= {	
 	    name = "Sektor Dora"
-		location = 13366
+		location = 6521
 		division_template = "Volkssturm-Division"	
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -1288,7 +1288,7 @@ units = {
     }
     division= {
 	    name = "Wacht Regiment Berlin"
-	    location = 13366
+	    location = 6521
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.1
 	    start_equipment_factor = 0.6
@@ -1296,7 +1296,7 @@ units = {
     } 
     division= {
 	    name = "SS Wachbataillon Reichführer SS"
-	    location = 13365
+	    location = 6521
 	    division_template = "SS-Infanterie-Division"	
 	    start_experience_factor = 0.1
 	    start_equipment_factor = 0.6
@@ -1323,7 +1323,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 13365
+		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -1334,7 +1334,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 
 		}
-		location = 13365
+		location = 6521
 		division_template = "Volkssturm-Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
@@ -1375,7 +1375,7 @@ units = {
 	}
    division= {
 	    name = "502. SS Schwere Panzer-Abteilung"
-	    location = 13365
+	    location = 6521
 	    division_template = "Schwere Panzer Abteilung"
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.6

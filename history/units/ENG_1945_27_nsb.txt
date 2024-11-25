@@ -146,7 +146,7 @@ units = {
 
 	division= {
 		name = "British Guards Armored Division"
-		location = 11318
+		location = 11264 #HERE
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
@@ -200,7 +200,7 @@ units = {
 	}
 	division= {
 		name = "52. British 'Lowland' Division"
-		location = 11318
+		location = 11264 #HERE
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}

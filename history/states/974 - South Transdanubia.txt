@@ -23,20 +23,12 @@ state = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
-		3670 = {
-			bunker = 5
 		}
-		}
-	SOV = {
-		set_province_controller = 682
-		set_province_controller = 6685
-		set_province_controller = 9624
-		set_province_controller = 11610
-		set_province_controller = 9643
-		set_province_controller = 3680
-		
+		1945.1.11 = {
+			owner = HUN
+			controller = SOV
+		}		
 	}
-}
 
 	provinces = {
 		682 3680 6685 9624 9643 11610

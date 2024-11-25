@@ -28,17 +28,12 @@ state = {
 			controller = USA
 			GER = {
 				set_province_controller = 11407
-			}		
-		}
-		1945.2.1 = {
+			}
+		}	
+		1945.3.1 = {
 			owner = USA
 			controller = USA
-		}
-        1945.4.1 = {
-			owner = FRA
-			controller = FRA
-     	} 
-		
+		}		
 	}
 
 	provinces = {

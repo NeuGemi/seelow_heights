@@ -34,7 +34,11 @@ state = {
 			controller = GER
 			add_core_of = GER
 		}
-
+		1945.4.26 = {
+			SOV = {
+				set_province_controller = 557
+			}
+		}
 	}
 
 	provinces = {

@@ -31,11 +31,11 @@ state = {
 			industrial_complex = 4
 			air_base = 1
 		}
-		
-		1940.6.20 = {
+		1945.1.1 = {
 			owner = USA
 			controller = USA
-		}		
+		}
+		
 	}
 
 	provinces = {

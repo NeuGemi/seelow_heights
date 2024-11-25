@@ -596,55 +596,55 @@ units = {
     ### 2. Armee (CO: Walter Weiß) ####
 	
 	# Reserves #
-    division= {	
-	    name = "Festung 'Graudenz'"
-		location = 11343
-		division_template = "Sicherungs-Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.40
-		start_manpower_factor = 0.90
-    }	 
-	division = {
-		name = "1. Fallschirm-Panzer Division 'Hermann Göring'"
-		location = 11343
-		division_template = "SS-Panzerdivision"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		start_manpower_factor = 0.90
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 203
-		}
-		location = 11343
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.40
-		start_manpower_factor = 0.90
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 547 
-		}
-		location = 11343
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.40
-		start_manpower_factor = 0.90
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 549
-		}
-		location = 11343
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.40
-		start_manpower_factor = 0.90
-	}
+#    division= {	
+#	    name = "Festung 'Graudenz'"
+#		location = 11343 #HERE
+#		division_template = "Sicherungs-Division"
+#		start_experience_factor = 0.1
+#		start_equipment_factor = 0.40
+#		start_manpower_factor = 0.90
+#   }	 
+#	division = {
+#		name = "1. Fallschirm-Panzer Division 'Hermann Göring'"
+#		location = 11343 #HERE
+#		division_template = "SS-Panzerdivision"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.75
+#		start_manpower_factor = 0.90
+#	}
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 203
+#		}
+#		location = 11343  #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.40
+#		start_manpower_factor = 0.90
+#	}
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 547 
+#		}
+#		location = 11343 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.40
+#		start_manpower_factor = 0.90
+#	}
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 549
+#		}
+#		location = 11343 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.40
+#		start_manpower_factor = 0.90
+#	}
 	# VII Panzerkorps #
      division= {
 	    name = "4. SS Polizei Grenadier-Division"
@@ -654,68 +654,68 @@ units = {
 	    start_equipment_factor = 0.50
 	    start_manpower_factor = 0.90
     }  
-   division= {
-	    name = "7. Panzer-Division"
-	    location = 11316
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.70
-	    start_manpower_factor = 0.90
-    }
-    # XVIII Korps #
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 32
-		}
-		location = 11316
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		start_manpower_factor = 0.90
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 215
-		}
-		location = 11316
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		start_manpower_factor = 0.90
-	}
-	### XXXXVI Panzerkorps ###
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 389
-		}
-		location = 11316
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		start_manpower_factor = 0.90
-	}
-   division= {
-	    name = "4. Panzer-Division"
-	    location = 11316
-	    division_template = "Panzer-Division"
-	    start_experience_factor = 0.3
-	    start_equipment_factor = 0.70
-	    start_manpower_factor = 0.90
-    }
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 227
-		}
-		location = 11316
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.75
-		start_manpower_factor = 0.90
-	}
+#   division= {
+#	    name = "7. Panzer-Division"
+#	    location = 11316 #HERE
+#	    division_template = "Panzer-Division"
+#	    start_experience_factor = 0.3
+#	    start_equipment_factor = 0.70
+#	    start_manpower_factor = 0.90
+#    }
+#   # XVIII Korps #
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 32
+#		}
+#		location = 11316 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.75
+#		start_manpower_factor = 0.90
+#	}
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 215
+#		}
+#		location = 11316 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.75
+#		start_manpower_factor = 0.90
+#	}
+#	### XXXXVI Panzerkorps ###
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 389
+#		}
+#		location = 11316 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.75
+#		start_manpower_factor = 0.90
+#	}
+#   division= {
+#	    name = "4. Panzer-Division"
+#	    location = 11316 #HERE
+#	    division_template = "Panzer-Division"
+#	    start_experience_factor = 0.3
+#	    start_equipment_factor = 0.70
+#	    start_manpower_factor = 0.90
+#    }
+#	division= {		
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 227
+#		}
+#		location = 11316 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.3
+#		start_equipment_factor = 0.75
+#		start_manpower_factor = 0.90
+#	}
 	# XXVII Korps #
     division= {	
 	    name = "Kampfgruppe 73. Infanterie-Division"
@@ -890,14 +890,14 @@ units = {
 		start_equipment_factor = 0.60
 		start_manpower_factor = 0.90
     }  
-    division= {	
-	    name = "Kampfgruppe 61. Infanterie-Division"
-		location = 13374
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.60
-		start_manpower_factor = 0.90
-    }  
+#    division= {	
+#	    name = "Kampfgruppe 61. Infanterie-Division"
+#		location = 13374 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.6
+#		start_equipment_factor = 0.60
+#		start_manpower_factor = 0.90
+#   }  
 	division = {
 		name = "18. Panzergrenadier-Division"
 		location = 11265
@@ -940,14 +940,14 @@ units = {
 		start_equipment_factor = 0.60
 		start_manpower_factor = 0.90
     }  
-    division= {	
-	    name = "605. z.b.V Sicherungs-Division"
-		location = 13374
-		division_template = "Sicherungs-Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.60
-		start_manpower_factor = 0.90
-    }
+#    division= {	
+#	    name = "605. z.b.V Sicherungs-Division"
+#		location = 13374 #HERE
+#		division_template = "Sicherungs-Division"
+#		start_experience_factor = 0.6
+#		start_equipment_factor = 0.60
+#		start_manpower_factor = 0.90
+#   }
 	division= {		
 		division_name = {
 				is_name_ordered = yes
@@ -968,22 +968,22 @@ units = {
 		start_manpower_factor = 0.90
     } 
     # Fallschirm-Panzerkorps ‘Hermann Göring’ #
-    division= {	
-	    name = "Kampfgruppe 50. Infanterie-Division"
-		location = 13374
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.60
-		start_manpower_factor = 0.90
-    } 
-    division= {	
-	    name = "Kampfgruppe 69. Infanterie-Division"
-		location = 13374
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.6
-		start_equipment_factor = 0.60
-		start_manpower_factor = 0.90
-    }   
+#    division= {	
+#	    name = "Kampfgruppe 50. Infanterie-Division"
+#		location = 13374 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.6
+#		start_equipment_factor = 0.60
+#		start_manpower_factor = 0.90
+#   } 
+#    division= {	
+#	    name = "Kampfgruppe 69. Infanterie-Division"
+#		location = 13374 #HERE
+#		division_template = "Infanterie-Division"
+#		start_experience_factor = 0.6
+#		start_equipment_factor = 0.60
+#		start_manpower_factor = 0.90
+#    }   
 	division = {
 		name = "2. Fallschirm-Panzer Division 'Hermann Göring'"
 		location = 11265

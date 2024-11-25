@@ -24,14 +24,11 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = POL
+
 		1945.1.1 = {
 			owner = GER
 			controller = GER
-			SOV = {
-					set_province_controller = 13380
-					set_province_controller = 13381
 		}
-}
 		1945.3.1 = {
 			owner = SOV
 			controller = SOV
@@ -39,7 +36,7 @@ state={
 	}
 
 	provinces={
-		562 3458 3497 3586 6416 11430 11532 13380 13381
+		562 3458 3497 3586 6416 11430 11532 
 	}
 
 	local_supplies=0.0 

@@ -704,7 +704,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 69
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	   start_equipment_factor = 0.75
@@ -715,7 +715,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 367
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	   start_equipment_factor = 0.75
@@ -726,7 +726,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 83
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -737,7 +737,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 252
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -748,7 +748,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 35
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -759,7 +759,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 23
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -770,7 +770,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 32
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -781,7 +781,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 13364
+		location = 11265
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.8
 	    start_equipment_factor = 0.75
@@ -2171,7 +2171,7 @@ units = {
     # II Korps - Vienna #
 	division = {
 		name = "2. Waffen SS-Division 'Das Reich'"
-		location = 13368
+		location = 11666 
 		division_template = "SS-Panzerdivision"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.20
@@ -2201,12 +2201,12 @@ units = {
 	}	
     division= {
 	    name = "Kampfgruppe Bünau"
-	    location = 13368
+	    location = 11666 
 	    division_template = "Infanterie-Division"	
 	    start_experience_factor = 0.2
 	    start_equipment_factor = 0.10
 	    start_manpower_factor = 0.57
-    }
+   }
     division= {
 	    name = "Kampfgruppe Oberst Folkmann"
 	    location = 9527

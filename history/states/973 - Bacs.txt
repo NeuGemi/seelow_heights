@@ -23,12 +23,10 @@ state = {
 		victory_points = {
 			6700 2 
 		}
-
-		1944.10.13 = {
+		1945.1.11 = {
 			owner = HUN
 			controller = SOV
-		}
-		
+		}			
 	}
 
 	provinces = {

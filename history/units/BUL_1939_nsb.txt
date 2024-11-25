@@ -122,7 +122,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 13367
+		location = 6739
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 

@@ -46,14 +46,8 @@ state = {
 				industrial_complex = 2
 			}
 		}
-		1945.4.1 = {
-			USA = {
-				set_province_controller = 6581
-				set_province_controller = 6568
-			}
-		}
 		1945.4.26 = {
-			controller = USA
+			controller = FRA
 		}
 
 	}
