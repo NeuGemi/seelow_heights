@@ -52,6 +52,9 @@ state = {
 				set_province_controller = 6568
 			}
 		}
+		1945.4.26 = {
+			controller = USA
+		}
 
 	}
 

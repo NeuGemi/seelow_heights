@@ -23,6 +23,11 @@ state = {
 		victory_points = {
 			6700 2 
 		}
+
+		1944.10.13 = {
+			owner = HUN
+			controller = SOV
+		}
 		
 	}
 

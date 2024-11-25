@@ -1310,7 +1310,57 @@ if = {
 		add_to_faction = YUG
 #		add_to_faction = HUN
 
+		complete_national_focus = SOV_secure_the_administration
+		complete_national_focus = SOV_the_collectivization_process
+		complete_national_focus = SOV_organization_centralization_discipline
+		unlock_national_focus = SOV_war_economy
+		complete_national_focus = SOV_behead_the_snake
+		complete_national_focus = SOV_stalins_cult_of_personality
+		unlock_national_focus = SOV_they_will_know_fear
+		complete_national_focus = SOV_positive_heroism
+		complete_national_focus = SOV_revive_the_stakhanovite_movement
+		unlock_national_focus = SOV_war_heroes
+		unlock_national_focus = SOV_claims_in_baltic 
+		unlock_national_focus = SOV_secure_leningrad
+		unlock_national_focus = SOV_claims_on_poland
+		unlock_national_focus = SOV_claim_on_bessarabia
+		complete_national_focus = SOV_rehabilitated_military
+		complete_national_focus = SOV_military_reorganization
+		complete_national_focus = SOV_desperate_measures
+		complete_national_focus = SOV_an_adaptable_army
+		complete_national_focus = SOV_lessons_of_war
+		complete_national_focus = SOV_penal_battalions
+		complete_national_focus = SOV_organization_of_the_partisans
+		complete_national_focus = SOV_smersh
+		complete_national_focus = SOV_barrier_troops
+		complete_national_focus = SOV_experts_in_camouflage
+		complete_national_focus = SOV_swap_to_political_advisors 
+		complete_national_focus = SOV_the_glory_of_the_red_army
+		complete_national_focus = SOV_military_engineering_university
+		complete_national_focus = SOV_the_molotov_line
+		unlock_national_focus = SOV_move_industry_to_the_urals
+		complete_national_focus = SOV_the_road_of_life
+		complete_national_focus = SOV_the_defense_of_moscow
+		complete_national_focus = SOV_superior_war_machines
+		complete_national_focus = SOV_the_means_to_wage_war
+		complete_national_focus = SOV_soviet_artillery
+		complete_national_focus = SOV_pc_of_mortar_armament
+		complete_national_focus = SOV_development_of_tankograd
+		complete_national_focus = SOV_expand_the_aircraft_industry
+		complete_national_focus = SOV_modernize_aircraft_facilities
+		complete_national_focus = SOV_foster_flying_clubs
+		complete_national_focus = SOV_women_in_aviation
 
+		unlock_national_focus = SOV_raskovas_aviation_group
+
+		complete_national_focus = SOV_intensify_pilot_training_program
+		complete_national_focus = SOV_expand_aviation_institutes
+		complete_national_focus = SOV_ground_support
+		complete_national_focus = SOV_the_modern_war_in_the_skies
+		complete_national_focus = SOV_improve_railway_network
+		complete_national_focus = SOV_policy_of_collective_security
+		complete_national_focus = SOV_prepare_a_war_with_japan
+		complete_national_focus = SOV_recover_the_kuril_islands
 
 
 
