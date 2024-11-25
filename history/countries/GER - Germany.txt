@@ -1,4 +1,4 @@
-﻿capital = 983
+﻿capital = 982
 
 if = {
 	limit = {
