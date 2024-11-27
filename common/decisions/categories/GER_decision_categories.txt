@@ -9,6 +9,11 @@ GER_mefo_bills_category = {
 
 	allowed = {
 		original_tag = GER
+
+	}
+
+	visible = {
+		date < 1945.1.1
 	}
 	priority = 12
 }
@@ -25,7 +30,8 @@ GER_seize_gold_reserves_cat = {
 	priority = 12
 
 	visible = {
-		has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+		has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier  }
+		date < 1945.1.1
 	}
 }
 
@@ -46,6 +52,7 @@ GER_operational_planning_category = {
 		OR = {
 			has_completed_focus = GER_adopt_new_panzer_doctrine
 			has_completed_focus = GER_the_prussian_legacy
+			date < 1945.1.1
 		}
 	}
 }
@@ -62,6 +69,7 @@ GER_price_controls_cat = {
 
 	visible = {
 		has_completed_focus = GER_institute_price_controls
+		date < 1945.1.1
 	}
 }
 
@@ -77,6 +85,7 @@ GER_case_anton_category = {
 	}
 
 	visible = {
+		date < 1945.1.1
 		has_government = fascism
 		any_country_with_original_tag = {
 			original_tag_to_check = FRA
@@ -102,6 +111,7 @@ GER_the_fading_eagle_category = {
 	}
 
 	visible = {
+		date < 1945.1.1
 		has_government = fascism
 		any_country_with_original_tag = {
 			original_tag_to_check = ITA
@@ -123,6 +133,7 @@ GER_reichskommissariats = {
 	}
 
 	visible = {
+		date < 1945.1.1
 		has_completed_focus = GER_uplift_the_rosenberg_office
 		has_government = fascism
 	}
@@ -194,6 +205,7 @@ GER_fortify_the_vaterland_cat = {
 	priority = 8
 
 	visible = {
+		date < 1945.1.1
 		has_completed_focus = GER_fortify_the_vaterland
 	}
 }
@@ -279,6 +291,7 @@ GER_integration_of_puppet_economies_dec_cat = {
 		original_tag = GER
 	}
 	visible = {
+		date < 1945.1.1
 		has_completed_focus = GER_integration_of_puppet_economies
 		num_subjects > 0
 	}

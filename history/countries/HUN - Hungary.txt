@@ -633,12 +633,12 @@ add_breakthrough_progress = {
 		complete_national_focus = wuw_HUN_spur_on_the_trianon_trauma
 		complete_national_focus = wuw_HUN_promote_increased_urbanization
 		complete_national_focus = wuw_HUN_absolute_rule_of_the_national_unity_party
-		complete_national_focus = wuw_HUN_reestablish_the_rongyos_garda
+		unlock_national_focus = wuw_HUN_reestablish_the_rongyos_garda
 		complete_national_focus = wuw_HUN_the_hungarian_life_and_renewal_party
 		complete_national_focus = wuw_HUN_make_the_magyar_legiero_known
 		complete_national_focus = wuw_HUN_act_of_defense
 		complete_national_focus = wuw_HUN_initiate_army_maneuvers
-		complete_national_focus = wuw_HUN_form_the_gyorshadtest
+		unlock_national_focus = wuw_HUN_form_the_gyorshadtest
 		complete_national_focus = wuw_HUN_invest_in_ludovica_academy
 
 		# ONES THAT HAVE TO BE HANDELED MANUALLY

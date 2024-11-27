@@ -440,8 +440,7 @@ GER_oberkommando = {
 		#Fail trigger
 		available = {
 			NOT = { 
-				controls_state = 970 
-				controls_state = 971
+				controls_state = 64 
 			}
 		}
 
@@ -453,8 +452,7 @@ GER_oberkommando = {
 
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 970
-        		state = 971
+        		state = 64
     		}
     		highlight_color_while_active = 3
 		}
@@ -463,7 +461,7 @@ GER_oberkommando = {
 			has_war = yes
 			has_civil_war = no
 			OR = {
-			970 = {
+			64 = {
 				is_controlled_by = ROOT
 				OR = {
 					any_neighbor_state = {
@@ -474,19 +472,7 @@ GER_oberkommando = {
 					}
 					NOT = { is_fully_controlled_by = ROOT }
 				}
-			}	
-			971 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-					}
-				}		
+			}			
 			}
 		}
 
@@ -746,7 +732,7 @@ GER_oberkommando = {
 		#Fail trigger
 		available = {
 			HUN = {
-				NOT = { controls_province = 13369 }
+				NOT = { controls_province = 9660 }
 			}
 		}
 
@@ -768,7 +754,7 @@ GER_oberkommando = {
 			has_start_date < 1945.1.15
 			has_civil_war = no
 			HUN = {
-				controls_province = 13369			
+				controls_province = 9660			
 			}
 		}
 
@@ -2836,8 +2822,6 @@ GER_defense_of_berlin_preparations = {
 			}
 			GER = {
 				controls_state = 64
-				controls_state = 970
-				controls_state = 971
 			}
 		}
 
@@ -2889,8 +2873,7 @@ GER_defense_of_berlin_preparations = {
 				has_start_date > 1945.4.11
 			}
 			GER = {
-				controls_state = 970
-				controls_state = 971
+				controls_state = 64
 			}
 		}
 
@@ -2917,33 +2900,13 @@ GER_defense_of_berlin_preparations = {
 		}
 
 		remove_effect = {
-			971 = {
+			64 = {
 				add_building_construction = {
 				type = bunker
 				level = 1
 				province = 6521
 				instant_build = yes
 				}		
-			}
-			970 = {
-				add_building_construction = {
-				type = bunker
-				level = 2
-				province = 13363
-				instant_build = yes
-				}	
-				add_building_construction = {
-				type = bunker
-				level = 2
-				province = 13366
-				instant_build = yes
-				}
-				add_building_construction = {
-				type = bunker
-				level = 2
-				province = 13365
-				instant_build = yes
-				}	
 			}
 		}		
 	}
@@ -2959,8 +2922,6 @@ GER_defense_of_berlin_preparations = {
 			}
 			GER = {
 				controls_state = 64
-				controls_state = 970
-				controls_state = 971
 			}
 		}
 

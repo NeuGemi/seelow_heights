@@ -1989,7 +1989,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9660
+		location = 11625
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -1998,7 +1998,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9660
+		location = 11625
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2007,7 +2007,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9660
+		location = 11625
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2016,7 +2016,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9660
+		location = 11625
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2025,7 +2025,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 9660
+		location = 11625
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
 	}
@@ -2387,24 +2387,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 11370
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
-		location = 11370	
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2	
-	}
- 	division= {			
-		division_name = {
-			is_name_ordered = yes
-			name_order = 
-		}
 		location = 560
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2	
@@ -2677,17 +2659,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"
 		start_experience_factor = 0.2
 
-	}		
-    division= {	# "1ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 11370
-		division_template = "NKVD Pogranichnaya Diviziya"
-		start_experience_factor = 0.4
-
-	}		
+	}			
     division= {	# "1ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
@@ -2780,17 +2752,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"
 		start_experience_factor = 0.1
 
-	}		
-    division= {	# "1ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location = 11322
-		division_template = "NKVD Pogranichnaya Diviziya"
-		start_experience_factor = 0.1
-
-	}		
+	}			
     division= {	# "1ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
@@ -2812,17 +2774,7 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
-	}		
-    division= {	# "1ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 34
-		}
-		location = 11349
-		division_template = "NKVD Pogranichnaya Diviziya"
-		start_experience_factor = 0.2
-
-	}		
+	}			
       division= {	# "1ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes

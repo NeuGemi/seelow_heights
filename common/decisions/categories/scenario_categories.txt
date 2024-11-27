@@ -27,6 +27,9 @@ GER_defense_of_berlin_preparations = {
 	}
 	visible = {
 		has_war = yes
+		NOT = {
+			has_start_date > 1945.4.11
+		}		
 	}
 }
 

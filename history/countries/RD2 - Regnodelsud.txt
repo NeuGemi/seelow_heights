@@ -113,6 +113,7 @@ add_command_power = 100
 
 add_ideas = SOV_allied_control_commission	
 
+
 ENG = {
 	set_autonomy = {
 		target = RD2

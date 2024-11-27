@@ -213,50 +213,15 @@ set_war_support = 0.3
 
 	set_country_flag = GER_constructed_the_westwall
 	add_ideas = autarkic_economy
-
-#Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
 	
 	complete_national_focus = GER_construct_the_reichsautobahn
 	complete_national_focus = GER_institute_price_controls
-	complete_national_focus = GER_fuhrerprinzip
 	complete_national_focus = GER_party_chancellor_bormann
 	complete_national_focus = GER_accelerate_the_rearmament_program
 	complete_national_focus = GER_kdf_wagen_factories
 	complete_national_focus = GER_develop_modern_maneuver_warfare
 	complete_national_focus = GER_adopt_new_panzer_doctrine
 	complete_national_focus = GER_coal_liquefaction
-	#complete_national_focus = GER_ascension_of_todt #He is getting kicked by Speer anyways
-	complete_national_focus = GER_ascension_of_speer #Since Speer kicks Todt out might as well complete his focus here
 	complete_national_focus = GER_establish_buna_werke
 	complete_national_focus = GER_expanding_the_luftwaffe
 	complete_national_focus = GER_aeronautical_research_institute
@@ -283,7 +248,7 @@ set_war_support = 0.3
 	unlock_national_focus = GER_legion_condor
 
 	# Autarkic economy 
-	unlock_national_focus = GER_autarky_efforts
+	#unlock_national_focus = GER_autarky_efforts
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
@@ -944,6 +909,8 @@ retire_character = GER_erich_bey
 retire_character = GER_erhard_milch
 retire_character = GER_erich_raeder
 
+retire_character = GER_reinhard_heydrich
+
 set_stability = 0.58
 set_war_support = 0.50 #to prevent mutinies event
 add_command_power = 100
@@ -1057,7 +1024,7 @@ create_intelligence_agency = {
 
 		# Allies/Comintern #
 
-    BUL = {
+    	BUL = {
 			add_to_war = {
 				targeted_alliance = SOV
 				enemy = GER
@@ -1082,12 +1049,6 @@ create_intelligence_agency = {
 			}
 		}
 		FIN = {
-			add_to_war = {
-				targeted_alliance = SOV
-				enemy = GER
-			}
-		}
-    TAN = {
 			add_to_war = {
 				targeted_alliance = SOV
 				enemy = GER
