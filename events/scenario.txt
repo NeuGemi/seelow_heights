@@ -2950,23 +2950,45 @@ country_event = {
 	hidden = yes
 
     option = {
-    ai_chance = {
-    base = 100
+    	ai_chance = {
+    	base = 100
     	}
 		hidden_effect = {
-			set_global_flag = SOV_3_unplanned_offensives
-			every_state = {
-				limit = {
-					OR = {
-						state = 5
-						state = 98	
-						state = 10
-						state = 90
+			5 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 9327
+						id = 11386
 					}
 				}
-				set_state_flag = SOV_3_unplanned_offensive_flag_remove_3
-				remove_dynamic_modifier = {
-					modifier = vistula_oder_offensive
+			}
+			98 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 9316
+						id = 6567
+					}
+				}
+			}
+			10 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 6511
+					}
+				}
+			}
+			90 = {
+				remove_province_modifier = {
+					static_modifiers = { MOD_vistula_oder_offensive }
+					province = {
+						id = 3458
+						id = 562
+						id = 3497
+						id = 11430
+					}
 				}
 			}
 		}

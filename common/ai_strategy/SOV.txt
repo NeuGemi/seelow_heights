@@ -824,33 +824,6 @@ japan_ally = {
 	}
 }
 
-germany_ally = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		OR = {
-			has_completed_focus = SOV_anti_capitalist_policies
-			GER = { has_completed_focus = GER_soviet_ally }
-		}
-		country_exists = GER
-	}
-	abort = {
-		NOT = { country_exists = GER }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "GER"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "GER"
-		value = 200
-	}
-}
-
 germany_enemy = {
 	allowed = {
 		original_tag = SOV

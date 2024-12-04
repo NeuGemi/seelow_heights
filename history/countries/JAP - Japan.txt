@@ -329,6 +329,11 @@ create_import = {
 		construction2 = 1
 		construction3 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+		scientist = JAP_yoji_ito
+		state = 532
+	}
 	if = {
 		limit = {
 			has_dlc = "Man the Guns"
@@ -872,6 +877,7 @@ add_to_faction = LAO
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
+		cavity_magnatron = 1
 		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1

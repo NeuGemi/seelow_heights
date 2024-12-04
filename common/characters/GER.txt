@@ -244,23 +244,6 @@ characters = {
 			legacy_id=-1
 		}
 	}
-	GER_hans_krebs={
-		name="Hans Krebs"
-		portraits={
-			army={
-				large="gfx/leaders/GER/mod_portrait_ger_hans_krebs.png"
-			}
-		}
-		corps_commander={
-			traits={  }
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
 	GER_hans_obstfelder={
 		name="Hans von Obstfelder"
 		portraits={
@@ -310,6 +293,9 @@ characters = {
 			planning_skill=3
 			logistics_skill=1
 			legacy_id=-1
+			visible = {
+				has_completed_focus = GER_appoint_ernst_busch
+			}
 		}
 	}
 	GER_walther_luch={
@@ -326,23 +312,6 @@ characters = {
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	GER_walther_nehring={
-		name="Walther Nehring"
-		portraits={
-			army={
-				large="gfx/leaders/GER/mod_portrait_ger_walter_nehring.png"
-			}
-		}
-		corps_commander={
-			traits={ armor_officer desert_fox }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -427,6 +396,9 @@ characters = {
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
+			visible = {
+				has_country_flag = helmuth_weidling_recruited
+			}
 		}
 	} # HERE
 
@@ -1318,10 +1290,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 25
-
-			visible = {
-				has_completed_focus = GER_panzer_troops_school
-			}
 		}
 	}
 
@@ -1349,7 +1317,6 @@ characters = {
 				factor = 1.000
 			}
 		}
-		
 		field_marshal = {
 			traits = { inflexible_strategist trait_cautious war_hero }
 			skill = 4
@@ -1461,13 +1428,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 35
-
-			visible = {
-				OR = {
-					has_completed_focus = GER_strengthen_the_waffen_ss
-					has_global_flag = GER_civil_war_has_started
-				}
-			}
 		}
 	}
 
@@ -1558,12 +1518,6 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 15
 
-			visible = {
-				OR = {
-					has_completed_focus = GER_strengthen_the_waffen_ss
-					has_global_flag = GER_civil_war_has_started
-				}
-			}
 		}
 	}
 
@@ -1584,12 +1538,6 @@ characters = {
 			logistics_skill = 4
 			legacy_id = 24
 
-			visible = {
-				OR = {
-					has_completed_focus = GER_strengthen_the_waffen_ss
-					has_global_flag = GER_civil_war_has_started
-				}
-			}
 		}
 	}
 
@@ -1610,12 +1558,6 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 20
 
-			visible = {
-				OR = {
-					has_completed_focus = GER_strengthen_the_waffen_ss
-					has_global_flag = GER_civil_war_has_started
-				}
-			}
 		}
 	}
 
@@ -1702,9 +1644,6 @@ characters = {
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 2
-			visible = {
-				has_completed_focus = GER_panzer_troops_school
-			}
 		}
 	}
 
@@ -2445,6 +2384,14 @@ characters = {
 			ai_will_do = {
 				factor = 2.000
 			}
+		}
+		field_marshal={
+			traits={  }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
 		}
 	}
 

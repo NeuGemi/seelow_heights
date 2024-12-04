@@ -1092,28 +1092,58 @@ focus_tree = {
 		completion_reward = { 
 			IF = {
 				limit = {
-					has_tech = nuclear_reactor 
+					has_tech = atomic_research 
 					has_tech = experimental_rockets
 				}
 
-				add_tech_bonus = {
-				name = ARG_arma_maravillosa_bonus
-				bonus = 0.5
-				uses = 2
-				category = nuclear
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+			    	value = 1
 				}
-
-				add_tech_bonus = {
-				name = ARG_arma_maravillosa_bonus
-				bonus = 0.5
-				uses = 2
-				category = rocketry
+				add_breakthrough_points = {
+					specialization = specialization_air
+			    	value = 1
 				}
 			}
-
+			else_if = {
+				if = {
+					limit = {
+						has_tech = atomic_research 
+						NOT = { has_tech = experimental_rockets }
+					}
+				}
+				add_tech_bonus = {
+					name = ARG_arma_maravillosa_bonus
+					bonus = 0.5
+					uses = 1
+					category = rocketry
+				}
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+			    	value = 0.5
+				}
+			}
+			else_if = {
+				if = {
+					limit = {
+						NOT = { has_tech = atomic_research }
+						has_tech = experimental_rockets
+					}
+				}
+				add_tech_bonus = {
+					name = ARG_arma_maravillosa_bonus
+					bonus = 0.5
+					uses = 1
+					category = nuclear
+				}
+				add_breakthrough_points = {
+					specialization = specialization_air
+			    	value = 0.5
+				}
+			}
 			ELSE = {
 				set_technology = {
-					nuclear_reactor = 1
+					atomic_research = 1
 				}
 
 				set_technology = {
@@ -1668,6 +1698,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARG_join_the_axis }
 		cost = 10
 		available = {
+			is_subject = no
 			is_in_faction = no
 		}
 
@@ -1715,6 +1746,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARG_argentina_first }
 		cost = 10
 		available = {
+			is_subject = no
 			GER = {
 				exists = yes
 				has_government = fascism
@@ -2918,7 +2950,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ARG_education_synthetics_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_synth_rubber
 			}
@@ -3173,12 +3205,15 @@ focus_tree = {
 
 		completion_reward = { 
 			air_experience = 25
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 			add_tech_bonus = {
 			 	name = ARG_royal_airforce_influence_bonus
-			 	bonus = 0.5
+			 	bonus = 0.4 # was 0.5
 			 	uses = 3
-			 	category = air_equipment # optional 
-			 	# technology  = technology_id # optional
+			 	category = air_equipment 
 			 } 
 
 			 IF = {
@@ -3266,9 +3301,13 @@ focus_tree = {
 
 		completion_reward = { 
 			navy_experience = 25
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.25
+			}
 			add_tech_bonus = {
 			 	name = ARG_royal_navy_influence_bonus
-			 	bonus = 0.5
+			 	bonus = 0.4 # was 0.5
 			 	uses = 3
 			 	category = naval_equipment 
 			 } 
@@ -3362,10 +3401,10 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = ARG_us_army_training_idea
 			add_tech_bonus = {
-			name = ARG_us_army_training_bonus
-			bonus = 0.25
-			uses = 2
-			category = cat_special_forces_generic
+				name = ARG_us_army_training_bonus
+				bonus = 0.25
+				uses = 2
+				category = cat_special_forces_generic
 			}
 		}
 	}
@@ -3507,6 +3546,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARG_join_the_allies }
 		cost = 10
 		available = {
+			is_subject = no
 			is_in_faction = no
 		}
 
@@ -3762,9 +3802,13 @@ focus_tree = {
 
 		completion_reward = { 
 			add_doctrine_cost_reduction = {
-			cost_reduction = 0.5
-			uses = 1
-			category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.25
 			}
 		}
 	}
@@ -4526,6 +4570,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARG_align_with_the_soviets }
 		cost = 10
 		available = {
+			is_subject = no
 			has_civil_war = no
 			is_in_faction = no
 		}
@@ -5517,7 +5562,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ARG_industrial_expansion_bonus
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = industry
 			}
@@ -5574,7 +5619,6 @@ focus_tree = {
 				free_building_slots = {
 					building = infrastructure
 					size > 0
-					include_locked = yes
 				}
 				is_owned_and_controlled_by = ROOT
 			}

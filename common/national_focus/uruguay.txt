@@ -323,6 +323,9 @@ focus_tree = {
 	focus = {
 		id = URG_rincon_del_bonete_hydroelectric_power_station
 		available = {
+			946 = {
+				is_fully_controlled_by = ROOT
+			}
 		}
 		prerequisite = { focus = URG_break_relations_with_the_ussr }
 		mutually_exclusive = { }
@@ -337,9 +340,26 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = {
 				idea_GUAY_electrification_of_the_country
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			946 = {	
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 1613
+					}
+				}
+				custom_effect_tooltip = {
+					localization_key = building_state_modifier|dam
+					INDENT = "    "
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_fascist_influence = yes
 
 		}
@@ -471,17 +491,27 @@ focus_tree = {
 
 	focus = {
 		id = URG_the_fuhrmann_plan
-		available = {
-		} 
+
 		prerequisite = { focus = URG_establish_the_german_uruguayan_cultural_center  }
-		available = { fascism > 0.5 }
+
+		available = { 
+			is_subject = no
+			fascism > 0.5 
+		}
+
 		mutually_exclusive = { }
+
 		icon = GFX_focus_hol_war_on_pacifism
+
 		x = 0
 		y = 1
+
 		cost = 10
+
 		relative_position_id = URG_establish_the_german_uruguayan_cultural_center
+
 		search_filters = { FOCUS_FILTER_POLITICAL  }
+
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
@@ -850,12 +880,18 @@ focus_tree = {
 		relative_position_id = URG_rapid_industrialization
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-			air_experience = 40
+			air_experience = 25 # was 40
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 			add_equipment_to_stockpile = { 
 				type = transport_plane_equipment_1
 				amount = 40 
 				producer = URG
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
 				limit = {
@@ -1236,13 +1272,20 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		x = -6
 		y = 1
-		available = {  }
+		available = { 
+			is_subject = no
+		}
+
 		cost = 5
+
 		relative_position_id = URG_break_diplomatic_relations_with_the_axis
+
 		prerequisite = { focus = URG_break_diplomatic_relations_with_the_axis  focus = URG_anticentralism }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
+
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.15
@@ -1453,14 +1496,21 @@ focus_tree = {
 		available = {
 		}
 
-		icon = GFX_focus_FIN_pragmatic_socialism
+		icon = GFX_focus_generic_self_management
+		
 		x = 1
 		y = 1
+
 		available = {  }
+
 		cost = 5
+
 		prerequisite = { focus = URG_blanco_victory }
+
 		relative_position_id = URG_blanco_victory
+
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+
 		completion_reward = {
 			add_ideas = {
 				idea_URG_traditionalism

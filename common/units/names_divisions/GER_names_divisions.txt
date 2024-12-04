@@ -31,8 +31,7 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-GER_LUF_01 = 
-{
+GER_LUF_01 = {
 	name = "Luftwaffen-Feld Division"
 
 	for_countries = { GER }

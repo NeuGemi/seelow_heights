@@ -1182,6 +1182,11 @@ add_ideas = {
 		construction2 = 1
 		construction3 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+		scientist = SOV_vladimir_kotelnikov
+		state = 260
+	}
 	if = {
 		limit = {
 			NOT = { has_dlc = "No Step Back" }
@@ -1490,6 +1495,7 @@ if = {
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
+		cavity_magnatron = 1
 		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1

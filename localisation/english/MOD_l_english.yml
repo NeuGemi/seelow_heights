@@ -65,9 +65,11 @@ werwolf_tt:0 "§YAdds a string of fortifications around the Salzburg Area§!"
 GER_request_surrender_tt:0 "Gets Event §YGerman Instrument of Surrender§!"
 GER_visible_on_map_tt: "§YWill add a local Province Modifier on the highlighted State§!"
 GER_volkssturm_raised_tt:0 "§YVolkssturm units have been formed in the state!§!"
-kamikaze_focus_tooltip:0 "Allows §YKamikaze Strike§! air missions, ramming enemy bombers in the air."
+kamikaze_focus_tooltip_scenario:0 "Allows §YKamikaze Strike§! air missions, ramming enemy bombers in the air."
 GER_held_vienna:0 "Has held Vienna for X days"
 GER_ag_courland_surrender_tt:0 "§RThe lacking performance in Army Group Courland has been met with disciplinary actions by Hitler!§!"
+recruited_general_busch_tt:0 "Ernst Busch will be available as a Field Marshal"
+recruited_general_weidling_tt:0 "Helmuth Weidling will be available as a General"
 JAP_burma_road_effects_tt:0 "§YAs long as we continue our stranglehold on the Burma Road, Allied lend-lease to China will be dimished!§!\n\nDue to our control of the §OBurma Road§!, China has the following effects:"
 JAP_burma_road_open_effects_tt:0 "§RThe Allies are currently supplying China via the Burma Road§!\n\nDue to their control of the §OBurma Road§!, China has the following effects:"
 JAP_stilwell_road_effects_tt:0 "§RThe Allies are currently supplying China via the Stilwell Road§!\n\nDue to their control of the §OStilwell Road§!, China has the following effects:"
@@ -95,7 +97,7 @@ JAP_aftermath_of_ichi_go_tt:0 "§YWill be removed if Japan fails to maintain the
 JAP_fortify_kyushu_tt:0 "Builds defensive fortifications along the southwestern shores of §YKyushu§!\n"
 
 ### Ideas ###
-GER_totalen_krieg_doctrine:0 "Totalen Krieg"
+GER_totalen_krieg_doctrine:0 "Totaler Krieg"
 GER_shattered_wehrmacht:0 "A Shattered Wehrmacht"
 GER_shattered_wehrmacht_desc:0 "After 6 years of uninterrupted combat, the Wehrmacht is finally on its knees. What was once the most feared army in the world has been turned into a mere phantom skeleton of itself. The regime has turned to ad-hoc formations to defend the last remaining inches of the "Fatherland" while commanders are stuck overseas or across the frontlines, in the Cour and at the spits of Konigsberg... Disparate formations have taken precedence and even the most regular units lack basic equipment needed to perform in extensive combat against the raging Soviet & Allied forces closing in on both sides.\n\nBut not all is lost according to the "Fuhrer" and Propaganda Minister Joseph Goebbels, of which is calling for "Endsieg" or otherwise known as "Final Victory" in the clash of the war. With the announced death of Franklin D. Roosevelt, Hitler believes victory is all but assured..."
 GER_economic_collapse:0 "Allied Bombing Raids" 
@@ -320,8 +322,8 @@ scenarionews.17.b:0 "The war has not developed to their advantage."
 
 scenarionews.100.t:0 "Fall of Hamburg"
 scenarionews.100.d:0 ""
-scenarionews.100.t:0 "Eagle's Nest Captured!"
-scenarionews.100.d:0 ""
+scenarionews.101.t:0 "Eagle's Nest Captured!"
+scenarionews.101.d:0 ""
 
 # Volkssturm Events #
 volkssturm.1.t:0 "Volkssturm Militias Raised in Vienna"

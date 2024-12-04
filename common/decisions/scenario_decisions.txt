@@ -2962,7 +2962,8 @@ GER_defense_of_berlin_preparations = {
 				hidden_effect = {
 					load_oob = "GER_defense_of_berlin"	
 				}
-				recruit_character = GER_helmuth_weidling
+				set_country_flag = helmuth_weidling_recruited
+				custom_effect_tooltip = recruited_general_weidling_tt
 			}
 		}		
 	}

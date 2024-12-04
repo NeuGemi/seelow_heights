@@ -510,6 +510,10 @@ set_war_support = 0.100
 		service_by_requirement
 	}
 
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+
 	if = {
 		limit = {
 			has_dlc = "No Step Back"
@@ -609,6 +613,7 @@ set_war_support = 0.100
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
+		cavity_magnatron = 1
 		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1
