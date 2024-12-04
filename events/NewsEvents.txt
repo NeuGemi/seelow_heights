@@ -1,4 +1,4 @@
-﻿# Seelow mod: News removed: .409 .156 .236(yalta)
+﻿# Seelow mod: News removed: .409 .156 .236 news.184 news.124 news.153
 
 
 
@@ -3746,55 +3746,6 @@ news_event = {
 	}
 }
 
-# The Fall of Manila
-news_event = {
-	id = news.124
-	title = news.124.t
-	desc = news.124.d
-	picture = GFX_news_event_039
-	
-	major = yes
-	
-	trigger = {
-		327 = { is_controlled_by = JAP }
-		327 = { is_owned_by = PHI }
-		JAP = { has_war_with = PHI }
-		NOT = { has_global_flag = fall_of_manila }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_manila
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = news.145.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = PHI
-				TAG = USA
-			}
-		}
-	}
-	option = {
-		name = news.117.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news.100.c
-		trigger = { 
-			OR = {
-				TAG = PHI 
-				TAG = USA
-			}
-		}
-	}
-}
-
 # The Fall of Calcutta
 news_event = {
 	id = news.125
@@ -3942,6 +3893,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_usa
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3985,6 +3939,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_eng
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4028,6 +3985,9 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_fra
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4507,6 +4467,9 @@ news_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
+			GER = { country_event = { id = scenario.5 } }
+		}
 		set_global_flag = fall_of_berlin_sov
 		play_victory_parade_effect = yes
 	}
@@ -5037,87 +5000,6 @@ news_event = {
 	option = {
 		name = news.152.e
 		trigger = { TAG = ENG }
-	}
-}
-
-# Germany Breaks Molotov-Ribbentrop Pact
-news_event = {
-	id = news.153
-	title = news.153.t
-	desc = news.153.d
-	picture = GFX_news_event_german_inspect_troops
-	
-	major = yes
-
-	trigger = {
-		SOV = {
-			has_defensive_war_with = GER
-			has_opinion_modifier = MR_pact
-		}
-		NOT = { has_global_flag = MR_pact_broken_event_flag }
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_global_flag = MR_pact_broken_event_flag
-			SOV = { 
-				remove_opinion_modifier = { target = GER modifier = MR_pact }
-				remove_ideas = SOV_molotov_ribbentrop_pact
-			}
-			GER = { remove_opinion_modifier = { target = SOV modifier = MR_pact } }
-			every_other_country = {
-				limit = { has_opinion_modifier = MR_pact_fascists }
-				remove_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-			}
-		}
-	}
-	
-	option = {
-		name = news.153.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = SOV
-				is_in_faction_with = SOV
-			}
-		}
-		if = {
-			limit = {
-				original_tag = ENG
-				has_government = communism
-				has_country_leader = {
-					name = "Rajani Palme Dutt"
-					ruling_only = yes
-				}
-			}
-			create_country_leader = {
-				name = "Harry Pollitt"
-				desc = "POLITICS_HARRY_POLLITT_DESC"
-				picture = GFX_portrait_Harry_Pollitt
-				expire = "1965.1.1"
-				ideology = leninism
-				traits = {
-					staunch_stalinist
-				}
-			}
-		}
-	}
-	option = {
-		name = news.153.b
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news.153.c
-		trigger = { 
-			OR = {
-				TAG = SOV
-				is_in_faction_with = SOV
-			}
-		}
 	}
 }
 
@@ -6723,37 +6605,6 @@ news_event = {
 					tag = FROM
 				}
 			}
-		}
-	}
-}
-
-
-#Italy Pursues Closer Bonds With Germany
-news_event = {
-	id = news.184
-	title = news.184.t
-	desc = news.184.d
-	picture = GFX_news_event_french_parade
-
-	major = yes
-
-	is_triggered_only = yes
-
-	fire_for_sender = no
-
-	#Our nations share many common interests.
-	option = {
-		name = news.184.a
-		trigger = {
-			tag = GER
-		}
-	}
-
-	#We will keep an eye on the situation.
-	option = {
-		name = news.184.b
-		trigger = {
-			NOT = { tag = GER }
 		}
 	}
 }

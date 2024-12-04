@@ -594,7 +594,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = recruited_general_busch_tt
+			recruit_character = GER_ernst_busch 
+			#custom_effect_tooltip = recruited_general_busch_tt
 		}
 	}
 	focus = {

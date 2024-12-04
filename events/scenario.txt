@@ -1434,40 +1434,40 @@ news_event = {
 }
 
  # The Fall of Budapest
-news_event = {
-	id = scenarionews.7
-	title = scenarionews.7.t
-	desc = scenarionews.7.d
-	picture = GFX_news_event_fallofbudapest
-	
-	major = yes
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = GER
-		SOV = { 
-			has_war_with = HUN 
-			controls_province = 9660
-		}
-		HUN = {
-			is_in_faction_with = GER
-		}
-		NOT = { has_global_flag = fall_of_budapest }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_budapest
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = scenarionews.7.a
-	}
-}
+#news_event = {
+#	id = scenarionews.7
+#	title = scenarionews.7.t
+#	desc = scenarionews.7.d
+#	picture = GFX_news_event_fallofbudapest
+#	
+#	major = yes
+#
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = GER
+#		SOV = { 
+#			has_war_with = HUN 
+#			controls_province = 9660
+#		}
+#		HUN = {
+#			is_in_faction_with = GER
+#		}
+#		NOT = { has_global_flag = fall_of_budapest }
+#	}
+#	
+#	immediate = {
+#		set_global_flag = fall_of_budapest
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = scenarionews.7.a
+#	}
+#}
 
  # The Fall of Königsberg
 news_event = {
