@@ -1005,7 +1005,7 @@ ideas = {
         allowed = { 
             tag = JAP
         }
-        picture = generic_japanese_conflict
+        picture = jap_ichi_go
 
         allowed_civil_war = {
             always = no 
@@ -1026,6 +1026,109 @@ ideas = {
 
         modifier = {          
             custom_modifier_tooltip = JAP_aftermath_of_ichi_go_tt
+        }  
+    }
+    JAP_defeat_at_leyte_gulf = {
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {    
+            naval_night_attack = 0.1
+            navy_anti_air_attack = -0.2
+            naval_damage_factor = -0.15
+            naval_morale = -0.15
+            navy_org = -0.2
+        }  
+    }
+    JAP_defeat_at_leyte_gulf_2 = {
+        name = JAP_defeat_at_leyte_gulf
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {    
+            naval_night_attack = 0.1
+            navy_anti_air_attack = -0.15
+            naval_damage_factor = -0.1
+            naval_morale = -0.1
+            navy_org = -0.15
+        }  
+    }
+    JAP_defeat_at_leyte_gulf_3 = {
+        name = JAP_defeat_at_leyte_gulf
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {    
+            naval_night_attack = 0.1
+            navy_anti_air_attack = -0.1
+            naval_damage_factor = -0.05
+            naval_morale = -0.05
+            navy_org = -0.1
+        }  
+    }
+    JAP_defeat_at_leyte_gulf_4 = {
+        name = JAP_defeat_at_leyte_gulf
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {    
+            naval_night_attack = 0.1
+            navy_anti_air_attack = -0.1
+            naval_damage_factor = -0.05
+            naval_morale = -0.05
+            navy_org = -0.1
         }  
     }
 

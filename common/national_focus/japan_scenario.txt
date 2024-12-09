@@ -1,0 +1,741 @@
+focus_tree = {
+		id = japanese_focus_scenario
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 22
+			tag = JAP
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 1700 }
+	default = no
+
+	focus = {
+		id = JAP_disaster_at_leyte_gulf
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
+		x = 20
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = JAP_finish_the_unryu_class
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = JAP_disaster_at_leyte_gulf }
+		mutually_exclusive = { focus = JAP_scrap_the_unryu_class }
+		x = 19
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_rebuild_the_first_air_fleet
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = { focus = JAP_finish_the_unryu_class }
+		x = 17
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_scrap_the_unryu_class
+		icon = GFX_focus_generic_court
+		prerequisite = { focus = JAP_disaster_at_leyte_gulf }
+		mutually_exclusive = { focus = JAP_finish_the_unryu_class }		
+		x = 21
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_spiritual_mobilization_mod
+		icon = GFX_focus_jap_spiritual_mobilization
+		prerequisite = { focus = JAP_scrap_the_unryu_class focus = JAP_finish_the_unryu_class }
+		x = 20
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_the_scramble_for_chongqing
+		prerequisite = { focus = JAP_disaster_at_leyte_gulf }
+		icon = GFX_focus_chi_one_china_policy
+		x = 5
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_redeploy_the_kwantung_army_chi
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = JAP_the_scramble_for_chongqing }
+		x = 4
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_crush_the_communist_holdouts
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = JAP_redeploy_the_kwantung_army_chi }
+		x = 4
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_deal_with_the_partisans
+		icon = GFX_focus_attack_china
+		prerequisite = { focus = JAP_the_scramble_for_chongqing }
+		x = 2
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_aid_the_wang_jingwei_regime
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = JAP_deal_with_the_partisans }
+		x = 2
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_fortify_yangtze_river
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = JAP_aid_the_wang_jingwei_regime }
+		x = 0
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_reclaim_strategic_railways
+		icon = GFX_focus_generic_road_investment
+		prerequisite = { focus = JAP_crush_the_communist_holdouts }
+		x = 2
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_prolong_the_deadline
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = JAP_the_scramble_for_chongqing }
+		x = 7
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_develop_chinese_resources_mod
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = JAP_prolong_the_deadline }
+		x = 7
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_victory_in_china
+		icon = GFX_focus_chi_proclaim_rival_government
+		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_crush_the_communist_holdouts }
+		x = 6
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_confront_the_yunnan_threat
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_burma_railway_focus_mod }
+		x = 9
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	### Burma focus tree path ###
+
+	focus = {
+		id = JAP_burma_railway_focus_mod
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = JAP_spiritual_mobilization_mod }
+		x = 11
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = JAP_move_against_garde_indochinoise
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = JAP_burma_railway_focus_mod }
+		x = 11
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_isolated_holdouts
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = JAP_burma_railway_focus_mod }
+		x = 13
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_anti_guerilla_training
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = JAP_move_against_garde_indochinoise }
+		x = 11
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	### Operation Ketsugo Focus tree branch ###
+
+	focus = {
+		id = JAP_focus_operation_ketsugo
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = JAP_spiritual_mobilization_mod }
+		x = 18
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_fortify_tokyo_beachheads_focus
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = JAP_focus_operation_ketsugo }
+		x = 15 
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_glorious_death_million
+		icon = GFX_focus_generic_women_in_military
+		prerequisite = { focus = JAP_fortify_tokyo_beachheads_focus }
+		x = 15
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_anti_shore_bombardment_lessons
+		icon = GFX_focus_generic_railway_gun
+		prerequisite = { focus = JAP_glorious_death_million }
+		x = 14
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_establish_the_vfc
+		icon = GFX_focus_SOV_penal_battalions
+		prerequisite = { focus = JAP_glorious_death_million }
+		x = 16
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_white_devils
+		icon = GFX_focus_unknown
+		prerequisite = { focus = JAP_establish_the_vfc focus = JAP_anti_shore_bombardment_lessons }
+		x = 15
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_kamikaze_planes_design
+		icon = GFX_focus_generic_cas_aircraft
+		prerequisite = { focus = JAP_focus_operation_ketsugo }
+		x = 18 
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_fighter_training_programme
+		icon = GFX_focus_jap_zero
+		prerequisite = { focus = JAP_kamikaze_planes_design }
+		x = 18 
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_streamlined_designs
+		icon = GFX_focus_generic_aircraft_production
+		prerequisite = { focus = JAP_fighter_training_programme }
+		x = 18 
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_issue_suicide_sticks
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = JAP_focus_operation_ketsugo }
+		x = 21
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_kyushu_coastal_wall
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = JAP_issue_suicide_sticks }
+		x = 22
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_weapons_for_the_masses
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = JAP_kyushu_coastal_wall }
+		x = 22
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	### Operation Sho-Go Focus tree branch ###
+
+	focus = {
+		id = JAP_focus_operation_shogo
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = JAP_spiritual_mobilization_mod }
+		x = 28
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_fortify_formosa
+		icon = GFX_focus_FIN_coastal_defense
+		prerequisite = { focus = JAP_focus_operation_shogo }
+		x = 24
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_forward_operating_bases
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = JAP_fortify_formosa }
+		x = 24
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_formosa_ryukyu_perimeter
+		icon = GFX_focus_generic_air_defense
+		prerequisite = { focus = JAP_forward_operating_bases focus = JAP_kyushu_coastal_wall }
+		x = 24
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_mine_laying_developments
+		icon = GFX_focus_generic_mine_warfare
+		prerequisite = { focus = JAP_formosa_ryukyu_perimeter focus = JAP_weapons_for_the_masses }
+		x = 23
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_stifle_filipino_resistance
+		icon = GFX_focus_focus_fra_maquis
+		prerequisite = { focus = JAP_focus_operation_shogo }
+		x = 28
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_retreat_to_upper_luzon
+		icon = GFX_focus_generic_armored_air_support
+		prerequisite = { focus = JAP_stifle_filipino_resistance }
+		x = 27
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_reorganize_14th_army
+		icon = GFX_focus_SOV_restore_cossack_units
+		prerequisite = { focus = JAP_stifle_filipino_resistance }
+		x = 29
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_raise_filipino_militia
+		icon = GFX_focus_generic_fascist_troops
+		prerequisite = { focus = JAP_reorganize_14th_army focus = JAP_retreat_to_upper_luzon }
+		x = 28
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_jungle_fighting_experts
+		icon = GFX_focus_por_luso_tropicalism
+		prerequisite = { focus = JAP_stifle_filipino_resistance }
+		x = 31
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_small_unit_tactics
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = JAP_jungle_fighting_experts }
+		x = 31
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_redeploy_the_kwantung_army_sov
+		icon = GFX_focus_jap_cast_the_die
+		prerequisite = { focus = JAP_disaster_at_leyte_gulf }
+		x = 35
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_renew_the_soviet_nap_pact
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = JAP_redeploy_the_kwantung_army_sov }
+		x = 35
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_delaying_actions
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = JAP_renew_the_soviet_nap_pact }
+		x = 34
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_hailar_solun_line
+		icon = GFX_goal_fortify_the_westwall
+		prerequisite = { focus = JAP_renew_the_soviet_nap_pact }
+		x = 36
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_mongolian_border_troops
+		icon = GFX_focus_generic_infiltration
+		prerequisite = { focus = JAP_delaying_actions }
+		x = 33
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_protect_korean_border
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = JAP_delaying_actions focus = JAP_hailar_solun_line }
+		x = 35
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_raise_barrier_troops
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = JAP_hailar_solun_line }
+		x = 37
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_august_storm
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = JAP_raise_barrier_troops focus = JAP_mongolian_border_troops }
+		x = 35
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+}
