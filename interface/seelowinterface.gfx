@@ -1,5 +1,13 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_mod_portrait_JAP_hirohito"
+		texturefile = "gfx/leaders/MOD/mod_portrait_JAP_hirohito.png"
+	}
+	SpriteType = {
+		name = "GFX_mod_portrait_GER_adolf_hitler"
+		texturefile = "gfx/leaders/MOD/mod_portrait_GER_adolf_hitler.png"
+	}
+	SpriteType = {
 		name = "GFX_mod_portrait_ITA_benito_mussolini"
 		texturefile = "gfx/leaders/MOD/mod_portrait_ITA_benito_mussolini.png"
 	}

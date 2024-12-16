@@ -1,0 +1,87 @@
+	focus = {
+		id = JAP_develop_chinese_resources_mod
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = JAP_prolong_the_deadline }
+		x = 7
+		y = 5
+		cost = 1
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 325
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			605 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			325 = {
+				add_resource = {
+					type = aluminium
+					amount = 18
+				}
+			}
+		}
+	}
+	focus = {
+		id = JAP_victory_in_china
+		icon = GFX_focus_chi_proclaim_rival_government
+		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_crush_the_communist_holdouts }
+		x = 6
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = JAP_confront_the_yunnan_threat
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_burma_railway_focus_mod }
+		x = 9
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			YUN = {
+				has_capitulated = yes
+			}
+		}
+
+		available = {
+			YUN = {
+				has_capitulated = no
+			}
+			NOT = {
+				YUN = { is_in_faction_with = ROOT } 
+			}
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = JAP_subdue_yunnan
+				days = 70
+			}
+		}
+	}
