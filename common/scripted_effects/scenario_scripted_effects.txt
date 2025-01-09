@@ -215,6 +215,43 @@ JAP_scenario_setting_sun_level_up = {
 	}
 }
 
+# Level down effects of Disaster at Leyte Gulf
+JAP_scenario_setting_sun_level_down = {
+		if = {
+		limit = {
+			has_idea = JAP_defeat_at_leyte_gulf_4
+		}
+		remove_ideas = JAP_defeat_at_leyte_gulf_4
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_defeat_at_leyte_gulf
+		}
+		swap_ideas = {
+			remove_idea = JAP_defeat_at_leyte_gulf
+			add_idea = JAP_defeat_at_leyte_gulf_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_defeat_at_leyte_gulf_2
+		}
+		swap_ideas = {
+			remove_idea = JAP_defeat_at_leyte_gulf_2
+			add_idea = JAP_defeat_at_leyte_gulf_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = JAP_defeat_at_leyte_gulf_3
+		}
+		swap_ideas = {
+			remove_idea = JAP_defeat_at_leyte_gulf_3
+			add_idea = JAP_defeat_at_leyte_gulf_4
+		}
+	}
+}
+
 
 
 CHI_set_military_offensive_effect = {

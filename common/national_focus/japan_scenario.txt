@@ -23,7 +23,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			JAP_scenario_setting_sun_level_down = yes
 		}
 	}
 	focus = {
@@ -38,7 +38,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = JAP_the_ija_finish_unryu
 		}
 	}
 	focus = {
@@ -52,7 +52,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = JAP_the_ija_finish_unryu
+				add_idea = JAP_the_ija_finish_unryu_2
+			}
 		}
 	}
 	focus = {
@@ -67,7 +70,42 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = JAP_the_ija_scrap_unryu
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = -3
+					instant_build = yes
+				}
+				set_state_flag = JAP_scrap_the_unryu_class
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = USA_arsenal_of_democracy_3AF
+			}
 		}
 	}
 	focus = {
@@ -81,7 +119,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = spiritual_mobilization_idea
+			custom_effect_tooltip = peace_conference_spiritual_mob_modifier_japan
 		}
 	}
 	focus = {
@@ -95,7 +134,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = { decision = JAP_conquer_chongqing show_effect_tooltip = yes }			
 		}
 	}
 	focus = {
@@ -109,7 +148,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			hidden_effect = {
+				set_country_flag = JAP_redeployed_kwantung_to_china
+			}
+			#Spawn Divisions
 		}
 	}
 	focus = {
@@ -637,7 +679,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			hidden_effect = {
+				set_country_flag = JAP_redeployed_kwantung_to_china
+			}
 		}
 	}
 	focus = {

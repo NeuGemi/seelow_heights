@@ -856,6 +856,47 @@ GER_oberkommando = {
 
 #NOTE: Revisit timed mission logic
 JAP_hold_territory = {
+	JAP_conquer_chongqing = {
+		icon = GFX_decision_generic_disband_irregulars
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_province = 1330 }
+		}
+
+		days_mission_timeout = 120
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			JAP = { has_completed_focus = JAP_the_scramble_for_chongqing }
+				CHI = {
+					controls_state = 288
+				}
+			has_war = yes
+			has_civil_war = no
+			288 = {
+				is_controlled_by = ROOT
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		#Fail
+		complete_effect = {
+			add_war_support = -0.05
+			add_stability = -0.05
+		}	
+	}
 	JAP_operation_ten_go = {
 		icon = GFX_decision_generic_human_torpedo 
 

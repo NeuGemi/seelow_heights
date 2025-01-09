@@ -1131,6 +1131,97 @@ ideas = {
             navy_org = -0.1
         }  
     }
+    JAP_the_ija_finish_unryu = {
+        name = JAP_the_ija
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            naval_equipment_upgrade_xp_cost = -0.1
+        }
+            
+        equipment_bonus = {
+            ship_hull_carrier = {
+                build_cost_ic = -0.05 instant = yes
+            }
+        }
+    }
+    JAP_the_ija_finish_unryu_2 = {
+        name = JAP_the_ija
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            naval_equipment_upgrade_xp_cost = -0.1
+            production_speed_dockyard_factor = 0.1  
+        }
+
+        equipment_bonus = {
+            ship_hull_heavy = {
+                build_cost_ic = 0.05 instant = yes
+            }
+            ship_hull_carrier = {
+                build_cost_ic = -0.15 instant = yes
+            }
+            ship_hull_submarine = {
+                build_cost_ic = 0.05 instant = yes
+            }
+        }
+
+    }
+    JAP_the_ija_scrap_unryu = {
+        name = JAP_the_ija
+
+        allowed = { 
+            tag = JAP
+        }
+        picture = generic_navy_bonus
+
+        allowed_civil_war = {
+            always = no 
+        }
+
+        available = {
+
+        }
+
+        removal_cost = -1
+
+        equipment_bonus = {
+            ship_hull_heavy = {
+                build_cost_ic = 0.1 instant = yes
+            }
+            ship_hull_carrier = {
+                build_cost_ic = 0.1 instant = yes
+            }
+        }
+    }
 
     # SOV
      SOV_berlin_strategic_offensive_operation = {
