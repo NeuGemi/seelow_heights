@@ -216,7 +216,7 @@ JAP_scenario_setting_sun_level_up = {
 }
 
 # Level down effects of Disaster at Leyte Gulf
-JAP_scenario_setting_sun_level_down = {
+JAP_scenario_disaster_leyte_gulf_level_down = {
 		if = {
 		limit = {
 			has_idea = JAP_defeat_at_leyte_gulf_4

@@ -80,6 +80,7 @@ JAP_operation_ketsugo_cat = {
 	}
 	visible = {
 		has_war = yes
+		has_completed_focus = JAP_focus_operation_ketsugo
 	}
 }
 

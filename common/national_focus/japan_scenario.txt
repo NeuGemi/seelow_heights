@@ -23,7 +23,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			JAP_scenario_setting_sun_level_down = yes
+			JAP_scenario_disaster_leyte_gulf_level_down = yes
 		}
 	}
 	focus = {
@@ -83,7 +83,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = -3
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = JAP_scrap_the_unryu_class
@@ -98,13 +98,12 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = -3
 					instant_build = yes
 				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
+				set_state_flag = JAP_scrap_the_unryu_class
 			}
 		}
 	}
@@ -152,6 +151,19 @@ focus_tree = {
 				set_country_flag = JAP_redeployed_kwantung_to_china
 			}
 			#Spawn Divisions
+			if = { limit = { NOT = { has_completed_focus = redeploy_the_kwantung_army_sov } } 
+				add_timed_idea = {
+					idea = JAP_conquer_china_idea_1
+					days = 60
+				}
+				288 = { #Manchuria
+					create_unit = {
+						division = "division_template = \"Chugata Hohei Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+						owner = ROOT
+						count = 5
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -165,7 +177,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			PRC = { add_war_support = -0.05 }
+			swap_idea = {
+				remove_idea = JAP_conquer_china_idea_1
+				add_idea = JAP_conquer_china_idea_2
+				add_days = 20
+			}
 		}
 	}
 	focus = {
@@ -179,6 +196,17 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#TODO_add dynamic modifiers to states
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_2
+				}
+			}
+			else = {
+				add_idea = JAP_deal_with_the_partisans_idea
+			}
 
 		}
 	}
@@ -207,7 +235,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#64 = {
+			#	add_building_construction = {
+			#		type = bunker
+			#		level = 2
+			#		instant_build = yes
+			#		province =  6521
+			#	}
+			#}
 		}
 	}
 	focus = {
@@ -221,7 +256,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+				#Regensburg - Wien
+				#build_railway = {
+				#	path = { 9515 9681 3703 9665 11651 704 11666 }
+				#}
 		}
 	}
 	focus = {
@@ -235,7 +273,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_war_support = -0.1
+			add_days_remove  = {
+    			decision = JAP_conquer_chongqing
+    			days = 30
+			}
 		}
 	}
 	focus = {
@@ -248,22 +290,36 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
+		available = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 325
+		}
+
+		bypass = {
 
 		}
-	}
-	focus = {
-		id = JAP_victory_in_china
-		icon = GFX_focus_chi_proclaim_rival_government
-		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_crush_the_communist_holdouts }
-		x = 6
-		y = 7
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			605 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+			325 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_dlc = "Waking the Tiger" }
+				unlock_decision_category_tooltip = prospect_for_resources
+			}
 		}
 	}
 	focus = {
@@ -277,7 +333,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = JAP_conquer_yunnan
+				days = 30
+			}
 		}
 	}
 
@@ -294,7 +353,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+				#Regensburg - Wien
+				#build_railway = {
+				#	path = { 9515 9681 3703 9665 11651 704 11666 }
+				#}
 		}
 	}
 
@@ -309,7 +371,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = {
+			    decision = JAP_operation_meigo_sakusen
+			    show_effect_tooltip = yes
+			    show_modifiers = yes 
+			}
 		}
 	}
 	focus = {
@@ -323,7 +389,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#64 = {
+			#	add_building_construction = {
+			#		type = bunker
+			#		level = 2
+			#		instant_build = yes
+			#		province =  6521
+			#	}
+			#}
 		}
 	}
 	focus = {
@@ -337,7 +410,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_2
+				}
+			}
+			else = {
+				add_idea = JAP_deal_with_the_partisans_idea
+			}
 		}
 	}
 
@@ -354,7 +436,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_category_tooltip = JAP_operation_ketsugo_cat
 		}
 	}
 	focus = {
@@ -368,7 +450,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = JAP_fortify_tokyo
 		}
 	}
 	focus = {
@@ -382,7 +464,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = JAP_the_glorious_death_of_one_million
 		}
 	}
 	focus = {
@@ -396,7 +478,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#TODO IJA scripted effects ns
 		}
 	}
 	focus = {
@@ -410,13 +492,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = JAP_establish_the_vfc_decision			
 		}
 	}
 	focus = {
 		id = JAP_white_devils
 		icon = GFX_focus_unknown
-		prerequisite = { focus = JAP_establish_the_vfc focus = JAP_anti_shore_bombardment_lessons }
+		prerequisite = { focus = JAP_establish_the_vfc }
+		prerequisite = { focus = JAP_anti_shore_bombardment_lessons }
 		x = 15
 		y = 9
 		cost = 1
@@ -424,7 +507,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#TODO IJA scripted effects ns
 		}
 	}
 	focus = {
@@ -494,7 +577,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			unlock_decision_tooltip = JAP_fortify_kyushu
 		}
 	}
 	focus = {

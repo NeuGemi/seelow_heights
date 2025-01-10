@@ -549,6 +549,8 @@ recruit_character = JAP_kijuro_shidehara
 
 	oob = "JAP_1945_1_12"
 
+	set_variable = { var = JAP_vfc value = 0 }
+
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
 	set_war_support = 0.2
 	set_fuel_ratio = 0.6

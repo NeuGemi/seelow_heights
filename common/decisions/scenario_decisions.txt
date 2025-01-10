@@ -855,7 +855,7 @@ GER_oberkommando = {
 }
 
 #NOTE: Revisit timed mission logic
-JAP_hold_territory = {
+ llll_hold_territory = {
 	JAP_conquer_chongqing = {
 		icon = GFX_decision_generic_disband_irregulars
 
@@ -1048,6 +1048,7 @@ JAP_hold_territory = {
 		visible = {
 			original_tag = JAP
 			has_start_date < 1945.1.13
+			has_completed_focus = JAP_move_against_garde_indochinoise
 		}
 
 		fire_only_once = yes
@@ -1156,6 +1157,7 @@ JAP_operation_ketsugo_cat = {
 				has_war_with = USA
 			}
 			has_global_flag = JAP_operation_downfall_underway
+			has_completed_focus = JAP_kyushu_coastal_wall
 		}
 
 		allowed = {
@@ -1191,6 +1193,48 @@ JAP_operation_ketsugo_cat = {
 			weekly_manpower = 12500
 		}	
 	}
+	JAP_establish_the_vfc_decision = {
+		icon = GFX_decision_generic_military 
+
+		available = {
+			JAP = {
+				has_war_with = USA
+			}
+			has_completed_focus = JAP_establish_the_vfc
+		}
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			original_tag = JAP
+			has_completed_focus = JAP_establish_the_vfc
+			check_variable = { var = JAP_vfc value = 12 compare = less_than_or_equals }
+		}
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		custom_cost_trigger = {
+			has_political_power > 14
+			has_army_experience > 9
+		}
+		custom_cost_text = decision_cost_pp_15_ArmXP_10
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -15
+				army_experience = -10
+				add_to_variable = { var = JAP_vfc value = 3 }
+			}
+		}	
+
+		remove_effect = {
+			custom_effect_tooltip = JAP_vfc_var_value_tt
+		}
+	}
 	JAP_evacuate_the_ighq_underground = {
 		icon = GFX_decision_generic_operation 
 
@@ -1225,6 +1269,10 @@ JAP_operation_ketsugo_cat = {
 			base = 1
 		}
 
+		available = {
+			has_completed_focus = JAP_kyushu_coastal_wall
+		}
+
 		visible = {
 			528 = { #
 				any_province_building_level = {
@@ -1237,7 +1285,7 @@ JAP_operation_ketsugo_cat = {
 						id = 1183
 					}
 					building = coastal_bunker
-					level < 10
+					level < 5
 				}
 			}
 		}
@@ -1280,6 +1328,91 @@ JAP_operation_ketsugo_cat = {
 			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
 
 			custom_effect_tooltip = JAP_fortify_kyushu_tt
+			hidden_effect = {
+				528 = { #
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							id = 1020
+							id = 4102
+							id = 9950
+							id = 12032
+							id = 11949
+							id = 1183
+						}
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	JAP_fortify_tokyo = {
+		icon = GFX_decision_generic_mountain_fortification
+
+		ai_will_do = {
+			base = 1
+		}
+
+		available = {
+			has_completed_focus = JAP_fortify_tokyo_beachheads_focus
+		}
+
+		visible = {
+			528 = { #
+				any_province_building_level = {
+					province = {
+						id = 1020
+						id = 4102
+						id = 9950
+						id = 12032
+						id = 11949
+						id = 1183
+					}
+					building = coastal_bunker
+					level < 5
+				}
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 528 #
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		cancel_trigger = {
+			NOT = { has_full_control_of_state = 528 }
+		}
+
+		cancel_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -15
+			}
+		}
+
+		remove_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+
+			custom_effect_tooltip = JAP_fortify_tokyo_tt
 			hidden_effect = {
 				528 = { #
 					add_building_construction = {

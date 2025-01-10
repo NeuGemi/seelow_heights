@@ -1142,11 +1142,44 @@ country_event = {
     		producer = JAP
     	} 
 		hidden_effect = {
-			282 = {
-				create_unit = {
-					division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
-					owner = ROOT
-					count = 10
+			if = { 
+				limit = { check_variable = { JAP_vfc = 3 compare = equals }	}
+				282 = {
+					create_unit = {
+						division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 3
+					}
+				}
+			}
+			if = { 
+				limit = { check_variable = { JAP_vfc = 6 compare = equals }	}
+				282 = {
+					create_unit = {
+						division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 6
+					}
+				}
+			}
+			if = { 
+				limit = { check_variable = { JAP_vfc = 9 compare = equals }	}
+				282 = {
+					create_unit = {
+						division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 9
+					}
+				}
+			}
+			if = { 
+				limit = { check_variable = { JAP_vfc = 12 compare = equals } }
+				282 = {
+					create_unit = {
+						division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 12
+					}
 				}
 			}
 		}		

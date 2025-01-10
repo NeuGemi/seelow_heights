@@ -1221,7 +1221,110 @@ ideas = {
                 build_cost_ic = 0.1 instant = yes
             }
         }
+    JAP_conquer_china_idea_1 = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = CHI
+            attack_bonus_against = 0.05
+            }    
+        }
+    JAP_conquer_china_idea_2 = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = CHI
+            attack_bonus_against = 0.05
+            }   
+        targeted_modifier = {
+            tag = SHX
+            attack_bonus_against = 0.1
+            } 
+        targeted_modifier = {
+            tag = PRC
+            attack_bonus_against = 0.1
+            }  
+        }
+    JAP_conquer_yunnan = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = YUN
+            attack_bonus_against = 0.1
+            }  
+        }
+    JAP_deal_with_the_partisans_idea = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            resistance_damage_to_garrison = -0.05
+            resistance_growth = -0.05
+        }  
     }
+    JAP_deal_with_the_partisans_idea_2 = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            resistance_damage_to_garrison = -0.1
+            resistance_growth = -0.07
+        }  
+    }
+}
 
     # SOV
      SOV_berlin_strategic_offensive_operation = {
