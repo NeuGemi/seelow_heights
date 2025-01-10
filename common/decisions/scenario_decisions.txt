@@ -855,7 +855,7 @@ GER_oberkommando = {
 }
 
 #NOTE: Revisit timed mission logic
- llll_hold_territory = {
+JAP_hold_territory = {
 	JAP_conquer_chongqing = {
 		icon = GFX_decision_generic_disband_irregulars
 

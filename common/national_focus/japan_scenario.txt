@@ -151,7 +151,7 @@ focus_tree = {
 				set_country_flag = JAP_redeployed_kwantung_to_china
 			}
 			#Spawn Divisions
-			if = { limit = { NOT = { has_completed_focus = redeploy_the_kwantung_army_sov } } 
+			if = { limit = { NOT = { has_completed_focus = JAP_redeploy_the_kwantung_army_sov } } 
 				add_timed_idea = {
 					idea = JAP_conquer_china_idea_1
 					days = 60
@@ -178,7 +178,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			PRC = { add_war_support = -0.05 }
-			swap_idea = {
+			swap_ideas = {
 				remove_idea = JAP_conquer_china_idea_1
 				add_idea = JAP_conquer_china_idea_2
 				add_days = 20
@@ -205,7 +205,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				add_idea = JAP_deal_with_the_partisans_idea
+				add_ideas = JAP_deal_with_the_partisans_idea
 			}
 
 		}
@@ -418,7 +418,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				add_idea = JAP_deal_with_the_partisans_idea
+				add_ideas = JAP_deal_with_the_partisans_idea
 			}
 		}
 	}
