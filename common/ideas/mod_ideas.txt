@@ -927,6 +927,75 @@ ideas = {
             defense_bonus_against = 0.05 #Not higher because of JAP_okinawa_victory_or_death
         }    
     }
+    JAP_sho_go_3 = { #If sho_go_2 is picked, focus will give this
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            OR = {
+                controls_state = 627 
+                controls_state = 623   
+                controls_province = 11932
+                controls_province = 10124
+                controls_province = 1123
+                controls_province = 7115          
+            }
+        }
+
+        removal_cost = -1
+
+        modifier = {          
+            pocket_penalty = -0.2
+            attrition_for_controller = -0.1
+        }
+
+        targeted_modifier = {
+            tag = USA
+            defense_bonus_against = 0.1
+        }    
+    }
+    JAP_sho_go_4 = { #If sho_go_2 is yet to be picked, focus will give this
+
+        allowed = { 
+            always = no 
+            tag = JAP
+        }
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        available = {
+            OR = {
+                controls_state = 627 
+                controls_state = 623   
+                controls_province = 11932
+                controls_province = 10124
+                controls_province = 1123
+                controls_province = 7115          
+            }
+        }
+
+        removal_cost = -1
+
+        modifier = {          
+            attrition_for_controller = -0.1
+        }
+
+        targeted_modifier = {
+            tag = USA
+            defense_bonus_against = 0.1 #Not higher because of JAP_okinawa_victory_or_death
+        }    
+    }
     JAP_okinawa_victory_or_death = {
 
         allowed = { 
@@ -1238,7 +1307,11 @@ ideas = {
         targeted_modifier = {
             tag = CHI
             attack_bonus_against = 0.05
-            }    
+            }   
+        targeted_modifier = {
+            tag = SOV
+            attack_bonus_against = -0.1
+            }     
         }
     JAP_conquer_china_idea_2 = {
 
@@ -1265,7 +1338,11 @@ ideas = {
         targeted_modifier = {
             tag = PRC
             attack_bonus_against = 0.1
-            }  
+            }
+        targeted_modifier = {
+            tag = SOV
+            attack_bonus_against = -0.12
+            }     
         }
     JAP_conquer_yunnan = {
 
@@ -1323,6 +1400,51 @@ ideas = {
             resistance_damage_to_garrison = -0.1
             resistance_growth = -0.07
         }  
+    }
+    JAP_kamikaze_mod_1 = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            air_training_xp_gain_factor = 0.15
+            air_untrained_pilots_penalty_factor = -0.1
+            air_weather_penalty = -0.05
+        }  
+    }
+    JAP_kamikaze_mod_2 = {
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            air_training_xp_gain_factor = 0.15
+            air_untrained_pilots_penalty_factor = -0.1
+            air_weather_penalty = -0.05
+        } 
+        equipment_bonus = {
+            small_plane_airframe = {
+                build_cost_ic = -0.1 instant = yes
+            }
+        } 
     }
 
     # SOV

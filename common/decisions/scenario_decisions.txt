@@ -1023,6 +1023,14 @@ JAP_hold_territory = {
     				add_idea = JAP_sho_go_2
 				}
 			}
+			if = {
+				limit = { NOT = { has_idea = JAP_sho_go_3 } }
+				swap_ideas = {
+    				remove_idea = JAP_sho_go_1
+    				remove_idea = JAP_sho_go_2
+    				add_idea = JAP_sho_go_4
+				}
+			}
 			else = {
 				add_ideas = JAP_sho_go_2
 			}

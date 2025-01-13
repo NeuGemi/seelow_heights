@@ -250,7 +250,7 @@ focus_tree = {
 		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = JAP_crush_the_communist_holdouts }
 		x = 2
-		y = 7
+		y = 11
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -276,7 +276,7 @@ focus_tree = {
 			add_war_support = -0.1
 			add_days_remove  = {
     			decision = JAP_conquer_chongqing
-    			days = 30
+    			days = -30
 			}
 		}
 	}
@@ -371,6 +371,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			#TODO add revolt if not selected
 			unlock_decision_tooltip = {
 			    decision = JAP_operation_meigo_sakusen
 			    show_effect_tooltip = yes
@@ -437,6 +438,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip = JAP_operation_ketsugo_cat
+			#TODO add flavoured conscription law
 		}
 	}
 	focus = {
@@ -479,6 +481,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			#TODO IJA scripted effects ns
+			JAP_modify_army_modifier = yes
+			add_to_variable = { 
+				JAP_military_max_dig_in_factor = 0.1
+				tooltip = max_dig_in_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -492,6 +499,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_manpower = 100000
 			unlock_decision_tooltip = JAP_establish_the_vfc_decision			
 		}
 	}
@@ -521,7 +529,19 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			air_experience = 25
+			add_tech_bonus = {
+				name = JAP_kamikaze_plane_designs
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 	focus = {
@@ -535,7 +555,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			air_experience = 25
+			add_ideas = JAP_kamikaze_mod_1
 		}
 	}
 	focus = {
@@ -549,7 +570,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = JAP_kamikaze_mod_1
+				add_idea = JAP_kamikaze_mod_2
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+				hidden_effect = { set_technology = { suicide_craft = 1 } }
+			}
+			else = {
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect_bba
+				hidden_effect = { set_technology = { suicide_charge = 1 popup = no} }
+			}
 		}
 	}
 	focus = {
@@ -563,7 +598,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#TODO ija scripted effect ns
 		}
 	}
 	focus = {
@@ -591,7 +626,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#TODO ija scripted effect ns			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 20000
+				producer = JAP
+			}		
 		}
 	}
 
@@ -608,7 +648,23 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			if = {
+				limit = { has_idea = JAP_sho_go_1 }
+				swap_ideas = {
+    				remove_idea = JAP_sho_go_1
+    				add_idea = JAP_sho_go_4
+				}
+			}
+			if = {
+				limit = { has_idea = JAP_sho_go_2 } 
+				swap_ideas = {
+    				remove_idea = JAP_sho_go_2
+    				add_idea = JAP_sho_go_3
+				}
+			}
+			else = {
+				add_ideas = JAP_sho_go_3
+			}
 		}
 	}
 	focus = {
@@ -622,7 +678,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+		#	STATE = {
+		#		add_building_construction = {
+		#			type = coastal_bunker
+		#			level = 1
+		#			instant_build = yes
+		#			province = {
+		#				all_provinces = yes
+		#		    }
+		#		}			
+		#	}
 		}
 	}
 	focus = {
@@ -636,7 +701,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+		#	STATE = {
+		#		add_building_construction = {
+		#			type = naval_base
+		#			level = 1
+		#			instant_build = yes
+		#			province = {
+		#				all_provinces = yes
+		#		    }
+		#		}			
+		#	}
 		}
 	}
 	focus = {
@@ -650,7 +724,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+		#	STATE = {
+		#		add_building_construction = {
+		#			type = anti_air_building
+		#			level = 1
+		#			instant_build = yes
+		#			province = {
+		#				all_provinces = yes
+		#		    }
+		#		}			
+		#	}
 		}
 	}
 	focus = {

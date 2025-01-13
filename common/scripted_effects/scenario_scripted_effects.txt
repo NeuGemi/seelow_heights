@@ -252,6 +252,14 @@ JAP_scenario_disaster_leyte_gulf_level_down = {
 	}
 }
 
+JAP_modify_army_modifier = {
+	if = {
+		limit = { 
+			has_dynamic_modifier = { modifier = JAP_army_modifier }
+		}
+		custom_effect_tooltip = JAP_modify_army_modifier_tt
+	}
+}
 
 
 CHI_set_military_offensive_effect = {
