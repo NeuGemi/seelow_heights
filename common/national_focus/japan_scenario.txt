@@ -71,7 +71,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = JAP_the_ija_scrap_unryu
-			random_owned_controlled_state = {
+			531 = {
 				limit = {
 					is_core_of = ROOT
 					free_building_slots = {
@@ -156,12 +156,14 @@ focus_tree = {
 					idea = JAP_conquer_china_idea_1
 					days = 60
 				}
-				288 = { #Manchuria
-					create_unit = {
-						division = "division_template = \"Chugata Hohei Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
-						owner = ROOT
-						count = 5
-					}
+				if = { limit = { controls_state = 608 }
+					608 = { #Manchuria
+						create_unit = {
+							division = "division_template = \"Chugata Hohei Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							owner = ROOT
+							count = 5
+						}
+					}				
 				}
 			}
 		}
@@ -228,38 +230,112 @@ focus_tree = {
 		id = JAP_fortify_yangtze_river
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = JAP_aid_the_wang_jingwei_regime }
-		x = 0
-		y = 5
+		x = 2
+		y = 6
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			custom_effect_tooltip = JAP_fortify_yangtze_river_tt
+			hidden_effect = {
+				controls_province = 1089
+				controls_province = 4001
+				controls_province = 4148
+				controls_province = 1146
+				controls_province = 11994
+				controls_province = 12061
+				controls_province = 1083
+				controls_province = 7035			
+			}
+		}
 		completion_reward = {
-			#64 = {
-			#	add_building_construction = {
-			#		type = bunker
-			#		level = 2
-			#		instant_build = yes
-			#		province =  6521
-			#	}
-			#}
+			#TODO add custom tt effect
+			613 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province =  1089
+				}
+			}
+			598 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4001
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4148
+					instant_build = yes
+				}
+			}
+			606 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1146
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11994
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12061
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1083
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7035
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = JAP_reclaim_strategic_railways
 		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = JAP_crush_the_communist_holdouts }
-		x = 2
-		y = 11
+		prerequisite = { focus = JAP_crush_the_communist_holdouts focus = JAP_develop_chinese_resources_mod }
+		x = 5
+		y = 7
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_full_control_of_state = 606
+			has_full_control_of_state = 620
+		}
 		completion_reward = {
-				#Regensburg - Wien
-				#build_railway = {
-				#	path = { 9515 9681 3703 9665 11651 704 11666 }
-				#}
+			if = {
+				limit = {
+					controls_state = 606
+					controls_state = 620
+				}
+				#Anhui - Hubei
+				build_railway = {
+					level = 1
+					path = { 11913 4619 }
+				    start_province = 11913
+  					target_province = 4619
+				}
+			}
+
 		}
 	}
 	focus = {
@@ -276,7 +352,7 @@ focus_tree = {
 			add_war_support = -0.1
 			add_days_remove  = {
     			decision = JAP_conquer_chongqing
-    			days = -30
+    			days = 30
 			}
 		}
 	}
@@ -292,7 +368,6 @@ focus_tree = {
 		}
 		available = {
 			has_full_control_of_state = 605
-			has_full_control_of_state = 325
 		}
 
 		bypass = {
@@ -307,13 +382,7 @@ focus_tree = {
 			605 = {
 				add_resource = {
 					type = aluminium
-					amount = 8
-				}
-			}
-			325 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
+					amount = 16
 				}
 			}
 			if = {
@@ -352,11 +421,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_state = 288
+			controls_state = 640
+			controls_state = 869
+		}
 		completion_reward = {
-				#Regensburg - Wien
-				#build_railway = {
-				#	path = { 9515 9681 3703 9665 11651 704 11666 }
-				#}
+			build_railway = {
+				level = 1
+				path = { 1488 7675 12317 4654 4626 }
+			}
+			build_railway = {
+				level = 1
+				path = { 10344 1650 7034 4202 12404 1492 }
+			}
 		}
 	}
 
@@ -389,15 +467,33 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_state = 288
+		}
+		bypass = {
+			NOT = { controls_state = 288 }
+		}
 		completion_reward = {
-			#64 = {
-			#	add_building_construction = {
-			#		type = bunker
-			#		level = 2
-			#		instant_build = yes
-			#		province =  6521
-			#	}
-			#}
+			288 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10344
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1492
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1330
+				}
+			}
 		}
 	}
 	focus = {
@@ -662,9 +758,6 @@ focus_tree = {
     				add_idea = JAP_sho_go_3
 				}
 			}
-			else = {
-				add_ideas = JAP_sho_go_3
-			}
 		}
 	}
 	focus = {
@@ -677,17 +770,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_state = 524
+		}
+		bypass = {
+			controls_state = 524
+		}
 		completion_reward = {
-		#	STATE = {
-		#		add_building_construction = {
-		#			type = coastal_bunker
-		#			level = 1
-		#			instant_build = yes
-		#			province = {
-		#				all_provinces = yes
-		#		    }
-		#		}			
-		#	}
+			524 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+				    }
+				}			
+			}
 		}
 	}
 	focus = {
@@ -700,17 +799,41 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_state = 524
+			controls_state = 526
+			controls_state = 645
+		}
+		bypass = {
+			controls_state = 524
+			controls_state = 526
+			controls_state = 645
+		}
 		completion_reward = {
-		#	STATE = {
-		#		add_building_construction = {
-		#			type = naval_base
-		#			level = 1
-		#			instant_build = yes
-		#			province = {
-		#				all_provinces = yes
-		#		    }
-		#		}			
-		#	}
+			524 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 12068
+				}			
+			}
+			526 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 11932
+				}			
+			}
+			645 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 13025
+				}			
+			}
 		}
 	}
 	focus = {
@@ -723,17 +846,39 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			controls_state = 524
+			controls_state = 526
+		}
+		bypass = {
+			controls_state = 524
+			controls_state = 526
+		}
 		completion_reward = {
-		#	STATE = {
-		#		add_building_construction = {
-		#			type = anti_air_building
-		#			level = 1
-		#			instant_build = yes
-		#			province = {
-		#				all_provinces = yes
-		#		    }
-		#		}			
-		#	}
+			524 = {
+				IF = {
+					limit = {
+						anti_air_building < 3
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+				}		
+			}
+			526 = {
+				IF = {
+					limit = {
+						anti_air_building < 3
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+				}		
+			}
 		}
 	}
 	focus = {

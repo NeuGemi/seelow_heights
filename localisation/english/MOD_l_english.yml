@@ -97,6 +97,7 @@ JAP_aftermath_of_ichi_go_tt:0 "§YWill be removed if Japan fails to maintain the
 JAP_fortify_kyushu_tt:0 "Builds defensive fortifications along the southwestern shores of §YKyushu§!\n"
 JAP_fortify_tokyo_tt:0 "Builds defensive fortifications along the southwestern shores of §YTokyo§!\n"
 JAP_vfc_var_value_tt: "When the US invades our Inner Lands, [?JAP_vfc] Divisions will be activated"
+JAP_fortify_yangtze_river_tt:0 "DESCRIPTION"
 
 ### Ideas ###
 GER_totalen_krieg_doctrine:0 "Totaler Krieg"

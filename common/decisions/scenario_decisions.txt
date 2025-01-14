@@ -1031,9 +1031,6 @@ JAP_hold_territory = {
     				add_idea = JAP_sho_go_4
 				}
 			}
-			else = {
-				add_ideas = JAP_sho_go_2
-			}
 		}		
 	}
 	JAP_operation_meigo_sakusen = {
