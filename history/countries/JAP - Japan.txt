@@ -552,7 +552,7 @@ recruit_character = JAP_kijuro_shidehara
 	set_variable = { var = JAP_vfc value = 0 }
 
 	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
-	set_war_support = 0.2
+	set_war_support = 0.4
 	set_fuel_ratio = 0.6
 
 	set_cosmetic_tag = JAP_scenario
@@ -598,6 +598,7 @@ add_to_faction = LAO
 		JAP_economic_collapse
 		JAP_sho_go_1
 		JAP_aftermath_of_ichi_go
+		JAP_defeat_at_leyte_gulf
 	}
 	add_timed_idea = {
 		days = 180
@@ -612,6 +613,9 @@ add_to_faction = LAO
 		spiritual_mobilization_idea
 		torpedo_cruisers_ns_mtg
 		JAP_first_air_fleet
+		JAP_militarism
+		JAP_guide_the_zaibatsus
+		JAP_interservice_rivalry_balanced
 	}
 
 	declare_war_on = {

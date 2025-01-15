@@ -221,7 +221,7 @@ set_war_support = 0.3
 	complete_national_focus = GER_kdf_wagen_factories
 	complete_national_focus = GER_develop_modern_maneuver_warfare
 	complete_national_focus = GER_adopt_new_panzer_doctrine
-	complete_national_focus = GER_coal_liquefaction
+	unlock_national_focus = GER_coal_liquefaction
 	complete_national_focus = GER_establish_buna_werke
 	complete_national_focus = GER_expanding_the_luftwaffe
 	complete_national_focus = GER_aeronautical_research_institute
@@ -823,7 +823,7 @@ add_ideas = {
 	general_staff
 	#closed_economy
 	scraping_the_barrel
-	tot_economic_mobilisation
+	totaler_krieg_economy
 	wilhelm_keitel
 	ferdinand_schorner
 	werner_von_fritsch

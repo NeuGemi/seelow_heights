@@ -865,7 +865,7 @@ JAP_hold_territory = {
 
 		#Fail trigger
 		available = {
-			NOT = { controls_province = 1330 }
+			NOT = { controls_state = 605 }
 		}
 
 		days_mission_timeout = 120
@@ -877,7 +877,7 @@ JAP_hold_territory = {
 		activation = {
 			JAP = { has_completed_focus = JAP_the_scramble_for_chongqing }
 				CHI = {
-					controls_state = 288
+					controls_state = 605
 				}
 			has_war = yes
 			has_civil_war = no
@@ -1021,14 +1021,6 @@ JAP_hold_territory = {
 				swap_ideas = {
     				remove_idea = JAP_sho_go_1
     				add_idea = JAP_sho_go_2
-				}
-			}
-			if = {
-				limit = { NOT = { has_idea = JAP_sho_go_3 } }
-				swap_ideas = {
-    				remove_idea = JAP_sho_go_1
-    				remove_idea = JAP_sho_go_2
-    				add_idea = JAP_sho_go_4
 				}
 			}
 		}		

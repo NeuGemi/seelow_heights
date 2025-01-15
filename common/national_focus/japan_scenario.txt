@@ -132,8 +132,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_war_with = CHI
+			NOT = { has_war_with = SOV }
+		}
 		completion_reward = {
-			unlock_decision_tooltip = { decision = JAP_conquer_chongqing show_effect_tooltip = yes }			
+			activate_mission = JAP_conquer_chongqing			
 		}
 	}
 	focus = {
