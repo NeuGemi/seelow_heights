@@ -47,6 +47,7 @@ light_chinese_partisans:0 "Light Chinese Communist Partisans"
 light_chinese_partisans_desc:0 "Insignifigant amounts of Chinese Communists have taken over this state"
 CHI_chinese_military_offensive:0 "Chinese Military Offensive"
 JAP_okinawa_defense:0 "Defense of Okinawa"
+MOD_retreat_to_upper_luzon:0 "Retreat to Upper Luzon"
 
 ### Flags ###
 scenario_berlin:0 "The Battle of Berlin is underway"
@@ -97,7 +98,7 @@ JAP_aftermath_of_ichi_go_tt:0 "§YWill be removed if Japan fails to maintain the
 JAP_fortify_kyushu_tt:0 "Builds defensive fortifications along the southwestern shores of §YKyushu§!\n"
 JAP_fortify_tokyo_tt:0 "Builds defensive fortifications along the southwestern shores of §YTokyo§!\n"
 JAP_vfc_var_value_tt: "When the US invades our Inner Lands, [?JAP_vfc] Divisions will be activated"
-JAP_fortify_yangtze_river_tt:0 "DESCRIPTION"
+JAP_fortify_yangtze_river_tt:0 "§YControls Yangtze River from Nanjing to Wuhan§!"
 
 ### Ideas ###
 GER_totalen_krieg_doctrine:0 "Totaler Krieg"

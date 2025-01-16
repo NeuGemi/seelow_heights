@@ -72,6 +72,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = JAP_the_ija_scrap_unryu
 			531 = {
+				if = {
 				limit = {
 					is_core_of = ROOT
 					free_building_slots = {
@@ -86,7 +87,8 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = JAP_scrap_the_unryu_class
+				set_state_flag = JAP_scrap_the_unryu_class				
+				}
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -150,6 +152,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			has_completed_focus = JAP_redeploy_the_kwantung_army_sov
+		}
 		completion_reward = {
 			hidden_effect = {
 				set_country_flag = JAP_redeployed_kwantung_to_china
@@ -163,7 +168,7 @@ focus_tree = {
 				if = { limit = { controls_state = 608 }
 					608 = { #Manchuria
 						create_unit = {
-							division = "division_template = \"Chugata Hohei Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
 							owner = ROOT
 							count = 5
 						}
@@ -241,7 +246,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			custom_effect_tooltip = JAP_fortify_yangtze_river_tt
+			custom_override_tooltip = {
+				tooltip = JAP_fortify_yangtze_river_tt
+			}
 			hidden_effect = {
 				controls_province = 1089
 				controls_province = 4001
@@ -698,7 +705,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#TODO ija scripted effect ns
+			GER_modify_army_modifier = yes
+			add_to_variable = { GER_military_org_loss_when_moving =  tooltip = org_loss_when_moving_tt }
+			add_to_variable = { GER_military_minimum_training_level = -0.1 tooltip = minimum_training_level_tt }
 		}
 	}
 	focus = {
@@ -726,7 +735,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#TODO ija scripted effect ns			
+			GER_modify_army_modifier = yes
+			add_to_variable = { GER_military_equipment_capture = 0.05 tooltip = equipment_capture_tt }		
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 20000
@@ -924,7 +934,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			623 = {
+				add_dynamic_modifier = {
+					modifier = MOD_retreat_to_upper_luzon
+					days = 90
+					scope = JAP
+				}
+			}
 		}
 	}
 	focus = {
@@ -938,7 +954,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			#add_trait = {
+			#	character = JAP_
+			#	trait = brilliant_strategist		
+			#}	
+			#boost_planning = JAP_
 		}
 	}
 	focus = {
@@ -952,7 +972,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			if = {
+				limit = { controls_state = 623 }
+					623 = { #Manchuria
+						create_unit = {
+							division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+							owner = ROOT
+							count = 3
+					}
+				}					
+			}
 		}
 	}
 	focus = {
@@ -966,7 +995,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_unit_bonus = {
+			    marine = {
+					jungle = {
+						defence = 0.05
+						movement = 0.05
+					}
+				}
+			}		
 		}
 	}
 	focus = {
@@ -980,7 +1016,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_unit_bonus = {
+			    category_light_infantry = { 
+					soft_attack = 0.05
+				}
+			}
 		}
 	}
 	focus = {
@@ -992,6 +1032,14 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		bypass = {
+			has_completed_focus = JAP_redeploy_the_kwantung_army_chi
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -1009,6 +1057,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
 		completion_reward = {
 
 		}
@@ -1022,6 +1075,11 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
 		}
 		completion_reward = {
 
@@ -1037,6 +1095,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
 		completion_reward = {
 
 		}
@@ -1050,6 +1113,11 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
 		}
 		completion_reward = {
 
@@ -1065,6 +1133,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
 		completion_reward = {
 
 		}
@@ -1079,6 +1152,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
 		completion_reward = {
 
 		}
@@ -1092,6 +1170,9 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		bypass = {
+			has_war_with = SOV
 		}
 		completion_reward = {
 
