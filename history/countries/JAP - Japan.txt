@@ -1044,9 +1044,6 @@ set_variable = { JAP_military_unit_leader_as_advisor_cp_cost_factor = 0 }
 set_variable = { JAP_military_command_power_gain_mult = 0 }
 add_dynamic_modifier = { modifier = JAP_army_modifier }
 
-
-}
-
 1945.3.1 = {
 	oob = "JAP_1945_3_6"
 }

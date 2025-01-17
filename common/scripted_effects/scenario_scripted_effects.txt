@@ -261,7 +261,6 @@ JAP_modify_army_modifier = {
 	}
 }
 
-
 CHI_set_military_offensive_effect = {
 	set_country_flag = CHI_military_offensive_in_progress_flag
 			every_state = {

@@ -16,8 +16,6 @@ CHI_communist_holdouts = { #TODO_ change this to an idea
 	compliance_growth = -0.05
 }
 
-
-
 # GER FOCUS #
 GER_fighting_retreat_dyn = {
 	icon = GFX_unplanned_offensive

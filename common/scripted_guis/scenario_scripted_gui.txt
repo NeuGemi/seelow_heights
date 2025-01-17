@@ -1,9 +1,0 @@
-scripted_gui = {
-
-	jap_rnc_ui = {
-		context_type = decision_category
-		window_name = "jap_rnc_ui_window"
-	}
-	
-}
-
