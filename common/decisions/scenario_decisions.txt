@@ -2644,6 +2644,94 @@ JAP_asiatic_land_war = {
 	}
 }
 
+JAP_wang_jingwei_regime = {
+	JAP_rnc_test = {
+		icon = GFX_decision_generic_mountain_fortification
+
+		ai_will_do = {
+			base = 1
+		}
+
+		available = {
+			tag = JAP
+		}
+
+		visible = {
+			528 = { #
+				any_province_building_level = {
+					province = {
+						id = 1020
+						id = 4102
+						id = 9950
+						id = 12032
+						id = 11949
+						id = 1183
+					}
+					building = coastal_bunker
+					level < 5
+				}
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 528 #
+		}
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		ai_hint_pp_cost = 15
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 14
+		}
+		custom_cost_text = decision_cost_CP_25_pp_15
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		cancel_trigger = {
+			NOT = { has_full_control_of_state = 528 }
+		}
+
+		cancel_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -15
+			}
+		}
+
+		remove_effect = {
+			#clr_country_flag = ITA_vallo_alpino_project_ongoing_flag
+
+			custom_effect_tooltip = JAP_fortify_tokyo_tt
+			hidden_effect = {
+				528 = { #
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = {
+							id = 1020
+							id = 4102
+							id = 9950
+							id = 12032
+							id = 11949
+							id = 1183
+						}
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}	
+}
+
 scenario_settings = {
 	GER_scenario_settings = {
 		icon = GFX_decision_generic_army_support 

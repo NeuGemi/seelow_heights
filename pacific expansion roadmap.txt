@@ -1,0 +1,11 @@
+Pacific Expansion Roadmap
+	- Terror Bombings spirit will return if the requirements aren't met
+	- Nudge user away from pockets, onto Chongqing
+	- Rework Chinese counter-offensives: Japan now starts them, failure ends in a timed Chinese counterattack
+	- Rework Chinese Order of Battle
+	- Province modifiers to prevent port cheesing
+	- Road to Rangoon will be visible at start, but with a much longer timer(maybe?, fixes UX problems)
+	- "Defeat in China" Event if Japan loses control of Beijing and Nanjing
+	- Kyujo Coup d'Etat patch
+		- Should Japan not control any of the following: Beijing, Nanjing, Shanghai, Guangzhou, Wuhan
+	- Add the Potsdam Conference

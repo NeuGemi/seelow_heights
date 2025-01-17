@@ -397,7 +397,7 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { has_dlc = "Waking the Tiger" }
+				limit = { has_dlc = "Waking the TiJAP" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
 		}
@@ -705,9 +705,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			GER_modify_army_modifier = yes
-			add_to_variable = { GER_military_org_loss_when_moving =  tooltip = org_loss_when_moving_tt }
-			add_to_variable = { GER_military_minimum_training_level = -0.1 tooltip = minimum_training_level_tt }
+			JAP_modify_army_modifier = yes
+			add_to_variable = { JAP_military_org_loss_when_moving =  tooltip = org_loss_when_moving_tt }
+			add_to_variable = { JAP_military_minimum_training_level = -0.1 tooltip = minimum_training_level_tt }
 		}
 	}
 	focus = {
@@ -735,8 +735,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			GER_modify_army_modifier = yes
-			add_to_variable = { GER_military_equipment_capture = 0.05 tooltip = equipment_capture_tt }		
+			JAP_modify_army_modifier = yes
+			add_to_variable = { JAP_military_equipment_capture = 0.05 tooltip = equipment_capture_tt }		
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_1
 				amount = 20000
@@ -954,11 +954,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#add_trait = {
-			#	character = JAP_
-			#	trait = brilliant_strategist		
-			#}	
-			#boost_planning = JAP_
+			add_trait = {
+				character = JAP_tomoyuki_yamashita
+				trait = jungle_rat		
+			}	
+			boost_planning = JAP_tomoyuki_yamashita
 		}
 	}
 	focus = {
@@ -974,7 +974,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { controls_state = 623 }
-					623 = { #Manchuria
+					623 = { #Luzon
 						create_unit = {
 							division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
 							owner = ROOT
@@ -998,8 +998,8 @@ focus_tree = {
 			add_unit_bonus = {
 			    marine = {
 					jungle = {
-						defence = 0.05
-						movement = 0.05
+						defence = 0.1
+						movement = 0.1
 					}
 				}
 			}		

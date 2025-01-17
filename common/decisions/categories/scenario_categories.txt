@@ -103,6 +103,25 @@ JAP_allied_chinese_support = {
 	}
 }
 
+JAP_wang_jingwei_regime = {
+
+	icon = GFX_decision_category_ger_reichskommissariats
+
+	priority = 9
+
+	visible_when_empty = yes #This is supposed to be visible when empty!
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		has_government = fascism
+	}
+
+	scripted_gui = jap_rnc_ui
+}
+
 USA_scenario_war_department = {                             			 
 	icon = GFX_decision_category_border_conflicts
 	
