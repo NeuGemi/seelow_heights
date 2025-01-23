@@ -170,7 +170,7 @@ focus_tree = {
 						create_unit = {
 							division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
 							owner = ROOT
-							count = 5
+							count = 8
 						}
 					}				
 				}
@@ -1063,7 +1063,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
+			SOV = { country_event = id = scenario.28 }
 		}
 	}
 	focus = {

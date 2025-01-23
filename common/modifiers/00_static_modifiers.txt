@@ -44,13 +44,6 @@ MOD_unplanned_offensive = {
 	army_defence_factor = 1.0
 }
 
-MOD_retreat_to_upper_luzon = {
-	terrain_penalty_reduction = 0.15
-	local_supplies = 0.1
-	army_org_regain = 0.1	
-}
-
-
 	# VANILLA #
 
 _test_power_balance_mod = {

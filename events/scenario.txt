@@ -1186,6 +1186,110 @@ country_event = {
 	}
 }
 
+# Japan wants to renew the non-agression pact
+country_event = {
+	id = scenario.28
+	title = scenario.28.t
+	desc = scenario.28.d	
+	picture = GFX_report_event_japanese_soldiers_02
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	# Yes
+	option = {
+		name = scenario.28.a
+		ai_chance = {
+    		base = 0
+    		modifier = {
+
+    		}
+    	}
+    	JAP = { country_event = id = scenario.29 }
+	}
+
+	# Yes but with concessions
+	option = {
+		name = scenario.28.b
+		ai_chance = {
+    		base = 0
+    		modifier = {
+    		
+    		}
+    	}
+    	JAP = { country_event = id = scenario.30 }
+	}
+
+	# No
+	option = {
+		name = scenario.28.c
+		ai_chance = {
+    		base = 100
+    		modifier = {
+    		
+    		}
+    	}
+    	JAP = { country_event = id = scenario.31 }
+	}
+}
+
+# Stalin agrees
+country_event = {
+	id = scenario.29
+	title = scenario.29.t
+	desc = scenario.29.d	
+	picture = GFX_report_event_japanese_soldiers_02
+
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = scenario.29.a
+
+	}
+}
+
+# Stalin agrees, conditionally
+country_event = {
+	id = scenario.30
+	title = scenario.30.t
+	desc = scenario.30.d	
+	picture = GFX_report_event_japanese_soldiers_02
+
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = scenario.30.a
+	}
+	option = {
+		name = scenario.30.b
+	}
+}
+
+# Discussions break down
+country_event = {
+	id = scenario.31
+	title = scenario.31.t
+	desc = scenario.31.d	
+	picture = GFX_report_event_japanese_soldiers_02
+
+	
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = scenario.31.a
+
+	}
+}
+
+###########################
+###### NEWS EVENTS ########
+###########################
+
 # Fall of Vienna
 news_event = {
 	id = scenarionews.1
