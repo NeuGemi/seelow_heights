@@ -271,7 +271,9 @@ scenario.30.b:0 ""
 scenario.31.t:0 ""
 scenario.31.d:0 ""
 scenario.31.a:0 ""
-
+scenario.32.t:0 "Stalin abandons the Neutrality Pact"
+scenario.32.d:0 ""
+scenario.32.a:0 "We must strengthen the Kwantung Army!"
 
 # News events #
 scenarionews.1.t:0 "Fall of Vienna"

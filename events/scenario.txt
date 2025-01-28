@@ -1200,9 +1200,10 @@ country_event = {
 	option = {
 		name = scenario.28.a
 		ai_chance = {
-    		base = 0
+    		base = 25
     		modifier = {
-
+  				has_global_flag = scenario_yalta_conference
+    			factor = 0
     		}
     	}
     	JAP = { country_event = id = scenario.29 }
@@ -1212,9 +1213,10 @@ country_event = {
 	option = {
 		name = scenario.28.b
 		ai_chance = {
-    		base = 0
+    		base = 50
     		modifier = {
-    		
+    			SOV = { has_non_aggression_pact_with = JAP }
+    			factor = 60
     		}
     	}
     	JAP = { country_event = id = scenario.30 }
@@ -1239,14 +1241,18 @@ country_event = {
 	title = scenario.29.t
 	desc = scenario.29.d	
 	picture = GFX_report_event_japanese_soldiers_02
-
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
 
+	# This should bide us time
 	option = {
 		name = scenario.29.a
-
+		diplomatic_relation = {
+		    country = SOV
+		    relation = non_aggression_pact
+		    active = yes
+		}
 	}
 }
 
@@ -1256,16 +1262,22 @@ country_event = {
 	title = scenario.30.t
 	desc = scenario.30.d	
 	picture = GFX_report_event_japanese_soldiers_02
-
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
 
+	# Accept
 	option = {
 		name = scenario.30.a
+		#south_sakalin = { transfer_state_to = SOV }
+		add_political_power = -150
+		add_stability = -0.05
 	}
+
+	# Decline
 	option = {
 		name = scenario.30.b
+		add_war_support = 0.1
 	}
 }
 
@@ -1276,19 +1288,53 @@ country_event = {
 	desc = scenario.31.d	
 	picture = GFX_report_event_japanese_soldiers_02
 
-	
 	fire_only_once = yes	
 	is_triggered_only = yes
 
+	# This can only mean one thing
 	option = {
 		name = scenario.31.a
-
+		add_political_power = -50
 	}
 }
+
+# USSR abandons the NAP
+country_event = {
+	id = scenario.32
+	title = scenario.32.t
+	desc = scenario.32.d	
+	picture = GFX_report_event_japanese_soldiers_02
+
+	fire_only_once = yes	
+	
+	trigger = {
+		TAG = JAP
+		date > 1945.3.20
+		has_global_flag = scenario_yalta_conference
+		NOT = { has_war_with = SOV }
+	}
+
+	# We must strengthen the Kwantung Army!
+	option = {
+		name = scenario.32.a
+		diplomatic_relation = {
+		    country = SOV
+		    relation = non_aggression_pact
+		    active = no
+		}
+	}
+}
+
+
+
 
 ###########################
 ###### NEWS EVENTS ########
 ###########################
+
+
+
+
 
 # Fall of Vienna
 news_event = {
@@ -2078,6 +2124,44 @@ news_event = {
 			NOT = {
 				TAG = JAP 
 			}
+		}
+	}
+}
+
+# Yalta Conference
+news_event = {
+	id = scenarionews.18
+	title = scenarionews.18.t
+	desc = scenarionews.18.d	
+	picture = GFX_news_event_japanese_army_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = scenario_yalta_conference
+	}
+
+	option = {
+		name = scenarionews.18.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = scenarionews.18.b
+		trigger = { 
+			TAG = GER
+		}
+	}
+	option = {
+		name = scenarionews.18.b
+		trigger = { 
+			TAG = JAP
 		}
 	}
 }

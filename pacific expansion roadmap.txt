@@ -9,3 +9,4 @@ Pacific Expansion Roadmap
 	- Kyujo Coup d'Etat patch
 		- Should Japan not control any of the following: Beijing, Nanjing, Shanghai, Guangzhou, Wuhan
 	- Add the Potsdam Conference
+	- Soviet event notifiying Japan of the cancellation of the NAP
