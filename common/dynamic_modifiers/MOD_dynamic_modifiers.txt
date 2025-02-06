@@ -80,6 +80,21 @@ MOD_retreat_to_upper_luzon = {
 
 # ASIA #
 
+JAP_philippine_resistance = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_resistance 
+
+	remove_trigger = {
+		JAP = {
+			has_completed_focus = JAP_stifle_filipino_resistance 
+		}
+	}
+	
+	army_speed_factor = -0.20
+	army_morale_factor = -0.15
+}
+
 CHI_chinese_military_offensive = { #STATE MODIFIER
 	enable = { always = yes }
 
@@ -100,7 +115,7 @@ JAP_okinawa_defense = { #STATE MODIFIER
 #REMINDER to always update the fake NS if these numbers are altered!
 JAP_army_modifier = { #Army NS
 	enable = { always = yes }
-	icon = GFX_idea_GER_army
+	icon = GFX_jap_militarism_showa
 
 	army_infantry_attack_factor = JAP_military_army_infantry_attack_factor
 	army_artillery_attack_factor = JAP_military_army_artillery_attack_factor

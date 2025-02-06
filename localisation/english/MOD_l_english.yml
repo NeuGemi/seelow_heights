@@ -48,6 +48,7 @@ light_chinese_partisans_desc:0 "Insignifigant amounts of Chinese Communists have
 CHI_chinese_military_offensive:0 "Chinese Military Offensive"
 JAP_okinawa_defense:0 "Defense of Okinawa"
 MOD_retreat_to_upper_luzon:0 "Retreat to Upper Luzon"
+JAP_philippine_resistance:0 "Philippine Resistance"
 
 ### Flags ###
 scenario_berlin:0 "The Battle of Berlin is underway"
@@ -143,6 +144,8 @@ CHI_stilwell_road:0 "The Stilwell Road (Open)"
 CHI_stilwell_road_closed:0 "The Stilwell Road (Closed)"
 JAP_sho_go_1:0 "Sho-Go I"
 JAP_sho_go_2:0 "Sho-Go II"
+JAP_sho_go_3:0 "Sho-Go III"
+JAP_sho_go_4:0 "Sho-Go IV"
 JAP_okinawa_victory_or_death:0 "Victory or Death!"
 USA_battle_of_okinawa_idea:0 "Battle of Okinawa"
 JAP_relocated_government:0 "Underground Administration"
@@ -151,6 +154,11 @@ JAP_militarist_government:0 "Militarist Government"
 JAP_aftermath_of_ichi_go:0 "Aftermath of Ichi-Go"
 JAP_defeat_at_leyte_gulf:0 "Defeat at Leyte-Gulf"
 JAP_the_ija:0 "The Imperial Japanese Navy"
+JAP_spiritual_mobilization_conscription:0 "Spiritual Mobilization"
+JAP_deal_with_the_partisans_idea:0 "Deal with the Partisans"
+JAP_conquer_yunnan:0 "Conquer Yunnan"
+JAP_kamikaze_mod_1:0 "Strengthen the Divine Wind"
+JAP_prepare_for_august_storm:0 "The Coming Red Storm"
 
 ### Events ###
 # Intro Events #
@@ -431,6 +439,7 @@ CHI_second_guanxi_offensive:0 "Second Guangxi Campaign"
 CHI_second_guanxi_offensive_ongoing:0 "Second Battle of Guangxi"
 CHI_second_guanxi_offensive_ongoing_desc:0 "A Chinese counteroffensive has been launched in the area of Guangxi!"
 JAP_second_guanxi_offensive_ongoing_desc:0 "A Chinese counteroffensive has been launched in the area of Guangxi!"
+JAP_conquer_chongqing:0 "Seize Chongqing!"
 
 JAP_operation_ketsugo_cat:0 "Operation Ketsu-Go"
 JAP_operation_ketsugo_cat_desc:0 "The catastrophic defeats inflicted upon our navy means the Allies now possess an open pathway to the heart of Japan. To counter this, Operation Ketsugo hasa been devised - a final, decisive battle over our Inner Lands. Fortifications, militias and superiority of will shall make their invasion as costly as possible."
@@ -443,6 +452,7 @@ JAP_evacuate_the_ighq_underground_desc:0 "Three mountains have been carved out t
 JAP_fortify_kyushu:0 "Secure Kyushu Beachheads"
 JAP_fortify_kyushu_desc:0 "It is clear to us that the probable area of an Allied attack is Kyushu. A series of bunkers along the shores will force them to rethink..."
 JAP_fortify_tokyo:0 "Fortify Tokyo Beaches"
+JAP_establish_the_vfc_decision:0 "The Volunteer Fighting Corps"
 #Allied
 USA_scenario_war_department:0 "War Department"
 USA_elbe_mission:0 "Elbe Mission"

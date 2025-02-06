@@ -1,5 +1,5 @@
 # Removed: wuw_GER_diplomacy.102
-
+# Removed: wuw_GER_diplomacy.90
 
 
 
@@ -5082,81 +5082,6 @@ country_event = { #informs SOV of GER's sphere of influence
 			}
 		}
 
-	}
-
-}
-
-country_event = { #FROM requests NAP
-	id = wuw_GER_diplomacy.90
-	title = wuw_GER_diplomacy.90.t
-	desc = wuw_GER_diplomacy.90.desc
-	picture = GFX_report_event_generic_handshake
-
-	is_triggered_only = yes
-
-	fire_only_once = yes 
-
-	option = { #sure
-		name = wuw_GER_diplomacy.90.a
-		ai_chance = {
-			base = 10
-			modifier = {
-				factor = 0.1
-				has_opinion = {
-					target = FROM
-					value < 0
-				}
-			}
-		}
-
-		diplomatic_relation = { 
-			country = FROM
-			relation = non_aggression_pact 
-		}
-
-		if = {
-			limit = {
-				original_tag = JAP
-				has_country_flag = GER_JAP_nap_request_flag
-			}
-			add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
-		}
-		else =  {
-			add_opinion_modifier = {
-				target = FROM
-				modifier = medium_increase 
-			}
-		}
-
-
-		FROM = {
-			country_event = {
-				id = wuw_GER_diplomacy.102
-				hours = 6
-			}
-		}
-		
-	}
-
-	option = { #we have other plans
-		name = wuw_GER_diplomacy.90.b
-		ai_chance ={
-			base = 2
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-			 		has_country_flag = GER_JAP_nap_request_flag
-				}
-				clr_country_flag = GER_JAP_nap_request_flag
-			}
-		}
-		FROM = {
-			country_event = {
-				id = wuw_GER_diplomacy.103
-				hours = 6
-			}
-		}
 	}
 }
 

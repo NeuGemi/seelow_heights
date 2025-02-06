@@ -547,7 +547,7 @@ recruit_character = JAP_kijuro_shidehara
 
 1945.1.1 = {
 
-	oob = "JAP_1945_1_12"
+	set_oob = "JAP_1945_1_12"
 
 	set_variable = { var = JAP_vfc value = 0 }
 
@@ -1045,11 +1045,11 @@ set_variable = { JAP_military_command_power_gain_mult = 0 }
 add_dynamic_modifier = { modifier = JAP_army_modifier }
 
 1945.3.1 = {
-	oob = "JAP_1945_3_6"
+	set_oob = "JAP_1945_3_6"
 }
 
 1945.4.1 = {
-	oob = "JAP_1945_nsb" #Also applies to non NSB users
+	set_oob = "JAP_1945_nsb" #Also applies to non NSB users
 
 	if = {
 		limit = { 
@@ -1068,7 +1068,7 @@ add_dynamic_modifier = { modifier = JAP_army_modifier }
 }
 
 1945.4.26 = {
-	oob = "JAP_1945_4_27"
+	set_oob = "JAP_1945_4_27"
 }
 
 if = {
@@ -1876,7 +1876,7 @@ if = {
 				rear_1_custom_slot = ship_mine_layer_sub
 			}
 		}
-}
+	}
 	# 1939 Start #			
 	1939.1.1 = {
 		if = {
@@ -2182,4 +2182,3 @@ if = {
 			}
 		}	
 	}
-	

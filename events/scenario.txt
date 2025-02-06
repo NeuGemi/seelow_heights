@@ -1206,7 +1206,7 @@ country_event = {
     			factor = 0
     		}
     	}
-    	JAP = { country_event = id = scenario.29 }
+    	JAP = { country_event = { id = scenario.29 } }
 	}
 
 	# Yes but with concessions
@@ -1219,7 +1219,7 @@ country_event = {
     			factor = 60
     		}
     	}
-    	JAP = { country_event = id = scenario.30 }
+    	JAP = { country_event = { id = scenario.30 } }
 	}
 
 	# No
@@ -1231,7 +1231,7 @@ country_event = {
     		
     		}
     	}
-    	JAP = { country_event = id = scenario.31 }
+    	JAP = { country_event = { id = scenario.31 } }
 	}
 }
 

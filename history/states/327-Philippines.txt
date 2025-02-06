@@ -28,7 +28,11 @@ state=
 			owner = PHI
 			controller = JAP
 			PHI = {
-			set_province_controller = 10265
+				set_province_controller = 10265
+			}
+			add_dynamic_modifier = { 
+				modifier = JAP_philippine_resistance 
+				scope = JAP
 			}
 		}
 		1945.3.1 = {

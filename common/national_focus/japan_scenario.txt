@@ -71,6 +71,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = JAP_the_ija_scrap_unryu
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			531 = {
 				if = {
 				limit = {
@@ -90,6 +92,8 @@ focus_tree = {
 				set_state_flag = JAP_scrap_the_unryu_class				
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -120,7 +124,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = spiritual_mobilization_idea
+			IF = {
+				limit = {
+					has_idea = scraping_the_barrel
+				}
+				swap_ideas = {
+					remove_idea = scraping_the_barrel
+					add_idea = JAP_spiritual_mobilization_conscription
+				}
+			}
 			custom_effect_tooltip = peace_conference_spiritual_mob_modifier_japan
 		}
 	}
@@ -189,6 +201,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			PRC = { add_war_support = -0.05 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			swap_ideas = {
 				remove_idea = JAP_conquer_china_idea_1
 				add_idea = JAP_conquer_china_idea_2
@@ -207,7 +221,6 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#TODO_add dynamic modifiers to states
 			if = {
 				limit = { has_idea = JAP_deal_with_the_partisans_idea }
 				swap_ideas = {
@@ -215,10 +228,16 @@ focus_tree = {
 					add_idea = JAP_deal_with_the_partisans_idea_2
 				}
 			}
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea_2 }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_3
+				}
+			}
 			else = {
 				add_ideas = JAP_deal_with_the_partisans_idea
 			}
-
 		}
 	}
 	focus = {
@@ -232,7 +251,23 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_2
+				}
+			}
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea_2 }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_3
+				}
+			}
+			else = {
+				add_ideas = JAP_deal_with_the_partisans_idea
+			}
 		}
 	}
 	focus = {
@@ -249,7 +284,7 @@ focus_tree = {
 			custom_override_tooltip = {
 				tooltip = JAP_fortify_yangtze_river_tt
 			}
-			hidden_effect = {
+			hidden_trigger = {
 				controls_province = 1089
 				controls_province = 4001
 				controls_province = 4148
@@ -397,7 +432,7 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { has_dlc = "Waking the TiJAP" }
+				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
 		}
@@ -523,6 +558,13 @@ focus_tree = {
 				swap_ideas = {
 					remove_idea = JAP_deal_with_the_partisans_idea
 					add_idea = JAP_deal_with_the_partisans_idea_2
+				}
+			}
+			if = {
+				limit = { has_idea = JAP_deal_with_the_partisans_idea_2 }
+				swap_ideas = {
+					remove_idea = JAP_deal_with_the_partisans_idea
+					add_idea = JAP_deal_with_the_partisans_idea_3
 				}
 			}
 			else = {
@@ -706,7 +748,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			JAP_modify_army_modifier = yes
-			add_to_variable = { JAP_military_org_loss_when_moving =  tooltip = org_loss_when_moving_tt }
+			add_to_variable = { JAP_military_org_loss_when_moving = -0.1 tooltip = org_loss_when_moving_tt }
 			add_to_variable = { JAP_military_minimum_training_level = -0.1 tooltip = minimum_training_level_tt }
 		}
 	}
@@ -920,7 +962,18 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			623 = {
+				remove_dynamic_modifier = { 
+					modifier = JAP_philippine_resistance 
+				}			
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 
+			327 = {
+				remove_dynamic_modifier = { 
+					modifier = JAP_philippine_resistance 
+				}			
+			}
 		}
 	}
 	focus = {
@@ -958,7 +1011,9 @@ focus_tree = {
 				character = JAP_tomoyuki_yamashita
 				trait = jungle_rat		
 			}	
-			boost_planning = JAP_tomoyuki_yamashita
+			JAP_tomoyuki_yamashita = {
+				boost_planning = yes
+			}
 		}
 	}
 	focus = {
@@ -970,6 +1025,9 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 1
+		}
+		bypass = {
+			NOT = { controls_state = 623 }
 		}
 		completion_reward = {
 			if = {
@@ -1042,6 +1100,7 @@ focus_tree = {
 			has_completed_focus = JAP_redeploy_the_kwantung_army_chi
 		}
 		completion_reward = {
+			add_ideas = JAP_prepare_for_august_storm
 			hidden_effect = {
 				set_country_flag = JAP_redeployed_kwantung_to_china
 			}
@@ -1062,8 +1121,8 @@ focus_tree = {
 				has_war_with = SOV
 			}
 		}
-		completion_reward = {
-			SOV = { country_event = id = scenario.28 }
+		completion_reward = {		
+			SOV = { country_event = { id = scenario.28 } }
 		}
 	}
 	focus = {

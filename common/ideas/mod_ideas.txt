@@ -848,7 +848,7 @@ ideas = {
         allowed = { 
             always = no 
         }
-        picture = warrior_traditions_idea
+        picture = SWE_marauder_bombers
 
         allowed_civil_war = {
             always = yes 
@@ -1141,11 +1141,11 @@ ideas = {
         removal_cost = -1
 
         modifier = {    
-            naval_night_attack = 0.1
-            navy_anti_air_attack = -0.15
-            naval_damage_factor = -0.1
-            naval_morale = -0.1
-            navy_org = -0.15
+            naval_night_attack = 0.07
+            navy_anti_air_attack = -0.10
+            naval_damage_factor = -0.07
+            naval_morale = -0.07
+            navy_org = -0.10
         }  
     }
     JAP_defeat_at_leyte_gulf_3 = {
@@ -1167,11 +1167,11 @@ ideas = {
         removal_cost = -1
 
         modifier = {    
-            naval_night_attack = 0.1
-            navy_anti_air_attack = -0.1
-            naval_damage_factor = -0.05
-            naval_morale = -0.05
-            navy_org = -0.1
+            naval_night_attack = 0.04
+            navy_anti_air_attack = -0.07
+            naval_damage_factor = -0.04
+            naval_morale = -0.04
+            navy_org = -0.07
         }  
     }
     JAP_defeat_at_leyte_gulf_4 = {
@@ -1193,13 +1193,14 @@ ideas = {
         removal_cost = -1
 
         modifier = {    
-            naval_night_attack = 0.1
-            navy_anti_air_attack = -0.1
-            naval_damage_factor = -0.05
-            naval_morale = -0.05
-            navy_org = -0.1
+            naval_night_attack = 0.02
+            navy_anti_air_attack = -0.04
+            naval_damage_factor = -0.02
+            naval_morale = -0.02
+            navy_org = -0.04
         }  
     }
+    
     JAP_the_ija_finish_unryu = {
         name = JAP_the_ija
 
@@ -1228,6 +1229,7 @@ ideas = {
             }
         }
     }
+
     JAP_the_ija_finish_unryu_2 = {
         name = JAP_the_ija
 
@@ -1263,6 +1265,7 @@ ideas = {
             }
         }
     }
+
     JAP_the_ija_scrap_unryu = {
         name = JAP_the_ija
 
@@ -1290,6 +1293,7 @@ ideas = {
             }
         }
     }
+
     JAP_conquer_china_idea_1 = {
 
         allowed = { 
@@ -1311,8 +1315,9 @@ ideas = {
         targeted_modifier = {
             tag = SOV
             defense_bonus_against = -0.1
-            }     
-        }
+        }     
+    }
+
     JAP_conquer_china_idea_2 = {
 
         allowed = { 
@@ -1342,8 +1347,33 @@ ideas = {
         targeted_modifier = {
             tag = SOV
             attack_bonus_against = -0.12
-            }     
+        }     
+    }
+
+    JAP_prepare_for_august_storm = {
+
+        allowed = { 
+            always = no 
         }
+
+        picture = generic_attack_soviet_union
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        targeted_modifier = {
+            tag = SOV
+            defense_bonus_against = 0.15
+            }   
+        targeted_modifier = {
+            tag = CHI
+            attack_bonus_against = -0.1
+        }     
+    }
+
     JAP_conquer_yunnan = {
 
         allowed = { 
@@ -1361,8 +1391,9 @@ ideas = {
         targeted_modifier = {
             tag = YUN
             attack_bonus_against = 0.1
-            }  
-        }
+        }  
+    }
+
     JAP_deal_with_the_partisans_idea = {
 
         allowed = { 
@@ -1382,7 +1413,9 @@ ideas = {
             resistance_growth = -0.05
         }  
     }
+
     JAP_deal_with_the_partisans_idea_2 = {
+        name = JAP_deal_with_the_partisans_idea
 
         allowed = { 
             always = no 
@@ -1401,6 +1434,28 @@ ideas = {
             resistance_growth = -0.07
         }  
     }
+
+    JAP_deal_with_the_partisans_idea_3 = {
+        name = JAP_deal_with_the_partisans_idea
+
+        allowed = { 
+            always = no 
+        }
+
+        picture = generic_japanese_conflict
+
+        allowed_civil_war = {
+            always = yes 
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            resistance_damage_to_garrison = -0.15
+            resistance_growth = -0.1
+        }  
+    }
+
     JAP_kamikaze_mod_1 = {
 
         allowed = { 
@@ -1421,7 +1476,9 @@ ideas = {
             air_weather_penalty = -0.05
         }  
     }
+
     JAP_kamikaze_mod_2 = {
+        name = JAP_kamikaze_mod_1
 
         allowed = { 
             always = no 
