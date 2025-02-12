@@ -638,8 +638,12 @@ country_event = {
 #		}
 #	}
 
-	option = {	# 
+	option = {	# Another one bites the dust
 		name = scenario.8.a
+		retire_character = GER_joseph_goebbels		
+	}
+	option = {	# What about Endsieg?
+		name = scenario.8.b
 		retire_character = GER_joseph_goebbels		
 	}
 }
@@ -1200,10 +1204,10 @@ country_event = {
 	option = {
 		name = scenario.28.a
 		ai_chance = {
-    		base = 25
+    		base = 10
     		modifier = {
   				has_global_flag = scenario_yalta_conference
-    			factor = 0
+    			factor = 0.5
     		}
     	}
     	JAP = { country_event = { id = scenario.29 } }
@@ -1213,10 +1217,10 @@ country_event = {
 	option = {
 		name = scenario.28.b
 		ai_chance = {
-    		base = 50
+    		base = 20
     		modifier = {
     			SOV = { has_non_aggression_pact_with = JAP }
-    			factor = 60
+    			factor = 2
     		}
     	}
     	JAP = { country_event = { id = scenario.30 } }
@@ -1226,9 +1230,10 @@ country_event = {
 	option = {
 		name = scenario.28.c
 		ai_chance = {
-    		base = 100
+    		base = 70
     		modifier = {
-    		
+  				has_global_flag = scenario_yalta_conference
+    			factor = 3    			
     		}
     	}
     	JAP = { country_event = { id = scenario.31 } }
@@ -1295,6 +1300,9 @@ country_event = {
 	option = {
 		name = scenario.31.a
 		add_political_power = -50
+		FRA = {
+			load_oob = "indochinoise_uprising"
+		}
 	}
 }
 
@@ -3898,6 +3906,7 @@ country_event = {
 				add_state_core = 53
 				add_state_core = 52
 				add_state_core = 909
+				add_state_core = 978
 				transfer_state = 50
 				transfer_state = 42		
 				transfer_state = 58
@@ -3910,6 +3919,7 @@ country_event = {
 				transfer_state = 53
 				transfer_state = 52
 				transfer_state = 909
+				transfer_state = 978
 			}
 			DDR = {
 				add_state_core = 62
@@ -3928,6 +3938,7 @@ country_event = {
 				transfer_state = 848 #austria
 				transfer_state = 153
 				transfer_state = 152 #austria
+				transfer_state = 976
 				set_politics = {
 					ruling_party = neutrality
     				elections_allowed = yes

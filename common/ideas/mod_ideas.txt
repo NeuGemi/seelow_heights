@@ -1116,10 +1116,10 @@ ideas = {
 
         modifier = {    
             naval_night_attack = 0.1
-            navy_anti_air_attack = -0.2
+            navy_anti_air_attack_factor = -0.2
             naval_damage_factor = -0.15
-            naval_morale = -0.15
-            navy_org = -0.2
+            naval_morale_factor = -0.15
+            navy_org_factor = -0.2
         }  
     }
     JAP_defeat_at_leyte_gulf_2 = {

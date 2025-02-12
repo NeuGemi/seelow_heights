@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 50 y = 1700 }
+	continuous_focus_position = { x = 50 y = 1100 }
 	default = no
 
 	focus = {
@@ -23,7 +23,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			JAP_scenario_disaster_leyte_gulf_level_down = yes
+			remove_ideas = JAP_defeat_at_leyte_gulf
 		}
 	}
 	focus = {
@@ -52,7 +52,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			JAP_scenario_disaster_leyte_gulf_level_down = yes
+			#JAP_scenario_disaster_leyte_gulf_level_down = yes
 
 			swap_ideas = {
 				remove_idea = JAP_the_ija_finish_unryu
@@ -394,9 +394,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = -0.1
-			add_days_remove  = {
-    			decision = JAP_conquer_chongqing
-    			days = 30
+			add_days_mission_timeout = {
+		    	mission = JAP_conquer_chongqing
+		    	days = 30
 			}
 		}
 	}
@@ -799,7 +799,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			JAP_scenario_disaster_leyte_gulf_level_down = yes
+			#JAP_scenario_disaster_leyte_gulf_level_down = yes
 
 			if = {
 				limit = { has_idea = JAP_sho_go_1 }
@@ -949,7 +949,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			JAP_scenario_disaster_leyte_gulf_level_down = yes
+			#JAP_scenario_disaster_leyte_gulf_level_down = yes
 
 			add_tech_bonus = {
 				name = dd_bonus
