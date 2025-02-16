@@ -137,7 +137,7 @@ CHI_communist_holdouts = {
 #REMINDER to always update the fake NS if these numbers are altered!
 JAP_army_modifier = { #Army NS
 	enable = { always = yes }
-	icon = GFX_jap_militarism_showa
+	icon = GFX_png_jap_army
 
 	army_infantry_attack_factor = JAP_military_army_infantry_attack_factor
 	army_artillery_attack_factor = JAP_military_army_artillery_attack_factor

@@ -1300,9 +1300,6 @@ country_event = {
 	option = {
 		name = scenario.31.a
 		add_political_power = -50
-		FRA = {
-			load_oob = "indochinoise_uprising"
-		}
 	}
 }
 

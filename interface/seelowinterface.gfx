@@ -159,5 +159,9 @@ spriteTypes = {
 		name = "GFX_select_date_1945_1_12"
 		texturefile = "gfx/interface/select_date_1945_1_12.png"
 	}
+	SpriteType = {
+		name = "GFX_png_jap_army"
+		texturefile = "gfx/interface/ideas/png_jap_army.png"
+	}
 }
 

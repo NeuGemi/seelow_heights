@@ -1649,6 +1649,46 @@ JAP_allied_chinese_support = {
 }
 
 JAP_asiatic_land_war = {
+	JAP_indochinoise_uprising_desc = {
+
+		allowed = { tag = JAP }
+
+		icon = POL_looming_peasants_strike #GFX_decision_generic_disband_irregulars
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 270
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			has_completed_focus = JAP_move_against_garde_indochinoise
+		}
+		
+		activation = {
+			has_war = yes
+			has_civil_war = no
+			671 = {
+				is_controlled_by = ROOT
+			}
+		}
+		
+		cancel_effect = {
+		
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = JAP_indochinoise_uprising_tt
+		}
+			hidden_effect = {
+				FRA = {
+					load_oob = "indochinoise_uprising"
+				}
+			}
+	}
+
 	JAP_hold_burma = {
 
 		icon = GFX_decision_generic_disband_irregulars
