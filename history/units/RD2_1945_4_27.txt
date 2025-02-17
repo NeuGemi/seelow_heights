@@ -95,232 +95,111 @@ division_template = {
 
 units = {
 
-	### 21st Army Group ###
-
-	### First Canadian Army ###
+	### Fifteenth Army Group ###
 
 	division= {
-		name = "2. Canadian Infantry Division"
-		location = 9431
+		name = "56. British Infantry Division"
+		location = 6973
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "3. Canadian Infantry Division"
-		location = 3262
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "4. Canadian Armored Division"
-		location = 6496
+		name = "6. SAF Armored Division"
+		location = 6790
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "1. Polish Armored Division"
-		location = 6496
+		name = "78. British Infantry Division"
+		location = 3976
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "8. Indian Infantry Division"
+		location = 3776
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2. NZL Infantry Division"
+		location = 782
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "10. Indian Infantry Division"
+		location = 11734
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3. Polish Transcarpathian Infantry Division"
+		location = 6606
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5. Polish Kresowa Infantry Division"
+		location = 782
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "6.  Armored Division"
+		location = 3776
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+	}
+	
+	### 15th Army Group ###
+
+	division= {
+		name = "85. US Infantry Division 'Custer'"
+		location = 3976
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "92. US Infantry Division 'Buffalo Soldiers'"
+		location = 6788
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "Brazilian Expeditionary Force"
+		location = 6788
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "10. Mountain Division"
+		location = 6790
+		division_template = "Infantry Division"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. US Armored Division"
+		location = 6788
 		division_template = "Armored Division"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "1. Canadian Infantry Division"
-		location = 11456
+		name = "34. US Infantry Division 'Red Bull'"
+		location = 6788
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "5. Canadian Armored Division"
-		location = 9363
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "49. British 'West Riding' Infantry Division"
-		location = 9363
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-
-	### Second British Army ###
-
-	division= {
-		name = "British Guards Armored Division"
-		location = 9403
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "3. British Infantry Division"
-		location = 9281
+		name = "88. US Infantry Division 'Cloverleaf'"
+		location = 6788
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "5. British Infantry Division"
-		location = 11233
+		name = "92. US Infantry Division 'Wild West'"
+		location = 6973
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
-	division= {
-		name = "15. Scottish Infantry Division"
-		location = 11233 #HERE
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "11. British Armored Division"
-		location = 405
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "53. Welsh Infantry Division"
-		location = 3395
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "7. British Armored Division"
-		location = 3395
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "43. Wessex Infantry Division"
-		location = 9281
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "51. British 'Highland' Infantry Division"
-		location = 11233 #HERE
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "52. British 'Lowland' Division"
-		location = 9403
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-
-	### PACIFIC THEATER ###
-
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 
-		}
-		location = 1566
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {		
-		division_name = {
-				is_name_ordered = yes
-				name_order = 
-		}
-		location = 7260
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-}
-
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_3
-			creator = "ENG"
-		}
-		requested_factories = 15
-		progress = 0.9
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_3
-			creator = "ENG" 
-		}
-		requested_factories = 9
-		progress = 0.8
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = anti_tank_equipment_2
-			creator = "ENG" 
-		}
-		requested_factories = 7
-		progress = 0.8
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 8
-		progress = 0.3
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = mechanized_equipment_2
-			creator = "ENG" 
-		}
-		requested_factories = 4
-		progress = 0.6
-		efficiency = 100
-	}
-
-	add_equipment_to_stockpile = {
-    type = infantry_equipment_3
-    amount = 100000
-    producer = ENG
-    } 
-
-    add_equipment_to_stockpile = {
-    type = support_equipment_1
-    amount = 7000
-    producer = ENG
-    }
-
-    add_equipment_to_stockpile = {
-    type = artillery_equipment_3
-    amount = 7000
-    producer = ENG
-    }
-
-    add_equipment_to_stockpile = {
-    type = motorized_equipment_1
-    amount = 20000
-    producer = ENG
-    }
-
-    add_equipment_to_stockpile = {
-    type = mechanized_equipment_1
-    amount = 5000
-    producer = ENG
-    }
-    add_equipment_to_stockpile = {
-    type = anti_tank_equipment_2
-    amount = 4130
-    producer = ENG
-    }
-    add_equipment_to_stockpile = {
-    type = anti_air_equipment_2
-    amount = 3130
-    producer = ENG
-    }
 }

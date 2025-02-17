@@ -504,57 +504,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	### 15th Army Group ###
-
-	division= {
-		name = "85. US Infantry Division 'Custer'"
-		location = 3976
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "92. US Infantry Division 'Buffalo Soldiers'"
-		location = 6788
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "Brazilian Expeditionary Force"
-		location = 6788
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "10. Mountain Division"
-		location = 6790
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "1. US Armored Division"
-		location = 6788
-		division_template = "Armored Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "34. US Infantry Division 'Red Bull'"
-		location = 6788
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "88. US Infantry Division 'Cloverleaf'"
-		location = 6788
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "92. US Infantry Division 'Wild West'"
-		location = 6973
-		division_template = "Infantry Division"	
-		start_experience_factor = 0.3
-	}
-
 	### PACIFIC THEATER ###
 	division = { 
 		division_name = {
