@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 		x = 20
 		y = 0
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -33,7 +33,7 @@ focus_tree = {
 		mutually_exclusive = { focus = JAP_scrap_the_unryu_class }
 		x = 19
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -47,7 +47,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_finish_the_unryu_class }
 		x = 17
 		y = 2
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -67,7 +67,7 @@ focus_tree = {
 		mutually_exclusive = { focus = JAP_finish_the_unryu_class }		
 		x = 21
 		y = 1
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -121,7 +121,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_scrap_the_unryu_class focus = JAP_finish_the_unryu_class }
 		x = 20
 		y = 2
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -144,7 +144,7 @@ focus_tree = {
 		icon = GFX_focus_chi_one_china_policy
 		x = 5
 		y = 2
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_the_scramble_for_chongqing }
 		x = 4
 		y = 3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -194,7 +194,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_redeploy_the_kwantung_army_chi }
 		x = 4
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -214,7 +214,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_the_scramble_for_chongqing }
 		x = 2
 		y = 3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -244,7 +244,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_deal_with_the_partisans }
 		x = 2
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -274,7 +274,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_aid_the_wang_jingwei_regime }
 		x = 2
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -357,7 +357,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_crush_the_communist_holdouts focus = JAP_develop_chinese_resources_mod }
 		x = 5
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -388,7 +388,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_the_scramble_for_chongqing }
 		x = 7
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -406,7 +406,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_prolong_the_deadline }
 		x = 7
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -441,7 +441,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_develop_chinese_resources_mod focus = JAP_burma_railway_focus_mod }
 		x = 9
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -461,7 +461,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_spiritual_mobilization_mod }
 		x = 11
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -488,7 +488,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_burma_railway_focus_mod }
 		x = 11
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -507,7 +507,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_burma_railway_focus_mod }
 		x = 13
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -546,7 +546,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_move_against_garde_indochinoise }
 		x = 11
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -579,7 +579,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_spiritual_mobilization_mod }
 		x = 18
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -593,7 +593,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_operation_ketsugo }
 		x = 15 
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -607,7 +607,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_fortify_tokyo_beachheads_focus }
 		x = 15
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -621,7 +621,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_glorious_death_million }
 		x = 14
 		y = 8
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -640,7 +640,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_glorious_death_million }
 		x = 16
 		y = 8
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -656,7 +656,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_anti_shore_bombardment_lessons }
 		x = 15
 		y = 9
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -672,7 +672,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_operation_ketsugo }
 		x = 18 
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -698,7 +698,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_kamikaze_planes_design }
 		x = 18 
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -713,7 +713,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_fighter_training_programme }
 		x = 18 
 		y = 9
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -741,7 +741,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_operation_ketsugo }
 		x = 21
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -757,7 +757,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_issue_suicide_sticks }
 		x = 22
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -771,7 +771,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_kyushu_coastal_wall }
 		x = 22
 		y = 8
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -794,7 +794,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_spiritual_mobilization_mod }
 		x = 28
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -823,7 +823,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_operation_shogo }
 		x = 24
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -837,7 +837,7 @@ focus_tree = {
 			524 = {
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 2
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -852,7 +852,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_fortify_formosa }
 		x = 24
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -899,7 +899,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_forward_operating_bases focus = JAP_kyushu_coastal_wall }
 		x = 24
 		y = 8
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -965,7 +965,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_focus_operation_shogo }
 		x = 28
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -990,7 +990,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_stifle_filipino_resistance }
 		x = 27
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1010,7 +1010,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_stifle_filipino_resistance }
 		x = 29
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1030,7 +1030,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_reorganize_14th_army focus = JAP_retreat_to_upper_luzon }
 		x = 28
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1056,7 +1056,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_stifle_filipino_resistance }
 		x = 31
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1077,7 +1077,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_jungle_fighting_experts }
 		x = 31
 		y = 7
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1095,7 +1095,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_disaster_at_leyte_gulf }
 		x = 35
 		y = 1
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1120,7 +1120,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_redeploy_the_kwantung_army_sov }
 		x = 35
 		y = 2
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1139,7 +1139,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_renew_the_soviet_nap_pact }
 		x = 34
 		y = 3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1164,7 +1164,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_renew_the_soviet_nap_pact }
 		x = 36
 		y = 3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1208,7 +1208,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_delaying_actions }
 		x = 33
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1239,7 +1239,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_delaying_actions focus = JAP_hailar_solun_line }
 		x = 35
 		y = 4
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1271,7 +1271,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_hailar_solun_line }
 		x = 37
 		y = 5
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1295,7 +1295,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_raise_barrier_troops focus = JAP_mongolian_border_troops }
 		x = 35
 		y = 6
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}

@@ -895,6 +895,7 @@ JAP_hold_territory = {
 		complete_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
+			JAP = { country_event = { id = scenario.33 } }
 		}	
 	}
 	JAP_operation_ten_go = {
@@ -1681,12 +1682,12 @@ JAP_asiatic_land_war = {
 
 		timeout_effect = {
 			custom_effect_tooltip = JAP_indochinoise_uprising_tt
-		}
 			hidden_effect = {
 				FRA = {
 					load_oob = "indochinoise_uprising"
 				}
 			}
+		}
 	}
 
 	JAP_hold_burma = {

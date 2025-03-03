@@ -1195,7 +1195,7 @@ country_event = {
 	id = scenario.28
 	title = scenario.28.t
 	desc = scenario.28.d	
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_officers
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1220,7 +1220,7 @@ country_event = {
     		base = 20
     		modifier = {
     			SOV = { has_non_aggression_pact_with = JAP }
-    			factor = 2
+    			factor = 1
     		}
     	}
     	JAP = { country_event = { id = scenario.30 } }
@@ -1233,7 +1233,7 @@ country_event = {
     		base = 70
     		modifier = {
   				has_global_flag = scenario_yalta_conference
-    			factor = 3    			
+    			factor = 5    			
     		}
     	}
     	JAP = { country_event = { id = scenario.31 } }
@@ -1245,7 +1245,7 @@ country_event = {
 	id = scenario.29
 	title = scenario.29.t
 	desc = scenario.29.d	
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_officers
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
@@ -1266,7 +1266,7 @@ country_event = {
 	id = scenario.30
 	title = scenario.30.t
 	desc = scenario.30.d	
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_officers
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
@@ -1274,7 +1274,7 @@ country_event = {
 	# Accept
 	option = {
 		name = scenario.30.a
-		#south_sakalin = { transfer_state_to = SOV }
+		537 = { transfer_state_to = SOV }
 		add_political_power = -150
 		add_stability = -0.05
 	}
@@ -1291,7 +1291,7 @@ country_event = {
 	id = scenario.31
 	title = scenario.31.t
 	desc = scenario.31.d	
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_officers
 
 	fire_only_once = yes	
 	is_triggered_only = yes
@@ -1308,7 +1308,7 @@ country_event = {
 	id = scenario.32
 	title = scenario.32.t
 	desc = scenario.32.d	
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_soviet_soldiers
 
 	fire_only_once = yes	
 	
@@ -1327,6 +1327,34 @@ country_event = {
 		    relation = non_aggression_pact
 		    active = no
 		}
+	}
+}
+
+# Victory in China
+country_event = {
+	id = scenario.33
+	title = scenario.33.t
+	desc = scenario.33.d	
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			JAP = {
+				annex_country = {
+				    target = CHI
+				    transfer_troops = no
+				}
+			}
+		}
+	}
+
+	# Victory!
+	option = {
+		name = scenario.33.a
+		
 	}
 }
 
@@ -2138,11 +2166,14 @@ news_event = {
 	id = scenarionews.18
 	title = scenarionews.18.t
 	desc = scenarionews.18.d	
-	picture = GFX_news_event_japanese_army_parade
+	picture = GFX_news_event_generic_sign_treaty1
 	
 	major = yes
 	
-	is_triggered_only = yes
+	trigger = {
+		NOT = { has_global_flag = scenario_yalta_conference }
+		date > 1945.2.1
+	}
 
 	immediate = {
 		set_global_flag = scenario_yalta_conference
@@ -2164,7 +2195,44 @@ news_event = {
 		}
 	}
 	option = {
-		name = scenarionews.18.b
+		name = scenarionews.18.c
+		trigger = { 
+			TAG = JAP
+		}
+	}
+}
+
+# Potsdam Declaration
+news_event = {
+	id = scenarionews.19
+	title = scenarionews.19.t
+	desc = scenarionews.19.d	
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = scenario_potsdam_conference }
+		date > 1945.8.1
+		ENG = {
+			NOT = { has_war_with = GER }
+		}
+	}
+
+	immediate = {
+		set_global_flag = scenario_potsdam_conference
+	}
+
+	option = {
+		name = scenarionews.19.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = scenarionews.19.b
 		trigger = { 
 			TAG = JAP
 		}

@@ -1045,8 +1045,18 @@ set_variable = { JAP_military_unit_leader_as_advisor_cp_cost_factor = 0 }
 set_variable = { JAP_military_command_power_gain_mult = 0 }
 add_dynamic_modifier = { modifier = JAP_army_modifier }
 
+}
+
 1945.3.1 = {
 	set_oob = "JAP_1945_3_6"
+
+	complete_national_focus = JAP_disaster_at_leyte_gulf
+	complete_national_focus = JAP_finish_the_unryu_class
+	complete_national_focus = JAP_spiritual_mobilization_mod
+	complete_national_focus = JAP_burma_railway_focus_mod
+	unlock_national_focus = JAP_move_against_garde_indochinoise
+
+	set_global_flag = scenario_yalta_conference
 }
 
 1945.4.1 = {
@@ -1066,10 +1076,18 @@ add_dynamic_modifier = { modifier = JAP_army_modifier }
 		}
 		set_naval_oob = "JAP_1945_4_naval"
 	}
+
+	complete_national_focus = JAP_focus_operation_ketsugo
+	complete_national_focus = JAP_focus_operation_shogo
+	complete_national_focus = JAP_redeploy_the_kwantung_army_sov
+	unlock_national_focus = JAP_renew_the_soviet_nap_pact
 }
 
 1945.4.26 = {
 	set_oob = "JAP_1945_4_27"
+
+	complete_national_focus = JAP_fortify_tokyo_beachheads_focus
+	complete_national_focus = JAP_glorious_death_million
 }
 
 if = {
