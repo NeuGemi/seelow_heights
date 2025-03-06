@@ -23,9 +23,21 @@ state = {
 			infrastructure = 3
 			anti_air_building = 1
 
-			5283 = {
-				bunker = 1
+			543 = {
+				bunker = 5
 			}
+			557 = {
+				bunker = 5
+			}
+			5283 = {
+				bunker = 5
+			}
+			7857 = {
+				bunker = 5
+			}
+			11525 = {
+				bunker = 5
+			}			
 
 		}
 

@@ -765,7 +765,7 @@ if = {
 		antiair3 = 1
 		antiair4 = 1
 		antiair5 = 1 
-
+		basic_fortification_tech = 1
 }
 
 if = {
@@ -925,6 +925,10 @@ add_political_power = 400
     complete_national_focus = GER_relieve_budapest
     complete_national_focus = GER_battle_of_the_hurtgen_forest
     complete_national_focus = GER_operation_hannibal
+    complete_national_focus = GER_trade_interdiction
+    complete_national_focus = GER_fallschirmjager
+    complete_national_focus = GER_uralbomber_program
+    complete_national_focus = GER_salvage_captured_equipment
 
 	#remove_ideas = GER_not_all_is_yet_lost
 	remove_ideas = GER_mefo_bills_1
@@ -1132,7 +1136,72 @@ create_intelligence_agency = {
 			}
 		}
 	#
-
+		COG = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		SYR = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		LEB = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		EGY = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		PAL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		JOR = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		IRQ = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		PER = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		OMA = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		KUW = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		BRM = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
 		RD2 = {
 			add_to_war = {
 				targeted_alliance = ENG

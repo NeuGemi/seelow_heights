@@ -679,6 +679,72 @@ recruit_character = JAP_kijuro_shidehara
 			}
 		}
 		#
+		COG = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		SYR = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		LEB = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		EGY = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		PAL = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		JOR = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		IRQ = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		PER = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		OMA = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		KUW = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
+		BRM = {
+			add_to_war = {
+				targeted_alliance = USA
+				enemy = JAP
+			}
+		}
 		RD2 = {
 			add_to_war = {
 				targeted_alliance = USA

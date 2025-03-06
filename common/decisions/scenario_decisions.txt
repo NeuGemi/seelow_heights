@@ -881,8 +881,8 @@ JAP_hold_territory = {
 				}
 			has_war = yes
 			has_civil_war = no
-			288 = {
-				is_controlled_by = ROOT
+			605 = {
+				is_controlled_by = CHI
 			}
 		}
 
@@ -1439,8 +1439,8 @@ JAP_allied_chinese_support = {
 		available = {
 			CHI = { is_puppet = no }
 			JAP = {
-				controls_state = 640
-				controls_state = 288
+				controls_state = 998
+				controls_state = 999
 			}
 			hidden_trigger = { always = no tag = JAP } 
 			hidden_trigger = { always = no tag = CHI } 
@@ -1459,8 +1459,8 @@ JAP_allied_chinese_support = {
 				original_tag = CHI
 			}
 			JAP = {
-				controls_state = 640
-				controls_state = 288
+				controls_state = 998
+				controls_state = 999
 			}
 		}
 
@@ -1489,7 +1489,7 @@ JAP_allied_chinese_support = {
 			CHI = { is_puppet = no }
 			JAP = {
 				NOT = {
-					controls_state = 640
+					controls_state = 999
 				}
 			}
 			hidden_trigger = { always = no tag = JAP } 
@@ -1510,7 +1510,7 @@ JAP_allied_chinese_support = {
 			}
 			JAP = {
 				NOT = {
-					controls_state = 640
+					controls_state = 999
 				}
 			}
 		}
@@ -1540,7 +1540,7 @@ JAP_allied_chinese_support = {
 			CHI = { is_puppet = no }
 			JAP = {
 				OR = {
-					has_full_control_of_state = 640
+					has_full_control_of_state = 998
 					has_full_control_of_state = 747
 				}
 			}
@@ -1562,7 +1562,7 @@ JAP_allied_chinese_support = {
 			}
 			JAP = {
 				OR = {
-					has_full_control_of_state = 640
+					has_full_control_of_state = 998
 					has_full_control_of_state = 747
 				}
 			}
@@ -1595,7 +1595,7 @@ JAP_allied_chinese_support = {
 			JAP = {
 				OR = {
 					NOT = {
-						has_full_control_of_state = 640
+						has_full_control_of_state = 998
 						has_full_control_of_state = 747					
 					}
 				}
@@ -1621,7 +1621,7 @@ JAP_allied_chinese_support = {
 			JAP = {
 				OR = {
 					NOT = {
-						has_full_control_of_state = 640
+						has_full_control_of_state = 998
 						has_full_control_of_state = 747					
 					}
 				}
@@ -1712,7 +1712,7 @@ JAP_asiatic_land_war = {
 		activation = {
 			OR = {  
 				has_country_flag = JAP_hold_mandalay_flag
-				RAJ = {
+				BRM = {
 					OR = {
 						controls_province = 10182
 						controls_province = 12284
@@ -1724,7 +1724,7 @@ JAP_asiatic_land_war = {
 			}
 			has_war = yes
 			has_civil_war = no
-			288 = {
+			995 = {
 				is_controlled_by = ROOT
 			}
 		}

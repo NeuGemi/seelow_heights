@@ -1,0 +1,40 @@
+state = {
+	id = 997
+	name = "STATE_997"
+	
+	state_category = rural
+	manpower = 530980
+	
+	history = {
+		owner = BRM
+		add_core_of = BRM
+		1942.1.1 = {
+			JAP = {
+				set_province_controller = 4019
+				set_province_controller = 1014
+				set_province_controller = 4059
+				set_province_controller = 3651
+				set_province_controller = 1333
+				set_province_controller = 10182
+			}
+		}
+		1945.3.1 = {
+			controller = BRM
+			JAP = {
+				set_province_controller = 4019
+				set_province_controller = 1014
+				set_province_controller = 4059
+				set_province_controller = 3651
+				set_province_controller = 1333
+				set_province_controller = 10182
+			}
+		}
+	}
+
+	provinces = {
+		1014 1142 1333 3651 4019 4059 4147 7122 10182 12090 
+	}
+
+	local_supplies = 0.000
+	buildings_max_level_factor = 1.000
+}

@@ -20,6 +20,7 @@ NOR_mod_free:0 "Kingdom of Norway"
 FRA_mod_free:0 "France"
 YUG_mod_free:0 "Yugoslavia"
 ITA_mod_free:0 "Italy"
+IRQ_brit_puppet:0 "Hashemite Kingdom of Iraq"
 # Country Tags #
 RD2:0 "Regno Del Sud"
 
@@ -157,6 +158,7 @@ JAP_conquer_china_idea_1:0 "Conquer China"
 JAP_army_modifier:0 "Imperial Japanese Army"
 # United Nations #
 surrender_limit:0 "Endsieg"
+surrender_limit_allies:0 "To the Bitter End"
 the_united_nations:0 "United Nations"
 SOV_berlin_strategic_offensive_operation:0 "Berlin Strategic Offensive Operation"
 SOV_allied_control_commission:0 "Allied Control Commission"

@@ -195,7 +195,12 @@ if = {
 	}
 	set_autonomy = {
 		target = RAJ
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_colony
 		freedom_level = 0.35
 	}
 	set_autonomy = {
@@ -218,12 +223,60 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = BRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = PAL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = JOR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = IRQ
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = PER
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.5
+	}
+
 	else = {
 		puppet = MAL
 		puppet = RAJ
+		puppet = JOR
+		puppet = PAL
+		puppet = EGY
+		puppet = KUW
+		puppet = OMA
 	}
 }
 
+IRQ = {
+	set_cosmetic_tag = IRQ_brit_puppet
+}
+
+PER = {
+	set_cosmetic_tag = PER_brit_puppet
+}
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
@@ -267,8 +320,12 @@ if = {
 	complete_national_focus = uk_mediterranean_focus
 	complete_national_focus = uk_asia_focus
 	complete_national_focus = uk_commonwealth_focus
+	complete_national_focus = uk_industrial_focus
+	complete_national_focus = ENG_vickers_experimental_facility_focus
+	complete_national_focus = ENG_steady_as_she_goes
 
 	give_guarantee = POL
+	
 	if = {
 		limit = {
 			NOT = {
@@ -466,6 +523,7 @@ give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
 
+
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
@@ -651,6 +709,7 @@ if = {
 		add_to_faction = DEN
 		add_to_faction = BRA
 		add_to_faction = CZE
+		add_to_faction = COG
 
     complete_national_focus = ENG_motorized_focus
     complete_national_focus = uk_industrial_focus

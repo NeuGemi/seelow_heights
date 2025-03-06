@@ -389,7 +389,11 @@ RAJ_burma_campaign  = {
 		area = burma
 		value = 1000
 	}
-
+	ai_strategy = {
+		type = force_defend_ally_borders
+		value = 500
+		id = BRM
+	}
 	ai_strategy = {
 		type = front_control
 
@@ -471,6 +475,11 @@ TUR_keep_to_yourselves = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "PHI"
+		value = 10000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BRM"
 		value = 10000
 	}
 	ai_strategy = {
@@ -1894,13 +1903,13 @@ ENG_RAJ_the_hot_gates = {
 	ai_strategy = {
 		type = area_priority
 		id = burma
-		value = 60
+		value = 150
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = burma
-		value = 8
+		value = 100
 	}
 
 	ai_strategy = {

@@ -40,6 +40,8 @@ if = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
 			iw_large_airframe = 1
+			air_torpedoe_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "FRA_1936_air_legacy"
@@ -54,10 +56,60 @@ if = {
 		}
 	}
 }
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = LEB
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = SYR
+		puppet = LEB
+	}
+}
 
 set_research_slots = 3
 set_stability = 0.5
 add_command_power = 20
+
+complete_special_project = {
+	project = sp:sp_naval_cruiser_submarine
+	scientist = FRA_henri_edmond_fouche
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 0.5
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.5
+}
+complete_special_project = {
+	project = sp:sp_air_radar
+}
+	IF = {
+		limit = {
+			has_dlc = "Gotterdammerung"
+		}
+		complete_special_project = {
+			project = sp:sp_land_stronghold_network
+			scientist = FRA_louis_renault
+			state = 16
+		}
+	}
 
 
 # Starting tech

@@ -1,6 +1,21 @@
 on_actions = { 
 	on_startup = {
 		effect = {
+			if = {
+				limit = {
+					date > 1945.1.1
+				}
+				HOL = {
+					set_cosmetic_tag = HOL_reichskommissariat
+				}
+				BLR = {
+					set_cosmetic_tag = BLR_reichskommissariat
+				}
+				NOR = {
+					set_cosmetic_tag = NOR_GER_fascism
+				}
+
+			}
 				if = { 
 					limit = { 
 						date > 1945.1.1 

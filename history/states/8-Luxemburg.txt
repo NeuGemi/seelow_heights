@@ -1,25 +1,27 @@
-state=
-{
-	id=8
-	name="STATE_8"
+state = {
+	id = 8
+	name = "STATE_8"
 	
 	state_category = town
 	
 	manpower = 294748
-	resources={
-		steel=5 # was: 8
+	resources = {
+		steel = 14 # was: 5
 	}
 
-	history=
-	{
+	history = {
+
 		owner = LUX
+		add_core_of = LUX
+
 		buildings = {
 			infrastructure = 3
-			arms_factory = 10
+			arms_factory = 1
 			industrial_complex = 3
 		}
-		victory_points = { 6583 5 }
-		add_core_of = LUX
+		victory_points = { 
+			6583 5 # Luxembourg City
+		}
         1945.1.1 = {
 			owner = GER
 			controller = GER
@@ -32,13 +34,12 @@ state=
         1945.4.1 = {
 			owner = FRA
 			controller = FRA
-     	} 
+     	} 	
 	}
 
-	provinces=
-	{
-		6583
+	provinces = {
+		6583 13375
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

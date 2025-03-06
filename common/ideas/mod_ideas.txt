@@ -1667,6 +1667,27 @@ ideas = {
             } 
         } 
         #Allies
+    surrender_limit_allies = {
+
+            allowed = {
+                always = no
+            }
+
+            available = {
+                has_war = yes
+            }
+            picture = generic_morale_bonus
+
+            allowed_civil_war = {
+                always = yes 
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                surrender_limit = 1
+            }       
+        }
         RAJ_burmese_campaign = {
             allowed = { 
                 always = no 

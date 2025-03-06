@@ -1,0 +1,27 @@
+state = {
+	id = 993
+	name = "STATE_993"
+	
+	state_category = rural
+	manpower = 216959
+	
+	history = {
+		owner = BRM
+		add_core_of = BRM
+		1942.1.1 = {
+		 	controller = JAP
+		}
+		1945.3.1 = {
+			BRM = {
+				set_province_controller = 7400
+				set_province_controller = 7909
+			}
+		}
+	}
+
+	provinces = {
+		4175 7400 7909 7974 
+	}
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

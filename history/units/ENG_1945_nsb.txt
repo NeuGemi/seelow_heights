@@ -164,7 +164,7 @@ units = {
 	}
 	division= {
 		name = "15. Scottish Infantry Division"
-		location = 11233 #HERE
+		location = 11388
 		division_template = "Infantry Division"	
 		start_experience_factor = 0.3
 	}
