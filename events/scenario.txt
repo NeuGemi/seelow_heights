@@ -1087,6 +1087,15 @@ country_event = {
 	option = {
 		name = scenario.25.b
 		custom_effect_tooltip = JAP_kyujo_incident_coup_tt
+		trigger = {
+    	JAP = {
+        	controls_state = 608 
+        	controls_state = 613  
+        	controls_state = 597
+        	controls_state = 614  	
+        	controls_state = 598
+    		}
+		}
 		hidden_effect = {
 			JAP = {
 				country_event = { id = scenario.26 }		
@@ -1258,6 +1267,7 @@ country_event = {
 		    relation = non_aggression_pact
 		    active = yes
 		}
+		set_global_flag = JAP_SOV_neutrality_pact_saved
 	}
 }
 
@@ -1277,6 +1287,12 @@ country_event = {
 		537 = { transfer_state_to = SOV }
 		add_political_power = -150
 		add_stability = -0.05
+		diplomatic_relation = {
+		    country = SOV
+		    relation = non_aggression_pact
+		    active = yes
+		}
+		set_global_flag = JAP_SOV_neutrality_pact_saved
 	}
 
 	# Decline
@@ -1358,7 +1374,56 @@ country_event = {
 	}
 }
 
+# Defeat in China
+country_event = {
+    id = scenario.34
+    title = scenario.34.t
+    desc = scenario.34.d
+    picture = GFX_report_event_japanese_chinese_surrender
 
+    fire_only_once = yes
+
+    trigger = {
+    	TAG = JAP
+    	JAP = {
+    		has_war_with = CHI
+        	NOT = { controls_state = 608 }
+        	NOT = { controls_state = 613 }    	
+    	}
+    }
+
+    option = {
+        name = "scenario.34.a"
+        add_political_power = -50
+        add_war_support = -0.15
+ 			JAP = { 
+				white_peace = CHI
+				white_peace = PRC
+				white_peace = SHX
+				white_peace = XSM
+				white_peace = YUN
+				white_peace = GXC
+			}       
+        hidden_effect = {
+        	CHI = {
+        		transfer_state = 609
+        		transfer_state = 749
+        	}
+        	SHX = {
+        		transfer_state = 615
+        	}
+        	GXC = {
+        		transfer_state = 326
+        		transfer_state = 591
+        		transfer_state = 592
+        		transfer_state = 593
+        		transfer_state = 594   
+        		transfer_state = 599
+        		transfer_state = 728
+        	}
+        }
+    }
+}
 
 
 ###########################
@@ -1399,12 +1464,17 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
+				TAG = JAP
 			}
 		}
 	}
 	option = {
 		name = scenarionews.1.b
 		trigger = { TAG = GER }
+	}
+	option = {
+		name = scenarionews.1.c
+		trigger = { TAG = JAP }
 	}
 }
 
@@ -1436,14 +1506,17 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
+				TAG = JAP
 			}
 		}
 	}
 	option = {
 		name = scenarionews.2.b
-		trigger = { 
-			TAG = GER 
-		}
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = scenarionews.2.c
+		trigger = { TAG = JAP }
 	}
 }
 
@@ -1472,7 +1545,6 @@ news_event = {
 
 	option = {	# 
 		name = scenarionews.3.a
-
 	}
 }
 
@@ -1497,9 +1569,7 @@ news_event = {
 	}
 	option = {
 		name = scenarionews.4.b
-		trigger = { 
-			TAG = GER 
-		}
+		trigger = { TAG = GER }
 	}
 }
 
@@ -1540,9 +1610,7 @@ news_event = {
 	}
 	option = {
 		name = scenarionews.5.b
-		trigger = { 
-			TAG = GER 
-		}
+		trigger = { TAG = GER }
 	}
 }
 
@@ -2228,6 +2296,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = JAP
+				TAG = GER
 			}
 		}
 	}
@@ -2235,6 +2304,12 @@ news_event = {
 		name = scenarionews.19.b
 		trigger = { 
 			TAG = JAP
+		}
+	}
+	option = {
+		name = scenarionews.19.c
+		trigger = { 
+			TAG = GER
 		}
 	}
 }
@@ -3683,7 +3758,7 @@ country_event = {
 	trigger = {
 		JAP = {
 			NOT = {
-				controls_state = 640
+				controls_state = 999
 			}
 		}
 		CHI = {
@@ -3715,8 +3790,8 @@ country_event = {
 
 	trigger = {
 		JAP = {
-			controls_state = 640
-			controls_state = 288
+			controls_province = 12464
+			controls_state = 999
 		}
 		CHI = {
 			NOT = {
@@ -3749,8 +3824,8 @@ country_event = {
 		JAP = {
 			OR = {
 				NOT = {
-					has_full_control_of_state = 640
-					has_full_control_of_state = 747					
+					has_full_control_of_state = 998
+					has_full_control_of_state = 747				
 				}
 			}
 		}
@@ -3784,7 +3859,7 @@ country_event = {
 	trigger = {
 		JAP = {
 			OR = {
-				has_full_control_of_state = 640
+				has_full_control_of_state = 998
 				has_full_control_of_state = 747
 			}
 		}
@@ -3948,6 +4023,8 @@ country_event = {
 			BEL = {
 				transfer_state = 6
 				transfer_state = 34
+				transfer_state = 977
+				transfer_state = 980
 			}
 			HOL = {
 				set_cosmetic_tag = HOL_mod_free
@@ -4004,6 +4081,7 @@ country_event = {
 				transfer_state = 153
 				transfer_state = 152 #austria
 				transfer_state = 976
+				transfer_state = 975
 				set_politics = {
 					ruling_party = neutrality
     				elections_allowed = yes
@@ -4059,6 +4137,7 @@ country_event = {
 				transfer_state = 71
 				transfer_state = 70
 				transfer_state = 664
+				transfer_state = 972
 			}
 			DEN = {
 				transfer_state = 912

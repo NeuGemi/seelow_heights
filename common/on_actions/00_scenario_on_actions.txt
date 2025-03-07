@@ -4,18 +4,11 @@ on_actions = {
 			if = {
 				limit = {
 					date > 1945.1.1
+					}
+					ENG = {
+						add_to_faction = INS
+					}
 				}
-				HOL = {
-					set_cosmetic_tag = HOL_reichskommissariat
-				}
-				BLR = {
-					set_cosmetic_tag = BLR_reichskommissariat
-				}
-				NOR = {
-					set_cosmetic_tag = NOR_GER_fascism
-				}
-
-			}
 				if = { 
 					limit = { 
 						date > 1945.1.1 

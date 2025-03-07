@@ -86,7 +86,7 @@ JAP_philippine_resistance = {
 	army_morale_factor = -0.15
 }
 
-CHI_chinese_military_offensive = { #STATE MODIFIER
+JAP_chinese_military_offensive = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_military_plans

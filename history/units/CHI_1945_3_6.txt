@@ -9,7 +9,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
 	}
 
 }
@@ -23,7 +22,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
 	}
 }
 division_template = {
@@ -65,7 +63,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 
+		location = 12609
 		division_template = "Qibing Jun"	
 		start_experience_factor = 0.2
 	}
@@ -74,7 +72,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 
+		location = 12609
 		division_template = "Qibing Jun"	
 		start_experience_factor = 0.2
 	}
@@ -83,7 +81,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 
+		location = 12609
 		division_template = "Qibing Jun"	
 		start_experience_factor = 0.2
 	}
@@ -92,7 +90,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 
+		location = 12609
 		division_template = "Sanjiao Jun"	
 		start_experience_factor = 0.1 #Temporary formations, lower eq and xp
 		start_equipment_factor = 0.8
@@ -102,7 +100,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 12609
 		division_template = "Sanjiao Jun"	
 		start_experience_factor = 0.1 #Temporary formations, lower eq and xp
 		start_equipment_factor = 0.8
@@ -115,25 +113,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 33
 		}
-		location = 
+		location = 4525
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 117
 		}
-		location = 
+		location = 4525
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 
+		location = 4525
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -142,9 +140,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 119
 		}
-		location = 
+		location = 4525
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 28th Army Group ###
@@ -154,34 +152,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 
+		location = 10451
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 
+		location = 10451
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 89
 		}
-		location = 
+		location = 10451
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 
+		location = 10451
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
@@ -191,7 +189,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 42
 		}
-		location = 
+		location = 10451
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -200,7 +198,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 43
 		}
-		location = 
+		location = 10507
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -209,7 +207,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 
+		location = 10507
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -221,25 +219,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 
+		location = 12300
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 110
 		}
-		location = 
+		location = 12300
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
 		}
-		location = 
+		location = 12300
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -248,7 +246,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 
+		location = 12300
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -257,7 +255,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 4074
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -266,7 +264,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 62
 		}
-		location = 
+		location = 4074
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -278,34 +276,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 
+		location = 1458
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 
+		location = 1458
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 177
 		}
-		location = 
+		location = 1458
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 
+		location = 1458
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -317,34 +315,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 45
 		}
-		location = 
+		location = 1531
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 46
 		}
-		location = 
+		location = 1531
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 47
 		}
-		location = 
+		location = 1531
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 
+		location = 1531
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -353,25 +351,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 64
 		}
-		location = 
+		location = 1034
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 65
 		}
-		location = 
+		location = 1034
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 
+		location = 1034
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -380,7 +378,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 
+		location = 1034
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -392,81 +390,81 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 12713
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 78
 		}
-		location = 
+		location = 12713
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 167
 		}
-		location = 
+		location = 12713
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 109
 		}
-		location = 
+		location = 12713
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 6932
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 
+		location = 6932
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 
+		location = 6932
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 53
 		}
-		location = 
+		location = 6932
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 61
 		}
-		location = 
+		location = 6932
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 37th Army Group ###
@@ -476,7 +474,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 52
 		}
-		location = 
+		location = 1603
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -485,7 +483,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 
+		location = 1603
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -494,7 +492,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 59
 		}
-		location = 
+		location = 1603
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -503,52 +501,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 165
 		}
-		location = 
+		location = 1603
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
 		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 37
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 26
-		}
-		location = 
+		location = 1603
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -557,61 +519,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 34
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location = 
-		division_template = "Qibing Jun"	
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location = 
+		location = 7459
 		division_template = "Qibing Jun"	
 		start_experience_factor = 0.1
 	}
@@ -620,16 +528,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 84
 		}
-		location = 
+		location = 7459
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 7459
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -638,72 +546,135 @@ units = {
 			is_name_ordered = yes
 			name_order = 39
 		}
-		location = 
+		location = 7459
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 106
 		}
-		location = 
+		location = 7459
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 40
+			name_order = 
 		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 
-		division_template = "Qibing Jun"	
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 29
-		}
-		location = 
+		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 27
+			name_order = 
 		}
-		location = 
+		location = 12408
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 12408
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 7019
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 111
+			name_order = 
 		}
-		location = 
+		location = 7019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 112
+			name_order = 
 		}
-		location = 
+		location = 7019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 10474
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 10474
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 10474
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 7126
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 4079
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 4158
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9959
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
 	}
 
 	#### II WAR ZONE ####
@@ -714,16 +685,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 68
 		}
-		location = 
+		location = 7609
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
 		}
-		location = 
+		location = 7609
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -732,7 +703,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 42
 		}
-		location = 
+		location = 7609
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -741,7 +712,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 40
 		}
-		location = 
+		location = 7596
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -750,7 +721,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 46
 		}
-		location = 
+		location = 7596
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -759,7 +730,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 47
 		}
-		location = 
+		location = 7596
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -771,16 +742,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 71
 		}
-		location = 
+		location = 10757
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
 		}
-		location = 
+		location = 10757
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -789,7 +760,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 41
 		}
-		location = 
+		location = 10757
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -798,16 +769,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 73
 		}
-		location = 
+		location = 12086
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 
+		location = 12086
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -816,7 +787,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 45
 		}
-		location = 
+		location = 12086
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -828,16 +799,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 70
 		}
-		location = 
+		location = 7101
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 39
 		}
-		location = 
+		location = 7101
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -846,7 +817,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 43
 		}
-		location = 
+		location = 7101
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -855,7 +826,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 72
 		}
-		location = 
+		location = 10517
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -864,7 +835,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 69
 		}
-		location = 
+		location = 10517
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -873,7 +844,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 48
 		}
-		location = 
+		location = 10517
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -885,16 +856,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 66
 		}
-		location = 
+		location = 12310
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 49
 		}
-		location = 
+		location = 12310
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -903,7 +874,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 50
 		}
-		location = 
+		location = 12310
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -912,7 +883,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 12017
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 	}
@@ -921,7 +892,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 12017
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 	}
@@ -930,7 +901,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 
+		location = 12017
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 	}
@@ -943,52 +914,52 @@ units = {
 			is_name_ordered = yes
 			name_order = 131
 		}
-		location = 
+		location = 4480
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 135
 		}
-		location = 
+		location = 4480
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 188
 		}
-		location = 
+		location = 4480
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 98
 		}
-		location = 
+		location = 4480
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 194
 		}
-		location = 
+		location = 10039
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 
+		location = 10039
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -997,7 +968,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 79
 		}
-		location = 
+		location = 10039
 		division_template = "Juntuán"
 		start_experience_factor = 0.8
 	}
@@ -1006,25 +977,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 170
 		}
-		location = 
+		location = 10039
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 135
 		}
-		location = 
+		location = 10431
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 
+		location = 10431
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1033,16 +1004,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 
+		location = 10431
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 10431
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1051,7 +1022,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 
+		location = 7549
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1060,25 +1031,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 133
 		}
-		location = 
+		location = 7549
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 134
 		}
-		location = 
+		location = 7549
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 
+		location = 7549
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1090,180 +1061,180 @@ units = {
 			is_name_ordered = yes
 			name_order = 32
 		}
-		location = 
+		location = 4532
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
 		}
-		location = 
+		location = 4532
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 
+		location = 4532
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 60
 		}
-		location = 
+		location = 4532
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 95
 		}
-		location = 
+		location = 4085
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 140
 		}
-		location = 
+		location = 4085
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 149
 		}
-		location = 
+		location = 4085
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 150
 		}
-		location = 
+		location = 4085
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 161
 		}
-		location = 
+		location = 4628
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 162
 		}
-		location = 
+		location = 4628
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 151
 		}
-		location = 
+		location = 4628
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 157
 		}
-		location = 
+		location = 4628
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 161
 		}
-		location = 
+		location = 4077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 162
 		}
-		location = 
+		location = 4077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 151
 		}
-		location = 
+		location = 4077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 157
 		}
-		location = 
+		location = 4077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 158
 		}
-		location = 
+		location = 7137
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 155
 		}
-		location = 
+		location = 7137
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 149
 		}
-		location = 
+		location = 7137
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 159
 		}
-		location = 
+		location = 7137
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	 #### V WAR ZONE ####
@@ -1274,61 +1245,61 @@ units = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		location = 
+		location = 1469
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 
+		location = 1469
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 74
 		}
-		location = 
+		location = 1469
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 81
 		}
-		location = 
+		location = 1469
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
 		}
-		location = 
+		location = 4656
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 119
 		}
-		location = 
+		location = 4656
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 143
 		}
-		location = 
+		location = 4656
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1337,7 +1308,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 
+		location = 4656
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1347,65 +1318,38 @@ units = {
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 171
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 172
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 173
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
 			name_order = 138
 		}
-		location = 
+		location = 7192
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 176
 		}
-		location = 
+		location = 7192
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 174
 		}
-		location = 
+		location = 7192
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 189
 		}
-		location = 
+		location = 7192
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 22nd Army Group ###
@@ -1415,52 +1359,52 @@ units = {
 			is_name_ordered = yes
 			name_order = 125
 		}
-		location = 
+		location = 12023
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 127
 		}
-		location = 
+		location = 12023
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 104
 		}
-		location = 
+		location = 12023
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 181
 		}
-		location = 
+		location = 12023
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 178
 		}
-		location = 
+		location = 11983
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 
+		location = 11983
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1469,45 +1413,45 @@ units = {
 			is_name_ordered = yes
 			name_order = 122
 		}
-		location = 
+		location = 11983
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 123
 		}
-		location = 
+		location = 11983
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 124
 		}
-		location = 
+		location = 1131
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 113
 		}
-		location = 
+		location = 1131
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 114
 		}
-		location = 
+		location = 1131
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 			 #### VI WAR ZONE ####
@@ -1518,25 +1462,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 
+		location = 12077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 121
 		}
-		location = 
+		location = 12077
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 
+		location = 12077
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1545,27 +1489,27 @@ units = {
 			is_name_ordered = yes
 			name_order = 27
 		}
-		location = 
+		location = 9963
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 
+		location = 9963
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
 		}
-		location = 
+		location = 9963
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 10th Army Group ###
@@ -1575,97 +1519,70 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 
+		location = 7039
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 
+		location = 7039
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
 		}
-		location = 
+		location = 7039
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
 		}
-		location = 
+		location = 10105
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 118
 		}
-		location = 
+		location = 10105
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 
+		location = 10105
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 185
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 199
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 21
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
 			name_order = 142
 		}
-		location = 
+		location = 5092
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 56
 		}
-		location = 
+		location = 5092
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1675,36 +1592,9 @@ units = {
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
 			name_order = 34
 		}
-		location = 
+		location = 4207
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1713,18 +1603,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 139
 		}
-		location = 
+		location = 4207
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 141
 		}
-		location = 
+		location = 4207
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 24th Army Group ###
@@ -1734,25 +1624,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 
+		location = 1162
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 77
 		}
-		location = 
+		location = 1162
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 
+		location = 1162
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1761,54 +1651,155 @@ units = {
 			is_name_ordered = yes
 			name_order = 51
 		}
-		location = 
+		location = 1162
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 57
+			name_order = 
 		}
-		location = 
+		location = 1078
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 58
+			name_order = 
 		}
-		location = 
+		location = 1078
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 19
+			name_order = 
 		}
-		location = 
+		location = 4081
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 4081
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 10112
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 10112
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 12030
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 12030
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 7199
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 7199
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 4183
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 4183
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9942
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 
+		}
+		location = 9942
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+	}
+
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 63
 		}
-		location = 
+		location = 10080
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 75
 		}
-		location = 
+		location = 10080
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 33rd Army Group ###
@@ -1818,79 +1809,79 @@ units = {
 			is_name_ordered = yes
 			name_order = 38
 		}
-		location = 
+		location = 10121
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 108
 		}
-		location = 
+		location = 10121
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 53
 		}
-		location = 
+		location = 10121
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
 		}
-		location = 
+		location = 7210
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 132
 		}
-		location = 
+		location = 7210
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 179
 		}
-		location = 
+		location = 7210
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 
+		location = 7128
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 67
 		}
-		location = 
+		location = 7128
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
 		}
-		location = 
+		location = 7128
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -1903,54 +1894,54 @@ units = {
 			is_name_ordered = yes
 			name_order = 152
 		}
-		location = 
+		location = 12378
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 153
 		}
-		location = 
+		location = 12378
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 186
 		}
-		location = 
+		location = 12378
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 154
 		}
-		location = 
+		location = 11918
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 160
 		}
-		location = 
+		location = 11918
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 187
 		}
-		location = 
+		location = 11918
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 				#### VIII WAR ZONE ####
@@ -1961,88 +1952,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 86
 		}
-		location = 
+		location = 7159
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 
+		location = 7159
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 
+		location = 7159
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 
-		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 
+		location = 4156
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2051,27 +1988,27 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 
+		location = 4156
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 
+		location = 4156
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 4156
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 17th Army Group ###
@@ -2081,16 +2018,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 168
 		}
-		location = 
+		location = 12495
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 
+		location = 12495
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2099,7 +2036,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 31
 		}
-		location = 
+		location = 12495
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2108,34 +2045,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 
+		location = 12495
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 11988
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 
+		location = 11988
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 60
 		}
-		location = 
+		location = 11988
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2147,7 +2084,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 58
 		}
-		location = 
+		location = 10114
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2156,18 +2093,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 
+		location = 10114
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 
+		location = 10114
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 29th Army Group ###
@@ -2177,25 +2114,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 191
 		}
-		location = 
+		location = 7653
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 
+		location = 7653
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 45
 		}
-		location = 
+		location = 7653
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2204,7 +2141,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 46
 		}
-		location = 
+		location = 7653
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2216,34 +2153,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 
+		location = 4083
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 
+		location = 4083
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 100
 		}
-		location = 
+		location = 4083
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 61
 		}
-		location = 
+		location = 4083
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2252,7 +2189,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 
+		location = 9984
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.2
 	}
@@ -2261,16 +2198,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 128
 		}
-		location = 
+		location = 9984
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 
+		location = 9984
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 	}
@@ -2279,7 +2216,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 
+		location = 4038
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 	}
@@ -2289,7 +2226,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 
+		location = 4038
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2298,9 +2235,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 
+		location = 4038
 		division_template = "Qibing Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	#### IX WAR ZONE ####
@@ -2311,7 +2248,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 
+		location = 4185
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2320,7 +2257,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 
+		location = 4185
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2329,16 +2266,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 183
 		}
-		location = 
+		location = 4185
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 
+		location = 4185
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2350,16 +2287,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 34
 		}
-		location = 
+		location = 7007
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 
+		location = 7007
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2368,7 +2305,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 
+		location = 7007
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2377,7 +2314,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 
+		location = 7007
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2386,45 +2323,45 @@ units = {
 			is_name_ordered = yes
 			name_order = 59
 		}
-		location = 
+		location = 12019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 102
 		}
-		location = 
+		location = 12019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 92
 		}
-		location = 
+		location = 12019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 99
 		}
-		location = 
+		location = 12019
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 197
 		}
-		location = 
+		location = 7104
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	#### HEBEI-CHAHAR WAR ZONE ####
@@ -2434,16 +2371,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 
+		location = 7104
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 
+		location = 7104
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2455,97 +2392,97 @@ units = {
 			is_name_ordered = yes
 			name_order = 54
 		}
-		location = 
+		location = 4173
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 24
 		}
-		location = 
+		location = 4173
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 
+		location = 4173
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 
+		location = 4173
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 91
 		}
-		location = 
+		location = 10101
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 193
 		}
-		location = 
+		location = 10101
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 
+		location = 10101
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 56
 		}
-		location = 
+		location = 10014
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
 		}
-		location = 
+		location = 10014
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 24
 		}
-		location = 
+		location = 10014
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 
+		location = 10086
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2554,7 +2491,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 57
 		}
-		location = 
+		location = 10086
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2563,52 +2500,52 @@ units = {
 			is_name_ordered = yes
 			name_order = 166
 		}
-		location = 
+		location = 10086
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 196
 		}
-		location = 
+		location = 7174
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 42
 		}
-		location = 
+		location = 7174
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 169
 		}
-		location = 
+		location = 7174
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 
+		location = 9944
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 
+		location = 9944
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2617,7 +2554,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 
+		location = 9944
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2630,25 +2567,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 182
 		}
-		location = 
+		location = 11947
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 184
 		}
-		location = 
+		location = 11947
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 
+		location = 11947
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2657,7 +2594,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 21
 		}
-		location = 
+		location = 1195
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2666,7 +2603,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		location = 
+		location = 1195
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2675,7 +2612,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 
+		location = 1195
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2688,25 +2625,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 49
 		}
-		location = 
+		location = 7146
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 96
 		}
-		location = 
+		location = 7146
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 
+		location = 7146
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2715,9 +2652,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 7146
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 9th Army Group ###
@@ -2727,34 +2664,34 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 10058
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
 		}
-		location = 
+		location = 10058
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 195
 		}
-		location = 
+		location = 10058
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		location = 
+		location = 10058
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 	}
@@ -2768,25 +2705,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 
+		location = 4013
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 76
 		}
-		location = 
+		location = 7086
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 33
 		}
-		location = 
+		location = 4099
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2795,16 +2732,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 
+		location = 4169
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 39
 		}
-		location = 
+		location = 1166
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2813,27 +2750,27 @@ units = {
 			is_name_ordered = yes
 			name_order = 87
 		}
-		location = 
+		location = 7027
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 88
 		}
-		location = 
+		location = 11986
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 
+		location = 7131
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### 2nd Army Group ###
@@ -2843,78 +2780,36 @@ units = {
 			is_name_ordered = yes
 			name_order = 116
 		}
-		location = 
+		location = 12084
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 130
+			name_order = 
 		}
-		location = 
+		location = 10010
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 
+		location = 10093
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 198
 		}
-		location = 
+		location = 7182
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-
-	## 8th Army ##
-
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 82
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 103
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-	}
-
-	# CEF DIRECT #
-
-	division = { 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 200
-		}
-		location = 
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	#### CHINESE ARMY IN INDIA ####
@@ -2924,7 +2819,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 30
 		}
-		location = 
+		location = 10863
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2933,7 +2828,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 38
 		}
-		location = 
+		location = 10863
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2942,25 +2837,25 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 
+		location = 7976
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 50
 		}
-		location = 
+		location = 7976
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		location = 
+		location = 5009
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -2973,43 +2868,43 @@ units = {
 			is_name_ordered = yes
 			name_order = 
 		}
-		location = 
+		location = 6999
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 83
 		}
-		location = 
+		location = 6999
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 85
 		}
-		location = 
+		location = 6999
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 94
 		}
-		location = 
+		location = 6999
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
 		}
-		location = 
+		location = 6999
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -3021,16 +2916,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 126
 		}
-		location = 
+		location = 7693
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 
+		location = 1844
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -3039,7 +2934,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 
+		location = 7866
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -3048,7 +2943,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 
+		location = 12526
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 	}
@@ -3057,18 +2952,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 136
 		}
-		location = 
+		location = 4828
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 137
 		}
-		location = 
+		location = 1766
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 
 	### Sichuan-Shanxi-Hebei Pacification Forces ###
@@ -3078,18 +2973,18 @@ units = {
 			is_name_ordered = yes
 			name_order = 163
 		}
-		location = 
+		location = 12732
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 164
 		}
-		location = 
+		location = 1959
 		division_template = "Juntuán"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 	}
 }
 
@@ -3123,10 +3018,4 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 100
 	}
-
-	add_equipment_to_stockpile = {
-    	type = infantry_equipment_1
-    	amount = 40000
-    	producer = CHI
-    } 
 }

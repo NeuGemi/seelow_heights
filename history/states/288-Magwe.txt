@@ -13,6 +13,9 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
+		buildings = {
+			air_base = 4
+		}
 		1942.1.1 = {
 			JAP = {
 				set_province_controller = 12449

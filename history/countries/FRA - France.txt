@@ -443,7 +443,6 @@ recruit_character = FRA_louis_kahn
 recruit_character = FRA_robert_odic
 recruit_character = FRA_jean_francois_jannekeyn
 recruit_character = FRA_emile_muselier
-recruit_character = FRA_frederic_irene_joliot_curie
 recruit_character = FRA_alfred_heurtaux
 recruit_character = FRA_rene_prioux
 recruit_character = FRA_pierre_alombert_goget
@@ -562,10 +561,6 @@ set_war_support = 0.100
 		service_by_requirement
 	}
 
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-
 	if = {
 		limit = {
 			has_dlc = "No Step Back"
@@ -666,14 +661,12 @@ set_war_support = 0.100
 		radio = 1
 		radio_detection = 1
 		cavity_magnatron = 1
-		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
 		basic_decryption = 1
 		improved_computing_machine = 1
-		improved_decimetric_radar = 1
 		improved_encryption = 1
 		improved_decryption = 1
 

@@ -1,0 +1,96 @@
+units = {
+    #### NAVAL UNITS -- Atlantische Flotte (CO: Dönitz ####
+    fleet = {
+        name = "Kriegsmarine"
+        naval_base = 6115 # Oslo   
+        task_force = {
+			name = "Minenunternehmen Skagerrak"
+			location = 6115 # Oslo
+			ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 					
+			ship = { name = "Z-4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }
+			ship = { name = "Z-6" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }
+			ship = { name = "Z-10" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }
+			ship = { name = "Z-14" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }
+			ship = { name = "Z-20" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+		}  
+    } 
+    fleet = {
+    	name = "Baltische Flotte"
+    	naval_base = 9262 # Rostock
+        task_force = {
+            name = "Marinebombardierungsgruppe"
+            location = 321
+			ship = { name = "Z-5" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "Z-34" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+    	} 
+    	task_force = {
+    		name = "Unternehmen Hannibal"
+    		location = 321 #Rostock
+			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Prinz Eugen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+			ship = { name = "Lützow" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+			ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }						
+			ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+			ship = { name = "Z-25" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "Z-31" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "Z-33" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "Z-38" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "Z-39" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Zerstörer 1936" } } }		
+			ship = { name = "U-709" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-967" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-607" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-890" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-1003" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-548" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-456" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+    	}
+    }
+	fleet = {
+		name = "Unterseeboots Flotte Nord"			
+		naval_base = 122  # Bergen
+		task_force = {
+			name = "I. U-Boots-Flot."
+			location = 122		# Bergen
+			ship = { name = "U-14" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-16" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-18" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-20" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-22" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-24" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+		}
+		task_force = {
+			name = "II. U-Boots-Flot. "
+			location = 122		# Bergen 
+			ship = { name = "U-56" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-57" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-58" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-59" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-60" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-61" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+		}
+		task_force = {
+			name = "III. U-Boots-Flot."
+			location = 53	
+			ship = { name = "U-37" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-38" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-39" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-40" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-41" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-42" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-43" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-44" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+		}
+		task_force = {
+			name = "IV. U-Boots-Flot."
+			location = 3022		# Trondheim
+			ship = { name = "U-45" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-46" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-47" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-48" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-49" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-51" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-52" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+			ship = { name = "U-53" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
+		}
+	}   
+}

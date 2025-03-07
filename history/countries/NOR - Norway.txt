@@ -16,7 +16,6 @@
    			 		character = NOR_josef_terboven
     				ideology = nazism
 				}
-				recruit_character = NOR_josef_terboven
 			else = {
 				create_country_leader = {
 					name = "Josef Terboven"

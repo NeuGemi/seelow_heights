@@ -961,14 +961,12 @@ recruit_character = JAP_kijuro_shidehara
 		radio = 1
 		radio_detection = 1
 		cavity_magnatron = 1
-		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
 		basic_decryption = 1
 		improved_computing_machine = 1
-		improved_decimetric_radar = 1
 		improved_encryption = 1
 		improved_decryption = 1
 

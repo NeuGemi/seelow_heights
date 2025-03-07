@@ -251,7 +251,7 @@ set_convoys = 40
 			#national spirits
 			CHI_hyper_inflation_1
 			CHI_nine_power_treaty
-			CHI_army_corruption_2
+			#CHI_army_corruption_2
 			CHI_ineffective_bureaucracy
 			CHI_incompetent_officers
 			free_trade
@@ -341,15 +341,15 @@ set_popularities = {
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 1945.1.1 = {
-
 	add_ideas = {
 		CHI_endsiegmod
 		CHI_stilwell_road
 		CHI_burma_closed
+		CHI_army_corruption_1
 	}
 	remove_ideas = {
 		german_advisors
-		CHI_army_corruption_2
+		#CHI_army_corruption_2
 		CHI_hyper_inflation_1
 		CHI_incompetent_officers #TODO: don't remove?
 		CHI_ineffective_bureaucracy
@@ -374,11 +374,11 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 	set_cosmetic_tag = CHI_scenario
 	add_to_faction = SHX
 
-	oob = "CHI_1945"
+	oob = "CHI_1945_1_12"
 }
 
 1945.3.1 = {
-	oob = "CHI_1939"
+	oob = "CHI_1945_3_6"
 }
 
 

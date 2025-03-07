@@ -107,63 +107,16 @@ units = {
 
 instant_effect = {
 
-	### Ships Under Contruction ###
-	# SS: Type VIIB (x3) ("U-50" "U-54" "U-55")
+	# CA: Hipper  class (x1) ("Blücher")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_submarine_2
-			creator = "GER" 
-			version_name = "Type VII Class"
+			type = heavy_cruiser_2
+			creator = "GER"
 		}
-		#ordered_name = 50
-		requested_factories = 15
-		progress = 0.60
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "GER" 
-			version_name = "Type VII Class"
-		}
-		#ordered_name = 54
-		requested_factories = 10
-		progress = 0.75
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "GER" 
-			version_name = "Type VII Class"
-		}
-		#ordered_name = 55
-		requested_factories = 7
-		progress = 0.90
-		amount = 1
-	}
-	# SS: Type IIC (x2) ("U-62" "UA")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "GER" 
-			version_name = "Type VII Class"
-		}
-		#ordered_name = 62
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.70
 		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "GER" 
-			version_name = "Type VII Class"
-		}
-		name = "UA"
-		requested_factories = 1
-		progress = 0.90
-		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 
 }

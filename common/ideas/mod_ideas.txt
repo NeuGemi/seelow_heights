@@ -1090,7 +1090,7 @@ ideas = {
 
         targeted_modifier = {
             tag = CHI
-            defense_bonus_against = 0.15
+            defense_bonus_against = 0.2
         }  
 
         modifier = {          
@@ -1310,7 +1310,7 @@ ideas = {
 
         targeted_modifier = {
             tag = CHI
-            attack_bonus_against = 0.05
+            attack_bonus_against = 0.1
             }   
         targeted_modifier = {
             tag = SOV
@@ -1335,7 +1335,7 @@ ideas = {
 
         targeted_modifier = {
             tag = CHI
-            attack_bonus_against = 0.05
+            attack_bonus_against = 0.1
             }   
         targeted_modifier = {
             tag = SHX
@@ -1999,7 +1999,7 @@ ideas = {
         removal_cost = -1
 
         modifier = {
-            production_factory_max_efficiency_factor = 0.5
+            production_factory_max_efficiency_factor = 0.05
             production_lack_of_resource_penalty_factor = -0.05
         }     
     }

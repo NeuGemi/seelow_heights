@@ -286,7 +286,6 @@ set_war_support = 0.3
 		radio = 1
 		radio_detection = 1
 		cavity_magnatron = 1
-		decimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -701,14 +700,12 @@ if = {
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-		decimetric_radar = 1
 		centimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
 		basic_decryption = 1
 		improved_computing_machine = 1
-		improved_decimetric_radar = 1
 		improved_encryption = 1
 		improved_decryption = 1
 
@@ -803,12 +800,15 @@ if = {
         basic_submarine_snorkel = 1
         improved_ship_hull_submarine = 1
         advanced_ship_torpedo_launcher = 1
-				electric_torpedo = 1
-				homing_torpedo = 1
+		electric_torpedo = 1
+		homing_torpedo = 1
         improved_heavy_armor_scheme = 1
         improved_ship_hull_heavy = 1
 		}
 		set_naval_oob = "GER_1945_naval_mtg"
+		else = {
+			set_air_oob = "GER_1945_naval_legacy"
+		}
 	}
 
 create_faction = Axis
@@ -826,7 +826,6 @@ add_ideas = {
 	totaler_krieg_economy
 	wilhelm_keitel
 	ferdinand_schorner
-	werner_von_fritsch
 	speer
 	donitz
 	heinz_guderian
