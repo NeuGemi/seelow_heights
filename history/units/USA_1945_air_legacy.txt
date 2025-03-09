@@ -1,7 +1,7 @@
 
 
 air_wings = {
-	57 = {
+	125 = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }	
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
@@ -9,7 +9,7 @@ air_wings = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }							
 	}
-	55 = {
+	125 = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
@@ -17,13 +17,13 @@ air_wings = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 	}
-	8 = {
+	125 = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 	}
-	20 = {
+	125 = {
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				
 		fighter_equipment_2 = { owner = "USA" amount = 100 }				

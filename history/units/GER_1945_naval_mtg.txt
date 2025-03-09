@@ -106,19 +106,78 @@ units = {
 #########################
 
 instant_effect = {
-
-	# CA: Hipper  class (x1) ("Blücher")
 	add_equipment_production = {
 		equipment = {
-			type = heavy_cruiser_2
-			creator = "GER"
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
 		}
+		#ordered_name = 50
 		requested_factories = 1
-		progress = 0.70
+		progress = 0.60
 		amount = 1
 		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
-
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
+		}
+		#ordered_name = 54
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
+		}
+		#ordered_name = 55
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
+		}
+		#ordered_name = 50
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
+		}
+		#ordered_name = 54
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "GER" 
+			version_name = "Type VII Class"
+		}
+		#ordered_name = 55
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
 }
 
 #####################

@@ -8,6 +8,9 @@ on_actions = {
 					ENG = {
 						add_to_faction = INS
 					}
+					GER = {
+						remove_ideas = PER_persian_german_trade_idea_2
+					}
 				}
 				if = { 
 					limit = { 
@@ -115,9 +118,3 @@ on_actions = {
 		}
 	}
 }
-
-               # if = {
-               #     limit = {
-               #         date > 1945.3.28
-                #        date < 1946.4.14
-                    #}

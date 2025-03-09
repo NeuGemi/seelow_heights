@@ -94,3 +94,17 @@ units = {
 		}
 	}   
 }
+
+instant_effect = {
+	# CA: Hipper  class (x1) ("Blücher")
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_2
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+}

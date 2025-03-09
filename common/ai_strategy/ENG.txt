@@ -40,6 +40,29 @@ CHI_leave_yunnan_alone = {
 	}	
 }
 
+ALLIES_europe_first_policy = {
+	allowed = {
+		OR = {
+			tag = USA
+			tag = ENG
+		}
+	}
+	enable = {
+		has_war_with = GER
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = GER
+		}
+	}	
+	ai_strategy = {
+		type = front_unit_request
+		id = GER
+		value = 200
+	}
+}
+
 ALLIES_pacific_vday = {
 	allowed = {
 		OR = {
@@ -325,7 +348,7 @@ AST_pacific = {
 }
 
 # USA usa
-USA_prioritize_home_islands = {
+USA_prioritize_home_islands_and_philippines = {
 	allowed = {
 		original_tag = USA
 	}
@@ -360,6 +383,90 @@ USA_prioritize_home_islands = {
 		subtract_fronts_from_need = yes
 	}
 
+	ai_strategy = {
+	    type = force_defend_ally_borders
+	    id = PHI
+	    value = 100
+	}
+}
+USA_island_hop_ffs = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_war_with = JAP
+		date < 1946.1.1
+		has_global_flag = scenario_scripted_invasions_disabled
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+    	type = invasion_unit_request
+    	strategic_region = 84
+    	value = -9999
+	}
+	ai_strategy = {
+    	type = invasion_unit_request
+    	strategic_region = 97
+    	value = -9999
+	}
+	ai_strategy = {
+    	type = invasion_unit_request
+    	strategic_region = 91
+    	value = -9999
+	}
+}
+USA_invade_iwo_jima = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_war_with = JAP
+		date > 1945.1.1
+		has_global_flag = scenario_scripted_invasions_disabled
+	}
+	abort = {
+		OR = {
+			USA = {
+				controls_state = 645
+			}
+			ENG = {
+				controls_state = 645
+			}
+		}
+	}
+	ai_strategy = {
+	    type = invasion_unit_request
+	    state = 645
+	    value = 200
+	}
+}
+
+USA_invade_okinawa = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_war_with = JAP
+		date > 1945.3.1
+		has_global_flag = scenario_scripted_invasions_disabled
+	}
+	abort = {
+		OR = {
+			USA = {
+				controls_state = 526
+			}
+			ENG = {
+				controls_state = 526
+			}
+		}
+	}
+	ai_strategy = {
+	    type = invasion_unit_request
+	    state = 526
+	    value = 200
+	}
 }
 
 # British Raj british raj RAJ

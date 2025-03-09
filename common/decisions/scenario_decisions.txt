@@ -2559,7 +2559,7 @@ scenario_settings = {
 		fire_only_once = yes
 
 		complete_effect = {
-			custom_effect_tooltip = JAP_scripted_invasions_tt
+			#custom_effect_tooltip = JAP_scripted_invasions_tt
 			set_global_flag = scenario_scripted_invasions_disabled
 		}		
 	}	

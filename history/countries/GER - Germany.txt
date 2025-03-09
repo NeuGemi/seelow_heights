@@ -613,6 +613,8 @@ if = {
 			armor_tech_1 = 1
 			armor_tech_2 = 1
 			armor_tech_3 = 1
+			advanced_light_tank_chassis = 1
+			super_heavy_tank_chassis = 1
 		}
 	}
 
@@ -634,6 +636,16 @@ if = {
 			engines_3 = 1
 			engines_4 = 1
 			range_improvements = 1
+			bba_early_transport_plane = 1
+			bba_improved_transport_plane = 1
+			armor_piercing_bombs = 1
+			heavy_bombs = 1
+			photo_reconnaisance = 1
+			air_torpedoe_1 = 1
+			air_torpedoe_2 = 1
+			aa_cannon_3 = 1
+			sp_centrifugal_jet_tech = 1
+			modern_medium_airframe = 1
 		}
 		else = {
 			set_air_oob = "GER_1945_1_12_air_legacy"
@@ -658,10 +670,10 @@ if = {
 		paratroopers2 = 1
 		tech_field_hospital = 1
 		tech_field_hospital2 = 1		
-    tech_signal_company = 1
-    tech_signal_company2 = 1
-    tech_logistics_company = 1
-    tech_logistics_company2 = 1
+    	tech_signal_company = 1
+    	tech_signal_company2 = 1
+    	tech_logistics_company = 1
+    	tech_logistics_company2 = 1
 		artillery1 = 1
 		artillery2 = 1
 		artillery3 = 1
@@ -763,6 +775,30 @@ if = {
 		antiair4 = 1
 		antiair5 = 1 
 		basic_fortification_tech = 1
+		land_fort_tech_1 = 1
+		land_fort_tech_2 = 1
+		coastal_fort_tech_1 = 1
+		coastal_fort_tech_2 = 1
+		night_vision = 1
+		support_weapons4 = 1
+		marines = 1
+		mechanised_infantry3 = 1
+		artillery5 = 1
+		antitank4 = 1
+		antitank5 = 1
+		streamlined_line = 1
+		dispersed_industry5 = 1
+		construction5 = 1
+		fuel_refining4 = 1
+		advanced_oil_processing = 1
+		modern_oil_processing = 1
+		improved_radio = 1
+		advanced_radio = 1
+		advanced_computing_machine = 1
+		sp_rockets_improved_guidance = 1
+		sp_rockets_rocket_bomber = 1
+		sp_rockets_improved_rocket_bomber = 1
+		sp_rockets_dual_chamber_rocket_engine_1 = 1
 }
 
 if = {
@@ -772,6 +808,7 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 		armored_car2 = 1
+		armored_car3 = 1
 	}
 }
 
@@ -804,11 +841,63 @@ if = {
 		homing_torpedo = 1
         improved_heavy_armor_scheme = 1
         improved_ship_hull_heavy = 1
+        improved_ship_hull_light = 1
+        improved_submarine_snorkel = 1
+        improved_sonar = 1
+        advanced_ship_hull_submarine = 1
+        sp_aip_engine_improved_tech = 1
+        basic_dp_light_battery = 1
+        improved_dp_light_battery = 1
+        basic_fire_control_system = 1
+        improved_fire_control_system = 1
+        modern_ship_torpedo_launcher = 1
 		}
 		set_naval_oob = "GER_1945_naval_mtg"
 		else = {
-			set_air_oob = "GER_1945_naval_legacy"
+			set_naval_oob = "GER_1945_naval_legacy"
 		}
+	}
+
+	complete_special_project = {
+		project = sp:sp_naval_aip_engine
+		scientist = GER_konrad_zuse
+		state = 61
+	}
+	complete_special_project = {
+		project = sp:sp_air_jet_engine
+		scientist = GER_konrad_zuse
+		state = 61
+	}
+	complete_special_project = {
+		project = sp:sp_land_flamethrower_tank
+		scientist = GER_konrad_zuse
+		state = 64
+	}
+	complete_special_project = {
+		project = sp:sp_land_land_cruiser
+		scientist = GER_konrad_zuse
+		state = 64
+	}
+
+	complete_special_project = {
+		project = sp:sp_rocket_interceptor
+		scientist = GER_konrad_zuse
+		state = 62
+	}
+	complete_special_project = {
+		project = sp:sp_rockets_flying_bomb
+		scientist = GER_konrad_zuse
+		state = 62
+	}
+	complete_special_project = {
+		project = sp:sp_land_military_engineering_vehicles
+		scientist = GER_konrad_zuse
+		state = 62
+	}
+	complete_special_project = {
+		project = sp:sp_air_helicopter
+		scientist = GER_konrad_zuse
+		state = 62
 	}
 
 create_faction = Axis
@@ -832,22 +921,24 @@ add_ideas = {
 	joseph_goebbels
 	goering
 	kurt_student
+	GER_shattered_wehrmacht
+	GER_endsiegmod
+	GER_totalen_krieg_doctrine
+	GER_scenario_volkssturm
+	GER_economic_collapse
+	GER_disloyalty_4
 }
 
-remove_ideas = rudolf_hess
-remove_ideas = erwin_rommel
-remove_ideas = GER_autarky_idea
-remove_ideas = GER_grosraumwirtschaft 
-remove_ideas = GER_atlantikwall_idea  
-remove_ideas = GER_ostwall_idea 
+remove_ideas = {
+	rudolf_hess
+	erwin_rommel
+	GER_autarky_idea
+	GER_grosraumwirtschaft
+	GER_atlantikwall_idea
+	GER_ostwall_idea
+}
 
 set_cosmetic_tag = GER_greater_german_reich
-add_ideas = GER_shattered_wehrmacht
-add_ideas = GER_endsiegmod
-add_ideas = GER_totalen_krieg_doctrine
-add_ideas = GER_scenario_volkssturm
-add_ideas = GER_economic_collapse
-add_ideas = GER_disloyalty_4
 
 set_global_flag = fall_of_france
 set_global_flag = end_of_norway
@@ -1392,6 +1483,8 @@ create_intelligence_agency = {
 }
 
 1945.4.26 = {
+
+	retire_character = GER_walter_model
 
 	complete_national_focus = GER_fuhrer_directive_74
 	complete_national_focus = GER_der_endsieg_beginnt
@@ -1939,5 +2032,21 @@ if = {
 			special_type_slot_4 = empty
 		}
 		icon = "GFX_GER_tactical_bomber2_medium"
+	}
+	create_equipment_variant = {
+		name = "Ar 234B-2 'Blitz'"
+		type = medium_plane_airframe_4
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = recon_camera
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = jet_engine_2x
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		icon = "GFX_GER_jet_medium_plane_1_medium"
 	}
 }

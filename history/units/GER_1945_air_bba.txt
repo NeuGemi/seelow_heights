@@ -174,18 +174,27 @@ air_wings = {
 #########################
 
 instant_effect = {
-
-	
-
 	add_equipment_production = {
 		equipment = {
 			type = small_plane_airframe_2
 			creator = "GER" 
 			version_name = "Fw 190 A-8"
 		}
-		requested_factories = 4
+		requested_factories = 3
 		progress = 0.15
 		efficiency = 100
+		industrial_manufacturer = mio:GER_focke_wulf_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "GER" 
+			version_name = "Bf 109 G-6"
+		}
+		requested_factories = 5
+		progress = 0.15
+		efficiency = 100
+		industrial_manufacturer = mio:GER_messerschmitt_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -196,6 +205,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.15
 		efficiency = 100
+		industrial_manufacturer = mio:GER_messerschmitt_organization		
 	}
 	add_equipment_production = {
 		equipment = {
@@ -206,6 +216,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.15
 		efficiency = 100
+		industrial_manufacturer = mio:GER_messerschmitt_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -216,8 +227,8 @@ instant_effect = {
 		requested_factories = 4
 		progress = 0.2
 		efficiency = 100
+		industrial_manufacturer = mio:GER_junkers_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = medium_plane_airframe_2
@@ -227,7 +238,17 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.1
 		efficiency = 100
+		industrial_manufacturer = mio:GER_dornier_organization
 	}
-
-	
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_4
+			creator = "GER" 
+			version_name = "Ar 234B-2 'Blitz'"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		industrial_manufacturer = mio:GER_arado_flugzeugwerke_organization
+	}
 }

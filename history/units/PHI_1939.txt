@@ -25,16 +25,96 @@ units = {
 	division = { # "1st Philippines Division"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 
 		}
 		location = 10265
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
 	}
-	
-	### Note: Ten reserve divisions in existence in 1939, but mostly paper divisions with small cadres of troops
-	
-	######## No Naval OOB ########
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1415
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1415
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1415
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 4288
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 4288
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 4288
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1224
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1224
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 
+		}
+		location = 1224
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}	
 }
 
 

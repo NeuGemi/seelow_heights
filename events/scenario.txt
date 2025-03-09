@@ -1343,6 +1343,9 @@ country_event = {
 		    relation = non_aggression_pact
 		    active = no
 		}
+		hidden_effect = {
+			news_event = { id = scenarionews.20 days = 1 }
+		}
 	}
 }
 
@@ -2013,11 +2016,11 @@ news_event = {
 			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 			date > 1945.2.15
 			date < 1945.3.1 #To not fire after the Jan 12 scenario
-		else_if = {
-			USA = {
-				controls_state = 645
+			else_if = {
+				USA = {
+					controls_state = 645
+				}
 			}
-		}
 		}
 
 		NOT = { has_global_flag = scenario_iwo_jima }
@@ -2093,16 +2096,16 @@ news_event = {
 			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 			date > 1945.3.30
 			date < 1945.4.5 #To not fire after the Jan 12 scenario
-		else_if = {
-			USA = {
-				OR = {
-					controls_province = 11932
-					controls_province = 10124
-					controls_province = 1123
-					controls_province = 7115
+			else_if = {
+				USA = {
+					OR = {
+						controls_province = 11932
+						controls_province = 10124
+						controls_province = 1123
+						controls_province = 7115
+					}
 				}
 			}
-		}
 		}
 
 		NOT = { has_global_flag = scenario_okinawa }
@@ -2175,39 +2178,39 @@ news_event = {
 		if = {
 			limit = { NOT = { has_global_flag = scenario_scripted_invasions_disabled } }
 			date > 1945.10.1
-		else_if = {
-			JAP = {
-				OR = {
-					528 = {
-						is_controlled_by = USA
-					}
-					530 = {
-						is_controlled_by = USA
-					}
-					529 = {
-						is_controlled_by = USA
-					}
-					531 = {
-						is_controlled_by = USA
-					}
-					532 = {
-						is_controlled_by = USA
-					}
-					535 = {
-						is_controlled_by = USA
-					}
-					282 = {
-						is_controlled_by = USA
-					}
-					534 = {
-						is_controlled_by = USA
-					}
-					533 = {
-						is_controlled_by = USA
+			else_if = {
+				JAP = {
+					OR = {
+						528 = {
+							is_controlled_by = USA
+						}
+						530 = {
+							is_controlled_by = USA
+						}
+						529 = {
+							is_controlled_by = USA
+						}
+						531 = {
+							is_controlled_by = USA
+						}
+						532 = {
+							is_controlled_by = USA
+						}
+						535 = {
+							is_controlled_by = USA
+						}
+						282 = {
+							is_controlled_by = USA
+						}
+						534 = {
+							is_controlled_by = USA
+						}
+						533 = {
+							is_controlled_by = USA
+						}
 					}
 				}
 			}
-		}
 		}
 
 		NOT = { has_global_flag = scenario_operation_downfall }
@@ -2310,6 +2313,51 @@ news_event = {
 		name = scenarionews.19.c
 		trigger = { 
 			TAG = GER
+		}
+	}
+}
+
+# Soviet Voids Japanese Neutrality Pact
+news_event = {
+	id = scenarionews.20
+	title = scenarionews.20.t
+	desc = scenarionews.20.d	
+	picture = GFX_news_event_mod_pactdenounced
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = scenario_nap_pactdenounced
+	}
+
+	option = {
+		name = scenarionews.20.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = USA
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = scenarionews.20.b
+		trigger = { 
+			TAG = JAP
+		}
+	}
+	option = {
+		name = scenarionews.20.c
+		trigger = { 
+			TAG = USA
+		}
+	}
+	option = {
+		name = scenarionews.20.e
+		trigger = { 
+			TAG = SOV
 		}
 	}
 }
@@ -3490,7 +3538,6 @@ country_event = {
 		}
     }
 }
-
 
 country_event = {
 	id = maintenance.2
