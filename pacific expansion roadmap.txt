@@ -1,9 +1,32 @@
 Pacific Expansion Roadmap
-	- Nudge US AI to dynamically invade Japanese territories
-	- Nudge user away from pockets, onto Chongqing
 	- Province modifiers to prevent port cheesing
 	- Possibility to make peace if allied causalties are high and hawaii etc is taken
 	- Historical peace conference
 	- OPERATION CORONET
-	- Add US strategic bombers
 	- Terror Bombings spirit will return if the requirements aren't met
+	- U.S Campaign in the Pacific
+	- Burma Campaign
+	- Vietnamese August Revolution (optional)
+
+Our Last Chance in China
++35% Attrition Rate
++5% Attack Bonus against China
+-10% Defense Bonus against China
+-25% Recovery Rate
+-15% Organization Regain Rate
+
+Tenno Heika Banzai
++25% Defense Bonus against the United States
+-10% Attack Bonus against the United States
++45% Experienced Soldier Losses
+-20% Organization Loss below 40% Organization
+
+The Setting Sun
+-0.10% Weekly Stability
+-0.05% Weekly War Support
+*Once the dominant power of the Pacific Seas, now a former shell of itself*
+
+
+Europe Expansion Roadmap
+	- Mission to retake Berlin if it's captured
+	- Operation Sunrise
