@@ -2,7 +2,6 @@ Pacific Expansion Roadmap
 	- Province modifiers to prevent port cheesing
 	- Possibility to make peace if allied causalties are high and hawaii etc is taken
 	- Historical peace conference
-	- OPERATION CORONET
 	- Terror Bombings spirit will return if the requirements aren't met
 	- U.S Campaign in the Pacific
 	- Burma Campaign

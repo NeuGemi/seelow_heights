@@ -6,11 +6,12 @@
 - March 6, 1945 Scenario
 - April 12, 1945 Scenario
 - April 27, 1945 Scenario
-- Historically accurate Order of Battles
-- Historical Division Templates
 - National Focus Tree for Germany
+- National Focus Tree for Japan
 - Immersive Events
 - Challenging Timed Missions
+- Historically accurate Order of Battles
+- Historical Division Templates
 - New and Accurate Generals Roster for Germany
 - And more
 
@@ -34,5 +35,6 @@ For the full experience, play with all Expansion DLCs enabled.
 Special thanks to [b]McGade85[/b] for allowing the use of portraits from their [b]German Generals[/b] mod & [b]u/Herman_Lindqvist[/b] for their free to use portraits
 
 Russian translation: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=3105300002[/url]
+Chinese translation: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=3091915334[/url]
 
 Join the Discord:  [url]https://discord.gg/USqdvytB9q[/url]
