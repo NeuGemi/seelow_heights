@@ -1335,11 +1335,11 @@ characters = {
 		}
 		corps_commander = {
 			traits = { old_guard infantry_officer inflexible_strategist }
-			skill = 4
+			skill = 5
 			attack_skill = 3
-			defense_skill = 4
+			defense_skill = 7
 			planning_skill = 4
-			logistics_skill = 2
+			logistics_skill = 3
 			legacy_id = 33
 		}
 	}

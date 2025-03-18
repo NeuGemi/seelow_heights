@@ -559,9 +559,10 @@ recruit_character = JAP_kijuro_shidehara
 
 	set_variable = { var = JAP_vfc value = 0 }
 
-	set_stability = -0.4 #baseline, THE EMPEROR PROTECTS
-	set_war_support = 0.4
+	set_stability = -0.3 #baseline, THE EMPEROR PROTECTS
+	set_war_support = 0.7
 	set_fuel_ratio = 0.6
+	add_command_power = 100
 
 	set_cosmetic_tag = JAP_scenario
 
@@ -877,6 +878,50 @@ recruit_character = JAP_kijuro_shidehara
 			armor_tech_3 = 1
 		}
 	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+		improved_naval_mines = 1
+		basic_light_shell = 1
+		basic_medium_shell = 1
+		improved_depth_charges = 1
+		smoke_generator = 1
+		improved_airplane_launcher = 1
+        mtg_landing_craft = 1
+        degaussing = 1
+        fire_control_methods_1 = 1
+        damage_control_2 = 1
+        damage_control_1 = 1
+        magnetic_detonator = 1
+        basic_heavy_shell = 1
+        improved_heavy_battery = 1
+        improved_medium_battery = 1
+        improved_light_battery = 1
+        basic_submarine_snorkel = 1
+        improved_ship_hull_submarine = 1
+        advanced_ship_torpedo_launcher = 1
+		improved_ship_torpedo_launcher = 1
+		electric_torpedo = 1
+		homing_torpedo = 1
+        improved_heavy_armor_scheme = 1
+        improved_ship_hull_heavy = 1
+        sonar = 1
+        improved_sonar = 1
+        advanced_depth_charges = 1
+        advanced_ship_hull_light = 1
+        advanced_ship_hull_cruiser = 1
+        advanced_ship_hull_carrier = 1
+        improved_light_shell = 1
+        improved_medium_shell = 1
+        improved_heavy_shell = 1
+        improved_dp_light_battery = 1
+        basic_fire_control_system = 1
+        improved_fire_control_system = 1
+		}
+		set_naval_oob = "JAP_1939_Naval"
+	}
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -1070,51 +1115,6 @@ recruit_character = JAP_kijuro_shidehara
 			scout_plane1 = 1
 			scout_plane2 = 1
 		}
-	}
-
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-		improved_naval_mines = 1
-		basic_light_shell = 1
-		basic_medium_shell = 1
-		improved_depth_charges = 1
-		smoke_generator = 1
-		improved_airplane_launcher = 1
-        mtg_landing_craft = 1
-        degaussing = 1
-        fire_control_methods_1 = 1
-        damage_control_2 = 1
-        damage_control_1 = 1
-        magnetic_detonator = 1
-        basic_heavy_shell = 1
-        improved_heavy_battery = 1
-        improved_medium_battery = 1
-        improved_light_battery = 1
-        basic_submarine_snorkel = 1
-        improved_ship_hull_submarine = 1
-        advanced_ship_torpedo_launcher = 1
-		improved_ship_torpedo_launcher = 1
-		electric_torpedo = 1
-		homing_torpedo = 1
-        improved_heavy_armor_scheme = 1
-        improved_ship_hull_heavy = 1
-        sonar = 1
-        improved_sonar = 1
-        advanced_depth_charges = 1
-        advanced_ship_hull_light = 1
-        advanced_ship_hull_cruiser = 1
-        advanced_ship_hull_carrier = 1
-        improved_light_shell = 1
-        improved_medium_shell = 1
-        improved_heavy_shell = 1
-        improved_dp_light_battery = 1
-        basic_fire_control_system = 1
-        improved_fire_control_system = 1
-		}
-		set_naval_oob = "JAP_1939_Naval"
 	}
 
 #ARMY

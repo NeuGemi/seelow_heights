@@ -1,0 +1,27 @@
+warlords_keep_to_yourselves = {
+	allowed = {
+		OR = {
+			original_tag = PRC
+			original_tag = YUN
+			original_tag = GXC
+			original_tag = SHX
+			original_tag = XSM		
+		}
+	}
+	enable = {
+		is_in_faction_with = CHI
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 10000
+	}
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -9999
+	}
+}

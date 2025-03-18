@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 		x = 20
 		y = 0
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -144,7 +144,7 @@ focus_tree = {
 		icon = GFX_focus_chi_one_china_policy
 		x = 5
 		y = 2
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_the_scramble_for_chongqing }
 		x = 4
 		y = 3
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -179,9 +179,9 @@ focus_tree = {
 				if = { limit = { controls_state = 608 }
 					608 = { #Manchuria
 						create_unit = {
-							division = "division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							division = "division_template = \"Hohei Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
 							owner = ROOT
-							count = 8
+							count = 5
 						}
 					}				
 				}

@@ -1091,9 +1091,6 @@ country_event = {
     	JAP = {
         	controls_state = 608 
         	controls_state = 613  
-        	controls_state = 597
-        	controls_state = 614  	
-        	controls_state = 598
     		}
 		}
 		hidden_effect = {
