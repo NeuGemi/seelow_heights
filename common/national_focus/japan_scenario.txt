@@ -466,7 +466,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			controls_state = 288
 			controls_state = 640
 			#controls_state = 869
 		}
