@@ -1,6 +1,10 @@
 state = {
 	id = 997
 	name = "STATE_997"
+
+	resources = {
+		rubber = 3
+	}
 	
 	state_category = rural
 	manpower = 530980
@@ -8,6 +12,18 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			12090 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			12090 1 # Akyab/Sittwe
+		}
 		1942.1.1 = {
 			JAP = {
 				set_province_controller = 4019

@@ -23,10 +23,13 @@ state=
 		victory_points = {
 			3995 1
 		 }
-		1944.8.9 = {
-			controller = USA
-		}
 
+		 strategic_province_location = {
+		 	defensible_coastline = 3995
+		 }
+		 1945.1.1 = {
+		 	controller = USA
+		 }
 	}
 	provinces={
 		3995 13023 13024 

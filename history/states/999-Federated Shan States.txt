@@ -4,20 +4,25 @@ state = {
 	
 	state_category = rural
 	manpower = 1567516
+
+	resources = {
+		tungsten = 70
+		coal = 4 #Kalewa mines near the Chindwin River
+	}
 	
 	history = {
 		owner = BRM
 		add_core_of = BRM
-		1942.1.1 = {
-		 	controller = JAP
+
+		buildings = {
+			infrastructure = 1
 		}
-		1945.3.1 = {
-			BRM = {
-				set_province_controller = 10920
-				set_province_controller = 12363
-				set_province_controller = 1170
-				set_province_controller = 4210
-			}
+
+		victory_points = {
+			7603 1 # Mong Pan
+		}
+		1942.1.1 = {
+			controller = JAP
 		}
 		1945.4.26 = {
 			controller = BRM
@@ -25,12 +30,13 @@ state = {
 				set_province_controller = 7603
 				set_province_controller = 7647
 			}
-		}
+		}		
 	}
 
 	provinces = {
 		1170 1566 1607 2061 4210 4654 7603 7647 10920 12317 12363 
 	}
+
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000
 }

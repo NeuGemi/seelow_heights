@@ -10,8 +10,18 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = GXC
 		add_core_of = GXC
+		1936.1.1 = {
+			IF = {
+				limit = {
+					 has_dlc = "No Compromise, No Surrender" 
+				}
+				GDC = { transfer_state = PREV }
+				add_core_of = GDC
+				remove_core_of = GXC
+			}
+		}	
 		add_core_of = CHI
 		add_core_of = PRC
 		
@@ -20,34 +30,42 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 3
-			1047 = {
+			1047 = { # Guangzhou
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
 			}
 
 		}
+
 		victory_points = {
-			1047 5
+			1047 10 # Guangzhou
 		}
 
-		1945.1.1 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
+		victory_points = {
+			12077 1 # Maoming
+		}
+
+		1938.10.25 = {
+			
+			remove_core_of = GXC
+			owner = CHI
+			
 			JAP = {
 				set_province_controller = 1047
 				set_province_controller = 7152
 				set_province_controller = 11938
 				set_province_controller = 11941
-				set_province_controller = 1187
-				set_province_controller = 1087
-				set_province_controller = 4092
 			} 			
+		}
+		1945.1.1 = {
+			controller = JAP
+			CHI = {
+				set_province_controller = 1131
+				set_province_controller = 12077
+				set_province_controller = 7039
+				set_province_controller = 9963
+			}
 		}
 	}
 

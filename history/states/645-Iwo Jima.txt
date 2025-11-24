@@ -19,10 +19,13 @@ state=
 		victory_points = {
 			13025 5
 		 }
-		 1945.3.1 = {
-		 	owner = JAP
-		 	controller = USA
+
+		 strategic_province_location = {
+		 	defensible_coastline = 13025
 		 }
+		1945.3.1 = {
+			controller = USA
+		}
 	}
 	provinces={
 		13025

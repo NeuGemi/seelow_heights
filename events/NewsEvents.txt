@@ -3703,49 +3703,6 @@ news_event = {
 	}
 }
 
-# The Fall of Hong Kong
-news_event = {
-	id = news.123
-	title = news.123.t
-	desc = news.123.d
-	picture = GFX_news_event_040
-	
-	major = yes
-	
-	trigger = {
-		326 = { is_controlled_by = JAP }
-		326 = { is_owned_by = ENG }
-		JAP = { has_war_with = ENG }
-		NOT = { has_global_flag = fall_of_hong_kong }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_hong_kong
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = news.145.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = ENG
-			}
-		}
-	}
-	option = {
-		name = news.117.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news.100.c
-		trigger = { TAG = ENG }
-	}
-}
-
 # The Fall of Calcutta
 news_event = {
 	id = news.125
@@ -5061,53 +5018,6 @@ news_event = {
 	option = {
 		name = news.154.c
 		trigger = { TAG = SOV }
-	}
-}
-
-# Germany declares war without having remilitarized Rhineland. Which then happens.
-news_event = {
-	id = news.155
-	title = news.155.t
-	desc = news.155.d
-	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-				NOT = { 
-					has_completed_focus = GER_remilitarize_the_rhineland 
-				}
-			}
-			has_offensive_war = yes
-			NOT = {
-				has_war_with = SIL
-			}
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-	
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.155.a
-	}
-	option = {
-		trigger = { tag = GER } 
-		name = news.155.b
 	}
 }
 
@@ -10900,52 +10810,6 @@ news_event = {
 				TAG = SOV
 				is_in_faction_with = SOV
 			}
-		}
-	}
-}
-#chinese united front forms
-news_event = {
-	id = news.288
-	title = news.288.t
-	desc = news.288.desc
-	picture = GFX_news_event_chinese_soldiers_march
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.288.a
-		trigger = {
-			OR = {
-				TAG = CHI
-				TAG = PRC
-			}
-		}
-	}
-	option = { 
-		name = news.288.b
-		trigger = { 
-			NOT = {
-				TAG = CHI
-				TAG = PRC
-			}
-			OR = {
-				TAG = JAP
-				is_in_faction_with = JAP
-			}
-		}
-	}
-	option = {
-		name = news.288.c
-		trigger = { 
-			NOT = { 
-				TAG = PRC 
-				TAG = CHI
-				TAG = JAP
-				is_in_faction_with = JAP
-			}
-			
 		}
 	}
 }

@@ -8,8 +8,16 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
+
+		buildings = {
+			infrastructure = 0
+		}
+
+		victory_points = {
+			7909 1 # Kyaingtong
+		}
 		1942.1.1 = {
-		 	controller = JAP
+			controller = JAP
 		}
 		1945.3.1 = {
 			BRM = {

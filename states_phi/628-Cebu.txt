@@ -1,0 +1,60 @@
+state=
+{
+	id=628
+	name="STATE_628"
+	manpower = 3525715
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = PHI
+		buildings = {
+			infrastructure = 2
+			12118 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			12118 1 
+		}
+		add_core_of = PHI
+		1945.1.1 = {
+			owner = PHI
+			controller = JAP
+		}
+		1945.4.1 = {
+			owner = PHI
+			controller = JAP
+			PHI = {
+				set_province_controller = 10302
+				set_province_controller = 1261
+				set_province_controller = 12118
+				set_province_controller = 7385
+				set_province_controller = 7423
+				set_province_controller = 1368
+			}
+		}
+		1945.4.27 = {
+			owner = PHI
+			controller = JAP
+			PHI = {
+				set_province_controller = 10302
+				set_province_controller = 1261
+				set_province_controller = 12118
+				set_province_controller = 7385
+				set_province_controller = 7423
+				set_province_controller = 1368
+				set_province_controller = 12112
+				set_province_controller = 10186
+			}
+		}
+	}
+
+	provinces={
+		1261 1368 7385 7423 10186 10302 12112 12118 12153 
+	}
+
+	local_supplies=6.0 
+}

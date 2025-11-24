@@ -50,7 +50,6 @@ NOR_reichskommissariat = {
 }
 
 
-
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

@@ -63,9 +63,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -265,21 +262,6 @@ set_war_support = 0.3
 		support_weapons = 1
 		support_weapons2 = 1
 		paratroopers = 1
-		
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -397,7 +379,7 @@ set_popularities = {
 	communism = 0
 }
 
-create_faction = Axis
+create_faction_from_template = faction_template_axis
 add_to_faction = GER
 
 
@@ -684,29 +666,6 @@ if = {
 		antitank2 = 1
 		antitank3 = 1
 
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		kampfgruppe = 1 #MOBILE WARFARE
-		volkssturm = 1
-		nd_conscription = 1
-#		firebrigades = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		wolfpacks = 1
-		capital_ship_raiders = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-		formation_fighting = 1
-		hunt_and_destroy = 1
-		combat_unit_destruction = 1
-
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -800,6 +759,54 @@ if = {
 		sp_rockets_improved_rocket_bomber = 1
 		sp_rockets_dual_chamber_rocket_engine_1 = 1
 }
+
+set_grand_doctrine = new_mobile_warfare
+set_grand_doctrine = new_convoy_raiding
+set_grand_doctrine = new_battlefield_support
+	set_grand_doctrine = new_mobile_warfare
+	set_grand_doctrine = new_convoy_raiding
+	set_grand_doctrine = new_battlefield_support
+	set_sub_doctrine = mobile_infantry
+	add_mastery = {
+		amount = 500
+		sub_doctrine = mobile_infantry
+	}
+	set_sub_doctrine = mission_type_tactics
+	add_mastery = {
+		amount = 500
+		sub_doctrine = mission_type_tactics
+	}
+	set_sub_doctrine = mobile_recon_and_assault
+	add_mastery = {
+		amount = 500
+		sub_doctrine = mobile_recon_and_assault
+	}
+	set_sub_doctrine = air_subdoctrine_tactical_flexibility
+	add_mastery = {
+		amount = 500
+		sub_doctrine = air_subdoctrine_tactical_flexibility
+	}
+	set_sub_doctrine = air_subdoctrine_dive_bombers
+	add_mastery = {
+		amount = 500
+		sub_doctrine = air_subdoctrine_dive_bombers
+	}
+	set_sub_doctrine = armored_spearhead
+	add_mastery = {
+		amount = 500
+		sub_doctrine = armored_spearhead
+	}
+set_sub_doctrine = air_subdoctrine_tactical_battlefield_support
+	add_mastery = {
+		amount = 500
+		sub_doctrine = air_subdoctrine_tactical_battlefield_support
+	}
+set_sub_doctrine = wolfpacks
+	add_mastery = {
+		amount = 500
+		sub_doctrine = wolfpacks
+	}
+
 
 if = {
 	limit = {

@@ -24,9 +24,8 @@ state={
 			}
 		}
 		1945.1.1 = {
-			owner = ENG
-			controller = ENG
-		}
+			controller = JAP
+		}	
 	}
 
 	provinces={

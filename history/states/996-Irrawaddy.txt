@@ -8,6 +8,15 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			7254 1 # Bassein
+		}
 		1942.1.1 = {
 		 	controller = JAP
 		}

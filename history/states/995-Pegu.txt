@@ -16,12 +16,16 @@ state = {
 			industrial_complex = 1
 			arms_factory = 1
 			1330 = {
-				naval_base = 5
+				naval_base = 1
 			}
 		}
 
 		victory_points = {
 			1330 15 # Rangoon
+		}
+
+		victory_points = {
+			10344 1 # Taungoo
 		}
 		1942.1.1 = {
 		 	controller = JAP

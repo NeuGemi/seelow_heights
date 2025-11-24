@@ -2,7 +2,7 @@ state={
 	id=749
 	name="STATE_749"
 	provinces={
-		1099 1125 1153 1171 4105 4173 7007 7104 10044 11937 12019 
+		 1125 1153 1171 4105 4173 7007 7104 10044 11937 12019 
 	}
 	manpower=5000000
 	buildings_max_level_factor=1.000
@@ -18,15 +18,13 @@ state={
 			12019 1
 		}
 		
-		1945.1.1 = {
-			owner = JAP
+		1938.10.25 = {
 			controller = JAP
 			CHI = {
 				set_province_controller = 1125
 				set_province_controller = 7104
 				set_province_controller = 12019
-				set_province_controller = 7007
-				set_province_controller = 4173
+
 			}
 			buildings = {
 				infrastructure = 3 #was: 6
@@ -34,7 +32,11 @@ state={
 			}
 
 		}
-
+		1945.1.1 = {
+			CHI = {
+				set_province_controller = 7007
+			}
+		}
 	}
 
 	local_supplies=0.0 

@@ -24,10 +24,9 @@ state={
 			}
 
 		}
-		1945.1.1 = {
-			owner = JAP
+		1942.1.1 = {
 			controller = JAP
-		} 
+		}
 	}
 
 	provinces={

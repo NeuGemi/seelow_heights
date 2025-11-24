@@ -64,8 +64,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	superior_firepower = 1
-	base_strike = 1
 	motorised_infantry = 1
 	tech_trucks = 1
 	fuel_silos = 1
@@ -251,16 +249,6 @@ give_guarantee = URG
 		support_weapons = 1
 		support_weapons2 = 1
 		marines = 1
-
-		#doctrines
-		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
-
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -583,33 +571,6 @@ recruit_character = USA_harry_white
 		antitank2 = 1
 		antitank3 = 1
 
-		#doctrines 
-		sup_delay = 1
-		mobile_defence = 1
-		intergrated_support = 1
-		regimental_combat_teams = 1
-		convoy_escorts = 1
-        	submarine_operations_bs = 1
-		carrier_primacy = 1
-		undersea_blockade = 1
-		carrier_task_forces = 1
-		multialtitude_flying = 1
-		floating_airfield = 1
-		convoy_escorts = 1
-		escort_patrols = 1
-		massed_strikes = 1
-		sup_mechanized_offensive = 1
-		centralized_fire_control = 1
-		forward_observers  = 1
-	
-		#air
-		air_superiority = 1
-		home_defence = 1
-		naval_strike_tactics = 1
-		fighter_sweeps = 1
-		logistical_bombing = 1
-
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -717,6 +678,39 @@ recruit_character = USA_harry_white
 		concentrated_industry4 = 1
 		concentrated_industry5 = 1
 }
+
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
+set_grand_doctrine = new_strategic_destruction
+
+set_sub_doctrine = assault_infantry
+add_mastery = {
+    amount = 500
+    sub_doctrine = assault_infantry
+}
+set_sub_doctrine = assault_infantry
+add_mastery = {
+    amount = 500
+    sub_doctrine = assault_infantry
+}
+set_sub_doctrine = line_of_battle
+set_sub_doctrine = air_subdoctrine_escort_fighter
+add_mastery = {
+    amount = 500
+    sub_doctrine = air_subdoctrine_escort_fighter
+}
+set_sub_doctrine = armored_spearhead
+	add_mastery = {
+		amount = 500
+		sub_doctrine = armored_spearhead
+	}
+	set_sub_doctrine = mobile_recon_and_assault
+	add_mastery = {
+		amount = 500
+		sub_doctrine = mobile_recon_and_assault
+	}
+
+
 	if = {
 		limit = {
 			has_dlc = "La Resistance"

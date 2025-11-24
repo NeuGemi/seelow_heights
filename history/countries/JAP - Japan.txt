@@ -100,7 +100,6 @@ set_technology = {
 	marines  = 1
 	gw_artillery = 1
 	basic_train = 1
-	trench_warfare = 1
 	base_strike = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
@@ -293,23 +292,6 @@ create_import = {
 		type = annex_everything
 	}
 	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-		
-	
-		#doctrines
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-		grand_battle_plan = 1
-		prepared_defense = 1
-		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -588,6 +570,7 @@ recruit_character = JAP_kijuro_shidehara
 
 	remove_ideas = JAP_tora_tora_tora_idea
 
+	create_faction_from_template = faction_template_geacps_faction
 	add_to_faction = SIA
 	add_to_faction = VIN
 	add_to_faction = CAM
@@ -987,27 +970,6 @@ recruit_character = JAP_kijuro_shidehara
 		antitank2 = 1
 		antitank3 = 1
 
-		#doctrines 
-		prepared_defense = 1
-		grand_assault = 1
-		infantry_offensive = 1
-		armored_operations = 1
-		infiltration_assault = 1
-		attritional_containment = 1
-		night_assault_tactics = 1
-		convoy_escorts = 1
-        submarine_operations_bs = 1
-		carrier_primacy = 1
-		undersea_blockade = 1
-		carrier_task_forces = 1
-		floating_airfield = 1
-		convoy_escorts = 1
-		escort_patrols = 1
-		massed_strikes = 1
-		floating_airfield = 1
-		convoy_escorts_bs  = 1
-		#air
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -1088,6 +1050,56 @@ recruit_character = JAP_kijuro_shidehara
 		improved_radio = 1
 		advanced_radio = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_base_strike
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_base_strike
+set_sub_doctrine = massed_carrier_fleet
+add_mastery = {
+    amount = 200
+    sub_doctrine = massed_carrier_fleet
+}
+set_grand_doctrine = new_operational_integrity
+
+set_sub_doctrine = defensive_postures
+add_mastery = {
+    amount = 500
+    sub_doctrine = defensive_postures
+}
+set_sub_doctrine = infiltration_tactics
+add_mastery = {
+    amount = 500
+    sub_doctrine = infiltration_tactics
+}
+set_sub_doctrine = field_engineering
+add_mastery = {
+    amount = 500
+    sub_doctrine = field_engineering
+}
+
+set_sub_doctrine = line_of_battle
+add_mastery = {
+    amount = 500
+    sub_doctrine = line_of_battle
+}
+set_sub_doctrine = anti_aircraft_cruisers
+add_mastery = {
+    amount = 500
+    sub_doctrine = anti_aircraft_cruisers
+}
+set_sub_doctrine = air_subdoctrine_fighter_central_field
+add_mastery = {
+    amount = 500
+    sub_doctrine = air_subdoctrine_fighter_central_field
+}
+set_sub_doctrine = air_subdoctrine_carrier_strikes
+add_mastery = {
+    amount = 500
+    sub_doctrine = air_subdoctrine_carrier_strikes
+}
+
+
 
 	complete_special_project = {
 		project = sp:sp_naval_cruiser_submarine

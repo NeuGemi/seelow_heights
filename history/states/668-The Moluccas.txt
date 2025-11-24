@@ -21,13 +21,9 @@ state={
 				naval_base = 1
 			}
 		}
-		1945.1.1 = {
-			owner = JAP
+		1942.1.1 = {
 			controller = JAP
-			USA = {
-				set_province_controller = 1419
-			}
-		} 
+		}
 	}
 
 	provinces={
