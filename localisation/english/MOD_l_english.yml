@@ -106,6 +106,7 @@ JAP_vfc_var_value_tt: "When the US invades our Inner Lands, [?JAP_vfc] Divisions
 JAP_fortify_yangtze_river_tt:0 "§YControls Yangtze River from Nanjing to Wuhan§!"
 JAP_indochinoise_uprising_tt:0 "§RThe remnants of the French Free Army in Indochina will rise in an armed insurrection!§!"
 JAP_modify_army_modifier_tt:0 "Modify §YImperial Japanese Army§! by"
+JAP_why_surrender_tt:0 "§YDue to the loss of vital territory in China, we have lost public support and have no recourse but to surrender.§!"
 
 ### Ideas ###
 # Germany #

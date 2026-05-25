@@ -1404,6 +1404,7 @@ country_event = {
 				white_peace = YUN
 				white_peace = GXC
 			}       
+		custom_effect_tooltip = JAP_why_surrender_tt
         hidden_effect = {
         	CHI = {
         		transfer_state = 609
@@ -3952,6 +3953,28 @@ country_event = {
     	JAP = {
     		remove_ideas = JAP_economic_collapse
     	}
+    }
+}
+
+#Allow SOV to declare war
+country_event = {
+	id = maintenance.18
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1945.9.1
+	}
+
+	hidden = yes
+
+    option = {
+	    SOV = {
+			set_rule = { 
+				desc = desc_key
+				can_not_declare_war = no 
+			}
+		}
     }
 }
 

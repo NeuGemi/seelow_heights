@@ -16,9 +16,6 @@ set_technology = {
 	interwar_antiair = 1
 	tech_trucks = 1
 	basic_train = 1
-	mobile_warfare = 1
-	trade_interdiction = 1
-	formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -52,30 +49,6 @@ set_technology = {
 		antitank1 = 1
 		antitank2 = 1
 		antitank3 = 1
-
-		#doctrines 
-		prepared_defense = 1
-		grand_assault = 1
-		grand_mechanized_offensive = 1
-		assault_concentration = 1
-		branch_interoperation = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-		subsidiary_carrier_role = 1
-		hunter_killer_groups = 1
-		escort_carriers = 1
-		#air
-		air_superiority = 1
-		home_defence = 1
-		naval_strike_tactics = 1
-		fighter_sweeps = 1
-		logistical_bombing = 1
-		multialtitude_flying = 1 
-		night_bombing = 1
-		massed_bomber_formations = 1
-		infrastructure_destruction = 1
-
 
 		#electronics
 		electronic_mechanical_engineering = 1

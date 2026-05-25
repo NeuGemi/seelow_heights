@@ -5,6 +5,9 @@ state={
 	manpower = 2224400
 	
 	state_category = large_town
+	resources = {
+		coal = 1 #initial distribution
+	}
 
 	history={
 		owner = YUG
